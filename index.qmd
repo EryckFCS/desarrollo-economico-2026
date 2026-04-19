@@ -1,0 +1,22 @@
+---
+title: "Bitácora de Desarrollo Económico"
+subtitle: "Séptimo Ciclo - 2026"
+author: "Erick Fabricio Condoy Seraquive"
+---
+
+# Introducción a la Materia
+
+Este repositorio contiene todos los informes, análisis y datos relacionados con la materia de Desarrollo Económico del séptimo ciclo de la carrera de Economía.
+
+## Objetivos del Repositorio
+
+1.  Mantenimiento de reportes reproducibles vía Quarto.
+2.  Gestión de datos con Python (uv).
+3.  Control de versiones para el seguimiento académico.
+
+## Estructura
+
+- `data/`: Datos crudos y procesados.
+- `notebooks/`: Análisis exploratorio.
+- `src/`: Lógica de procesamiento de datos.
+- `writing/`: Reportes finales y borradores.

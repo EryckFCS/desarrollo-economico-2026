@@ -1,0 +1,30 @@
+project:
+  type: default
+  output-dir: dist
+
+book:
+  title: "Desarrollo Económico - 2026"
+  author: "Erick Fabricio Condoy Seraquive"
+  date: last-modified
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+  pdf:
+    documentclass: article
+    toc: true
+    number-sections: true
+    mainfont: "Liberation Serif"
+  docx:
+    toc: true
+    number-sections: true
+
+execute:
+  echo: false
+  warning: false
+  engine: jupyter
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
