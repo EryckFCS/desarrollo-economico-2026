@@ -1,0 +1,205 @@
+---
+title: "Análisis Crítico: Retrospectiva de la Economía del Desarrollo"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-21"
+lang: es-ES
+bibliography: 
+  - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
+nocite: |
+  @tezanos2010estudio, @rostow1960stages, @smelser1963mechanisms, @coleman1965education
+format:
+  html:
+    toc: true
+    code-fold: true
+    theme: cosmo
+---
+
+# Introducción
+*Análisis basado en la lectura: "1 Retrospectiva de la Economia del Desarrollo.pdf"*
+
+Este texto ofrece una visión diacrónica de cómo el pensamiento económico ha abordado la problemática del desarrollo, identificando el fracaso de las recetas iniciales y el surgimiento de contrapropuestas estructuralistas y neomarxistas.
+
+# Marco Histórico: Los Pioneros del Desarrollo
+El surgimiento de esta especialidad académica en las décadas de 1940 y 1950 fue impulsado por la ruptura del concepto de "Monoeconomía" y el triunfo de la revolución keynesiana.
+
+## Los Pioneros por Tradición Teórica
+| Corriente | Autores Principales (Pioneros) |
+|-----------|-------------------------------|
+| **Keynesianos** | Rosenstein-Rodan, Nurkse, Singer, Lewis, Myrdal, Hirschman, Rostow, Tinbergen. |
+| **Neoclásicos** | Solow, Schultz, Viner, Bauer, Clark, Haberler. |
+| **Estructuralistas** | Raúl Prebisch, Celso Furtado. |
+| **Neomarxistas** | Paul Baran, Paul Sweezy, Andre Gunder Frank. |
+| **Neoinstitucionalistas** | Gunnar Myrdal, Clarence Ayres. |
+| **Islamistas** | Maududi, Sayid Qutb. |
+| **Alternativos** | Mahatma Gandhi, Joseph Kumarappa. |
+
+---
+
+# Teorías del Desarrollo (Sílabo 1.1.1)
+
+## 1. Teoría de la Modernización
+La modernización dominó el pensamiento económico de las décadas de 1950 y 1960. Bajo un prisma eurocéntrico, planteaba que el desarrollo era un proceso lineal, universal y evolutivo que cada país debía recorrer para alcanzar el estándar de las naciones industrializadas.
+
+### El Modelo de Etapas del Desarrollo Económico (W.W. Rostow)
+En su obra *The Stages of Economic Growth* (1960), Rostow propone que todas las sociedades, en su camino hacia el desarrollo, deben transitar por cinco fases diferenciadas. Este modelo es la quintaesencia de la visión lineal y evolutiva de la modernización.
+
+1.  **Sociedad Tradicional:**
+    *   **Características:** Estructura social jerárquica, predominio de la agricultura de subsistencia y tecnología "pre-newtoniana" (limitada por la ciencia y técnica pre-moderna).
+    *   **Dinámica:** Existe un techo de productividad per cápita que no se puede superar; el comportamiento está regido por el fatalismo y la tradición.
+2.  **Precondiciones para el Despegue (Transición):**
+    *   **Características:** Periodo en el que se gestan los cambios institucionales y psicológicos. Surge una nueva élite con visión empresarial y se expande la educación.
+    *   **Factores Clave:** Inversión en infraestructura (transportes), surgimiento de bancos y un Estado nacional centralizado que fomente el comercio.
+3.  **El Despegue (Take-off):**
+    *   **Características:** Es la fase decisiva o "la gran divisoria". El crecimiento se vuelve el estado normal de la sociedad.
+    *   **Requisitos:** La tasa de inversión neta debe pasar de aproximadamente el **5% a más del 10% del ingreso nacional**.
+    *   **Impacto:** Surgen industrias líderes (ej. textil en UK) con altos encadenamientos que arrastran al resto de la economía.
+4.  **Camino a la Madurez:**
+    *   **Características:** Largo periodo de progreso sostenido donde la tecnología moderna se aplica a la totalidad de los recursos económicos.
+    *   **Evolución:** La economía se diversifica; ya no solo produce los bienes de las industrias líderes, sino bienes de equipo complejos y servicios técnicos.
+5.  **La Era del Alto Consumo en Masa:**
+    *   **Características:** La sociedad se desplaza hacia la producción de bienes de consumo duraderos y servicios de alta sofisticación.
+    *   **Foco Social:** El ingreso per cápita aumenta hasta un nivel donde el consumo trasciende las necesidades básicas (comida, techo) hacia el ocio, el automóvil y el bienestar social de lujo (modelo estadounidense de posguerra).
+
+> [!NOTE]
+> Para Rostow, el desarrollo es un proceso unidireccional: una vez que comienza el "despegue", la sociedad tiende inexorablemente hacia el alto consumo, siempre que mantenga las tasas de inversión adecuadas.
+
+### Modelos de Acumulación y Dualismo
+- **Modelo de Dualismo de Lewis (1954):** Propone que el desarrollo ocurre cuando el sector moderno (industrial) absorbe el excedente de mano de obra del sector tradicional (agrícola) con salarios de subsistencia, permitiendo una alta reinversión del capital.
+- **Teoría del "Gran Empujón" (Big Push):** P. Rosenstein-Rodan argumenta que los países pobres necesitan un choque masivo de inversión simultánea en diversos sectores para superar las indivisibilidades de la oferta y demanda.
+- **Crecimiento Equilibrado (Nurkse):** Necesidad de ampliar el tamaño del mercado mediante inversiones sincronizadas que generen su propia demanda.
+
+### Postulados Fundamentales de la Modernización
+Esta teoría se asienta sobre cinco pilares que definen su lógica operativa, cada uno con una justificación técnica y ejemplos históricos:
+
+a) **Desarrollo = Crecimiento del PNB per cápita:** El éxito se mide exclusivamente por la capacidad de producir riqueza monetaria por habitante.
+   *   *Por qué:* Se asume que el bienestar social se deriva automáticamente del poder adquisitivo.
+   *   *Ejemplo:* El enfoque de Corea del Sur en los años 60, donde se priorizó el crecimiento agresivo del PNB antes que cualquier reforma distributiva.
+b) **Subdesarrollo como "Atraso Relativo":** Los países pobres no tienen un problema estructural, sino simplemente un retraso cronológico respecto al "Norte".
+   *   *Por qué:* Los países desarrollados ya pasaron por lo mismo; solo se necesita replicar sus pasos.
+   *   *Ejemplo:* Ver a los países africanos actuales como versiones "en etapa 1 o 2" de lo que fue Inglaterra en el siglo XVIII.
+c) **Industrialización como Imperativo:** No hay desarrollo sin fábricas; la agricultura es sinónimo de atraso.
+   *   *Por qué:* La industria tiene mayores rendimientos y permite la especialización técnica.
+   *   *Ejemplo:* Los planes de fomento industrial en el sudeste asiático orientados a la producción de manufacturas ligeras.
+d) **Estado y Planificación Indicativa:** El Estado debe guiar la economía mediante planes estratégicos para evitar fallos de mercado iniciales.
+   *   *Por qué:* El capital es escaso y debe asignarse a sectores con mayores encadenamientos.
+   *   *Ejemplo:* Los Planes Quinquenales de la India o los planes de desarrollo estratégico en Francia tras la posguerra.
+e) **Defensa del Ahorro Externo:** El capital nacional es insuficiente, por lo que se requiere inversión extranjera y ayuda oficial para el desarrollo.
+   *   *Por qué:* La ayuda externa actúa como el "activador" necesario para iniciar el ciclo de inversión.
+   *   *Ejemplo:* El Plan Marshall en Europa o los créditos masivos del Banco Mundial para grandes represas en países en desarrollo.
+
+### La Trampa de la Pobreza y el Círculo Vicioso
+Autores como **G. Myrdal, H. Singer y R. Nurkse** sistematizaron por qué los países no logran despegar por sí solos mediante la doctrina del **Círculo Vicioso de la Pobreza**.
+
+> [!IMPORTANT]
+> **La Lógica del Círculo:** Un país es pobre porque tiene una renta baja $\rightarrow$ al tener renta baja, no hay capacidad de ahorro $\rightarrow$ sin ahorro no hay capital para invertir $\rightarrow$ sin inversión no hay productividad $\rightarrow$ la baja productividad mantiene la renta baja.
+
+**Mecanismo de Ruptura:** La única forma de salir de esta trampa es rompiendo uno de sus eslabones. La modernización propone que el eslabón más débil es el del **ahorro**, el cual puede romperse mediante la entrada masiva de **capital externo** (ayudas o préstamos), permitiendo que la inversión aumente sin necesidad de reducir el consumo de subsistencia de la población.
+
+### Fundamentos Sociológicos: Smelser y Coleman
+La modernización no es solo un fenómeno económico, sino una transformación social profunda. Dos autores clave definen esta transición:
+
+#### 1. Neil Smelser: Diferenciación e Integración
+Smelser sostiene que la modernización implica un proceso de **diferenciación estructural**, donde una unidad social unificada se divide en múltiples unidades especializadas.
+
+- **Diferenciación:** Las funciones que antes cumplía una sola institución (como la familia, que era unidad de producción, educación y religión) se separan. La economía se traslada a la fábrica, la educación a la escuela y la política al Estado.
+- **El Reto de la Integración:** Al separarse las partes, la sociedad corre el riesgo de fragmentarse. Por ello, Smelser destaca que el desarrollo requiere de nuevas instituciones de **integración** (marcos legales, asociaciones profesionales, sistemas de seguridad social) para coordinar las partes diferenciadas.
+- **Ejemplo:** En una sociedad tradicional, el "estatus" es heredado (adscripción); en una moderna, se diferencia el rol laboral del rol familiar, requiriendo contratos y leyes para regular la relación empleado-empleador.
+
+#### 2. James Coleman: Capacidad Funcional y Modernidad
+Para Coleman, la modernidad se define por un aumento drástico en la **Capacidad Funcional** del sistema social.
+
+- **¿Qué implica lo moderno?:** Una sociedad moderna es aquella capaz de movilizar recursos humanos y materiales para alcanzar objetivos colectivos con una eficiencia que las sociedades tradicionales no poseen.
+- **Ejemplos de Capacidad Funcional:** La creación de una burocracia técnica capaz de gestionar impuestos a nivel nacional, o un sistema de salud que coordine miles de especialistas para erradicar una enfermedad.
+- **Problemas de Integración:** Irónicamente, a mayor capacidad funcional y especialización, surge el problema de la **"desarticulación"**. Las instituciones modernas enfrentan crisis de comunicación y conflicto de intereses entre sectores (ej. el sector financiero chocando con el industrial), lo que genera tensiones que el sistema debe resolver constantemente mediante la negociación política avanzada.
+
+> [!WARNING]
+> **Crítica Estructural:** El fracaso de este modelo en el Tercer Mundo se debió a que ignoró que el subdesarrollo no era una etapa "natural" de atraso, sino una posición estructural dentro de un sistema internacional ya dominado por centros industrializados (Desarrollo del Subdesarrollo).
+
+## 2. Teoría Estructuralista (Piedra Angular)
+El estructuralismo surge como una alternativa metodológica que estudia el sistema como un todo.
+
+- **Modelo Centro-Periferia:** La piedra angular del pensamiento de la CEPAL. 
+- **Tesis Prebisch-Singer:** Identifica una tendencia al deterioro de los términos de intercambio (los productos primarios pierden valor frente a las manufacturas).
+- **Estrategia:** Promueve la **Industrialización por Sustitución de Importaciones (ISI)** mediante la intervención estatal y el proteccionismo.
+
+```{mermaid}
+graph LR
+    A[Centro: Tecnología y Manufactura] -- Manufacturas (Caro) --> B(Periferia: Materias Primas)
+    B -- Recursos Primarios (Barato) --> A
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+```
+
+### El Neoestructuralismo (Años 90)
+Tras la "Década Perdida" de los 80, la CEPAL reformula su tesis bajo el liderazgo de **Fernando Fajnzylber**.
+- **El Casillero Vacío:** Tesis que identifica que América Latina crecía pero no lograba equidad social (alto Gini). 
+- **Propuesta:** Transformación productiva con equidad e industrialización por promoción de exportaciones.
+- **Osvaldo Sunkel:** Fomenta el "Desarrollo desde dentro", priorizando la acumulación interna frente a la dependencia financiera.
+
+```{mermaid}
+graph TD
+    A[Crecimiento Económico] --> B{Equidad Social?}
+    B -- No --> C[Casillero Vacío: El drama de AL]
+    B -- Sí --> D[Desarrollo Integral]
+    style C fill:#f66,stroke:#333,stroke-width:4px
+```
+
+## 3. Teoría Neomarxista
+Propone que el subdesarrollo no es un estado previo, sino un **proceso** generado por el capitalismo global.
+- **Excedente Económico:** El subdesarrollo es la continua extracción del excedente de la periferia hacia el centro.
+- **Intercambio Desigual:** Las relaciones comerciales bloquean el desarrollo industrial indígena.
+
+### Variantes de la Dependencia
+Es vital diferenciar entre las dos grandes corrientes de los años 60:
+1. **Dependencia Estructuralista (Cardoso/Faletto):** El desarrollo es posible pero "dependiente" y asociado.
+2. **Dependencia Neomarxista (Gunder Frank/Dos Santos):** El desarrollo bajo el capitalismo es **imposible**. Se requiere la ruptura total (revolución).
+
+### Tesis Avanzadas
+- **Samir Amin y la "Desconexión":** Propone que los países del sur deben "desconectarse" de la lógica del mercado mundial capitalista para centrarse en sus propias necesidades.
+- **Immanuel Wallerstein (Sistemas-Mundo):** El capitalismo es un sistema único global con un centro, una semi-periferia y una periferia, donde la movilidad entre estratos es limitada por la estructura del sistema.
+
+# Hallazgos sobre el Subdesarrollo (Sílabo 1.2)
+El texto identifica características estructurales clave:
+1. **Economías Duales:** Coexistencia de un sector moderno exportador y uno tradicional de subsistencia.
+2. **Dependencia Tecnológica:** Necesidad de importar maquinaria y conocimiento del centro.
+3. **Bloqueo de Dinámica Propia:** Incapacidad de generar crecimiento autónomo sin reformas estructurales.
+
+---
+
+# El Desarrollo Alternativo y el Relatorio de Uppsala
+A partir de los años 70, surge una crítica al enfoque exclusivamente economicista, cristalizada en el *Relatorio de Uppsala*.
+
+## Los 5 Pilares del Desarrollo Alternativo
+1. **Igualitario:** Orientado a la satisfacción de necesidades básicas (materiales y no materiales).
+2. **Endógeno:** Que nace del corazón de cada sociedad y sus valores.
+3. **Autónomo:** Basado en la confianza en los propios recursos y energía social.
+4. **Ecológico:** Uso racional de la biosfera y respeto a los límites ecosistémicos.
+5. **Transformación Estructural:** Autogestión y participación en la toma de decisiones.
+
+## Dimensiones Emergentes
+- **Ecodesarrollo (Desarrollo Sostenible):** Equilibrio presente-futuro.
+- **Etnodesarrollo:** Inclusión de elementos étnicos y culturales (Indigenismo, Panafricanismo).
+- **Endodesarrollo (Local):** La importancia del **Territorio** (geografía, cultura local) como actor del desarrollo.
+
+---
+
+# Geopolítica y Orden Internacional
+Tres informes fundamentales marcaron la discusión sobre el orden económico global:
+
+| Informe | Año | Tesis Principal |
+|---------|-----|-----------------|
+| **Informe R.I.O.** | 1976 | Planificación de la economía mundial desde las Naciones Unidas. |
+| **Informe Brandt** | 1980 | Intervencionismo keynesiano para corregir imperfecciones del mercado global. |
+| **Informe Nyerere** | 1990 | Responsabilidad exclusiva del Sur; el Norte solo debe ser receptivo y cooperar. |
+
+---
+
+# El Desarrollo Humano (PNUD)
+Reactualización del enfoque de necesidades básicas articulado por Amartya Sen y el PNUD a través del **IDH**, midiendo:
+- **Salud:** Longevidad y esperanza de vida.
+- **Educación:** Alfabetización y escolarización.
+- **Economía:** Nivel de renta (PIB per cápita PPA).
+
+# Referencias
+::: {#refs}
+:::

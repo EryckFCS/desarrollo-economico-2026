@@ -1,0 +1,97 @@
+---
+title: "Síntesis y Comparativa Teórica: Unidad 1"
+subtitle: "Fundamentos y Contexto del Desarrollo Económico"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-21"
+format:
+  html:
+    toc: true
+    theme: flatly
+---
+
+# Introducción
+Este documento consolida los hallazgos de las lecturas críticas de la Unidad 1 y los vincula directamente con los contenidos del sílabo. El objetivo es proporcionar una visión integrada de las teorías que definen el campo de la Economía Política del Desarrollo.
+
+# Cronología e Hitos del Pensamiento (1940-1990)
+El desarrollo como disciplina ha evolucionado a través de hitos internacionales clave:
+
+- **1940-1950:** Surgimiento de los **Pioneros del Desarrollo** (Rostow, Nurkse, Prebisch). Ruptura de la Monoeconomía.
+- **1960:** Auge del **Estructuralismo** de la CEPAL y la estrategia ISI.
+- **1970:** Relatorio de **Uppsala** y el surgimiento del Desarrollo Alternativo (necesidades básicas).
+- **1976:** **Informe R.I.O.** (Hacia un Nuevo Orden Económico Internacional - NOEI).
+- **1980:** **Informe Brandt** y el "Keynesianismo Global". Inicio de la contraofensiva Neoliberal.
+- **1990:** **Informe Nyerere** (Desafío del Sur) y nacimiento del **Desarrollo Humano** (PNUD).
+
+---
+
+# Comparativa de Tesis Fundamentales
+Basado en la tipología de Hidalgo-Capitán, podemos resumir el debate en dos preguntas eje:
+
+| Dimensión | Pregunta de Investigación | Postura Ortodoxa (Neoliberal) | Postura Heterodoxa (Estructuralista) |
+|-----------|---------------------------|--------------------------------|--------------------------------------|
+| **Monoeconomía** | ¿La teoría económica es universal? | **Sí:** Aplicable a todos. | **No:** Caso especial (país desarrollado). |
+| **Beneficio Mutuo** | ¿El comercio beneficia a todos? | **Sí:** Ventajas comparativas. | **No:** Intercambio desigual / Deterioro. |
+
+# Características del Subdesarrollo (Sílabo 1.2)
+Sintetizando las lecturas de *Retrospectiva* e *Hidalgo-Capitán*, el subdesarrollo se caracteriza por:
+
+1. **Heterogeneidad Estructural:** Coexistencia de niveles de productividad radicalmente distintos en la misma economía.
+2. **Dependencia Externa:** Tanto financiera como tecnológica y cultural, vinculada al dinamismo del "Centro".
+3. **Especialización Primaria:** Inserción en el mercado mundial como proveedores de materias primas con valor decreciente.
+4. **Desequilibrios Macroeconómicos:** Tendencia al déficit crónico en la balanza de pagos e inflación estructural.
+
+# Matriz Maestra Comparativa: Enfoques del Desarrollo
+
+| Dimensión | Enfoque Imitativo (Modernización) | Enfoque Transformador (Estructuralismo) | Enfoque Humano (Alternativo) |
+|-----------|----------------------------------|-----------------------------------------|------------------------------|
+| **Meta Final** | Industrialización Masiva | Autonomía y Cambio Estructural | Ampliación de Capacidades |
+| **Rol del Estado**| Facilitador de Infraestructura | Planificador y Empresario | Garante de Necesidades Básicas |
+| **Motor Externo** | Inversión Extranjera / Ayuda | Comercio Justo / Protección | Cooperación Endógena |
+| **Visión del Hombre**| *Homo Economicus* | Agente Social Colectivo | Sujeto con Necesidades y Derechos |
+| **Referente** | Walt Rostow | Raúl Prebisch | Amartya Sen / Relatorio Uppsala |
+
+## Visualización: Dinámicas Contrapuestas
+
+```{mermaid}
+graph TD
+    subgraph "Lógica de la Modernización (Lineal)"
+    M1[Tradición] --> M2[Inversión/Ayuda]
+    M2 --> M3[Despegue]
+    M3 --> M4[Madurez]
+    M4 --> M5[Consumo]
+    end
+
+    subgraph "Lógica Estructuralista (Circular/Asimétrica)"
+    C[Centro: Alta Productividad] -- Bienes Industriales ($$$) --> P
+    P[Periferia: Baja Productividad] -- Materias Primas ($) --> C
+    P -- Deterioro Términos Intercambio --> P
+    end
+```
+
+## Los 5 Pilares del Desarrollo "Bio-Social" (Uppsala)
+Para que un proceso sea considerado desarrollo alternativo, debe ser:
+1. **Igualitario** (Social)
+2. **Endógeno** (Cultural)
+3. **Autónomo** (Político)
+4. **Ecológico** (Ambiental)
+5. **Transformador** (Estructural)
+
+# La Globalización en Disputa (Hacia el Siglo XXI)
+El debate contemporáneo se centra en cómo las escuelas responden a la integración global:
+
+- **Visión Estructuralista (CEPAL):** La globalización es una **oportunidad condicionada**. Se requiere que el Estado fortalezca las instituciones nacionales para aprovechar las ventajas competitivas y mitigar los choques externos.
+- **Visión Neomarxista (Samir Amin):** La globalización es un **"Apartheid Global"**. Propone la **desconexión** del sur para evitar que la periferia siga financiando el desarrollo del centro mediante la trasferencia de excedentes.
+- **Visión Neoliberal:** La globalización es la culminación del proceso de eficiencia asignativa; cualquier bloqueo a la misma genera pobreza por ineficiencia.
+
+# Influencia Técnica en Organismos Internacionales
+No todas las teorías tienen el mismo peso en la toma de decisiones global:
+
+| Nivel de Influencia | Teoría Dominante | Organismo / Contexto |
+|---------------------|------------------|----------------------|
+| **Hegemónica** | Neoliberalismo / Neoinstitucionalismo | Banco Mundial, FMI, OMC. |
+| **Preponderante** | Desarrollo Humano (Alternativa) | PNUD, UNESCO, UNICEF. |
+| **Regional (AL)** | Neoestructuralismo | CEPAL, Mercosur, CAF. |
+| **Disidente** | Neomarxismo / Sistemas-Mundo | Movimientos sociales, Foro Social Mundial. |
+
+---
+La Unidad 1 demuestra que el desarrollo no es meramente un aumento del PIB (crecimiento), sino una transformación profunda de las estructuras productivas e institucionales que permiten la soberanía económica y el bienestar social.

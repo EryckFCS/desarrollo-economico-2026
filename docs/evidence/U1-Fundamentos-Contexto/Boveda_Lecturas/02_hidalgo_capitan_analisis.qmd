@@ -1,0 +1,112 @@
+---
+title: "Análisis Crítico: Economía Política del Desarrollo"
+subtitle: "Hidalgo-Capitán"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-21"
+lang: es-ES
+bibliography: 
+  - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
+nocite: |
+  @tezanos2010estudio, @rostow1960stages
+format:
+  html:
+    toc: true
+    code-fold: true
+    theme: lux
+---
+
+# Marco Conceptual
+*Análisis basado en la lectura: "2 Hidalgo-Capitán Economia_politica_del_desarrollo.pdf"*
+
+Hidalgo-Capitán propone entender el desarrollo bajo el enfoque de **paradigmas competitivos**, donde diferentes comunidades epistemológicas (economistas, sociólogos, etc.) definen la validez de sus postulados.
+
+# Surgimiento de la Economía Política del Desarrollo
+El autor sitúa el nacimiento de la especialidad en los **años 40 y 50**, debido a cuatro factores fundamentales:
+1. **Revolución Keynesiana:** Rompió el marginalismo neoclásico y permitió teorías adaptadas a situaciones concretas (brecha de pleno empleo).
+2. **Fin de la Monoeconomía:** Aceptación de que los países subdesarrollados tienen características que requieren una ciencia económica específica.
+3. **Estadística y Contabilidad Nacional:** La cuantificación evidenció las brechas abismales en niveles de vida entre naciones.
+4. **Contexto Político:** El proceso de descolonización y la Guerra Fría forzaron a las potencias a teorizar sobre el desarrollo de los países pobres.
+
+# Geografía de la Producción del Pensamiento
+Hidalgo-Capitán identifica que las teorías no surgen en el vacío, sino en centros de producción específicos:
+
+| Escuela | Centros de Producción Principales |
+|---------|-----------------------------------|
+| **Neoliberal** | LSE (Londres), Oxford, Cambridge, Chicago, MIT. |
+| **Neomarxista** | Harvard, Nueva Escuela de Inv. Social, UNAM (México), Universidades de Chile y Brasilia, París, Ámsterdam. |
+| **Estructuralista** | CEPAL (Santiago de Chile), BNDES (Brasil). |
+| **Islamista** | Centros en Egipto, Pakistán e Irán. |
+| **Alternativa** | ONGs internacionales, Foro Social Mundial, PNUD. |
+
+# Raíces e Influencias Ideológicas
+| Escuela | Influencia Primaria |
+|---------|---------------------|
+| **Neomarxista** | Karl Marx, Hilferding, Rosa Luxemburg, Lenin. |
+| **Estructuralista** | Keynes, Prebisch, Furtado (Influencia de la economía del equilibrio). |
+| **Alternativa** | Gandhi, Kumarappa, Amartya Sen. |
+| **Ortodoxa** | Adam Smith, David Ricardo (Ventajas Comparativas). |
+
+---
+
+# Tipología de las 7 Escuelas del Desarrollo
+
+El autor utiliza dos criterios fundamentales de Hirschman para clasificar el pensamiento económico sobre el desarrollo:
+1. **Tesis de la Monoeconomía:** ¿Es aplicable la teoría económica convencional (neoclásica/keynesiana) de forma universal tanto en países desarrollados como subdesarrollados?
+2. **Tesis del Beneficio Mutuo:** ¿Generan las relaciones comerciales internacionales beneficios para ambas partes?
+
+## Matriz de Clasificación (Hidalgo-Capitán)
+
+| Escuela | Monoeconomía | Beneficio Mutuo |
+|---------|--------------|-----------------|
+| **Neoliberal** | Acepta | Acepta |
+| **Modernización** | Rechaza (Caso especial) | Acepta |
+| **Estructuralista** | Rechaza | Rechaza |
+| **Neomarxista** | Acepta (Marxismo universal) | Rechaza |
+| **Alternativa** | Acepta (Síntesis) | Condiciona |
+| **Neoinstitucionalista** | Rechaza (Varía x Instituciones) | Condiciona |
+| **Islamista** | Rechaza | Condiciona (Sharía) |
+
+## Matriz de Estrategias y Financiación (Extendida)
+
+| Escuela | Concepción del Subdesarrollo | Variable Clave | Estrategia Política | Financiación |
+|---------|------------------------------|----------------|---------------------|--------------|
+| **Modernización** | Situación de atraso relativo | Capital (Inversión) | Planificación indicativa | Impuestos/Actividad exportadora |
+| **Estructuralista** | Proceso de bajo dinamismo | Transformación estructural | Industrialización (ISI) | Canalización estatal de divisas |
+| **Neomarxista** | Proceso de extracción (explotación) | Control del excedente | Revolución nacional-popular | Expropiación del excedente |
+| **Neoliberal** | Situación de ineficiencia asignativa | Instituciones de mercado | Liberalización y ajuste | Ahorro privado/Mercado financiero |
+| **Neoinstitucionalista** | Marco institucional inadecuado | Instituciones regulatorias | Reforma institucional | Ahorro privado regulado |
+| **Islamista** | Alejamiento de la ley de Dios | Ley Islámica (Sharía) | Islamización del Estado | Impuestos islámicos/Zakat |
+| **Alternativa** | Insatisfacción de necesidades | Capacidades humanas | Provisión de bienes básicos | Cooperación internacional/ONGs |
+
+# Profundización: La Escuela de la Modernización
+
+Hidalgo-Capitán sitúa a la Modernización como una escuela de transición clave. Su posición en la matriz de Hirschman es particular:
+
+1.  **Rechazo de la Monoeconomía:** A diferencia de los Neoliberales, los teóricos de la modernización (como Rostow o Lewis) argumentan que las leyes económicas de los países desarrollados no se aplican directamente a los países "atrasados". El subdesarrollo requiere una **teoría económica específica** que gestione la transición desde la tradición a la modernidad.
+2.  **Aceptación del Beneficio Mutuo:** Coinciden con los liberales en que la inserción en el mercado mundial es positiva. La inversión extranjera, el comercio y la ayuda internacional funcionan como el combustible necesario para el "despegue".
+
+### El Determinismo de la Acumulación
+Para esta escuela, el subdesarrollo es simplemente una **falta de capital**. Si se inyecta suficiente ahorro e inversión (variable económica), se desencadenará automáticamente un cambio en las estructuras sociales y políticas (determinismo económico).
+Un punto clave de Hidalgo-Capitán es cómo cada escuela percibe el **determinismo**:
+
+- **Modernización / Estructuralista / Neomarxista:** Las variables **económicas** determinan las políticas y sociales.
+- **Neoliberal:** Las variables **políticas y culturales** determinan las económicas.
+- **Islamista:** Las variables **político-religiosas** son el motor de lo económico.
+- **Alternativa:** Las variables económicas, políticas, sociales y **ambientales** se influyen mutuamente (enfoque holístico).
+
+```{mermaid}
+graph TD
+    subgraph "Tesis de Hidalgo-Capitán"
+    A[Economía Política del Desarrollo] --> B{Monoeconomía?}
+    B -- Sí --> C[Neoclasicismo/Marxismo]
+    B -- No --> D[Particularismo/Institucionalismo]
+    A --> E{Beneficio Mutuo?}
+    E -- Sí --> F[Modernización/Liberalismo]
+    E -- No --> G[Estructuralismo/Dependencia]
+    E -- Condicionado --> H[Alternativa/Institucional]
+    end
+```
+
+# Referencias
+::: {#refs}
+:::

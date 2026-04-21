@@ -12,6 +12,7 @@ Para mantener la operatividad y limpieza del repositorio, los recursos se organi
 
 - **[Sílabo de la Materia](docs/syllabus/SYLLABUS.pdf)**: Guía oficial y cronograma.
 - **[Lecturas y Referencias](docs/readings/)**: Repositorio de libros, artículos y papers de la materia.
+- **[Índice documental por unidades](docs/README.md)**: Navegación por el sílabo y por las evidencias de cada unidad.
 - **[Arquitectura](ARCHITECTURE.md)**: Diseño técnico del repositorio.
 - **[Roadmap](ROADMAP.md)**: Seguimiento de unidades y tareas.
 
@@ -20,14 +21,18 @@ Para mantener la operatividad y limpieza del repositorio, los recursos se organi
 ## 🚀 Guía de Inicio
 
 ### 1. Entorno de Datos
+
 Utilizamos `uv` para garantizar la reproducibilidad de los modelos de desarrollo:
+
 ```bash
 uv sync
 source .venv/bin/activate
 ```
 
 ### 2. Ejecución de Modelos
+
 Las tareas se estructuran por unidades del sílabo:
+
 ```bash
 python src/orchestration/M01-U1-LDE-Master_Build.py
 ```

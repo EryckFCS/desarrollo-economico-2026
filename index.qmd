@@ -11,7 +11,7 @@ Este repositorio contiene todos los informes, análisis y datos relacionados con
 ## Objetivos del Repositorio
 
 1.  Mantenimiento de reportes reproducibles vía Quarto.
-2.  Gestión de datos con Python (uv).
+2.  Gestión de datos mediante el gestor uv.
 3.  Control de versiones para el seguimiento académico.
 
 ## Estructura

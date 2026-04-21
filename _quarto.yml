@@ -7,16 +7,25 @@ book:
   author: "Erick Fabricio Condoy Seraquive"
   date: last-modified
 
+university: "UNIVERSIDAD NACIONAL DE LOJA"
+faculty: "FACULTAD JURÍDICA, SOCIAL Y ADMINISTRATIVA"
+school: "CARRERA DE ECONOMÍA"
+course: "DESARROLLO ECONÓMICO"
+assignment: "Evidencia de Aprendizaje - Unidad 1"
+professor: "Econ. Maria Gabriela Moreno Hurtado" # Placeholder institucional
+submission_date: "2026-04-21"
+
 format:
   html:
     theme: cosmo
     toc: true
     number-sections: true
   pdf:
-    documentclass: article
-    toc: true
+    pdf-engine: lualatex
+    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    toc: false
     number-sections: true
-    mainfont: "Liberation Serif"
+    citeproc: true
   docx:
     toc: true
     number-sections: true
@@ -26,5 +35,6 @@ execute:
   warning: false
   engine: jupyter
 
-bibliography: references.bib
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+bibliography: 
+  - /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/references.bib
+csl: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/apa_7.csl
