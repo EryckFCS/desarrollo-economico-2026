@@ -39,3 +39,11 @@ python src/orchestration/M01-U1-LDE-Master_Build.py
 
 ---
 *LDE - Centro de Investigación Econométrica. UNL.*
+
+## 📄 Renderizado y Reporteo (Quarto)
+
+La arquitectura de documentos sigue el **Estándar Nivel 5**:
+- El archivo `_quarto.yml` reside en la **raíz del repositorio**.
+- Todo el output generado (HTML/PDF intermedios, dependencias JS/CSS) se concentra automáticamente en el directorio `_site/` o `dist/`.
+- No existen carpetas `*_files/` ad-hoc. Todo está cubierto por el `.gitignore` canónico.
+- Para previsualizar el sitio completo: `quarto preview` desde la raíz.
