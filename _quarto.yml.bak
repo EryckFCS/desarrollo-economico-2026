@@ -1,0 +1,31 @@
+project:
+  output-dir: dist
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - style/custom_theme.scss
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    toc: false
+    number-sections: true
+    colorlinks: true
+    linkcolor: "blue"
+    citecolor: "blue"
+    urlcolor: "blue"
+
+citeproc: true
+lang: es-ES
+
+execute:
+  echo: false
+  warning: false
+  engine: jupyter
+  freeze: auto
+
+csl: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/apa_7.csl
+

@@ -1,12 +1,17 @@
 ---
 title: "Síntesis y Comparativa Teórica: Unidad 1"
-subtitle: "Fundamentos y Contexto del Desarrollo Económico"
+subtitle: Fundamentos y Contexto del Desarrollo Económico
 author: "Erick Fabricio Condoy Seraquive"
 date: "2026-04-21"
+assignment: Síntesis Teórica Unidad 1
+submission_date: "2026-04-21"
+ojs-engine: true
 format:
   html:
     toc: true
-    theme: flatly
+    theme: [flatly, ../../../../style/custom_theme.scss]
+    execute:
+      freeze: auto
 ---
 
 # Introducción
@@ -40,8 +45,40 @@ Sintetizando las lecturas de *Retrospectiva* e *Hidalgo-Capitán*, el subdesarro
 3. **Especialización Primaria:** Inserción en el mercado mundial como proveedores de materias primas con valor decreciente.
 4. **Desequilibrios Macroeconómicos:** Tendencia al déficit crónico en la balanza de pagos e inflación estructural.
 
-# Matriz Maestra Comparativa: Enfoques del Desarrollo
+# Matriz Maestra Interactiva: Enfoques del Desarrollo
 
+::: {.content-visible when-format="html"}
+> [!TIP]
+> **Exploración Dinámica**: Selecciona una dimensión para comparar cómo cada enfoque aborda el problema del desarrollo.
+
+```{ojs}
+//| echo: false
+viewof dimension = Inputs.select(
+  ["Meta Final", "Rol del Estado", "Motor Externo", "Visión del Hombre", "Referente"], 
+  {label: "Seleccionar Dimensión de Análisis:", value: "Meta Final"}
+)
+
+data_matriz = [
+  {dim: "Meta Final", mod: "Industrialización Masiva", est: "Autonomía y Cambio Estructural", alt: "Ampliación de Capacidades"},
+  {dim: "Rol del Estado", mod: "Facilitador de Infraestructura", est: "Planificador y Empresario", alt: "Garante de Necesidades Básicas"},
+  {dim: "Motor Externo", mod: "Inversión Extranjera / Ayuda", est: "Comercio Justo / Protección", alt: "Cooperación Endógena"},
+  {dim: "Visión del Hombre", mod: "Homo Economicus", est: "Agente Social Colectivo", alt: "Sujeto con Necesidades y Derechos"},
+  {dim: "Referente", mod: "Walt Rostow", est: "Raúl Prebisch", alt: "Amartya Sen / Uppsala"}
+]
+
+filtrado = data_matriz.filter(d => d.dim === dimension)[0]
+
+md`
+| Teoría | Descripción del Enfoque para **${dimension}** |
+|:---|:---|
+| **Modernización** | ${filtrado.mod} |
+| **Estructuralismo** | ${filtrado.est} |
+| **Alternativo** | ${filtrado.alt} |
+`
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 | Dimensión | Enfoque Imitativo (Modernización) | Enfoque Transformador (Estructuralismo) | Enfoque Humano (Alternativo) |
 |-----------|----------------------------------|-----------------------------------------|------------------------------|
 | **Meta Final** | Industrialización Masiva | Autonomía y Cambio Estructural | Ampliación de Capacidades |
@@ -49,24 +86,54 @@ Sintetizando las lecturas de *Retrospectiva* e *Hidalgo-Capitán*, el subdesarro
 | **Motor Externo** | Inversión Extranjera / Ayuda | Comercio Justo / Protección | Cooperación Endógena |
 | **Visión del Hombre**| *Homo Economicus* | Agente Social Colectivo | Sujeto con Necesidades y Derechos |
 | **Referente** | Walt Rostow | Raúl Prebisch | Amartya Sen / Relatorio Uppsala |
+:::
+
+::: {.content-visible when-format="html"}
+## Simulador de Inversión: El "Take-off" de Rostow
+> [!NOTE]
+> Según Rostow, el despegue ocurre cuando la inversión neta supera el 10% del ingreso nacional. Mueve el selector para ver el estado de la economía.
+
+```{ojs}
+//| echo: false
+viewof ahorro = Inputs.range([0, 25], {label: "Tasa de Ahorro/Inversión (% del PNB):", step: 1, value: 5})
+
+estado_economia = {
+  if (ahorro < 5) return {msg: "SOCIEDAD TRADICIONAL: Techo de productividad infranqueable.", color: "red"};
+  if (ahorro < 10) return {msg: "PRECONDICIONES: Gestación de cambios, pero sin crecimiento autosostenido.", color: "orange"};
+  if (ahorro < 15) return {msg: "DESPEGUE (TAKE-OFF): El crecimiento se vuelve el estado normal de la sociedad.", color: "green"};
+  return {msg: "MADUREZ / ALTO CONSUMO: Diversificación y bienestar masivo.", color: "blue"};
+}
+
+html`<div style="padding: 15px; border-left: 5px solid ${estado_economia.color}; background: #f8f9fa;">
+  <strong style="color: ${estado_economia.color}">${estado_economia.msg}</strong>
+</div>`
+```
+:::
 
 ## Visualización: Dinámicas Contrapuestas
 
+::: {layout-ncol=2}
+
+### Lógica de la Modernización (Lineal)
 ```{mermaid}
+%%{init: {'theme': 'neutral', 'themeVariables': { 'fontSize': '16px'}}}%%
 graph TD
-    subgraph "Lógica de la Modernización (Lineal)"
-    M1[Tradición] --> M2[Inversión/Ayuda]
+    M1[Tradición] --> M2[Ayuda]
     M2 --> M3[Despegue]
     M3 --> M4[Madurez]
     M4 --> M5[Consumo]
-    end
-
-    subgraph "Lógica Estructuralista (Circular/Asimétrica)"
-    C[Centro: Alta Productividad] -- Bienes Industriales ($$$) --> P
-    P[Periferia: Baja Productividad] -- Materias Primas ($) --> C
-    P -- Deterioro Términos Intercambio --> P
-    end
 ```
+
+### Lógica Estructuralista (Asimétrica)
+```{mermaid}
+%%{init: {'theme': 'neutral', 'themeVariables': { 'fontSize': '16px'}}}%%
+graph TD
+    C[Centro] -- Industrias --> P[Periferia]
+    P -- Materias Primas --> C
+    P -- Deterioro --> P
+```
+
+:::
 
 ## Los 5 Pilares del Desarrollo "Bio-Social" (Uppsala)
 Para que un proceso sea considerado desarrollo alternativo, debe ser:

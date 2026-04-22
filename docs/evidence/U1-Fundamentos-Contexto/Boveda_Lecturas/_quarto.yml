@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: dist
+
+book:
+  title: "Desarrollo Económico - 2026"
+  author: "Erick Fabricio Condoy Seraquive"
+  date: "2026-04-21"
+  chapters:
+    - index.qmd
+    - part: "Unidad 1: Fundamentos y Contexto"
+      chapters:
+        - docs/evidence/U1-Fundamentos-Contexto/Boveda_Lecturas/01_retrospectiva_desarrollo.qmd
+        - docs/evidence/U1-Fundamentos-Contexto/Boveda_Lecturas/02_hidalgo_capitan_analisis.qmd
+        - docs/evidence/U1-Fundamentos-Contexto/Boveda_Lecturas/03_sintesis_teorica_u1.qmd
+        - docs/evidence/U1-Fundamentos-Contexto/Boveda_Lecturas/04_analisis_afganistan_modernizacion.qmd
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - style/custom_theme.scss
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    toc: false
+    number-sections: true
+    colorlinks: true
+    linkcolor: "blue"
+    citecolor: "blue"
+    urlcolor: "blue"
+  docx:
+    toc: true
+    number-sections: true
+
+citeproc: true
+lang: es-ES
+
+execute:
+  echo: false
+  warning: false
+  engine: jupyter
+  freeze: auto
+
+csl: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/apa_7.csl
+

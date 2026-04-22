@@ -1,0 +1,15 @@
+# Metadatos Compartidos - Unidad 1 (Lecturas)
+
+university: UNIVERSIDAD NACIONAL DE LOJA
+faculty: FACULTAD JURÍDICA, SOCIAL Y ADMINISTRATIVA
+school: CARRERA DE ECONOMÍA
+course: DESARROLLO ECONÓMICO
+professor: Econ. Maria Gabriela Moreno Hurtado
+
+format:
+  html:
+    theme:
+      - cosmo
+      - ../../../../style/custom_theme.scss
+  pdf:
+    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex

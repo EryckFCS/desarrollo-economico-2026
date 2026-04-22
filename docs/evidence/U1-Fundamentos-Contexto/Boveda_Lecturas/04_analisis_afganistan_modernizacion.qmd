@@ -20,7 +20,7 @@ format:
 # Introducción
 Este documento analiza el periodo comprendido entre **1921 y 1926** en Afganistán, centrado exclusivamente en el reinado de **Amanullah Khan** tras la independencia de 1919. El objetivo es calificar este periodo según las etapas de Rostow y evaluar el cumplimiento de los 5 postulados fundamentales de la modernización durante el auge de las reformas reformistas (Amani).
 
-# 1. Clasificación según Rostow: Intento de "Precondiciones para el Despegue"
+# Clasificación según Rostow: Intento de "Precondiciones para el Despegue"
 En el rango 1921-1926, Afganistán intentaba romper violentamente con la **Sociedad Tradicional** para entrar en la Etapa 2: **Precondiciones para el Despegue**.
 
 - **Producción:** Aunque seguía siendo predominantemente agrícola, el Estado inició la creación de monopolios comerciales (*shirkats*) para movilizar capital.
@@ -29,7 +29,7 @@ En el rango 1921-1926, Afganistán intentaba romper violentamente con la **Socie
 
 A diferencia del periodo anterior (Habibullah), 1921-1926 representa el punto más alto del **voluntarismo modernista**, donde se intentó forzar la transición a la Etapa 2 mediante decretos reales y planificación central.
 
-# 2. Calificación según los 5 Supuestos de Modernización (Periodo 1921-1926)
+# Calificación según los 5 Supuestos de Modernización (Periodo 1921-1926)
 
 A continuación se evalúa el cumplimiento de los postulados teóricos en las políticas ariesgadas de Amanullah Khan:
 
@@ -38,14 +38,14 @@ A continuación se evalúa el cumplimiento de los postulados teóricos en las po
 *   **Análisis:** En **1922** se introdujo el primer **presupuesto nacional** estructurado, permitiendo al Estado cuantificar sus recursos. La creación del *afghani* en **1923** permitió una política monetaria unificada, requisito previo para medir el crecimiento económico bajo estándares modernos.
 
 ### b) El Subdesarrollo como "Atraso Relativo"
-*   **Cumplimiento:** **Total**.
-*   **Análisis:** La ideología de Amanullah se basaba en la premisa de que Afganistán estaba "atrasado" por su aislamiento. Sus reformas sociales (como el cambio de vestimenta y la educación femenina) eran intentos explícitos de eliminar el estigma de "sociedad medieval" ante la mirada internacional.
+*   **Cumplimiento:** **Alto**.
+*   **Análisis:** Amanullah reconoció explícitamente que Afganistán estaba "atrasado" respecto a Europa. Su gira europea de 1927-1928 (aunque posterior al rango principal) fue la culminación de esta visión: traer la tecnología del "Centro" para acelerar la historia nacional.
 
-### c) Importancia de la Industrialización
-*   **Cumplimiento:** **Prioridad Absoluta**.
-*   **Análisis:** Entre 1921 y 1926 se fundaron las primeras zonas industriales en Kabul. La industrialización no era vista solo como una mejora económica, sino como la base de la soberanía nacional (fábricas de armamento y textiles para reducir la dependencia externa).
+### c) La Industrialización como Eje de la Modernización
+*   **Cumplimiento:** **Parcial (Intento Fallido)**.
+*   **Análisis:** Se intentó la creación de fábricas de textiles y cemento. Sin embargo, la falta de una burguesía nacional y de ahorro interno suficiente limitó esto a enclaves estatales que no lograron transformar la matriz productiva rural.
 
-### d) Papel del Estado y la Planificación
+### d) El Papel del Estado como Motor de Cambio
 *   **Cumplimiento:** **Total**.
 *   **Análisis:** Se promulgó la **primera Constitución (1923)**. El Estado asumió el rol de planificador absoluto: abolió la esclavitud, prohibió el trabajo forzado y reorganizó la administración para centralizar el control, intentando romper la autonomía tribal.
 
@@ -53,7 +53,7 @@ A continuación se evalúa el cumplimiento de los postulados teóricos en las po
 *   **Cumplimiento:** **Alto**.
 *   **Análisis:** Hasta 1919, el Estado dependía de los **subsidios británicos** (ayuda externa política). Amanullah, al buscar la independencia total, intentó sustituir esto con inversión extranjera técnica (misiones alemanas, francesas e italianas) para activar la industria.
 
-# 3. Políticas Implicadas: Antes y Después
+# Políticas Implicadas: Antes y Después
 
 | Dimensión | Antes (1901-1919) | Después (1919-1926) |
 |-----------|-------------------|---------------------|
@@ -62,9 +62,10 @@ A continuación se evalúa el cumplimiento de los postulados teóricos en las po
 | **Educación** | Controlada por el Ulema (Religiosa). | Escuela Habibia (Moderna), instrucción técnica. |
 | **Relaciones Ext.** | Protectorado Británico (Subsidios). | Independencia (Búsqueda de inversión global). |
 
-# 4. Conclusión: El Choque entre Modernidad y Tradición
+# Conclusión: El Choque entre Modernidad y Tradición
 Afganistán (1901-1926) cumple con los supuestos de la modernización desde la cúspide política (el Rey), pero falló en la **integración funcional** (concepto de Coleman). Al intentar imponer la etapa de "Precondiciones" sobre una base social de "Sociedad Tradicional" sin una burocracia sólida, se generó un conflicto que llevó al colapso de las reformas en 1929.
 
 # Referencias
 ::: {#refs}
 :::
+

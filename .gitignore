@@ -24,3 +24,9 @@ htmlcov/
 
 # Specific Exclusions
 Photos*/
+
+# Scratch and Temporary scripts
+scratch/
+render_log*.txt
+*.pdf
+!docs/**/*.pdf

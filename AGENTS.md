@@ -5,13 +5,6 @@
 
 ---
 
-## Constitución
-
-```
-/home/erick-fcs/Capital_Workstation/capital-workstation-libs/.github/copilot-instructions.md
-```
----
-
 ## Identidad del Nodo
 
 | Campo | Valor |
@@ -23,38 +16,53 @@
 | **Período** | Marzo - Agosto 2026 |
 | **Librería Central** | `ecs_quantitative` (capital-workstation-libs) |
 | **Tipo** | Nodo Puro — consumidor, no reimplementa lógica |
-| **RAG** | `global_knowledge` en `~/.capital/brain/vector_store/` |
+| **RAG** | `economic_development` en `~/.capital/brain/vector_store/` |
+
+---
+
+## Capacidades de Inteligencia (v2.0)
+
+Este nodo ha sido elevado al **Nivel 5: Ecosistema Inteligente**, habilitando las siguientes capacidades de inferencia RAG:
+
+1.  **Inferencia Multiautor**: Capacidad de contrastar teorías de desarrollo entre múltiples fuentes indexadas (Ray, Sachs, Stiglitz, CEPAL).
+2.  **Mapeo de Evidencia**: Rastreo automático de conceptos a través de más de 19,000 fragmentos de conocimiento federado.
+3.  **Auditoría Teórica**: Verificación de documentos `.qmd` contra la bibliografía base para detectar vacíos de contenido o inconsistencias.
+4.  **Sincronización Idempotente**: Ingesta masiva de bibliografía con desduplicación automática mediante SHA256.
+
+---
+
+## Doctrina de Configuración y Blindaje (v1.2)
+
+1.  **Gobernanza Quarto**:
+    - Uso estricto de `lualatex` para renderizado institucional.
+    - Metadatos YAML en archivos individuales deben evitar comillas innecesarias en campos de texto para prevenir fallos de parseo en Lua.
+    - El `_quarto.yml` actúa como orquestador de salida, no como almacén de metadatos variables.
+2.  **Higiene del Repositorio**:
+    - Scripts de mantenimiento y sincronización (`scratch/`) deben estar ignorados por Git.
+    - Resultados de logs de renderizado y archivos PDF temporales deben ser excluidos del versionado.
 
 ---
 
 ## Arquitectura de Bóvedas (Vaults)
 
-Este nodo implementa el sistema de **Bóvedas de Conocimiento**, donde cada unidad del sílabo se gestiona como una unidad de evidencia reproducible:
-
-- `docs/evidence/`: Almacén de workshops, informes y síntesis teóricas.
-- `docs/readings/`: Bóveda de lecturas (Hidalgo-Capitán, Retrospectiva del Desarrollo).
-- `docs/syllabus/`: Marco normativo y académico de la materia.
+- `docs/evidence/`: Almacén de workshops y síntesis (Nivel 4-5).
+- `docs/readings/`: Bóveda de lecturas críticas sincronizadas con RAG.
+- `docs/syllabus/`: Marco normativo académico.
 
 ---
 
-## Ley de Nodo Puro (Obligatoria)
-
-1. **No reimplementar** lógica que ya exista en `ecs_quantitative`.
-2. **Importar siempre** desde la librería central.
-3. **RAG**: usar la base central, nunca crear stores locales.
-4. **Bóvedas**: toda evidencia debe seguir el formato Quarto (.qmd) y estar vinculada al índice central.
-
----
-
-## Entorno
+## Entorno y Operativa
 
 ```bash
 uv sync
-uv run python main.py  # o el orquestador correspondiente
+# Ingesta masiva (Texto Puro)
+uv run python scratch/sync_rag_all.py
+# Renderizado de evidencia
+quarto render docs/evidence/... --to pdf
 ```
 
 ---
 
 ## Regla de Oro
 
-> Si algo sirve para otras materias, propónlo para la librería central.
+> El conocimiento acumulado en este nodo es fluido y pertenece a la federación. Úsalo para potenciar otros nodos.

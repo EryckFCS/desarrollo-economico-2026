@@ -7,11 +7,13 @@ bibliography:
   - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
 nocite: |
   @tezanos2010estudio, @rostow1960stages, @smelser1963mechanisms, @coleman1965education
+assignment: Lectura Crítica Retrospectiva
+submission_date: "2026-04-21"
 format:
   html:
     toc: true
     code-fold: true
-    theme: cosmo
+    theme: [cosmo, ../../../../style/custom_theme.scss]
 ---
 
 # Introducción
@@ -33,7 +35,7 @@ El surgimiento de esta especialidad académica en las décadas de 1940 y 1950 fu
 | **Islamistas** | Maududi, Sayid Qutb. |
 | **Alternativos** | Mahatma Gandhi, Joseph Kumarappa. |
 
----
+\newpage
 
 # Teorías del Desarrollo (Sílabo 1.1.1)
 
@@ -164,7 +166,7 @@ El texto identifica características estructurales clave:
 2. **Dependencia Tecnológica:** Necesidad de importar maquinaria y conocimiento del centro.
 3. **Bloqueo de Dinámica Propia:** Incapacidad de generar crecimiento autónomo sin reformas estructurales.
 
----
+\newpage
 
 # El Desarrollo Alternativo y el Relatorio de Uppsala
 A partir de los años 70, surge una crítica al enfoque exclusivamente economicista, cristalizada en el *Relatorio de Uppsala*.
@@ -181,7 +183,7 @@ A partir de los años 70, surge una crítica al enfoque exclusivamente economici
 - **Etnodesarrollo:** Inclusión de elementos étnicos y culturales (Indigenismo, Panafricanismo).
 - **Endodesarrollo (Local):** La importancia del **Territorio** (geografía, cultura local) como actor del desarrollo.
 
----
+\newpage
 
 # Geopolítica y Orden Internacional
 Tres informes fundamentales marcaron la discusión sobre el orden económico global:
@@ -192,7 +194,7 @@ Tres informes fundamentales marcaron la discusión sobre el orden económico glo
 | **Informe Brandt** | 1980 | Intervencionismo keynesiano para corregir imperfecciones del mercado global. |
 | **Informe Nyerere** | 1990 | Responsabilidad exclusiva del Sur; el Norte solo debe ser receptivo y cooperar. |
 
----
+\newpage
 
 # El Desarrollo Humano (PNUD)
 Reactualización del enfoque de necesidades básicas articulado por Amartya Sen y el PNUD a través del **IDH**, midiendo:

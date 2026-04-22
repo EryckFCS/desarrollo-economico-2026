@@ -1,6 +1,6 @@
 ---
 title: "Análisis Crítico: Economía Política del Desarrollo"
-subtitle: "Hidalgo-Capitán"
+subtitle: Hidalgo-Capitán
 author: "Erick Fabricio Condoy Seraquive"
 date: "2026-04-21"
 lang: es-ES
@@ -8,6 +8,8 @@ bibliography:
   - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
 nocite: |
   @tezanos2010estudio, @rostow1960stages
+assignment: Lectura Crítica Hidalgo-Capitán
+submission_date: "2026-04-21"
 format:
   html:
     toc: true
