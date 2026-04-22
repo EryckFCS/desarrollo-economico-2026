@@ -1,0 +1,181 @@
+{
+  "node": "economic_development",
+  "collection": "economic_development",
+  "generated": "2026-04-21",
+  "total_chunks": 16807,
+  "documents": [
+    {
+      "source_id": "ray_dev_econ",
+      "title": "Economía del Desarrollo",
+      "authors": [
+        "Ray, Debraj"
+      ],
+      "year": 1998,
+      "publisher": "Antoni Bosch",
+      "type": "libro",
+      "file": "bibliography/Debraj Ray Economía del desarrollo.pdf",
+      "chunks": 3228,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "dev_2c6fa4cc6bca",
+      "title": "Economic Growth (2ª ed.)",
+      "authors": [
+        "Barro, Robert J.",
+        "Sala-i-Martin, Xavier"
+      ],
+      "year": 2004,
+      "publisher": "MIT Press",
+      "type": "libro",
+      "file": "bibliography/(descargado externamente)",
+      "chunks": 2102,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "dev_031ed41f1105",
+      "title": "Knowledge as a Global Public Good",
+      "authors": [
+        "Stiglitz, Joseph E."
+      ],
+      "year": 1999,
+      "type": "capitulo",
+      "file": "bibliography/(descargado externamente)",
+      "chunks": 1883,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "dev_b835d31d63b0",
+      "title": "La Era del Desarrollo Sostenible",
+      "authors": [
+        "Sachs, Jeffrey D."
+      ],
+      "year": 2015,
+      "publisher": "Deusto",
+      "type": "libro",
+      "file": "bibliography/(descargado externamente)",
+      "chunks": 1488,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "retrospectiva_dev",
+      "title": "Retrospectiva de la Economía del Desarrollo",
+      "authors": [
+        "Desconocido"
+      ],
+      "year": null,
+      "type": "lectura",
+      "file": "bibliography/Lecturas de los contenidos Unidad 1/1 Retrospectiva de la Economia del Desarrollo.pdf",
+      "chunks": 45,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "hidalgo_capitan",
+      "title": "Economía Política del Desarrollo",
+      "authors": [
+        "Hidalgo-Capitán, Antonio Luis"
+      ],
+      "year": 2011,
+      "type": "lectura",
+      "file": "bibliography/Lecturas de los contenidos Unidad 1/2 Hidalgo-Capitán Economia_politica_del_desarrollo.pdf",
+      "chunks": 144,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "teorias_dev",
+      "title": "Teorías del Desarrollo",
+      "authors": [
+        "Desconocido"
+      ],
+      "year": null,
+      "type": "lectura",
+      "file": "bibliography/Lecturas de los contenidos Unidad 1/3 Teorías del Desarrollo.pdf",
+      "chunks": 75,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "estructuralismo_cepal",
+      "title": "El Estructuralismo Latinoamericano y la CEPAL",
+      "authors": [
+        "CEPAL"
+      ],
+      "year": null,
+      "type": "articulo",
+      "file": "bibliography/Estructuralismo-Cepal.pdf",
+      "chunks": 129,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "neoestructuralismo",
+      "title": "Neoestructuralismo",
+      "authors": [
+        "CEPAL"
+      ],
+      "year": null,
+      "type": "articulo",
+      "file": "bibliography/Neoestructuralismo.pdf",
+      "chunks": 43,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "VARIOS_neoestructuralismo",
+      "title": "Serie Neoestructuralismo (6 artículos)",
+      "authors": [
+        "Varios"
+      ],
+      "year": null,
+      "type": "articulos",
+      "file": "bibliography/Neoestructuralismo/ (6 PDFs)",
+      "chunks": 354,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "dev_f2c47a9c6fd6",
+      "title": "S2500222 (CEPAL — Artículo adicional)",
+      "authors": [
+        "CEPAL"
+      ],
+      "year": null,
+      "type": "articulo",
+      "file": "bibliography/Lecturas adicionales/Foro 1/S2500222_es.pdf",
+      "chunks": 805,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "VARIOS_otros",
+      "title": "Otros artículos (Stiglitz 2000, Baumol, De Long, Williamson, Mankiw, Ravallion, Seers, Stockhammer...)",
+      "authors": [
+        "Varios"
+      ],
+      "year": null,
+      "type": "articulos_academicos",
+      "file": "bibliography/(descargados externamente)",
+      "chunks": 5511,
+      "collection": "economic_development",
+      "date_indexed": "2026-04-20",
+      "status": "INDEXADO"
+    }
+  ],
+  "pending": []
+}
