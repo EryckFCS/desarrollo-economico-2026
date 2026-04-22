@@ -1,0 +1,10 @@
+{
+  "status": "synchronized",
+  "last_sync": "2026-04-21",
+  "engine": "ecs_quantitative.ingestion.rag",
+  "method": "text-only",
+  "target_lobule": "economic_development",
+  "total_files": 35,
+  "scope": "recursivo /bibliography",
+  "note": "Toda la bibliografía PDF en esta carpeta ha sido indexada en el cerebro central. No re-ingestar sin purga previa."
+}

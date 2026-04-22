@@ -27,6 +27,7 @@ Photos*/
 
 # Scratch and Temporary scripts
 scratch/
+scratch_afg_files/
 render_log*.txt
 *.pdf
 !docs/**/*.pdf
