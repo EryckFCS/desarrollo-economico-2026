@@ -15,6 +15,10 @@ htmlcov/
 # Quarto
 /.quarto/
 **/*.quarto_ipynb
+**/*_files/
+**/*_cache/
+_site/
+_freeze/
 
 # Archives and Large Files
 *.zip
@@ -25,9 +29,10 @@ htmlcov/
 # Specific Exclusions
 Photos*/
 
-# Scratch and Temporary scripts
+# Scratch — scripts operativos no versionables
 scratch/
-scratch_afg_files/
 render_log*.txt
+
+# PDFs generados (evidencia PDF sí se versiona en docs/)
 *.pdf
 !docs/**/*.pdf

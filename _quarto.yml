@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: dist
+  output-dir: _site
 
 book:
   title: "Desarrollo Económico - 2026"
@@ -17,9 +17,7 @@ book:
 
 format:
   html:
-    theme: 
-      - cosmo
-      - style/custom_theme.scss
+    theme: cosmo
     toc: true
     number-sections: true
   pdf:
