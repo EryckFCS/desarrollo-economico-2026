@@ -1,10 +1,231 @@
 {
-  "status": "synchronized",
-  "last_sync": "2026-04-21",
-  "engine": "ecs_quantitative.ingestion.rag",
-  "method": "text-only",
-  "target_lobule": "economic_development",
-  "total_files": 35,
-  "scope": "recursivo /bibliography",
-  "note": "Toda la bibliografía PDF en esta carpeta ha sido indexada en el cerebro central. No re-ingestar sin purga previa."
+  "collection": "economic_development",
+  "total_chunks": 16807,
+  "last_audit": "2026-04-21",
+  "indexed_documents": [
+    {
+      "source_id": "ray_dev_econ",
+      "source_name": "Debraj Ray Economía del desarrollo",
+      "chunks": 3228
+    },
+    {
+      "source_id": "dev_0f28eb943c09",
+      "source_name": "Debraj Ray Economía del desarrollo",
+      "chunks": 3228
+    },
+    {
+      "source_id": "dev_2c6fa4cc6bca",
+      "source_name": "Barro and Sala-i-Martin (2004) - Economic Growth",
+      "chunks": 2102
+    },
+    {
+      "source_id": "dev_031ed41f1105",
+      "source_name": "Stiglitz (1999) - Knowledge as a Global Public Good",
+      "chunks": 1883
+    },
+    {
+      "source_id": "dev_b835d31d63b0",
+      "source_name": "La-era-del-desarrollo-sostenible-_Jeffrey-Sachs_-_z-lib.org_",
+      "chunks": 1488
+    },
+    {
+      "source_id": "dev_f2c47a9c6fd6",
+      "source_name": "S2500222_es",
+      "chunks": 805
+    },
+    {
+      "source_id": "ec_dev_Desarrollo",
+      "source_name": "Desarrollo Humano, Pobreza y Desigualdad",
+      "chunks": 614
+    },
+    {
+      "source_id": "dev_f256afec64eb",
+      "source_name": "Desarrollo Humano, Pobreza y Desigualdad",
+      "chunks": 488
+    },
+    {
+      "source_id": "dev_bf8b74d8352b",
+      "source_name": "LAS TEORÍAS DEL DESARROLLO ECONÓMICO",
+      "chunks": 432
+    },
+    {
+      "source_id": "ec_dev_Desarrollo",
+      "source_name": "Desarrollo económico y la escuela estructuralista",
+      "chunks": 193
+    },
+    {
+      "source_id": "dev_861ad4bd3d68",
+      "source_name": "Perspectivas-economicas-OCDE-Junio-2025-ESP-PRT-Final-opt",
+      "chunks": 163
+    },
+    {
+      "source_id": "dev_a880e0c34f48",
+      "source_name": "Teorias_del_desarrollo_economico UNED",
+      "chunks": 153
+    },
+    {
+      "source_id": "hidalgo_capitan",
+      "source_name": "Hidalgo-Capitán Economia política del desarrollo",
+      "chunks": 144
+    },
+    {
+      "source_id": "dev_b34dbe2907dd",
+      "source_name": "2 Hidalgo-Capitán Economia_politica_del_desarrollo",
+      "chunks": 144
+    },
+    {
+      "source_id": "estructuralismo_cepal",
+      "source_name": "Estructuralismo-Cepal",
+      "chunks": 129
+    },
+    {
+      "source_id": "dev_5e09958ffd4d",
+      "source_name": "Estructuralismo-Cepal",
+      "chunks": 129
+    },
+    {
+      "source_id": "dev_e5eb487e83f1",
+      "source_name": "Gramática del Neoliberalismo",
+      "chunks": 111
+    },
+    {
+      "source_id": "dev_961601d96284",
+      "source_name": "Neoestructuralism 3",
+      "chunks": 102
+    },
+    {
+      "source_id": "dev_bb150fb3f736",
+      "source_name": "Stockhammer (2004) - Financialisation and the slowdown of accumulation",
+      "chunks": 101
+    },
+    {
+      "source_id": "dev_4b731b7ee8a4",
+      "source_name": "Mankiw, Romer & Weil (1992) - A Contribution to the Empirics of Economic Growth",
+      "chunks": 95
+    },
+    {
+      "source_id": "dev_c7170e51fe16",
+      "source_name": "Seers (1963) - The Limitations of the Special Case",
+      "chunks": 82
+    },
+    {
+      "source_id": "dev_a87028f7557c",
+      "source_name": "De Long (1988) - Productivity Growth, Convergence, and Welfare. Comment",
+      "chunks": 77
+    },
+    {
+      "source_id": "teorias_dev",
+      "source_name": "Teorías del Desarrollo",
+      "chunks": 75
+    },
+    {
+      "source_id": "dev_7a4bc30a248b",
+      "source_name": "3 Teorías del Desarrollo",
+      "chunks": 75
+    },
+    {
+      "source_id": "dev_fb0e336780c6",
+      "source_name": "Baumol (1986) - Productivity growth, convergence, and welfare. Long run data show",
+      "chunks": 72
+    },
+    {
+      "source_id": "dev_fdf14636d094",
+      "source_name": "Neoestructuralismo 4",
+      "chunks": 71
+    },
+    {
+      "source_id": "dev_dd1a80e57806",
+      "source_name": "Neoestructuralismo 2",
+      "chunks": 70
+    },
+    {
+      "source_id": "dev_c4014e2c6a74",
+      "source_name": "Neoestructuralimo 5",
+      "chunks": 67
+    },
+    {
+      "source_id": "dev_fb654c7ea425",
+      "source_name": "Ravallion (2001) - Growth, inequality and poverty. Looking beyond averages",
+      "chunks": 65
+    },
+    {
+      "source_id": "dev_ce2a019d543d",
+      "source_name": "Lectura 4",
+      "chunks": 60
+    },
+    {
+      "source_id": "dev_e6ef83f5754d",
+      "source_name": "Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability",
+      "chunks": 58
+    },
+    {
+      "source_id": "retrospectiva_dev",
+      "source_name": "Retrospectiva de la Economia del Desarrollo",
+      "chunks": 45
+    },
+    {
+      "source_id": "dev_093b0935ee40",
+      "source_name": "1 Retrospectiva de la Economia del Desarrollo",
+      "chunks": 45
+    },
+    {
+      "source_id": "dev_ae96f078393e",
+      "source_name": "Williamson (1993) - Democracy and the Washington Consensus",
+      "chunks": 44
+    },
+    {
+      "source_id": "neoestructuralismo",
+      "source_name": "Neoestructuralismo",
+      "chunks": 43
+    },
+    {
+      "source_id": "dev_5dea1be61c4a",
+      "source_name": "Neoestructuralismo",
+      "chunks": 43
+    },
+    {
+      "source_id": "dev_e537a43f05d9",
+      "source_name": "Neoestructuralismo 1",
+      "chunks": 43
+    },
+    {
+      "source_id": "dev_10ab7aad0080",
+      "source_name": "Williamson (2002) - Did the Washington Consensus fail",
+      "chunks": 17
+    },
+    {
+      "source_id": "dev_5871dce9c85c",
+      "source_name": "Neoestructuralismo-Una-Alternativa-para-America-Latina",
+      "chunks": 11
+    },
+    {
+      "source_id": "dev_95fa1b6cffa2",
+      "source_name": "Resumen_Neoliberalismo_Ampliado",
+      "chunks": 8
+    },
+    {
+      "source_id": "dev_6d6447e537ca",
+      "source_name": "Dialnet-UnaLecturaCriticaDelNeoestructuralismoLatinoameric-8807519",
+      "chunks": 3
+    },
+    {
+      "source_id": "dev_f7f159d37882",
+      "source_name": "Seers (1969) - The Meaning of Dvelopment",
+      "chunks": 1
+    }
+  ],
+  "available_in_folder": [
+    "Debraj Ray Economía del desarrollo.pdf",
+    "Lecturas de los contenidos Unidad 1/1 Retrospectiva de la Economia del Desarrollo.pdf",
+    "Lecturas de los contenidos Unidad 1/2 Hidalgo-Capitán Economia_politica_del_desarrollo.pdf",
+    "Lecturas de los contenidos Unidad 1/3 Teorías del Desarrollo.pdf",
+    "Estructuralismo-Cepal.pdf",
+    "Neoestructuralismo.pdf",
+    "Neoestructuralismo/ (carpeta con 6 PDFs adicionales)",
+    "Lecturas adicionales/Foro 1/S2500222_es.pdf",
+    "Teorias_del_desarrollo_economico UNED.pdf",
+    "Resumen_Neoliberalismo_Ampliado.pdf"
+  ],
+  "pending_indexation": [],
+  "notes": "Gold Standard — 16,807 chunks. Hay duplicados por dos rondas de ingesta (source_id vacío vs. source_id asignado). Contenido idéntico, SHA256 debería deduplicar. No requiere acción."
 }
