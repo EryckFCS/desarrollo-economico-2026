@@ -1,0 +1,164 @@
+-----------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_dev
+> elopment/docs/evidence/AA-U1-Auditoria-Economica/logs/audit_master_replication.log
+  log type:  text
+ opened on:  24 Apr 2026, 21:29:57
+
+. 
+. display "--- INICIANDO PROCESO DE RÉPLICA UNIFICADO ---"
+--- INICIANDO PROCESO DE RÉPLICA UNIFICADO ---
+
+. 
+. * ==============================================================================
+. * 2. INGESTA Y PREPARACIÓN DE DATOS
+. * ==============================================================================
+. display "-> Importando datos desde Excel..."
+-> Importando datos desde Excel...
+
+. import excel "`raw_data'", sheet("MainData") firstrow clear
+(8 vars, 41 obs)
+
+. 
+. * Renombrar para consistencia con análisis previo
+. rename rgdpna gdp_total
+
+. rename manuf_exports_raw manuf_exp_pct
+
+. rename terms_of_trade_raw terms_of_trade
+
+. 
+. * Convertir año a numérico y configurar panel
+. destring year, replace
+year already numeric; no replace
+
+. tsset year
+
+Time variable: year, 1980 to 2020
+        Delta: 1 unit
+
+. 
+. * Etiquetado de variables (Metadatos de Stata)
+. label var year "Año calendario"
+
+. label var gdp_pc "PIB Real per cápita (Calculado PWT 11.0)"
+
+. label var gdp_total "PIB Real Total (rgdpna)"
+
+. label var pop "Población (Millones)"
+
+. label var hc "Índice de Capital Humano"
+
+. label var manuf_exp_pct "Export. Manufacturas (% export. mercancías)"
+
+. label var terms_of_trade "Relación Real de Intercambio (RRI)"
+
+. 
+. * ==============================================================================
+. * 3. GENERACIÓN DE EVIDENCIA VISUAL (GRÁFICOS)
+. * ==============================================================================
+. display "-> Generando Gráfico de Modernización..."
+-> Generando Gráfico de Modernización...
+
+. twoway (line gdp_pc year, yaxis(1) lcolor(navy) lwidth(medium)) ///
+>        (line hc year, yaxis(2) lcolor(cranberry) lwidth(medium)), ///
+>     title("{bf:Corea del Sur: Trayectoria de Modernización}") ///
+>     subtitle("PIB per cápita y Capital Humano (1980-2020)") ///
+>     ytitle("PIB pc (Precios 2017)", axis(1)) ///
+>     ytitle("Índice de Capital Humano", axis(2)) ///
+>     xlabel(1980(5)2020) ///
+>     legend(order(1 "PIB pc (Esc. Izq)" 2 "Cap. Humano (Esc. Der)") region(lcolor(none))
+> ) ///
+>     graphregion(color(white))
+
+. 
+. graph export "`assets'/grafico_modernizacion.png", replace
+file
+    /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/
+    > docs/evidence/AA-U1-Auditoria-Economica/assets/grafico_modernizacion.png saved as
+    PNG format
+
+. 
+. display "-> Generando Gráfico Estructuralista..."
+-> Generando Gráfico Estructuralista...
+
+. twoway (line manuf_exp_pct year, lcolor(emerald) lwidth(medium)) ///
+>        (line terms_of_trade year, yaxis(2) lcolor(orange) lwidth(medium)), ///
+>     title("{bf:Corea del Sur: Transformación Estructural}") ///
+>     subtitle("Manufacturas y Relación de Intercambio") ///
+>     ytitle("% Exportaciones Manufacturas", axis(1)) ///
+>     ytitle("RRI (Base variable)", axis(2)) ///
+>     xlabel(1980(5)2020) ///
+>     legend(order(1 "% Manufacturas (Esc. Izq)" 2 "Términos Intercambio (Esc. Der)") reg
+> ion(lcolor(none))) ///
+>     graphregion(color(white))
+
+. 
+. graph export "`assets'/grafico_structuralista.png", replace
+(file
+    /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/
+    > docs/evidence/AA-U1-Auditoria-Economica/assets/grafico_structuralista.png not
+    found)
+file
+    /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/
+    > docs/evidence/AA-U1-Auditoria-Economica/assets/grafico_structuralista.png saved
+    as PNG format
+
+. 
+. * ==============================================================================
+. * 4. CIERRE Y EXPORTACIÓN
+. * ==============================================================================
+. display "-> Guardando base de datos procesada (.dta)..."
+-> Guardando base de datos procesada (.dta)...
+
+. save "`processed'/KOR_Audit_Final.dta", replace
+(file
+    /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/
+    > docs/evidence/AA-U1-Auditoria-Economica/data/processed/KOR_Audit_Final.dta not
+    found)
+file
+    /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/
+    > docs/evidence/AA-U1-Auditoria-Economica/data/processed/KOR_Audit_Final.dta saved
+
+. 
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         41        2000    11.97915       1980       2020
+ countrycode |          0
+   gdp_total |         41     1358651    792854.4   244998.2    2691550
+         pop |         41    46.23653    3.829961   38.14111   51.85848
+          hc |         41     3.14362    .3897786   2.395119   3.762531
+-------------+---------------------------------------------------------
+manuf_exp_~t |         41    89.84001    2.323334    84.5165   93.22784
+terms_of_t~e |         41    162.5653    55.98349         85   234.5742
+      gdp_pc |         41    28214.92    14912.85   6423.468   51992.69
+
+. 
+. display "--- PROCESO FINALIZADO EXITOSAMENTE ---"
+--- PROCESO FINALIZADO EXITOSAMENTE ---
+
+. display "Documentos generados:"
+Documentos generados:
+
+. display "1. Log: `logs'/audit_master_replication.log"
+1. Log: /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_developmen
+> t/docs/evidence/AA-U1-Auditoria-Economica/logs/audit_master_replication.log
+
+. display "2. Base: `processed'/KOR_Audit_Final.dta"
+2. Base: /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_developme
+> nt/docs/evidence/AA-U1-Auditoria-Economica/data/processed/KOR_Audit_Final.dta
+
+. display "3. Gráficos: `assets'/"
+3. Gráficos: /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_devel
+> opment/docs/evidence/AA-U1-Auditoria-Economica/assets/
+
+. 
+. log close
+      name:  <unnamed>
+       log:  Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_dev
+> elopment/docs/evidence/AA-U1-Auditoria-Economica/logs/audit_master_replication.log
+  log type:  text
+ closed on:  24 Apr 2026, 21:30:01
+-----------------------------------------------------------------------------------------

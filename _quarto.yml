@@ -4,8 +4,8 @@ project:
 
 book:
   title: "Desarrollo Económico - 2026"
-  author: "Erick Fabricio Condoy Seraquive"
-  date: "2026-04-21"
+  author: Erick Fabricio Condoy Seraquive
+  date: 2026-04-21
   chapters:
     - index.qmd
     - part: "Unidad 1: Fundamentos y Contexto"
@@ -23,6 +23,9 @@ format:
   pdf:
     pdf-engine: lualatex
     template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    documentclass: scrreprt
+    header-includes:
+      - \newcommand{\refname}{Referencias}
     toc: false
     number-sections: true
     colorlinks: true
@@ -39,8 +42,16 @@ lang: es-ES
 execute:
   echo: false
   warning: false
-  engine: jupyter
+  # engine: jupyter
   freeze: auto
+
+assignment: "Análisis de Caso: Modernización"
+professor: "Econ. Johanna Magaly Alvarado Espejo"
+submission_date: "2026-04-21"
+university: "UNIVERSIDAD NACIONAL DE LOJA"
+faculty: "FACULTAD JURÍDICA, SOCIAL Y ADMINISTRATIVA"
+school: "CARRERA DE ECONOMÍA"
+course: "DESARROLLO ECONÓMICO"
 
 csl: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/apa_7.csl
 

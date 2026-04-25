@@ -1,71 +1,79 @@
 ---
 title: "Estudio de Caso: Afganistán (1921-1926)"
-subtitle: "Análisis bajo los Supuestos de la Teoría de la Modernización"
-author: "Erick Fabricio Condoy Seraquive"
-date: "2026-04-21"
+subtitle: "Análisis del Desarrollo Económico y la Teoría de la Modernización"
+author: Erick Fabricio Condoy Seraquive
+date: 2026-04-21
 lang: es-ES
-bibliography: 
-  - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
-nocite: |
-  @poullada1973reform, @gregorian1969emergence, @rostow1960stages, @smelser1963mechanisms, @coleman1965education
-format:
-  pdf:
-    documentclass: article
-    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
-    assignment: "Análisis de Caso: Modernización"
-    professor: "Econ. Johanna Magaly Alvarado Espejo"
-    submission_date: "2026-04-21"
+assignment: "Análisis de Caso: Modernización"
+professor: "Econ. Johanna Magaly Alvarado Espejo"
+submission_date: "2026-04-21"
+bibliography: /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
+nocite: "@poullada1973reform, @gregorian1969emergence, @rostow1960stages, @smelser1963mechanisms, @coleman1965education"
 ---
 
 # Introducción
-Este documento analiza el periodo comprendido entre **1921 y 1926** en Afganistán, centrado exclusivamente en el reinado de **Amanullah Khan** tras la independencia de 1919. El objetivo es calificar este periodo según las etapas de Rostow y evaluar el cumplimiento de los 5 postulados fundamentales de la modernización durante el auge de las reformas reformistas (Amani).
+El presente informe analiza el proceso de modernización en Afganistán durante el periodo de **1921 a 1926**, correspondiente al reinado de **Amanullah Khan**. Este intervalo representa el intento más audaz de transformación estructural en la historia afgana temprana, buscando transitar desde una sociedad tradicional hacia un Estado nación moderno bajo los lineamientos de la Teoría de la Modernización y las etapas de crecimiento de @rostow1960stages.
 
-# Clasificación según Rostow: Intento de "Precondiciones para el Despegue"
-En el rango 1921-1926, Afganistán intentaba romper violentamente con la **Sociedad Tradicional** para entrar en la Etapa 2: **Precondiciones para el Despegue**.
+# Ubicación en la etapa de Rostow
+Afganistán se encontraba, durante el periodo 1921-1926, en la etapa de **Precondiciones para el Despegue (Etapa 2)**. 
 
-- **Producción:** Aunque seguía siendo predominantemente agrícola, el Estado inició la creación de monopolios comerciales (*shirkats*) para movilizar capital.
-- **Tecnología:** El establecimiento de misiones técnicas internacionales marcó el inicio de una infraestructura moderna (telegrafía, radio y aviación inicial).
-- **Estructura Social:** Un periodo de conflicto agudo entre el reformismo centralizador de Amanullah y la resistencia de los poderes tribales y religiosos.
+**Justificación y Evidencia:**
+No se trataba ya de una sociedad puramente estática (Sociedad Tradicional). El país mostraba una voluntad política explícita de cambio mediante la centralización del poder. La evidencia económica real reside en la creación del **primer presupuesto nacional en 1922** y la introducción del **Afghani como moneda nacional en 1923**. Estas medidas demuestran la transición hacia una economía monetizada y burocrática, superando el trueque tribal y estableciendo la soberanía fiscal, requisitos indispensables para la movilización de capital que caracteriza a esta etapa.
 
-A diferencia del periodo anterior (Habibullah), 1921-1926 representa el punto más alto del **voluntarismo modernista**, donde se intentó forzar la transición a la Etapa 2 mediante decretos reales y planificación central.
+# Estructura económica
+La economía era fundamentalmente **agrícola y pastoril** (95% de la población), centrada en la exportación de productos primarios como pieles de caracul y lana. 
+- **Industrialización:** Existió un esfuerzo estatal por crear enclaves industriales en sectores de **industria ligera y bienes de consumo**. 
+- **Sectores específicos:** Se desarrolló la industria **textil** (fábrica de Jabal al-Siraj), papel, jabón y cerillas.
+- **Liderazgo:** El sector **textil** lideró el incipiente crecimiento industrial, diseñado para reducir la dependencia de las manufacturas de la India Británica y vestir al creciente aparato estatal (ejército y burocracia).
+
+# Inversión y financiamiento
+Tras la independencia de 1919, el país perdió los subsidios británicos que cubrían gran parte del gasto.
+- **Ahorro Interno:** La capacidad de ahorro interno era **extremadamente baja** debido a la baja productividad y la resistencia de los jefes tribales al sistema tributario centralizado.
+- **Financiamiento:** El país dependió de la **asistencia técnica internacional** (misiones de Alemania, Italia, Francia y la URSS) para proyectos de infraestructura.
+- **Inversión Extranjera:** El Rey Amanullah limitó la inversión extranjera directa masiva por temor a comprometer la soberanía nacional (imperialismo financiero). No hubo grandes flujos de capital externo, sino un uso intensivo de "ayuda técnica" para la construcción de plantas eléctricas y telegrafía.
+
+# Política económica
+Se aplicó un modelo de **Modernización Acelerada "desde arriba"** con tintes nacionalistas.
+- **Medidas concretas:**
+    - **Proteccionismo:** Creación de los *shirkats* (compañías monopolísticas estatales) para controlar el comercio exterior y acumular capital.
+    - **Reformas Institucionales:** Abolición del trabajo forzado (*begar*) para intentar crear un mercado laboral libre.
+    - **Sustitución selectiva:** Incentivos a la producción local de uniformes y papel mediante decretos reales que obligaban su uso en la administración pública.
+
+# Rol del Estado
+El Estado fue un **actor central y planificador**. El Rey Amanullah visualizaba al Estado como el único motor capaz de romper la inercia tradicional.
+- **Planes de Desarrollo:** Las **Constituciones y los Códigos Administrativos (*Nizamnamas*)** de 1923 funcionaron como los primeros planes de desarrollo de la nación.
+- **Inversión Directa:** El Estado invirtió directamente en la construcción de la nueva ciudad modernista de Darul Aman, la red de carreteras básicas y la primera planta hidroeléctrica del país. Fue un Estado inversor ante la ausencia de una burguesía nacional.
+
+# Transformación estructural
+Aunque se intentó el paso hacia la industria, la transformación fue **superficial y localizada**.
+- **Estructura Productiva:** Se mantuvo predominantemente agrícola; las fábricas eran "enclaves" estatales sin encadenamientos productivos con el resto de la economía.
+- **Migración y Empleo:** No se evidenció una migración masiva campo-ciudad por incentivos salariales. El empleo industrial era mínimo y dependiente del Estado. El 95% de la población permaneció en estructuras tribales de autosuficiencia.
+
+# Dimensión social y valores
+El periodo presenció un choque frontal entre la tradición y la modernidad.
+- **Cambios:** Se promovió la **educación laica** y la escolarización femenina (valores modernos). Se intentó modificar la mentalidad de la población mediante la eliminación de títulos nobiliarios y la imposición de códigos de vestimenta occidental.
+- **Persistencia:** Los valores tradicionales (religiosos y tribales) persistieron con fuerza fuera de Kabul, percibiendo la modernización como una imposición externa y herética, lo que impidió la cohesión social necesaria para el desarrollo sostenido.
+
+# Transición entre etapas
+La transición hacia el "Despegue" (Etapa 3) fue **truncada por la inestabilidad institucional**.
+- **Factores de Paso:** La reforma fiscal y la integración de mercados fueron los motores iniciales.
+- **Factores de Limitación:** El aislamiento geográfico, la falta de una clase media técnica y la ausencia de una infraestructura ferroviaria que unificara el país. Sin embargo, el factor decisivo fue la **rebelión tribal de 1924 y el colapso de 1929**, que destruyó los avances logrados, demostrando que Afganistán no logró superar el umbral de ahorro (10% del PNB) ni la estabilidad política requerida para el despegue.
 
 # Calificación según los 5 Supuestos de Modernización (Periodo 1921-1926)
 
-A continuación se evalúa el cumplimiento de los postulados teóricos en las políticas ariesgadas de Amanullah Khan:
+Este apartado evalúa el desempeño de las reformas de Amanullah Khan bajo los postulados clásicos de la Teoría de la Modernización, justificando el grado de cumplimiento mediante evidencia histórica concreta.
 
-### a) Identificación del Desarrollo con el Crecimiento del PNB
-*   **Cumplimiento:** **Total (en arquitectura institucional)**.
-*   **Análisis:** En **1922** se introdujo el primer **presupuesto nacional** estructurado, permitiendo al Estado cuantificar sus recursos. La creación del *afghani* en **1923** permitió una política monetaria unificada, requisito previo para medir el crecimiento económico bajo estándares modernos.
+| Postulado | Calificación | Justificación y Eventos Clave |
+| :--- | :---: | :--- |
+| **1. Crecimiento del PNB** | **Parcial / Fallido** | Aunque se buscó aumentar la riqueza nacional mediante la monetización (Afghani, 1923), el PNB no logró un crecimiento autosostenido. La producción agrícola permaneció estancada y el ahorro interno nunca superó el 5%, lejos del 10% requerido para el despegue. |
+| **2. Atraso Relativo** | **Cumplido** | El Estado reconoció su rezago y buscó "saltar etapas" importando tecnología europea. Se contrataron **misiones técnicas de Alemania (Siemens)** y Francia para instalar la primera red de telegrafía y plantas eléctricas, aprovechando el conocimiento de países avanzados. |
+| **3. Industrialización** | **Parcial (Enclaves)** | Se priorizó la industria ligera como motor de cambio. Eventos: Fundación de la **Fábrica Jabal al-Siraj** y creación de los *shirkats*. Sin embargo, la industria no logró encadenarse con la agricultura, quedando como un sector aislado. |
+| **4. Ahorro Externo** | **Cumplido (Técnico)** | Ante la nula capacidad de ahorro interno tras la pérdida de los subsidios británicos en 1919, el financiamiento se obtuvo mediante **acuerdos de cooperación técnica**. Se utilizó la asistencia externa para compensar la falta de capital financiero masivo. |
+| **5. Planificación Estatal** | **Cumplido** | El Estado actuó como la vanguardia racional del desarrollo. Justificación: La **Constitución de 1923** y los *Nizamnamas* establecieron un marco legal y económico planificado, donde el Estado decidía dónde invertir (infraestructura y Darul Aman). |
 
-### b) El Subdesarrollo como "Atraso Relativo"
-*   **Cumplimiento:** **Alto**.
-*   **Análisis:** Amanullah reconoció explícitamente que Afganistán estaba "atrasado" respecto a Europa. Su gira europea de 1927-1928 (aunque posterior al rango principal) fue la culminación de esta visión: traer la tecnología del "Centro" para acelerar la historia nacional.
-
-### c) La Industrialización como Eje de la Modernización
-*   **Cumplimiento:** **Parcial (Intento Fallido)**.
-*   **Análisis:** Se intentó la creación de fábricas de textiles y cemento. Sin embargo, la falta de una burguesía nacional y de ahorro interno suficiente limitó esto a enclaves estatales que no lograron transformar la matriz productiva rural.
-
-### d) El Papel del Estado como Motor de Cambio
-*   **Cumplimiento:** **Total**.
-*   **Análisis:** Se promulgó la **primera Constitución (1923)**. El Estado asumió el rol de planificador absoluto: abolió la esclavitud, prohibió el trabajo forzado y reorganizó la administración para centralizar el control, intentando romper la autonomía tribal.
-
-### e) Defensa del Ahorro Externo
-*   **Cumplimiento:** **Alto**.
-*   **Análisis:** Hasta 1919, el Estado dependía de los **subsidios británicos** (ayuda externa política). Amanullah, al buscar la independencia total, intentó sustituir esto con inversión extranjera técnica (misiones alemanas, francesas e italianas) para activar la industria.
-
-# Políticas Implicadas: Antes y Después
-
-| Dimensión | Antes (1901-1919) | Después (1919-1926) |
-|-----------|-------------------|---------------------|
-| **Fiscalidad** | Cobro en especie, descentralizado. | Sistema de caja, presupuesto nacional. |
-| **Infraestructura** | Caminos de herradura, nula electricidad. | Primeras carreteras, hidroeléctricas. |
-| **Educación** | Controlada por el Ulema (Religiosa). | Escuela Habibia (Moderna), instrucción técnica. |
-| **Relaciones Ext.** | Protectorado Británico (Subsidios). | Independencia (Búsqueda de inversión global). |
-
-# Conclusión: El Choque entre Modernidad y Tradición
-Afganistán (1901-1926) cumple con los supuestos de la modernización desde la cúspide política (el Rey), pero falló en la **integración funcional** (concepto de Coleman). Al intentar imponer la etapa de "Precondiciones" sobre una base social de "Sociedad Tradicional" sin una burocracia sólida, se generó un conflicto que llevó al colapso de las reformas en 1929.
+# Conclusión
+El caso afgano ilustra que la modernización impuesta por el Estado sin una base productiva sólida ni un cambio cultural gradual es vulnerable a la reversión. Las "precondiciones" se cumplieron en el papel, pero la economía real no logró diversificarse lo suficiente para sostener el crecimiento.
 
 # Referencias
 ::: {#refs}
 :::
-

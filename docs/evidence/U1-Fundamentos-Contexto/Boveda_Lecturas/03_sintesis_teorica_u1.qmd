@@ -1,17 +1,8 @@
 ---
 title: "Síntesis y Comparativa Teórica: Unidad 1"
-subtitle: Fundamentos y Contexto del Desarrollo Económico
-author: "Erick Fabricio Condoy Seraquive"
-date: "2026-04-21"
-assignment: Síntesis Teórica Unidad 1
-submission_date: "2026-04-21"
-ojs-engine: true
-format:
-  html:
-    toc: true
-    theme: [flatly, ../../../../style/custom_theme.scss]
-    execute:
-      freeze: auto
+subtitle: "Fundamentos y Contexto del Desarrollo Económico"
+author: Erick Fabricio Condoy Seraquive
+date: 2026-04-21
 ---
 
 # Introducción
@@ -37,13 +28,28 @@ Basado en la tipología de Hidalgo-Capitán, podemos resumir el debate en dos pr
 | **Monoeconomía** | ¿La teoría económica es universal? | **Sí:** Aplicable a todos. | **No:** Caso especial (país desarrollado). |
 | **Beneficio Mutuo** | ¿El comercio beneficia a todos? | **Sí:** Ventajas comparativas. | **No:** Intercambio desigual / Deterioro. |
 
-# Características del Subdesarrollo (Sílabo 1.2)
-Sintetizando las lecturas de *Retrospectiva* e *Hidalgo-Capitán*, el subdesarrollo se caracteriza por:
+# La Visión Estructuralista del Subdesarrollo (Sílabo 1.2)
 
-1. **Heterogeneidad Estructural:** Coexistencia de niveles de productividad radicalmente distintos en la misma economía.
-2. **Dependencia Externa:** Tanto financiera como tecnológica y cultural, vinculada al dinamismo del "Centro".
-3. **Especialización Primaria:** Inserción en el mercado mundial como proveedores de materias primas con valor decreciente.
-4. **Desequilibrios Macroeconómicos:** Tendencia al déficit crónico en la balanza de pagos e inflación estructural.
+A diferencia de la teoría de la modernización, que ve al subdesarrollo como una "etapa temprana", el **Estructuralismo Latinoamericano (CEPAL)** lo define como un proceso histórico y relacional. Bajo esta óptica, el subdesarrollo es el resultado de la forma en que los países se insertan en la economía mundial.
+
+## Características Estructurales (Enfoque CEPAL)
+
+1. **Heterogeneidad Estructural:** Coexistencia de un sector exportador moderno y de alta productividad con un vasto sector de subsistencia de muy baja productividad. Esto impide la difusión del progreso técnico a toda la economía.
+2. **Especialización Primaria:** Los países periféricos se especializan en producir materias primas (alimentos, minerales), mientras que el "Centro" produce manufacturas con alto valor agregado.
+3. **Deterioro de los Términos de Intercambio (Tesis Prebisch-Singer):** Los precios de los productos primarios tienden a bajar en relación con los productos industriales. Esto significa que la periferia debe exportar cada vez más para comprar la misma cantidad de tecnología del centro.
+4. **Dependencia y Vulnerabilidad:** La economía periférica es "refleja"; su dinamismo depende de la demanda externa del centro y es altamente vulnerable a los choques financieros globales.
+
+::: {.callout-important}
+### El Sistema Centro-Periferia
+El subdesarrollo no es falta de crecimiento, sino un **crecimiento hacia afuera** que beneficia principalmente al Centro. Para el estructuralismo, la solución no es solo ahorrar más (como decía Rostow), sino realizar un **Cambio Estructural** mediante la industrialización dirigida por el Estado (ISI).
+:::
+
+# De la Estructura a la Dependencia
+
+Siguiendo la evolución de las lecturas de la Unidad 1, tras el estructuralismo surge la **Teoría de la Dependencia**. Esta radicaliza el análisis estructural:
+
+- **Subdesarrollo como Proceso Activo:** El subdesarrollo no es un estado previo al desarrollo, sino una consecuencia del desarrollo ajeno. El centro se desarrolla *porque* la periferia se subdesarrolla (extracción de excedente).
+- **Vínculos Interno-Externos:** La dependencia no es solo comercial, sino que se reproduce internamente mediante alianzas entre élites locales y capital transnacional.
 
 # Matriz Maestra Interactiva: Enfoques del Desarrollo
 
@@ -110,6 +116,21 @@ html`<div style="padding: 15px; border-left: 5px solid ${estado_economia.color};
 ```
 :::
 
+# Las 5 Etapas del Desarrollo Económico de Walt Rostow
+
+El modelo de Rostow (1960) plantea que todas las sociedades, en su camino hacia el desarrollo, deben transitar por cinco etapas lineales y sucesivas:
+
+::: {.callout-note}
+### Estructura del Modelo Lineal
+1. **Sociedad Tradicional:** Basada en la agricultura de subsistencia, con tecnología limitada y una estructura social jerárquica y rígida. El techo de productividad es bajo.
+2. **Precondiciones para el Despegue:** Período de transición donde surgen élites políticas con voluntad de cambio, aumenta la productividad agrícola y se invierte en infraestructura crítica (transportes, comunicaciones).
+3. **Despegue (Take-off):** Fase decisiva de crecimiento acelerado en sectores específicos. La tasa de inversión neta supera el 10% del ingreso nacional y las fuerzas del crecimiento se vuelven dominantes.
+4. **Camino hacia la Madurez:** La economía diversifica su base industrial, integrando tecnología avanzada en todos los sectores. El país se inserta competitivamente en el mercado mundial.
+5. **Era del Alto Consumo en Masa:** El enfoque se desplaza hacia la producción de bienes de consumo duraderos y servicios. Surge el Estado del Bienestar y el consumo masivo define la estructura económica.
+:::
+
+---
+
 ## Visualización: Dinámicas Contrapuestas
 
 ::: {layout-ncol=2}
@@ -160,5 +181,4 @@ No todas las teorías tienen el mismo peso en la toma de decisiones global:
 | **Regional (AL)** | Neoestructuralismo | CEPAL, Mercosur, CAF. |
 | **Disidente** | Neomarxismo / Sistemas-Mundo | Movimientos sociales, Foro Social Mundial. |
 
----
 La Unidad 1 demuestra que el desarrollo no es meramente un aumento del PIB (crecimiento), sino una transformación profunda de las estructuras productivas e institucionales que permiten la soberanía económica y el bienestar social.

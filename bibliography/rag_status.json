@@ -1,7 +1,7 @@
 {
   "collection": "economic_development",
   "total_chunks": 16807,
-  "last_audit": "2026-04-21",
+  "last_audit": "2026-04-24",
   "indexed_documents": [
     {
       "source_id": "ray_dev_econ",

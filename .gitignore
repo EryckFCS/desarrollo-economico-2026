@@ -36,3 +36,5 @@ render_log*.txt
 # PDFs generados (evidencia PDF sí se versiona en docs/)
 *.pdf
 !docs/**/*.pdf
+.ipynb_checkpoints/
+.ruff_cache/

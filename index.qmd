@@ -1,7 +1,7 @@
 ---
 title: "Bitácora de Desarrollo Económico"
-subtitle: Séptimo Ciclo - 2026
-author: "Erick Fabricio Condoy Seraquive"
+subtitle: "Séptimo Ciclo - 2026"
+author: Erick Fabricio Condoy Seraquive
 ---
 
 # Introducción a la Materia

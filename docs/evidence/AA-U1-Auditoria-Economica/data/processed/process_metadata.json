@@ -1,0 +1,66 @@
+{
+    "artifact_identity": {
+        "name": "Auditoría Económica Corea del Sur (1980-2020)",
+        "file": "KOR_Audit_Data.xlsx",
+        "version": "2.0.0",
+        "last_updated": "2026-04-25T10:18:00.585624",
+        "node": "Economic Development"
+    },
+    "data_specification": {
+        "country": "South Korea",
+        "iso_code": "KOR",
+        "period": "1980-2020",
+        "frequency": "Annual",
+        "sources": [
+            "Penn World Table 11.0 (PWT)",
+            "World Bank Open Data (WDI)",
+            "IMF Balance of Payments"
+        ]
+    },
+    "variable_catalog": {
+        "raw_indicators": [
+            "gdp_pc",
+            "hc",
+            "manuf_exports_raw",
+            "terms_of_trade_raw",
+            "csh_i",
+            "emp",
+            "fdi_pct_gdp",
+            "ind_va_pct"
+        ],
+        "transformed_indicators": [
+            "gdp_pc_norm",
+            "hc_norm",
+            "manuf_exports_norm",
+            "terms_of_trade_norm",
+            "csh_i_norm",
+            "emp_norm",
+            "fdi_norm",
+            "ind_va_norm"
+        ]
+    },
+    "processing_logic": {
+        "normalization_method": "Min-Max Scaling",
+        "normalization_range": [
+            0,
+            1
+        ],
+        "handling_of_missings": "Verified complete series (1980-2020)",
+        "congelado_paneles": "C2 (MainData)"
+    },
+    "structure": {
+        "sheets": [
+            "MainData",
+            "Diccionario",
+            "Notas",
+            "Gráficos",
+            "Interpretación"
+        ],
+        "visual_styles": "Dark blue headers, alternating rows, thin borders, integrated line charts"
+    },
+    "audit_trail": {
+        "created_by": "Erick Fabricio Condoy Seraquive",
+        "institutional_context": "Applied Econometrics / Economic Development 2026",
+        "task_id": "AA-U1-Auditoria-Economica"
+    }
+}

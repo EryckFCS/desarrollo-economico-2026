@@ -1,19 +1,8 @@
 ---
 title: "Análisis Crítico: Retrospectiva de la Economía del Desarrollo"
-author: "Erick Fabricio Condoy Seraquive"
-date: "2026-04-21"
+author: Erick Fabricio Condoy Seraquive
+date: 2026-04-21
 lang: es-ES
-bibliography: 
-  - /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/references.bib
-nocite: |
-  @tezanos2010estudio, @rostow1960stages, @smelser1963mechanisms, @coleman1965education
-assignment: Lectura Crítica Retrospectiva
-submission_date: "2026-04-21"
-format:
-  html:
-    toc: true
-    code-fold: true
-    theme: [cosmo, ../../../../style/custom_theme.scss]
 ---
 
 # Introducción
