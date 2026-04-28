@@ -1,0 +1,30 @@
+
+Start processing 12 pages concurrently
+    1 page already has text! - rasterizing text and running OCR anyway
+    2 page already has text! - rasterizing text and running OCR anyway
+    3 page already has text! - rasterizing text and running OCR anyway
+    4 page already has text! - rasterizing text and running OCR anyway
+    5 page already has text! - rasterizing text and running OCR anyway
+    6 page already has text! - rasterizing text and running OCR anyway
+    7 page already has text! - rasterizing text and running OCR anyway
+    8 page already has text! - rasterizing text and running OCR anyway
+    9 page already has text! - rasterizing text and running OCR anyway
+   10 page already has text! - rasterizing text and running OCR anyway
+   11 page already has text! - rasterizing text and running OCR anyway
+   12 page already has text! - rasterizing text and running OCR anyway
+   13 page already has text! - rasterizing text and running OCR anyway
+
+Postprocessing...
+
+
+
+Image optimization did not improve the file - optimizations will not be used
+Image optimization ratio: 1.00 savings: -0.1%
+Total file size ratio: 0.06 savings: -1687.4%
+Output file is a PDF/A-2B (as expected)
+The output file size is 17.87× larger than the input file.
+Possible reasons for this include:
+--force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+PDF/A conversion was enabled. (Try `--output-type pdf`.)
+

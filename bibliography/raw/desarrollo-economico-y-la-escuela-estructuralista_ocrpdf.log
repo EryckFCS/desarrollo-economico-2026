@@ -1,0 +1,16 @@
+
+Start processing 12 pages concurrently
+
+Postprocessing...
+
+
+
+Image optimization ratio: 1.18 savings: 15.1%
+Total file size ratio: 0.69 savings: -45.5%
+Output file is a PDF/A-2B (as expected)
+The output file size is 1.46× larger than the input file.
+Possible reasons for this include:
+--force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+PDF/A conversion was enabled. (Try `--output-type pdf`.)
+

@@ -1,0 +1,136 @@
+# Documento: Williamson (2002) - Did the Washington Consensus fail
+Source: Lecturas/Bibliografía/Williamson (2002) - Did the Washington Consensus fail.pdf
+---
+
+
+## Página 1
+
+Speeches, Testimony, Papers
+Did the Washington Consensus Fail?
+by John Williamson, Peterson Institute for International Economics
+Outline of speech at the Center for Strategic & International Studies
+Washington, DC
+November 6, 2002
+169; Institute for International Economics
+ 
+It is difficult even for the creator of the term to deny that the phrase "Washington Consensus" is a damaged brand name (Naím 2002). Audiences the world over
+seem to believe that this signifies a set of neoliberal policies that have been imposed on hapless countries by the Washington-based international financial
+institutions and have led them to crisis and misery. There are people who cannot utter the term without foaming at the mouth.
+My own view is of course quite different. The basic ideas that I attempted to summarize in the Washington Consensus have continued to gain wider acceptance
+over the past decade, to the point where Lula has had to endorse most of them in order to be electable. For the most part they are motherhood and apple pie,
+which is why they commanded a consensus.
+Let me remind you of the ten reforms that I originally presented as a summary of what most people in Washington believed Latin America (not all countries) ought
+to be undertaking as of 1989 (not at all times):
+1. Fiscal Discipline. This was in the context of a region where almost all the countries had run large deficits that led to balance of payments crises
+and high inflation that hit mainly the poor because the rich could park their money abroad.
+2. Reordering Public Expenditure Priorities. This suggested switching expenditure in a pro-poor way, from things like indiscriminate subsidies to
+basic health and education.
+3. Tax reform. Constructing a tax system that would combine a broad tax base with moderate marginal tax rates.
+4. Liberalizing Interest Rates. In retrospect I wish I had formulated this in a broader way as financial liberalization, and stressed that views differed
+on how fast it should be achieved.
+5. A Competitive Exchange Rate. I fear I indulged in wishful thinking in asserting that there was a consensus in favor of ensuring that the exchange
+Did the Washington Consensus Fail?
+http://www.iie.com/publications/papers/print.cfm?doc=pub&ResearchID=488
+1 of 4
+10/25/2009 10:51 PM
+
+## Página 2
+
+rate would be competitive, which implies an intermediate regime; in fact Washington was already beginning to subscribe to the two-corner doctrine.
+6. Trade Liberalization. I stated that there was a difference of view about how fast trade should be liberalized.
+7. Liberalization of Inward Foreign Direct Investment. I specifically did not include comprehensive capital account liberalization, because that did not
+command a consensus in Washington.
+8. Privatization. This was the one area in which what originated as a neoliberal idea had won broad acceptance. We have since been made very
+conscious that it matters a lot how privatization is done: it can be a highly corrupt process that transfers assets to a privileged elite for a fraction of
+their true value, but the evidence is that it brings benefits when done properly.
+9. Deregulation. This focused specifically on easing barriers to entry and exit, not on abolishing regulations designed for safety or environmental
+reasons.
+10. Property Rights. This was primarily about providing the informal sector with the ability to gain property rights at acceptable cost.
+The three big ideas here are macroeconomic discipline, a market economy, and openness to the world (at least in respect of trade and FDI). These are ideas
+that had long been regarded as orthodox so far as OECD countries are concerned, but there used to be a sort of global apartheid which claimed that developing
+countries came from a different universe which enabled them to benefit from (a) inflation (so as to reap the inflation tax and boost investment); (b) a leading role
+for the state in initiating industrialization; and (c) import substitution. The Washington Consensus said that this era of apartheid was over.
+Some of the most vociferous of today's critics of what they call the Washington Consensus, most prominently Joe Stiglitz (whose recent book, for example,
+specifically endorses gradual trade liberalization and carefully done privatization), do not object so much to the agenda laid out above as to the neoliberalism that
+they interpret the term as implying. I of course never intended my term to imply policies like capital account liberalization (as stated above, I quite consciously
+excluded that), monetarism, supply-side economics, or a minimal state (getting the state out of welfare provision and income redistribution), which I think of as the
+quintessentially neoliberal ideas. If that is how the term is interpreted, then we can all enjoy its wake, although let us at least have the decency to recognize that
+these ideas have rarely dominated thought in Washington and certainly never commanded a consensus there or anywhere much else except perhaps at meetings
+of the Mont Pelerin Society.
+But this is not how everyone has interpreted the idea. A decade ago many countries, especially in Latin America, were attempting to implement an agenda much
+closer to what I meant by the Washington Consensus than to what Joe Stiglitz means by it. The results have been disappointing, to say the least, particularly in
+terms of growth, employment, and poverty reduction. Should we conclude from this that the Washington Consensus failed?
+In acknowledging disappointment in the outcomes in countries that tried to implement the Washington Consensus, let me be quite clear that I am not including
+Argentina in that category. Argentina did many good reforms, but it also made two fatal errors: it nailed its mast to a currency board that resulted in its exchange
+rate becoming grossly uncompetitive, and it failed to follow the strict fiscal policies that would have been needed to give the currency board a chance to work.
+Both run directly counter to the policies recommended in what I meant by the Washington Consensus, so it is unambiguously wrong to blame the latter for
+Argentina's tragedy.
+That still leaves a real challenge in accounting for the disappointing performance of many countries that made a conscientious attempt to implement the sort of
+reform agenda that I had described. What accounts for this?
+Surely the factor that has been most damaging to economic growth is the series of crises that emerging markets have suffered, starting with that in Mexico at the
+end of 1994. And it is true that the Washington Consensus did not emphasize crisis avoidance. No country that took the Washington Consensus as I wrote it as a
+panacea would have been obliged to do the sort of things that led countries into crisis—by opening up the capital account prematurely and letting money flood in
+and overvalue the currency, or using the exchange rate as a nominal anchor, or pursuing a procyclical fiscal policy. But neither were they warned against such
+Did the Washington Consensus Fail?
+http://www.iie.com/publications/papers/print.cfm?doc=pub&ResearchID=488
+2 of 4
+10/25/2009 10:51 PM
+
+## Página 3
+
+foolish acts. Those were not the urgent issues in the late 1980s, so a warning against them did not get included in the Washington Consensus.
+I draw two conclusions from this. (1) Countries ought not to have adopted the Washington Consensus as an ideology. As Moisés Naím (2000) said, an ideology is
+a thought—economizing device. There will always be other things that matter besides those included in any attempt to lay out a general set of policy guidelines,
+and for a policymaker to imagine that s/he can stop thinking and simply follow a set of policies that someone else has concocted is irresponsible. (2) Anyone
+offering a new set of policy guidelines as of 2002 has a duty to include a set of suggestions as to how crises can be avoided.
+A second reason that outcomes did not match the hopes of a decade ago is that reforms were incomplete, in two ways. For one thing, some of the "first-
+generation reforms" were neglected (perhaps most conspicuously regarding the labor market, which has remained strongly dualistic everywhere, resulting in
+ever-growing informality) or incomplete (e.g. with regard to fiscal reform, where the massive budget deficits were eliminated but opportunity was not taken of the
+good times to run budget surpluses that would allow deficit spending in bad times). In addition, there is a whole generation of so-called "second-generation
+reforms", involving the strengthening of institutions, that is necessary to allow full advantage to be taken of the first-generation reforms.
+And a third reason for disappointing performance is that the objective that underlay the Washington Consensus was excessively narrow. It consisted in
+accelerating growth without worsening income distribution, which was as much as I judged official Washington would subscribe to in 1989.1 If one regards poverty
+as an affront to human dignity, then one will care not simply about the level and growth of income but about its distribution as well. That is why Nancy Birdsall and
+Augusto de la Torre (2001) authored a tract that aims to complement the Washington Consensus by listing a set of ten reforms intended to improve income
+distribution without reducing growth. I regard that as important; but as a complement to the Washington Consensus, not a substitute.
+But none of this argues for abandoning what I meant by the Washington Consensus. It doesn't argue for returning to the high inflation of yesteryear. Nor for giving
+socialism another chance; some want to revive industrial policy, which does not strike me as a promising idea2, but is nonetheless a long way from ubiquitous
+state intervention. Nor for closing economies again. Maybe it would be nice to go back to closed capital accounts, if we could make exchange controls work, but I
+do not detect a groundswell of support for abandoning export promotion in favor of a new wave of import substitution. Critics criticize, quite understandably, the
+hypocrisy of Western governments that urge liberalization on developing countries while maintaining trade restrictions on the specific commodities that developing
+countries are in a position to export to them, or that have pushed intellectual property protection into the WTO. But endorsing those criticisms does not mean
+returning to the global apartheid of the days prior to the Washington Consensus.
+I submit that it is high time to end this debate about the Washington Consensus. If you mean by this term what I intended it to mean, then it is motherhood and
+apple pie and not worth debating. If you mean what Joe Stiglitz means by it, then hardly anyone who cares about development would want to defend it. In neither
+case does it merit all the ink that is spilled on the subject or all the foaming at the mouth that it provokes. Of course it is important to analyze why growth and
+employment and poverty reduction were disappointing in countries that attempted to implement the sort of policies that I intended to cover under the term, but that
+takes us into a more subtle debate, of the sort that I briefly sketched above.
+ 
+References
+Birdsall, Nancy, and Augusto de la Torre. 2001. Washington Contentious: Economic Policies for Social Equity in Latin America. Washington: Carnegie
+Endowment for International Peace and Inter-American Dialogue.
+Naím, Moisés. 2000. "Washington Consensus or Confusion?" Foreign Policy (Spring), no. 118: 86-103.
+Naím, Moisés. 2002. "Washington Consensus: A Damaged Brand." Financial Times, October 28.
+Noland, Marcus, and Howard Pack. 2003. Industrial Policy in an Era of Globalization: Lessons from Asia. Washington: Institute for International Economics.
+Forthcoming.
+Did the Washington Consensus Fail?
+http://www.iie.com/publications/papers/print.cfm?doc=pub&ResearchID=488
+3 of 4
+10/25/2009 10:51 PM
+
+## Página 4
+
+Stiglitz, Joseph E. 2002. Globalization and its Discontents. New York: Norton.
+ 
+Notes
+1. Remember that the origin of the Washington Consensus was a list of policy prescriptions that would command general assent in the Washington of George
+Bush I shortly after Ronald Reagan had left office. The purpose was to frame a conference whose ulterior purpose was to persuade Washington that Latin
+America was engaged in serious reform, not to furnish a policy agenda for Latin America.
+2. A new assessment by my colleague Marcus Noland (2003 forthcoming) concludes that this was not the key to East Asian success
+© 2009 Peter G. Peterson Institute for International Economics. 1750 Massachusetts Avenue, NW.
+Washington, DC 20036. Tel: 202-328-9000 Fax: 202-659-3225 / 202-328-5432
+Site development and hosting by Digital Division
+Did the Washington Consensus Fail?
+http://www.iie.com/publications/papers/print.cfm?doc=pub&ResearchID=488
+4 of 4
+10/25/2009 10:51 PM

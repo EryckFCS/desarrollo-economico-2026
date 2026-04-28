@@ -1,104 +1,63 @@
-# AGENTS.md - Nodo Federado: Economic Development
+# AGENTS.md - Federated Node: Economic Development
 
-> Este repositorio es un Nodo Puro de la Arquitectura Federada v7.4.0.
-> Opera bajo la Constitucion centralizada en `capital-workstation-libs`.
+> This repository is a **Level 5+ Pure Node** in the Federated Architecture v8.0.0.
+> It operates under the Constitution centralized in `capital-workstation-libs`.
 
-## Constitucion
+## 1. Node Identity and Governance
 
-```text
-/home/erick-fcs/Capital_Workstation/capital-workstation-libs/.github/copilot-instructions.md
-```
-
-## 1. Identidad del Nodo y Gobernanza
-
-| Campo | Valor |
+| Field | Value |
 | --- | --- |
-| **Nodo** | Economic Development |
-| **Materia** | Desarrollo Economico |
-| **Estado** | Activo - Sintesis teorica y evidencia por unidades |
+| **Node** | Economic Development |
+| **Status** | Active - Master Blueprint v8.0.0 Migrated |
 | **Docente** | Econ. Johanna Magaly Alvarado Espejo |
-| **Estudiante** | Erick Fabricio Condoy Seraquive |
-| **Periodo** | Marzo - Agosto 2026 |
-| **Libreria Central** | `ecs_quantitative` (capital-workstation-libs) |
-| **Nivel de Inteligencia** | 5 - Ecosistema Inteligente |
-| **Gatekeeper** | `tests/test_main.py` |
-| **QA complementaria** | `python -m pytest` |
-| **RAG** | `economic_development` en `~/.capital/brain/vector_store/`; `bibliography/` conserva `bibliography_index.json` y `rag_status.json` |
+| **Central Library** | `ecs_quantitative` (capital-workstation-libs) |
+| **Intelligence Level** | 5 - Intelligent Ecosystem with Controlled Autonomy |
+| **Architecture Standard** | Blueprint v8.0.0 (High Fidelity) |
+| **Gatekeeper** | `tests/system/test_architecture.py` |
 
-## 2. Capacidades de Inteligencia (v2.0)
+## 2. Advanced Intelligence Capabilities (v3.0)
 
-Este nodo ha sido elevado al Nivel 5, habilitando las siguientes capacidades de inferencia RAG:
+1. **Autonomous Vaults**: Each evidence unit in `docs/evidence/` contains its own `logs/`, `assets/`, and `scripts/`, ensuring forensic reproducibility.
+2. **Standardized RAG Pipeline**: Implements the Universal Sanitization Protocol (USP) with English-centric naming for global automation.
+3. **Data Lineage**: Centralized in [config/intelligence_map.json](config/intelligence_map.json).
 
-1. Inferencia Multiautor: capacidad de contrastar teorias de desarrollo entre fuentes indexadas y lecturas del curso.
-2. Mapeo de Evidencia: rastreo de conceptos a traves de las unidades de evidencia y las lecturas criticas.
-3. Auditoria Teorica: verificacion de documentos QMD contra la bibliografia base para detectar vacios o inconsistencias.
-4. Sincronizacion Idempotente: ingestiones y actualizaciones de bibliografia con desduplicacion y control de estado.
+## 3. Operational Protocols
 
-## 3. Protocolos Operativos
+### 3.1. Architecture Governance Protocol (AGP)
+- **Invariant**: Any structural change must satisfy the requirements of `tests/system/test_architecture.py`.
+- **Action**: Run `uv run pytest tests/system/test_architecture.py` before committing.
 
-### 3.1. Contractual QA Protocol
+### 3.2. Universal Sanitization Protocol (USP)
+- **Path**: PDF (raw) -> OCR (processed) -> Markdown (intermediate) -> Sanitized (RAG).
+- **Quality Gate**: Minimum alphanumeric density of 60%.
 
-- Invariante: ningun cambio se considera estable si rompe el contrato principal del nodo o los metadatos bibliograficos.
-- Accion: ejecutar `PYTHONPATH=src .venv/bin/python -m pytest tests/test_main.py` antes de cerrar cambios de conducta o estructura.
-- Falla: si el test falla, se corrige la causa raiz antes de continuar.
-
-### 3.2. Research Protocol
-
-- Deteccion: identificar si la tarea es teoria (readings) o aplicacion (evidence).
-- Ubicacion: la logica de evidencia vive en `docs/evidence/`, las lecturas en `docs/readings/`, el syllabus en `docs/syllabus/`, la gestion biblica en `bibliography/` y la gobernanza visual en `style/`.
-- Registro: cada ejecucion debe dejar logs en el vault local correspondiente y mantener sincronizados `bibliography_index.json` y `rag_status.json`.
-
-## 4. Arquitectura de Bovedas (Nivel 5)
-
-### 4.1. Estructura Analitica
+## 4. Vault Architecture (v8.0.0)
 
 ```text
 .
-|-- docs/
-|   |-- evidence/            # Workshops and synthesis by unit
-|   |-- readings/            # Critical readings and references
-|   `-- syllabus/            # Academic and institutional syllabus
-|-- bibliography/            # Bibliography index and RAG status
-|-- style/                   # Quarto theme and visual governance
-|-- src/                     # Core logic and domain wrappers
-|-- tests/                   # Regression checks
-`-- main.py                  # Entry point for the node
+├── .github/ workflows/      # Governance automation
+├── bibliography/            # raw/, processed/, markdown/, sanitized/
+├── config/                  # intelligence_map.json, settings.toml
+├── data/                    # Non-bibliographic source data
+├── docs/
+│   ├── evidence/            # Standardized English vaults (Unit-based)
+│   ├── management/          # Architecture and risk reports
+│   ├── readings/            # Theoretical frameworks
+│   └── syllabus/            # Academic guidelines
+├── reports/                 # Institutional deliveries
+├── src/                     # Core Domain Logic
+└── tests/                   # Governance and System tests
 ```
 
-### 4.2. Capas Documentales
-
-- `docs/evidence/`: unidades como `U1-Fundamentos-Contexto/` con evidencias reproducibles.
-- `docs/readings/`: lectura critica, sintesis teoricas y material de apoyo.
-- `docs/syllabus/`: syllabus oficial y documentacion institucional.
-- `bibliography/`: cache canonico de referencias con `bibliography_index.json` y `rag_status.json`.
-- `style/`: hoja de estilo Quarto y gobierno visual del nodo.
-
-## 5. Estrategia de Resiliencia
-
-1. Zero Floating Doctrine: no deben flotar scripts analiticos en la raiz; la logica operativa debe quedarse en `src/` o en los sub-vaults de evidencia.
-2. Path Integrity: resolver rutas con `pathlib` y la configuracion del proyecto, no con rutas codificadas a mano.
-3. Quarto Governance: usar `lualatex` para PDF, mantener YAML minimalista y excluir `scratch/` y salidas temporales.
-4. Bibliography Hygiene: no crear stores alternativos y mantener sincronizados los archivos de trazabilidad.
-
-## 6. Entorno y Mantenimiento
+## 5. Resilience and Maintenance
 
 ```bash
 uv sync
-PYTHONPATH=src .venv/bin/python -m pytest tests/test_main.py
-uv run python scratch/sync_rag_all.py
-quarto render docs/evidence/... --to pdf
+# Verify compliance
+uv run pytest tests/system/test_architecture.py
+# Full Sync (RAG + OCR + Links)
+uv run python src/tasks/sync_bibliographic_intelligence.py
 ```
 
-## 7. Regla de Oro
-
-> Si algo que se construye aqui sirve para otras materias, proponlo para la libreria central.
-
-## 8. Protocolo de Verificación Basado en Evidencia (PVBE)
-
-Para garantizar la integridad del nodo y evitar falsos positivos en la comunicación operativa, el agente DEBE seguir este ciclo sin excepciones:
-
-1.  **Detección de Cambio**: Identificar el archivo o estado a modificar.
-2.  **Ejecución Física**: Disparar el comando real (`run_command`, `write_to_file`, etc.) y capturar el `stdout`/`stderr`.
-3.  **Inspección Post-Acción**: Ejecutar un comando de verificación (ej. `ls`, `cat`, `grep`, o lectura de celdas en Excel) para confirmar que el sistema de archivos o el contenido refleja el cambio esperado.
-4.  **Reporte Basado en Evidencia**: Solo después de confirmar el cambio real, se permite reportar el éxito a la interfaz del usuario, incluyendo el fragmento de evidencia (log o salida) que lo respalda.
-5.  **Anti-Narrativa**: Queda prohibido declarar "listo" o "completado" basado únicamente en la intención o en la generación del código sin su ejecución verificada.
+## Golden Rule
+> **Standardization is not optional.** Every asset in `assets/` must have a traceable log in `logs/`.

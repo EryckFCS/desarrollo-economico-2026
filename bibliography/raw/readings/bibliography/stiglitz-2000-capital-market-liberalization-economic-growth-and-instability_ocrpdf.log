@@ -1,0 +1,32 @@
+
+Start processing 12 pages concurrently
+    1 page already has text! - rasterizing text and running OCR anyway
+    2 page already has text! - rasterizing text and running OCR anyway
+    3 page already has text! - rasterizing text and running OCR anyway
+    5 page already has text! - rasterizing text and running OCR anyway
+    4 page already has text! - rasterizing text and running OCR anyway
+    6 page already has text! - rasterizing text and running OCR anyway
+    7 page already has text! - rasterizing text and running OCR anyway
+    8 page already has text! - rasterizing text and running OCR anyway
+    9 page already has text! - rasterizing text and running OCR anyway
+   10 page already has text! - rasterizing text and running OCR anyway
+   11 page already has text! - rasterizing text and running OCR anyway
+   12 page already has text! - rasterizing text and running OCR anyway
+    4 [tesseract] lots of diacritics - possibly poor OCR
+    4 [tesseract] Image too small to scale!! (2x36 vs min width of 3)
+    4 [tesseract] Line cannot be recognized!!
+
+Postprocessing...
+
+
+
+Image optimization did not improve the file - optimizations will not be used
+Image optimization ratio: 1.00 savings: -0.2%
+Total file size ratio: 0.21 savings: -368.9%
+Output file is a PDF/A-2B (as expected)
+The output file size is 4.69× larger than the input file.
+Possible reasons for this include:
+--force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+PDF/A conversion was enabled. (Try `--output-type pdf`.)
+

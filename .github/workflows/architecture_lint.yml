@@ -1,0 +1,24 @@
+name: Architecture Governance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-architecture:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        
+    - name: Run Architecture Tests
+      run: |
+        # Omitiendo instalación de librerías centrales por costo operativo
+        pip install pytest
+        python -m pytest tests/system/test_architecture.py

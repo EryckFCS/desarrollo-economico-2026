@@ -1,18 +1,37 @@
-# Arquitectura - Desarrollo Economico 2026
+# Technical Architecture - Node Economic Development (v8.0.0)
 
-## Proposito
+## 1. Purpose
+This node implements the **Federated Architecture v8.0.0**, designed for high-fidelity economic research. It prioritizes English-standardized nomenclature and vault autonomy to ensure 100% forensic traceability.
 
-Este repositorio ordena la documentacion academica del curso y mantiene un punto de entrada tecnico minimo para las tareas del laboratorio.
+## 2. Core Layers
 
-## Capas de trabajo
+### 2.1. Intelligence & Configuration
+*   [config/intelligence_map.json](config/intelligence_map.json): The operational source of truth.
+*   [src/lib/intelligence/](src/lib/intelligence/): The local brain orquestrating RAG and maintenance.
+*   [tests/system/test_architecture.py](tests/system/test_architecture.py): Automated gatekeeper for structural integrity.
 
-- **Documental**: [docs/syllabus/](docs/syllabus/), [docs/readings/](docs/readings/) y [docs/README.md](docs/README.md)
-- **Unidades**: [docs/unidad1/](docs/unidad1/), [docs/unidad2/](docs/unidad2/), [docs/unidad3/](docs/unidad3/)
-- **Soporte tecnico**: [main.py](main.py) y [src/utils.py](src/utils.py)
-- **Material complementario**: [Bibliografia/](Bibliograf%C3%ADa/)
+### 2.2. Autonomous Knowledge Vaults
+Located in [docs/evidence/](docs/evidence/), each unit is self-contained:
+*   `U1-Economic-Audit/`: Analysis of structuralism in South Korea.
+*   `U1-Foundations-Context/`: Initial development frameworks.
 
-## Regla de uso
+Each vault contains:
+*   `assets/`: Final tables and figures.
+*   `logs/`: Execution telemetry.
+*   `scripts/`: Unit-specific logic.
+*   `index.qmd`: Quarto orchestrator.
 
-1. Consultar [docs/README.md](docs/README.md) antes de escribir material nuevo.
-2. Mantener una sola copia de cada evidencia en su unidad correspondiente.
-3. No inventar un pipeline que el repositorio todavia no define.
+### 2.3. Bibliographic Stack
+Managed in [bibliography/](bibliography/), following the multi-fidelity pipeline:
+1.  **Raw**: [raw/](bibliography/raw/) (English naming required).
+2.  **Processed**: OCR outputs for low-density PDFs.
+3.  **Sanitized**: [sanitized/](bibliography/sanitized/) (Ingestion ready).
+
+## 3. Governance
+*   **.github/workflows/**: Automated architecture linting.
+*   **Management Vault**: [docs/management/](docs/management/) contains blueprint proposals and technical audit reports.
+
+## 4. Usage Rules
+1.  **English Only**: All new directories and evidence units must use English names.
+2.  **Zero Floating logic**: Global logic in `src/`, unit logic in `docs/evidence/[unit]/scripts/`.
+3.  **Asset-Log Invariant**: No asset can exist without a corresponding log entry.

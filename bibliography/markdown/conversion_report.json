@@ -1,0 +1,244 @@
+{
+    "summary": {
+        "total": 39,
+        "converted": 37,
+        "needs_ocr": 2,
+        "failed": 0
+    },
+    "details": [
+        {
+            "file": "Desarrollo económico y la escuela estructuralista.pdf",
+            "status": "NEEDS_OCR",
+            "avg_chars": 0.0,
+            "pages": 34
+        },
+        {
+            "file": "Desarrollo Humano, Pobreza y Desigualdad.pdf",
+            "status": "CONVERTED",
+            "pages": 178,
+            "size_chars": 370819
+        },
+        {
+            "file": "Debraj Ray Economía del desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 838,
+            "size_chars": 2520433
+        },
+        {
+            "file": "Gramática del Neoliberalismo.pdf",
+            "status": "CONVERTED",
+            "pages": 29,
+            "size_chars": 87285
+        },
+        {
+            "file": "Lectura 4.pdf",
+            "status": "CONVERTED",
+            "pages": 14,
+            "size_chars": 47260
+        },
+        {
+            "file": "La-era-del-desarrollo-sostenible-_Jeffrey-Sachs_-_z-lib.org_.pdf",
+            "status": "CONVERTED",
+            "pages": 618,
+            "size_chars": 1072675
+        },
+        {
+            "file": "LAS TEORÍAS DEL DESARROLLO ECONÓMICO.pdf",
+            "status": "CONVERTED",
+            "pages": 124,
+            "size_chars": 337500
+        },
+        {
+            "file": "Neoestructuralismo.pdf",
+            "status": "CONVERTED",
+            "pages": 9,
+            "size_chars": 33615
+        },
+        {
+            "file": "Resumen_Neoliberalismo_Ampliado.pdf",
+            "status": "CONVERTED",
+            "pages": 3,
+            "size_chars": 5656
+        },
+        {
+            "file": "Estructuralismo-Cepal.pdf",
+            "status": "CONVERTED",
+            "pages": 34,
+            "size_chars": 97128
+        },
+        {
+            "file": "Teorias_del_desarrollo_economico UNED.pdf",
+            "status": "CONVERTED",
+            "pages": 46,
+            "size_chars": 119288
+        },
+        {
+            "file": "Desarrollo económico y la escuela estructuralista_OCR.pdf",
+            "status": "CONVERTED",
+            "pages": 34,
+            "size_chars": 88640
+        },
+        {
+            "file": "Lecturas de los contenidos  Unidad 1/2 Hidalgo-Capitán Economia_politica_del_desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 42,
+            "size_chars": 112645
+        },
+        {
+            "file": "Lecturas de los contenidos  Unidad 1/1 Retrospectiva de la Economia del Desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 10,
+            "size_chars": 35141
+        },
+        {
+            "file": "Lecturas de los contenidos  Unidad 1/3 Teorías del Desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 59737
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralimo 5.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 53794
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralismo 2.pdf",
+            "status": "CONVERTED",
+            "pages": 10,
+            "size_chars": 58241
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralism 3.pdf",
+            "status": "CONVERTED",
+            "pages": 28,
+            "size_chars": 79620
+        },
+        {
+            "file": "Neoestructuralismo/Dialnet-UnaLecturaCriticaDelNeoestructuralismoLatinoameric-8807519.pdf",
+            "status": "CONVERTED",
+            "pages": 1,
+            "size_chars": 2168
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralismo 1.pdf",
+            "status": "CONVERTED",
+            "pages": 9,
+            "size_chars": 33615
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralismo 4.pdf",
+            "status": "CONVERTED",
+            "pages": 16,
+            "size_chars": 59046
+        },
+        {
+            "file": "Neoestructuralismo/Neoestructuralismo-Una-Alternativa-para-America-Latina.pdf",
+            "status": "CONVERTED",
+            "pages": 11,
+            "size_chars": 3352
+        },
+        {
+            "file": "Lecturas/Bibliografía/Seers (1969) - The Meaning of Dvelopment.pdf",
+            "status": "NEEDS_OCR",
+            "avg_chars": 4.357142857142857,
+            "pages": 28
+        },
+        {
+            "file": "Lecturas/Bibliografía/Mankiw, Romer & Weil (1992) - A Contribution to the Empirics of Economic Growth.pdf",
+            "status": "CONVERTED",
+            "pages": 31,
+            "size_chars": 73518
+        },
+        {
+            "file": "Lecturas/Bibliografía/Ravallion (2001) - Growth, inequality and poverty. Looking beyond averages_OCR.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 60644
+        },
+        {
+            "file": "Lecturas/Bibliografía/De Long (1988) - Productivity Growth, Convergence, and Welfare. Comment.pdf",
+            "status": "CONVERTED",
+            "pages": 18,
+            "size_chars": 62589
+        },
+        {
+            "file": "Lecturas/Bibliografía/Baumol (1986) - Productivity growth, convergence, and welfare. Long run data show.pdf",
+            "status": "CONVERTED",
+            "pages": 15,
+            "size_chars": 56496
+        },
+        {
+            "file": "Lecturas/Bibliografía/Williamson (1993) - Democracy and the Washington Consensus.pdf",
+            "status": "CONVERTED",
+            "pages": 8,
+            "size_chars": 38040
+        },
+        {
+            "file": "Lecturas/Bibliografía/Williamson (2002) - Did the Washington Consensus fail.pdf",
+            "status": "CONVERTED",
+            "pages": 4,
+            "size_chars": 12892
+        },
+        {
+            "file": "Lecturas/Bibliografía/Ravallion (2001) - Growth, inequality and poverty. Looking beyond averages.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 57880
+        },
+        {
+            "file": "Lecturas/Bibliografía/Barro and Sala-i-Martin (2004) - Economic Growth.pdf",
+            "status": "CONVERTED",
+            "pages": 673,
+            "size_chars": 1571765
+        },
+        {
+            "file": "Lecturas/Bibliografía/Stockhammer (2004) - Financialisation and the slowdown of accumulation.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 79629
+        },
+        {
+            "file": "Lecturas/Bibliografía/Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability_OCR.pdf",
+            "status": "CONVERTED",
+            "pages": 12,
+            "size_chars": 49761
+        },
+        {
+            "file": "Lecturas/Bibliografía/Stiglitz (1999) - Knowledge as a Global Public Good.pdf",
+            "status": "CONVERTED",
+            "pages": 585,
+            "size_chars": 1369478
+        },
+        {
+            "file": "Lecturas/Bibliografía/Seers (1969) - The Meaning of Dvelopment_OCR.pdf",
+            "status": "CONVERTED",
+            "pages": 28,
+            "size_chars": 60562
+        },
+        {
+            "file": "Lecturas/Bibliografía/Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability.pdf",
+            "status": "CONVERTED",
+            "pages": 12,
+            "size_chars": 46342
+        },
+        {
+            "file": "Lecturas/Bibliografía/Seers (1963) - The Limitations of the Special Case.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 63044
+        },
+        {
+            "file": "Lecturas de los contenidos  Unidad 1/Lecturas adicionales/Foro 1/S2500222_es.pdf",
+            "status": "CONVERTED",
+            "pages": 213,
+            "size_chars": 622598
+        },
+        {
+            "file": "Lecturas de los contenidos  Unidad 1/Lecturas adicionales/Foro 1/Perspectivas-economicas-OCDE-Junio-2025-ESP-PRT-Final-opt.pdf",
+            "status": "CONVERTED",
+            "pages": 47,
+            "size_chars": 123899
+        }
+    ]
+}
