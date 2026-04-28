@@ -1,5 +1,5 @@
-# Documento: Lectura
-Source: Lectura 4.pdf ## Página
+# Documento: lectura-4
+Source: lectura-4.pdf ## Página
 * Es Profesora Asociada C de Tiempo Completo en la Facultad de Economía de la unam. Es licenciada en Economía con mención honorífica por la unam, doctora por la Universidad de Nueva Gales del Sur, Sídney, Australia y miembro del Sistema Nacional de Investigadores nivel C. Su trabajo académico y profesional por los últimos 10 años ha sido principalmente interdisciplinario, abarcando las áreas de economía, desarrollo y migración. Algunas de sus publicaciones han aparecido en revistas como Journal of Ethnic and Migration Studies, Qualitative Research Journal, Investigación Económica y Economíaunam.
 Revisión del modelo de sustitución de importaciones:
 vigencia y algunas reconsideraciones

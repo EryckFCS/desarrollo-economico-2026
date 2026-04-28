@@ -1,5 +1,5 @@
-# Documento: Estructuralismo-Cepal
-Source: Estructuralismo-Cepal.pdf ## Página
+# Documento: estructuralismo-cepal
+Source: estructuralismo-cepal.pdf ## Página
 1 EL PENSAMIENTO ESTRUCTURALISTA
 DE
 LA CEPAL SOBRE

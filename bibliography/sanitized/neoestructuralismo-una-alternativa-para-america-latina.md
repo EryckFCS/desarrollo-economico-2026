@@ -1,5 +1,5 @@
-# Documento: Neoestructuralismo-Una-Alternativa-para-America-Latina
-Source: Neoestructuralismo/Neoestructuralismo-Una-Alternativa-para-America-Latina.pdf ## Página Neoestructuralism o: Una Alternativa para América Latina El neoestructuralismo surge como una corriente de pensamiento económico latinoamericano. Busca soluciones para el desarrollo de la región, combinando elementos del estructuralismo clásico con nuevas estrategias.
+# Documento: neoestructuralismo-una-alternativa-para-america-latina
+Source: neoestructuralismo/neoestructuralismo-una-alternativa-para-america-latina.pdf ## Página Neoestructuralism o: Una Alternativa para América Latina El neoestructuralismo surge como una corriente de pensamiento económico latinoamericano. Busca soluciones para el desarrollo de la región, combinando elementos del estructuralismo clásico con nuevas estrategias.
 by Johanna Alvarado Espejo
 
 ## Página

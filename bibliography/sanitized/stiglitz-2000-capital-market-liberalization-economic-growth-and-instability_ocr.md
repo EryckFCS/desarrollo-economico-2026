@@ -1,5 +1,5 @@
-# Documento: Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability_OCR
-Source: Lecturas/Bibliografía/Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability_OCR.pdf ## Página Pergamon www.elsevier.com/locate/worlddev World Development Vol. 28, No. 6, pp. 1075-1086, © 2000 Elsevier Science Ltd. All rights reserved Printed in Great Britain 0305-750X/00/$ - see front matter PII: S0305-750X(00)00006-1
+# Documento: stiglitz-2000-capital-market-liberalization-economic-growth-and-instability_ocr
+Source: readings/bibliography/stiglitz-2000-capital-market-liberalization-economic-growth-and-instability_ocr.pdf ## Página Pergamon www.elsevier.com/locate/worlddev World Development Vol. 28, No. 6, pp. 1075-1086, © 2000 Elsevier Science Ltd. All rights reserved Printed in Great Britain 0305-750X/00/$ - see front matter PII: S0305-750X(00)00006-1
 Capital Market Liberalization, Economic Growth, and Instability JOSEPH E. STIGLITZ The World Bank, Washington, DC, US'A Summary. - This paper reviews briefly the arguments for capital market liberalization, and identifies their theoretical and empirical weaknesses.
 This provides the foundations for the argument for intervention in short-term capital flows. The paper concludes with a brief discussion of the various ways 1n which such interventions may be implemented. © 2000 Elsevier Science Ltd.
 All rights reserved.

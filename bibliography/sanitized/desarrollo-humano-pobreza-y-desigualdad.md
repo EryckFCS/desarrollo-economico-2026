@@ -1,5 +1,5 @@
-# Documento: Desarrollo Humano, Pobreza y Desigualdad
-Source: Desarrollo Humano, Pobreza y Desigualdad.pdf ## Página Manua Desarr
+# Documento: desarrollo-humano-pobreza-y-desigualdad
+Source: desarrollo-humano-pobreza-y-desigualdad.pdf ## Página Manua Desarr
 
 Sergio Tezanos Váz
 Ainoa Quiñones Mo

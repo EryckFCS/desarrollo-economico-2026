@@ -1,5 +1,5 @@
-# Documento: Neoestructuralismo
-Source: Neoestructuralismo/Neoestructuralismo 4.pdf ## Página e-l@tina Revista electrónica de estudios latinoamericanos e-l@tina es una publicación del Grupo de Estudios de Sociología Histórica de América Latina (GESHAL) con sede en el Instituto de Estudios de América Latina y el Caribe (IEALC) Facultad de Ciencias Sociales Universidad de Buenos Aires Neoestructuralismo: igualdad, cambio estructural y desarrollo en el capitalismo periférico
+# Documento: neoestructuralismo-4
+Source: neoestructuralismo/neoestructuralismo-4.pdf ## Página e-l@tina Revista electrónica de estudios latinoamericanos e-l@tina es una publicación del Grupo de Estudios de Sociología Histórica de América Latina (GESHAL) con sede en el Instituto de Estudios de América Latina y el Caribe (IEALC) Facultad de Ciencias Sociales Universidad de Buenos Aires Neoestructuralismo: igualdad, cambio estructural y desarrollo en el capitalismo periférico
 
 Noelia Gurmendi
 Licenciada en Sociología, Becaria Doctoral de CONICET. Universidad Nacional de Santiago del Estero. Centro de Estudios de Demografía y Población (CEDEP).

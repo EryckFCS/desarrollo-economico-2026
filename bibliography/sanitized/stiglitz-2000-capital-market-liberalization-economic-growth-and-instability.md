@@ -1,365 +1,1304 @@
-# Documento: Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability
-Source: Stiglitz (2000) - Capital Market Liberalization, Economic Growth, and Instability_OCR.pdf
-Status: SANITIZED_VIA_OCR
+# Documento: stiglitz-2000-capital-market-liberalization-economic-growth-and-instability
+Source: readings/bibliography/stiglitz-2000-capital-market-liberalization-economic-growth-and-instability.pdf
 ---
-## Página
-Pergamon www.elsevier.com/locate/worlddev
-World Development Vol. 28, No. 6, pp. 1075-1086,
-© 2000 Elsevier Science Ltd. All rights reserved
-Printed in Great Britain
-0305-750X/00/$
-- see front matter
-PII: S0305-750X(00)00006-1
-Capital Market Liberalization, Economic Growth, and Instability JOSEPH E. STIGLITZ The World Bank, Washington, DC, US'A Summary. - This paper reviews briefly the arguments for capital market liberalization, and identifies their theoretical and empirical weaknesses.
-This provides the foundations for the argument for intervention in short-term capital flows. The paper concludes with a brief discussion of the various ways 1n which such interventions may be implemented. © 2000 Elsevier Science Ltd.
-All rights reserved.
-1. INTRODUCTION
-The world is just emerging from the worst financial and economic crisis since the Great Depression. While financial variables, such as exchange rates, have stabilized in East Asia, unemployment remains far higher than before the crisis, and real wages far lower. The World Bank estimates that the 1999 output of the five crisis countries of East Asia will still be 17% below what it would have been had the growth trend of the 10 years before the crisis continued.
-In addition, large parts of the world remain in a precarious economic position-with deep recession or depression facing several countries in Latin America, and output in many of the economies in transition still markedly below what it was a decade ago.
-It has become increasingly clear that financial and capital market liberalization-done hurriedly, without first putting into place an effective regulatory framework-was at the core of the problem. It 1s no accident that the two large developing countries that survived the crisis-and continued with remarkably strong growth in spite of a difficult global economic environment-were India and China, both countries with strong controls on these capital flows.
-The crisis in East Asia was not the only crisis of recent years. Indeed, there have been, by one reckoning, 80-100 crises over the past quarter century (Lindgren et al., 1996, p. 20). Crises have become more frequent and more severe, suggesting a fundamental weakness in global economic arrangements.
-As
-I[ put it in one lecture, when there is a single accident on a highway, one suspects that the driver's attention may have lapsed.
-But when there are dozens of accidents at the same bend in the same highway, one needs to re-examine the design of the road.
-I suggested that one might compare capital account liberalization to putting a race car engine into an old car and setting off without checking the tires or training the driver.
-Perhaps with appropriate tires and training, the car might perform better;
-but without such equipment and training, it 1s almost inevitable that an accident will occur. One might actually have done far better with the older, more reliable engine:
-performance would have been slower, but there would have been less potential for an accident.
-Similarly, the international economic architecture must be designed to "work"
-not just in the presence of perfect economic management, but with the kind of fallible governments and public officials that in fact occur in democratic societies.
-As the crisis spread from East Asia to Russia, and then to Latin America, it became clear that even countries with good economic policies and relatively sound financial institutions (at least as conventionally defined) were adversely affected, and seriously so.
-(Indeed, this was consistent with earlier research that had shown that changes in capital flows, and even crises, were predominantly precipitated by events outside the country, such as changes in interest rates in the more developed countries (Calvo et al., 1993; see also Fernandez-Arias, 1995)).
-Thus, the rhetoric with which the crisis was begun-that globalization, liberalization, and the market economy delivered its fruits to
-## Página
-virtuous countries and that problems were only visited upon countries that, in one way or another, had sinned-was re-examined, and a more cautionary approach was taken to the reforms that had been long advocated by the zealots. At the same time, the analytic arguments for-and against-capital market liberalization were subject to greater scrutiny. The case for capital market liberalization was found wanting, especially striking given the zeal with which the International Monetary Fund (IMF) had requested an extension of its mandate to include capital market liberalization a short two years earlier at the Annual Meetings in Hong Kong.
-It should have been clear then, and it is certainly clear now, that the position was maintained either as a matter of ideology or of special interests, and not on the basis of careful analysis of theory, historical experience or a wealth of econometric studies. Indeed, it has become increasingly clear that there is not only no case for capital market liberalization, but that there is a fairly compelling case against full liberalization. The fact that the international financial community came so close to adopting a position that could not be justified on the basis of theory or evidence should, in itself, provide an important cautionary note, especially in the context of the debate over reforming the international economic architecture. Clearly, before reforms of this magnitude are adopted, there needs to be more open debate, and all the affected parties-including workers who are threatened with unemployment and falling wages, and small businesses that are threatened with bankruptcy as interest rates soar to usurious levels-need to have a seat at the discussion table. Unfortunately, in some of the circles in which the pivotal issues are being discussed, not only are these groups not represented, but the developing countries do not even have a formal membership.
-In this paper,
-I want to review briefly the arguments for capital market liberalization, and identify their theoretical and empirical weaknesses. This will provide the foundations for the argument for intervention in short-term capital flows.
-I shall then briefly discuss the various ways in which such interventions may be implemented.
-Throughout much of the discussion, I shall talk about "interventions" in fairly general terms.
-It should be clear, however, that not all interventions are identical. Today, for instance, while there is widespread acceptance of interventions that stabilize inflows, interventions on outflows remain highly controversial.
-Some-even many-forms of intervention may not bring benefits commensurate with their costs. The central argument in this paper is that there exist some forms of intervention that are likely to be welfare-enhancing.
-Before beginning the discussion,
-I want to make it clear that
-I am focusing my attention on short-term speculative capital flows.
-The argument for foreign direct investment, for instance, 1s compelling. Such investment brings with it not only resources, but technology, access to markets, and (hopefully) valuable training, an improvement in human capital.
-Foreign direct investment is also not as volatile-and therefore as disruptive-as the shortterm flows that can rush into a country and, just as precipitously, rush out (World Bank, 1999). The magnitude of these changes in flows can be enormous, as shown in Figure 1. In the case of Thailand, the change in flows amounted to 14% of the GDP and in the case of South Korea 9% of the GDP. In the case of East Asia as a whole, the turnaround in capital flow during 1996-97 amounted to $105 billion, more than 10% of the GDP of these combined economies. If the United States experienced the change in flow that Thailand did, for example, this could be equivalent to a change in capital flows of over $1 trillion. Even with its strong financial and other institutions, it is not clear how well the United States would whether such a storm (Institute of International Finance, 1998; as cited in Rodrik, 1998). Moreover, it is also clear that one can intervene in short-term flows, and still provide a hospitable environment for foreign direct investment, as China, the largest recipient of foreign direct investment, amply demonstrates.
-2. THE CASE FOR CAPITAL MARKET LIBERALIZATION
-The case for capital market liberalization is largely based on standard efficiency arguments, employing a conventional neoclassical model and ignoring the special ways in which financial and capital markets differ from markets for ordinary goods and services, such as steel. The proponents focus on efficiency effects, ignoring the distributional consequences, presumably believing that if the gains are large enough, either the benefits will trickle down to the poor, or the government will take active measures to
 
-## Página
-Equity placement
-i Bank lending
-- Bond issuance
-98 1st Half
-98 2nd Half
-99 1st Half
-Figure
-1. Capital market flows to developing countries. (Source: Euromoney Loanware and Bondware. ) ensure that the poor will not be harmed. While the evidence in support of either hypothesis may not be there, my concern here is to evaluate the case more on its own terms, that is, the case that capital market liberalization leads to higher output and greater efficiency.
-There are five components to the argument:
-(a)
-Countries should be concerned with maximizing
-GN P-the incomes of their citizens-not GDP, the output of the country.
-If the citizens of a country can find an outlet for their funds with a higher return than any investment in their country, then GNP 1s maximized by allowing the funds to leave the country. (Moreover, the higher returns themselves might stimulate the citizens of the country to save more.) By the same token, 1f a foreign investor finds an investment opportunity within the country with a higher return than the opportunity cost of his funds, complementary factors within the country will benefit, as their marginal product 1s increased.
-(b) International competition for funds provides a needed spur for countries to create an economic environment attractive to business. It is behind closed doors that countries can engage in efficiency-decreasing practices, e.g., regulations for which the benefits are not commensurate with the costs.
-(c) Open capital markets help stabilize the economy through diversification. As a country faces a downturn, the lower wages will attract funds into the country, helping to stimulate it. This was a central argument for capital market liberalization in East Asia.
-After all, the governments had demonstrably worked hard to create an environment in which the economy, and the private sector in particular, had flourished; growth rates had been phenomenal for three decades or more. Savings rates were already very high;
-indeed, it was remarkable that the countries were able to absorb the high level of savings, investing them productively. Other countries with such high savings rates had not fared so well. One could hardly argue that, given the high savings rates, they needed to open their capital markets to obtain needed funds.
-(d) On the other hand, for much of the rest of the world, open capital markets were important as a source of funding for needed investment projects.
-(ec) Finally, the case for opening capital markets was made by way of analogy to free trade in goods and services. A central tenet in economics-at least since Adam Smithwas that free trade was beneficial to a country. Indeed, it paid a country to eliminate trade barriers unilaterally, even if trading partners did not. "Capital,"
-1t was argued, was just like another good. The case for capital market liberalization was thus the same as the case for free trade in general;
-that case was so well known, it hardly needed to be repeated.
-The predictions of the advocates of capital market liberalization are clear, but unfortunately, historical experience has not been supportive.
 
-## Página
-(a) Growth
-There
-1s a wealth of crosscountry studies supporting the view that trade liberalization leads to faster economic growth (see, e.g., Sachs & Warner, 1995; Wacziarg, 1998; Vamvakidis, 1999), though to be sure, there are a few studies providing suggestions to the contrary.
-In contrast, for the case of capital market liberalization, there are relatively few studies, but what evidence there is, is not supportive of liberalization. Figure 2, borrowed from Danny Rodrik's study, shows growth in different countries related to the openness of capital markets, as measured by the IMF.
-This
-1s particularly important, because it provides a metric that corresponds to the kinds of actions that the IMF might have taken in attempting to open up the capital markets. Figure 3 provides some insights into why this might be the caseit plots investment in different countries related to the openness of capital markets. Again, there is no relationship.
-(b) Stability
-The global economic crisis has centered attention around another aspect of economic performance, stability. Stability is important for several reasons. Research has shown that instability has persistent effects on economic growth-growth is slowed down for several years after a crisis has occurred (Caprio, 1997).
-Indeed, the large unit root literature suggests that an economy that suffers a large drop in output never fully recovers-output remains persistently below what it would have been.
-Thus, the present discounted value of lost output associated with the magnitude of declines observed in East Asia or Ecuador are enormous.
-Moreover, instability often has marked distributional consequences, especially in developing countries. Even in developed countries, such as the United States, the poor bear a disproportionate burden in terms of increased unemployment (Furman & Stiglitz, 1999b). But in most developing countries, safety nets are inadequate or nonexistent. The recent crises have amply demonstrated this burden, with unemployment increasing 3-4 fold in Korea and Thailand (and by more in Indonesia), and with real wages falling 10% in Korea, and by as much as a quarter in Thailand and Indonesia.
-I already alluded to the increased frequency of financial and economic crises, and suggested that this change is related to financial and coef = .00383295, se = .00558392, t = .69
-BWA CYP MLT COG "KG KOR can
-UGA
-YEM coy
-ME
-[BRA COL PRY
-MEX q
-DOMcR, age
-SGP JPN IDN
-O)
-THA ERPS TU
-WE
-GTINWND
-Ab i tS SBR
-[0
-SEW PAN
-N
-CHAUBNK ae
-BCRGO BOL MYS BEL o) ae
-HUN IND BOR VEN NLD GMB
->
-POL
-Shiy>,
-PER PHL NER ZAR ZMB GUY -055896 7 PNS
-e( capsum75
-| X )
-Figure
-2. Economic growth and capital account liberalization, 1975-89. (Source: Rodrik, 1998.) This scatter plot controls for per capita income, secondary education, quality of governmental institutions, and regional dummies for East Asia, Latin America, and sub-Saharan Africa.
+## Página 1
 
-## Página
-coef = -.009830/76, se = .01738468, t = -.57
-YUG TGO
-Pot BWANB bZA
-SGP JPN FIN TZA ECU KOR oy
-GR
-IDN
-D t
-NOR SOREN PER PAN BRA
-MI
-MI
-MYS CHE
-JBL Zar
-Eh oO
-Line
-IND URY ve) ta
-Ae!
-HND
-O
-VEN BOL NX ALAL
-G
-DEU
-:
->
-ISR CHALE YEM
-Cc
-BHR
-G
-CAN
-=
-4 DNK COGUGA LBR qd)
-THR
-TUN GTM SLV BEL TTOR eight
-NLD USA PNG
-Mon
-HKG GBR EGY
-SLE -.119883 BGD
--~-459911
-e( capsum/5
-| X )
-Figure
-3. Investment/GDP and capital account liberalization, 1975-89. (Source: Rodrik, 1998.) This scatter plot controls for per capita income, secondary education, quality of governmental institutions, and regional dummies for East Asia, Latin America, and sub-Saharan Africa.
-capital market liberalization.
-Cross-country studies have confirmed this (Demirguc-Kunt & Detragiache, 1998).
-Cross-country econometric studies looking more broadly at the impact of capital market liberalization on the likelihood of an economy having a recession have again confirmed the adverse effects (Easterly et al., 1999).
-Thus, it is clear that not only is there no compelling empirical case for capital market liberalization, there 1s a compelling case against capital market liberalization, at least until countries have found ways of managing the adverse consequences.
-3. WHY CAPITAL MARKET LIBERALIZATION PRODUCES INSTABILITY, NOT GROWTH Given the seemingly compelling arguments for capital market liberalization, why does the evidence point so much in the opposite direction?
-(a) Fallacies in the standard arguments
-We begin our discussion by identifying the fallacies in the standard arguments. The most fundamental is this:
-financial and capital markets are essentially different from markets for ordinary goods and services. The central function of capital and financial markets 1s information-gathering-in particular, assessing which projects and firms are most likely to yield the highest returns, and monitoring to ensure that the funds are used in the appropriate way.
-Moreover, markets for information are fundamentally different from "'ordinary" markets.
-For instance, whenever information 1s 1mperfect, markets are essentially never constrained Pareto efficient-in marked contrast to standard results for competitive markets with perfect information (e.g., Greenwald & Stiglitz, 1986). Thus, the fifth argument, that the argument for capital liberalization is exactly the same as the argument for trade liberalization, 1s simply false.
-Perhaps the most telling deficiency in the standard case 1s in the third argument, that opening capital markets allows for diversification and thereby enhances stability. As we have seen, capital market liberalization is systemically associated with greater instability, and for good reason: capital flows are markedly procyclical, exacerbating economic fluctuations, when they do not actually cause them. The behavior is consistent with the popular adage
+!"#$%"& '"()*% +$,*("&$-"%$./0 12./.3$2 4(.5%60
+"/7 8/9%",$&$%:
+;<=1>? 1@ =A84+8AB
+!"# $%&'( )*+,- $*."/+01%+- 23- 456
+!"##$%&' ( A6$9 #"#*( (*C$*59 ,($*D: %6* "(EF3*/%9 G.( 2"#$%"& 3"()*% &$,*("&$-"%$./0 "/7
+$7*/%$H*9 %6*$( %6*.(*%$2"& "/7 *3#$($2"& 5*")/*99*9@ A6$9 #(.C$7*9 %6* G.F/7"%$./9 G.( %6*
+"(EF3*/% G.( $/%*(C*/%$./ $/ 96.(%I%*(3 2"#$%"& D.59@ A6* #"#*( 2./2&F7*9 5$%6 " ,($*G 7$92F99$./
+.G %6* C"($.F9 5":9 $/ 56$26 9F26 $/%*(C*/%$./9 3": ,* $3#&*3*/%*7@ ! JKKK 1&9*C$*( =2$*/2* +%7@
+L&& ($E6%9 (*9*(C*7@
+M@ 8NAO<PQ!A8<N
+A6* 5.(&7 $9 RF9% *3*(E$/E G(.3 %6* 5.(9%
+H/"/2$"& "/7 *2./.3$2 2($9$9 9$/2* %6* 4(*"%
+P*#(*99$./@ S6$&* H/"/2$"& C"($",&*90 9F26 "9
+*T26"/E* ("%*90 6"C* 9%",$&$-*7 $/ 1"9% L9$"0
+F/*3#&.:3*/% (*3"$/9 G"( 6$E6*( %6"/ ,*G.(*
+%6* 2($9$90 "/7 (*"& 5"E*9 G"( &.5*(@ A6* S.(&7
+U"/) *9%$3"%*9 %6"% %6* MVVV .F%#F% .G %6* HC*
+2($9$9 2.F/%($*9 .G 1"9% L9$" 5$&& 9%$&& ,* MWX
+,*&.5 56"% $% 5.F&7 6"C* ,**/ 6"7 %6* E(.5%6
+%(*/7 .G %6* MK :*"(9 ,*G.(* %6* 2($9$9 2./%$/F*7@
+8/ "77$%$./0 &"(E* #"(%9 .G %6* 5.(&7 (*3"$/ $/ "
+#(*2"($.F9
+*2./.3$2
+#.9$%$./Y5$%6
+7**#
+(*2*99$./ .( 7*#(*99$./ G"2$/E 9*C*("& 2.F/%($*9
+$/ +"%$/ L3*($2"0 "/7 .F%#F% $/ 3"/: .G %6*
+*2./.3$*9 $/ %("/9$%$./ 9%$&& 3"()*7&: ,*&.5
+56"% $% 5"9 " 7*2"7* "E.@
+8% 6"9 ,*2.3* $/2(*"9$/E&: 2&*"( %6"% H/"/2$"&
+"/7
+2"#$%"&
+3"()*%
+&$,*("&$-"%$./Y7./*
+6F(($*7&:0 5$%6.F% H(9% #F%%$/E $/%. #&"2* "/
+*Z*2%$C* (*EF&"%.(: G("3*5.()Y5"9 "% %6*
+2.(* .G %6* #(.,&*3@ 8% $9 /. "22$7*/% %6"% %6*
+%5. &"(E* 7*C*&.#$/E 2.F/%($*9 %6"% 9F(C$C*7
+%6* 2($9$9Y"/7 2./%$/F*7 5$%6 (*3"()",&:
+9%(./E E(.5%6 $/ 9#$%* .G " 7$[2F&% E&.,"&
+*2./.3$2 */C$(./3*/%Y5*(* 8/7$" "/7 !6$/"0
+,.%6 2.F/%($*9 5$%6 9%(./E 2./%(.&9 ./ %6*9*
+2"#$%"& D.59@
+A6* 2($9$9 $/ 1"9% L9$" 5"9 /.% %6* ./&: 2($9$9
+.G (*2*/% :*"(9@ 8/7**70 %6*(* 6"C* ,**/0 ,: ./*
+(*2)./$/E0 \K]MKK 2($9*9 .C*( %6* #"9% ^F"(%*(
+2*/%F(: _+$/7E(*/ #1 *'@0 MVV`0 #@ JKa@ !($9*9
+6"C* ,*2.3* 3.(* G(*^F*/% "/7 3.(* 9*C*(*0
+9FEE*9%$/E " GF/7"3*/%"& 5*")/*99 $/ E&.,"&
+*2./.3$2 "(("/E*3*/%9@ L9 8 #F% $% $/ ./*
+&*2%F(*0 56*/ %6*(* $9 " 9$/E&* "22$7*/% ./ "
+6$E65":0 ./* 9F9#*2%9 %6"% %6* 7($C*(!9 "%%*/I
+%$./ 3": 6"C* &"#9*7@ UF% 56*/ %6*(* "(*
+7.-*/9 .G "22$7*/%9 "% %6* 9"3* ,*/7 $/ %6*
+9"3* 6$E65":0 ./* /**79 %. (*I*T"3$/* %6*
+7*9$E/ .G %6* (."7@
+8 9FEE*9%*7 %6"% ./* 3$E6% 2.3#"(* 2"#$%"&
+"22.F/% &$,*("&$-"%$./ %. #F%%$/E " ("2* 2"(
+*/E$/* $/%. "/ .&7 2"( "/7 9*%%$/E .Z 5$%6.F%
+26*2)$/E
+%6*
+%$(*9
+.(
+%("$/$/E
+%6*
+7($C*(@
+>*(6"#9 5$%6 "##(.#($"%* %$(*9 "/7 %("$/$/E0 %6*
+2"( 3$E6% #*(G.(3 ,*%%*(b ,F% 5$%6.F% 9F26
+*^F$#3*/% "/7 %("$/$/E0 $% $9 "&3.9% $/*C$%",&*
+%6"% "/ "22$7*/% 5$&& .22F(@ </* 3$E6% "2%F"&&:
+6"C* 7./* G"( ,*%%*( 5$%6 %6* .&7*(0 3.(* (*&$I
+",&* */E$/*c #*(G.(3"/2* 5.F&7 6"C* ,**/
+9&.5*(0 ,F% %6*(* 5.F&7 6"C* ,**/ &*99 #.%*/%$"&
+G.( "/ "22$7*/%@ =$3$&"(&:0 %6* $/%*(/"%$./"&
+*2./.3$2 "(26$%*2%F(* 3F9% ,* 7*9$E/*7 %.
+dd5.()ee /.% RF9% $/ %6* #(*9*/2* .G #*(G*2%
+*2./.3$2 3"/"E*3*/%0 ,F% 5$%6 %6* )$/7 .G
+G"&&$,&* E.C*(/3*/%9 "/7 #F,&$2 .[2$"&9 %6"% $/
+G"2% .22F( $/ 7*3.2("%$2 9.2$*%$*9@
+L9 %6* 2($9$9 9#(*"7 G(.3 1"9% L9$" %. OF99$"0
+"/7 %6*/ %. +"%$/ L3*($2"0 $% ,*2"3* 2&*"( %6"%
+*C*/ 2.F/%($*9 5$%6 E..7 *2./.3$2 #.&$2$*9 "/7
+(*&"%$C*&: 9.F/7 H/"/2$"& $/9%$%F%$./9 _"% &*"9%
+"9 2./C*/%$./"&&: 7*H/*7a 5*(* "7C*(9*&: "GI
+G*2%*70 "/7 9*($.F9&: 9.@ _8/7**70 %6$9 5"9
+2./9$9%*/% 5$%6 *"(&$*( (*9*"(26 %6"% 6"7 96.5/
+%6"% 26"/E*9 $/ 2"#$%"& D.590 "/7 *C*/ 2($9*90
+5*(*
+#(*7.3$/"/%&: #(*2$#$%"%*7
+,: *C*/%9
+.F%9$7* %6* 2.F/%(:0 9F26 "9 26"/E*9 $/ $/%*(*9%
+("%*9 $/ %6* 3.(* 7*C*&.#*7 2.F/%($*9 _!"&C.
+#1 *'@0 MVVfb 9** "&9. g*(/!"/7*-IL($"90 MVVhaa@
+A6F90 %6* (6*%.($2 5$%6 56$26 %6* 2($9$9 5"9
+,*EF/Y%6"% E&.,"&$-"%$./0 &$,*("&$-"%$./0 "/7
+%6* 3"()*% *2./.3: 7*&$C*(*7 $%9 G(F$%9 %.
+$%&'( 2#7#'%89#+1 i.&@ J\0 N.@ `0 ##@ MKWh]MK\`0 JKKK
+! JKKK 1&9*C$*( =2$*/2* +%7@ L&& ($E6%9 (*9*(C*7
+>($/%*7 $/ 4(*"% U($%"$/
+KfKhIWhKjkKKkl I 9** G(./% 3"%%*(
+)**+ !,-,./0.,12,,3,,,,4/5
+555@*&9*C$*(@2.3k&.2"%*k5.(&77*C
+MKWh
 
-## Página
-about bankers being willing to lend when one does not need the money. When the bankers see economic weakness, they pull their money out of the country.
-In addition, capital market liberalization exposes countries to vicissitudes associated with changes in economic circumstances outside the country; a sudden change in lenders' perceptions concerning "emerging market risk" can lead to huge capital outflows, undermining the viability of the entire financial system.
-The argument that governments should be concerned with GNP-the income of their citizens-has some validity, but misses a central issue in development: there are a variety of reasons to believe that investors do not appropriate the full value of their contributions.
-Recent literature, for instance, has emphasized the importance of returns to scale, network externalities, and a variety of other spillovers (e.g., Hoff, 1997). These externalities may be particularly important in early stages of development.
-In addition, whenever there are taxes on capital, social benefits from investing at home may exceed private benefits, unless the government can impose commensurate taxes on investments abroad, which it often cannot.
-The issue of whether capital market liberalization provides additional sources of funding is also questionable: as the data above suggested, it does not lead to more investment. There are two related issues. First, does more shortterm capital-unstable as it is-provide a basis for investment? The answer is clearly no. The second is, do restrictions on short-term capital flows discourage foreign direct investment or other forms of longer term investment? Again, the answer appears to be no. We already noted that the country that has been the most successful in recruiting foreign direct investment, China, also imposes a high level of restrictions on short-term capital flows.
-But there is little evidence that countries that have imposed restrictions on short-term flows, Chile on inflows, Malaysia on outflows, have had their long-term flows adversely affected (e.g., Lee, 1996). Indeed, as I note below, there may even be reasons why foreign direct investment may be attracted: as we noted, capital market liberalization is associated with greater economic volatility, or at least a higher probability of a recession. Such uncertainty clearly makes investment less attractive.
-Actually, in many cases, the argument that opening the capital account is important for enhancing a flow of capital into the country is turned on its head: in many instances, the key issue 1s not capital flowing into the country, but flowing out. Opening the capital account has facilitated capital flight, and thus contributed to the weakening of the economy (see Dooley, 1998).
-The argument with which
-I am most sympathetic is that opening the capital account imposes "'discipline.'' Countries are "forced" to have good economic policies, lest capital flow out of the country. But I have argued that far more relevant for the long-run success of the economy is foreign direct investment; and the desire to acquire and sustain FDI provides strong discipline on the economy and _ the political process. The question is, does opening of the short-term capital account-making the country subject to short-run oscillations in sentiment-provide significant extra external discipline? On the negative side, the openness to capital flight makes countries especially sensitive, e.g., to corporate or capital tax rates or to changes in interest rates. Thus, openness may impose costly constraints on the ability of government to pursue legitimate objectives.
-One of those objectives is economic stability.
-China was able to pursue active countercyclical macro-policies, staving off a recession and maintaining robust growth of close to 8%, because the capital account restrictions provided it some room to maneuver. It had no need to raise interest rates to levels that killed the economy in order to "save"
-it from capital flight.
-(b) Why capital account liberalization has not contributed to growth The result cited earlier that capital account liberalization is not associated with faster investment, and therefore faster growth, should not come as a surprise. We have already noted that the case for positive effects is weak: firms are unlikely to engage in productive long-term investments on the basis of short-term funds.
-But there are even reasons to expect that capital market liberalization can have negative effects on growth. We argued above that it leads to greater instability, and instability (especially financial market crises) has adverse effects on economic growth. Indeed, it is not only the downturn itself which has lasting effects, but the very presence of the risk of instability that is likely to discourage investment.
-Opening the capital account can, and has in several
+## Página 2
 
-## Página
-countries, facilitated the flow of capital out of the country (rather than, as promised, accelerating the flow of capital into the country), providing another channel for adverse effects.
-There is an equally compelling argument for why capital market liberalization (at the short end) might be expected to have adverse effects on growth. Countries today are encouraged to maintain adequate reserves, to protect themselves against volatility in international financial markets. A key indicator is the ratio of reserves to foreign denominated short-term indebtedness. When that number falls below unity, investors and lenders become worried and indeed recent econometric work has suggested that this variable provides the best explanation for which countries were adversely affected by the recent global financial crisis (see Furman & Stiglitz, 1999a). Of course, if all investors believe that all other investors are looking at that variable to determine whether or when to pull their money out of a country, it can become a self-fulfilling prophecy. Now consider a poor developing country.
-A company within the country borrows, say, $100
-million from a US bank that charges him 20%.
-If the country has been maintaining what it views as minimum prudential reserves-it recognizes the high opportunity cost of reserves-then it will have to add $100 million to reserves.
-For simplicity, assume it holds those reserves in
-US
-T-bills.
-Consider the implications from the perspective of the country's balance sheet and income flows: It has lent the United States $100 million and borrowed from the United States the same amount-it has no new net capital.
-But it pays to the
-United States every year $20 million in interest, while it receives from the US $5 million, the interest on the T-bill. Clearly, this is a good deal for the United States-one might understand why the United States might be in favor of rules that encourage such transactions-but is hardly the basis for more rapid growth by the poor developing country. (The costs may even be higher than these calculations suggest, because the opportunity cost of the funds that the government has to use for reserves could even exceed 20%.) To be sure, the adverse effects on economic performance may (especially going forward) be unnecessarily increased as a result of the particular policies that the IMF has customarily employed in response to the crises that may, as we have seen, be systemically associated with full capital account convertibility.
-Excessively restrictive monetary and _ fiscal policies (see Stiglitz, 1998, 1999; World Bank, 1998a,b; Lane et al., 1999) resulted in deep recessions or depressions. The "'unit root literature" suggests that these negative effects are persistent. Moreover, looking forward, businesses will view debt financing as highly risky;
-in the event of another crisis (and as we have noted, such crises have become increasingly frequent and deep, in spite of rhetoric that might suggest otherwise), a firm with even a moderate debt equity ratio could be put into distress. Firms will thus have to limit expansion to what they can largely self-finance-with strong adverse effects on long-term economic growth.
-4. THE CASE FOR INTERVENTION
-Once one recognizes that short-term capital flows can give rise to economic instability, there is a compelling economic case for intervention:
-the instability associated with short-term capital movements results in there being a marked discrepancy between private and social returns and risks. The capital flows impose a huge negative externality. Indeed, it should be obvious that the crisis that resulted from these volatile flows has affected many others besides the borrowers and lenders-workers who saw their incomes plummet and small businesses that were forced into bankruptcy as a result of the soaring interest rates. Ironically, the design of the policy response probably increased the magnitude of the externality. The IMF explicitly argued for increasing interest rates, with huge adverse effects on firms not engaged in international speculation, in order to avoid the adverse effects on those who had uncovered foreign denominated borrowings.
-The nature of this externality can be seen in a number of ways. Clearly, the borrowing countries-the workers and small businessmenhave paid a high price. Alternatively, we can see the externality exercised through the prudential reserve management policies described earlier.
-A $100 million capital inflow that has to be offset by $100 million in increased reserves imposes huge costs on those who might have benefited from other uses of these funds. The $100 million could have been spent to build schools, health clinics, or roads to attract more investment. Clearly then, the private decision to borrow has imposed a high negative cost on society.
+C$(%F.F9 2.F/%($*9 "/7 %6"% #(.,&*39 5*(* ./&:
+C$9$%*7 F#./ 2.F/%($*9 %6"%0 $/ ./* 5": .(
+"/.%6*(0 6"7 9$//*7Y5"9 (*I*T"3$/*70 "/7 "
+3.(* 2"F%$./"(: "##(."26 5"9 %")*/ %. %6*
+(*G.(39 %6"% 6"7 ,**/ &./E "7C.2"%*7 ,: %6*
+-*"&.%9@ L% %6* 9"3* %$3*0 %6* "/"&:%$2 "(EFI
+3*/%9 G.(Y"/7 "E"$/9%Y2"#$%"& 3"()*% &$,*(I
+"&$-"%$./ 5*(* 9F,R*2% %. E(*"%*( 92(F%$/:@ A6*
+2"9* G.( 2"#$%"& 3"()*% &$,*("&$-"%$./ 5"9 G.F/7
+5"/%$/E0 *9#*2$"&&: 9%($)$/E E$C*/ %6* -*"& 5$%6
+56$26 %6* 8/%*(/"%$./"& './*%"(: gF/7 _8'ga
+6"7 (*^F*9%*7 "/ *T%*/9$./ .G $%9 3"/7"%* %.
+$/2&F7* 2"#$%"& 3"()*% &$,*("&$-"%$./ " 96.(%
+%5. :*"(9 *"(&$*( "% %6* L//F"& '**%$/E9 $/
+?./E m./E@ 8% 96.F&7 6"C* ,**/ 2&*"( %6*/0
+"/7 $% $9 2*(%"$/&: 2&*"( /.50 %6"% %6* #.9$%$./
+5"9 3"$/%"$/*7 *$%6*( "9 " 3"%%*( .G $7*.&.E:
+.( .G 9#*2$"& $/%*(*9%90 "/7 /.% ./ %6* ,"9$9
+.G 2"(*GF& "/"&:9$9 .G %6*.(:0 6$9%.($2"& *T#*($I
+*/2* .( " 5*"&%6 .G *2./.3*%($2 9%F7$*9@ 8/7**70
+$% 6"9 ,*2.3* $/2(*"9$/E&: 2&*"( %6"% %6*(* $9 /.%
+./&: /. 2"9* G.( 2"#$%"& 3"()*% &$,*("&$-"%$./0
+,F% %6"% %6*(* $9 " G"$(&: 2.3#*&&$/E 2"9* *0*/+.1
+GF&& &$,*("&$-"%$./@ A6* G"2% %6"% %6* $/%*(/"I
+%$./"& H/"/2$"& 2.33F/$%: 2"3* 9. 2&.9* %.
+"7.#%$/E " #.9$%$./ %6"% 2.F&7 /.% ,* RF9%$H*7
+./ %6* ,"9$9 .G %6*.(: .( *C$7*/2* 96.F&70 $/
+$%9*&G0 #(.C$7* "/ $3#.(%"/% 2"F%$./"(: /.%*0
+*9#*2$"&&: $/ %6* 2./%*T% .G %6* 7*,"%* .C*(
+(*G.(3$/E %6* $/%*(/"%$./"& *2./.3$2 "(26$%*2I
+%F(*@ !&*"(&:0 ,*G.(* (*G.(39 .G %6$9 3"E/$%F7*
+"(* "7.#%*70 %6*(* /**79 %. ,* 3.(* .#*/
+7*,"%*0 "/7 "&& %6* "Z*2%*7 #"(%$*9Y$/2&F7$/E
+5.()*(9 56. "(* %6(*"%*/*7 5$%6 F/*3#&.:I
+3*/% "/7 G"&&$/E 5"E*90 "/7 93"&& ,F9$/*99*9
+%6"%
+"(*
+%6(*"%*/*7
+5$%6
+,"/)(F#%2:
+"9
+$/%*(*9% ("%*9 9."( %. F9F($.F9 &*C*&9Y/**7 %.
+6"C* " 9*"% "% %6* 7$92F99$./ %",&*@ Q/G.(%FI
+/"%*&:0 $/ 9.3* .G %6* 2$(2&*9 $/ 56$26 %6*
+#$C.%"& $99F*9 "(* ,*$/E 7$92F99*70 /.% ./&: "(*
+%6*9* E(.F#9 /.% (*#(*9*/%*70 ,F% %6* 7*C*&.#I
+$/E 2.F/%($*9 7. /.% *C*/ 6"C* " G.(3"&
+3*3,*(96$#@
+8/ %6$9 #"#*(0 8 5"/% %. (*C$*5 ,($*D: %6*
+"(EF3*/%9 G.( 2"#$%"& 3"()*% &$,*("&$-"%$./0
+"/7 $7*/%$G: %6*$( %6*.(*%$2"& "/7 *3#$($2"&
+5*")/*99*9@ A6$9 5$&& #(.C$7* %6* G.F/7"%$./9
+G.( %6* "(EF3*/% G.( $/%*(C*/%$./ $/ 96.(%I%*(3
+2"#$%"& D.59@ 8 96"&& %6*/ ,($*D: 7$92F99 %6*
+C"($.F9 5":9 $/ 56$26 9F26 $/%*(C*/%$./9 3":
+,* $3#&*3*/%*7@ A6(.FE6.F% 3F26 .G %6*
+7$92F99$./0 8 96"&& %"&) ",.F% dd$/%*(C*/%$./9ee $/
+G"$(&:
+E*/*("&
+%*(39@
+8%
+96.F&7
+,*
+2&*"(0
+6.5*C*(0 %6"% /.% "&& $/%*(C*/%$./9 "(* $7*/%$I
+2"&@ A.7":0 G.( $/9%"/2*0 56$&* %6*(* $9 5$7*I
+9#(*"7
+"22*#%"/2*
+.G
+$/%*(C*/%$./9
+%6"%
+9%",$&$-* $/D.590 $/%*(C*/%$./9 ./ .F%D.59
+(*3"$/
+6$E6&:
+2./%(.C*(9$"&@
+=.3*Y*C*/
+3"/:YG.(39 .G $/%*(C*/%$./ 3": /.% ,($/E
+,*/*H%9 2.33*/9F("%* 5$%6 %6*$( 2.9%9@ A6*
+2*/%("& "(EF3*/% $/ %6$9 #"#*( $9 %6"% %6*(* *T$9%
+.%9# G.(39 .G $/%*(C*/%$./ %6"% "(* &$)*&: %. ,*
+5*&G"(*I*/6"/2$/E@
+U*G.(* ,*E$//$/E %6* 7$92F99$./0 8 5"/% %.
+3")* $% 2&*"( %6"% 8 "3 G.2F9$/E 3: "%%*/%$./
+./ 96.(%I%*(3 9#*2F&"%$C* 2"#$%"& D.59@ A6*
+"(EF3*/% G.( G.(*$E/ 7$(*2% $/C*9%3*/%0 G.(
+$/9%"/2*0 $9 2.3#*&&$/E@ =F26 $/C*9%3*/% ,($/E9
+5$%6 $% /.% ./&: (*9.F(2*90 ,F% %*26/.&.E:0
+"22*99 %. 3"()*%90 "/7 _6.#*GF&&:a C"&F",&*
+%("$/$/E0 "/ $3#(.C*3*/% $/ 6F3"/ 2"#$%"&@
+g.(*$E/ 7$(*2% $/C*9%3*/% $9 "&9. /.% "9 C.&"I
+%$&*Y"/7 %6*(*G.(* "9 7$9(F#%$C*Y"9 %6* 96.(%I
+%*(3 D.59 %6"% 2"/ (F96 $/%. " 2.F/%(: "/70
+RF9% "9 #(*2$#$%.F9&:0 (F96 .F% _S.(&7 U"/)0
+MVVVa@ A6* 3"E/$%F7* .G %6*9* 26"/E*9 $/ D.59
+2"/ ,* */.(3.F90 "9 96.5/ $/ g$EF(* M@ 8/ %6*
+2"9* .G A6"$&"/70 %6* 26"/E* $/ D.59 "3.F/%*7
+%. MnX .G %6* 4P> "/7 $/ %6* 2"9* .G =.F%6
+m.(*" VX .G %6* 4P>@ 8/ %6* 2"9* .G 1"9% L9$"
+"9 " 56.&*0 %6* %F(/"(.F/7 $/ 2"#$%"& D.5
+7F($/E MVV`]VW "3.F/%*7 %. lMKh ,$&&$./0 3.(*
+%6"/ MKX .G %6* 4P> .G %6*9* 2.3,$/*7
+*2./.3$*9@ 8G %6* Q/$%*7 =%"%*9 *T#*($*/2*7 %6*
+26"/E* $/ D.5 %6"% A6"$&"/7 7$70 G.( *T"3#&*0
+%6$9 2.F&7 ,* *^F$C"&*/% %. " 26"/E* $/ 2"#$%"&
+D.59 .G .C*( lM %($&&$./@ 1C*/ 5$%6 $%9 9%(./E
+H/"/2$"& "/7 .%6*( $/9%$%F%$./90 $% $9 /.% 2&*"(
+6.5 5*&& %6* Q/$%*7 =%"%*9 5.F&7 56*%6*( 9F26
+" 9%.(3 _8/9%$%F%* .G 8/%*(/"%$./"& g$/"/2*0
+MVV\b "9 2$%*7 $/ O.7($)0 MVV\a@ '.(*.C*(0 $% $9
+"&9. 2&*"( %6"% ./* 2"/ $/%*(C*/* $/ 96.(%I%*(3
+D.590 "/7 9%$&& #(.C$7* " 6.9#$%",&* */C$(./I
+3*/% G.( G.(*$E/ 7$(*2% $/C*9%3*/%0 "9 !6$/"0
+%6* &"(E*9% (*2$#$*/% .G G.(*$E/ 7$(*2% $/C*9%I
+3*/%0 "3#&: 7*3./9%("%*9@
+J@ A?1 !L=1 g<O !L>8AL+ 'LOm1A
++8U1OL+8BLA8<N
+A6* 2"9* G.( 2"#$%"& 3"()*% &$,*("&$-"%$./ $9
+&"(E*&: ,"9*7 ./ 9%"/7"(7 *[2$*/2: "(EF3*/%90
+*3#&.:$/E " 2./C*/%$./"& /*.2&"99$2"& 3.7*&
+"/7 $E/.($/E %6* 9#*2$"& 5":9 $/ 56$26 H/"/2$"&
+"/7 2"#$%"& 3"()*%9 7$Z*( G(.3 3"()*%9 G.(
+.(7$/"(: E..79 "/7 9*(C$2*90 9F26 "9 9%**&@ A6*
+#(.#./*/%9 G.2F9 ./ *[2$*/2: *Z*2%90 $E/.($/E
+%6* 7$9%($,F%$./"& 2./9*^F*/2*90 #(*9F3",&:
+,*&$*C$/E %6"% $G %6* E"$/9 "(* &"(E* */.FE60
+*$%6*( %6* ,*/*H%9 5$&& %($2)&* 7.5/ %. %6* #..(0
+.( %6* E.C*(/3*/% 5$&& %")* "2%$C* 3*"9F(*9 %.
+S<O+P P1i1+<>'1NA
+MKW`
 
-## Página
-Whenever there are such discrepancies, the economists' natural reaction is to impose a "tax''?
-to correct the externality, in order to eliminate, or at least reduce, the difference between social and private returns. To be sure, such taxes might discourage some capital flows;
-but this criticism is like pointing out that a tax on air pollution discourages the production of goods, like steel, that contribute to air pollution. The point is that firms should be made to pay the full social cost of their activity; doing so will, and should, reduce the level of activities that create negative externalities.
-The consequences of the externalities may depend on the circumstances of the country.
-More advanced industrialized economies typically have more built-in automatic stabilizers and strong safety nets, so they can absorb the shocks better. Poorer countries may not only have no automatic stabilizers, they may face constraints (e.g., on borrowing) that exacerbate fluctuations. For instance, while fiscal policy in developed countries is typically countercyclical, in developing countries, it is pro-cyclical (see Easterly et al., 1999;
-Hausmann
-&
-Gavin,
-1996). Moreover, as we have already noted, policies recommended to, and in some cases effectively forced on, developing countries may make matters worse (see Stiglitz, 2000). Weak financial institutions may make a country particularly vulnerable to large and sudden changes in short-term flows.
-The recognition of the importance of these externality effects associated with short-term flows has constituted perhaps the major shift in thinking in discussions over the international financial architecture during the past two years.
-During the World Bank and IMF Annual
-Meetings in Hong Kong in
-October
-1997, shortly after the crisis began, there was a call for a change in the IMF charter to push through the agenda of capital account liberalization.
-This proposal was accompanied, appropriately, by several caveats. Proponents of the change recognized that liberalization required sufficiently strong and stable financial institutions, which in turn meant that a strong regulatory framework would have to be in place as a prerequisite.
-Today, there is a greater recognition of the importance of those caveats. Even advanced industrialized countries have found it difficult to establish strong financial institutions and effective regulatory structures, as witnessed by the financial crises in Scandinavia and the United States. These examples show that crises can easily occur in countries with a high degree of transparency, and that one hardly needs crony capitalism to generate a crisis.
-If there had been any question about the increasing difficulties of good financial regulation posed by the growing role of derivatives, the matter was settled by the government-engineered, privately financed bailout of Long Term Capital Management (LTCM) in October 1998.
-This single hedge fund had an exposure estimated in excess of a trillion dollars that, according to those who defended the role of the government in the bailout (and who resisted allegations of crony capitalism and corporate misgovernance), posed a threat to global financial stability.
-Much of the money for
-LTCM exposure came from supposedly wellregulated banks.
-Clearly, even without exposing themselves to the volatility of short-term capital flows, developing countries face greater risks (for instance, because of their less diversified economies and the weaker role of automatic stabilizers) and they typically have relatively low regulatory capacity in the financial sector.
-Given these features of their economies, the caveat that developing countries should have strong financial institutions and regulatory structures in place before liberalizing their capital accounts suggests that the entire question is now moot. In the immediate future, few countries should be pressed to move far in the direction of liberalization.
-The market failure analysis presented above
-(the discrepancy between social and private returns), the strong empirical evidence of the high risks associated with short-term capital flows, and the absence of convincing evidence of growth-enhancing benefits associated with capital account liberalization (in the shortterm)-all these points lead one to question the fundamental premises underlying the drive for capital account liberalization.
-5. DESIGNING EFFECTIVE INTERVENTIONS
-Hence, while 24 months ago there were calls for full capital account liberalization, today the debate has shifted. It is no longer whether some form of intervention might be desirable in principle, but whether there exist interventions that are effective and that do not have adverse ancillary effects. That China and India have managed to weather the storm and maintain
+## Página 3
 
-## Página
-strong growth; that China already as has been alluded to several times, has managed to attract huge amounts of foreign direct investment while maintaining controls on short-term capital; that countries that have capital market restrictions seem to have done as well as those that have not suggest that it is possible to impose such restrictions without significant adverse effects.
-The purpose of the interventions is to equate social and private costs and to stabilize the short-term flows.
-To understand what is at issue, an analogy may be useful. Dams do not stop the flow of water from the top of a mountain to the ocean. But without the dam, sudden powerful flows may cause death and destruction; with the dam in place, not only are lives saved and property protected, but the water itself can be channeled into constructive uses.
-A dam can serve a useful role in averting a flood even if it is not perfect, 1.e. even if some of the water spills over the top and makes its way down the mountainside, bypassing the dam. So too for interventions in capital markets: it is not a valid criticism to say that they are not perfect, that there will be leaks, or that there will be some circumvention of the regulations or taxes.
-The question is, do they nonetheless serve to stabilize the flows, and at not too great a cost to the economy?
-More recently, attention has focused on three sets of interventions: restrictions on capital inflows, restrictions on capital outflows, and restrictions imposed on _ the banking system.
-(a) Capital inflows
-Chile has imposed what amounts to a tax on short-term inflows. In doing so, it has succeeded in stabilizing these flows, without adversely affecting the flow of long-term productive capital.
-(Incidentally, even a tax on capital inflows can serve to stabilize outflows. Those who seek quick returns by taking their money out for a brief time in the hopes of a devaluation, and then bringing it back, are made to pay a high price for this round trip.) Some critics have interpreted Chile's actions in the recent crisis-where the tax rate was set at zero-as an abandonment by that country of this policy. But that is simply wrong. The point of the tax is to stabilize the flow, to discourage excess inflows when that appears to be the problem. But in the global financial crisis, no developing country faced excess inflows.
-Indeed, it might even be conceivable that, faced with a shortage of inflows, the country might have a negative tax. But the tax structure is in place:
-if global financial markets recover, as they almost surely will, and the country again faces an excess of capital inflows, then the tax rate could again be raised.
-Today, the
-IMF endorses the idea that countries should consider such stabilizing interventions.
-But this is just one of many interventions that can help stabilize financial flows. I would argue that, given the potentially severe consequences of volatile flows, the international community should encourage experimentation with other interventions. One country, for instance, is discussing limiting the tax deductibility (for purposes of the corporation income tax) of interest on foreign-denominated, short-term debt. (This intervention has the further advantage of being largely "'self-reporting.'') (b) Capital outflows Malaysia tried a quite different experiment:
-controls on the outflow of capital. Many within the international capital markets greeted this experiment with little enthusiasm or even explicit expressions of distaste. These rhetorical attacks typically failed to note the many subtleties of Malaysian policies, including the provisions designed to protect interests of longterm investors. Recently, the country moved to a more market-based exit tax. It is too soon to evaluate the experiment, but preliminary results suggest that it has been far from the disaster that the naysayers had predicted; the removal of the tax went smoothly, the country used the time provided to make significant progress in financial and corporate restructuring (far more progress than some of its neighbors), and foreign direct investment continued at a relatively strong pace.
-(c) Regulating capital flows through the banking system The East Asian crisis highlighted the importance of the financial system. Weaknesses in the financial system-generated, for instance, by a mismatch between foreign denominated liabilities and domestically denominated assets-can give rise to systemic weaknesses in the entire economy.
-Observers of the crisis, however, noted that focusing on the financial system may not be enough;
-after all, two-thirds of the foreign-denominated borrowing in Indonesia
+*/9F(* %6"% %6* #..( 5$&& /.% ,* 6"(3*7@ S6$&*
+%6* *C$7*/2* $/ 9F##.(% .G *$%6*( 6:#.%6*9$9
+3": /.% ,* %6*(*0 3: 2./2*(/ 6*(* $9 %. *C"&I
+F"%* %6* 2"9* 3.(* %+ /1. %:+ 1#&9.0 %6"% $90 %6*
+2"9* %6"% 2"#$%"& 3"()*% &$,*("&$-"%$./ &*"79 %.
+6$E6*( .F%#F% "/7 E(*"%*( *[2$*/2:@
+A6*(* "(* HC* 2.3#./*/%9 %. %6* "(EF3*/%c
+_"a !.F/%($*9 96.F&7 ,* 2./2*(/*7 5$%6
+9*;/9/</+0 =>?Y%6* $/2.3*9 .G %6*$( 2$%$I
+-*/9Y/.% 4P>0 %6* .F%#F% .G %6* 2.F/%(:@
+8G %6* 2$%$-*/9 .G " 2.F/%(: 2"/ H/7 "/ .F%&*%
+G.( %6*$( GF/79 5$%6 " 6$E6*( (*%F(/ %6"/ "/:
+$/C*9%3*/% $/ %6*$( 2.F/%(:0 %6*/ 4N> $9
+3"T$3$-*7 ,: "&&.5$/E %6* GF/79 %. &*"C*
+%6* 2.F/%(:@ _'.(*.C*(0 %6* 6$E6*( (*%F(/9
+%6*39*&C*9 3$E6% 9%$3F&"%* %6* 2$%$-*/9 .G
+%6* 2.F/%(: %. .*7# 3.(*@a U: %6* 9"3* %.I
+)*/0 $G " G.(*$E/ $/C*9%.( H/79 "/ $/C*9%3*/%
+.##.(%F/$%: 5$%6$/ %6* 2.F/%(: 5$%6 " 6$E6*(
+(*%F(/ %6"/ %6* .##.(%F/$%: 2.9% .G 6$9
+GF/790 2.3#&*3*/%"(: G"2%.(9 5$%6$/ %6*
+2.F/%(: 5$&& ,*/*H%0 "9 %6*$( 3"(E$/"& #(.I
+7F2% $9 $/2(*"9*7@
+_,a 8/%*(/"%$./"& @%98#1/1/%+ G.( GF/79 #(.I
+C$7*9 " /**7*7 9#F( G.( 2.F/%($*9 %. 2(*"%*
+"/ *2./.3$2 */C$(./3*/% "%%("2%$C* %. ,F9$I
+/*99@ 8% $9 ,*6$/7 2&.9*7 7..(9 %6"% 2.F/%($*9
+2"/ */E"E* $/ *[2$*/2:I7*2(*"9$/E #("2%$2*90
+*@E@0 (*EF&"%$./9 G.( 56$26 %6* ,*/*H%9 "(*
+/.% 2.33*/9F("%* 5$%6 %6* 2.9%9@
+_2a <#*/ 2"#$%"& 3"()*%9 6*&# .1*A/'/<# %6*
+*2./.3: %6(.FE6 (/7#&./B@*1/%+@ L9 " 2.F/I
+%(: G"2*9 " 7.5/%F(/0 %6* &.5*( 5"E*9 5$&& "%I
+%("2% GF/79 $/%. %6* 2.F/%(:0 6*&#$/E %.
+9%$3F&"%* $%@ A6$9 5"9 " 2*/%("& "(EF3*/%
+G.( 2"#$%"& 3"()*% &$,*("&$-"%$./ $/ 1"9% L9$"@
+LG%*( "&&0 %6* E.C*(/3*/%9 6"7 7*3./9%(",&:
+5.()*7 6"(7 %. 2(*"%* "/ */C$(./3*/% $/
+56$26 %6* *2./.3:0 "/7 %6* #($C"%* 9*2%.(
+$/ #"(%$2F&"(0 6"7 D.F($96*7b E(.5%6 ("%*9
+6"7 ,**/ #6*/.3*/"& G.( %6(** 7*2"7*9 .(
+3.(*@ ="C$/E9 ("%*9 5*(* "&(*"7: C*(: 6$E6b
+$/7**70 $% 5"9 (*3"()",&* %6"% %6* 2.F/%($*9
+5*(* ",&* %. ",9.(, %6* 6$E6 &*C*& .G 9"C$/E90
+$/C*9%$/E %6*3 #(.7F2%$C*&:@ <%6*( 2.F/%($*9
+5$%6 9F26 6$E6 9"C$/E9 ("%*9 6"7 /.% G"(*7 9.
+5*&&@ </* 2.F&7 6"(7&: "(EF* %6"%0 E$C*/ %6*
+6$E6 9"C$/E9 ("%*90 %6*: /**7*7 %. .#*/ %6*$(
+2"#$%"& 3"()*%9 %. .,%"$/ /**7*7 GF/79@
+_7a </ %6* .%6*( 6"/70 G.( 3F26 .G %6* (*9%
+.G %6* 5.(&70 .#*/ 2"#$%"& 3"()*%9 5*(*
+$3#.(%"/% "9 " .%C&@# %D DC+(/+0 G.( /**7*7
+$/C*9%3*/% #(.R*2%9@
+_*a g$/"&&:0 %6* 2"9* G.( .#*/$/E 2"#$%"& 3"(I
+)*%9 5"9 3"7* ,: 5": .G *+*'%0E 1% D&##
+1&*(# /+ 0%%(. *+( .#&7/@#.F L 2*/%("& %*/*%
+$/ *2./.3$29Y"% &*"9% 9$/2* L7"3 =3$%6Y
+5"9 %6"% G(** %("7* 5"9 ,*/*H2$"& %. " 2.F/I
+%(:@ 8/7**70 $% #"$7 " 2.F/%(: %. *&$3$/"%*
+%("7* ,"(($*(9 F/$&"%*("&&:0 *C*/ $G %("7$/E
+#"(%/*(9 7$7 /.%@ dd!"#$%"&0ee $% 5"9 "(EF*70
+5"9 RF9% &$)* "/.%6*( E..7@ A6* 2"9* G.(
+2"#$%"& 3"()*% &$,*("&$-"%$./ 5"9 %6F9 %6*
+9"3* "9 %6* 2"9* G.( G(** %("7* $/ E*/*("&b
+%6"% 2"9* 5"9 9. 5*&& )/.5/0 $% 6"(7&:
+/**7*7 %. ,* (*#*"%*7@
+A6* #(*7$2%$./9 .G %6* "7C.2"%*9 .G 2"#$%"&
+3"()*% &$,*("&$-"%$./ "(* 2&*"(0 ,F% F/G.(%FI
+/"%*&:0
+6$9%.($2"&
+*T#*($*/2*
+6"9
+/.%
+,**/
+9F##.(%$C*@
+g$EF(* M@ 3*8/1*' 9*&,#1 G%:. 1% (#7#'%8/+0 @%C+1&/#.F H5%C&@#I JC&%9%+#E K%*+:*&# *+( )%+(:*&#FL
+!L>8AL+ 'LOm1A +8U1OL+8BLA8<N
+MKWW
 
-## Página
-was by corporates. Indeed, the argument was put forward that limiting bank borrowing by itself would be like putting a finger into a dike.
-If foreign banks were offering highly favorable terms, the pressure for foreign borrowing would show up somewhere else in the system.
-Improved banking regulation might limit direct weaknesses in the banking system, but lead to more corporate exposure.
-This perspective, however, ignores the central role that the financial system plays in the economy, and the ability of government to exercise pervasive effects through the regulation of the banking system. Governments can and indeed should insist that banks look at the uncovered exposure of firms to which they have lent. For that (uncovered) exposure can affect greatly the likelihood that the firms to which they have lent will not be able to repay their loans. Again, Malaysia provides a case in point:
-bank regulations succeeded in limiting exposure of Malaysian firms.
-In principle, the bank regulations can be market-based; that is, bank regulators could impose risk weights in the capital adequacy requirements so that loans to firms with high exposure received higher risk weights. Thus, banks would only make loans to such firms if they received an interest rate high enough to compensate them for the higher costs (and risks). But no government imposes the kind of sophisticated risk-based capital adequacy standards that this would imply; in the near term, emerging markets are probably better served by employing simple regulatory structures.
-6. CONCLUDING REMARKS
-In the aftermath of the global financial crisis and the recognition of the high costs that those in the developing world have had to pay, there emerged extensive discussion of a new global economic architecture. Everyone agreed that attention should be focused on _ preventing future crises, though upon further reflection, the goal became modified to making such crises less frequent and less deep. Early discussions focused on improving transparency, though nearly everyone recognized that most of the relevant information (e.g., the high leverage of Korea's firms and the heavy investment in the highly cyclical chip industry) was already readily available. When it was further observed that the last major set of crises occurred in three of the most transparent countries (Norway, Sweden, and Finland), it became clear that transparency itself would hardly inoculate a country against a crisis. Deeper analysis further questioned the transparency explanation. The affected countries had experienced three decades of rapid and relatively stable growth; if anything, there had been an increase in transparency.
-Moreover, many countries that were less transparent did not have a crisis. More broadly, while improved information (transparency) might lead to better resource allocations, both theoretical and empirical analyses questioned its role in enhancing economic stability (see Furman & Stiglitz, 1999a,b). Enthusiasm for the transparency agenda in some quarters was further eroded when it was pointed out that to be meaningful, transparency had to be comprehensive, including off-shore banking and hedge funds, and possibly even the actions of central bankers!
-A second major strand of reforms focused on strengthening of financial institutions. Again, while desirable, the difficulties that even advanced industrial countries had in establishing strong financial institutions suggested that this would remain a long-term challenge in emerging markets. A host of other reformsfrom collective action clauses in bonds, to systemic bankruptcy provisions, to improved corporate governance-were put on the table.
-Some, like the collective action clauses, received active opposition. Some, like systemic bankruptcy provisions, involved matters that were too technical to receive widespread discussion.
-In some areas, such as improved corporate governance, progress seemed likely, though their role in the crisis may have been overblown (see Stiglitz, 1999).
-The one area in which there is an emerging consensus-a major change in perspectives-is short-term capital flows. The risks are recognized to be greater, the benefits lower, the circumstances in which countries should engage in full liberalization more restrictive than was the case before the crisis. Given the growing body of theory, evidence, and experience against full capital account liberalization, the speech of the Managing Director of the IMF, Michel Camdessus, before the Annual BankFund Meetings in Hong Kong in September 1997, raised fundamental questions. There he argued, Freedom has its risks! Let's go then for an orderly liberalization of capital movements the objective
+## Página 4
 
-## Página
-is to foster the smooth operation of international capital markets and encourage countries to remove controls in a way that supports the drive toward sustainable macroeconomic policies, strong monetary and financial sectors, and lasting liberalization.
-Are international policies in this area being designed on the basis of the best available economic theories and evidence, or is there another agenda, perhaps a special interest agenda, seemingly impervious to the effects of such policies, not only on growth, but on stability and poverty? If that is the case, is there a more fundamental problem in the international economic architecture, going beyond the details discussed above, to issues of accountability and representativeness?
-Do those making decisions that affect the lives and livelihoods of millions of people throughout the world reflect the interests and concerns, not just of financial markets, but of businesses, small and large, and of workers, and the economy more broadly? These are the deeper questions posed by the crisis through which the world is just emerging.
-REFERENCES
-Calvo, G. A., Leiderman, L., & Reinhart, C. M. (1993).
-Capital inflows and real exchange rate appreciation in Latin America.
-The role of external factors.
-International Monetary Fund Staff Papers,
-(1),
-Caprio, G. (1997). Safe and sound banking in developing countries:
-we're not in Kansas anymore. Research in
-Financial
-Services:
-Private and
-Public
-Policy, 9, 79-97.
-Demirguc¢-Kunt, A., & Detragiache, E. (1998). Financial liberalization and financial fragility. In Proceedings of Annual Bank Conference on Development Economics, Washington, DC, 20-21 April.
-Dooley, M. (1998). Indonesia: is the light at the end of the tunnel oncoming traffic? Deutsche Bank Research, Emerging Markets Research (June).
-Easterly, W., Islam, R., & Stiglitz,
-J. E. (1999). Shaken and stirred: volatility and macroeconomic paradigms for rich and poor countries. Given as Michael Bruno Memorial Lecture, International Economics Association World Congress, Buenos Aires.
-Fernandez-Arias,
-E. (1995). The new wave of private capital inflows: push or pull? Journal of Development Economics (December).
-Furman, J., & Stiglitz,
-J. E. (1999a). Economic crises:
-evidence and insights from
-East
-Asia.
-Brookings
-Papers on Economic Activity, 2, Brookings Institution, Washington, DC.
-Furman, J., & Stiglitz, J. E. (1999b). Economic consequences of income inequality. Federal Reserve Bank Review of Kansas City.
-Hausmann, R., & Gavin, M. (1996). Securing stability and growth in a shock prone region:
-the policy challenge for Latin America. Inter-American Development Bank, Office of the Chief Economist.
-Working Paper 315, January.
-Hoff, K. (1997).
-A Bayesian model of the infant industry argument. Journal of International Economics, 43 (3/ 4), 400-436.
-Institute of International Finance (1998). Capital flows to emerging market economies, Washington, DC, January.
-Greenwald, B., & Stiglitz, J. E. (1986). Externalities in economics with imperfect information and incomplete markets.
-Quarterly
-Journal of Economics
-(May), 229-264.
-Lane, T., Ghosh, A., Hamann, J., Phillips, S., SchulzeGhattas, M., & Tsikata, T. (1999). IMF-supported programs in Indonesia, Korea, and Thailand.
-A preliminary assessment.
-International
-Monetary
-Fund
-Occasional
-Paper
-178,
-IMF,
-Washington,
-DC.
-Lee,
-J.
-(1996).
-Implications of a surge in capital inflows:
-available tools and consequences for the conduct of monetary policy. International Monetary Fund Working Paper 53, IMF, Washington, DC, May.
-Lindgren, C., Garcia, G., & Saal, M. (1996). Banking soundness and macroeconomic policy. International Monetary Fund, Washington, DC.
-Rodrik, D. (1998). Who needs capital-account convertibility? Essays in International Finance 207, International Finance Section, Department of Economics, Princeton University (May), 55-65.
-Sachs, J., & Warner, A. (1995). Economic reform and the process of economic integration. Brooking Papers on Economic Activity, 1, 1-118.
-Stiglitz,
-J.
-E.
-(1998). Responding to economic crises:
-policy alternatives for equitable recovery and development.
-Paper presented to
-North-South
-Institute,
-Ottawa, Canada, 29 September.
-Stiglitz,
-J.
-E. (1999). Lessons from the global financial crisis.
-Lecture given to Federal Reserve Bank of
-Chicago, 30 September.
-Stiglitz, J. E. (2000). Principles of financial regulation: a dynamic, portfolio approach. World Bank Research Observer, forthcoming.
-Vamvakidis, A. (1999). Regional trade agreements or broad liberalization:
-which path leads to faster growth? International Monetary Fund Staff Papers, 46 (1), 42-68.
-Wacziarg, R. (1998). Measuring the dynamic gains from trade. Working Paper, Harvard University, Cambridge, MA, May.
+_"a =&%:1"
+A6*(* $9 " 5*"&%6 .G 2(.992.F/%(: 9%F7$*9
+9F##.(%$/E %6* C$*5 %6"% %("7* &$,*("&$-"%$./
+&*"79 %. G"9%*( *2./.3$2 E(.5%6 _9**0 *@E@0 ="269
+o S"(/*(0 MVVhb S"2-$"(E0 MVV\b i"3C")$7$90
+MVVVa0 %6.FE6 %. ,* 9F(*0 %6*(* "(* " G*5 9%F7$*9
+#(.C$7$/E
+9FEE*9%$./9
+%.
+%6*
+2./%("(:@
+8/
+2./%("9%0 G.( %6* 2"9* .G 2"#$%"& 3"()*% &$,*(I
+"&$-"%$./0 %6*(* "(* (*&"%$C*&: G*5 9%F7$*90 ,F%
+56"% *C$7*/2* %6*(* $90 $9 /.% 9F##.(%$C* .G
+&$,*("&$-"%$./@ g$EF(* J0 ,.((.5*7 G(.3 P"//:
+O.7($)!9 9%F7:0 96.59 E(.5%6 $/ 7$Z*(*/%
+2.F/%($*9 (*&"%*7 %. %6* .#*//*99 .G 2"#$%"&
+3"()*%90 *. 9#*.C&#( AE 1"# MNO@ A6$9 $9
+#"(%$2F&"(&: $3#.(%"/%0 ,*2"F9* $% #(.C$7*9 "
+3*%($2 %6"% 2.((*9#./79 %. %6* )$/79 .G "2%$./9
+%6"% %6* 8'g 3$E6% 6"C* %")*/ $/ "%%*3#%$/E %.
+.#*/ F# %6* 2"#$%"& 3"()*%9@ g$EF(* f #(.C$7*9
+9.3* $/9$E6%9 $/%. 56: %6$9 3$E6% ,* %6* 2"9*Y
+$% #&.%9 $/C*9%3*/% $/ 7$Z*(*/% 2.F/%($*9 (*&"%*7
+%. %6* .#*//*99 .G 2"#$%"& 3"()*%9@ LE"$/0 %6*(*
+$9 /. (*&"%$./96$#@
+_,a 51*A/'/1E
+A6* E&.,"& *2./.3$2 2($9$9 6"9 2*/%*(*7
+"%%*/%$./ "(.F/7 "/.%6*( "9#*2% .G *2./.3$2
+#*(G.(3"/2*0 9%",$&$%:@ =%",$&$%: $9 $3#.(%"/% G.(
+9*C*("& (*"9./9@ O*9*"(26 6"9 96.5/ %6"% $/9%"I
+,$&$%:
+6"9
+#*(9$9%*/%
+*Z*2%9
+./
+*2./.3$2
+E(.5%6YE(.5%6 $9 9&.5*7 7.5/ G.( 9*C*("&
+:*"(9 "G%*( " 2($9$9 6"9 .22F((*7 _!"#($.0 MVVWa@
+8/7**70 %6* &"(E* F/$% (..% &$%*("%F(* 9FEE*9%9
+%6"% "/ *2./.3: %6"% 9FZ*(9 " &"(E* 7(.# $/
+.F%#F% /*C*( GF&&: (*2.C*(9Y.F%#F% (*3"$/9
+#*(9$9%*/%&: ,*&.5 56"% $% 5.F&7 6"C* ,**/@
+A6F90 %6* #(*9*/% 7$92.F/%*7 C"&F* .G &.9% .F%#F%
+"99.2$"%*7 5$%6 %6* 3"E/$%F7* .G 7*2&$/*9
+.,9*(C*7 $/ 1"9% L9$" .( 12F"7.( "(* */.(3.F9@
+'.(*.C*(0 $/9%",$&$%: .G%*/ 6"9 3"()*7 7$9%($,I
+F%$./"& 2./9*^F*/2*90 *9#*2$"&&: $/ 7*C*&.#$/E
+2.F/%($*9@ 1C*/ $/ 7*C*&.#*7 2.F/%($*90 9F26 "9
+%6* Q/$%*7 =%"%*90 %6* #..( ,*"( " 7$9#(.#.(I
+%$./"%* ,F(7*/ $/ %*(39 .G $/2(*"9*7 F/*3I
+#&.:3*/% _gF(3"/ o =%$E&$%-0 MVVV,a@ UF% $/
+3.9% 7*C*&.#$/E 2.F/%($*90 9"G*%: /*%9 "(*
+$/"7*^F"%* .( /./*T$9%*/%@ A6* (*2*/% 2($9*9
+6"C* "3#&: 7*3./9%("%*7 %6$9 ,F(7*/0 5$%6
+F/*3#&.:3*/% $/2(*"9$/E f]n G.&7 $/ m.(*" "/7
+A6"$&"/7 _"/7 ,: 3.(* $/ 8/7./*9$"a0 "/7 5$%6
+(*"& 5"E*9 G"&&$/E &KX $/ m.(*"0 "/7 ,: "9 3F26
+"9 " ^F"(%*( $/ A6"$&"/7 "/7 8/7./*9$"@
+8 "&(*"7: "&&F7*7 %. %6* $/2(*"9*7 G(*^F*/2:
+.G H/"/2$"& "/7 *2./.3$2 2($9*90 "/7 9FEE*9%*7
+%6"% %6$9 26"/E* $9 (*&"%*7 %. H/"/2$"& "/7
+g$EF(* J@ J@%+%9/@ 0&%:1" *+( @*8/1*' *@@%C+1 '/A#&*'/<*1/%+- PQRSTUQF H5%C&@#I V%(&/,- PQQUFL !"/. .@*11#& 8'%1
+@%+1&%'. D%& 8#& @*8/1* /+@%9#- .#@%+(*&E #(C@*1/%+- WC*'/1E %D 0%7#&+9#+1*' /+.1/1C1/%+.- *+( &#0/%+*' (C99/#. D%& J*.1
+6./*- K*1/+ 69#&/@*- *+( .CAX5*"*&*+ 6D&/@*F
+S<O+P P1i1+<>'1NA
+MKW\
 
-## Página
-World Bank (1998a). Global economic prospects 1998199:
-| World Bank (1999). Global economic prospects and the beyond financial crisis.
-Washington,
-DC:
-World developing countries
-1999/2000. Washington,
-DC:
-Bank.
-World Bank.
-World
-Bank
-(1998b).
-East
-Asia:
-road to recovery.
-Washington, DC: World Bank.
+## Página 5
+
+2"#$%"& 3"()*% &$,*("&$-"%$./@ !(.99I2.F/%(:
+9%F7$*9 6"C* 2./H(3*7 %6$9 _P*3$(E"F2!ImF/% o
+P*%("E$"26*0 MVV\a@
+!(.99I2.F/%(: *2./.3*%($2 9%F7$*9 &..)$/E
+3.(* ,(."7&: "% %6* $3#"2% .G 2"#$%"& 3"()*%
+&$,*("&$-"%$./ ./ %6* &$)*&$6..7 .G "/ *2./.3:
+6"C$/E " (*2*99$./ 6"C* "E"$/ 2./H(3*7 %6*
+"7C*(9* *Z*2%9 _1"9%*(&: #1 *'@0 MVVVa@
+A6F90 $% $9 2&*"( %6"% /.% ./&: $9 %6*(* /.
+2.3#*&&$/E *3#$($2"& 2"9* D%& 2"#$%"& 3"()*%
+&$,*("&$-"%$./0 %6*(* $9 " 2.3#*&&$/E 2"9* *0*/+.1
+2"#$%"& 3"()*% &$,*("&$-"%$./0 "% &*"9% F/%$&
+2.F/%($*9 6"C* G.F/7 5":9 .G 3"/"E$/E %6*
+"7C*(9* 2./9*^F*/2*9@
+f@ S?p !L>8AL+ 'LOm1A
++8U1OL+8BLA8<N >O<PQ!1=
+8N=ALU8+8Ap0 N<A 4O<SA?
+4$C*/ %6* 9**3$/E&: 2.3#*&&$/E "(EF3*/%9
+G.( 2"#$%"& 3"()*% &$,*("&$-"%$./0 56: 7.*9 %6*
+*C$7*/2* #.$/% 9. 3F26 $/ %6* .##.9$%* 7$(*2I
+%$./q
+_"a O*''*@/#. /+ 1"# .1*+(*&( *&0C9#+1.
+S* ,*E$/ .F( 7$92F99$./ ,: $7*/%$G:$/E %6*
+G"&&"2$*9 $/ %6* 9%"/7"(7 "(EF3*/%9@ A6* 3.9%
+GF/7"3*/%"&
+$9
+%6$9c
+H/"/2$"&
+"/7
+2"#$%"&
+3"()*%9 "(* *99*/%$"&&: 7$Z*(*/% G(.3 3"()*%9
+G.( .(7$/"(: E..79 "/7 9*(C$2*9@ A6* 2*/%("&
+GF/2%$./ .G 2"#$%"& "/7 H/"/2$"& 3"()*%9 $9
+$/G.(3"%$./IE"%6*($/EY$/ #"(%$2F&"(0 "99*99$/E
+56$26 #(.R*2%9 "/7 H(39 "(* 3.9% &$)*&: %. :$*&7
+%6* 6$E6*9% (*%F(/90 "/7 3./$%.($/E %. */9F(*
+%6"% %6* GF/79 "(* F9*7 $/ %6* "##(.#($"%* 5":@
+'.(*.C*(0 3"()*%9 G.( $/G.(3"%$./ "(* GF/7"I
+3*/%"&&: 7$Z*(*/% G(.3 dd.(7$/"(:ee 3"()*%9@
+g.( $/9%"/2*0 56*/*C*( $/G.(3"%$./ $9 $3#*(I
+G*2%0 3"()*%9 "(* *99*/%$"&&: /*C*( 2./9%("$/*7
+>"(*%. *[2$*/%Y$/ 3"()*7 2./%("9% %. 9%"/I
+7"(7 (*9F&%9 G.( 2.3#*%$%$C* 3"()*%9 5$%6
+#*(G*2% $/G.(3"%$./ _*@E@0 4(**/5"&7 o =%$E&$%-0
+MV\`a@ A6F90 %6* HG%6 "(EF3*/%0 %6"% %6* "(EFI
+3*/% G.( 2"#$%"& &$,*("&$-"%$./ $9 *T"2%&: %6*
+9"3* "9 %6* "(EF3*/% G.( %("7* &$,*("&$-"%$./0 $9
+9$3#&: G"&9*@
+>*(6"#9 %6* 3.9% %*&&$/E 7*H2$*/2: $/ %6*
+9%"/7"(7 2"9* $9 $/ %6* %6$(7 "(EF3*/%0 %6"%
+.#*/$/E 2"#$%"& 3"()*%9 "&&.59 G.( 7$C*(9$H2"I
+%$./ "/7 %6*(*,: */6"/2*9 9%",$&$%:@ L9 5* 6"C*
+9**/0 2"#$%"& 3"()*% &$,*("&$-"%$./ $9 9:9%*3$I
+2"&&: "99.2$"%*7 5$%6 E(*"%*( $/9%",$&$%:0 "/7 G.(
+E..7 (*"9./c 2"#$%"& D.59 "(* 3"()*7&: #(.I
+2:2&$2"&0 *T"2*(,"%$/E *2./.3$2 DF2%F"%$./90
+56*/ %6*: 7. /.% "2%F"&&: 2"F9* %6*3@ A6*
+,*6"C$.( $9 2./9$9%*/% 5$%6 %6* #.#F&"( "7"E*
+g$EF(* f@ M+7#.19#+1Y=2? *+( @*8/1*' *@@%C+1 '/A#&*'/<*1/%+- PQRSTUQF H5%C&@#I V%(&/,- PQQUFL !"/. .@*11#& 8'%1
+@%+1&%'. D%& 8#& @*8/1* /+@%9#- .#@%+(*&E #(C@*1/%+- WC*'/1E %D 0%7#&+9#+1*' /+.1/1C1/%+.- *+( &#0/%+*' (C99/#. D%& J*.1
+6./*- K*1/+ 69#&/@*- *+( .CAX5*"*&*+ 6D&/@*F
+!L>8AL+ 'LOm1A +8U1OL+8BLA8<N
+MKWV
+
+## Página 6
+
+",.F% ,"/)*(9 ,*$/E 5$&&$/E %. &*/7 56*/ ./*
+7.*9 /.% /**7 %6* 3./*:@ S6*/ %6* ,"/)*(9 9**
+*2./.3$2 5*")/*990 %6*: #F&& %6*$( 3./*: .F%
+.G %6* 2.F/%(:@ 8/ "77$%$./0 2"#$%"& 3"()*%
+&$,*("&$-"%$./ *T#.9*9 2.F/%($*9 %. C$2$99$%F7*9
+"99.2$"%*7 5$%6 26"/E*9 $/ *2./.3$2 2$(2F3I
+9%"/2*9 .F%9$7* %6* 2.F/%(:b " 9F77*/ 26"/E* $/
+&*/7*(9!
+#*(2*#%$./9
+2./2*(/$/E
+dd*3*(E$/E
+3"()*% ($9)ee 2"/ &*"7 %. 6FE* 2"#$%"& .F%D.590
+F/7*(3$/$/E %6* C$",$&$%: .G %6* */%$(* H/"/2$"&
+9:9%*3@
+A6* "(EF3*/% %6"% E.C*(/3*/%9 96.F&7 ,*
+2./2*(/*7 5$%6 4N>Y%6* $/2.3* .G %6*$(
+2$%$-*/9Y6"9
+9.3*
+C"&$7$%:0
+,F%
+3$99*9
+"
+2*/%("& $99F* $/ 7*C*&.#3*/%c %6*(* "(* " C"($*%:
+.G (*"9./9 %. ,*&$*C* %6"% $/C*9%.(9 7. /.%
+"##(.#($"%* %6* GF&& C"&F* .G %6*$( 2./%($,FI
+%$./9@
+O*2*/%
+&$%*("%F(*0
+G.(
+$/9%"/2*0
+6"9
+*3#6"9$-*7 %6* $3#.(%"/2* .G (*%F(/9 %. 92"&*0
+/*%5.() *T%*(/"&$%$*90 "/7 " C"($*%: .G .%6*(
+9#$&&.C*(9 _*@E@0 ?.Z0 MVVWa@ A6*9* *T%*(/"&$%$*9
+3": ,* #"(%$2F&"(&: $3#.(%"/% $/ *"(&: 9%"E*9
+.G 7*C*&.#3*/%@ 8/ "77$%$./0 56*/*C*( %6*(*
+"(* %"T*9 ./ 2"#$%"&0 9.2$"& ,*/*H%9 G(.3
+$/C*9%$/E "% 6.3* 3": *T2**7 #($C"%* ,*/*H%90
+F/&*99 %6* E.C*(/3*/% 2"/ $3#.9* 2.33*/9FI
+("%* %"T*9 ./ $/C*9%3*/%9 ",(."70 56$26 $%
+.G%*/ 2"//.%@
+A6* $99F* .G 56*%6*( 2"#$%"& 3"()*% &$,*("&I
+$-"%$./ #(.C$7*9 "77$%$./"& 9.F(2*9 .G GF/7$/E
+$9 "&9. ^F*9%$./",&*c "9 %6* 7"%" ",.C* 9FEE*9I
+%*70 $% 7.*9 /.% &*"7 %. 3.(* $/C*9%3*/%@ A6*(*
+"(* %5. (*&"%*7 $99F*9@ g$(9%0 7.*9 3.(* 96.(%I
+%*(3 2"#$%"&YF/9%",&* "9 $% $9Y#(.C$7* " ,"9$9
+G.( $/C*9%3*/%q A6* "/95*( $9 2&*"(&: /.@ A6*
+9*2./7 $90 7. (*9%($2%$./9 ./ 96.(%I%*(3 2"#$%"&
+D.59 7$92.F("E* G.(*$E/ 7$(*2% $/C*9%3*/% .(
+.%6*( G.(39 .G &./E*( %*(3 $/C*9%3*/%q LE"$/0
+%6* "/95*( "##*"(9 %. ,* /.@ S* "&(*"7: /.%*7
+%6"% %6* 2.F/%(: %6"% 6"9 ,**/ %6* 3.9%
+9F22*99GF& $/ (*2(F$%$/E G.(*$E/ 7$(*2% $/C*9%I
+3*/%0 !6$/"0 "&9. $3#.9*9 " 6$E6 &*C*& .G
+(*9%($2%$./9 ./ 96.(%I%*(3 2"#$%"& D.59@ UF%
+%6*(* $9 &$%%&* *C$7*/2* %6"% 2.F/%($*9 %6"% 6"C*
+$3#.9*7 (*9%($2%$./9 ./ 96.(%I%*(3 D.590 !6$&*
+./ $/D.590 '"&":9$" ./ .F%D.590 6"C* 6"7
+%6*$( &./EI%*(3 D.59 "7C*(9*&: "Z*2%*7 _*@E@0
++**0 MVV`a@ 8/7**70 "9 8 /.%* ,*&.50 %6*(* 3":
+*C*/ ,* (*"9./9 56: G.(*$E/ 7$(*2% $/C*9%3*/%
+3": ,* "%%("2%*7c "9 5* /.%*70 2"#$%"& 3"()*%
+&$,*("&$-"%$./
+$9
+"99.2$"%*7
+5$%6
+E(*"%*(
+*2./.3$2 C.&"%$&$%:0 .( "% &*"9% " 6$E6*( #(.,I
+",$&$%: .G " (*2*99$./@ =F26 F/2*(%"$/%: 2&*"(&:
+3")*9 $/C*9%3*/% &*99 "%%("2%$C*@
+L2%F"&&:0 $/ 3"/: 2"9*90 %6* "(EF3*/% %6"%
+.#*/$/E %6* 2"#$%"& "22.F/% $9 $3#.(%"/% G.(
+*/6"/2$/E " D.5 .G 2"#$%"& $/%. %6* 2.F/%(: $9
+%F(/*7 ./ $%9 6*"7c $/ 3"/: $/9%"/2*90 %6* )*:
+$99F* $9 /.% 2"#$%"& D.5$/E $/%. %6* 2.F/%(:0 ,F%
+D.5$/E .F%@ <#*/$/E %6* 2"#$%"& "22.F/% 6"9
+G"2$&$%"%*7 2"#$%"& D$E6%0 "/7 %6F9 2./%($,F%*7
+%. %6* 5*")*/$/E .G %6* *2./.3: _9** P..&*:0
+MVV\a@
+A6*
+"(EF3*/%
+5$%6
+56$26
+8
+"3
+3.9%
+9:3#"%6*%$2 $9 %6"% .#*/$/E %6* 2"#$%"& "22.F/%
+$3#.9*9 dd7$92$#&$/*@ee !.F/%($*9 "(* ddG.(2*7ee %.
+6"C* E..7 *2./.3$2 #.&$2$*90 &*9% 2"#$%"& D.5
+.F% .G %6* 2.F/%(:@ UF% 8 6"C* "(EF*7 %6"% G"(
+3.(* (*&*C"/% G.( %6* &./EI(F/ 9F22*99 .G %6*
+*2./.3: $9 G.(*$E/ 7$(*2% $/C*9%3*/%b "/7 %6*
+7*9$(* %. "2^F$(* "/7 9F9%"$/ gP8 #(.C$7*9
+9%(./E 7$92$#&$/* ./ %6* *2./.3: "/7 %6*
+#.&$%$2"& #(.2*99@ A6* ^F*9%$./ $90 7.*9 .#*/$/E
+.G %6* 96.(%I%*(3 2"#$%"& "22.F/%Y3")$/E %6*
+2.F/%(: 9F,R*2% %. 96.(%I(F/ .92$&&"%$./9 $/
+9*/%$3*/%Y#(.C$7* 9$E/$H2"/% #;1&* *T%*(/"&
+7$92$#&$/*q </ %6* /*E"%$C* 9$7*0 %6* .#*//*99 %.
+2"#$%"& D$E6% 3")*9 2.F/%($*9 *9#*2$"&&: 9*/9$I
+%$C*0 *@E@0 %. 2.(#.("%* .( 2"#$%"& %"T ("%*9 .( %.
+26"/E*9 $/ $/%*(*9% ("%*9@ A6F90 .#*//*99 3":
+$3#.9* 2.9%&: @%+.1&*/+1. ./ %6* ",$&$%: .G
+E.C*(/3*/% %. #F(9F* &*E$%$3"%* .,R*2%$C*9@
+</* .G %6.9* .,R*2%$C*9 $9 *2./.3$2 9%",$&$%:@
+!6$/" 5"9 ",&* %. #F(9F* "2%$C* 2.F/%*(2:2&$2"&
+3"2(.I#.&$2$*90 9%"C$/E .Z " (*2*99$./ "/7
+3"$/%"$/$/E (.,F9% E(.5%6 .G 2&.9* %. \X0
+,*2"F9* %6* 2"#$%"& "22.F/% (*9%($2%$./9 #(.C$I
+7*7 $% 9.3* (..3 %. 3"/*FC*(@ 8% 6"7 /. /**7
+%. ("$9* $/%*(*9% ("%*9 %. &*C*&9 %6"% )$&&*7 %6*
+*2./.3: $/ .(7*( %. dd9"C*ee $% G(.3 2"#$%"&
+D$E6%@
+_,a $"E @*8/1*' *@@%C+1 '/A#&*'/<*1/%+ "*. +%1
+@%+1&/AC1#( 1% 0&%:1"
+A6* (*9F&% 2$%*7 *"(&$*( %6"% 2"#$%"& "22.F/%
+&$,*("&$-"%$./ $9 /.% "99.2$"%*7 5$%6 G"9%*(
+$/C*9%3*/%0 "/7 %6*(*G.(* G"9%*( E(.5%60 96.F&7
+/.% 2.3* "9 " 9F(#($9*@ S* 6"C* "&(*"7: /.%*7
+%6"% %6* 2"9* G.( 8%./1/7# *Z*2%9 $9 5*")c H(39
+"(* F/&$)*&: %. */E"E* $/ #(.7F2%$C* &./EI%*(3
+$/C*9%3*/%9 ./ %6* ,"9$9 .G 96.(%I%*(3 GF/79@
+UF% %6*(* "(* *C*/ (*"9./9 %. *T#*2% %6"% 2"#$%"&
+3"()*% &$,*("&$-"%$./ 2"/ 6"C* /*E"%$C* *Z*2%9
+./ E(.5%6@ S* "(EF*7 ",.C* %6"% $% &*"79 %.
+E(*"%*( $/9%",$&$%:0 "/7 $/9%",$&$%: _*9#*2$"&&:
+H/"/2$"& 3"()*% 2($9*9a 6"9 "7C*(9* *Z*2%9 ./
+*2./.3$2 E(.5%6@ 8/7**70 $% $9 /.% ./&: %6*
+7.5/%F(/ $%9*&G 56$26 6"9 &"9%$/E *Z*2%90 ,F%
+%6* C*(: #(*9*/2* .G %6* ($9) .G $/9%",$&$%: %6"% $9
+&$)*&:
+%.
+7$92.F("E*
+$/C*9%3*/%@
+<#*/$/E
+%6* 2"#$%"& "22.F/% 2"/0 "/7 6"9 $/ 9*C*("&
+S<O+P P1i1+<>'1NA
+MK\K
+
+## Página 7
+
+2.F/%($*90 G"2$&$%"%*7 %6* D.5 .G 2"#$%"& .F% .G
+%6* 2.F/%(: _("%6*( %6"/0 "9 #(.3$9*70 "22*&*(I
+"%$/E %6* D.5 .G 2"#$%"& $/%. %6* 2.F/%(:a0
+#(.C$7$/E "/.%6*( 26"//*& G.( "7C*(9* *Z*2%9@
+A6*(* $9 "/ *^F"&&: 2.3#*&&$/E "(EF3*/% G.(
+56: 2"#$%"& 3"()*% &$,*("&$-"%$./ _"% %6* 96.(%
+*/7a 3$E6% ,* *T#*2%*7 %. 6"C* "7C*(9* *Z*2%9
+./ E(.5%6@ !.F/%($*9 %.7": "(* */2.F("E*7 %.
+3"$/%"$/ "7*^F"%* (*9*(C*90 %. #(.%*2% %6*3I
+9*&C*9 "E"$/9% C.&"%$&$%: $/ $/%*(/"%$./"& H/"/I
+2$"& 3"()*%9@ L )*: $/7$2"%.( $9 %6* ("%$. .G
+(*9*(C*9 %. G.(*$E/ 7*/.3$/"%*7 96.(%I%*(3
+$/7*,%*7/*99@ S6*/ %6"% /F3,*( G"&&9 ,*&.5
+F/$%:0 $/C*9%.(9 "/7 &*/7*(9 ,*2.3* 5.(($*7
+"/7
+$/7**7
+(*2*/%
+*2./.3*%($2
+5.()
+6"9
+9FEE*9%*7 %6"% %6$9 C"($",&* #(.C$7*9 %6* ,*9%
+*T#&"/"%$./ G.( 56$26 2.F/%($*9 5*(* "7C*(9*&:
+"Z*2%*7 ,: %6* (*2*/% E&.,"& H/"/2$"& 2($9$9 _9**
+gF(3"/ o =%$E&$%-0 MVVV"a@ <G 2.F(9*0 $G "&&
+$/C*9%.(9 ,*&$*C* %6"% "&& .%6*( $/C*9%.(9 "(*
+&..)$/E "% %6"% C"($",&* %. 7*%*(3$/* 56*%6*(
+.( 56*/ %. #F&& %6*$( 3./*: .F% .G " 2.F/%(:0 $%
+2"/ ,*2.3* " 9*&GIGF&H&&$/E #(.#6*2:@ N.5
+2./9$7*(
+"
+#..(
+7*C*&.#$/E
+2.F/%(:@
+L
+2.3#"/: 5$%6$/ %6* 2.F/%(: ,.((.590 9":0 lMKK
+3$&&$./ G(.3 " Q= ,"/) %6"% 26"(E*9 6$3 JKX@
+8G %6* 2.F/%(: 6"9 ,**/ 3"$/%"$/$/E 56"% $%
+C$*59
+"9
+3$/$3F3
+#(F7*/%$"&
+(*9*(C*9Y$%
+(*2.E/$-*9
+%6*
+6$E6
+.##.(%F/$%:
+2.9%
+.G
+(*9*(C*9Y%6*/ $% 5$&& 6"C* %. "77 lMKK 3$&&$./
+%. (*9*(C*9@ g.( 9$3#&$2$%:0 "99F3* $% 6.&79
+%6.9* (*9*(C*9 $/ Q= AI,$&&9@ !./9$7*( %6*
+$3#&$2"%$./9 G(.3 %6* #*(9#*2%$C* .G %6* 2.F/I
+%(:!9 ,"&"/2* 96**% "/7 $/2.3* D.59c 8% 6"9 &*/%
+%6* Q/$%*7 =%"%*9 lMKK 3$&&$./ "/7 ,.((.5*7
+G(.3 %6* Q/$%*7 =%"%*9 %6* 9"3* "3.F/%Y$%
+6"9 /. /*5 /*% 2"#$%"&@ UF% $% #":9 %. %6*
+Q/$%*7 =%"%*9 *C*(: :*"( lJK 3$&&$./ $/ $/%*(*9%0
+56$&* $% (*2*$C*9 G(.3 %6* Q= lh 3$&&$./0 %6*
+$/%*(*9% ./ %6* AI,$&&@ !&*"(&:0 %6$9 $9 " E..7
+7*"& G.( %6* Q/$%*7 =%"%*9Y./* 3$E6% F/7*(I
+9%"/7 56: %6* Q/$%*7 =%"%*9 3$E6% ,* $/ G"C.(
+.G (F&*9 %6"% */2.F("E* 9F26 %("/9"2%$./9Y,F%
+$9 6"(7&: %6* ,"9$9 G.( 3.(* ("#$7 E(.5%6 ,: %6*
+#..( 7*C*&.#$/E 2.F/%(:@ _A6* 2.9%9 3": *C*/
+,*
+6$E6*(
+%6"/
+%6*9*
+2"&2F&"%$./9
+9FEE*9%0
+,*2"F9* %6* .##.(%F/$%: 2.9% .G %6* GF/79 %6"%
+%6* E.C*(/3*/% 6"9 %. F9* G.( (*9*(C*9 2.F&7
+*C*/ *T2**7 JKX@a
+A. ,* 9F(*0 %6* "7C*(9* *Z*2%9 ./ *2./.3$2
+#*(G.(3"/2* 3": _*9#*2$"&&: E.$/E G.(5"(7a ,*
+F//*2*99"($&: $/2(*"9*7 "9 " (*9F&% .G %6*
+#"(%$2F&"( #.&$2$*9 %6"% %6* 8'g 6"9 2F9%.3I
+"($&: *3#&.:*7 $/ (*9#./9* %. %6* 2($9*9 %6"%
+3":0 "9 5* 6"C* 9**/0 ,* 9:9%*3$2"&&: "99.2$I
+"%*7 5$%6 GF&& 2"#$%"& "22.F/% 2./C*(%$,$&$%:@
+1T2*99$C*&:
+(*9%($2%$C*
+3./*%"(:
+"/7
+H92"&
+#.&$2$*9 _9** =%$E&$%-0 MVV\0 MVVVb S.(&7 U"/)0
+MVV\"0,b +"/* #1 *'@0 MVVVa (*9F&%*7 $/ 7**#
+(*2*99$./9 .( 7*#(*99$./9@ A6* ddF/$% (..% &$%*(I
+"%F(*ee 9FEE*9%9 %6"% %6*9* /*E"%$C* *Z*2%9 "(*
+#*(9$9%*/%@ '.(*.C*(0 &..)$/E G.(5"(70 ,F9$I
+/*99*9 5$&& C$*5 7*,% H/"/2$/E "9 6$E6&: ($9):b
+$/ %6* *C*/% .G "/.%6*( 2($9$9 _"/7 "9 5* 6"C*
+/.%*70 9F26 2($9*9 6"C* ,*2.3* $/2(*"9$/E&:
+G(*^F*/% "/7 7**#0 $/ 9#$%* .G (6*%.($2 %6"%
+3$E6% 9FEE*9% .%6*(5$9*a0 " H(3 5$%6 *C*/ "
+3.7*("%* 7*,% *^F$%: ("%$. 2.F&7 ,* #F% $/%.
+7$9%(*99@ g$(39 5$&& %6F9 6"C* %. &$3$% *T#"/9$./
+%. 56"% %6*: 2"/ &"(E*&: 9*&GIH/"/2*Y5$%6
+9%(./E "7C*(9* *Z*2%9 ./ &./EI%*(3 *2./.3$2
+E(.5%6@
+n@ A?1 !L=1 g<O 8NA1Oi1NA8<N
+</2* ./* (*2.E/$-*9 %6"% 96.(%I%*(3 2"#$%"&
+D.59 2"/ E$C* ($9* %. *2./.3$2 $/9%",$&$%:0 %6*(*
+$9 " 2.3#*&&$/E *2./.3$2 2"9* G.( $/%*(C*/%$./c
+%6* $/9%",$&$%: "99.2$"%*7 5$%6 96.(%I%*(3 2"#$I
+%"& 3.C*3*/%9 (*9F&%9 $/ %6*(* ,*$/E " 3"()*7
+7$92(*#"/2: ,*%5**/ #($C"%* "/7 9.2$"& (*%F(/9
+"/7 ($9)9@ A6* 2"#$%"& D.59 $3#.9* " 6FE*
+/*E"%$C* *T%*(/"&$%:@ 8/7**70 $% 96.F&7 ,* .,C$I
+.F9 %6"% %6* 2($9$9 %6"% (*9F&%*7 G(.3 %6*9*
+C.&"%$&* D.59 6"9 "Z*2%*7 3"/: .%6*(9 ,*9$7*9
+%6* ,.((.5*(9 "/7 &*/7*(9Y5.()*(9 56. 9"5
+%6*$( $/2.3*9 #&F33*% "/7 93"&& ,F9$/*99*9
+%6"% 5*(* G.(2*7 $/%. ,"/)(F#%2: "9 " (*9F&% .G
+%6* 9."($/E $/%*(*9% ("%*9@ 8(./$2"&&:0 %6* 7*9$E/
+.G %6* #.&$2: (*9#./9* #(.,",&: $/2(*"9*7 %6*
+3"E/$%F7* .G %6* *T%*(/"&$%:@ A6* 8'g *T#&$2I
+$%&: "(EF*7 G.( $/2(*"9$/E $/%*(*9% ("%*90 5$%6
+6FE* "7C*(9* *Z*2%9 ./ H(39 /.% */E"E*7 $/
+$/%*(/"%$./"& 9#*2F&"%$./0 $/ .(7*( %. "C.$7 %6*
+"7C*(9* *Z*2%9 ./ %6.9* 56. 6"7 F/2.C*(*7
+G.(*$E/ 7*/.3$/"%*7 ,.((.5$/E9@
+A6* /"%F(* .G %6$9 *T%*(/"&$%: 2"/ ,* 9**/ $/ "
+/F3,*( .G 5":9@ !&*"(&:0 %6* ,.((.5$/E 2.F/I
+%($*9Y%6* 5.()*(9 "/7 93"&& ,F9$/*993*/Y
+6"C* #"$7 " 6$E6 #($2*@ L&%*(/"%$C*&:0 5* 2"/ 9**
+%6* *T%*(/"&$%: *T*(2$9*7 %6(.FE6 %6* #(F7*/%$"&
+(*9*(C* 3"/"E*3*/% #.&$2$*9 7*92($,*7 *"(&$*(@
+L lMKK 3$&&$./ 2"#$%"& $/D.5 %6"% 6"9 %. ,*
+.Z9*% ,: lMKK 3$&&$./ $/ $/2(*"9*7 (*9*(C*9
+$3#.9*9 6FE* 2.9%9 ./ %6.9* 56. 3$E6% 6"C*
+,*/*H%*7 G(.3 .%6*( F9*9 .G %6*9* GF/79@ A6*
+lMKK 3$&&$./ 2.F&7 6"C* ,**/ 9#*/% %. ,F$&7
+926..&90 6*"&%6 2&$/$290 .( (."79 %. "%%("2% 3.(*
+$/C*9%3*/%@ !&*"(&: %6*/0 %6* #($C"%* 7*2$9$./ %.
+,.((.5 6"9 $3#.9*7 " 6$E6 /*E"%$C* 2.9% ./
+9.2$*%:@
+!L>8AL+ 'LOm1A +8U1OL+8BLA8<N
+MK\M
+
+## Página 8
+
+S6*/*C*( %6*(* "(* 9F26 7$92(*#"/2$*90 %6*
+*2./.3$9%9! /"%F("& (*"2%$./ $9 %. $3#.9* "
+dd%"Tee %. 2.((*2% %6* *T%*(/"&$%:0 $/ .(7*( %.
+*&$3$/"%*0 .( "% &*"9% (*7F2*0 %6* 7$Z*(*/2*
+,*%5**/ 9.2$"& "/7 #($C"%* (*%F(/9@ A. ,* 9F(*0
+9F26 %"T*9 3$E6% 7$92.F("E* 9.3* 2"#$%"& D.59b
+,F% %6$9 2($%$2$93 $9 &$)* #.$/%$/E .F% %6"% " %"T
+./ "$( #.&&F%$./ 7$92.F("E*9 %6* #(.7F2%$./ .G
+E..790 &$)* 9%**&0 %6"% 2./%($,F%* %. "$( #.&&FI
+%$./@ A6* #.$/% $9 %6"% H(39 96.F&7 ,* 3"7* %.
+#": %6* GF&& 9.2$"& 2.9% .G %6*$( "2%$C$%:b 7.$/E 9.
+5$&&0 "/7 96.F&70 (*7F2* %6* &*C*& .G "2%$C$%$*9
+%6"% 2(*"%* /*E"%$C* *T%*(/"&$%$*9@
+A6* 2./9*^F*/2*9 .G %6* *T%*(/"&$%$*9 3":
+7*#*/7 ./ %6* 2$(2F39%"/2*9 .G %6* 2.F/%(:@
+'.(* "7C"/2*7 $/7F9%($"&$-*7 *2./.3$*9 %:#$I
+2"&&: 6"C* 3.(* ,F$&%I$/ "F%.3"%$2 9%",$&$-*(9
+"/7 9%(./E 9"G*%: /*%90 9. %6*: 2"/ ",9.(, %6*
+96.2)9 ,*%%*(@ >..(*( 2.F/%($*9 3": /.% ./&:
+6"C* /. "F%.3"%$2 9%",$&$-*(90 %6*: 3": G"2*
+2./9%("$/%9 _*@E@0 ./ ,.((.5$/Ea %6"% *T"2*(,"%*
+DF2%F"%$./9@ g.( $/9%"/2*0 56$&* H92"& #.&$2: $/
+7*C*&.#*7 2.F/%($*9 $9 %:#$2"&&: 2.F/%*(2:2&$2"&0
+$/ 7*C*&.#$/E 2.F/%($*90 $% $9 #(.I2:2&$2"& _9**
+1"9%*(&: #1 *'@0 MVVVb ?"F93"// o 4"C$/0
+MVV`a@ '.(*.C*(0 "9 5* 6"C* "&(*"7: /.%*70
+#.&$2$*9 (*2.33*/7*7 %.0 "/7 $/ 9.3* 2"9*9
+*Z*2%$C*&: G.(2*7 ./0 7*C*&.#$/E 2.F/%($*9 3":
+3")* 3"%%*(9 5.(9* _9** =%$E&$%-0 JKKKa@ S*")
+H/"/2$"& $/9%$%F%$./9 3": 3")* " 2.F/%(:
+#"(%$2F&"(&: CF&/*(",&* %. &"(E* "/7 9F77*/
+26"/E*9 $/ 96.(%I%*(3 D.59@
+A6* (*2.E/$%$./ .G %6* $3#.(%"/2* .G %6*9*
+*T%*(/"&$%: *Z*2%9 "99.2$"%*7 5$%6 96.(%I%*(3
+D.59 6"9 2./9%$%F%*7 #*(6"#9 %6* 3"R.( 96$G% $/
+%6$/)$/E $/ 7$92F99$./9 .C*( %6* $/%*(/"%$./"&
+H/"/2$"& "(26$%*2%F(* 7F($/E %6* #"9% %5. :*"(9@
+PF($/E %6* S.(&7 U"/) "/7 8'g L//F"&
+'**%$/E9 $/ ?./E m./E $/ <2%.,*( MVVW0
+96.(%&: "G%*( %6* 2($9$9 ,*E"/0 %6*(* 5"9 " 2"&&
+G.( " 26"/E* $/ %6* 8'g 26"(%*( %. #F96
+%6(.FE6 %6* "E*/7" .G 2"#$%"& "22.F/% &$,*("&I
+$-"%$./@
+A6$9
+#(.#.9"&
+5"9
+"22.3#"/$*70
+"##(.#($"%*&:0 ,: 9*C*("& 2"C*"%9@ >(.#./*/%9
+.G %6* 26"/E* (*2.E/$-*7 %6"% &$,*("&$-"%$./
+(*^F$(*7 9F[2$*/%&: 9%(./E "/7 9%",&* H/"/2$"&
+$/9%$%F%$./90 56$26 $/ %F(/ 3*"/% %6"% " 9%(./E
+(*EF&"%.(: G("3*5.() 5.F&7 6"C* %. ,* $/
+#&"2* "9 " #(*(*^F$9$%*@
+A.7":0 %6*(* $9 " E(*"%*( (*2.E/$%$./ .G %6*
+$3#.(%"/2* .G %6.9* 2"C*"%9@ 1C*/ "7C"/2*7
+$/7F9%($"&$-*7 2.F/%($*9 6"C* G.F/7 $% 7$[2F&%
+%. *9%",&$96 9%(./E H/"/2$"& $/9%$%F%$./9 "/7
+*Z*2%$C* (*EF&"%.(: 9%(F2%F(*90 "9 5$%/*99*7 ,:
+%6* H/"/2$"& 2($9*9 $/ =2"/7$/"C$" "/7 %6*
+Q/$%*7 =%"%*9@ A6*9* *T"3#&*9 96.5 %6"% 2($9*9
+2"/ *"9$&: .22F( $/ 2.F/%($*9 5$%6 " 6$E6 7*E(**
+.G %("/9#"(*/2:0 "/7 %6"% ./* 6"(7&: /**79
+2(./: 2"#$%"&$93 %. E*/*("%* " 2($9$9@ 8G %6*(*
+6"7 ,**/ "/: ^F*9%$./ ",.F% %6* $/2(*"9$/E
+7$[2F&%$*9 .G E..7 H/"/2$"& (*EF&"%$./ #.9*7
+,: %6* E(.5$/E (.&* .G 7*($C"%$C*90 %6* 3"%%*(
+5"9
+9*%%&*7
+,:
+%6*
+E.C*(/3*/%I*/E$/**(*70
+#($C"%*&: H/"/2*7 ,"$&.F% .G +./E A*(3 !"#$I
+%"& '"/"E*3*/% _+A!'a $/ <2%.,*( MVV\@
+A6$9 9$/E&* 6*7E* GF/7 6"7 "/ *T#.9F(* *9%$I
+3"%*7 $/ *T2*99 .G " %($&&$./ 7.&&"(9 %6"%0
+"22.(7$/E %. %6.9* 56. 7*G*/7*7 %6* (.&* .G %6*
+E.C*(/3*/% $/ %6* ,"$&.F% _"/7 56. (*9$9%*7
+"&&*E"%$./9 .G 2(./: 2"#$%"&$93 "/7 2.(#.("%*
+3$9E.C*(/"/2*a0
+#.9*7
+"
+%6(*"%
+%.
+E&.,"&
+H/"/2$"& 9%",$&$%:@ 'F26 .G %6* 3./*: G.(
++A!' *T#.9F(* 2"3* G(.3 9F##.9*7&: 5*&&I
+(*EF&"%*7 ,"/)9@
+!&*"(&:0 *C*/ 5$%6.F% *T#.9$/E %6*39*&C*9 %.
+%6*
+C.&"%$&$%:
+.G
+96.(%I%*(3
+2"#$%"&
+D.590
+7*C*&.#$/E 2.F/%($*9 G"2* E(*"%*( ($9)9 _G.(
+$/9%"/2*0 ,*2"F9* .G %6*$( &*99 7$C*(9$H*7 *2./I
+.3$*9 "/7 %6* 5*")*( (.&* .G "F%.3"%$2 9%",$I
+&$-*(9a "/7 %6*: %:#$2"&&: 6"C* (*&"%$C*&: &.5
+(*EF&"%.(: 2"#"2$%: $/ %6* H/"/2$"& 9*2%.(@
+4$C*/ %6*9* G*"%F(*9 .G %6*$( *2./.3$*90 %6*
+2"C*"% %6"% 7*C*&.#$/E 2.F/%($*9 96.F&7 6"C*
+9%(./E H/"/2$"& $/9%$%F%$./9 "/7 (*EF&"%.(:
+9%(F2%F(*9 $/ #&"2* ,*G.(* &$,*("&$-$/E %6*$(
+2"#$%"& "22.F/%9 9FEE*9%9 %6"% %6* */%$(* ^F*9I
+%$./ $9 /.5 3..%@ 8/ %6* $33*7$"%* GF%F(*0 G*5
+2.F/%($*9 96.F&7 ,* #(*99*7 %. 3.C* G"( $/ %6*
+7$(*2%$./ .G &$,*("&$-"%$./@
+A6* 3"()*% G"$&F(* "/"&:9$9 #(*9*/%*7 ",.C*
+_%6* 7$92(*#"/2: ,*%5**/ 9.2$"& "/7 #($C"%*
+(*%F(/9a0 %6* 9%(./E *3#$($2"& *C$7*/2* .G %6*
+6$E6 ($9)9 "99.2$"%*7 5$%6 96.(%I%*(3 2"#$%"&
+D.590 "/7 %6* ",9*/2* .G 2./C$/2$/E *C$7*/2*
+.G E(.5%6I*/6"/2$/E ,*/*H%9 "99.2$"%*7 5$%6
+2"#$%"& "22.F/% &$,*("&$-"%$./ _$/ %6* 96.(%I
+%*(3aY"&& %6*9* #.$/%9 &*"7 ./* %. ^F*9%$./ %6*
+GF/7"3*/%"& #(*3$9*9 F/7*(&:$/E %6* 7($C* G.(
+2"#$%"& "22.F/% &$,*("&$-"%$./@
+h@ P1=84N8N4 1gg1!A8i1
+8NA1Oi1NA8<N=
+?*/2*0 56$&* Jn 3./%69 "E. %6*(* 5*(* 2"&&9
+G.( GF&& 2"#$%"& "22.F/% &$,*("&$-"%$./0 %.7": %6*
+7*,"%* 6"9 96$G%*7@ 8% $9 /. &./E*( 56*%6*( 9.3*
+G.(3 .G $/%*(C*/%$./ 3$E6% ,* 7*9$(",&* $/
+#($/2$#&*0 ,F% 56*%6*( %6*(* *T$9% $/%*(C*/%$./9
+%6"% "(* *Z*2%$C* "/7 %6"% 7. /.% 6"C* "7C*(9*
+"/2$&&"(: *Z*2%9@ A6"% !6$/" "/7 8/7$" 6"C*
+3"/"E*7 %. 5*"%6*( %6* 9%.(3 "/7 3"$/%"$/
+S<O+P P1i1+<>'1NA
+MK\J
+
+## Página 9
+
+9%(./E E(.5%6b %6"% !6$/" "&(*"7: "9 6"9 ,**/
+"&&F7*7 %. 9*C*("& %$3*90 6"9 3"/"E*7 %. "%%("2%
+6FE* "3.F/%9 .G G.(*$E/ 7$(*2% $/C*9%3*/%
+56$&*
+3"$/%"$/$/E
+2./%(.&9
+./
+96.(%I%*(3
+2"#$%"&b %6"% 2.F/%($*9 %6"% 6"C* 2"#$%"& 3"()*%
+(*9%($2%$./9 9**3 %. 6"C* 7./* "9 5*&& "9 %6.9*
+%6"% 6"C* /.% 9FEE*9% %6"% $% $9 #.99$,&* %.
+$3#.9* 9F26 (*9%($2%$./9 5$%6.F% 9$E/$H2"/%
+"7C*(9* *Z*2%9@
+A6* #F(#.9* .G %6* $/%*(C*/%$./9 $9 %. *^F"%*
+9.2$"& "/7 #($C"%* 2.9%9 "/7 %. 9%",$&$-* %6*
+96.(%I%*(3 D.59@ A. F/7*(9%"/7 56"% $9 "%
+$99F*0 "/ "/"&.E: 3": ,* F9*GF&@ P"39 7. /.%
+9%.# %6* D.5 .G 5"%*( G(.3 %6* %.# .G "
+3.F/%"$/ %. %6* .2*"/@ UF% 5$%6.F% %6* 7"30
+9F77*/ #.5*(GF& D.59 3": 2"F9* 7*"%6 "/7
+7*9%(F2%$./b 5$%6 %6* 7"3 $/ #&"2*0 /.% ./&: "(*
+&$C*9 9"C*7 "/7 #(.#*(%: #(.%*2%*70 ,F% %6*
+5"%*( $%9*&G 2"/ ,* 26"//*&*7 $/%. 2./9%(F2%$C*
+F9*9@ L 7"3 2"/ 9*(C* " F9*GF& (.&* $/ "C*(%$/E "
+D..7 *C*/ $G $% $9 /.% #*(G*2%0 $@*@ *C*/ $G 9.3* .G
+%6* 5"%*( 9#$&&9 .C*( %6* %.# "/7 3")*9 $%9 5":
+7.5/ %6* 3.F/%"$/9$7*0 ,:#"99$/E %6* 7"3@ =.
+%.. G.( $/%*(C*/%$./9 $/ 2"#$%"& 3"()*%9c $% $9 /.%
+" C"&$7 2($%$2$93 %. 9": %6"% %6*: "(* /.% #*(G*2%0
+%6"% %6*(* 5$&& ,* &*")90 .( %6"% %6*(* 5$&& ,*
+9.3* 2$(2F3C*/%$./ .G %6* (*EF&"%$./9 .( %"T*9@
+A6* ^F*9%$./ $90 7. %6*: /./*%6*&*99 9*(C* %.
+9%",$&$-* %6* D.590 "/7 "% /.% %.. E(*"% " 2.9% %.
+%6* *2./.3:q '.(* (*2*/%&:0 "%%*/%$./ 6"9
+G.2F9*7 ./ %6(** 9*%9 .G $/%*(C*/%$./9c (*9%($2I
+%$./9 ./ 2"#$%"& $/D.590 (*9%($2%$./9 ./ 2"#$%"&
+.F%D.590 "/7 (*9%($2%$./9 $3#.9*7 ./ %6*
+,"/)$/E 9:9%*3@
+_"a 3*8/1*' /+G%:.
+!6$&* 6"9 $3#.9*7 56"% "3.F/%9 %. " %"T ./
+96.(%I%*(3 $/D.59@ 8/ 7.$/E 9.0 $% 6"9 9F22**I
+7*7 $/ 9%",$&$-$/E %6*9* D.590 5$%6.F% "7C*(9*&:
+"Z*2%$/E %6* D.5 .G &./EI%*(3 #(.7F2%$C*
+2"#$%"&@ _8/2$7*/%"&&:0 *C*/ " %"T ./ 2"#$%"&
+$/D.59 2"/ 9*(C* %. 9%",$&$-* .F%D.59@ A6.9*
+56. 9**) ^F$2) (*%F(/9 ,: %")$/E %6*$( 3./*:
+.F% G.( " ,($*G %$3* $/ %6* 6.#*9 .G " 7*C"&F"I
+%$./0 "/7 %6*/ ,($/E$/E $% ,"2)0 "(* 3"7* %. #":
+" 6$E6 #($2* G.( %6$9 (.F/7 %($#@a
+=.3* 2($%$29 6"C* $/%*(#(*%*7 !6$&*!9 "2%$./9
+$/ %6* (*2*/% 2($9$9Y56*(* %6* %"T ("%* 5"9 9*%
+"% -*(.Y"9 "/ ","/7./3*/% ,: %6"% 2.F/%(: .G
+%6$9 #.&$2:@ UF% %6"% $9 9$3#&: 5(./E@ A6* #.$/%
+.G %6* %"T $9 %. 9%",$&$-* %6* D.50 %. 7$92.F("E*
+*T2*99 $/D.59 56*/ %6"% "##*"(9 %. ,* %6*
+#(.,&*3@ UF% $/ %6* E&.,"& H/"/2$"& 2($9$90 /.
+7*C*&.#$/E
+2.F/%(:
+G"2*7
+*T2*99
+$/D.59@
+8/7**70 $% 3$E6% *C*/ ,* 2./2*$C",&* %6"%0 G"2*7
+5$%6 " 96.(%"E* .G $/D.590 %6* 2.F/%(: 3$E6%
+6"C* " /*E"%$C* %"T@ UF% %6* %"T 9%(F2%F(* $9 $/
+#&"2*c $G E&.,"& H/"/2$"& 3"()*%9 (*2.C*(0 "9
+%6*: "&3.9% 9F(*&: 5$&&0 "/7 %6* 2.F/%(: "E"$/
+G"2*9 "/ *T2*99 .G 2"#$%"& $/D.590 %6*/ %6* %"T
+("%* 2.F&7 "E"$/ ,* ("$9*7@
+A.7":0 %6* 8'g */7.(9*9 %6* $7*" %6"%
+2.F/%($*9
+96.F&7
+2./9$7*(
+9F26
+9%",$&$-$/E
+$/%*(C*/%$./9@ UF% %6$9 $9 RF9% ./* .G 3"/:
+$/%*(C*/%$./9 %6"% 2"/ 6*&# 9%",$&$-* H/"/2$"&
+D.59@ 8 5.F&7 "(EF* %6"%0 E$C*/ %6* #.%*/%$"&&:
+9*C*(*
+2./9*^F*/2*9
+.G
+C.&"%$&*
+D.590
+%6*
+$/%*(/"%$./"&
+2.33F/$%:
+96.F&7
+*/2.F("E*
+*T#*($3*/%"%$./ 5$%6 .%6*( $/%*(C*/%$./9@ </*
+2.F/%(:0 G.( $/9%"/2*0 $9 7$92F99$/E &$3$%$/E %6*
+%"T 7*7F2%$,$&$%: _G.( #F(#.9*9 .G %6* 2.(#.("I
+%$./ $/2.3* %"Ta .G $/%*(*9% ./ G.(*$E/I7*/.3I
+$/"%*70 96.(%I%*(3 7*,%@ _A6$9 $/%*(C*/%$./ 6"9
+%6* GF(%6*( "7C"/%"E* .G ,*$/E &"(E*&: dd9*&GI(*I
+#.(%$/E@eea
+_,a 3*8/1*' %C1G%:.
+'"&":9$" %($*7 " ^F$%* 7$Z*(*/% *T#*($3*/%c
+2./%(.&9 ./ %6* .F%D.5 .G 2"#$%"&@ '"/: 5$%6$/
+%6* $/%*(/"%$./"& 2"#$%"& 3"()*%9 E(**%*7 %6$9
+*T#*($3*/%
+5$%6
+&$%%&*
+*/%6F9$"93
+.(
+*C*/
+*T#&$2$% *T#(*99$./9 .G 7$9%"9%*@ A6*9* (6*%.($2"&
+"%%"2)9 %:#$2"&&: G"$&*7 %. /.%* %6* 3"/:
+9F,%&*%$*9 .G '"&":9$"/ #.&$2$*90 $/2&F7$/E %6*
+#(.C$9$./9 7*9$E/*7 %. #(.%*2% $/%*(*9%9 .G &./EI
+%*(3 $/C*9%.(9@ O*2*/%&:0 %6* 2.F/%(: 3.C*7 %.
+" 3.(* 3"()*%I,"9*7 *T$% %"T@ 8% $9 %.. 9../ %.
+*C"&F"%* %6* *T#*($3*/%0 ,F% #(*&$3$/"(: (*9F&%9
+9FEE*9% %6"% $% 6"9 ,**/ G"( G(.3 %6* 7$9"9%*(
+%6"% %6* /":9":*(9 6"7 #(*7$2%*7b %6* (*3.C"&
+.G %6* %"T 5*/% 93..%6&:0 %6* 2.F/%(: F9*7 %6*
+%$3* #(.C$7*7 %. 3")* 9$E/$H2"/% #(.E(*99 $/
+H/"/2$"& "/7 2.(#.("%* (*9%(F2%F($/E _G"( 3.(*
+#(.E(*99 %6"/ 9.3* .G $%9 /*$E6,.(9a0 "/7
+G.(*$E/ 7$(*2% $/C*9%3*/% 2./%$/F*7 "% " (*&"I
+%$C*&: 9%(./E #"2*@
+_2a V#0C'*1/+0 @*8/1*' G%:.
+1"&%C0" 1"# A*+,/+0 .E.1#9
+A6* 1"9% L9$"/ 2($9$9 6$E6&$E6%*7 %6* $3#.(I
+%"/2* .G %6* H/"/2$"& 9:9%*3@ S*")/*99*9 $/ %6*
+H/"/2$"& 9:9%*3YE*/*("%*70 G.( $/9%"/2*0 ,: "
+3$93"%26 ,*%5**/ G.(*$E/ 7*/.3$/"%*7 &$",$&I
+$%$*9 "/7 7.3*9%$2"&&: 7*/.3$/"%*7 "99*%9Y2"/
+E$C* ($9* %. 9:9%*3$2 5*")/*99*9 $/ %6* */%$(*
+*2./.3:@ <,9*(C*(9 .G %6* 2($9$90 6.5*C*(0
+/.%*7 %6"% G.2F9$/E ./ %6* H/"/2$"& 9:9%*3 3":
+/.% ,* */.FE6b "G%*( "&&0 %5.I%6$(79 .G %6*
+G.(*$E/I7*/.3$/"%*7 ,.((.5$/E $/ 8/7./*9$"
+!L>8AL+ 'LOm1A +8U1OL+8BLA8<N
+MK\f
+
+## Página 10
+
+5"9 ,: 2.(#.("%*9@ 8/7**70 %6* "(EF3*/% 5"9
+#F% G.(5"(7 %6"% &$3$%$/E ,"/) ,.((.5$/E ,:
+$%9*&G 5.F&7 ,* &$)* #F%%$/E " H/E*( $/%. " 7$)*@
+8G G.(*$E/ ,"/)9 5*(* .Z*($/E 6$E6&: G"C.(",&*
+%*(390 %6* #(*99F(* G.( G.(*$E/ ,.((.5$/E
+5.F&7 96.5 F# 9.3*56*(* *&9* $/ %6* 9:9%*3@
+83#(.C*7 ,"/)$/E (*EF&"%$./ 3$E6% &$3$% 7$(*2%
+5*")/*99*9 $/ %6* ,"/)$/E 9:9%*30 ,F% &*"7 %.
+3.(* 2.(#.("%* *T#.9F(*@
+A6$9 #*(9#*2%$C*0 6.5*C*(0 $E/.(*9 %6* 2*/%("&
+(.&* %6"% %6* H/"/2$"& 9:9%*3 #&":9 $/ %6*
+*2./.3:0 "/7 %6* ",$&$%: .G E.C*(/3*/% %.
+*T*(2$9* #*(C"9$C* *Z*2%9 %6(.FE6 %6* (*EF&"%$./
+.G %6* ,"/)$/E 9:9%*3@ 4.C*(/3*/%9 2"/ "/7
+$/7**7 96.F&7 $/9$9% %6"% ,"/)9 &..) "% %6*
+F/2.C*(*7 *T#.9F(* .G H(39 %. 56$26 %6*: 6"C*
+&*/%@ g.( %6"% _F/2.C*(*7a *T#.9F(* 2"/ "Z*2%
+E(*"%&: %6* &$)*&$6..7 %6"% %6* H(39 %. 56$26
+%6*: 6"C* &*/% 5$&& /.% ,* ",&* %. (*#": %6*$(
+&."/9@ LE"$/0 '"&":9$" #(.C$7*9 " 2"9* $/ #.$/%c
+,"/) (*EF&"%$./9 9F22**7*7 $/ &$3$%$/E *T#.9F(*
+.G '"&":9$"/ H(39@ 8/ #($/2$#&*0 %6* ,"/)
+(*EF&"%$./9 2"/ ,* 3"()*%I,"9*7b %6"% $90 ,"/)
+(*EF&"%.(9 2.F&7 $3#.9* ($9) 5*$E6%9 $/ %6*
+2"#$%"& "7*^F"2: (*^F$(*3*/%9 9. %6"% &."/9 %.
+H(39 5$%6 6$E6 *T#.9F(* (*2*$C*7 6$E6*( ($9)
+5*$E6%9@ A6F90 ,"/)9 5.F&7 ./&: 3")* &."/9 %.
+9F26 H(39 $G %6*: (*2*$C*7 "/ $/%*(*9% ("%* 6$E6
+*/.FE6 %. 2.3#*/9"%* %6*3 G.( %6* 6$E6*( 2.9%9
+_"/7 ($9)9a@ UF% /. E.C*(/3*/% $3#.9*9 %6*
+)$/7 .G 9.#6$9%$2"%*7 ($9)I,"9*7 2"#$%"& "7*I
+^F"2: 9%"/7"(79 %6"% %6$9 5.F&7 $3#&:b $/ %6*
+/*"( %*(30 *3*(E$/E 3"()*%9 "(* #(.,",&:
+,*%%*( 9*(C*7 ,: *3#&.:$/E 9$3#&* (*EF&"%.(:
+9%(F2%F(*9@
+`@ !<N!+QP8N4 O1'LOm=
+8/ %6* "G%*(3"%6 .G %6* E&.,"& H/"/2$"& 2($9$9
+"/7 %6* (*2.E/$%$./ .G %6* 6$E6 2.9%9 %6"% %6.9*
+$/ %6* 7*C*&.#$/E 5.(&7 6"C* 6"7 %. #":0 %6*(*
+*3*(E*7 *T%*/9$C* 7$92F99$./ .G " /*5 E&.,"&
+*2./.3$2 "(26$%*2%F(*@ 1C*(:./* "E(**7 %6"%
+"%%*/%$./ 96.F&7 ,* G.2F9*7 ./ #(*C*/%$/E
+GF%F(* 2($9*90 %6.FE6 F#./ GF(%6*( (*D*2%$./0
+%6* E."& ,*2"3* 3.7$H*7 %. 3")$/E 9F26 2($9*9
+&*99 G(*^F*/% "/7 &*99 7**#@ 1"(&: 7$92F99$./9
+G.2F9*7 ./ $3#(.C$/E %("/9#"(*/2:0 %6.FE6
+/*"(&: *C*(:./* (*2.E/$-*7 %6"% 3.9% .G %6*
+(*&*C"/% $/G.(3"%$./ _*@E@0 %6* 6$E6 &*C*("E* .G
+m.(*"!9 H(39 "/7 %6* 6*"C: $/C*9%3*/% $/ %6*
+6$E6&:
+2:2&$2"&
+26$#
+$/7F9%(:a
+5"9
+"&(*"7:
+(*"7$&: "C"$&",&*@ S6*/ $% 5"9 GF(%6*( .,9*(C*7
+%6"% %6* &"9% 3"R.( 9*% .G 2($9*9 .22F((*7 $/
+%6(**
+.G
+%6*
+3.9%
+%("/9#"(*/%
+2.F/%($*9
+_N.(5":0 =5*7*/0 "/7 g$/&"/7a0 $% ,*2"3*
+2&*"( %6"% %("/9#"(*/2: $%9*&G 5.F&7 6"(7&:
+$/.2F&"%* " 2.F/%(: "E"$/9% " 2($9$9@ P**#*(
+"/"&:9$9 GF(%6*( ^F*9%$./*7 %6* %("/9#"(*/2:
+*T#&"/"%$./@ A6* "Z*2%*7 2.F/%($*9 6"7 *T#*I
+($*/2*7 %6(** 7*2"7*9 .G ("#$7 "/7 (*&"%$C*&:
+9%",&* E(.5%6b $G "/:%6$/E0 %6*(* 6"7 ,**/ "/
+$/2(*"9*
+$/
+%("/9#"(*/2:@
+'.(*.C*(0
+3"/:
+2.F/%($*9 %6"% 5*(* &*99 %("/9#"(*/% 7$7 /.%
+6"C* " 2($9$9@ '.(* ,(."7&:0 56$&* $3#(.C*7
+$/G.(3"%$./ _%("/9#"(*/2:a 3$E6% &*"7 %. ,*%%*(
+(*9.F(2*
+"&&.2"%$./90
+,.%6
+%6*.(*%$2"&
+"/7
+*3#$($2"&
+"/"&:9*9
+^F*9%$./*7
+$%9
+(.&*
+$/
+*/6"/2$/E *2./.3$2 9%",$&$%: _9** gF(3"/ o
+=%$E&$%-0 MVVV"0,a@ 1/%6F9$"93 G.( %6* %("/9I
+#"(*/2: "E*/7" $/ 9.3* ^F"(%*(9 5"9 GF(%6*(
+*(.7*7 56*/ $% 5"9 #.$/%*7 .F% %6"% %. ,*
+3*"/$/EGF&0 %("/9#"(*/2: 6"7 %. ,* 2.3#(*I
+6*/9$C*0 $/2&F7$/E .ZI96.(* ,"/)$/E "/7 6*7E*
+GF/790 "/7 #.99$,&: *C*/ %6* "2%$./9 .G 2*/%("&
+,"/)*(9r
+L 9*2./7 3"R.( 9%("/7 .G (*G.(39 G.2F9*7 ./
+9%(*/E%6*/$/E .G H/"/2$"& $/9%$%F%$./9@ LE"$/0
+56$&*
+7*9$(",&*0
+%6*
+7$[2F&%$*9
+%6"%
+*C*/
+"7C"/2*7 $/7F9%($"& 2.F/%($*9 6"7 $/ *9%",&$96I
+$/E 9%(./E H/"/2$"& $/9%$%F%$./9 9FEE*9%*7 %6"%
+%6$9 5.F&7 (*3"$/ " &./EI%*(3 26"&&*/E* $/
+*3*(E$/E 3"()*%9@ L 6.9% .G .%6*( (*G.(39Y
+G(.3 2.&&*2%$C* "2%$./ 2&"F9*9 $/ ,./790 %.
+9:9%*3$2 ,"/)(F#%2: #(.C$9$./90 %. $3#(.C*7
+2.(#.("%* E.C*(/"/2*Y5*(* #F% ./ %6* %",&*@
+=.3*0 &$)* %6* 2.&&*2%$C* "2%$./ 2&"F9*90 (*2*$C*7
+"2%$C* .##.9$%$./@ =.3*0 &$)* 9:9%*3$2 ,"/)I
+(F#%2: #(.C$9$./90 $/C.&C*7 3"%%*(9 %6"% 5*(*
+%.. %*26/$2"& %. (*2*$C* 5$7*9#(*"7 7$92F99$./@
+8/ 9.3* "(*"90 9F26 "9 $3#(.C*7 2.(#.("%*
+E.C*(/"/2*0 #(.E(*99 9**3*7 &$)*&:0 %6.FE6
+%6*$( (.&* $/ %6* 2($9$9 3": 6"C* ,**/ .C*(,&.5/
+_9** =%$E&$%-0 MVVVa@
+A6* ./* "(*" $/ 56$26 %6*(* $9 "/ *3*(E$/E
+2./9*/9F9Y" 3"R.( 26"/E* $/ #*(9#*2%$C*9Y$9
+96.(%I%*(3 2"#$%"& D.59@ A6* ($9)9 "(* (*2.EI
+/$-*7 %. ,* E(*"%*(0 %6* ,*/*H%9 &.5*(0 %6*
+2$(2F39%"/2*9 $/ 56$26 2.F/%($*9 96.F&7 */E"E*
+$/ GF&& &$,*("&$-"%$./ 3.(* (*9%($2%$C* %6"/ 5"9
+%6* 2"9* ,*G.(* %6* 2($9$9@ 4$C*/ %6* E(.5$/E
+,.7:
+.G
+%6*.(:0
+*C$7*/2*0
+"/7
+*T#*($*/2*
+"E"$/9% GF&& 2"#$%"& "22.F/% &$,*("&$-"%$./0 %6*
+9#**26 .G %6* '"/"E$/E P$(*2%.( .G %6* 8'g0
+'$26*& !"37*99F90 ,*G.(* %6* L//F"& U"/)I
+gF/7 '**%$/E9 $/ ?./E m./E $/ =*#%*3,*(
+MVVW0 ("$9*7 GF/7"3*/%"& ^F*9%$./9@ A6*(* 6*
+"(EF*70
+g(**7.3 6"9 $%9 ($9)9r +*%!9 E. %6*/ G.( "/ .(7*(&:
+&$,*("&$-"%$./ .G 2"#$%"& 3.C*3*/%9@@@@@%6* .,R*2%$C*
+S<O+P P1i1+<>'1NA
+MK\n
+
+## Página 11
+
+$9 %. G.9%*( %6* 93..%6 .#*("%$./ .G $/%*(/"%$./"&
+2"#$%"& 3"()*%9 "/7 */2.F("E* 2.F/%($*9 %. (*3.C*
+2./%(.&9 $/ " 5": %6"% 9F##.(%9 %6* 7($C* %.5"(7
+9F9%"$/",&* 3"2(.*2./.3$2 #.&$2$*90 9%(./E 3./*I
+%"(: "/7 H/"/2$"& 9*2%.(90 "/7 &"9%$/E &$,*("&$-"I
+%$./@
+L(* $/%*(/"%$./"& #.&$2$*9 $/ %6$9 "(*" ,*$/E
+7*9$E/*7 ./ %6* ,"9$9 .G %6* ,*9% "C"$&",&*
+*2./.3$2 %6*.($*9 "/7 *C$7*/2*0 .( $9 %6*(*
+"/.%6*( "E*/7"0 #*(6"#9 " 9#*2$"& $/%*(*9%
+"E*/7"0 9**3$/E&: $3#*(C$.F9 %. %6* *Z*2%9 .G
+9F26 #.&$2$*90 /.% ./&: ./ E(.5%60 ,F% ./
+9%",$&$%: "/7 #.C*(%:q 8G %6"% $9 %6* 2"9*0 $9 %6*(*
+" 3.(* GF/7"3*/%"& #(.,&*3 $/ %6* $/%*(/"I
+%$./"& *2./.3$2 "(26$%*2%F(*0 E.$/E ,*:./7 %6*
+7*%"$&9 7$92F99*7 ",.C*0 %. $99F*9 .G "22.F/%I
+",$&$%:
+"/7
+(*#(*9*/%"%$C*/*99q
+P.
+%6.9*
+3")$/E 7*2$9$./9 %6"% "Z*2% %6* &$C*9 "/7 &$C*I
+&$6..79 .G 3$&&$./9 .G #*.#&* %6(.FE6.F% %6*
+5.(&7 (*D*2% %6* $/%*(*9%9 "/7 2./2*(/90 /.% RF9%
+.G H/"/2$"& 3"()*%90 ,F% .G ,F9$/*99*90 93"&&
+"/7 &"(E*0 "/7 .G 5.()*(90 "/7 %6* *2./.3:
+3.(* ,(."7&:q A6*9* "(* %6* 7**#*( ^F*9%$./9
+#.9*7 ,: %6* 2($9$9 %6(.FE6 56$26 %6* 5.(&7 $9
+RF9% *3*(E$/E@
+O1g1O1N!1=
+!"&C.0 4@ L@0 +*$7*(3"/0 +@0 o O*$/6"(%0 !@ '@ _MVVfa@
+!"#$%"& $/D.59 "/7 (*"& *T26"/E* ("%* "##(*2$"%$./
+$/ +"%$/ L3*($2"@ A6* (.&* .G *T%*(/"& G"2%.(9@
+M+1#&+*1/%+*' N%+#1*&E OC+( 51*Z ?*8#&.0 [\ _Ma0
+MK\]MhM@
+!"#($.0 4@ _MVVWa@ ="G* "/7 9.F/7 ,"/)$/E $/ 7*C*&.#I
+$/E 2.F/%($*9c 5*!(* /.% $/ m"/9"9 "/:3.(*@ V#X
+.#*&@" /+ O/+*+@/*' 5#&7/@#.I ?&/7*1# *+( ?CA'/@
+?%'/@E0 Q0 WV]VW@
+P*3$(E"F2!ImF/%0 L@0 o P*%("E$"26*0 1@ _MVV\a@ g$/"/2$"&
+&$,*("&$-"%$./ "/7 H/"/2$"& G("E$&$%:@ 8/ ?&%@##(/+0.
+%D 6++C*' )*+, 3%+D#&#+@# %+ 2#7#'%89#+1 J@%+%9X
+/@.0 S"96$/E%./0 P!0 JK]JM L#($&@
+P..&*:0 '@ _MVV\a@ 8/7./*9$"c $9 %6* &$E6% "% %6* */7 .G
+%6* %F//*& ./2.3$/E %("[2q 2#C1.@"# )*+, V#X
+.#*&@"- J9#&0/+0 N*&,#1. V#.#*&@" _;F/*a@
+1"9%*(&:0 S@0 89&"30 O@0 o =%$E&$%-0 ;@ 1@ _MVVVa@ 5"*,#+
+*+( .1/&&#(I 7%'*1/'/1E *+( 9*@&%#@%+%9/@ 8*&*(/09.
+D%& &/@" *+( 8%%& @%C+1&/#.@ 4$C*/ "9 '$26"*& U(F/.
+'*3.($"& +*2%F(*0 8/%*(/"%$./"& 12./.3$29 L99.2$I
+"%$./ S.(&7 !./E(*990 UF*/.9 L$(*9@
+g*(/!"/7*-IL($"90 1@ _MVVha@ A6* /*5 5"C* .G #($C"%*
+2"#$%"& $/D.59c #F96 .( #F&&q ]%C&+*' %D 2#7#'%89#+1
+J@%+%9/@. _P*2*3,*(a@
+gF(3"/0 ;@0 o =%$E&$%-0 ;@ 1@ _MVVV"a@ J@%+%9/@ @&/.#.I
+#7/(#+@# *+( /+./0"1. D&%9 J*.1 6./*@ U(..)$/E9
+>"#*(9 ./ 12./.3$2 L2%$C$%:0 J0 U(..)$/E9 8/9%$%FI
+%$./0 S"96$/E%./0 P!@
+gF(3"/0 ;@0 o =%$E&$%-0 ;@ 1@ _MVVV,a@ 12./.3$2 2./9*I
+^F*/2*9 .G $/2.3* $/*^F"&$%:@ O#(#&*' V#.#&7# )*+,
+V#7/#: %D ^*+.*. 3/1E@
+?"F93"//0 O@0 o 4"C$/0 '@ _MVV`a@ 5#@C&/+0 .1*A/'/1E
+*+( 0&%:1" /+ * ."%@, 8&%+# &#0/%+I 1"# 8%'/@E
+@"*''#+0# D%& K*1/+ 69#&/@*@ 8/%*(IL3*($2"/ P*C*&I
+.#3*/%
+U"/)0
+<[2*
+.G
+%6*
+!6$*G
+12./.3$9%@
+S.()$/E >"#*( fMh0 ;"/F"(:@
+?.Z0 m@ _MVVWa@ L U":*9$"/ 3.7*& .G %6* $/G"/% $/7F9%(:
+"(EF3*/%@ ]%C&+*' %D M+1#&+*1/%+*' J@%+%9/@.0 [_ _fk
+na0 nKK]nf`@
+8/9%$%F%* .G 8/%*(/"%$./"& g$/"/2* _MVV\a@ 3*8/1*' G%:.
+1% #9#&0/+0 9*&,#1 #@%+%9/#.0 S"96$/E%./0 P!0 JV
+;"/F"(:@
+4(**/5"&70 U@0 o =%$E&$%-0 ;@ 1@ _MV\`a@ 1T%*(/"&$%$*9 $/
+*2./.3$29 5$%6 $3#*(G*2% $/G.(3"%$./ "/7 $/2.3I
+#&*%*
+3"()*%9@
+`C*&1#&'E
+]%C&+*'
+%D
+J@%+%9/@.
+_'":a0 JJV]J`n@
++"/*0 A@0 46.960 L@0 ?"3"//0 ;@0 >6$&&$#90 =@0 =26F&-*I
+46"%%"90 '@0 o A9$)"%"0 A@ _MVVVa@ MNOX.C88%&1#(
+8&%0&*9. /+ M+(%+#./*- ^%&#*- *+( !"*/'*+(F 6
+8&#'/9/+*&E
+*..#..9#+1@
+8/%*(/"%$./"&
+'./*%"(:
+gF/7 <22"9$./"& >"#*( MW\0 8'g0 S"96$/E%./0
+P!@
++**0 ;@ _MVV`a@ M98'/@*1/%+. %D * .C&0# /+ @*8/1*'
+/+G%:.I *7*/'*A'# 1%%'. *+( @%+.#WC#+@#. D%& 1"#
+@%+(C@1 %D 9%+#1*&E 8%'/@E@ 8/%*(/"%$./"& './*%"(:
+gF/7 S.()$/E >"#*( hf0 8'g0 S"96$/E%./0 P!0
+'":@
++$/7E(*/0 !@0 4"(2$"0 4@0 o =""&0 '@ _MVV`a@ )*+,/+0
+.%C+(+#.. *+( 9*@&%#@%+%9/@ 8%'/@E@ 8/%*(/"%$./"&
+'./*%"(: gF/70 S"96$/E%./0 P!@
+O.7($)0 P@ _MVV\a@ S6. /**79 2"#$%"&I"22.F/% 2./C*(%I
+$,$&$%:q J..*E. /+ M+1#&+*1/%+*' O/+*+@# JKW0 8/%*(/"I
+%$./"& g$/"/2* =*2%$./0 P*#"(%3*/% .G 12./.3$290
+>($/2*%./ Q/$C*(9$%: _'":a0 hh]`h@
+="2690 ;@0 o S"(/*(0 L@ _MVVha@ 12./.3$2 (*G.(3 "/7
+%6* #(.2*99 .G *2./.3$2 $/%*E("%$./@ )&%%,/+0 ?*8#&.
+%+ J@%+%9/@ 6@1/7/1E0 P0 M]MM\@
+=%$E&$%-0 ;@ 1@ _MVV\a@ V#.8%+(/+0 1% #@%+%9/@ @&/.#.I
+8%'/@E *'1#&+*1/7#. D%& #WC/1*A'# &#@%7#&E *+( (#7#'%8X
+9#+1@ >"#*( #(*9*/%*7 %. N.(%6I=.F%6 8/9%$%F%*0
+<%%"5"0 !"/"7"0 JV =*#%*3,*(@
+=%$E&$%-0 ;@ 1@ _MVVVa@ K#..%+. D&%9 1"# 0'%A*' B+*+@/*'
+@&/./.@ +*2%F(* E$C*/ %. g*7*("& O*9*(C* U"/) .G
+!6$2"E.0 fK =*#%*3,*(@
+=%$E&$%-0 ;@ 1@ _JKKKa@ >($/2$#&*9 .G H/"/2$"& (*EF&"%$./c "
+7:/"3$20 #.(%G.&$. "##(."26@ $%&'( )*+, V#.#*&@"
+aA.#&7#&0 G.(%62.3$/E@
+i"3C")$7$90 L@ _MVVVa@ O*E$./"& %("7* "E(**3*/%9 .(
+,(."7 &$,*("&$-"%$./c 56$26 #"%6 &*"79 %. G"9%*(
+E(.5%6q M+1#&+*1/%+*' N%+#1*&E OC+( 51*Z ?*8#&.0
+[b _Ma0 nJ]`\@
+S"2-$"(E0 O@ _MVV\a@ N#*.C&/+0 1"# (E+*9/@ 0*/+. D&%9
+1&*(#@ S.()$/E >"#*(0 ?"(C"(7 Q/$C*(9$%:0 !"3I
+,($7E*0 'L0 '":@
+!L>8AL+ 'LOm1A +8U1OL+8BLA8<N
+MK\h
+
+## Página 12
+
+S.(&7 U"/) _MVV\"a@ ='%A*' #@%+%9/@ 8&%.8#@1. PQQUYQQI
+A#E%+( B+*+@/*' @&/./.@ S"96$/E%./0 P!c S.(&7
+U"/)@
+S.(&7 U"/) _MVV\,a@ J*.1 6./*I &%*( 1% &#@%7#&E@
+S"96$/E%./0 P!c S.(&7 U"/)@
+S.(&7 U"/) _MVVVa@ ='%A*' #@%+%9/@ 8&%.8#@1. *+( 1"#
+(#7#'%8/+0 @%C+1&/#. PQQQYc\\\@ S"96$/E%./0 P!c
+S.(&7 U"/)@
+S<O+P P1i1+<>'1NA
+MK\`

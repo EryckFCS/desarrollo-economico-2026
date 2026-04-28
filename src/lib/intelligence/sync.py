@@ -11,11 +11,10 @@ class IntelligenceOrchestrator:
     def __init__(self, base_dir: Path):
         self.base_dir = base_dir
         self.raw_dir = base_dir / "raw"
-        self.md_dir = base_dir / "markdown"
         self.sanitized_dir = base_dir / "sanitized"
 
-        self.converter = PDFToMarkdownConverter(self.raw_dir, self.md_dir)
-        self.sanitizer = BibliographicSanitizer(self.md_dir, self.sanitized_dir)
+        self.converter = PDFToMarkdownConverter(self.raw_dir, self.sanitized_dir)
+        self.sanitizer = BibliographicSanitizer(self.sanitized_dir, self.sanitized_dir)
 
         self.rag = MarkdownRAG(collection_name="economic_development")
 

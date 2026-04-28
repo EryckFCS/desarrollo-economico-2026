@@ -1,5 +1,5 @@
-# Documento: Gramática del Neoliberalismo
-Source: Gramática del Neoliberalismo.pdf ## Página See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/23524443
+# Documento: gramatica-del-neoliberalismo
+Source: gramatica-del-neoliberalismo.pdf ## Página See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/23524443
 Gramática del Neoliberalismo. Genealogía y claves para su desciframiento Article · February
 Source: RePEc
 CITATIONS READS

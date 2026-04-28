@@ -1,5 +1,5 @@
-# Documento: Baumol (1986) - Productivity growth, convergence, and welfare. Long run data show
-Source: Lecturas/Bibliografía/Baumol (1986) - Productivity growth, convergence, and welfare. Long run data show.pdf ## Página American Economic Association Productivity Growth, Convergence, and Welfare: What the Long-Run Data Show Author(s): William J. Baumol
+# Documento: baumol-1986-productivity-growth-convergence-and-welfare-long-run-data-show
+Source: readings/bibliography/baumol-1986-productivity-growth-convergence-and-welfare-long-run-data-show.pdf ## Página American Economic Association Productivity Growth, Convergence, and Welfare: What the Long-Run Data Show Author(s): William J. Baumol
 Source: The American Economic Review, Vol. 76, No. 5 (Dec., 1986), pp. 1072-1085
 Published by: American Economic Association
 Stable URL: http://www.jstor.org/stable/1816469

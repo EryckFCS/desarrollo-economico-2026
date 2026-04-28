@@ -1,5 +1,5 @@
-# Documento: Debraj Ray Economía del desarrollo
-Source: Debraj Ray Economía del desarrollo.pdf ## Página Debraj Ray es uno de los economistas de mayor prestigio en el campo del desarrollo económico. Nacido en la India y doctor por Cornell University/ es actualmente profesor de New York University y director de su programa de doctorado. Ha sido también profesor en Stanford University/ Boston University y profesor visitante en MIT, Harvard/ lnstitut d/Analisi Económica e lndian Statistical lnstitute/ entre otros. Es miembro del consejo editorial de numerosas revistas profesionales/ entre las que destacamos Journal of Development Economics/ Journal of Economic Theory/ Journal of Economic Growth y Journal of Economic lnequality.
+# Documento: debraj-ray-economia-del-desarrollo
+Source: debraj-ray-economia-del-desarrollo.pdf ## Página Debraj Ray es uno de los economistas de mayor prestigio en el campo del desarrollo económico. Nacido en la India y doctor por Cornell University/ es actualmente profesor de New York University y director de su programa de doctorado. Ha sido también profesor en Stanford University/ Boston University y profesor visitante en MIT, Harvard/ lnstitut d/Analisi Económica e lndian Statistical lnstitute/ entre otros. Es miembro del consejo editorial de numerosas revistas profesionales/ entre las que destacamos Journal of Development Economics/ Journal of Economic Theory/ Journal of Economic Growth y Journal of Economic lnequality.
 Tiene innumerables artículos publicados en revistas profesionales.
 
 ## Página

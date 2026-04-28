@@ -1,5 +1,5 @@
-# Documento: Stiglitz (1999) - Knowledge as a Global Public Good
-Source: Lecturas/Bibliografía/Stiglitz (1999) - Knowledge as a Global Public Good.pdf ## Página GLOBAL PUBLIC GOODS INTERNATIONAL COOPERATION IN THE 21ST CENTURY
+# Documento: stiglitz-1999-knowledge-as-a-global-public-good
+Source: readings/bibliography/stiglitz-1999-knowledge-as-a-global-public-good.pdf ## Página GLOBAL PUBLIC GOODS INTERNATIONAL COOPERATION IN THE 21ST CENTURY
 
 ## Página
 "It is not beyond the powers of political volition to tip the scales towards more secure peace, greater economic well-being, social justice and environmental sustainability. But no country can achieve these global public goods on its own,and neither can the global marketplace.Thus our efforts must now focus on the missing term of the equation: global public goods".

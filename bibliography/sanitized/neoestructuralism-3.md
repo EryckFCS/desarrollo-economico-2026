@@ -1,5 +1,5 @@
-# Documento: Neoestructuralism
-Source: Neoestructuralismo/Neoestructuralism 3.pdf ## Página [ 1 ] Perfiles Latinoamericanos, 29(57) | 2021 | e-ISSN: 2309-4982
+# Documento: neoestructuralism-3
+Source: neoestructuralismo/neoestructuralism-3.pdf ## Página [ 1 ] Perfiles Latinoamericanos, 29(57) | 2021 | e-ISSN: 2309-4982
 Recibido: 31 de julio de
 Aceptado: 30 de junio de
 Licencia Creative Commons Atribución-NoComercial

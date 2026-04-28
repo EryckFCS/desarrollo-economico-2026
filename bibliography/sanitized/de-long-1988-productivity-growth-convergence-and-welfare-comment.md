@@ -1,5 +1,5 @@
-# Documento: De Long (1988) - Productivity Growth, Convergence, and Welfare. Comment
-Source: Lecturas/Bibliografía/De Long (1988) - Productivity Growth, Convergence, and Welfare. Comment.pdf ## Página http://www.jstor.org Productivity Growth, Convergence, and Welfare: Comment Author(s): J. Bradford De Long
+# Documento: de-long-1988-productivity-growth-convergence-and-welfare-comment
+Source: readings/bibliography/de-long-1988-productivity-growth-convergence-and-welfare-comment.pdf ## Página http://www.jstor.org Productivity Growth, Convergence, and Welfare: Comment Author(s): J. Bradford De Long
 Source: The American Economic Review, Vol. 78, No. 5, (Dec., 1988), pp. 1138-1154
 Published by: American Economic Association
 Stable URL: http://www.jstor.org/stable/1807174

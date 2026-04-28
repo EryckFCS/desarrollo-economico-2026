@@ -1,5 +1,5 @@
-# Documento: Seers (1969) - The Meaning of Dvelopment_OCR
-Source: Lecturas/Bibliografía/Seers (1969) - The Meaning of Dvelopment_OCR.pdf ## Página Institute of Development Studies The Meaning of Development Dudley Seers IDS Communication 44, © Institute of Development Studies
+# Documento: seers-1969-the-meaning-of-dvelopment_ocr
+Source: readings/bibliography/seers-1969-the-meaning-of-dvelopment_ocr.pdf ## Página Institute of Development Studies The Meaning of Development Dudley Seers IDS Communication 44, © Institute of Development Studies
 ## Página
 INSTITUTE OF DEVELOPMENT STUDIES LIBRARY
 THE MEANING OF DEVELOPMENT by

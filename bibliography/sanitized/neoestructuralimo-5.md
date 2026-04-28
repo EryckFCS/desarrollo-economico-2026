@@ -1,5 +1,5 @@
-# Documento: Neoestructuralimo
-Source: Neoestructuralismo/Neoestructuralimo 5.pdf ## Página Análisis Económico, vol. XXXVII, núm. 95, mayo-agosto de 2022, pp. 183-195, ISSN: 0185-3937, e- ISSN: 2448-6655 Estructuralismo, neoestructuralismo y la vulnerabilidad macroeconómica en Latinoamérica
+# Documento: neoestructuralimo-5
+Source: neoestructuralismo/neoestructuralimo-5.pdf ## Página Análisis Económico, vol. XXXVII, núm. 95, mayo-agosto de 2022, pp. 183-195, ISSN: 0185-3937, e- ISSN: 2448-6655 Estructuralismo, neoestructuralismo y la vulnerabilidad macroeconómica en Latinoamérica
 
 Structuralism, neostructuralism, and macroeconomic vulnerability in Latin America
 

@@ -1,5 +1,5 @@
-# Documento: 3 Teorías del Desarrollo
-Source: Lecturas de los contenidos Unidad 1/3 Teorías del Desarrollo.pdf ## Página Nómadas ISSN: 1578-6730
+# Documento: 3-teorias-del-desarrollo
+Source: unit_1_readings/3-teorias-del-desarrollo.pdf ## Página Nómadas ISSN: 1578-6730
 nomadas@cps.ucm.es
 Universidad Complutense de Madrid
 España

@@ -1,5 +1,5 @@
-# Documento: Dialnet-UnaLecturaCriticaDelNeoestructuralismoLatinoameric-8807519
-Source: Neoestructuralismo/Dialnet-UnaLecturaCriticaDelNeoestructuralismoLatinoameric-8807519.pdf ## Página Revista Edición Especial Cuestiones Económica e-ISSN: 2697-3367
+# Documento: dialnet-unalecturacriticadelneoestructuralismolatinoameric-8807519
+Source: neoestructuralismo/dialnet-unalecturacriticadelneoestructuralismolatinoameric-8807519.pdf ## Página Revista Edición Especial Cuestiones Económica e-ISSN: 2697-3367
 Memorias VI Encuentro Internacional de Economía, EPN 29 Resumen DOI: 10.47550/RCE/MEM/31.18
 
 Una lectura crítica del neoestructuralismo latinoamericano

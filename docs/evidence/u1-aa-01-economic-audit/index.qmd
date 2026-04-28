@@ -1,0 +1,30 @@
+---
+title: "Auditoría Económica Aplicada: Corea del Sur"
+subtitle: "Evaluación desde la Teoría de la Modernización y el Enfoque Estructuralista (Periodo: 1980-2020)"
+author: 
+  - "Condoy Seraquive Erick Fabricio"
+  - "David Peréz"
+  - "Gustavo Hurtado"
+date: "2026-04-24"
+format:
+  pdf:
+    output-file: "Auditoria_Corea.pdf"
+---
+
+# Resumen Ejecutivo
+
+La presente auditoría técnica disecciona la trayectoria de desarrollo de Corea del Sur bajo un prisma dual: la dinámica de acumulación de la **Teoría de la Modernización** y la transformación productiva del **Enfoque Estructuralista**. Mediante el análisis de indicadores de la Penn World Table y el Banco Mundial, se evidencia que el éxito coreano no fue un fenómeno inercial, sino el resultado de una orquestación deliberada entre la formación de capital humano y el escalamiento tecnológico. El documento se estructura en bloques analíticos que garantizan la trazabilidad forense de la evidencia y la coherencia con los marcos teóricos seleccionados.
+
+{{< include chapters/01_introduction.qmd >}}
+
+{{< include chapters/02_modernization.qmd >}}
+
+{{< include chapters/03_structuralism.qmd >}}
+
+{{< include chapters/04_conclusion.qmd >}}
+
+# Bibliografía
+::: {#refs}
+:::
+
+{{< include chapters/05_annexes.qmd >}}

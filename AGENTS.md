@@ -36,11 +36,12 @@
 ```text
 .
 ├── .github/ workflows/      # Governance automation
-├── bibliography/            # raw/, processed/, markdown/, sanitized/
+├── bibliography/            # raw/, processed/, sanitized/
 ├── config/                  # intelligence_map.json, settings.toml
 ├── data/                    # Non-bibliographic source data
 ├── docs/
 │   ├── evidence/            # Standardized English vaults (Unit-based)
+│   ├── writing/             # Canonical narrative and delivery layer
 │   ├── management/          # Architecture and risk reports
 │   ├── readings/            # Theoretical frameworks
 │   └── syllabus/            # Academic guidelines

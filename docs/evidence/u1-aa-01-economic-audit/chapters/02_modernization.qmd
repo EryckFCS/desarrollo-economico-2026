@@ -1,0 +1,21 @@
+# Evaluación desde la Teoría de la Modernización
+
+La experiencia surcoreana constituye la validación empírica más robusta de las etapas del crecimiento económico. Durante el periodo auditado, la nación exhibió una disciplina sistemática en la acumulación de factores productivos, logrando una convergencia real con las economías de la frontera tecnológica.
+
+## Dinámica de Acumulación y Crecimiento Endógeno
+
+La evidencia procesada desde la Penn World Table 11.0 @feenstra2015next confirma una trayectoria de crecimiento resiliente del PIB per cápita, capaz de absorber los choques de las crisis financieras de 1997 y 2008 sin comprometer la tendencia de largo plazo. Bajo la tesis de @ray1998development, esta expansión responde a una acumulación virtuosa donde el capital físico y humano operan de forma sincrónica, catalizando incrementos sostenidos en la Productividad Total de los Factores (PTF).
+
+![Figura 1: Trayectoria de Modernización - PIB pc y Capital Humano (Fuente: Elaboración propia en Stata con datos de PWT 11.0)](assets/grafico_modernizacion.png)
+
+## Inversión Externa e Institucionalidad del Aprendizaje
+
+La Inversión Extranjera Directa (IED) no operó simplemente como un flujo pasivo de liquidez, sino como un mecanismo estratégico de transferencia tecnológica. A diferencia de otras trayectorias en economías emergentes, Corea del Sur instrumentó la IED para robustecer las capacidades domésticas y la soberanía productiva, alineándose con los imperativos de desarrollo sostenible planteados por @sachs2015era.
+
+## Capital Humano y Transición hacia la Frontera del Conocimiento
+
+El índice de Capital Humano refleja una tendencia ascendente ininterrumpida, fruto de una política de estado que priorizó la sofisticación de la fuerza laboral. Esta metamorfosis permitió transitar de una especialización basada en ventajas comparativas estáticas (mano de obra intensiva) hacia un modelo sustentado en ventajas dinámicas y el uso intensivo del conocimiento, validando la premisa modernizadora sobre la mejora cualitativa de la población como motor del desarrollo.
+
+## Síntesis: Convergencia y Acumulación Dirigida
+
+En conclusión, la trayectoria de Corea del Sur confirma los postulados de la modernización mediante una secuencia progresiva de acumulación. No obstante, este éxito trasciende la mera inercia de mercado; representa el resultado de una estrategia deliberada de convergencia real.

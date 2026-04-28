@@ -1,0 +1,238 @@
+{
+    "summary": {
+        "total": 38,
+        "converted": 37,
+        "needs_ocr": 1,
+        "failed": 0
+    },
+    "details": [
+        {
+            "file": "gramatica-del-neoliberalismo.pdf",
+            "status": "CONVERTED",
+            "pages": 29,
+            "size_chars": 87285
+        },
+        {
+            "file": "desarrollo-humano-pobreza-y-desigualdad.pdf",
+            "status": "CONVERTED",
+            "pages": 178,
+            "size_chars": 370819
+        },
+        {
+            "file": "desarrollo-economico-y-la-escuela-estructuralista_ocr.pdf",
+            "status": "CONVERTED",
+            "pages": 34,
+            "size_chars": 88640
+        },
+        {
+            "file": "neoestructuralismo.pdf",
+            "status": "CONVERTED",
+            "pages": 9,
+            "size_chars": 33615
+        },
+        {
+            "file": "resumen_neoliberalismo_ampliado.pdf",
+            "status": "CONVERTED",
+            "pages": 3,
+            "size_chars": 5656
+        },
+        {
+            "file": "estructuralismo-cepal.pdf",
+            "status": "CONVERTED",
+            "pages": 34,
+            "size_chars": 97128
+        },
+        {
+            "file": "debraj-ray-economia-del-desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 838,
+            "size_chars": 2520433
+        },
+        {
+            "file": "la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_.pdf",
+            "status": "CONVERTED",
+            "pages": 618,
+            "size_chars": 1072675
+        },
+        {
+            "file": "las-teorias-del-desarrollo-economico.pdf",
+            "status": "CONVERTED",
+            "pages": 124,
+            "size_chars": 337500
+        },
+        {
+            "file": "lectura-4.pdf",
+            "status": "CONVERTED",
+            "pages": 14,
+            "size_chars": 47260
+        },
+        {
+            "file": "teorias_del_desarrollo_economico-uned.pdf",
+            "status": "CONVERTED",
+            "pages": 46,
+            "size_chars": 119288
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralimo-5.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 53794
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralismo-una-alternativa-para-america-latina.pdf",
+            "status": "CONVERTED",
+            "pages": 11,
+            "size_chars": 3352
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralism-3.pdf",
+            "status": "CONVERTED",
+            "pages": 28,
+            "size_chars": 79620
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralismo-4.pdf",
+            "status": "CONVERTED",
+            "pages": 16,
+            "size_chars": 59046
+        },
+        {
+            "file": "neoestructuralismo/dialnet-unalecturacriticadelneoestructuralismolatinoameric-8807519.pdf",
+            "status": "CONVERTED",
+            "pages": 1,
+            "size_chars": 2168
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralismo-1.pdf",
+            "status": "CONVERTED",
+            "pages": 9,
+            "size_chars": 33615
+        },
+        {
+            "file": "neoestructuralismo/neoestructuralismo-2.pdf",
+            "status": "CONVERTED",
+            "pages": 10,
+            "size_chars": 58241
+        },
+        {
+            "file": "unit_1_readings/2-hidalgo-capitan-economia_politica_del_desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 42,
+            "size_chars": 112645
+        },
+        {
+            "file": "unit_1_readings/1-retrospectiva-de-la-economia-del-desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 10,
+            "size_chars": 35141
+        },
+        {
+            "file": "unit_1_readings/3-teorias-del-desarrollo.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 59737
+        },
+        {
+            "file": "unit_1_readings/additional_readings/foro-1/perspectivas-economicas-ocde-junio-2025-esp-prt-final-opt.pdf",
+            "status": "CONVERTED",
+            "pages": 47,
+            "size_chars": 123899
+        },
+        {
+            "file": "unit_1_readings/additional_readings/foro-1/s2500222_es.pdf",
+            "status": "CONVERTED",
+            "pages": 213,
+            "size_chars": 622598
+        },
+        {
+            "file": "readings/bibliography/stiglitz-1999-knowledge-as-a-global-public-good.pdf",
+            "status": "CONVERTED",
+            "pages": 585,
+            "size_chars": 1369478
+        },
+        {
+            "file": "readings/bibliography/seers-1969-the-meaning-of-dvelopment_ocr.pdf",
+            "status": "CONVERTED",
+            "pages": 28,
+            "size_chars": 60562
+        },
+        {
+            "file": "readings/bibliography/stiglitz-2000-capital-market-liberalization-economic-growth-and-instability_ocr.pdf",
+            "status": "CONVERTED",
+            "pages": 12,
+            "size_chars": 49761
+        },
+        {
+            "file": "readings/bibliography/ravallion-2001-growth-inequality-and-poverty-looking-beyond-averages_ocr.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 60644
+        },
+        {
+            "file": "readings/bibliography/barro-and-sala-i-martin-2004-economic-growth.pdf",
+            "status": "CONVERTED",
+            "pages": 673,
+            "size_chars": 1571765
+        },
+        {
+            "file": "readings/bibliography/de-long-1988-productivity-growth-convergence-and-welfare-comment.pdf",
+            "status": "CONVERTED",
+            "pages": 18,
+            "size_chars": 62589
+        },
+        {
+            "file": "readings/bibliography/seers-1969-the-meaning-of-dvelopment.pdf",
+            "status": "NEEDS_OCR",
+            "avg_chars": 4.357142857142857,
+            "pages": 28
+        },
+        {
+            "file": "readings/bibliography/mankiw-romer-weil-1992-a-contribution-to-the-empirics-of-economic-growth.pdf",
+            "status": "CONVERTED",
+            "pages": 31,
+            "size_chars": 73518
+        },
+        {
+            "file": "readings/bibliography/williamson-1993-democracy-and-the-washington-consensus.pdf",
+            "status": "CONVERTED",
+            "pages": 8,
+            "size_chars": 38040
+        },
+        {
+            "file": "readings/bibliography/ravallion-2001-growth-inequality-and-poverty-looking-beyond-averages.pdf",
+            "status": "CONVERTED",
+            "pages": 13,
+            "size_chars": 57880
+        },
+        {
+            "file": "readings/bibliography/williamson-2002-did-the-washington-consensus-fail.pdf",
+            "status": "CONVERTED",
+            "pages": 4,
+            "size_chars": 12892
+        },
+        {
+            "file": "readings/bibliography/seers-1963-the-limitations-of-the-special-case.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 63044
+        },
+        {
+            "file": "readings/bibliography/baumol-1986-productivity-growth-convergence-and-welfare-long-run-data-show.pdf",
+            "status": "CONVERTED",
+            "pages": 15,
+            "size_chars": 56496
+        },
+        {
+            "file": "readings/bibliography/stiglitz-2000-capital-market-liberalization-economic-growth-and-instability.pdf",
+            "status": "CONVERTED",
+            "pages": 12,
+            "size_chars": 46342
+        },
+        {
+            "file": "readings/bibliography/stockhammer-2004-financialisation-and-the-slowdown-of-accumulation.pdf",
+            "status": "CONVERTED",
+            "pages": 23,
+            "size_chars": 79629
+        }
+    ]
+}

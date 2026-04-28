@@ -1,5 +1,5 @@
-# Documento: Perspectivas-economicas-OCDE-Junio-2025-ESP-PRT-Final-opt
-Source: Lecturas de los contenidos Unidad 1/Lecturas adicionales/Foro 1/Perspectivas-economicas-OCDE-Junio-2025-ESP-PRT-Final-opt.pdf ## Página Perspectivas Económicas de la OCDE Foco en América Latina Junio/Junho de
+# Documento: perspectivas-economicas-ocde-junio-2025-esp-prt-final-opt
+Source: unit_1_readings/additional_readings/foro-1/perspectivas-economicas-ocde-junio-2025-esp-prt-final-opt.pdf ## Página Perspectivas Económicas de la OCDE Foco en América Latina Junio/Junho de
 ## Página
 Perspectivas Económicas de la OCDE
 Perspectivas Econômicas de la OCDE

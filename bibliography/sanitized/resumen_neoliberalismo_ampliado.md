@@ -1,5 +1,5 @@
-# Documento: Resumen_Neoliberalismo_Ampliado
-Source: Resumen_Neoliberalismo_Ampliado.pdf ## Página Resumen Ampliado de la Lectura:
+# Documento: resumen_neoliberalismo_ampliado
+Source: resumen_neoliberalismo_ampliado.pdf ## Página Resumen Ampliado de la Lectura:
 "Gramática del Neoliberalismo. Genealogía y claves para su desciframiento Introducción El documento "Gramática del Neoliberalismo. Genealogía y claves para su desciframiento" ofrece una perspectiva compleja del neoliberalismo, diferenciándose de las interpretaciones tradicionales que a menudo omiten la genealogía completa y la dimensión política del fenómeno. La intención es proporcionar una visión más profunda y matizada, destacando cómo el neoliberalismo ha evolucionado y se ha manifestado en diferentes contextos históricos y geográficos.
 Dimensiones del Neoliberalismo
 El neoliberalismo no debe ser visto exclusivamente como una teoría económica, sino que incorpora una importante dimensión política. El documento enfatiza que el neoliberalismo reorganiza las funciones del Estado para apoyar el libre mercado, más que eliminar la intervención estatal por completo. Este enfoque se basa en la creencia de que el mercado es el mecanismo más eficiente para la asignación de recursos y la generación de crecimiento económico.

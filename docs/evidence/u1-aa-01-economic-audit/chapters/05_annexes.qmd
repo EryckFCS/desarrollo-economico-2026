@@ -1,0 +1,15 @@
+# Anexos
+
+## Anexo 1: Datos y Réplica (Acceso Obligatorio)
+*   **Repositorio de Datos (Nube)**: [CLICK AQUÍ PARA ACCEDER A LA CARPETA DE DATOS](https://drive.google.com/drive/folders/1AbV-5soT07P6wyLTwkeLnUUwrVEgtunL?usp=sharing)  
+    *(Incluye: Excel final, Scripts de Stata y Metadatos de validación)*
+*   **Archivo Excel Local**: [KOR_Audit_Data.xlsx](data/raw/KOR_Audit_Data.xlsx)
+*   **Metadatos de Auditoría**: [process_metadata.json](data/raw/process_metadata.json)
+
+## Anexo 2: Bibliografía y Evidencia (Acceso Obligatorio)
+*   **Carpeta de Fuentes (Nube)**: [CLICK AQUÍ PARA ACCEDER A LA BIBLIOGRAFÍA](COLOCAR_AQUI_LINK_A_DRIVE_O_NUBE)  
+    *(Incluye: PDFs de fuentes académicas con partes relevantes resaltadas: Ray, Fajnzylber, Prebisch, etc.)*
+*   **Fuentes Verificables**:
+    *   [World Bank Open Data](https://data.worldbank.org)
+    *   [Penn World Table 11.0](https://www.rug.nl/ggdc/productivity/pwt/)
+    *   [OECD Economic Outlook 2025](https://www.oecd.org)

@@ -1,5 +1,5 @@
-# Documento: Ravallion (2001) - Growth, inequality and poverty. Looking beyond averages_OCR
-Source: Lecturas/Bibliografía/Ravallion (2001) - Growth, inequality and poverty. Looking beyond averages_OCR.pdf ## Página Pergamon www.elsevier.com/locate/worlddev World Development Vol. 29, No. 11, pp. 1803-1815, © 2001 Elsevier Science Ltd. All rights reserved Printed in Great Britain 0305-750X/01/$ - see front matter PII: S0305-750X(01)00072-9
+# Documento: ravallion-2001-growth-inequality-and-poverty-looking-beyond-averages_ocr
+Source: readings/bibliography/ravallion-2001-growth-inequality-and-poverty-looking-beyond-averages_ocr.pdf ## Página Pergamon www.elsevier.com/locate/worlddev World Development Vol. 29, No. 11, pp. 1803-1815, © 2001 Elsevier Science Ltd. All rights reserved Printed in Great Britain 0305-750X/01/$ - see front matter PII: S0305-750X(01)00072-9
 Growth, Inequality and Poverty:
 Looking Beyond Averages
 MARTIN RAVALLION *

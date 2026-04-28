@@ -10,16 +10,14 @@ website:
         text: Home
       - text: "Research Vaults"
         menu:
-          - docs/vaults/u1-aa-01-economic-audit/index.qmd
-          - docs/vaults/u1-aa-02-foundations-context/index.qmd
+          - docs/evidence/u1-aa-01-economic-audit/index.qmd
+          - docs/evidence/u1-aa-02-foundations-context/index.qmd
       - text: "Readings"
         href: docs/readings/index.qmd
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: darkly
+    theme: cosmo
     toc: true
   pdf:
     documentclass: scrartcl

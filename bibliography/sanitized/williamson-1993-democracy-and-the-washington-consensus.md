@@ -1,5 +1,5 @@
-# Documento: Williamson (1993) - Democracy and the Washington Consensus
-Source: Lecturas/Bibliografía/Williamson (1993) - Democracy and the Washington Consensus.pdf ## Página World Development, Vol. 21, No. 8, pp. 13291336, 1993.
+# Documento: williamson-1993-democracy-and-the-washington-consensus
+Source: readings/bibliography/williamson-1993-democracy-and-the-washington-consensus.pdf ## Página World Development, Vol. 21, No. 8, pp. 13291336, 1993.
 0305-750X/93
 $6.00 + 0.00
 Printed in Great Britain.

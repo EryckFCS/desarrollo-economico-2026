@@ -1,5 +1,5 @@
-# Documento: Teorias_del_desarrollo_economico UNED
-Source: Teorias_del_desarrollo_economico UNED.pdf ## Página Universidad Nacional de Educación a Distancia TEORÍAS DEL DESARROLLO ECONÓMICO Gonzalo Escribano UNED
+# Documento: teorias_del_desarrollo_economico-uned
+Source: teorias_del_desarrollo_economico-uned.pdf ## Página Universidad Nacional de Educación a Distancia TEORÍAS DEL DESARROLLO ECONÓMICO Gonzalo Escribano UNED
 ## Página
 TEORIAS DEL DESARROLLO ECONÓMICO
 Gonzalo Escribano SUMARIO:

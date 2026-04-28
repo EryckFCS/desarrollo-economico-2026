@@ -1,5 +1,5 @@
-# Documento: Barro and Sala-i-Martin (2004) - Economic Growth
-Source: Lecturas/Bibliografía/Barro and Sala-i-Martin (2004) - Economic Growth.pdf ## Página ECONOMIC GROWTH Second Edition Robert J. Barro AND Xavier Sala-i-Martin
+# Documento: barro-and-sala-i-martin-2004-economic-growth
+Source: readings/bibliography/barro-and-sala-i-martin-2004-economic-growth.pdf ## Página ECONOMIC GROWTH Second Edition Robert J. Barro AND Xavier Sala-i-Martin
 
 ## Página
 Economic Growth

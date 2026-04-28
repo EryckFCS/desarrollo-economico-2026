@@ -1,5 +1,5 @@
-# Documento: La-era-del-desarrollo-sostenible-_Jeffrey-Sachs_-_z-lib.org_
-Source: La-era-del-desarrollo-sostenible-_Jeffrey-Sachs_-_z-lib.org_.pdf ## Página Portada Dedicatoria Preámbulo Prefacio 1. Introducción al desarrollo sostenible 2. Un mundo desigual 3. Breve historia del desarrollo económico 4. Por qué unos países se desarrollan mientras otros permanecen en la pobreza 5. Cómo terminar con la pobreza extrema 6. Límites planetarios 7. La inclusión social 8. Educación para todos 9. Salud para todos 10. Seguridad alimentaria 11. Ciudades resilientes 12. Cambio climático 13. Salvar la biodiversidad y proteger los servicios ecosistémicos 14. Los objetivos de desarrollo sostenible Bibliografía Agradecimientos Notas Créditos
+# Documento: la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_
+Source: la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_.pdf ## Página Portada Dedicatoria Preámbulo Prefacio 1. Introducción al desarrollo sostenible 2. Un mundo desigual 3. Breve historia del desarrollo económico 4. Por qué unos países se desarrollan mientras otros permanecen en la pobreza 5. Cómo terminar con la pobreza extrema 6. Límites planetarios 7. La inclusión social 8. Educación para todos 9. Salud para todos 10. Seguridad alimentaria 11. Ciudades resilientes 12. Cambio climático 13. Salvar la biodiversidad y proteger los servicios ecosistémicos 14. Los objetivos de desarrollo sostenible Bibliografía Agradecimientos Notas Créditos
 
 ## Página
 Te damos las gracias por adquirir este EBOOK
