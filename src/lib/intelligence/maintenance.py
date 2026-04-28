@@ -5,6 +5,7 @@ from loguru import logger
 import openpyxl
 from openpyxl.styles import Font, Alignment, PatternFill
 
+
 class IntelligenceMaintenance:
     """Clase de mantenimiento para centralizar la lógica de scratch en src."""
 
@@ -12,7 +13,7 @@ class IntelligenceMaintenance:
         self.config_path = config_path
         with open(config_path, "r", encoding="utf-8") as f:
             self.config = json.load(f)
-        
+
         self.project_root = config_path.parent.parent
 
     def apply_excel_links(self, artifact_id: str):
@@ -31,17 +32,17 @@ class IntelligenceMaintenance:
 
         logger.info(f"Aplicando enlaces a: {excel_path.name}")
         wb = openpyxl.load_workbook(excel_path)
-        
+
         if "Diccionario" not in wb.sheetnames:
             logger.warning("No se encontró la pestaña 'Diccionario'.")
             return
 
         ws = wb["Diccionario"]
-        
+
         # Estilo de encabezado
         header_fill = PatternFill(start_color="1F4E78", end_color="1F4E78", fill_type="solid")
         header_font = Font(color="FFFFFF", bold=True)
-        
+
         ws.cell(row=1, column=6, value="Link de Referencia")
         ws.cell(row=1, column=6).fill = header_fill
         ws.cell(row=1, column=6).font = header_font
@@ -55,7 +56,7 @@ class IntelligenceMaintenance:
             else:
                 ws.cell(row=row, column=6, value="N/A (Transformada)")
 
-        ws.column_dimensions['F'].width = 60
+        ws.column_dimensions["F"].width = 60
         wb.save(excel_path)
         logger.success(f"Enlaces aplicados exitosamente en {excel_path.name}")
 
@@ -63,15 +64,17 @@ class IntelligenceMaintenance:
         """Lanza el motor pesado (ocrmypdf) para los archivos pendientes."""
         pipeline = self.config["ocr_pipeline"]
         registry = pipeline["registry"]
-        
+
         launched = 0
         for entry in registry:
             if entry["status"] == "PENDING":
                 source_path = self.project_root / entry["source"]
                 if source_path.exists():
-                    output_pdf = str(source_path).replace(".pdf", pipeline["parameters"]["output_suffix"])
+                    output_pdf = str(source_path).replace(
+                        ".pdf", pipeline["parameters"]["output_suffix"]
+                    )
                     force_flag = "--force-ocr" if pipeline["parameters"]["force_ocr"] else ""
-                    
+
                     cmd = f"ocrmypdf {force_flag} '{source_path}' '{output_pdf}' > '{output_pdf}.log' 2>&1 &"
                     logger.info(f"🚀 Lanzando OCR para: {source_path.name}")
                     subprocess.Popen(cmd, shell=True)
@@ -85,11 +88,10 @@ class IntelligenceMaintenance:
 
     def reset_rag(self):
         """Borra la colección RAG para una reconstrucción limpia."""
-        from ecs_quantitative.ingestion.rag import MarkdownRAG
+
         collection = self.config["rag_config"]["collection_name"]
-        
+
         logger.warning(f"Reseteando colección RAG: {collection}")
-        rag = MarkdownRAG(collection_name=collection)
         # Asumiendo que existe un método para borrar o simplemente reinicializar
         # En ecs_quantitative, esto suele hacerse borrando el persist_directory o vía API
         logger.info("RAG Reset solicitado (Simulado - Requiere integración con ChromaDB/Qdrant)")
