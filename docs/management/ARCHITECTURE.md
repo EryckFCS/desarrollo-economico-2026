@@ -11,7 +11,7 @@ This node implements the **Federated Architecture v8.0.0**, designed for high-fi
 *   [tests/system/test_architecture.py](tests/system/test_architecture.py): Automated gatekeeper for structural integrity.
 
 ### 2.2. Autonomous Knowledge Vaults
-Located in [docs/evidence/](docs/evidence/), each unit is self-contained:
+Located in [docs/vaults/](docs/vaults/), each unit is self-contained:
 *   `U1-Economic-Audit/`: Analysis of structuralism in South Korea.
 *   `U1-Foundations-Context/`: Initial development frameworks.
 
@@ -33,5 +33,5 @@ Managed in [bibliography/](bibliography/), following the multi-fidelity pipeline
 
 ## 4. Usage Rules
 1.  **English Only**: All new directories and evidence units must use English names.
-2.  **Zero Floating logic**: Global logic in `src/`, unit logic in `docs/evidence/[unit]/scripts/`.
+2.  **Zero Floating logic**: Global logic in `src/`, unit logic in `docs/vaults/[unit]/scripts/`.
 3.  **Asset-Log Invariant**: No asset can exist without a corresponding log entry.

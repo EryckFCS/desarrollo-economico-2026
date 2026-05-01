@@ -1,62 +1,10 @@
 {
   "node": "Economic Development",
-  "version": "1.0.0",
-  "description": "Mapeo maestro de inteligencia, linaje de datos y configuración RAG.",
-  "rag_config": {
-    "collection_name": "economic_development",
-    "base_path": "bibliography",
-    "sanitized_path": "bibliography/sanitized",
-    "quality_gate": {
-      "min_health_ratio": 0.4,
-      "char_threshold": 150
-    }
+  "version": "8.0.0",
+  "last_sync": "2026-05-01",
+  "sources": {
+    "bibliography": "bibliography/raw/",
+    "vaults": "docs/vaults/"
   },
-  "ocr_pipeline": {
-    "engine": "ocrmypdf",
-    "parameters": {
-      "force_ocr": true,
-      "output_suffix": "_ocr.pdf"
-    },
-    "registry": [
-      {
-        "source": "bibliography/raw/desarrollo-economico-y-la-escuela-estructuralista.pdf",
-        "status": "COMPLETED"
-      },
-      {
-        "source": "bibliography/raw/readings/bibliography/seers-1969-the-meaning-of-dvelopment.pdf",
-        "status": "PENDING"
-      },
-      {
-        "source": "bibliography/raw/readings/bibliography/ravallion-2001-growth-inequality-and-poverty-looking-beyond-averages.pdf",
-        "status": "PENDING"
-      },
-      {
-        "source": "bibliography/raw/readings/bibliography/stiglitz-2000-capital-market-liberalization-economic-growth-and-instability.pdf",
-        "status": "PENDING"
-      }
-    ]
-  },
-  "data_lineage": {
-    "kor_audit_data": {
-      "id": "u1-aa-01-economic-audit",
-      "excel_path": "docs/vaults/u1-aa-01-economic-audit/data/processed/kor_audit_data.xlsx",
-      "sources": [
-        "Penn World Table 11.0 (PWT)",
-        "World Bank Open Data (WDI)",
-        "IMF Balance of Payments"
-      ],
-      "variable_mapping": {
-        "year": "https://www.rug.nl/ggdc/productivity/pwt/",
-        "country": "https://www.rug.nl/ggdc/productivity/pwt/",
-        "gdp_pc": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD?locations=KR",
-        "hc": "https://www.rug.nl/ggdc/productivity/pwt/",
-        "manuf_exports_raw": "https://data.worldbank.org/indicator/TX.VAL.MANF.ZS.UN?locations=KR",
-        "terms_of_trade_raw": "https://data.worldbank.org/indicator/TT.PRI.MRCH.XD.WD?locations=KR",
-        "csh_i": "https://www.rug.nl/ggdc/productivity/pwt/",
-        "emp": "https://www.rug.nl/ggdc/productivity/pwt/",
-        "fdi_pct_gdp": "https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS?locations=KR",
-        "ind_va_pct": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS?locations=KR"
-      }
-    }
-  }
+  "mappings": []
 }

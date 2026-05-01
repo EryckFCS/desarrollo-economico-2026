@@ -25,7 +25,7 @@ Este índice organiza el material de trabajo por unidades del sílabo, separando
 
 ## Criterio documental
 
-- La evidencia viva se concentra exclusivamente en `docs/evidence/`.
+- La evidencia viva se concentra exclusivamente en `docs/vaults/`.
 - No se enlazan unidades que no posean entregables o apuntes activos para evitar ruido en el índice.
 - Todos los documentos `.qmd` están diseñados para renderizado de alta fidelidad vía Quarto.
 
