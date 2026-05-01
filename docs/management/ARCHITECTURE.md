@@ -35,3 +35,8 @@ Managed in [bibliography/](bibliography/), following the multi-fidelity pipeline
 1.  **English Only**: All new directories and evidence units must use English names.
 2.  **Zero Floating logic**: Global logic in `src/`, unit logic in `docs/vaults/[unit]/scripts/`.
 3.  **Asset-Log Invariant**: No asset can exist without a corresponding log entry.
+
+
+## Intervención v8.1.5 (Endurecimiento)
+
+El nodo ha sido endurecido y unificado en Python 3.12. Se eliminaron archivos flotantes y se centralizó la gestión del Data Lake vía `ecs_core`.
