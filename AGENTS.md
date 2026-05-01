@@ -17,7 +17,7 @@
 
 ## 2. Advanced Intelligence Capabilities (v3.0)
 
-1. **Autonomous Vaults**: Each evidence unit in `docs/evidence/` contains its own `logs/`, `assets/`, and `scripts/`, ensuring forensic reproducibility.
+1. **Autonomous Vaults**: Each evidence unit in `docs/vaults/` contains its own `logs/`, `assets/`, and `scripts/`, ensuring forensic reproducibility.
 2. **Standardized RAG Pipeline**: Implements the Universal Sanitization Protocol (USP) with English-centric naming for global automation.
 3. **Data Lineage**: Centralized in [config/intelligence_map.json](config/intelligence_map.json).
 
