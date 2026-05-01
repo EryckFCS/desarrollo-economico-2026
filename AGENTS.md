@@ -40,7 +40,7 @@
 ├── config/                  # intelligence_map.json, settings.toml
 ├── data/                    # Non-bibliographic source data
 ├── docs/
-│   ├── evidence/            # Standardized English vaults (Unit-based)
+│   ├── vaults/            # Standardized English vaults (Unit-based)
 │   ├── management/          # Architecture and risk reports
 │   ├── readings/            # Theoretical frameworks
 │   └── syllabus/            # Academic guidelines
