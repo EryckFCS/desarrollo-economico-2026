@@ -1,0 +1,76 @@
+{
+  "datasets": [
+    {
+      "id": "kor_audit_data",
+      "local_path": "docs/vaults/u1-aa-01-economic-audit/data/raw/kor_audit_data.xlsx",
+      "lake_path": "/home/erick-fcs/.capital/lake/raw_data/kor_audit_data_ef708140.xlsx"
+    },
+    {
+      "id": "kor_audit_data",
+      "local_path": "docs/vaults/u1-aa-01-economic-audit/data/processed/kor_audit_data.xlsx",
+      "lake_path": "/home/erick-fcs/.capital/lake/raw_data/kor_audit_data_ef708140.xlsx"
+    },
+    {
+      "id": "kor_audit_final",
+      "local_path": "docs/vaults/u1-aa-01-economic-audit/data/processed/kor_audit_final.dta",
+      "lake_path": "/home/erick-fcs/.capital/lake/raw_data/kor_audit_final.dta"
+    }
+  ],
+  "bibliography": [
+    {
+      "id": "gramatica-del-neoliberalismo",
+      "filename": "gramatica-del-neoliberalismo.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/gramatica-del-neoliberalismo.pdf"
+    },
+    {
+      "id": "desarrollo-humano-pobreza-y-desigualdad",
+      "filename": "desarrollo-humano-pobreza-y-desigualdad.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/desarrollo-humano-pobreza-y-desigualdad.pdf"
+    },
+    {
+      "id": "desarrollo-economico-y-la-escuela-estructuralista_ocr",
+      "filename": "desarrollo-economico-y-la-escuela-estructuralista_ocr.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/desarrollo-economico-y-la-escuela-estructuralista_ocr.pdf"
+    },
+    {
+      "id": "neoestructuralismo",
+      "filename": "neoestructuralismo.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/neoestructuralismo.pdf"
+    },
+    {
+      "id": "resumen_neoliberalismo_ampliado",
+      "filename": "resumen_neoliberalismo_ampliado.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/resumen_neoliberalismo_ampliado.pdf"
+    },
+    {
+      "id": "estructuralismo-cepal",
+      "filename": "estructuralismo-cepal.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/estructuralismo-cepal.pdf"
+    },
+    {
+      "id": "debraj-ray-economia-del-desarrollo",
+      "filename": "debraj-ray-economia-del-desarrollo.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/debraj-ray-economia-del-desarrollo.pdf"
+    },
+    {
+      "id": "la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_",
+      "filename": "la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_.pdf"
+    },
+    {
+      "id": "las-teorias-del-desarrollo-economico",
+      "filename": "las-teorias-del-desarrollo-economico.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/las-teorias-del-desarrollo-economico.pdf"
+    },
+    {
+      "id": "lectura-4",
+      "filename": "lectura-4.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/lectura-4.pdf"
+    },
+    {
+      "id": "teorias_del_desarrollo_economico-uned",
+      "filename": "teorias_del_desarrollo_economico-uned.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/teorias_del_desarrollo_economico-uned.pdf"
+    }
+  ]
+}
