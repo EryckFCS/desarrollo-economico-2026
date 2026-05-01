@@ -14,11 +14,19 @@ htmlcov/
 
 # Quarto
 /.quarto/
-**/*.quarto_ipynb
+**/*.quarto_ipynb*
 **/*_files/
 **/*_cache/
 _site/
 _freeze/
+
+# Project data artifacts
+data/*
+!data/.gitkeep
+scratch/*
+!scratch/.gitkeep
+reports/*
+!reports/.gitkeep
 
 # Archives and Large Files
 *.zip
@@ -28,9 +36,6 @@ _freeze/
 
 # Specific Exclusions
 Photos*/
-
-# Scratch — scripts operativos no versionables
-scratch/
 render_log*.txt
 
 # PDFs generados (evidencia PDF sí se versiona en docs/)
