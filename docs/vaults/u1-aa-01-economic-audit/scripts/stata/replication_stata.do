@@ -9,7 +9,7 @@ capture log close
 * ==============================================================================
 * 1. DEFINICIÓN DE RUTAS ABSOLUTAS
 * ==============================================================================
-local boveda      "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/evidence/AA-U1-Auditoria-Economica"
+local boveda      "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u1-aa-01-economic-audit"
 local raw_data    "`boveda'/data/raw/KOR_Audit_Data.xlsx"
 local processed   "`boveda'/data/processed"
 local assets      "`boveda'/assets"

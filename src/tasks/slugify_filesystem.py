@@ -83,7 +83,7 @@ if __name__ == "__main__":
     protocol.process_directory(Path("bibliography"))
 
     logger.info("--- Fase II: Slugificación de Evidencia ---")
-    protocol.process_directory(Path("docs/evidence"))
+    protocol.process_directory(Path("docs/vaults"))
 
     logger.info("--- Fase III: Actualización de Configuración ---")
     protocol.update_config()
