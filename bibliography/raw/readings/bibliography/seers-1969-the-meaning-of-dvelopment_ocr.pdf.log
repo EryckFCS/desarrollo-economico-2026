@@ -1,0 +1,19 @@
+
+Start processing 12 pages concurrently
+    1 page already has text! - rasterizing text and running OCR anyway
+    1 Weight average image DPI is 104.5, max DPI is 131.1. The discrepancy may indicate a high detail region on this page, but could also indicate a problem with the input PDF file. Page image will be rendered at 400.0 DPI.
+   18 [tesseract] lots of diacritics - possibly poor OCR
+
+Postprocessing...
+
+
+
+Image optimization ratio: 1.01 savings: 0.8%
+Total file size ratio: 0.31 savings: -221.5%
+Output file is a PDF/A-2B (as expected)
+The output file size is 3.22× larger than the input file.
+Possible reasons for this include:
+--force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+PDF/A conversion was enabled. (Try `--output-type pdf`.)
+

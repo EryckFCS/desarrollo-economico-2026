@@ -1,0 +1,78 @@
+---
+title: "Teoría Neomarxista y su Aplicación al Desarrollo Económico"
+subtitle: "Resumen Analítico basado en la Inteligencia Bibliográfica del Nodo"
+author: "Antigravity Research Agent"
+date: "2026-04-29"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Introducción
+
+El presente informe sintetiza los hallazgos del sistema de recuperación de información (RAG) del nodo de Desarrollo Económico respecto a la **Teoría Neomarxista** y su evolución en el pensamiento económico contemporáneo, centrándose especialmente en la Teoría de la Dependencia y la Teoría de los Sistemas Mundiales.
+
+# El Neomarxismo en la Teoría del Desarrollo
+
+Según la bibliografía procesada (especialmente Reyes, G.), el neomarxismo no es una estructura monolítica, sino un conjunto de enfoques que adaptan el materialismo histórico a las realidades del "Tercer Mundo".
+
+## Diferencias con el Marxismo Ortodoxo
+
+El neomarxismo se distingue del marxismo clásico en tres puntos fundamentales:
+
+1.  **Perspectiva Periférica:** Mientras el marxismo clásico analizaba los monopolios desde los centros industriales, el neomarxismo provee una visión desde las condiciones de la periferia.
+2.  **Sujeto Revolucionario:** El enfoque neomarxista identifica al **campesinado** como la clase revolucionaria vanguardista en los países subdesarrollados, desplazando al proletariado industrial.
+3.  **El Salto Histórico:** Se postula la necesidad de "saltar" la revolución burguesa, dado que la burguesía nacional en la periferia suele identificarse más con los intereses de la metrópoli que con un proyecto nacionalista.
+
+# Teoría de la Dependencia
+
+La Teoría de la Dependencia surge como una respuesta crítica a la Teoría de la Modernización, integrando elementos neomarxistas con el estructuralismo de la CEPAL.
+
+## Hipótesis Fundamentales
+
+*   **Subordinación Estructural:** El desarrollo de la periferia está condicionado y subordinado al crecimiento de las naciones centrales.
+*   **Desconexión Cíclica:** Las naciones periféricas experimentan su mayor crecimiento industrial cuando sus vínculos con el centro son débiles (ej. durante la Gran Depresión o las Guerras Mundiales).
+*   **Dependencia Tecnológica:** Autores como Dos Santos argumentan que la base de la dependencia actual reside en la producción industrial tecnológica más que solo en vínculos financieros.
+
+# Teoría de los Sistemas Mundiales
+
+Liderada por Immanuel Wallerstein, esta escuela extiende el análisis neomarxista a una escala global, superando la unidad de análisis del estado-nación.
+
+## Estructura Trimodal
+
+A diferencia de la visión bimodal (centro-periferia) de la dependencia, los Sistemas Mundiales proponen una estructura trimodal:
+1.  **Centro:** Regiones que dominan la tecnología y el capital.
+2.  **Semi-periferia:** Actúa como zona intermedia con rasgos de ambos.
+3.  **Periferia:** Proveedora de materias primas y mano de obra barata.
+
+# Caso de Estudio: China y la Reconfiguración del Sistema-Mundo
+
+El ascenso de China en las últimas décadas representa un desafío y, a la vez, una validación de las categorías neomarxistas, especialmente bajo la óptica de la **Teoría de los Sistemas Mundiales**.
+
+## El Tránsito de la Periferia a la Semi-periferia
+
+Históricamente, China fue relegada a la periferia tras el "Siglo de Humillación". Sin embargo, su integración estratégica al sistema-mundo capitalista desde 1978 no fue pasiva. China ha logrado consolidarse como el núcleo de la **semi-periferia**, actuando como el "taller del mundo" pero ascendiendo rápidamente hacia funciones de centro mediante el dominio de tecnologías críticas (5G, inteligencia artificial, energías renovables). 
+
+## El Estado como Motor contra la Dependencia
+
+A diferencia del estructuralismo clásico, el modelo chino (denominado por algunos como **Capitalismo de Estado**) utiliza las empresas estatales (SOE) y el control financiero centralizado para evitar la "trampa de la dependencia". Al mantener el control de los "puestos de mando" de la economía, el Estado chino ha podido dirigir el excedente hacia la acumulación interna y la innovación tecnológica, rompiendo la lógica de subordinación tecnológica al centro (EE. UU. y Europa).
+
+## Dualidad y Sub-imperialismo
+
+Desde una perspectiva neomarxista crítica, China desempeña un rol dual en el sistema-mundo:
+1.  **Liderazgo del Sur Global:** Promueve una alternativa al Consenso de Washington mediante la Iniciativa de la Franja y la Ruta, fomentando la cooperación Sur-Sur.
+2.  **Nuevas Dependencias:** Actúa como un polo de demanda que, en ocasiones, reproduce dinámicas de dependencia en la periferia (África y América Latina), extrayendo materias primas a cambio de manufacturas, lo que algunos teóricos califican como un fenómeno de **sub-imperialismo**.
+
+# Conclusiones del RAG
+
+El corpus bibliográfico del nodo subraya que el neomarxismo ha sido fundamental para entender el desarrollo no como un proceso lineal de etapas (Rostow), sino como un proceso de **desarrollo desigual y combinado** donde el subdesarrollo de unos es la contracara necesaria del desarrollo de otros.
+
+# Referencias Principales
+
+*   Reyes, G. E. (2000). *Principales Teorías sobre el Desarrollo Económico y Social*. Nómadas.
+*   Frank, A. G. (1967). *Capitalismo y subdesarrollo en América Latina*.
+*   Wallerstein, I. (1987). *World-System Analysis*.
+*   Dos Santos, T. (1971). *La Estructura de la Dependencia*.
+*   Li, M. (2008). *The Rise of China and the Demise of the Capitalist World-Economy*.

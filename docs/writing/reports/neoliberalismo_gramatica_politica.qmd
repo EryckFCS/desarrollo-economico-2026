@@ -1,0 +1,52 @@
+---
+title: "Informe Técnico: La Gramática del Neoliberalismo"
+subtitle: "Análisis Genealógico y Dimensiones de Poder"
+author: "Antigravity - Nodo de Desarrollo Económico"
+date: "2026-04-29"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Introducción
+
+El presente informe sintetiza los hallazgos del sistema RAG sobre la teoría neoliberal, fundamentado principalmente en la obra de **José Francisco Puello-Socarrás** ("Gramática del Neoliberalismo"). A diferencia de las interpretaciones convencionales que reducen el neoliberalismo a un conjunto de medidas económicas (privatización, desregulación), este análisis lo aborda como un **proyecto político-intelectual** complejo y una "gramática" de poder que redefine la relación entre el Estado, el mercado y la sociedad.
+
+# Genealogía y la Sociedad Mont Pelerin
+
+El neoliberalismo no surge de forma espontánea, sino como una respuesta deliberada a la crisis del liberalismo clásico y al ascenso del Estado de Bienestar (Keynesianismo). El eje central de esta reconstrucción fue la **Sociedad Mont Pelerin (1947)**, que sirvió como un espacio de articulación para diversos intelectuales que buscaban restaurar la supremacía del mercado bajo nuevas bases institucionales.
+
+## Reorganización del Estado
+
+Un concepto clave es que el neoliberalismo **no busca la eliminación del Estado**, sino su reorganización funcional. El Estado se convierte en el garante del orden de mercado, utilizando "tecnologías de gobierno" para facilitar la competencia. No es un *laissez-faire* absoluto, sino un intervencionismo pro-mercado.
+
+# Divergencia Epistemológica: Austria vs. Chicago
+
+El sistema RAG identifica una tensión fundamental dentro del pensamiento neoliberal entre dos grandes tradiciones:
+
+## La Escuela Austriaca (Mises, Hayek)
+- **Base:** Praxeología (teoría de la acción humana).
+- **Visión:** La economía es un proceso dinámico de descubrimiento. El conocimiento es subjetivo y está disperso.
+- **Crítica:** Rechazan la matematización excesiva de la economía y la idea de un "equilibrio general" estático. El empresario es el motor de la innovación.
+
+## La Tradición Anglo-Americana (Chicago, Friedman)
+- **Base:** Neoclasicismo y racionalismo.
+- **Visión:** Modelos de optimización y elección racional.
+- **Método:** Positivismo económico, alta formalización matemática y capacidad predictiva. Es la vertiente que más influyó en el Consenso de Washington.
+
+# Tecnologías de Gobierno y Mercantilización
+
+El neoliberalismo contemporáneo se apoya en nuevas herramientas para gestionar la población y la economía:
+
+1.  **Regulación Basada en el Riesgo:** Flexibilidad administrativa enfocada en la gestión de incertidumbres.
+2.  **e-Government y Big Data:** Uso de la tecnología para aumentar la eficiencia estatal sin intervención directa.
+3.  **Mercantilización de Derechos:** Transformación de derechos sociales (salud, educación, pensiones) en servicios sujetos a la lógica del mercado y la rentabilidad.
+
+# Conclusión
+
+El neoliberalismo, según la bibliografía analizada, es un régimen de verdad que trasciende la política fiscal. Su éxito radica en su capacidad para reconfigurar la subjetividad ciudadana hacia el consumo y la competencia, mientras utiliza el poder estatal para blindar el funcionamiento de los mercados financieros y productivos globales.
+
+---
+**Fuente Principal:** Puello-Socarrás, J. F. *Gramática del Neoliberalismo. Genealogía y claves para su desciframiento*.

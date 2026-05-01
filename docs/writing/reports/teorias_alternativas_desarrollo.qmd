@@ -1,0 +1,55 @@
+---
+title: "Informe Técnico: Teorías Alternativas del Desarrollo"
+subtitle: "Hacia un Paradigma Multidimensional y Sostenible"
+author: "Antigravity - Nodo de Desarrollo Económico"
+date: "2026-04-29"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Introducción
+
+Frente a la hegemonía del crecimiento económico como único indicador de progreso, han surgido diversas teorías alternativas que proponen una visión multidimensional del desarrollo. Este informe analiza tres pilares fundamentales: el Enfoque de Capacidades de Amartya Sen, el Desarrollo Sostenible de Jeffrey Sachs y el Neoestructuralismo latinoamericano.
+
+# El Enfoque de Capacidades: Desarrollo como Libertad
+
+Propuesto por **Amartya Sen**, este enfoque traslada el foco de la acumulación de bienes a la expansión de las libertades reales de las personas.
+
+## Conceptos Clave
+- **Funcionamientos:** Los estados y acciones que una persona valora (ej. estar nutrido, participar en la comunidad).
+- **Capacidades:** Las oportunidades reales para alcanzar dichos funcionamientos. El desarrollo es la expansión de estas capacidades.
+- **Pobreza Humana:** No es solo falta de ingresos, sino la privación de capacidades básicas que impide a las personas llevar la vida que valoran.
+
+Esta visión dio origen al **Índice de Desarrollo Humano (IDH)**, que integra salud (esperanza de vida), educación y nivel de vida (ingreso).
+
+# Desarrollo Sostenible: Los Límites Planetarios
+
+**Jeffrey Sachs** y el paradigma de la sostenibilidad plantean que el desarrollo debe ser holístico, integrando tres objetivos simultáneos:
+
+1.  **Eficacia Económica:** Crecimiento que reduzca la pobreza extrema.
+2.  **Inclusión Social:** Reducción de la desigualdad y protección de los vulnerables.
+3.  **Sostenibilidad Ambiental:** Operar dentro de los límites planetarios (clima, biodiversidad, ciclos de nitrógeno, etc.).
+
+Sachs enfatiza la importancia de la **Gobernanza** como el cuarto pilar necesario para coordinar estos esfuerzos a escala global.
+
+# Neoestructuralismo: La Perspectiva Latinoamericana
+
+Heredero del pensamiento de la **CEPAL**, el neoestructuralismo reconoce que el mercado por sí solo no resuelve las brechas tecnológicas y de equidad en la periferia.
+
+## Pilares Neoestructuralistas
+- **Cambio Estructural con Equidad:** Necesidad de transformar la matriz productiva hacia sectores con mayor contenido tecnológico.
+- **Inserción Internacional:** Superar la dependencia de productos primarios mediante la diversificación exportadora.
+- **Papel del Estado:** Un Estado activo que promueva la innovación y garantice la cohesión social, sin caer en el proteccionismo ineficiente del pasado.
+
+# Conclusión
+
+Las teorías alternativas coinciden en que el crecimiento económico es un **medio**, no un **fin**. El desarrollo auténtico implica la construcción de sociedades donde la libertad individual, la justicia social y el equilibrio ecológico sean los ejes rectores de la política pública.
+
+---
+**Fuentes Principales:**
+- Sen, A. *Desarrollo y libertad*.
+- Sachs, J. *La era del desarrollo sostenible*.
+- Tezanos, S. et al. *Manual sobre cooperación y desarrollo*.
