@@ -1,0 +1,35 @@
+---
+title: "Análisis Comparativo de Teorías del Desarrollo Económico"
+subtitle: "Actividad Autónoma 3 - Unidad 1"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-05-03"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    mainfont: "Times New Roman"
+    fontsize: 12pt
+    geometry:
+      - margin=2.54cm
+    header-includes:
+      - \usepackage{pdflscape}
+      - \usepackage{setspace}
+      - \setstretch{1.15}
+      - \usepackage{indentfirst}
+      - \setlength{\parindent}{1.27cm}
+      - \usepackage{booktabs}
+      - \usepackage{caption}
+      - \captionsetup[table]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont=bf}
+---
+
+\newpage
+{{< include chapters/01-matriz.qmd >}}
+
+{{< include chapters/02-modernizacion.qmd >}}
+
+{{< include chapters/03-estructuralismo.qmd >}}
+
+{{< include chapters/04-neomarxismo.qmd >}}
+
+{{< include chapters/05-neoliberalismo.qmd >}}

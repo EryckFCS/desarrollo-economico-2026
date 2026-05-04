@@ -1,0 +1,27 @@
+# Marco Teórico: La Teoría Neomarxista de la Dependencia
+
+## 1. Definición
+
+La teoría neomarxista del desarrollo, sistematizada por Reyes [-@reyes2001principales], sostiene que el subdesarrollo no es un estado transitorio o una etapa previa, sino un proceso activo generado por la expansión del capitalismo industrial. Esta perspectiva argumenta que el sistema mundial opera como un mecanismo de succión donde la acumulación de los países centrales se sustenta en la explotación de la periferia. Por consiguiente, el crecimiento periférico es de carácter "reflejo" y subordinado, condicionado por las necesidades de las grandes metrópolis y las corporaciones transnacionales.
+
+## 2. Principales Características Explicadas
+
+**Característica 1: El Desarrollo del Subdesarrollo**
+André Gunder Frank [-@frank1967capitalism] postula que el subdesarrollo fue "creado" por el mismo proceso histórico que generó el desarrollo del centro. Las regiones que hoy son periféricas fueron integradas al mercado mundial como satélites, perdiendo su capacidad de desarrollo autónomo para servir como fuentes de materias primas.
+
+**Característica 2: El Intercambio Desigual y el Excedente**
+Samir Amin [-@amin1976unequal] explica que existe una transferencia neta de valor desde la periferia hacia el centro. Esto ocurre porque la periferia exporta bienes con bajo valor agregado mientras importa tecnología cara, lo que permite que el centro se apropie del excedente económico que debería servir para la inversión local.
+
+**Característica 3: Alianzas de Clase e Infraestructura de Dependencia**
+La dependencia no es solo una presión externa, sino que se reproduce internamente mediante alianzas entre el capital transnacional y las élites locales (lumpenburguesía). Estas élites prefieren mantener el modelo agroexportador o extractivo porque obtienen beneficios inmediatos, bloqueando cualquier intento de industrialización real.
+
+## 3. Políticas sugeridas
+
+**Política 1: La Desconexión (Delinking)**
+Propuesta por Samir Amin, esta política sugiere que los países subdesarrollados deben "desconectarse" de la lógica de acumulación global dominada por el centro. Esto no implica autarquía, sino subordinar las relaciones externas a las necesidades del desarrollo interno y la soberanía nacional.
+
+**Política 2: Nacionalización y Control del Excedente**
+El Estado debe actuar como un instrumento de ruptura, nacionalizando los sectores estratégicos (especialmente minería e hidrocarburos). El objetivo es retener el excedente económico dentro del territorio nacional para financiar servicios básicos y la diversificación de la matriz productiva.
+
+**Política 3: Fortalecimiento del Mercado Interno y Cooperación Sur-Sur**
+Priorizar la producción para el consumo nacional y establecer alianzas con otros países periféricos para romper el monopolio tecnológico del centro. Se busca una industrialización soberana que reduzca la vulnerabilidad ante choques externos y sanciones financieras internacionales.

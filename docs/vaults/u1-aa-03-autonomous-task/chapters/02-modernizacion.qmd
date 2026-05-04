@@ -1,0 +1,9 @@
+## Teoría de la Modernización (Caso Rostow)
+
+### Contexto del Caso: El "Take-off" y la prescripción de Rostow
+
+Un país del Sur Global, en el contexto de la posguerra (década de 1950), es diagnosticado con un "atraso económico" debido a la persistencia de una sociedad tradicional. Basándose en las tesis de Walt Rostow, el gobierno identifica que el principal obstáculo es la falta de capital para alcanzar la fase de "despegue" (take-off). Dado que el ahorro interno es insuficiente, la política económica se centra en la atracción masiva de ahorro externo a través de créditos internacionales e inversión extranjera directa. El objetivo es elevar la tasa de inversión del 5% a más del 10% del ingreso nacional para forzar la transformación de una economía agrícola en una industrial moderna. El éxito se mide exclusivamente mediante el crecimiento del PNB per cápita, bajo la premisa de que el progreso técnico se difundirá naturalmente desde los países avanzados hacia los sectores tradicionales.
+
+### Análisis de Caso
+
+Según el modelo Rostowniano, el "despegue" (take-off) requiere que la inversión y el ahorro crezcan de un 5% a más del 10% del ingreso nacional para transformar una sociedad tradicional. Teniendo en cuenta el caso de Argentina a finales de los años 50, ¿por qué la consecución de estas tasas de inversión no garantizó un crecimiento lineal ineluctable y cómo explica este fracaso la crítica a la "falsedad histórica" del modelo de etapas?

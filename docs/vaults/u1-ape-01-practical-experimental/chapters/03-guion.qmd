@@ -1,0 +1,67 @@
+# Guion: "Crudo Castigo: La Anatomía Política del Valor"
+
+**Contexto**: Venezuela, juzgada en clave transhistórica por el Tribunal de la Historia. Sesionamos para auditar la estructura de dependencia de una nación periférica utilizando las categorías del análisis estructural. No se juzgan intenciones, se juzgan flujos de capital y asimetrías tecnológicas.
+
+**Personajes y Reparto:**
+- \colorbox{teal!20}{\textbf{Su Señoría}} (Jefferson Alexander Vasquez): Juez de Sistemas.
+- \colorbox{olive!20}{\textbf{Fiscal de la Soberanía}} (Erick Fabricio Condoy): Analista de asimetrías.
+- \colorbox{blue!20}{\textbf{Secretaria de Actas}} (Kristie Susana Japon): Auditora del sistema.
+- \colorbox{red!20}{\textbf{Sr. Williams}} (Erik Joel Moreno): Representante del Centro (Optimización de Capital).
+- \colorbox{orange!20}{\textbf{Dr. Mendoza}} (Luis Gustavo Hurtado): Intermediario local (Pragmatismo de la Dependencia).
+- \colorbox{gray!20}{\textbf{Juan}} (Luis Miguel Abad): Variable de ajuste (Trabajo).
+- \colorbox{violet!20}{\textbf{María}} (Gabriela Salome Palacios): Recurso base (Naturaleza).
+
+---
+
+### INTRODUCCIÓN: EL PROTOCOLO DE AUDITORÍA
+
+\colorbox{blue!20}{\textbf{Secretaria de Actas}}: *(Al frente, sin emociones)* Iniciamos la auditoría del Sistema Centro-Periferia. Lo que verán no es un conflicto de moral, sino de estructura. Analizaremos tres ejes estructurales:
+- **La Facilitación**: El rol de las élites locales en la succión del excedente.
+- **El Monopolio de la Técnica**: La propiedad intelectual como barrera de entrada.
+- **El Riesgo de Ruptura**: El costo real de la autonomía.
+
+*(Suena la campanilla)* ¡De pie! El Magistrado inicia la evaluación estructural.
+
+\colorbox{teal!20}{\textbf{Su Señoría}}: *(Entra, golpe seco de mazo)* Tomen asiento. Sr. Williams, Dr. Mendoza, se les acusa de diseñar un modelo de extracción asimétrica bajo la máscara de la Ley de 1943. Fiscal, presente los datos de la balanza.
+
+---
+
+### ACTO I: LA LÓGICA DEL CAPITAL VS. LA SOBERANÍA TÉCNICA
+
+\colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: Su Señoría, la dependencia no es un error de gestión; es la forma que adopta la acumulación del Centro sobre la periferia petrolera. El Dr. Mendoza firmó la Ley de 1943 no por patriotismo, sino por incapacidad. Entregó el control del subsuelo a cambio de una renta fija, permitiendo que Williams optimizara el excedente fuera de nuestras fronteras. Por cada dólar que entró como inversión, cinco salieron como beneficio neto al Centro.
+
+\colorbox{red!20}{\textbf{Sr. Williams}}: *(Tranquilo, consultando un informe)* Fiscal, usted ignora el **Riesgo de Capital**. En 1943, su nación no tenía liquidez para perforar un solo pozo. Nosotros pusimos los millones, la tecnología y asumimos la probabilidad de fracaso. El Centro no roba; el Centro cobra por su eficiencia y su conocimiento. ¿Querían ser socios? Tuvieron su 50%, pero el riesgo lo corrimos nosotros.
+
+\colorbox{orange!20}{\textbf{Dr. Mendoza}}: Es pragmatismo, Su Señoría. En esa época, intentar industrializar sin Williams hubiera sido un suicidio fiscal. Importamos la civilización porque no sabíamos fabricar ni un tornillo. ¿Preferirían haber seguido siendo un desierto pobre pero "soberano"? Elegí el progreso importado antes que el hambre autárquica.
+
+\colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: El problema, Mendoza, es que al elegir el progreso importado, usted prohibió el progreso propio. Williams no trajo desarrollo; trajo un **enclave**. Construyó rascacielos de vidrio en Caracas para que no viéramos que el subsuelo se estaba quedando hueco.
+
+\colorbox{orange!20}{\textbf{Dr. Mendoza}}: *(A la defensiva)* ¡Ese enclave dio empleo y construyó escuelas, Fiscal! Antes de la Ley del 43, la población moría de paludismo. Sí, cedimos el monopolio de la técnica, pero financiamos la creación del Estado moderno con esa renta. Juzgar el pasado con la moral del presente es muy fácil.
+
+---
+
+### ACTO II: LA VARIABLE DE AJUSTE (Testimonios)
+
+\colorbox{teal!20}{\textbf{Su Señoría}}: Juan, describa el proceso de transferencia tecnológica en el pozo.
+
+\colorbox{gray!20}{\textbf{Juan}}: *(Firme, realista)* Ninguna, Su Señoría. Soy un operario subordinado. Sé manejar la maquinaria, sé qué válvulas no deben abrirse, pero Williams retiene las patentes industriales. Si la refinería falla, mis manos son inútiles. Williams nos enseñó a extraer el crudo, pero nos prohibió fabricar el taladro. Soy un obrero que depende de una pieza enviada desde Houston para trabajar en su propia tierra.
+
+\colorbox{violet!20}{\textbf{María}}: Williams dice que asumió el riesgo, pero el riesgo lo tiene mi suelo. Si ellos se van, se llevan sus máquinas, pero nos dejan los pozos secos y el agua contaminada. Ellos optimizan el dinero; nosotros acumulamos la degradación. Esa es la verdadera matemática del Centro.
+
+---
+
+### ACTO III: EL COSTO DEL VEREDICTO (La Ruptura)
+
+\colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: Solicitamos la **Desconexión**. No por odio, sino por supervivencia. No podemos desarrollar el "interior" si seguimos siendo el satélite del "exterior".
+
+\colorbox{red!20}{\textbf{Sr. Williams}}: *(Levantándose, proyectando gráficos)* Adelante. Ejecuten su ruptura. Pero miren nuestras proyecciones estratégicas: sin nuestra transferencia de tecnología, proyectamos que sus refinerías se detendrán en 90 días. La fuga de capitales proyecta una contracción de su PIB del 40% el primer año. La hiperinflación devorará sus ahorros. El Centro no castiga por maldad, castiga por diseño a los desertores de su mercado. ¿Tienen la solvencia para pagar el precio de la libertad?
+
+\colorbox{violet!20}{\textbf{María}}: *(Interrumpiendo, indignada)* ¿Y de qué nos sirve su PIB si el dinero nunca sale de la capital? Ustedes miden la riqueza en las proyecciones de sus informes; nosotros la medimos en la tierra que ya no podemos sembrar. Ya estamos viviendo en la escasez, su amenaza no nos asusta.
+
+\colorbox{teal!20}{\textbf{Su Señoría}}: *(Silencio tenso, golpea el mazo)* La sentencia de este tribunal es la **Desconexión Soberana**. Pero que conste en actas: la soberanía no es un desfile triunfal ni un aislamiento suicida. Se ordena una desconexión selectiva y planificada, orientada a recuperar control tecnológico, capturar excedente y reconstruir la capacidad industrial nacional. Esto es el **Crudo Castigo**. A partir de hoy, la nación subordina la inserción externa a su propia acumulación. Sr. Williams, el Estado interviene sus licencias. Dr. Mendoza, su modelo caduca hoy. Juan, María... la transición será dura, pero será nuestra.
+
+\colorbox{blue!20}{\textbf{Secretaria de Actas}}: *(Al público, solemne)* La sesión ha terminado. El país ha recuperado su destino, pero ha perdido su comodidad. El desarrollo es, ante todo, una lucha contra la gravedad del Centro.
+
+**TODOS AL UNÍSONO**: **¡El precio de la luz propia es atravesar la sombra del Centro!**
+
+**(FIN DE LA OBRA)**

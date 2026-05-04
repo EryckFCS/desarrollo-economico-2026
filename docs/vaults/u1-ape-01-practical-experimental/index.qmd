@@ -1,0 +1,41 @@
+---
+title: "Crudo Castigo: El Veredicto de la Sangre Negra"
+subtitle: "Aprendizaje Práctico Experimental (APE) - Unidad 1"
+author: "Grupo 3 - Séptimo A"
+date: "2026-05-03"
+bibliography: references.bib
+cls: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    mainfont: "Times New Roman"
+    fontsize: 12pt
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.5}
+      - \usepackage{indentfirst}
+      - \setlength{\parindent}{1.27cm}
+      - \usepackage{xcolor}
+      - \renewcommand{\contentsname}{Índice}
+      - \renewcommand{\figurename}{Figura}
+      - \renewcommand{\tablename}{Tabla}
+---
+
+\vspace{-4em}
+
+{{< include chapters/01-teoria.qmd >}}
+
+\newpage
+{{< include chapters/02-produccion.qmd >}}
+
+\newpage
+{{< include chapters/03-guion.qmd >}}
+
+\newpage
+# Referencias Bibliográficas
+
+::: {#refs}
+:::

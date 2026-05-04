@@ -1,0 +1,9 @@
+## Neoliberalismo (Caso Brasil / Consenso de Washington)
+
+### Contexto del Caso: El Consenso de Washington y la desindustrialización
+
+A partir de 1985, Brasil abandona la protección estatal tras la crisis de la deuda externa. Bajo la influencia de la ortodoxia y el Consenso de Washington, el gobierno implementa una apertura comercial y financiera absoluta, junto con una privatización masiva de empresas estatales estratégicas (como la minera Vale do Rio Doce). El Estado se retira de la planificación directa para limitarse a garantizar la disciplina fiscal y la estabilidad de precios, asumiendo que el mercado asignará los recursos de forma eficiente. El resultado es una "desindustrialización acelerada": el peso de la industria de transformación en el PIB cae del 34% a mediados de los 80 a cerca del 11 % en 2020. El país se vuelve altamente dependiente de la exportación de productos primarios (soja, hierro, petróleo crudo) y del ingreso de capitales especulativos de corto plazo.
+
+### Análisis de Caso
+
+A partir de las reformas del Consenso de Washington, Brasil implementó una apertura comercial absoluta que buscaba la eficiencia en la asignación de recursos mediante el mercado. Demuestre mediante métricas el fenómeno de la "desindustrialización acelerada": ¿qué mecanismos macroeconómicos provocaron que la participación industrial en el PIB cayera del 34 % al 1 1% y cómo se vincula la pérdida de 1.5 millones de empleos industriales con el cambio hacia un patrón de acumulación basado en la exportación de bienes primarios inelásticos?

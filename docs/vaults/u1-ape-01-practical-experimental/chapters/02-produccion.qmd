@@ -1,0 +1,18 @@
+# Material de Obra e Inventario (Producción)
+
+Para la puesta en escena de "Crudo Castigo: La Anatomía Política del Valor", se han designado los siguientes materiales de fácil acceso, asegurando sincronía con las acciones del guion:
+
+| Personaje | Responsable | Vestuario Sugerido | Objetos / Props (Fáciles de encontrar) |
+| :--- | :--- | :--- | :--- |
+| \colorbox{teal!20}{\textbf{Su Señoría / Magistrado}} | \colorbox{teal!20}{Jefferson A. Vasquez} | Camisa formal blanca. | Un bloque de madera o martillo (mazo) para dictar sentencias. |
+| \colorbox{olive!20}{\textbf{Fiscal de la Soberanía}} | \colorbox{olive!20}{Erick F. Condoy} | Camisa formal o traje oscuro. | Una carpeta con hojas impresas (datos de la balanza comercial). |
+| \colorbox{blue!20}{\textbf{Secretaria de Actas}} | \colorbox{blue!20}{Kristie S. Japon} | Ropa formal o casual de oficina. | Una **carpeta oscura** y una **campanilla** (o vaso y esfero). |
+| \colorbox{red!20}{\textbf{Acusado 1 (Sr. Williams)}} | \colorbox{red!20}{Erik J. Moreno} | Terno completo o camisa elegante y corbata. | Un **informe impreso o una tablet** (para proyecciones). |
+| \colorbox{orange!20}{\textbf{Acusado 2 (Dr. Mendoza)}} | \colorbox{orange!20}{Luis G. Hurtado} | Camisa formal, reloj o accesorios llamativos. | Un reloj visible, bolígrafo fino o celular de alta gama. |
+| \colorbox{gray!20}{\textbf{Testigo 1 (Juan)}} | \colorbox{gray!20}{Luis M. Abad} | Camiseta sencilla, overol o ropa de trabajo. | Un **trapo manchado** o una herramienta de mecánico. |
+| \colorbox{violet!20}{\textbf{Testigo 2 (María)}} | \colorbox{violet!20}{Gabriela S. Palacios} | Ropa sencilla (vestido o blusa modesta). | Un cuaderno gastado o un símbolo de la tierra (ej. jarro vacío). |
+
+**Escenografía: "La Auditoría Transhistórica"**
+- **Mobiliario**: 3 mesas de aula (puestas de frente al público para simular el estrado) y 4 sillas.
+- **Identificación**: Se escribirá en la pizarra del aula, detrás de cada grupo de mesas: "TRIBUNAL", "AUDITORÍA FISCAL" y "REPRESENTACIÓN DEL CAPITAL", eliminando la necesidad de imprimir letreros.
+- **Efectos**: El sonido del mazo (golpe seco en la mesa) y la campanilla para separar los tres actos.

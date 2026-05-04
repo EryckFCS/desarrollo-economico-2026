@@ -1,0 +1,19 @@
+# Matriz de Teorías del Desarrollo
+
+A continuación se presenta la matriz comparativa de las teorías del desarrollo económico, fundamentada en los marcos teóricos discutidos en clase y las lecturas canónicas.
+
+\begin{landscape}
+\begin{table}[h]
+\caption{Matriz Comparativa de Teorías del Desarrollo}
+\label{tbl-matriz}
+\small
+\begin{tabular}{p{3cm}p{5cm}p{5cm}p{5cm}p{5cm}}
+\toprule
+\textbf{Teoría} & \textbf{Visión del subdesarrollo} & \textbf{Papel del Estado} & \textbf{Relación con el mercado mundial} & \textbf{Variable clave del desarrollo} \\ \midrule
+Modernización & Atraso original (etapa previa). & Agente catalizador y motor de cambio social. & Beneficio mutuo (difusión de capital y valores). & Acumulación de capital y valores modernos. \\ \addlinespace
+Estructuralismo & Producto histórico (Centro-Periferia). & Agente planificador e impulsor de la ISI. & Intercambio desigual (deterioro de términos). & Progreso técnico e industrialización. \\ \addlinespace
+Neomarxismo & Producto del desarrollo del capitalismo. & Instrumento de ruptura y soberanía. & Explotación y extracción del excedente. & Reinversión del excedente y desconexión. \\ \addlinespace
+Neoliberalismo & Resultado de distorsiones y mala gestión. & Obstáculo que genera ineficiencias. & Ventajas comparativas y libre comercio. & Eficiencia del mercado y competencia. \\ \bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
