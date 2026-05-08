@@ -7,12 +7,15 @@ bibliography: references.bib
 cls: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 format:
   pdf:
+    pdf-engine: xelatex
     toc: true
     toc-depth: 2
     number-sections: true
     colorlinks: true
-    mainfont: "Times New Roman"
-    fontsize: 12pt
+    mainfont: "Arial"
+    fontsize: 10pt
+    geometry:
+      - margin=1in
     header-includes:
       - \usepackage{setspace}
       - \setstretch{1.5}
@@ -22,17 +25,16 @@ format:
       - \renewcommand{\contentsname}{Índice}
       - \renewcommand{\figurename}{Figura}
       - \renewcommand{\tablename}{Tabla}
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
 ---
 
 \vspace{-4em}
 
-{{< include chapters/01-teoria.qmd >}}
-
-\newpage
-{{< include chapters/02-produccion.qmd >}}
-
-\newpage
 {{< include chapters/03-guion.qmd >}}
+
 
 \newpage
 # Referencias Bibliográficas

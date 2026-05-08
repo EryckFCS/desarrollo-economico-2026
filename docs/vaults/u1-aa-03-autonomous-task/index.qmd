@@ -1,29 +1,41 @@
 ---
-title: "Análisis Comparativo de Teorías del Desarrollo Económico"
-subtitle: "Actividad Autónoma 3 - Unidad 1"
-author: "Erick Fabricio Condoy Seraquive"
-date: "2026-05-03"
 format:
   pdf:
     toc: false
     number-sections: true
     colorlinks: true
     mainfont: "Times New Roman"
-    fontsize: 12pt
+    fontsize: 11pt
     geometry:
       - margin=2.54cm
+    bibliography: "../../../bibliography/references.bib"
+    csl: "apa.csl"
     header-includes:
-      - \usepackage{pdflscape}
       - \usepackage{setspace}
-      - \setstretch{1.15}
+      - \setstretch{1.0}
       - \usepackage{indentfirst}
       - \setlength{\parindent}{1.27cm}
       - \usepackage{booktabs}
+      - \usepackage{tabularx}
+      - \usepackage{float}
+      - \usepackage{array}
       - \usepackage{caption}
       - \captionsetup[table]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont=bf}
+crossref:
+  tbl-title: Tabla
 ---
 
-\newpage
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
+Carrera de Economía \\
+Desarrollo Económico \\
+Séptimo A \\
+Unidad 1 \\
+Septiembre 2025/Febrero 2026
+\end{center}
+
+\noindent \textbf{Nombre:} Erick Fabricio Condoy Seraquive \hfill \textbf{Fecha:} 05 de mayo de 2026
+
 {{< include chapters/01-matriz.qmd >}}
 
 {{< include chapters/02-modernizacion.qmd >}}
@@ -33,3 +45,7 @@ format:
 {{< include chapters/04-neomarxismo.qmd >}}
 
 {{< include chapters/05-neoliberalismo.qmd >}}
+
+# Referencias
+::: {#refs}
+:::

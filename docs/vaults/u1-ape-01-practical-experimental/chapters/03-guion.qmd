@@ -26,9 +26,10 @@
 
 ---
 
-### ACTO I: LA LÓGICA DEL CAPITAL VS. LA SOBERANÍA TÉCNICA
+### ESCENA 1: LA LÓGICA DEL CAPITAL
+*El Fiscal acusa al Dr. Mendoza de entregar el subsuelo mediante la Ley de 1943.*
 
-\colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: Su Señoría, la dependencia no es un error de gestión; es la forma que adopta la acumulación del Centro sobre la periferia petrolera. El Dr. Mendoza firmó la Ley de 1943 no por patriotismo, sino por incapacidad. Entregó el control del subsuelo a cambio de una renta fija, permitiendo que Williams optimizara el excedente fuera de nuestras fronteras. Por cada dólar que entró como inversión, cinco salieron como beneficio neto al Centro.
+\colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: Su Señoría, la dependencia no es un error de gestión; es la forma que adopta la acumulación del Centro sobre la periferia petrolera. El Dr. Mendoza firmó la Ley de 1943 no por patriotismo, sino por incapacidad. Entregó el control del subsuelo a cambio de una renta fija, permitiendo que Williams optimizara el excedente fuera de nuestras fronteras. Una parte sustancial del excedente fue apropiada externamente.
 
 \colorbox{red!20}{\textbf{Sr. Williams}}: *(Tranquilo, consultando un informe)* Fiscal, usted ignora el **Riesgo de Capital**. En 1943, su nación no tenía liquidez para perforar un solo pozo. Nosotros pusimos los millones, la tecnología y asumimos la probabilidad de fracaso. El Centro no roba; el Centro cobra por su eficiencia y su conocimiento. ¿Querían ser socios? Tuvieron su 50%, pero el riesgo lo corrimos nosotros.
 
@@ -36,11 +37,12 @@
 
 \colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: El problema, Mendoza, es que al elegir el progreso importado, usted prohibió el progreso propio. Williams no trajo desarrollo; trajo un **enclave**. Construyó rascacielos de vidrio en Caracas para que no viéramos que el subsuelo se estaba quedando hueco.
 
-\colorbox{orange!20}{\textbf{Dr. Mendoza}}: *(A la defensiva)* ¡Ese enclave dio empleo y construyó escuelas, Fiscal! Antes de la Ley del 43, la población moría de paludismo. Sí, cedimos el monopolio de la técnica, pero financiamos la creación del Estado moderno con esa renta. Juzgar el pasado con la moral del presente es muy fácil.
+\colorbox{orange!20}{\textbf{Dr. Mendoza}}: *(A la defensiva)* ¡Ese enclave dio empleo y amplió ciertas capacidades estatales, Fiscal! Antes de la Ley del 43, persistían graves problemas sanitarios y de infraestructura. Sí, cedimos el monopolio de la técnica, pero financiamos la creación del Estado moderno con esa renta. Juzgar el pasado con la moral del presente es muy fácil.
 
 ---
 
-### ACTO II: LA VARIABLE DE AJUSTE (Testimonios)
+### ESCENA 2: LA VARIABLE DE AJUSTE
+*Testimonios de Juan (Obrero) y María (Tierra) sobre la dependencia técnica.*
 
 \colorbox{teal!20}{\textbf{Su Señoría}}: Juan, describa el proceso de transferencia tecnológica en el pozo.
 
@@ -50,11 +52,12 @@
 
 ---
 
-### ACTO III: EL COSTO DEL VEREDICTO (La Ruptura)
+### ESCENA 3: EL VEREDICTO
+*El Tribunal ordena la 'Desconexión Soberana' frente a las amenazas del Sr. Williams.*
 
 \colorbox{olive!20}{\textbf{Fiscal de la Soberanía}}: Solicitamos la **Desconexión**. No por odio, sino por supervivencia. No podemos desarrollar el "interior" si seguimos siendo el satélite del "exterior".
 
-\colorbox{red!20}{\textbf{Sr. Williams}}: *(Levantándose, proyectando gráficos)* Adelante. Ejecuten su ruptura. Pero miren nuestras proyecciones estratégicas: sin nuestra transferencia de tecnología, proyectamos que sus refinerías se detendrán en 90 días. La fuga de capitales proyecta una contracción de su PIB del 40% el primer año. La hiperinflación devorará sus ahorros. El Centro no castiga por maldad, castiga por diseño a los desertores de su mercado. ¿Tienen la solvencia para pagar el precio de la libertad?
+\colorbox{red!20}{\textbf{Sr. Williams}}: *(Levantándose, proyectando gráficos)* Adelante. Ejecuten su ruptura. Pero miren nuestras proyecciones estratégicas: sin nuestra transferencia de tecnología, una ruptura abrupta comprometería seriamente la operación del sector por la dependencia tecnológica. Una ruptura desordenada podría generar una fuerte contracción económica y presión inflacionaria. El Centro no castiga por maldad, castiga por diseño a los desertores de su mercado. ¿Tienen la solvencia para pagar el precio de la libertad?
 
 \colorbox{violet!20}{\textbf{María}}: *(Interrumpiendo, indignada)* ¿Y de qué nos sirve su PIB si el dinero nunca sale de la capital? Ustedes miden la riqueza en las proyecciones de sus informes; nosotros la medimos en la tierra que ya no podemos sembrar. Ya estamos viviendo en la escasez, su amenaza no nos asusta.
 
