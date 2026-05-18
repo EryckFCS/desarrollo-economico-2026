@@ -1,0 +1,60 @@
+{
+    "stats": {
+        "coverage": {
+            "total_raw": 30,
+            "total_md": 29,
+            "missing_conversions": 1,
+            "orphans_detected": 0
+        },
+        "integrity": {
+            "verified_sync": 29,
+            "mismatches": 0,
+            "mismatch_list": []
+        }
+    },
+    "pipeline_result": {
+        "collection": "economic_development",
+        "files_processed": 29,
+        "total_chunks": 0,
+        "errors": [
+            "notas_tecnicas.md",
+            "resumen_neoliberalismo_ampliado.md",
+            "heredia_2021_analisis_politicas_pymes.md",
+            "worldbank_2020_ecuador_labor_market_impact.md",
+            "amin_1976_unequal_development.md",
+            "stiglitz_sen_fitoussi_2009_report_measurement.md",
+            "lectura-4.md",
+            "coronil_1997_estado_magico_es.md",
+            "las-teorias-del-desarrollo-economico.md",
+            "debraj-ray-economia-del-desarrollo.md",
+            "baptista_2006_bases_cuantitativas.md",
+            "desarrollo-humano-pobreza-y-desigualdad.md",
+            "kluve_2016_what_works_active_labor.md",
+            "ilo_2022_global_employment_trends_youth.md",
+            "gramatica-del-neoliberalismo.md",
+            "mommer_2002_global_oil_es.md",
+            "jahan_2016_measuring_human_development.md",
+            "undp_2015_hdr_work_human_development.md",
+            "undp_2024_hdr_breaking_gridlock.md",
+            "teorias_del_desarrollo_economico-uned.md",
+            "desarrollo-economico-y-la-escuela-estructuralista_ocr.md",
+            "rivera_maldonado_2020_crisis_mercado_laboral.md",
+            "la-era-del-desarrollo-sostenible-_jeffrey-sachs_-_z-liborg_.md",
+            "undp_1990_hdr_concept_measurement.md",
+            "estructuralismo-cepal.md",
+            "sen_1999_development_as_freedom.md",
+            "clark_2003_unemployment_social_norm.md",
+            "neoestructuralismo.md",
+            "castillo_cueva_2015_determinantes_desempleo.md"
+        ]
+    },
+    "layers": {
+        "lake_integrity": true,
+        "coverage_ok": false
+    },
+    "timestamp": "2026-05-17T20:22:52.680340",
+    "project_info": {
+        "name": "intel-economic_development",
+        "root": "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/bibliography"
+    }
+}
