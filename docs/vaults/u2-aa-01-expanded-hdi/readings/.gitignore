@@ -1,0 +1,8 @@
+# Ignore all PDFs in this temporary workspace to maintain repository hygiene
+*.pdf
+
+# Ignore the temporary sanitized folder
+sanitized/
+
+# Do not ignore .gitkeep files to preserve folder structure
+!.gitkeep
