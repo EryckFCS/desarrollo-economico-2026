@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: reports/site
+  render:
+    - "*.qmd"
+    - "!docs/vaults/u2-aa-02-section-profiling/index.qmd"
 
 website:
   title: "Economic Development - Federated Node"
