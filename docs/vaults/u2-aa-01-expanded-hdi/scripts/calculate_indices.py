@@ -27,14 +27,23 @@ with open(log_path, "w", encoding="utf-8") as f:
 log_message("Inicializando variables y vectores de datos históricos para Ecuador (2013-2022)...")
 
 # 1. Raw Data Vectors
-years = np.arange(2013, 2023)
-official_hdi = np.array([0.750, 0.755, 0.758, 0.760, 0.762, 0.763, 0.765, 0.748, 0.753, 0.765])
+# 1. Load Raw Data Dynamically from Ecuador.csv (HDR 2023/2024 database)
+csv_raw_path = "docs/vaults/u2-aa-01-expanded-hdi/data/raw/Ecuador.csv"
+df_raw = pd.read_csv(csv_raw_path, index_col="key")
 
-# Standard component indices (reconstructed to exactly match official HDI through geometric mean)
-health_idx = np.array([0.869, 0.874, 0.877, 0.878, 0.880, 0.882, 0.882, 0.800, 0.812, 0.871])
-edu_idx = np.array([0.690, 0.695, 0.700, 0.705, 0.708, 0.710, 0.713, 0.712, 0.715, 0.720])
-# Back-calculate Income Index to ensure mathematical consistency: Income = HDI^3 / (Health * Education)
-income_idx = (official_hdi ** 3) / (health_idx * edu_idx)
+years = np.arange(2013, 2023)
+official_hdi = np.array([float(df_raw.loc[f"Human Development Index (value) ({y})", "value"]) for y in years])
+health_raw = np.array([float(df_raw.loc[f"Life Expectancy at Birth (years) ({y})", "value"]) for y in years])
+expected_raw = np.array([float(df_raw.loc[f"Expected Years of Schooling (years) ({y})", "value"]) for y in years])
+mean_raw = np.array([float(df_raw.loc[f"Mean Years of Schooling (years) ({y})", "value"]) for y in years])
+gni_raw = np.array([float(df_raw.loc[f"Gross National Income Per Capita (2021 PPP$) ({y})", "value"]) for y in years])
+
+# Calculate standard component indices dynamically from raw indicators
+health_idx = (health_raw - 20.0) / 65.0
+expected_idx = expected_raw / 18.0
+mean_idx = mean_raw / 15.0
+edu_idx = (expected_idx + mean_idx) / 2.0
+income_idx = (np.log(gni_raw) - np.log(100.0)) / (np.log(75000.0) - np.log(100.0))
 
 # Unemployment rates (%) - Source: World Bank / ILO modeled estimates
 unemployment_rates = np.array([3.08, 3.48, 3.62, 4.60, 3.84, 3.53, 3.81, 6.13, 4.55, 3.76])
@@ -56,8 +65,12 @@ expanded_hdi = (health_idx * edu_idx * income_idx * employment_idx) ** 0.25
 # 4. Construct DataFrame
 df = pd.DataFrame({
     "Año": years,
+    "Esperanza_Vida_Raw": health_raw,
     "Índice_Salud": health_idx,
+    "Años_Esperados_Raw": expected_raw,
+    "Años_Promedio_Raw": mean_raw,
     "Índice_Educación": edu_idx,
+    "INB_per_Capita_Raw": gni_raw,
     "Índice_Ingresos": income_idx,
     "Tasa_Desempleo_Porc": unemployment_rates,
     "Índice_Empleo": employment_idx,
@@ -93,7 +106,7 @@ plt.axvspan(2015.8, 2016.2, color="#FCF3CF", alpha=0.4, label="Recesión Macroec
 
 # Annotate critical gaps
 plt.annotate(
-    f"Brecha COVID-19 (2020):\nΔ = {official_hdi[7] - expanded_hdi[7]:.3f} (-5.7%)",
+    f"Brecha COVID-19 (2020):\nΔ = {official_hdi[7] - expanded_hdi[7]:.3f} (-5.5%)",
     xy=(2020, expanded_hdi[7]),
     xytext=(2016.5, 0.61),
     arrowprops=dict(facecolor='black', shrink=0.08, width=1.5, headwidth=8),
@@ -138,23 +151,29 @@ border_all = Border(left=thin_side, right=thin_side, top=thin_side, bottom=thin_
 border_total = Border(top=thin_side, bottom=double_side)
 
 # Title block
-ws.merge_cells("A1:H1")
+ws.merge_cells("A1:N1")
 ws["A1"] = "Índice Ampliado de Desarrollo Humano (IDHA) - Ecuador (2013-2022)"
 ws["A1"].font = title_font
 ws["A1"].alignment = left_alignment
 ws.row_dimensions[1].height = 30
 
-ws.merge_cells("A2:H2")
+ws.merge_cells("A2:N2")
 ws["A2"] = "Materia: Desarrollo Económico | Tarea: Unidad 2 AA1 | Autores: Condoy Seraquive Erick Fabricio & Bustamante Dayana"
 ws["A2"].font = Font(name="Calibri", size=10, italic=True)
 ws["A2"].alignment = left_alignment
 
 headers = [
     "Año", 
+    "Esp. Vida (Años) [Crudo]", 
     "Índice Salud (I_Salud)", 
+    "Años Esp. Escolaridad [Crudo]", 
+    "Índice Años Esp.", 
+    "Años Prom. Escolaridad [Crudo]", 
+    "Índice Años Prom.", 
     "Índice Educación (I_Edu)", 
+    "INB per cápita PPA (USD) [Crudo]", 
     "Índice Ingresos (I_Ing)", 
-    "Tasa Desempleo (%)", 
+    "Tasa Desempleo (%) [Crudo]", 
     "Índice Empleo (I_Emp)", 
     "IDH Oficial", 
     "IDH Ampliado"
@@ -173,25 +192,49 @@ for i in range(len(years)):
     row_num = 5 + i
     ws.row_dimensions[row_num].height = 20
     
-    # Static inputs - STORE YEARS AS STRINGS TO PREVENT AXES CONFUSION
+    # Year (string category)
     ws.cell(row=row_num, column=1, value=str(int(years[i]))).alignment = center_alignment
-    ws.cell(row=row_num, column=2, value=float(health_idx[i])).number_format = "0.000"
-    ws.cell(row=row_num, column=3, value=float(edu_idx[i])).number_format = "0.000"
-    ws.cell(row=row_num, column=4, value=float(income_idx[i])).number_format = "0.000"
-    # DIVIDE BY 100 TO STORE AS ACTUAL EXCEL PERCENTAGE (e.g. 0.0308 = 3.08%)
-    ws.cell(row=row_num, column=5, value=float(unemployment_rates[i]) / 100.0).number_format = "0.00%"
     
-    # Formulas
-    # I_Empleo: =(0.15 - E[row]) / 0.15
-    ws.cell(row=row_num, column=6, value=f"=(0.15-E{row_num})/0.15").number_format = "0.000"
+    # 2. Esperanza de Vida (Crudo)
+    ws.cell(row=row_num, column=2, value=float(health_raw[i])).number_format = "0.000"
     
-    # IDH Oficial: =(B[row]*C[row]*D[row])^(1/3)
-    ws.cell(row=row_num, column=7, value=f"=(B{row_num}*C{row_num}*D{row_num})^(1/3)").number_format = "0.000"
+    # 3. Índice de Salud (Normalizado con fórmula viva)
+    ws.cell(row=row_num, column=3, value=f"=(B{row_num}-20)/65").number_format = "0.000"
     
-    # IDH Ampliado: =(B[row]*C[row]*D[row]*F[row])^(1/4)
-    ws.cell(row=row_num, column=8, value=f"=(B{row_num}*C{row_num}*D{row_num}*F{row_num})^(1/4)").number_format = "0.000"
+    # 4. Años Esperados de Escolaridad (Crudo)
+    ws.cell(row=row_num, column=4, value=float(expected_raw[i])).number_format = "0.000"
     
-    for col_idx in range(1, 9):
+    # 5. Índice Años Esperados (Normalizado con fórmula viva)
+    ws.cell(row=row_num, column=5, value=f"=D{row_num}/18").number_format = "0.000"
+    
+    # 6. Años Promedio de Escolaridad (Crudo)
+    ws.cell(row=row_num, column=6, value=float(mean_raw[i])).number_format = "0.000"
+    
+    # 7. Índice Años Promedio (Normalizado con fórmula viva)
+    ws.cell(row=row_num, column=7, value=f"=F{row_num}/15").number_format = "0.000"
+    
+    # 8. Índice de Educación (Fórmula promedio simple de componentes)
+    ws.cell(row=row_num, column=8, value=f"=(E{row_num}+G{row_num})/2").number_format = "0.000"
+    
+    # 9. INB per Cápita PPA (Crudo)
+    ws.cell(row=row_num, column=9, value=float(gni_raw[i])).number_format = "$#,##0.00"
+    
+    # 10. Índice de Ingresos (Normalizado con fórmula logarítmica viva)
+    ws.cell(row=row_num, column=10, value=f"=(LN(I{row_num})-LN(100))/(LN(75000)-LN(100))").number_format = "0.000"
+    
+    # 11. Tasa de Desempleo (Cruda, convertida a porcentaje decimal)
+    ws.cell(row=row_num, column=11, value=float(unemployment_rates[i]) / 100.0).number_format = "0.00%"
+    
+    # 12. Índice de Empleo (Fórmula normalización negativa)
+    ws.cell(row=row_num, column=12, value=f"=(0.15-K{row_num})/0.15").number_format = "0.000"
+    
+    # 13. IDH Oficial (Fórmula media geométrica 3 dimensiones)
+    ws.cell(row=row_num, column=13, value=f"=(C{row_num}*H{row_num}*J{row_num})^(1/3)").number_format = "0.000"
+    
+    # 14. IDH Ampliado (Fórmula media geométrica 4 dimensiones)
+    ws.cell(row=row_num, column=14, value=f"=(C{row_num}*H{row_num}*J{row_num}*L{row_num})^(1/4)").number_format = "0.000"
+    
+    for col_idx in range(1, 15):
         c = ws.cell(row=row_num, column=col_idx)
         c.font = regular_font
         c.border = border_all
@@ -207,25 +250,30 @@ ws.cell(row=avg_row, column=1, value="Promedio").font = bold_font
 ws.cell(row=avg_row, column=1).alignment = center_alignment
 ws.cell(row=avg_row, column=1).border = border_total
 
-for col_idx in range(2, 9):
+for col_idx in range(2, 15):
     col_letter = get_column_letter(col_idx)
     cell = ws.cell(row=avg_row, column=col_idx, value=f"=AVERAGE({col_letter}5:{col_letter}{avg_row-1})")
     cell.font = bold_font
     cell.alignment = right_alignment
     cell.border = border_total
-    if col_idx == 5:
+    
+    if col_idx in [2, 4, 6]:
+        cell.number_format = "0.000"
+    elif col_idx == 9:
+        cell.number_format = "$#,##0.00"
+    elif col_idx == 11:
         cell.number_format = "0.00%"
     else:
         cell.number_format = "0.000"
 
-# Adjust columns width
+# Adjust columns width dynamically
 for col in ws.columns:
     max_len = 0
     col_letter = get_column_letter(col[0].column)
     for cell in col:
          if cell.value:
              max_len = max(max_len, len(str(cell.value)))
-    ws.column_dimensions[col_letter].width = max(max_len + 4, 12)
+    ws.column_dimensions[col_letter].width = max(max_len + 4, 14)
 
 
 # --- HOJA 2: Figure (GENERATED NATIVELY IN EXCEL WITH CUSTOM STYLING) ---
@@ -252,26 +300,24 @@ chart.x_axis.delete = False
 chart.y_axis.delete = False
 
 # References for data and categories in sheet "Calculos_IDHA"
-# Data: Columns G and H (IDH Oficial in 7, IDH Ampliado in 8) from row 4 (header) to row 14 (end of series)
-data_ref = Reference(ws, min_col=7, min_row=4, max_col=8, max_row=14)
+# Data: Columns M and N (IDH Oficial in 13, IDH Ampliado in 14) from row 4 (header) to row 14 (end of series)
+data_ref = Reference(ws, min_col=13, min_row=4, max_col=14, max_row=14)
 # Categories: Column A (Years) from row 5 to 14
 cats_ref = Reference(ws, min_col=1, min_row=5, max_row=14)
 
 chart.add_data(data_ref, titles_from_data=True)
 chart.set_categories(cats_ref)
 
-# --- ADVANCED PREMIUM STYLING (MATCHES THE PYTHON MATPLOTLIB VISUAL QUALITY) ---
-# Style Series 1: IDH Oficial (Navy Blue, Circular Markers, Thick Smooth Line)
+# --- ADVANCED PREMIUM STYLING ---
 s1 = chart.series[0]
 s1.graphicalProperties.line.solidFill = "1F497D" # Navy Blue
-s1.graphicalProperties.line.width = 38100       # 3 pt thickness (1 pt = 12700 EMUs)
+s1.graphicalProperties.line.width = 38100       # 3 pt thickness
 s1.marker.symbol = "circle"
 s1.marker.size = 7
 s1.marker.graphicalProperties.solidFill = "1F497D"
 s1.marker.graphicalProperties.line.solidFill = "1F497D"
 s1.smooth = True
 
-# Style Series 2: IDH Ampliado (Accent Orange, Square Markers, Thick Smooth Line)
 s2 = chart.series[1]
 s2.graphicalProperties.line.solidFill = "E67E22" # Accent Orange
 s2.graphicalProperties.line.width = 38100       # 3 pt thickness
@@ -321,58 +367,106 @@ dict_data = [
         "link": "N/A"
     },
     {
-        "variable": "Índice de Salud (I_Salud)",
+        "variable": "Esperanza de Vida al Nacer (Años) [Crudo]",
         "column": "B",
-        "definition": "Subíndice oficial del IDH que evalúa la dimensión de una vida larga y saludable, calculado a partir de la Esperanza de Vida al Nacer.",
-        "unit": "Índice normalizado (0 a 1)",
+        "definition": "Número promedio de años que se espera que viva un recién nacido si se mantienen los patrones de mortalidad vigentes.",
+        "unit": "Años",
         "source": "PNUD (Human Development Reports)",
         "link": "https://hdr.undp.org/data-center"
     },
     {
-        "variable": "Índice de Educación (I_Edu)",
+        "variable": "Índice de Salud (I_Salud) [Normalizado]",
         "column": "C",
-        "definition": "Subíndice oficial del IDH que evalúa el logro educativo, promediando los años promedio de escolaridad (adultos) y años esperados de escolaridad (niños).",
-        "unit": "Índice normalizado (0 a 1)",
+        "definition": "Subíndice oficial de la dimensión de salud, normalizado mediante la fórmula =(B5 - 20) / 65.",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Años Esperados de Escolaridad (Años) [Crudo]",
+        "column": "D",
+        "definition": "Número de años que se espera que un niño en edad de ingresar a la escuela asista a ella.",
+        "unit": "Años",
         "source": "PNUD (Human Development Reports)",
         "link": "https://hdr.undp.org/data-center"
     },
     {
-        "variable": "Índice de Ingresos (I_Ing)",
-        "column": "D",
-        "definition": "Subíndice oficial que mide el estándar de vida digno mediante el RNL per cápita PPA (dólares internacionales constantes de 2017). Reconstruido algebraicamente para precisión matemática total.",
-        "unit": "Índice normalizado (0 a 1)",
-        "source": "PNUD (Human Development Reports) / Reconstrucción matemática",
+        "variable": "Índice de Años Esperados [Normalizado]",
+        "column": "E",
+        "definition": "Subíndice de educación por años esperados, normalizado mediante la fórmula =D5 / 18.",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
         "link": "https://hdr.undp.org/data-center"
     },
     {
-        "variable": "Tasa de Desempleo (%)",
-        "column": "E",
-        "definition": "Porcentaje de la población activa que se encuentra sin trabajo, pero está disponible y buscando empleo de forma activa.",
+        "variable": "Años Promedio de Escolaridad (Años) [Crudo]",
+        "column": "F",
+        "definition": "Número promedio de años de educación formal completados por la población de 25 años o más.",
+        "unit": "Años",
+        "source": "PNUD (Human Development Reports)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Índice de Años Promedio [Normalizado]",
+        "column": "G",
+        "definition": "Subíndice de educación por años promedio, normalizado mediante la fórmula =F5 / 15.",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Índice de Educación (I_Edu) [Combinado]",
+        "column": "H",
+        "definition": "Subíndice oficial de la dimensión educativa, calculado como el promedio simple del Índice de Años Esperados y el de Años Promedio: =(E5+G5)/2.",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Ingreso Nacional Bruto (INB) per cápita PPA (USD) [Crudo]",
+        "column": "I",
+        "definition": "Suma del valor agregado por todos los productores residentes en la economía, más los flujos netos de ingreso primario del exterior, expresado en dólares internacionales constantes mediante la Paridad de Poder Adquisitivo.",
+        "unit": "Dólares Internacionales PPA",
+        "source": "PNUD (Human Development Reports)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Índice de Ingresos (I_Ing) [Normalizado]",
+        "column": "J",
+        "definition": "Subíndice oficial de estándar de vida, normalizado mediante la transformación logarítmica =(LN(I5)-LN(100))/(LN(75000)-LN(100)).",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
+        "link": "https://hdr.undp.org/data-center"
+    },
+    {
+        "variable": "Tasa de Desempleo (%) [Crudo]",
+        "column": "K",
+        "definition": "Porcentaje de la población económicamente activa que no tiene trabajo pero busca activamente empleo.",
         "unit": "Porcentaje (%)",
-        "source": "Banco Mundial / OIT (Estimaciones Modeladas OIT)",
+        "source": "Banco Mundial / OIT",
         "link": "https://databank.worldbank.org/source/world-development-indicators"
     },
     {
-        "variable": "Índice de Empleo (I_Emp)",
-        "column": "F",
-        "definition": "Indicador normalizado inverso de la seguridad económica en el mercado laboral. Representa la capacidad del trabajo decente mediante la fórmula =(0.15 - E_row) / 0.15.",
-        "unit": "Índice normalizado (0 a 1)",
-        "source": "Elaboración propia con base en el Enfoque de Capacidades de Amartya Sen y datos de OIT.",
+        "variable": "Índice de Empleo (I_Emp) [Normalizado]",
+        "column": "L",
+        "definition": "Indicador de seguridad económica en el empleo, normalizado inversamente de la tasa de desempleo mediante la fórmula =(0.15-K5)/0.15.",
+        "unit": "Índice (0 a 1)",
+        "source": "Elaboración propia con base en el Enfoque de Capacidades de Amartya Sen.",
         "link": "Elaboración propia"
     },
     {
         "variable": "IDH Oficial",
-        "column": "G",
-        "definition": "Índice de Desarrollo Humano tradicional calculado por el PNUD mediante la media geométrica de Salud, Educación e Ingresos.",
-        "unit": "Índice multidimensional (0 a 1)",
-        "source": "PNUD (Human Development Reports)",
+        "column": "M",
+        "definition": "Índice de Desarrollo Humano oficial tradicional, calculado como la media geométrica de las dimensiones estándar: =(C5*H5*J5)^(1/3).",
+        "unit": "Índice (0 a 1)",
+        "source": "PNUD (Cálculo mediante fórmula oficial)",
         "link": "https://hdr.undp.org/data-center"
     },
     {
         "variable": "IDH Ampliado (IDHA)",
-        "column": "H",
-        "definition": "Índice de Desarrollo Humano Ampliado propuesto, calculado como la media geométrica de las 4 dimensiones ponderadas con igual peso (25% c/u).",
-        "unit": "Índice multidimensional (0 a 1)",
+        "column": "N",
+        "definition": "Índice de Desarrollo Humano Ampliado propuesto, calculado como la media geométrica de las cuatro dimensiones con igual ponderación: =(C5*H5*J5*L5)^(1/4).",
+        "unit": "Índice (0 a 1)",
         "source": "Elaboración propia",
         "link": "Elaboración propia"
     }
@@ -393,7 +487,6 @@ for row_idx, data in enumerate(dict_data, 5):
     c_def.font = regular_font
     c_def.alignment = left_alignment
     c_def.border = border_all
-    # Enable text wrapping for descriptions
     c_def.alignment = Alignment(wrap_text=True, vertical="center")
     
     ws_dict.cell(row=row_idx, column=4, value=data["unit"]).font = regular_font

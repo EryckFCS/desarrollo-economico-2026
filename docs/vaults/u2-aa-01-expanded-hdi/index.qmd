@@ -86,23 +86,23 @@ $$IDHA_t = \left( I_{Salud, t} \times I_{Educacion, t} \times I_{Ingresos, t} \t
 
 ## Resultados e Interpretación
 
-La integración de la dimensión de estabilidad laboral revela divergencias críticas frente al índice tradicional, evidenciadas en los datos de la @tbl-comparativa y la trayectoria de la @fig-trayectoria. Durante la recesión de 2016, mientras el IDH Oficial experimentó una subida inercial ($0.760$), el IDHA se contrajo a **$0.742$**, desvelando la insensibilidad de la métrica tradicional ante despidos masivos. Este divorcio métrico se agudizó en la crisis sanitaria de 2020 con un desplome del $5.7\%$ en el IDHA ($0.705$), lo que prueba que las variables clásicas ocultaron la pérdida real de bienestar en los hogares. Al final del periodo, en 2022, ambas curvas convergen aritméticamente ($0.761$ vs $0.765$), una paridad numérica engañosa que invisibiliza el subempleo crónico y la precarización estructural de la fuerza laboral, mostrando que el IDHA responde de manera altamente elástica a las perturbaciones reales del mercado laboral en contraste con la rigidez inercial del IDH oficial.
+La integración de la dimensión de estabilidad laboral revela divergencias críticas frente al índice tradicional, evidenciadas en los datos de la @tbl-comparativa y la trayectoria de la @fig-trayectoria. Durante la recesión de 2016, mientras el IDH Oficial experimentó una contracción inercial mínima de apenas $0.39\%$ (pasando de $0.764$ a $0.761$), el IDHA se contrajo con mayor severidad hasta **$0.744$** (desde $0.763$), desvelando la insensibilidad de la métrica tradicional ante despidos masivos. Este divorcio métrico se agudizó en la crisis sanitaria de 2020 con un desplome del $8.0\%$ en el IDHA ($0.699$), cayendo por debajo del umbral de desarrollo alto a pesar de que el IDH Oficial amortiguó el choque registrando una caída de solo $3.3\%$ ($0.740$), lo que prueba que las variables clásicas ocultaron la pérdida real de bienestar en los hogares. Al final del periodo, en 2022, ambas curvas muestran una recuperación (alcanzando $0.773$ de IDH Oficial y $0.767$ de IDHA), manteniendo una brecha persistente que invisibiliza la precarización estructural de la fuerza laboral y demostrando que el IDHA responde de manera altamente elástica a las perturbaciones reales del mercado laboral en contraste con la rigidez inercial del IDH oficial.
 
 \begingroup
 \footnotesize
 
 | Año ($t$) | Salud ($I_{Salud}$) | Edu. ($I_{Edu}$) | Ingreso ($I_{Ing}$) | Desemp. ($u_t$) | Empleo ($I_{Emp}$) | IDH Ofic. | IDHA |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **2013** | 0.869 | 0.690 | 0.704 | 3.08% | 0.795 | 0.750 | **0.760** |
-| **2014** | 0.874 | 0.695 | 0.709 | 3.48% | 0.768 | 0.755 | **0.758** |
-| **2015** | 0.877 | 0.700 | 0.709 | 3.62% | 0.759 | 0.758 | **0.758** |
-| **2016** | 0.878 | 0.705 | 0.709 | 4.60% | 0.693 | 0.760 | **0.742** |
-| **2017** | 0.880 | 0.708 | 0.710 | 3.84% | 0.744 | 0.762 | **0.757** |
-| **2018** | 0.882 | 0.710 | 0.709 | 3.53% | 0.765 | 0.763 | **0.763** |
-| **2019** | 0.882 | 0.713 | 0.712 | 3.81% | 0.746 | 0.765 | **0.760** |
-| **2020** | 0.800 | 0.712 | 0.735 | 6.13% | 0.591 | 0.748 | **0.705** |
-| **2021** | 0.812 | 0.715 | 0.735 | 4.55% | 0.697 | 0.753 | **0.738** |
-| **2022** | 0.871 | 0.720 | 0.714 | 3.76% | 0.749 | 0.765 | **0.761** |
+| **2013** | 0.859 | 0.676 | 0.741 | 3.08% | 0.795 | 0.755 | **0.765** |
+| **2014** | 0.864 | 0.681 | 0.745 | 3.48% | 0.768 | 0.760 | **0.762** |
+| **2015** | 0.865 | 0.695 | 0.743 | 3.62% | 0.759 | 0.764 | **0.763** |
+| **2016** | 0.863 | 0.692 | 0.740 | 4.60% | 0.693 | 0.761 | **0.744** |
+| **2017** | 0.865 | 0.691 | 0.745 | 3.84% | 0.744 | 0.764 | **0.759** |
+| **2018** | 0.881 | 0.689 | 0.743 | 3.53% | 0.765 | 0.767 | **0.766** |
+| **2019** | 0.881 | 0.685 | 0.741 | 3.81% | 0.746 | 0.765 | **0.760** |
+| **2020** | 0.800 | 0.700 | 0.723 | 6.13% | 0.591 | 0.740 | **0.699** |
+| **2021** | 0.811 | 0.713 | 0.738 | 4.55% | 0.697 | 0.753 | **0.739** |
+| **2022** | 0.870 | 0.712 | 0.745 | 3.76% | 0.749 | 0.773 | **0.767** |
 : Trayectoria comparativa del IDH Oficial frente al Índice Ampliado en Ecuador. {#tbl-comparativa}
 
 \endgroup
