@@ -1,0 +1,55 @@
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:42 - --- Calculating HDI for Ecuador Simulado ---
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:47 - Life Expectancy: 75.0 years -> Health Index = (75.0 - 20) / (85 - 20) = 0.8462
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:55 - EYS: 14.5 years -> Index = 0.8056
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:56 - MYS: 10.2 years -> Index = 0.6800
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:57 - Education Index = (0.8056 + 0.6800) / 2 = 0.7428
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:62 - GNI per capita: $12,500.00 -> Income Index = (ln(12500.0) - ln(100)) / (ln(75000) - ln(100)) = 0.7293
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:66 - HDI = (0.8462 * 0.7428 * 0.7293)^(1/3) = 0.7710
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_hdi:77 - HDI Classification: Alto
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:97 - --- Calculating GII for Ecuador Simulado ---
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:107 - Inputs (Treated/Truncated): MMR=140.0, ABR=65.0, PR_F=0.3800
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:114 - Female Dimension Indices:
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:115 -   Health (H_F) = ((10 / 140.0) * (1 / 65.0))^(1/2) = 0.0331
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:116 -   Empowerment (E_F) = (0.3800 * 0.6400)^(1/2) = 0.4932
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:117 -   Labor (L_F) = 0.5200
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:118 -   G_F = (0.0331 * 0.4932 * 0.5200)^(1/3) = 0.2041
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:125 - Male Dimension Indices:
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:126 -   Health (H_M) = 1.0
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:127 -   Empowerment (E_M) = (0.6200 * 0.7000)^(1/2) = 0.6588
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:128 -   Labor (L_M) = 0.7800
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:129 -   G_M = (1.0 * 0.6588 * 0.7800)^(1/3) = 0.8010
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:133 - Harmonic Mean = 2 / ( (1 / 0.2041) + (1 / 0.8010) ) = 0.3253
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:140 - Reference Standard Dimension Averages:
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:141 -   Mean Health (H_bar) = (0.0331 + 1.0) / 2 = 0.5166
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:142 -   Mean Empowerment (E_bar) = (0.4932 + 0.6588) / 2 = 0.5760
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:143 -   Mean Labor (L_bar) = (0.5200 + 0.7800) / 2 = 0.6500
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:144 -   Reference Standard (G_bar) = (0.5166 * 0.5760 * 0.6500)^(1/3) = 0.5783
+2026-05-19 08:53:02.073 | INFO     | __main__:calculate_gii:148 - GII = 1 - (0.3253 / 0.5783) = 0.4375
+2026-05-19 08:53:09.975 | INFO     | __main__:calculate_hdi:42 - --- Calculating HDI for Ecuador Simulado ---
+2026-05-19 08:53:09.975 | INFO     | __main__:calculate_hdi:47 - Life Expectancy: 75.0 years -> Health Index = (75.0 - 20) / (85 - 20) = 0.8462
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:55 - EYS: 14.5 years -> Index = 0.8056
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:56 - MYS: 10.2 years -> Index = 0.6800
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:57 - Education Index = (0.8056 + 0.6800) / 2 = 0.7428
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:62 - GNI per capita: $12,500.00 -> Income Index = (ln(12500.0) - ln(100)) / (ln(75000) - ln(100)) = 0.7293
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:66 - HDI = (0.8462 * 0.7428 * 0.7293)^(1/3) = 0.7710
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_hdi:77 - HDI Classification: Alto
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:97 - --- Calculating GII for Ecuador Simulado ---
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:107 - Inputs (Treated/Truncated): MMR=140.0, ABR=65.0, PR_F=0.3800
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:114 - Female Dimension Indices:
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:115 -   Health (H_F) = ((10 / 140.0) * (1 / 65.0))^(1/2) = 0.0331
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:116 -   Empowerment (E_F) = (0.3800 * 0.6400)^(1/2) = 0.4932
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:117 -   Labor (L_F) = 0.5200
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:118 -   G_F = (0.0331 * 0.4932 * 0.5200)^(1/3) = 0.2041
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:125 - Male Dimension Indices:
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:126 -   Health (H_M) = 1.0
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:127 -   Empowerment (E_M) = (0.6200 * 0.7000)^(1/2) = 0.6588
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:128 -   Labor (L_M) = 0.7800
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:129 -   G_M = (1.0 * 0.6588 * 0.7800)^(1/3) = 0.8010
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:133 - Harmonic Mean = 2 / ( (1 / 0.2041) + (1 / 0.8010) ) = 0.3253
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:140 - Reference Standard Dimension Averages:
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:141 -   Mean Health (H_bar) = (0.0331 + 1.0) / 2 = 0.5166
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:142 -   Mean Empowerment (E_bar) = (0.4932 + 0.6588) / 2 = 0.5760
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:143 -   Mean Labor (L_bar) = (0.5200 + 0.7800) / 2 = 0.6500
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:144 -   Reference Standard (G_bar) = (0.5166 * 0.5760 * 0.6500)^(1/3) = 0.5783
+2026-05-19 08:53:09.976 | INFO     | __main__:calculate_gii:148 - GII = 1 - (0.3253 / 0.5783) = 0.4375
+2026-05-19 08:53:09.976 | INFO     | __main__:main:184 - Results successfully written to /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u2-aa-02-section-profiling/calculated_results.md
