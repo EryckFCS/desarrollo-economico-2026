@@ -1,0 +1,34 @@
+---
+title: "Análisis Comparativo y de Políticas del Índice de Desigualdad de Género"
+subtitle: "Ecuador vs. Suiza (2000-2020)"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-05-20"
+format:
+  pdf:
+    documentclass: scrartcl
+    papersize: letter
+    geometry:
+      - margin=1.2cm
+    pdf-engine: xelatex
+    mainfont: Times New Roman
+    fontsize: 8.5pt
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{0.95}
+      - \usepackage{booktabs}
+      - \usepackage{caption}
+      - \addtokomafont{disposition}{\rmfamily}
+      - \addtokomafont{section}{\small\bfseries}
+---
+
+Las trayectorias del Índice de Desigualdad de Género (IDG) en Ecuador y Suiza revelan una profunda divergencia estructural en el periodo 2000–2020. Suiza consolidó su posición en la frontera global de equidad de género. Entre el año 2000 y 2020, el país helvético redujo su IDG de 0.093 a un valor marginal de 0.012, lo que equivale a una contracción del 87.1% en la pérdida de desarrollo humano debido a asimetrías de género. Por el contrario, Ecuador exhibió un comportamiento bifásico y rezagado. Partiendo de una brecha crítica de 0.511 en el año 2000, el país experimentó una convergencia acelerada hasta el año 2015, cuando el índice alcanzó un mínimo de 0.391. Sin embargo, el periodo post-2015 registró una parálisis sistémica que estabilizó el indicador en 0.373 para el año 2020. Este estancamiento perpetúa una brecha de género estructural frente a la dinámica suiza.
+
+Esta divergencia responde a la implementación y efectividad de marcos normativos específicos de cada nación. En Ecuador, los avances iniciales en empoderamiento político provinieron de las cuotas obligatorias de género introducidas bajo el **Artículo 116** de la [Constitución de la República (2008)](../readings/raw/constitucion_ecuador_2008.pdf), que elevó sustancialmente la representación parlamentaria de las mujeres. Para contrarrestar las persistentes brechas de ingresos en el mercado laboral, la legislación ecuatoriana incorporó la **Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres** ([Registro Oficial, 2024](../readings/raw/registro_oficial_-_ley_organica_para_la_igualdad_salarial.pdf)), mecanismo que penaliza la discriminación remunerativa. No obstante, la falta de reglamentación presupuestaria y de capacidades de fiscalización durante la última década impidió que estas reformas legales se tradujeran en una reducción continua del IDG nacional. En contraste, la trayectoria de Suiza se fundamenta en un sistema de bienestar robusto enfocado en la corresponsabilidad y la conciliación familiar. Destaca la aprobación por voto popular en el año 2020 de un **permiso de paternidad pagado de dos semanas**, financiado mediante el régimen de compensación APG y formalizado por el Consejo Federal ([OFAS, 2020](../readings/raw/Texte de base_Congé paternité.pdf)). Esta política institucionalizó una distribución más equitativa del cuidado doméstico no remunerado, permitiendo a la población femenina sostener una tasa de participación laboral del 62.7% y garantizando un mínimo nivel de vulnerabilidad en su salud reproductiva.
+
+---
+
+**Referencias:**
+
+*   Asamblea Constituyente. (2008). *Constitución de la República del Ecuador (Art. 116)*. \[[PDF](../readings/raw/constitucion_ecuador_2008.pdf)\] - \[[Web](https://www.oas.org/juridico/pdfs/mesicic4_ecu_const.pdf)\]
+*   Asamblea Nacional. (2024). *Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres (Registro Oficial N.º 496)*. \[[PDF](../readings/raw/registro_oficial_-_ley_organica_para_la_igualdad_salarial.pdf)\] - \[[Web](https://www.trabajo.gob.ec/)\]
+*   Office Fédéral des Assurances Sociales. (2020). *Texte de base - Congé de paternité payé par l'APG*. \[[PDF](../readings/raw/Texte de base_Congé paternité.pdf)\] - \[[Web](https://www.admin.ch/gov/fr/accueil/documentation/communiques.msg-id-80517.html)\]
