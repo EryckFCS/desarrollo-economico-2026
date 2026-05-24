@@ -1,0 +1,106 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$]{article}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Custom Premium Researcher Typography: Linux Libertine (Biolinum para sans-serif)
+\usepackage{libertine}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+$header-includes$
+
+% Pandoc CSLReferences environment definition for bibliographies
+\newenvironment{CSLReferences}[2]
+  {\begin{list}{}{%
+   \setlength{\leftmargin}{1.5em}%
+   \setlength{\itemindent}{-1.5em}%
+   \setlength{\itemsep}{#2\baselineskip}%
+   \setlength{\parskip}{0pt}%
+  }}
+  {\end{list}}
+
+% Definitions for citeproc citations (Pandoc 3.1.7+)
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter % allow citations to break across lines
+\let\@cite@ofmt\@firstofone
+% avoid brackets around text for \cite:
+\def\@biblabel#1{}
+\def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+
+% Curated Academic Palette (Personalizable dinámicamente vía YAML)
+\definecolor{primary}{HTML}{$if(color-primary)$$color-primary$$else$0A2540$endif$}    % Azul Prusiano (Defecto)
+\definecolor{secondary}{HTML}{$if(color-secondary)$$color-secondary$$else$8D2B32$endif$}  % Burdeos (Defecto)
+\definecolor{darkgray}{HTML}{$if(color-darkgray)$$color-darkgray$$else$22252A$endif$}   % Carbón Suave (Defecto)
+
+% Aplicación del color principal al texto base
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{darkgray}}
+
+% Estilo de Encabezados de Sección
+\titleformat{\section}
+  {\color{primary}\normalfont\Large\bfseries\sffamily}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\color{secondary}\normalfont\large\bfseries\sffamily}
+  {\thesubsection}{1em}{}
+
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+% Configuración de Captions de Tablas y Figuras
+\DeclareCaptionFont{primarycolor}{\color{primary}}
+\captionsetup[table]{name=Tabla, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
+\captionsetup[figure]{name=Figura, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
+
+% Encabezados y Pies de Página Dinámicos (Controlados desde Quarto)
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{secondary}$if(header-left)$$header-left$$else$INVESTIGACIÓN ACADÉMICA$endif$}
+\fancyhead[R]{\sffamily\small\color{secondary}$if(header-right)$$header-right$$else$ANÁLISIS ECONÓMICO$endif$}
+\fancyfoot[L]{\sffamily\small\color{gray}Erick Condoy Seraquive$if(footer-left)$ | $footer-left$$endif$}
+\fancyfoot[R]{\sffamily\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{secondary}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+% Entorno Pullquote para Destacados Visuales
+\newenvironment{pullquote}{%
+  \vspace{10pt}
+  \begin{center}
+  \begin{minipage}{0.88\textwidth}
+  \color{secondary}
+  \hrule height 1pt
+  \vspace{6pt}
+  \centering\itshape\large
+}{%
+  \vspace{6pt}
+  \hrule height 1pt
+  \end{minipage}
+  \end{center}
+  \vspace{10pt}
+}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+$body$
+\end{document}

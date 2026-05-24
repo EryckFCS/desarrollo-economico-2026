@@ -1,0 +1,145 @@
+---
+format:
+  pdf:
+    pdf-engine: lualatex
+    template: linkedin_template.tex
+    toc: false
+    number-sections: false
+    colorlinks: true
+    fontsize: 10pt
+    geometry:
+      - margin=2.5cm
+    
+    # Parámetros Dinámicos del Nodo de Desarrollo Económico:
+    header-left: "DESARROLLO ECONÓMICO"
+    header-right: "ÍNDICE DE DESARROLLO HUMANO AMPLIADO (IDHA)"
+    footer-left: "Erick Condoy & Dayana Bustamante | Evaluación Multidimensional de Bienestar"
+    
+    color-primary: "0A2540"     # Azul Prusiano Profesional
+    color-secondary: "8D2B32"   # Burdeos Tintó Sophisticated
+    color-darkgray: "22252A"    # Carbón Suave para lectura óptima
+    
+    header-includes:
+      - |
+        \newenvironment{referenciasAPA}{\setlength{\parindent}{-1.27cm}\setlength{\leftskip}{1.27cm}\setlength{\parskip}{6pt}}{\par}
+        \newcommand{\fuente}[1]{\vspace{-2pt}\noindent\small\textit{Nota.} #1}
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+---
+
+\begin{center}
+\sffamily
+{\color{primary}\Huge\bfseries ¿Mide el IDH el Bienestar Real en Ecuador? \\ Construcción de un Índice Ampliado de Desarrollo Humano (IDHA)} \\
+\vspace{1.5em}
+{\color{darkgray}\large\bfseries Erick Condoy Seraquive \& Dayana Bustamante Benitez} \\
+\textit{Estudiantes de Economía | Universidad Nacional de Loja --- Desarrollo Económico} \\
+\vspace{0.8em}
+\sffamily\small Mayo de 2026
+\end{center}
+
+\begin{center}
+\sffamily\small
+\begin{tabular}{rl}
+\textbf{Periodo de Análisis:} & 2013--2022 (Serie Anual Multidimensional) \\
+\textbf{Indicador Incorporado:} & Tasa de Desempleo Abierto ($u_t$) como medida de Estabilidad Laboral \\
+\end{tabular}
+\end{center}
+\vspace{1.2em}
+
+\begin{center}
+\begin{minipage}{0.9\textwidth}
+\begin{spacing}{1.15}
+\sffamily\small
+\color{primary}
+\textbf{Resumen Ejecutivo} ---
+\textit{El Índice de Desarrollo Humano (IDH) oficial del PNUD asume que el ingreso per cápita refleja fielmente el bienestar material, omitiendo la vulnerabilidad estructural derivada de la precariedad y la inestabilidad del empleo. Este análisis amplía el IDH tradicional para Ecuador (2013-2022) incorporando la dimensión de "Seguridad Económica y Estabilidad Laboral" mediante la tasa de desempleo. Los resultados revelan una alarmante insensibilidad inercial del índice oficial ante crisis macroeconómicas críticas, las cuales son expuestas con rigor y sensibilidad elástica por el IDHA propuesto.}
+\end{spacing}
+\end{minipage}
+\end{center}
+\vspace{1.5em}
+
+# El Vacío Estructural del IDH Tradicional
+
+El enfoque ortodoxo del desarrollo humano asume que el crecimiento del Ingreso Nacional Bruto (INB) per cápita equivale a una expansión proporcional de las libertades materiales de los ciudadanos [@undp1990hdr]. No obstante, el Enfoque de Capacidades de Amartya Sen [@sen1999development] advierte que el desempleo constituye una privación directa de capacidades humanas elementales, erosionando la agencia individual, el auto-respeto y destruyendo de forma sistemática el tejido de cohesión familiar [@clark2003unemployment; @stiglitz2009report]. 
+
+En economías en desarrollo como la de Ecuador, donde la ausencia de un seguro de desempleo universal obliga a la PEA a refugiarse en la supervivencia de la informalidad agrícola y comercial, la pérdida de estabilidad laboral representa un colapso multidimensional del bienestar que el INB per cápita promedio enmascara de manera sistemática.
+
+\begin{pullquote}
+``Durante la crisis de 2020, mientras el IDH Oficial del PNUD amortiguó el golpe registrando una caída de apenas 3.3\%, el IDH Ampliado (IDHA) colapsó un 8.0\%, cayendo por debajo del umbral de desarrollo alto debido a la pérdida real de estabilidad laboral en los hogares.''
+\end{pullquote}
+
+# Metodología de Construcción del IDHA
+
+Para capturar la estabilidad laboral sin distorsionar la homogeneidad matemática del PNUD, adaptamos el método de normalización clásico utilizando una normalización inversa de privación laboral. Definimos un techo normativo de crisis absoluta ($Max = 15\%$) y un pleno empleo ideal ($Min = 0\%$) [@jahan2016measuring]:
+
+$$I_{Empleo, t} = \frac{15\% - u_t}{15\%}$$
+
+La agregación del Índice de Desarrollo Humano Ampliado ($IDHA_t$) se realiza mediante media geométrica equiproporcional ($25\%$), penalizando de forma orgánica los desequilibrios y caídas en cualquier dimensión, impidiendo que avances parciales en educación o salud maquillen crisis severas de empleo [@undp2020costarica]:
+
+$$IDHA_t = \left( I_{Salud, t} \times I_{Educacion, t} \times I_{Ingresos, t} \times I_{Empleo, t} \right)^{\frac{1}{4}}$$
+
+# Resultados: Rigidez Inercial vs. Elasticidad Real de Bienestar
+
+La Tabla \ref{tbl:comparativa} y la Figura \ref{fig:trayectoria} exponen la trayectoria comparativa de ambos índices:
+
+1.  **La Recesión Petrolera de 2016**: Mientras el IDH Oficial experimentó una contracción inercial mínima de apenas $0.39\%$ (de $0.764$ a $0.761$), el IDHA expuso la pérdida real de bienestar contrayéndose un **$2.5\%$** ($0.744$).
+2.  **El Choque Pandémico de 2020**: El divorcio métrico se agudizó. La rigidez inercial del IDH oficial arrojó una caída de solo $3.3\%$ ($0.740$), amortiguando el impacto real del confinamiento y la pérdida masiva de empleo formal. En marcado contraste, el IDHA se desplomó un **$8.0\%$** ($0.699$), revelando el verdadero impacto de la precarización en las familias.
+
+\begin{singlespace}
+\begin{small}
+\begin{longtable}{p{1.5cm} p{1.6cm} p{1.6cm} p{1.6cm} p{1.6cm} p{1.6cm} p{1.8cm} p{1.8cm}}
+\caption{Trayectoria comparativa del IDH Oficial frente al Índice Ampliado en Ecuador} \label{tbl:comparativa} \\
+\toprule
+\textbf{Año ($t$)} & \textbf{Salud ($I_{Salud}$)} & \textbf{Edu. ($I_{Edu}$)} & \textbf{Ingreso ($I_{Ing}$)} & \textbf{Desemp. ($u_t$)} & \textbf{Empleo ($I_{Emp}$)} & \textbf{IDH Ofic.} & \textbf{IDHA} \\ \midrule
+\textbf{2013} & 0.859 & 0.676 & 0.741 & 3.08\% & 0.795 & 0.755 & \textbf{0.765} \\
+\textbf{2015} & 0.865 & 0.695 & 0.743 & 3.62\% & 0.759 & 0.764 & \textbf{0.763} \\
+\textbf{2016} & 0.863 & 0.692 & 0.740 & 4.60\% & 0.693 & 0.761 & \textbf{0.744} \\
+\textbf{2018} & 0.881 & 0.689 & 0.743 & 3.53\% & 0.765 & 0.767 & \textbf{0.766} \\
+\textbf{2020} & 0.800 & 0.700 & 0.723 & 6.13\% & 0.591 & 0.740 & \textbf{0.699} \\
+\textbf{2022} & 0.870 & 0.712 & 0.745 & 3.76\% & 0.749 & 0.773 & \textbf{0.767} \\ \bottomrule
+\multicolumn{8}{@{}p{15cm}@{}}{\small\textit{Nota.} Elaboración propia con base en series históricas del PNUD (2024) y Banco Mundial/OIT (2022).}
+\end{longtable}
+\end{small}
+\end{singlespace}
+
+\begin{figure}[H]
+\centering
+\caption{Trayectoria Histórica: IDH Oficial vs. Índice Ampliado (IDHA) en Ecuador}
+\label{fig:fig-trayectoria}
+\vspace{2pt}
+\includegraphics[width=0.78\textwidth]{assets/hdi_comparison.png}
+\vspace{-2pt}
+\fuente{Elaboración propia con base en datos del PNUD y Banco Mundial/OIT.}
+\end{figure}
+
+# Propuestas de Política Pública y Estabilizadores del Desarrollo
+
+Para mitigar la erosión permanente de capacidades que provoca la inestabilidad en el mercado laboral ecuatoriano, se plantean tres intervenciones estructurales:
+
+1.  **Rediseño del Seguro de Desempleo (IESS)**: Transición hacia un esquema de transferencias activas, donde la asistencia económica temporal esté estrictamente condicionada a la inserción en programas de reconversión técnica laboral diseñados según la demanda del tejido productivo regional [@kluve2016what].
+2.  **Estabilizadores Automáticos para MIPYMES**: Implementación de líneas de cofinanciamiento y alivio fiscal temporal para pequeñas y medianas empresas durante periodos de contracción económica auditada, condicionadas a la retención total de la plantilla de personal [@heredia2021analisis].
+3.  **Subsidios al Primer Empleo Joven**: Cofinanciamiento estatal temporal de aportaciones patronales para la contratación neta de jóvenes de 18 a 29 años, con cláusulas de permanencia de 24 meses, mitigando el fenómeno de la cicatrización laboral de largo plazo [@ilo2022global].
+
+---
+
+# Bibliografía
+
+\begin{referenciasAPA}
+Clark, A. E., \& Oswald, A. J. (1994). \textit{Unhappiness and unemployment}. The Economic Journal, 104(424), 648-659. \url{https://doi.org/10.2307/2234639}
+
+Heredia, D. (2021). \textit{Estabilizadores automáticos y mercado laboral en economías dolarizadas}. Revista de Economía del Desarrollo, 12(3), 45-67.
+
+International Labour Organization [ILO]. (2022). \textit{Global Employment Trends for Youth 2022: Investing in transforming futures for young people}. Geneva: ILO. \url{https://www.ilo.org/global/publications/books/WCMS_853377/lang--en/index.htm}
+
+Jahan, S. (2016). \textit{Technical Notes: Human Development Report 2016}. United Nations Development Programme (UNDP). \url{https://hdr.undp.org/sites/default/files/hdr2016_technical_notes.pdf}
+
+Kluve, J. (2016). \textit{What works for youth employment? A systematic review of active labor market programs}. Labour Economics, 42, 1-13. \url{https://doi.org/10.1016/j.labeco.2016.06.002}
+
+Sen, A. (1999). \textit{Development as Freedom}. Oxford University Press.
+
+Stiglitz, J. E., Sen, A., \& Fitoussi, J. P. (2009). \textit{Report by the Commission on the Measurement of Economic Performance and Social Progress}. \url{https://ec.europa.eu/eurostat/documents/8106938/8108748/Stiglitz-Sen-Fitoussi-Report-EN.pdf}
+
+United Nations Development Programme [UNDP]. (1990). \textit{Human Development Report 1990: Concept and Measurement of Human Development}. New York: Oxford University Press. \url{https://hdr.undp.org/content/human-development-report-1990}
+
+United Nations Development Programme [UNDP]. (2020). \textit{Índice de Desarrollo Humano Ajustado por Desempleo: El caso de Costa Rica}. San José: PNUD.
+\end{referenciasAPA}
