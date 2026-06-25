@@ -1,0 +1,117 @@
+---
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    colorlinks: true
+    mainfont: "Times New Roman"
+    fontsize: 10pt
+    output-file: "Tarea2_U2_Pobreza_Ecuador.pdf"
+    fig-cap-location: top
+    tbl-cap-location: top
+    geometry:
+      - margin=2.54cm
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.0}
+      - \usepackage{indentfirst}
+      - \setlength{\parindent}{1.27cm}
+      - \setlength{\parskip}{6pt}
+      - \usepackage{booktabs}
+      - \usepackage{tabularx}
+      - \usepackage{float}
+      - \usepackage{array}
+      - \usepackage{caption}
+      - \captionsetup[table]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
+      - \captionsetup[figure]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
+      - \addtokomafont{disposition}{\rmfamily}
+      - \addtokomafont{section}{\large\bfseries}
+      - \addtokomafont{subsection}{\normalsize\bfseries}
+      - \addtokomafont{subsubsection}{\normalsize\bfseries\itshape}
+  html:
+    toc: false
+    number-sections: false
+    theme: cosmo
+  docx:
+    toc: false
+    number-sections: false
+    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/writing/templates/Plantilla presentación trabajos.docx"
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+crossref:
+  tbl-title: Tabla
+  fig-title: Figura
+---
+
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
+Carrera de Economía \\
+Desarrollo Económico \\
+Séptimo A \\
+Unidad 2 \\
+Septiembre 2025/Febrero 2026
+\end{center}
+
+\noindent \textbf{Nombre:} Erick Fabricio Condoy Seraquive \hfill \textbf{Fecha:} \today
+
+\noindent \textbf{Docente:} Econ. Johanna Magaly Alvarado Espejo \hfill \textbf{Unidad:} 2
+
+## Pobreza en Ecuador
+
+### 1. Con el boletín del INEC, indique la tasa de pobreza por ingresos y la tasa de pobreza multidimensional a nivel nacional. En no más de ocho líneas, explique por qué la segunda casi duplica a la primera y qué capta una que la otra no ve.
+
+Según el Instituto Nacional de Estadística y Censos [-@inec2025enemdu], la tasa de pobreza por ingresos en diciembre de 2025 fue del 21,4 % a nivel nacional, mientras que la pobreza multidimensional llegó al 41,7 %. La segunda casi duplica a la primera porque medir solo el ingreso no es suficiente: un hogar puede ganar por encima del umbral y aun así carecer de agua potable, atención médica o empleo estable. La línea de pobreza monetaria (USD 92,40 per cápita al mes) únicamente pregunta si el hogar puede pagar una canasta básica; no dice nada sobre si sus integrantes viven en condiciones dignas. Por eso el enfoque multidimensional registra privaciones que el ingreso no captura, como niños fuera de la escuela o familias sin saneamiento [@sen1999development, pp. 87--89].
+
+### 2. El Índice de Pobreza Multidimensional del Ecuador asigna un peso de 12,5 % al indicador “pobreza extrema por ingresos” dentro de la dimensión de salud, agua y alimentación. ¿Qué objeción metodológica le merece que una medida llamada multidimensional incorpore, como uno de sus componentes, al propio ingreso? Responda en seis líneas.
+
+El IPM ecuatoriano incluye el ingreso como uno de sus componentes, lo que genera un problema de circularidad: el índice usa el mismo criterio que supuestamente quiere ir más allá. Se supone que cada dimensión debe medir algo distinto e independiente; si el ingreso ya aparece como una dimensión propia, mezclarlo con indicadores de salud o educación hace que los resultados se solapen. Al asignar un peso del 12,5 % a la pobreza extrema por ingresos, el índice combina dos enfoques sin armonizarlos. El resultado concreto es que cuando sube el ingreso de un hogar, baja tanto la privación monetaria como la puntuación en salud-agua-alimentación, lo que infla la mejora aparente más allá de lo que los cambios reales justifican.
+
+### 3. Entre diciembre de 2024 y diciembre de 2025 la pobreza urbana por ingresos pasó de 20,9 % a 13,8 % y el INEC la reporta como una diferencia estadísticamente significativa; la rural pasó de 43,3 % a 37,6 % y no es significativa. Explique qué significa “estadísticamente significativo” y por qué la caída urbana puede serlo y la rural no.
+
+Una diferencia es estadísticamente significativa cuando hay suficiente evidencia para descartar que ocurrió por azar; en la práctica se usa un umbral del 95 % de confianza [@inec2025enemdu, p. 10]. La reducción urbana, de 20,9 % a 13,8 % entre diciembre de 2024 y diciembre de 2025 (7,1 puntos porcentuales), cumple ese umbral porque las ciudades concentran la mayor parte de la muestra ENEMDU, lo que da más precisión a los resultados. La caída rural, de 43,3 % a 37,6 % (5,7 puntos porcentuales), no lo alcanza: la muestra rural es más pequeña y los ingresos varían más, así que los márgenes de error de ambos períodos se superponen [@inec2025enemdu, p. 11]. En la práctica esto no significa que la pobreza rural no haya bajado, sino que la encuesta no tiene suficiente información para confirmarlo.
+
+## A. El caso real
+
+### 4. Enfoque económico. Calcule el ingreso por persona del hogar (ingresos del mes ÷ número de integrantes) y compárelo con la línea de pobreza de diciembre de 2025 (USD 92,40). Indique si el hogar es pobre por ingresos.
+
+El hogar tiene cinco integrantes: padre, madre y tres hijos. El padre gana USD 600 al mes y la madre, USD 500, lo que da un total de USD 1.100 mensuales. Dividido entre cinco personas, el ingreso per cápita es USD 220,00 (1.100 ÷ 5). La línea de pobreza por ingresos en diciembre de 2025 es de USD 92,40 per cápita al mes [@inec2025enemdu, p. 7]. Como USD 220,00 supera ese valor, el hogar no es pobre por ingresos.
+
+### 5. Enfoque multidimensional. Con los cinco componentes de la pobreza por Necesidades Básicas Insatisfechas del boletín (calidad de la vivienda, hacinamiento, servicios básicos, acceso a educación y capacidad económica), revise en cuáles presenta carencia el hogar. Recuerde que, según el INEC, basta con fallar en uno para ser pobre por NBI. Liste las carencias que encuentre.
+
+Con los cinco componentes del NBI que define el INEC [-@inec2025enemdu, p. 18], el hogar presenta la siguiente situación:
+
+| Componente NBI | Criterio de carencia (INEC) | ¿Carencia? |
+|:---|:---|:---:|
+| Calidad de la vivienda | Piso de tierra u "otros"; paredes de caña, estera u "otros" | NO |
+| Hacinamiento | Más de tres personas por dormitorio o sin dormitorio exclusivo | NO |
+| Servicios básicos | Sin red pública de agua o sin eliminación de excretas por alcantarillado | NO |
+| Acceso a educación | Niños de 6 a 12 años que no asisten a clases | NO |
+| Capacidad económica | Jefe de hogar con ≤ 2 años de escolaridad y dependencia económica > 3 | NO |
+: Evaluación de NBI para el hogar analizado. {#tbl-nbi}
+{\footnotesize \textit{Nota.} Elaboración propia con base en criterios del INEC (2025, p. 18). El hogar tiene conexión a red pública de agua potable; padre y madre cuentan con educación superior; los hijos asisten a la escuela; la vivienda tiene paredes y piso en condiciones adecuadas; y no existe hacinamiento.}
+
+El hogar no presenta ninguna carencia. Según el INEC [-@inec2025enemdu, p. 18], basta con fallar en un componente para ser considerado pobre por NBI; como este hogar no falla en ninguno, no es pobre por NBI.
+
+### 6. ¿Coinciden los dos diagnósticos? Con lo que observó en ese hogar, explique por qué difieren o por qué coinciden.
+
+En este caso los dos enfoques coinciden: el hogar no es pobre. Monetariamente, USD 220,00 per cápita supera la línea de USD 92,40. Por NBI, tampoco registra carencias en ninguno de los cinco componentes. Esta convergencia no siempre ocurre. Sen [-@sen1999development, p. 90] advierte que el ingreso es solo un medio, no una garantía de bienestar; un hogar puede ganar bien y aun así carecer de agua o educación. En este caso particular, el ingreso suficiente se acompaña de condiciones de vida adecuadas, por lo que ambos enfoques apuntan en la misma dirección.
+
+## B. La decisión y el criterio
+
+### 7. Usted asesora un programa social que debe decidir si ese hogar recibe una ayuda. ¿Con cuál de los dos enfoques tomaría la decisión y por qué? Diga también qué se pierde al descartar el otro.
+
+Para asignar la ayuda de un programa social, el enfoque multidimensional por NBI ofrece mejores resultados, porque detecta privaciones concretas que pueden mantenerse aunque el ingreso del hogar supere el umbral monetario. Saber si una familia gana USD 100 al mes no dice si tiene agua potable, si los niños van a la escuela o si viven en una vivienda en buen estado. Sen [-@sen1999development, p. 87] argumenta que lo que importa no es cuánto dinero entra, sino qué puede hacer la familia con esos recursos.
+
+Dicho esto, descartar el ingreso sería un error. Los programas de transferencia necesitan saber cuánto gana un hogar para fijar el monto del subsidio y para saber cuándo un beneficiario ya puede salir del programa. Sin esa información, se corre el riesgo de gastar recursos en familias que ya cubren su consumo básico.
+
+### 8. Con base en el texto básico y en sus propias palabras (paráfrasis): Sen sostiene que la lista de capacidades básicas debe decidirla cada sociedad por vías democráticas; Nussbaum propone una lista universal. ¿Con cuál postura se queda y por qué? Cinco a diez líneas.
+
+La postura de Nussbaum [-@nussbaum2011creating, p. 33] es más convincente. Ella propone una lista de capacidades básicas que toda sociedad debe garantizar sin excepción, sin importar sus tradiciones o preferencias. Si cada comunidad elige por su cuenta qué considerar fundamental, grupos con más poder pueden moldear esa lista para mantener privilegios. La democracia no siempre produce resultados justos cuando los más vulnerables tienen poca voz en las decisiones.
+
+Sen [-@sen1999development, p. 110] tiene razón en señalar que imponer una lista desde afuera puede ser una forma de paternalismo que ignora la agencia de las personas. La salida es combinar ambas posturas: tomar la lista de Nussbaum como piso mínimo no negociable y dejar que cada comunidad añada lo que considere importante según su propio contexto. Así se garantiza lo básico sin eliminar la autonomía.
+
+## Referencias
+
+::: {#refs}
+:::

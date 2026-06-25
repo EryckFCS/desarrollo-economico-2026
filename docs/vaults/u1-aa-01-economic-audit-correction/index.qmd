@@ -1,0 +1,295 @@
+---
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    colorlinks: true
+    mainfont: "Times New Roman"
+    fontsize: 10pt
+    output-file: "Correccion_Evaluacion_U1_Desarrollo.pdf"
+    geometry:
+      - margin=2.54cm
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.0}
+      - \usepackage{indentfirst}
+      - \setlength{\parindent}{1.27cm}
+      - \setlength{\parskip}{6pt}
+  html:
+    toc: false
+    theme: cosmo
+  docx:
+    toc: false
+    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/writing/templates/Plantilla presentación trabajos.docx"
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+---
+
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
+Carrera de Economía \\
+Desarrollo Económico \\
+Séptimo A \\
+Unidad 1 \\
+Septiembre 2025/Febrero 2026
+\end{center}
+
+\noindent \textbf{Nombre:} Erick Fabricio Condoy Seraquive \hfill \textbf{Fecha:} \today
+
+\noindent \textbf{Docente:} Econ. Johanna Magaly Alvarado Espejo \hfill \textbf{Unidad:} 1
+
+## Corrección de la Evaluación de la Unidad 1
+
+### Parte I: Evaluación Teórica
+
+#### Pregunta 1
+**¿Qué aspecto caracteriza la teoría alternativa del desarrollo?**
+
+a) Fomento exclusivo del crecimiento económico medido únicamente por el PIB pc.  
+b) Impulso prioritario a las exportaciones de materias primas con ventaja comparativa.  
+c) Priorización de la satisfacción de las necesidades básicas de los individuos.  
+d) Liberalización comercial absoluta y retiro inmediato del Estado de los servicios.  
+
+*Respuesta correcta:* c) Priorización de la satisfacción de las necesidades básicas de los individuos.  
+
+*Justificación:* La teoría alternativa o enfoque de necesidades básicas de los años 70 surgió frente a la insatisfacción con el crecimiento económico puro. Sostiene que el desarrollo debe centrarse en asegurar directamente alimentación, salud, agua potable, educación y vivienda para toda la población, antes de confiar en los efectos indirectos del libre mercado.
+
+#### Pregunta 2
+**Analice el caso de cada país e indique a cuál teoría pertenece la planificación realizada:**
+
+*Corea del Sur: Durante la década de 1960, el gobierno implementó políticas de industrialización y fomentó la inversión extranjera para modernizar su economía. Se crearon parques industriales y se promovió la educación técnica para impulsar el desarrollo a través de políticas de...*  
+
+*Alternativas disponibles:* modernización, estructuralistas, neoliberales, neomarxistas.  
+
+*Respuesta correcta:* modernización  
+
+*Justificación:* La estrategia descrita se fundamenta en las etapas lineales de Rostow. Enfatiza la transición desde una sociedad tradicional agrícola hacia una de despegue y madurez industrial a través de la acumulación de capital físico y humano y la atracción de inversiones.
+
+#### Pregunta 3
+**Critique la tesis de la "Mono-economía" aplicada a un programa de ajuste del FMI en un país africano rural. ¿Cuál es el error conceptual según el estructuralismo?**
+
+a) Que ignora que la industrialización espontánea se genera sin aranceles.  
+b) Que asume que las leyes económicas universales operan igual en el Centro que en sociedades con estructuras productivas duales y desequilibradas.  
+c) Que no considera el impacto de las tecnologías digitales de comunicación masiva.  
+d) Que sobreestima el rol del capital financiero y omite el poder de la agricultura.  
+
+*Respuesta correcta:* b) Que asume que las leyes económicas universales operan igual en el Centro que en sociedades con estructuras productivas duales y desequilibradas.  
+
+*Justificación:* El estructuralismo (con Hirschman y la CEPAL) critica la mono-economía por pretender aplicar idénticas leyes y recetas monetarias del Centro en la Periferia. Esto ignora que las economías periféricas tienen una marcada heterogeneidad estructural (sectores modernos y atrasados conviviendo) y mercados desarticulados donde el libre mercado no genera equilibrio.
+
+#### Pregunta 4
+**Analice el caso de cada país e indique a cuál teoría pertenece la planificación realizada:**
+
+*Venezuela: Venezuela ha implementado políticas como la nacionalización de la industria petrolera y la implementación de programas sociales para reducir la pobreza y la desigualdad.*  
+
+*Alternativas disponibles:* modernización, estructuralistas, neoliberales, neomarxistas.  
+
+*Respuesta correcta:* neomarxistas  
+
+*Justificación:* Las nacionalizaciones masivas y el control absoluto del Estado sobre recursos estratégicos buscan detener la explotación transnacional y reorientar el excedente nacional hacia la demanda social interna, alineándose con las teorías de la dependencia y la desconexión del corte neomarxista.
+
+#### Pregunta 5
+**Analice el caso de cada país e indique a cuál teoría pertenece la planificación realizada:**
+
+*Chile: Durante la dictadura de Pinochet en la década de 1970, Chile adoptó políticas que incluyeron la privatización de empresas estatales, la liberalización del comercio y la reducción del gasto público para fomentar la inversión privada.*  
+
+*Alternativas disponibles:* modernización, estructuralistas, neoliberales, neomarxistas.  
+
+*Respuesta correcta:* neoliberales  
+
+*Justificación:* Estas reformas corresponden a las directrices de la escuela de Chicago y el posterior Consenso de Washington, donde se confía el desarrollo a las fuerzas de mercado mediante la desregulación, la apertura comercial extrema y la reducción del rol del Estado en la economía.
+
+#### Pregunta 6
+**¿Cuál es uno de los principios fundamentales de la teoría neoliberal?**
+
+a) Nacionalización de los servicios básicos y control de precios por el Estado.  
+b) Reducir la intervención del Estado en la economía.  
+c) Planificación centralizada de la producción industrial y agraria.  
+d) Implementación de aranceles elevados para proteger la manufactura local.  
+
+*Respuesta correcta:* b) Reducir la intervención del Estado en la economía.  
+
+*Justificación:* El neoliberalismo sostiene que los mercados libres son los asignadores más eficientes de recursos. Por ende, promueve privatizaciones, desregulación de mercados y austeridad fiscal para disminuir la presencia estatal.
+
+#### Pregunta 7
+**La clave del desarrollo para la teoría de la modernización es...**  
+
+*Alternativas disponibles:* la inversión, la desconexión, la planificación, el etnodesarrollo.  
+
+*Respuesta correcta:* la inversión  
+
+*Justificación:* Para teóricos como Rostow o Harrod-Domar, la falta de desarrollo se debe a una insuficiencia de ahorro e inversión productiva. La inyección de capital (sea doméstico o externo) es el motor que permite transitar entre las etapas lineales del desarrollo.
+
+#### Pregunta 8
+**Una comunidad indígena ecuatoriana rechaza un proyecto extractivo porque afectaría sus ríos, semillas y formas comunitarias de vida. Propone un modelo basado en territorio, cultura y Buen Vivir. ¿Qué enfoque se identifica mejor?**
+
+a) Desarrollo endógeno.  
+b) Etnodesarrollo.  
+c) Teoría neoliberal clásica.  
+d) Teoría de la modernización industrial.  
+
+*Respuesta correcta:* b) Etnodesarrollo.  
+
+*Justificación:* El etnodesarrollo promueve la capacidad autónoma de una sociedad o etnia para definir su propia trayectoria de desarrollo basándose en sus valores culturales tradicionales, el respeto a su territorio y su cosmovisión colectiva (como el Sumak Kawsay).
+
+#### Pregunta 9
+**Empareje cada concepto según la escuela:**
+
+* Heterogeneidad Estructural (dualidad) $\rightarrow$ Rasgo del Subdesarrollo Estructural.
+* Deterioro de los Términos de Intercambio $\rightarrow$ Diagnóstico Estructuralista (Prebisch).
+* El "Buen Vivir" (Sumak Kawsay) $\rightarrow$ Etnodesarrollo.
+* El "Despegue" mediante el ahorro externo $\rightarrow$ Teoría de la Modernización (Rostow).
+* Tesis de la "Desconexión" (De-linking) $\rightarrow$ Estrategia Neomarxista (Samir Amin).
+* Brasil: Caída industrial del 34% al 11% $\rightarrow$ Neoliberalismo (Consenso de Washington).
+* La "Lumpenburguesía" como aliada del Centro $\rightarrow$ Neomarxismo.
+* El "Milagro Mexicano" (1954-1970) $\rightarrow$ Estructuralismo (CEPAL).  
+
+*Justificación:* Estos emparejamientos reflejan los conceptos centrales de las respectivas escuelas: el estructuralismo analiza las asimetrías comerciales y productivas (Prebisch, CEPAL); el neomarxismo las dinámicas de dependencia y desconexión (Amin, Gunder Frank); la modernización el crecimiento lineal (Rostow); el neoliberalismo la desindustrialización por libre mercado; y el etnodesarrollo los saberes ancestrales alternativos.
+
+#### Pregunta 10
+**Un grupo de campesinos en la Sierra crea una empresa asociativa que produce y vende mermeladas con insumos locales, sin inversión extranjera. ¿Qué tipo de desarrollo ilustra este caso?**
+
+a) Desarrollo a escala humana transnacional.  
+b) Desarrollo dependiente clásico.  
+c) Desarrollo endógeno.  
+d) Desarrollo exógeno o inducido.  
+
+*Respuesta correcta:* c) Desarrollo endógeno.  
+
+*Justificación:* El desarrollo endógeno se basa en potenciar las capacidades y recursos internos de una comunidad (sociales, físicos, culturales y económicos) para generar bienestar desde lo local y de manera autónoma, sin depender de inversiones o decisiones de agentes externos.
+
+#### Pregunta 11
+**Relacione las siguientes teorías con su idea principal:**
+
+* Desarrollo endógeno $\rightarrow$ Se basa en recursos y actores locales para el bienestar.
+* Desarrollo humano $\rightarrow$ Da prioridad a la expansión de capacidades y libertades.
+* Etnodesarrollo $\rightarrow$ Valora saberes ancestrales y autodeterminación de los pueblos.  
+
+*Justificación:* Cada uno define su prioridad de desarrollo: el endógeno se enfoca en el territorio y actores locales; el humano sitúa como fin a la persona y sus capacidades efectivas (Sen); y el etnodesarrollo rescata la identidad y soberanía de los pueblos originarios.
+
+#### Pregunta 12
+**Analice el caso de cada país e indique a cuál teoría pertenece la planificación realizada:**
+
+*Brasil: En la década de 1950, Brasil adoptó políticas que incluyeron la protección de la industria nacional a través de aranceles y la promoción de la sustitución de importaciones para fortalecer su economía interna.*  
+
+*Alternativas disponibles:* modernización, estructuralistas, neoliberales, neomarxistas.  
+
+*Respuesta correcta:* estructuralistas  
+
+*Justificación:* Corresponde al modelo de Industrialización por Sustitución de Importaciones (ISI) promovido por la CEPAL para superar la especialización en materias primas y construir un sector manufacturero propio bajo el amparo de la política estatal.
+
+#### Pregunta 13
+**En 1959, basándose en la Teoría de la Modernización de Rostow, se predijo que Argentina estaba lista para el "despegue" (take-off) debido a sus niveles de ahorro e inversión. Sin embargo, el país entró en un largo periodo de inestabilidad y retroceso económico. ¿Cuál es la crítica principal que el estructuralismo o el neomarxismo harían a esta aplicación fallida del modelo de Rostow?**
+
+a) El modelo ignoró que el subdesarrollo es una condición estructural y no una etapa lineal, omitiendo la asimetría del sistema Centro-Periferia.  
+b) El modelo sobrestimó el ahorro interno y omitió abrir los bancos a la inversión extranjera directa sin control.  
+c) El modelo falló al no aplicar la sustitución de importaciones agrícola de manera estricta.  
+d) El modelo ignoró que la privatización rápida de servicios públicos era indispensable para despegar.  
+
+*Respuesta correcta:* a) El modelo ignoró que el subdesarrollo es una condición estructural y no una etapa lineal, omitiendo la asimetría del sistema Centro-Periferia.  
+
+*Justificación:* Tanto estructuralistas como dependentistas señalan que el subdesarrollo no es un estado primitivo de "pre-despegue" similar al pasado europeo, sino una condición histórica generada por la inserción asimétrica de la Periferia en el sistema capitalista mundial. Por lo tanto, acumular capital no garantiza el desarrollo si persisten estructuras dependientes y transferencias de excedente.
+
+#### Pregunta 14
+**Para la teoría ____________ el subdesarrollo es una situación de estancamiento en niveles de baja renta por imperialismo colonial y neocolonial.**  
+
+*Alternativas disponibles:* modernización, estructuralista, neoliberal, neomarxista.  
+
+*Respuesta correcta:* neomarxista  
+
+*Justificación:* El neomarxismo y la teoría de la dependencia sostienen que la pobreza y el estancamiento de los países periféricos son la consecuencia lógica de la explotación imperialista e internacional, donde el excedente económico es constantemente expropiado por el Centro.
+
+#### Pregunta 15
+**¿Qué tipo de desarrollo se promueve cuando un país prioriza el acceso universal a salud, educación y seguridad social, aunque su crecimiento económico sea bajo?**
+
+a) Desarrollo neoliberal concentrado.  
+b) Desarrollo exógeno dependiente.  
+c) Desarrollo humano.  
+d) Desarrollo a escala global.  
+
+*Respuesta correcta:* c) Desarrollo humano.  
+
+*Justificación:* Conforme al enfoque impulsado por Amartya Sen y el PNUD, el desarrollo humano define que el bienestar reside en las capacidades y libertades reales de las personas (salud, educación, participación), siendo el crecimiento económico un medio variable y no el fin supremo del desarrollo.
+
+#### Pregunta 16
+**¿Qué escuela económica sostuvo que la riqueza nacional se basaba en la agricultura y no en la acumulación de metales preciosos?**
+
+a) Fisiócratas.  
+b) Mercantilistas.  
+c) Neoclásicos.  
+d) Marxistas.  
+
+*Respuesta correcta:* a) Fisiócratas.  
+
+*Justificación:* Los fisiócratas (encabezados por Quesnay en el siglo XVIII) acuñaron el principio de que la tierra y las actividades agrícolas son las únicas capaces de generar un "producto neto" real, en oposición al mercantilismo centrado en el atesoramiento de metales preciosos.
+
+#### Pregunta 17
+**Un economista observa que la "elasticidad-ingreso de la demanda" de las exportaciones de banano de un país es de 0.3, mientras que la de sus importaciones de maquinaria es de 1.8. ¿Qué diagnóstico de la CEPAL se aplica aquí?**
+
+a) Deterioro de los términos de intercambio (Tesis Prebisch-Singer), lo que generará un déficit crónico en la balanza de pagos.  
+b) Ventaja absoluta de Adam Smith, que garantiza un crecimiento rápido del consumo.  
+c) Tesis de la modernización acelerada por exportaciones primarias eficientes.  
+d) Tesis del desarrollo endógeno basado en insumos industriales extranjeros.  
+
+*Respuesta correcta:* a) Deterioro de los términos de intercambio (Tesis Prebisch-Singer), lo que generará un déficit crónico en la balanza de pagos.  
+
+*Justificación:* Como la demanda mundial de bienes primarios crece más lento que el ingreso mundial (elasticidad 0.3), mientras que las importaciones tecnológicas crecen muy rápido ante aumentos del ingreso nacional (elasticidad 1.8), el país periférico sufre un déficit comercial estructural y un progresivo deterioro en su poder de compra externo.
+
+#### Pregunta 18
+**Tanzania buscó la autosuficiencia rural, nacionalizó la banca y supeditó su comercio exterior a las necesidades de su desarrollo interno para evitar la fuga del excedente económico. Desde la Teoría Neomarxista, ¿cómo se define técnicamente esta maniobra de política económica?**
+
+a) Desconexión (De-linking), orientando la economía hacia la demanda popular interna en lugar de los mercados globales.  
+b) Modernización por despegue inducido mediante inversión directa concentrada.  
+c) Desregulación financiera integral para atraer bancos corresponsales externos.  
+d) Sustitución de importaciones privada sin aranceles ni intervención estatal.  
+
+*Respuesta correcta:* a) Desconexión (De-linking), orientando la economía hacia la demanda popular interna en lugar de los mercados globales.  
+
+*Justificación:* La "desconexión" de Samir Amin propone romper la subordinación de la acumulación interna a las demandas de la ley del valor mundial, reorientando el aparato de producción nacional y el uso del excedente hacia las necesidades de desarrollo interno del país.
+
+#### Pregunta 19
+**¿Qué aspecto fundamental destaca la teoría neomarxista sobre el desarrollo?**
+
+a) La eficiencia natural del mercado libre sin controles.  
+b) La explotación de los países subdesarrollados por los desarrollados.  
+c) La transición lineal e inevitable por etapas del desarrollo.  
+d) La agricultura como fuente exclusiva de creación de excedente.  
+
+*Respuesta correcta:* b) La explotación de los países subdesarrollados por los desarrollados.  
+
+*Justificación:* La teoría neomarxista sostiene que las relaciones económicas y políticas del sistema capitalista mundial son asimétricas por definición, operando como un mecanismo de transferencia de valor donde el Centro explota a la Periferia para sostener su propio desarrollo.
+
+### Parte II: Evaluación Práctica
+
+#### Pregunta 1
+**Un país latinoamericano busca fortalecer su industria nacional de software frente al dominio de empresas tecnológicas globales como Microsoft y Google. Aplique la tesis de la “desconexión” para explicar cómo este país podría reducir su dependencia tecnológica externa sin aislarse completamente de la economía mundial.**
+
+*Corrección Fundamentada:* Desde el contexto de la desconexión dentro de la teoría neomarxista (Samir Amin), esta estrategia no implica una desconexión autárquica o aislamiento absoluto, sino la subordinación de la relación con el mercado global a las prioridades del desarrollo interno popular. Para el caso de estudio, la respuesta se enfoca en evitar que las grandes empresas de tecnología extraigan de forma unilateral nuestro excedente económico. En su lugar, si estas corporaciones buscan entrar al mercado nacional, el país debe condicionar su ingreso mediante:
+
+1. Acuerdos de transferencia tecnológica obligatorios y el fomento de software libre para la administración pública y estudiantes.
+2. Alianzas estratégicas con empresas de software locales que permitan retener y desarrollar las capacidades locales de innovación en lugar de actuar como meros consumidores de licencias extranjeras [@sen1999development].
+
+#### Pregunta 2
+**Diversas élites económicas latinoamericanas prefieren invertir sus capitales en mercados financieros internacionales antes que en industrias nacionales o innovación tecnológica local. Evalúe, desde el concepto de “lumpenburguesía” y la teoría de la dependencia, si este comportamiento contribuye al “desarrollo del subdesarrollo” en América Latina.**
+
+*Corrección Fundamentada:* Este comportamiento contribuye directamente al "desarrollo del subdesarrollo" (Andre Gunder Frank). Las élites locales no actúan como una burguesía industrial clásica nacional que reinvierte su excedente de capital localmente para diversificar el aparato productivo. Por el contrario, se comportan como una **lumpenburguesía**: una clase subordinada y dependiente de los intereses de las metrópolis financieras del Centro. Al invertir sus capitales fuera del territorio nacional (en activos financieros de EE. UU. o Europa, o en importaciones de bienes suntuarios de lujo), facilitan y aceleran el drenaje de riqueza nacional. Esto impide la acumulación interna de capital indispensable para superar el atraso tecnológico, perpetuando una estructura económica especializada, desarticulada y dependiente que solo beneficia al capital transnacional.
+
+#### Pregunta 3
+**Imagine que un economista del World Bank propone la misma política de desregulación financiera para Switzerland y para un país con alta informalidad como Peru. ¿Cómo aplicaría la crítica de Albert Hirschman a la tesis de la mono-economía para cuestionar esta propuesta?**
+
+*Corrección Fundamentada:* La propuesta se cuestiona basándose en la crítica de Albert Hirschman contra la tesis de la "mono-economía", que erróneamente asume que las leyes del mercado operan de manera uniforme e idéntica en cualquier sociedad. Hirschman argumenta que los países periféricos presentan una **heterogeneidad estructural** y un nivel de informalidad que no existe en el Centro. La receta universal de desregulación financiera falla porque ignora que las leyes del mercado financiero no operan igual en una estructura altamente informal y productivamente desarticulada como la de Perú en comparación con una economía homogénea y altamente institucionalizada como la de Suiza. Por lo tanto, el país periférico requiere políticas e instrumentos específicos para sus propias problemáticas y asimetrías estructurales.
+
+#### Pregunta 4
+**Explique tres mecanismos con un ejemplo real de cómo se pierde el excedente económico de la periferia.**
+
+*Corrección Fundamentada:*
+
+1. **Deterioro de los Términos de Intercambio (Tesis Prebisch-Singer):** Consiste en exportar un volumen físico creciente de materias primas para poder importar la misma cantidad de manufacturas y tecnología de punta. *Ejemplo real:* Ecuador exporta millones de toneladas de banano y petróleo crudo, cuyos precios reales tienden a la baja en el largo plazo, a cambio de importar maquinaria pesada y tecnología extranjera que incrementan su precio constantemente.
+2. **Repatriación de Utilidades:** Fuga de las ganancias generadas localmente por empresas transnacionales hacia sus casas matrices situadas en el Centro, lo que reduce los recursos disponibles para la reinversión interna. *Ejemplo real:* Las empresas petroleras o de consumo masivo que operan en territorio nacional remiten anualmente sus dividendos netos a sus sedes corporativas en Europa o Norteamérica, limitando el financiamiento de la diversificación industrial local.
+3. **Financierización y Pago de la Deuda Externa:** Drenaje sistemático de divisas de la economía periférica a través del pago continuo de amortizaciones e intereses de la deuda externa a bancos y acreedores internacionales. *Ejemplo real:* El porcentaje considerable del Presupuesto General del Estado ecuatoriano que se destina al servicio de deuda externa pública limita directamente la inversión fiscal en infraestructura y capital humano.
+
+## Referencias
+
+::: {#refs}
+:::
