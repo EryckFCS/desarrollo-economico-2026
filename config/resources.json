@@ -14,6 +14,16 @@
       "id": "kor_audit_final",
       "local_path": "docs/vaults/u1-aa-01-economic-audit/data/processed/kor_audit_final.dta",
       "lake_path": "/home/erick-fcs/.capital/lake/raw_data/kor_audit_final.dta"
+    },
+    {
+      "id": "personas_2025_anual",
+      "local_path": "docs/vaults/u3-ape-01-proyecto_final/data/personas_2025_anual.parquet",
+      "lake_path": "/home/erick-fcs/.capital/lake/raw_data/personas_2025_anual.parquet"
+    },
+    {
+      "id": "vivienda_2025_anual",
+      "local_path": "docs/vaults/u3-ape-01-proyecto_final/data/vivienda_2025_anual.parquet",
+      "lake_path": "/home/erick-fcs/.capital/lake/raw_data/vivienda_2025_anual.parquet"
     }
   ],
   "bibliography": [
