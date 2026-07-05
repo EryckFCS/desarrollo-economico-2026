@@ -13,58 +13,102 @@ format:
     toc-float: true
     code-fold: show
 ---
+# 1. Introducción
 
-# Apartado 1: Medición de la Desigualdad mediante el Coeficiente de Gini
+## 2.1. Objetivo general
+Analizar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante el cálculo de indicadores socioeconómicos, con el fin de sugerir políticas públicas que contribuyan al bienestar de la población.
 
-La medición de la desigualdad económica es un componente crítico para comprender los determinantes de la doble informalidad en el Ecuador. Para la provincia de **Pichincha**, utilizando la base anualizada y acumulada de la **ENEMDU 2025**, estimamos la concentración del ingreso per cápita del hogar.
+## 2.2. Objetivos específicos
+* Evaluar la desigualdad económica en la provincia de Pichincha mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini y el índice de Theil, con el fin de identificar el nivel de concentración del ingreso en la distribución económica provincial.
+* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de reconocer las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
+* Determinar el grado de desarrollo humano en la provincia de Pichincha mediante el cálculo del Índice de Desarrollo Humano y el Índice de Desarrollo Humano modificado, con el fin de analizar las condiciones de bienestar de la población en términos de salud, educación e ingresos.
 
-## Metodología y Formulación Matemática
+# 3. Metodología
 
-El Coeficiente de Gini se calcula a partir de los microdatos expandidos utilizando la formulación ponderada de Brown. Sea $Y = (y_1, y_2, \dots, y_n)$ el vector de ingresos ordenado de forma ascendente ($y_1 \le y_2 \le \dots \le y_n$) y $W = (w_1, w_2, \dots, w_n)$ el vector de factores de expansión asociados (ponderaciones poblacionales).
+## 3.1. Metodología - Objetivo 1 
 
-Definimos las proporciones acumuladas de población ($p_i$) e ingresos ($q_i$) para cada observación $i$ como:
+### Curva de Lorenz
+La curva de Lorenz describe la relación entre los porcentajes acumulados de población y los porcentajes acumulados de ingreso, considerando a los individuos u hogares ordenados en forma ascendente según su nivel de renta y agrupados en intervalos de igual tamaño, usualmente deciles (Tezanos Vázquez, Quiñones Montellano, Gutierrez Sobrao, & Madrueño Aguilar, 2013). 
 
-$$p_i = \frac{\sum_{j=1}^{i} w_j}{\sum_{j=1}^{N} w_j}$$
+Para construirla se calculan las frecuencias relativas simples y acumuladas de la población y del ingreso en cada intervalo y se grafican las proporciones acumuladas de ambas variables en un sistema cartesiano en el que la curva nace en el origen y se compara con la diagonal de equidad perfecta, de modo que cuanto más se aleja de dicha diagonal mayor es la desigualdad observada (Tezanos Vázquez et al., 2013). Cuando se dispone de datos ordenados por deciles, la forma discreta estándar de la curva se obtiene definiendo la proporción acumulada de población $X_k$ y la proporción acumulada de ingreso $Y_k$ para cada decil $k$ como:
 
-$$q_i = \frac{\sum_{j=1}^{i} w_j y_j}{\sum_{j=1}^{N} w_j y_j}$$
+$$
+X_k = \frac{k}{n} \tag{1}
+$$
 
-El Coeficiente de Gini ponderado está dado por la relación:
+$$
+Y_k = \frac{\sum_{j=1}^{k} y_j}{\sum_{j=1}^{n} y_j} \tag{2}
+$$
 
-$$\text{Gini} = 1 - \sum_{i=1}^{N} f_i \left( q_i + q_{i-1} \right)$$
+donde $n$ es el número total de deciles e $y_j$ representa el ingreso del decil $j$; estas expresiones permiten trazar la curva de Lorenz empírica y constituyen la base para derivar indicadores sintéticos de concentración como el coeficiente de Gini en la práctica estadística aplicada del Instituto Nacional de Estadística y Censos (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013).
 
-Donde $f_i = p_i - p_{i-1} = \frac{w_i}{\sum_{j=1}^{N} w_j}$ representa la fracción de población que aporta la observación $i$, con $q_0 = 0$.
+### Coeficiente de Gini 
+El coeficiente de Gini es un índice sintético de desigualdad que resume la forma en que se distribuye una variable de bienestar, típicamente el ingreso o el gasto, entre los individuos o los hogares de una población en un periodo dado, sin utilizar como referencia directa el ingreso medio de la distribución sino la geometría de la curva de Lorenz (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez, Quiñones Montellano, Gutierrez Sobrao, & Madrueño Aguilar, 2013). Se interpreta en una escala continua entre cero y uno, donde el valor cero representa igualdad perfecta, con una curva de Lorenz que coincide con la diagonal de equidistribución y un área de concentración nula, mientras que el valor uno refleja desigualdad máxima, en la que todo el ingreso se concentra en un solo individuo y la curva de Lorenz se confunde con los ejes del diagrama (Instituto Nacional de Estadística y Censos, 2008).
 
-## Tratamiento y Sanitización de Microdatos
+La definición geométrica estándar establece que el coeficiente de Gini se calcula como el cociente entre el área comprendida entre la diagonal de equidistribución y la curva de Lorenz y el área total bajo dicha diagonal, de modo que a mayor área relativa mayor concentración del ingreso (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013). Cuando se dispone de datos tabulados en estratos de ingreso, como deciles, una forma discreta usual empleada en la práctica estadística ecuatoriana se expresa como:
 
-Para garantizar estimaciones insesgadas y consistentes con los estándares del Instituto Nacional de Estadística y Censos (INEC), aplicamos el siguiente protocolo en la base de datos:
+$$
+G = \frac{2}{N^2 \mu} \sum_{i=1}^{N} i Y_i - \frac{N + 1}{N} \tag{3}
+$$
 
-1. **Filtro Geográfico:** Se seleccionó a la población residente en la provincia de Pichincha filtrando por la variable de localización `ciudad` (código de provincia `17`).
-2. **Tratamiento de Valores Nulos:** Se eliminaron de forma estricta las observaciones con valores perdidos (`missing`) en la variable de ingreso per cápita del hogar (`ingpc`).
-3. **Depuración de Ingresos Negativos:** Se removieron los valores menores a cero (`ingpc < 0`) para evitar distorsiones matemáticas en los denominadores acumulativos de la curva.
-4. **Representatividad Muestral:** La muestra final sanitizada consta de **46,728 registros válidos**, con una población expandida total de **3'375,369.56 habitantes**.
+donde $i$ indexa las personas o grupos de personas, $N$ es el número de estratos de ingreso considerados, $\mu$ es el ingreso medio de la población y $Y_i$ representa el ingreso del estrato $i$, fijando $N = 10$ cuando el cálculo se realiza por deciles (Instituto Nacional de Estadística y Censos, 2008). Una formulación equivalente que trabaja directamente sobre la curva de Lorenz discreta, ampliamente utilizada en la literatura técnica del INEC, se define como:
 
-## Resultados del Coeficiente de Gini
+$$
+G = \left| 1 - \sum_{k=1}^{n} (X_{k+1} - X_k)(Y_{k+1} + Y_k) \right| \tag{4}
+$$
 
-La estimación arrojó un **Coeficiente de Gini de 0.4532**. Este resultado refleja una moderada concentración del ingreso en la provincia de Pichincha y sirve como línea base para los modelos econométricos multivariantes.
+donde $X_k$ y $Y_k$ corresponden a las proporciones acumuladas de población e ingreso definidas a partir de la curva de Lorenz, y la suma recorre los intervalos de la partición de la distribución empírica; esta expresión relaciona de manera directa la geometría de la curva con el valor del coeficiente de Gini y permite su cálculo consistente a partir de datos agrupados (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013).
 
----
 
-# Apartado 2: Construcción y Visualización de la Curva de Lorenz
+### Índice de Theil
+El índice de Theil es una medida de desigualdad basada en el concepto de entropía que compara el ingreso relativo de todos los individuos ponderado por la población o por el ingreso, en lugar de contrastar solo el ingreso de un individuo frente al de otro seleccionado aleatoriamente, lo que permite capturar de forma más rica las diferencias en la distribución del ingreso (Tezanos Vázquez, Quiñones Montellano, Gutierrez Sobrao, & Madrueño Aguilar, 2013). Su principal ventaja es que no presenta un límite superior fijo y posee la propiedad de descomponerse entre grupos poblacionales y entre fuentes de ingreso, de modo que puede distinguir cuánto de la desigualdad total proviene de diferencias entre grupos y cuánto de las disparidades internas dentro de cada grupo (Tezanos Vázquez et al., 2013).
 
-La Curva de Lorenz es la representación gráfica de la función de distribución acumulada de ingresos. Permite contrastar visualmente la distribución observada frente a una distribución hipotética de igualdad perfecta.
+En su formulación estándar, el índice de Theil se define sobre una población de $N$ individuos con ingresos $y_i$ y un ingreso medio $\bar{y}$ como:
 
-## Puntos de la Curva de Lorenz
+$$
+T = \frac{1}{N} \sum_{i=1}^{N} \frac{y_i}{\bar{y}} \ln\left(\frac{y_i}{\bar{y}}\right) \tag{5}
+$$
 
-Los puntos acumulados $(p_i, q_i)$ representan la proporción de ingresos acumulados obtenidos por el percentil de población correspondiente. La diagonal de $45^\circ$ que conecta los puntos $(0,0)$ y $(1,1)$ representa la **Línea de Igualdad Perfecta** (donde el $x\%$ de la población percibe exactamente el $x\%$ del ingreso total).
+donde cada término $\frac{y_i}{\bar{y}} \ln\left(\frac{y_i}{\bar{y}}\right)$ refleja la contribución del individuo $i$ a la desigualdad agregada en función de su distancia relativa respecto del ingreso medio; cuando todos los individuos tienen el mismo ingreso $y_i = \bar{y}$ el valor de $T$ es igual a cero, indicando igualdad perfecta, y a medida que aumenta la dispersión de los ingresos en torno a $\bar{y}$ el índice crece y registra mayores niveles de desigualdad (Tezanos Vázquez et al., 2013). Esta estructura aditiva y su interpretación en términos de entropía hacen del índice de Theil una herramienta especialmente útil para analizar la desigualdad interpersonal y su descomposición territorial o sectorial en estudios de desarrollo humano y pobreza (Tezanos Vázquez et al., 2013).
 
-## Consistencia y Validación Interplataforma
+## 3.2. Metodología - Objetivo 2
 
-Para asegurar la reproducibilidad y robustez de los cálculos en el pipeline institucional, se generaron las visualizaciones de la curva de Lorenz de manera independiente en **Python** (a través de `matplotlib` y cargando datos en formato `Parquet`) y en **Stata** (a través de `twoway` y cargando datos en formato `DTA`). Ambos análisis producen curvas idénticas con un coeficiente de Gini coincidente a 4 decimales (**0.4532**).
+### Índice de Pobreza Multidimensional (IPM)
+La pobreza multidimensional mide la privación en múltiples dimensiones del bienestar, no solo la falta de ingresos, y clasifica como pobres a quienes experimentan simultáneamente varias carencias significativas.
 
-::: {layout-ncol=2}
-![Curva de Lorenz generada en Python](../assets/curva_lorenz_2025.png){#fig-python width=90%}
+### Cálculo del IPM
+[Insertar ecuaciones y desarrollo del IPM]
 
-![Curva de Lorenz generada en Stata](../assets/curva_lorenz_2025_stata.png){#fig-stata width=90%}
-:::
+### Índice de Pobreza Multidimensional Modificado
+[Insertar ecuaciones y desarrollo del IPM Modificado]
 
-Ambas gráficas confirman una distribución coherente donde el área de concentración (el espacio entre la diagonal de igualdad perfecta y la curva observada) es idéntica en ambas plataformas analíticas.
+### Pobreza por ingresos 
+La pobreza por ingresos es un indicador ampliamente utilizado para medir el bienestar económico de la población, ya que permite identificar a las personas cuyos ingresos no son suficientes para cubrir sus necesidades básicas. La pobreza por ingresos se determina comparando el ingreso per cápita del hogar con una línea de pobreza establecida oficialmente. El análisis de este indicador es fundamental porque permite conocer la magnitud de la pobreza y proporciona información para el diseño de políticas públicas orientadas a mejorar las condiciones de vida de la población.
+
+### Cálculo de pobreza por ingresos
+[Insertar ecuaciones y desarrollo del cálculo]
+
+## 3.3. Metodología - Objetivo 3
+
+### Índice de Desarrollo Humano (IDH) 
+El Índice de Desarrollo Humano (IDH) es una herramienta fundamental dentro del análisis socioeconómico mundial, la cual fue diseñada para medir el bienestar y el progreso de los países ya que este se centra más allá de los simples indicadores económicos como el Producto Interno Bruto (PIB). A diferencia de las métricas tradicionales centradas únicamente en la producción económica, el IDH considera factores esenciales que reflejan la calidad de vida de las personas, como la educación, la esperanza de vida y el ingreso per cápita.
+
+### IDH ajustado 
+[Insertar ecuaciones y desarrollo del IDH ajustado]
+
+### Pobreza por ingresos (Duplicado Estructura original)
+La pobreza por ingresos es un indicador ampliamente utilizado para medir el bienestar económico de la población, ya que permite identificar a las personas cuyos ingresos no son suficientes para cubrir sus necesidades básicas. La pobreza por ingresos se determina comparando el ingreso per cápita del hogar con una línea de pobreza establecida oficialmente. El análisis de este indicador es fundamental porque permite conocer la magnitud de la pobreza y proporciona información para el diseño de políticas públicas orientadas a mejorar las condiciones de vida de la población.
+
+### Cálculo de pobreza por ingresos
+[Insertar ecuaciones y desarrollo del cálculo]
+
+# Conclusiones
+
+[Insertar texto de conclusiones]
+
+# Bibliografía
+
+* Añazco, R. C., y Pérez, F. J. (2016). Medición de la pobreza multidimensional in Ecuador. *Revista de Estadística y Metodología*, 27-51. <https://www.ecuadorencifras.gob.ec/documentos/web-inec/Sitios/Pobreza_Multidimensional/assets/ipm-metodologia-oficial.pdf>
+* Tezanos Vázquez, S. (Coord.), Quiñones Montellano, A., Gutierrez Sobrao, D., & Madrueño Aguilar, R. (2013). *Desarrollo humano, pobreza y desigualdades*. Cátedra de Cooperación Internacional y con Iberoamérica, Universidad de Cantabria. <https://www.ciberoamericana.com/pdf/MANUAL1.pdf>
+* Instituto Nacional de Estadística y Censos. (2008). *Medidas de pobreza y extrema pobreza por ingresos. Resumen Ejecutivo*. <https://www.ecuadorencifras.gob.ec/documentos/web-inec/POBREZA/Metodologia+de+pobreza+por+ingresos.pdf>
+

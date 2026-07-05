@@ -1,0 +1,9 @@
+# 2. Objetivos
+
+## 2.1. Objetivo general
+Analizar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante el cálculo de indicadores socioeconómicos, con el fin de sugerir políticas públicas que contribuyan al bienestar de la población.
+
+## 2.2. Objetivos específicos
+* Evaluar la desigualdad económica en la provincia de Pichincha mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini y el índice de Theil, con el fin de identificar el nivel de concentración del ingreso en la distribución económica provincial.
+* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de reconocer las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
+* Determinar el grado de desarrollo humano en la provincia de Pichincha mediante el cálculo del Índice de Desarrollo Humano y el Índice de Desarrollo Humano modificado, con el fin de analizar las condiciones de bienestar de la población en términos de salud, educación e ingresos.

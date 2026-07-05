@@ -1,0 +1,95 @@
+{
+  "metodologia": "Análisis de desigualdad v2 — bootstrap 1000 réplicas, semilla=42",
+  "estimaciones_base": {
+    "gini": 0.4532304642857612,
+    "theil_l_ge0": 0.36355204017011533,
+    "ingreso_medio": 338.0914884795629
+  },
+  "bootstrap_1000_replicas": {
+    "semilla": 42,
+    "gini_se": 0.002749197240209407,
+    "gini_ic95_low": 0.44789023915448595,
+    "gini_ic95_up": 0.45842234033401996,
+    "theil_se": 0.004657576457044865,
+    "theil_ic95_low": 0.35455155991420234,
+    "theil_ic95_up": 0.37290509206912553
+  },
+  "deciles_directos": [
+    {
+      "decil": 1,
+      "ingreso_promedio": 57.54644923962993,
+      "participacion_pct": 1.7019279425047267,
+      "participacion_acumulada_pct": 1.7019279425047267
+    },
+    {
+      "decil": 2,
+      "ingreso_promedio": 105.69911693825505,
+      "participacion_pct": 3.117505424987563,
+      "participacion_acumulada_pct": 4.819433367492289
+    },
+    {
+      "decil": 3,
+      "ingreso_promedio": 137.90104247270924,
+      "participacion_pct": 4.0794455363481665,
+      "participacion_acumulada_pct": 8.898878903840455
+    },
+    {
+      "decil": 4,
+      "ingreso_promedio": 172.9911199700306,
+      "participacion_pct": 5.130738628281901,
+      "participacion_acumulada_pct": 14.029617532122355
+    },
+    {
+      "decil": 5,
+      "ingreso_promedio": 210.7747785037607,
+      "participacion_pct": 6.232860864462206,
+      "participacion_acumulada_pct": 20.262478396584562
+    },
+    {
+      "decil": 6,
+      "ingreso_promedio": 257.9024003224359,
+      "participacion_pct": 7.625673949060515,
+      "participacion_acumulada_pct": 27.88815234564508
+    },
+    {
+      "decil": 7,
+      "ingreso_promedio": 315.93973036416173,
+      "participacion_pct": 9.349605507909029,
+      "participacion_acumulada_pct": 37.23775785355411
+    },
+    {
+      "decil": 8,
+      "ingreso_promedio": 400.8501836261056,
+      "participacion_pct": 11.856276357089259,
+      "participacion_acumulada_pct": 49.094034210643365
+    },
+    {
+      "decil": 9,
+      "ingreso_promedio": 549.5150648138879,
+      "participacion_pct": 16.25222204467024,
+      "participacion_acumulada_pct": 65.3462562553136
+    },
+    {
+      "decil": 10,
+      "ingreso_promedio": 1171.4512806821735,
+      "participacion_pct": 34.65374374468511,
+      "participacion_acumulada_pct": 99.99999999999872
+    }
+  ],
+  "ratio_d10_d1": 20.361463537454593,
+  "sensibilidad_winsor_p99": {
+    "p99_umbral": 2163.8449999999993,
+    "gini_winsorizado": 0.4413170774807469,
+    "delta_gini": -0.011913386805014303,
+    "theil_winsorizado": 0.34413727320717874,
+    "delta_theil": -0.01941476696293659,
+    "ratio_d10_d1_winsorizado": 19.102189080858423
+  },
+  "sensibilidad_ingpc_hogar": {
+    "nota": "ingreso per cápita del hogar = ingrl / miembros",
+    "gini_ingpc_hh": 0.7577552143731205,
+    "delta_gini": 0.30452475008735935,
+    "theil_ingpc_hh": 1.1729222265943218,
+    "delta_theil": 0.8093701864242064
+  }
+}

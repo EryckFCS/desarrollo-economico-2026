@@ -1,0 +1,5 @@
+# Recomendaciones
+
+1. **Reorientación de la Política Pública Territorial:** Priorizar las intervenciones destinadas a mejorar las condiciones del mercado laboral, la formalización del empleo y el fortalecimiento de redes de seguridad social en Pichincha, reconociendo que la vulnerabilidad de la provincia está determinada principalmente por factores monetarios y de volatilidad del ingreso.
+2. **Adopción de Indicadores de Entropía y Distribución:** Incorporar el índice de Theil L y el IDH Ajustado por Desigualdad de forma sistemática dentro del instrumental de planificación del Gobierno Autónomo Descentralizado de Pichincha para evaluar de manera integral el impacto distributivo de la inversión pública local.
+3. **Gobernanza de Datos y Transparencia Metodológica:** Promover la adopción de protocolos de ciencia abierta y marcos analíticos reproducibles en las oficinas estadísticas de planificación territorial para asegurar la consistencia y auditabilidad pública en el monitoreo de indicadores de bienestar social.

@@ -1,0 +1,56 @@
+{
+  "n_pichincha_total": 46728,
+  "n_ingpc_notna": 46463,
+  "n_ingpc_ge0": 46463,
+  "n_ingpc_gt0": 46463,
+  "n_ceros": 0,
+  "pop_ceros": 0.0,
+  "base_canonica": "ingpc > 0",
+  "gini_base": 0.4532304642857612,
+  "theil_base": 0.36355204017011533,
+  "bootstrap_iid_1000": {
+    "semilla": 42,
+    "n_obs": 46463,
+    "gini_se": 0.002749197240209407,
+    "gini_ci95": [
+      0.44789023915448595,
+      0.45842234033401996
+    ],
+    "theil_se": 0.004657576457044865,
+    "theil_ci95": [
+      0.35455155991420234,
+      0.37290509206912553
+    ],
+    "advertencia": "IID sin conglomerados; IC conservadores pero subestiman varianza de diseño complejo"
+  },
+  "sensibilidad_winsor": [
+    {
+      "escenario": "Base (sin wins.)",
+      "gini": 0.4532304642857612,
+      "theil": 0.36355204017011533,
+      "palma": 2.470041942721642,
+      "ratio_d10_d1": 20.361463537454593
+    },
+    {
+      "escenario": "P95 ($1,135.00)",
+      "gini": 0.4147175053875781,
+      "theil": 0.30665381143230164,
+      "palma": 1.9901020846312,
+      "ratio_d10_d1": 16.405142897039894
+    },
+    {
+      "escenario": "P97.5 ($1,517.22)",
+      "gini": 0.42980259254013,
+      "theil": 0.32716195446473767,
+      "palma": 2.173599223646332,
+      "ratio_d10_d1": 17.917777253834256
+    },
+    {
+      "escenario": "P99 ($2,163.84)",
+      "gini": 0.4413170774807469,
+      "theil": 0.34413727320717874,
+      "palma": 2.317279803621527,
+      "ratio_d10_d1": 19.102189080858423
+    }
+  ]
+}

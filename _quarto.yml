@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "!docs/vaults/u2-aa-02-section-profiling/index.qmd"
+    - "!docs/vaults/u1-aa-03-autonomous-task/chapters/*.qmd"
+    - "!docs/vaults/u2-aa-02-section-profiling/tarea/notes/*.qmd"
 
 website:
   title: "Economic Development - Federated Node"

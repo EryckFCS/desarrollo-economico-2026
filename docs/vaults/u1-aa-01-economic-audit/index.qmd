@@ -14,7 +14,7 @@ format:
     number-sections: true
     theme: cosmo
   docx:
-    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/writing/templates/Plantilla presentación trabajos.docx"
+    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/writing/templates/Plantilla_presentacion_trabajos.docx"
   pdf:
     toc: true
     number-sections: true

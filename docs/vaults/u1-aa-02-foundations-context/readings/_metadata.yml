@@ -5,6 +5,7 @@ faculty: FACULTAD JURÍDICA, SOCIAL Y ADMINISTRATIVA
 school: CARRERA DE ECONOMÍA
 course: DESARROLLO ECONÓMICO
 professor: Econ. Maria Gabriela Moreno Hurtado
+assignment: "Trabajo de Lectura y Análisis"
 
 format:
   html:
@@ -13,3 +14,6 @@ format:
       - ../../../../style/custom_theme.scss
   pdf:
     template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    header-includes: |
+      \newcommand{\logoUNL}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_unl.png}
+      \newcommand{\logoECONOMIA}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_economia.jpg}

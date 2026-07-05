@@ -1,0 +1,7 @@
+Qué hacer con el bootstrap: sí es defendible mantenerlo
+
+El bootstrap es distinto porque no es un indicador adicional sino un método de estimación de incertidumbre para los indicadores que sí están en tu objetivo (Gini y Theil). Tu objetivo dice "calcular" estos índices, y reportar su error estándar e intervalos de confianza es parte constitutiva de una estimación estadística seria, no una desviación del objetivo — es la forma correcta de "hacerlo bien", no de "hacer algo distinto". Por eso el bootstrap sí merece estar en tu metodología (aunque hasta ahora no lo estaba), pero no como un indicador nuevo, sino como el procedimiento de inferencia que usaste para los indicadores que ya estaban comprometidos en el objetivo.
+
+Qué hacer con el Palma: dos caminos válidos
+
+Tienes dos opciones limpias, y ambas son defendibles ante un comité o revisor, la diferencia es solo de alcance declarado. La primera opción es eliminarlo del cuerpo de resultados y limitarte estrictamente a Lorenz, Gini y Theil tal como están redactados en tu objetivo específico 1, que es la opción más segura si tu comité es estricto con la correspondencia literal objetivo-resultado. La segunda opción, si el Palma te parece valioso, es modificar la redacción del objetivo específico 1 para que diga algo como "...mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini, el índice de Theil y otros indicadores complementarios de concentración del ingreso...", lo cual te da cobertura formal para incluir el Palma sin que se vea como un añadido oportunista fuera de guion.

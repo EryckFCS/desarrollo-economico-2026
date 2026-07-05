@@ -1,0 +1,55 @@
+# Anexos
+
+**Figura 5**
+
+*Diagrama de flujo del procesamiento metodológico y estimación de indicadores socioeconómicos*
+
+```{mermaid}
+graph TB
+    subgraph F1["FASE I · Ingesta e Integración"]
+        A1["Microdatos de Personas<br/>ENEMDU 2025"]
+        A2["Microdatos de Vivienda<br/>ENEMDU 2025"]
+        B["Cruce y Consistencia de Hogares<br/>id_vivienda · id_hogar · periodo"]
+        A1 --> B
+        A2 --> B
+    end
+
+    subgraph F2["FASE II · Normalización y Filtro Territorial"]
+        C["Delimitación Geográfica<br/>Código DPA 17 · Pichincha"]
+        D["Filtro de Calidad<br/>ingpc ≥ 0 · fexp > 0"]
+        B --> C --> D
+    end
+
+    subgraph F3["FASE III · Estimación de Indicadores"]
+        E["Pobreza Monetaria FGT-0<br/>Líneas oficiales 89.85 / 50.63 USD"]
+        F["Desigualdad Distributiva<br/>Gini · Theil L · Curva de Lorenz"]
+        G["IPM Alkire-Foster<br/>ci ponderado · umbral k ≥ 0.33"]
+        H["Desarrollo Humano<br/>IDH y IDH ajustado por desigualdad"]
+        D --> E
+        D --> F
+        D --> G
+        D --> H
+    end
+
+    subgraph F4["FASE IV · Consolidación y Reporte"]
+        I["Integración de Indicadores<br/>JSON · CSV · Excel"]
+        J["Reporte Científico<br/>Quarto Engine"]
+        E --> I
+        F --> I
+        G --> I
+        H --> I
+        I --> J
+    end
+
+    classDef fase1 fill:#E8F0FE,stroke:#1A56DB,stroke-width:2px,color:#1A237E
+    classDef fase2 fill:#E6F4EA,stroke:#1E8E3E,stroke-width:2px,color:#0D3B1F
+    classDef fase3 fill:#FEF3E0,stroke:#E37400,stroke-width:2px,color:#7A3E00
+    classDef fase4 fill:#FCE8E6,stroke:#C5221F,stroke-width:2px,color:#5C0F0D
+
+    class A1,A2,B fase1
+    class C,D fase2
+    class E,F,G,H fase3
+    class I,J fase4
+```
+
+*Nota.* Diagrama metodológico detallado que describe secuencialmente las fases de ingesta, consistencia, estimación de modelos y consolidación de indicadores de pobreza, desigualdad y desarrollo humano.

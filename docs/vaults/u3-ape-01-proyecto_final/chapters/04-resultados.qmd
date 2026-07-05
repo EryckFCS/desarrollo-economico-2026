@@ -1,0 +1,147 @@
+# 4. Resultados y Análisis
+
+**Tabla 1**
+
+*Indicadores socioeconómicos consolidados para la provincia de Pichincha en el año 2025*
+
+| Indicador | Estimación Puntual | Error Estándar | Intervalo de Confianza (95%) | Detalle / Parámetros |
+| :--- | :---: | :---: | :---: | :--- |
+| **Pobreza por Ingresos (Incidencia)** | **10.82%** | 0.28% | [10.28%, 11.35%] | Línea de Pobreza: \$89.85 USD (INEC, 2025) |
+| **Extrema Pobreza por Ingresos** | **3.49%** | 0.16% | [3.17%, 3.80%] | Línea de Extrema Pobreza: \$50.63 USD (INEC, 2025) |
+| **Coeficiente de Gini** | **0.4532** | 0.0027 | [0.4479, 0.4584] | Bootstrap IID 1 000 réplicas, método percentil (cota inferior) |
+| **Índice de Theil L (GE(0))** | **0.3636** | 0.0047 | [0.3546, 0.3729] | Bootstrap IID 1 000 réplicas, método percentil (cota inferior) |
+| **Incidencia de IPM Oficial ($H$)** | **7.26%** | 0.40% | [6.47%, 8.05%] | Umbral de pobreza $c_i \ge 33.33\%$ (12 ind) |
+| **Intensidad del IPM ($A$)** | **37.02%** | *n/d* (1) | *n/d* (1) | Promedio de privaciones de los pobres |
+| **IPM Oficial Ajustado ($M_0$)** | **0.0269** | *n/d* (2) | *n/d* (2) | Estimación combinada ($M_0 = H \times A$) |
+| **Índice de Desarrollo Humano (IDH Proxy)** | **0.7096** | *n/d* (3) | *n/d* (3) | Salud (Afiliación), Educ., Ingresos |
+| **IDH Proxy Ajustado por Desigualdad (IDH-D)** | **0.5450** | *n/d* (3) | *n/d* (3) | Penalización por desigualdad: 23.19% |
+
+*Nota.* Estimaciones obtenidas a partir de los microdatos expandidos de la ENEMDU Acumulada Anual 2025 del INEC.
+*(1) La intensidad media de privaciones ($A$) se calcula directamente como el promedio ponderado de privaciones entre los identificados como pobres multidimensionales.*
+*(2) El IPM Oficial Ajustado ($M_0$) es el producto de la incidencia ($H$) y la intensidad media de privaciones ($A$). Su variabilidad se deriva de ambos componentes agregados.*
+*(3) El IDH y su versión corregida por desigualdad (IDH-D) corresponden a un ejercicio proxy desarrollado a partir de microdatos de hogares de la ENEMDU. El componente de salud utiliza afiliación médica como proxy, reflejando formalidad de empleo en vez de esperanza de vida real, lo que invalida su comparación directa con las series oficiales del PNUD.*
+
+---
+
+## 4.1. Resultados del Objetivo 1: Desigualdad Económica y Concentración del Ingreso
+
+La base de análisis comprende **46 463 observaciones** con `ingpc` no nulo de las 46 728 de Pichincha en la ENEMDU Acumulada Anual 2025. Las **265 observaciones excluidas** corresponden exclusivamente a registros con valor perdido en la variable de ingreso per cápita; no existen ceros ni valores negativos en la muestra resultante. La población expandida asciende a 3 375 370 personas, con ingreso per cápita medio de **$338.09 USD/mes**.
+
+Los intervalos de confianza al 95% se estimaron mediante bootstrap con **1 000 réplicas** (muestreo con reposición, semilla = 42, método de percentiles). El procedimiento es bootstrap IID sobre observaciones individuales, sin respetar los conglomerados (UPMs) del diseño bietápico de la ENEMDU; en consecuencia, los IC deben interpretarse como **cotas inferiores de la incertidumbre real** —el error estándar bajo diseño complejo sería mayor. Los resultados se reportan en la Tabla 1.
+
+### 4.1.1. Distribución Decílica del Ingreso
+
+Los deciles se calcularon por **agrupación directa ponderada**: observaciones ordenadas por `ingpc` ascendente y asignadas al decil según la décima parte de la masa poblacional acumulada $W_{total}/10$, promediando el ingreso dentro de cada grupo.
+
+**Tabla 2**
+
+*Distribución decílica del ingreso per cápita mensual en la provincia de Pichincha, 2025*
+
+| Decil | Ingreso Promedio (USD/mes) | Participación (%) | Acumulada (%) |
+| :---: | :---: | :---: | :---: |
+| D1 | $57.55 | 1.70 | 1.70 |
+| D2 | $105.70 | 3.12 | 4.82 |
+| D3 | $137.90 | 4.08 | 8.90 |
+| D4 | $172.99 | 5.13 | 14.03 |
+| D5 | $210.77 | 6.23 | 20.26 |
+| D6 | $257.90 | 7.63 | 27.89 |
+| D7 | $315.94 | 9.35 | 37.24 |
+| D8 | $400.85 | 11.86 | 49.09 |
+| D9 | $549.52 | 16.25 | 65.35 |
+| D10 | $1,171.45 | 34.65 | 100.00 |
+| **Total** | **$338.09** | **100.00** | — |
+
+*Nota.* $n = 46\,463$ (ingresos no nulos); 265 registros con `ingpc = NaN` excluidos. Fuente: elaboración propia, ENEMDU Acumulada Anual 2025, INEC.
+
+**Figura 1**
+
+*Curva de Lorenz de la concentración del ingreso en la provincia de Pichincha para el año 2025*
+
+![Curva de Lorenz - Pichincha 2025](assets/curva_lorenz_2025.png)
+
+*Nota.* $G = 0.4532$; $IC_{95\%}$ bootstrap IID 1 000 réplicas: [0.4479, 0.4584] (cota inferior). Fuente: elaboración propia, ENEMDU Acumulada Anual 2025, INEC.
+
+**Figura 2**
+
+*Distribución del ingreso acumulado y participación por deciles en la provincia de Pichincha para el año 2025*
+
+![Participación por Deciles de Ingreso](assets/distribucion_ingreso_deciles.png)
+
+*Nota.* D10 concentra el 34.65% del ingreso provincial; D1, el 1.70%.
+
+### 4.1.2. Ratio de Concentración Decílica y Contextualización Nacional
+
+El ratio D10/D1 —cociente entre la participación en el ingreso de D10 y D1— se deriva directamente de la Tabla 2:
+
+$$\text{Ratio}_{D10/D1} = \frac{34.65\%}{1.70\%} = 20.36\times$$
+
+El decil superior capta 20.36 veces más ingreso provincial que el inferior.
+
+El Gini de Pichincha ($G = 0.4532$, $IC_{95\%}$: [0.4479, 0.4584]) se sitúa por debajo del Gini nacional del INEC para diciembre 2025 (**0.470**) y próximo al promedio urbano (**0.451**). La diferencia de 0.017 puntos supera el $SE$ provincial (0.0027), pero sin el $SE$ del Gini nacional no es posible una prueba estadística formal. En términos descriptivos, Pichincha presenta menor desigualdad que el promedio nacional, consistente con su mayor concentración de empleo formal.
+
+### 4.1.3. Gini versus Theil L
+
+El **Gini** ($G = 0.4532$; $IC_{95\%}$: [0.4479, 0.4584]) pondera más las transferencias en los deciles centrales (D4–D7). El **Theil L** ($GE(0) = 0.3636$; $IC_{95\%}$: [0.3546, 0.3729]) pondera más las distancias en la cola inferior y, a diferencia del Gini, es descomponible de forma exacta en varianza *entre grupos* e *intra-grupos* (Bourguignon, 1979; Tezanos et al., 2013). Una descomposición por área (urbano/rural) o nivel educativo —fuera del alcance de este ejercicio— permitiría cuantificar qué fracción de la desigualdad total obedece a brechas estructurales entre grupos.
+
+### 4.1.4. Análisis de Sensibilidad
+
+La distribución presenta asimetría pronunciada: media = $338.09; mediana < $211 (D5); P99 = $2 163.84. Se ejecutaron winsorizaciones reales a P95, P97.5 y P99 para construir un gradiente de sensibilidad, conservando el tamaño muestral y los pesos poblacionales en todos los escenarios.
+
+**Tabla 3**
+
+*Gradiente de sensibilidad de indicadores de desigualdad ante winsorización, Pichincha 2025*
+
+| Escenario | Umbral (USD/mes) | Gini | Theil L ($GE(0)$) | D10/D1 |
+| :--- | :---: | :---: | :---: | :---: |
+| Base | — | 0.4532 | 0.3636 | 20.36× |
+| P95 | $1,135.00 | 0.4147 | 0.3067 | 16.41× |
+| P97.5 | $1,517.22 | 0.4298 | 0.3272 | 17.92× |
+| P99 | $2,163.84 | 0.4413 | 0.3441 | 19.10× |
+| **Δ máx. (P95 vs. base)** | — | **−0.0385** | **−0.0569** | **−3.95×** |
+
+Los tres escenarios mantienen el Gini en [0.41, 0.45] y el Theil L en [0.31, 0.36]. La conclusión de desigualdad moderada-alta es **robusta al umbral de winsorización elegido**. *Limitación*: no se verificó si el INEC aplica top-coding previo en la ENEMDU pública; si lo hace, la winsorización opera sobre datos ya parcialmente acotados por la fuente.
+
+---
+
+
+## 4.2. Resultados del Objetivo 2: Pobreza Monetaria y Multidimensional
+
+La comparación entre la pobreza monetaria y las privaciones multidimensionales bajo la metodología oficial revela que la pobreza monetaria en Pichincha se sitúa en un **10.82%** (intervalo de confianza al 95%: [10.28%, 11.35%]) y la extrema en **3.49%** ([3.17%, 3.80%]), mientras que la tasa de pobreza multidimensional oficial (IPM con 12 indicadores y agregación intrahogar) alcanza el **7.26%** (intervalo de confianza al 95%: [6.47%, 8.05%], con un error estándar del 0.40%).
+
+**Figura 3**
+
+*Comparativa de Pobreza Monetaria (Incidencia y Extrema) y Pobreza Multidimensional en la provincia de Pichincha (2025)*
+
+![Comparativa de Pobreza - Pichincha 2025](assets/pobreza_comparativa.png)
+
+*Nota.* Comparación gráfica de las dimensiones del bienestar material bajo la perspectiva de ingresos versus el enfoque multidimensional oficial.
+
+El IPM Ajustado ($M_0$) es de **0.0269**, producto de una incidencia del 7.26% y una intensidad media de privaciones ($A$) de **37.02%** entre los hogares pobres.
+
+Este resultado demuestra que, al emplear el instrumental analítico completo establecido por el INEC (12 indicadores) y respetar el principio de solidaridad intrahogar, la pobreza multidimensional en Pichincha no es residual (como sugería el ejercicio proxy simplificado de 4 indicadores que arrojaba 0.80%), sino que representa una problemática social visible. La diferencia de 3.56 puntos porcentuales entre la pobreza monetaria (10.82%) y la multidimensional (7.26%) revela una brecha moderada, sensiblemente menor a la observada bajo el proxy simplificado anterior. En términos relativos, la tasa de pobreza por ingresos es un 49% mayor que la multidimensional, lo que ratifica que el enfoque de ingresos capta vulnerabilidades coyunturales y de poder adquisitivo que exceden a las privaciones estructurales del hogar, reflejando una superposición parcial esperable en un entorno altamente urbanizado.
+
+### Análisis de Privaciones Sectoriales
+Al desagregar las tasas de privación a nivel de hogar en la provincia (expandido a personas), se identifican los principales determinantes de la vulnerabilidad en Pichincha:
+1. **Mercado Laboral e Informalidad:** La privación por desempleo o empleo inadecuado afecta al **57.80%** de las personas en sus hogares, mientras que la falta de cotización al sistema de pensiones (seguridad social) alcanza al **43.58%**. Estos indicadores confirman que la informalidad y la precarización del trabajo son las principales fuentes de exclusión social y vulnerabilidad en la provincia, correlacionándose directamente con la pobreza monetaria.
+2. **Logro Educativo Incompleto:** La privación por logro educativo incompleto en adultos afecta al **52.05%** de la población en sus hogares. Esto expone un rezago estructural histórico acumulado en la instrucción de la población adulta, a pesar de los altos niveles de cobertura actuales en educación básica y bachillerato.
+3. **Servicios e Infraestructura Básica:** Como contraparte, las privaciones tradicionales asociadas a servicios básicos y vivienda muestran porcentajes muy bajos: inasistencia escolar (4.54%), falta de acceso a agua (2.08%), hacinamiento (2.01%), saneamiento inadecuado (3.51%), materiales de vivienda deficientes (2.47%) y falta de recolección de basura (0.24%). 
+
+Este patrón confirma que en un territorio urbanamente consolidado y centralizador de servicios como Pichincha, el bienestar no está limitado principalmente por la falta de infraestructura física residencial o cobertura escolar elemental, sino por las barreras de inserción laboral formal, la baja calidad del empleo y la precarización de los ingresos del hogar. Esto convalida los postulados de Sen (1999) respecto a que el desarrollo de capacidades exige no solo acceso a servicios, sino la libertad económica y de empleo adecuado para traducir dichas capacidades en funcionamientos efectivos.
+
+---
+
+## 4.3. Resultados del Objetivo 3: Desarrollo Humano y Penalización por Desigualdad
+
+El grado de desarrollo humano provincial estimado mediante nuestro ejercicio de aproximación se sitúa en un IDH Proxy global de **0.7096**, lo que en la escala clásica del PNUD denotaría un desarrollo alto. Al desglosar sus componentes, el índice de salud es de **0.8800**, el de educación es de **0.7266** y el de ingresos es de **0.5587**.
+
+**Figura 4**
+
+*Desglose del Índice de Desarrollo Humano (IDH) y Ajuste por Desigualdad (IDH-D) en la provincia de Pichincha (2025)*
+
+![Desglose de IDH y IDH-D - Pichincha 2025](assets/idh_desglose.png)
+
+*Nota.* Visualización comparativa de los índices sectoriales de salud, educación y renta, junto con la penalización global por asimetrías de distribución.
+
+**Advertencia Crítica sobre el Componente de Salud y Comparabilidad:** El alto valor del componente de salud ($0.8800$) responde exclusivamente al uso de la cobertura de afiliación al sistema de salud formal como proxy. Como se ha advertido, esta variable mide fundamentalmente la inserción formal en el mercado de trabajo y los beneficios de la seguridad social contributiva y no contributiva en Pichincha, provincia con la mayor tasa de empleo adecuado del país. Este resultado no debe leerse como un indicador de longevidad real o de una esperanza de vida excepcional en la población, sino como el reflejo de la red de protección laboral de la provincia. Por lo tanto, **el IDH estimado de 0.7096 no es metodológicamente comparable con los índices oficiales de desarrollo humano calculados por el PNUD**, los cuales se valen estrictamente de la esperanza de vida al nacer proveniente de proyecciones demográficas.
+
+Al corregir los componentes por su correspondiente coeficiente de desigualdad distributiva, el IDH desciende a un **0.5450** (IDH-D). Esta penalización del **23.19%** representa la pérdida potencial de bienestar social derivada de la marcada concentración del ingreso en el decil superior de la población, limitando el aprovechamiento integral de los logros colectivos alcanzados en educación y cobertura de salud.

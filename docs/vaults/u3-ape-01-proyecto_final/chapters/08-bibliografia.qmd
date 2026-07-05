@@ -1,0 +1,10 @@
+# Bibliografía
+
+Añazco, R. C., y Pérez, F. J. (2016). Medición de la pobreza multidimensional en Ecuador. *Revista de Estadística y Metodología*, 27-51.
+
+Instituto Nacional de Estadística y Censos. (2008). *Medidas de pobreza y extrema pobreza por ingresos. Resumen Ejecutivo*. https://www.ecuadorencifras.gob.ec/documentos/web-inec/POBREZA/Metodologia+de+pobreza+por+ingresos.pdf
+
+Instituto Nacional de Estadística y Censos. (2025). *Guía de usuario de la Base de Datos de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) Acumulada Anual 2025*. https://www.ecuadorencifras.gob.ec/
+
+Tezanos Vázquez, S. (Coord.), Quiñones Montellano, A., Gutierrez Sobrao, D., & Madrueño Aguilar, R. (2013). *Desarrollo humano, pobreza y desigualdades*. Cátedra de Cooperación Internacional y con Iberoamérica, Universidad de Cantabria. https://www.ciberoamericana.com/pdf/MANUAL1.pdf
+

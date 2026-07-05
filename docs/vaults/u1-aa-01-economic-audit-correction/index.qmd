@@ -21,7 +21,7 @@ format:
     theme: cosmo
   docx:
     toc: false
-    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/writing/templates/Plantilla presentación trabajos.docx"
+    reference-doc: "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/writing/templates/Plantilla_presentacion_trabajos.docx"
 bibliography: references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 ---

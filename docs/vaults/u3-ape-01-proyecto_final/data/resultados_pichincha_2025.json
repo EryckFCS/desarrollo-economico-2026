@@ -2,10 +2,17 @@
   "provincia": "Pichincha",
   "codigo_dpa": 17,
   "anio": 2025,
-  "mes": "Diciembre",
+  "periodo": "Anual",
   "poblacion_expandida": 3375369.5592888854,
   "tasa_pobreza_ingresos_pct": 10.81557322550337,
   "tasa_extrema_pobreza_ingresos_pct": 3.487089713972376,
   "gini_pichincha": 0.4532304642857612,
-  "tasa_ipm_proxy_pct": 16.084914591949246
+  "theil_pichincha": 0.36355204017011533,
+  "tasa_ipm_proxy_pct": 7.241945703454967,
+  "idh_salud": 0.88,
+  "idh_educacion": 0.7265564995107731,
+  "idh_ingresos": 0.558744032977626,
+  "idh_global": 0.7095586860592784,
+  "idh_d_global": 0.5450355002466949,
+  "perdida_desigualdad_pct": 23.18669181915121
 }

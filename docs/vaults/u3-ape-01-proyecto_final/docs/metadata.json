@@ -1,0 +1,72 @@
+[
+    {
+        "file_name": "Boletin_tecnico_proy_rev2024.pdf",
+        "original_path": "docs/Boletin_tecnico_proy_rev2024.pdf",
+        "size_bytes": 1345779,
+        "sha256": "b69a4380819909e53a566390ea1ab500bee392ca0ac067f6102f12f1b5dbd44d",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/Boletin_tecnico_proy_rev2024.md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/Boletin_tecnico_proy_rev2024.md"
+    },
+    {
+        "file_name": "Desarrollo humano, pobreza y desigualdades (curva de lorenz).pdf",
+        "original_path": "docs/Desarrollo humano, pobreza y desigualdades (curva de lorenz).pdf",
+        "size_bytes": 2540655,
+        "sha256": "5fa6d82530f1e40e73f12d230a46561d96d1eaae8a1d89630d69b8a9ee78a8bd",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/Desarrollo humano, pobreza y desigualdades (curva de lorenz).md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/Desarrollo humano, pobreza y desigualdades (curva de lorenz).md"
+    },
+    {
+        "file_name": "page0065-(indice-de-gini_vV2.pdf",
+        "original_path": "docs/page0065-(indice-de-gini_vV2.pdf",
+        "size_bytes": 161374,
+        "sha256": "6bc28d311f6abc929d156ae5c5bea4e4c3a96b04f9f17a0a26185a98085a3120",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/page0065-(indice-de-gini_vV2.md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/page0065-(indice-de-gini_vV2.md"
+    },
+    {
+        "file_name": "Guía de usuario BDD_ENEMDU_anual_2025.pdf",
+        "original_path": "docs/Guía de usuario BDD_ENEMDU_anual_2025.pdf",
+        "size_bytes": 4092072,
+        "sha256": "830436421a6e79e43c7d9427ffe6767786811dd5a42f3288fdbe6c409173e4d4",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/Guía de usuario BDD_ENEMDU_anual_2025.md",
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "MEDIDAS DE POBREZA Y EXTREMA POBREZA POR INGRESOS-(indice-de-gini).pdf",
+        "original_path": "docs/MEDIDAS DE POBREZA Y EXTREMA POBREZA POR INGRESOS-(indice-de-gini).pdf",
+        "size_bytes": 808867,
+        "sha256": "2946bdf2838883605b0ef8de138fa7fddc1c02ea1aea93caa50a91bc0e847ceb",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/MEDIDAS DE POBREZA Y EXTREMA POBREZA POR INGRESOS-(indice-de-gini).md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/MEDIDAS DE POBREZA Y EXTREMA POBREZA POR INGRESOS-(indice-de-gini).md"
+    },
+    {
+        "file_name": "COMPENDIO ESTADÍSTICO 2015.pdf",
+        "original_path": "docs/COMPENDIO ESTADÍSTICO 2015.pdf",
+        "size_bytes": 23261447,
+        "sha256": "f4b1aad3d7614db82b642bf35545b3b72349995409f5eb22bb734b1f4305ee78",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/COMPENDIO ESTADÍSTICO 2015.md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/COMPENDIO ESTADÍSTICO 2015.md"
+    },
+    {
+        "file_name": "ESPERANZA-DE-VIDA-AL-NACER.pdf",
+        "original_path": "docs/ESPERANZA-DE-VIDA-AL-NACER.pdf",
+        "size_bytes": 312559,
+        "sha256": "4f2fe979663a4ac4924713e6a4bc2cddd9bb8e9cf1e92b8d9e3f1c9cb9a3ce9f",
+        "converted_to_markdown": true,
+        "markdown_path": "docs/markdown/ESPERANZA-DE-VIDA-AL-NACER.md",
+        "sanitized": true,
+        "sanitized_path": "docs/sanitized/ESPERANZA-DE-VIDA-AL-NACER.md"
+    }
+]
