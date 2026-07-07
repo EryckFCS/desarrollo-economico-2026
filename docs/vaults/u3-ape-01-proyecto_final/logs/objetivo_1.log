@@ -1,0 +1,219 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  Z:\home\erick-fcs\Documentos\universidad\07_Ciclo\septimo_ciclo\economic_development\docs\vaults\u3-ape-01-proyecto_final\scripts\../logs/objeti
+> vo_1.log
+  log type:  text
+ opened on:   6 Jul 2026, 23:23:00
+
+. 
+. * 1. Cargar base de personas
+. use "../data/personas_2025_anual.dta", clear
+
+. 
+. capture confirm string variable ciudad
+
+. if _rc == 0 {
+.     destring ciudad, gen(ciudad_num) force
+.     gen int provincia = int(ciudad_num / 10000)
+.     drop ciudad_num
+. }
+
+. else {
+.     gen int provincia = int(ciudad / 10000)
+. }
+
+. keep if provincia == 17
+(288,058 observations deleted)
+
+. drop provincia
+
+. 
+. * 3. Quedarse únicamente con variables de desigualdad y población
+. keep id_vivienda id_hogar id_persona ciudad periodo ingpc fexp
+
+. 
+. * 4. Limpieza metodológica: ingresos válidos y estrictamente positivos para Gini y Theil
+. destring ingpc, replace force
+ingpc already numeric; no replace
+
+. destring fexp, replace force
+fexp already numeric; no replace
+
+. keep if !missing(ingpc) & ingpc > 0 & !missing(fexp) & fexp > 0
+(265 observations deleted)
+
+. 
+. // Filtrado completado
+. 
+. // Datos preliminares: Tabulación de variables
+. tabulate periodo
+
+    periodo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     202501 |      3,856        8.30        8.30
+     202502 |      3,860        8.31       16.61
+     202503 |      3,781        8.14       24.74
+     202504 |      3,913        8.42       33.17
+     202505 |      3,865        8.32       41.48
+     202506 |      3,901        8.40       49.88
+     202507 |      3,891        8.37       58.25
+     202508 |      3,874        8.34       66.59
+     202509 |      3,869        8.33       74.92
+     202510 |      3,869        8.33       83.25
+     202511 |      3,894        8.38       91.63
+     202512 |      3,890        8.37      100.00
+------------+-----------------------------------
+      Total |     46,463      100.00
+
+. tabulate ciudad if _n <= 10
+
+     ciudad |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     170150 |         10      100.00      100.00
+------------+-----------------------------------
+      Total |         10      100.00
+
+. 
+. // Estadísticos descriptivos preliminares (Objetivo 1)
+. summarize ingpc [aw=fexp], detail
+
+                            ingpc
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     27.66667       .6666667
+ 5%     61.66667       .6666667
+10%           85       .6666667       Obs              46,463
+25%          138            .75       Sum of wgt.   3,375,370
+
+50%     233.3333                      Mean           338.0915
+                        Largest       Std. dev.       397.694
+75%       398.75          11340
+90%          671          15000       Variance       158160.5
+95%          950          16295       Skewness       9.319591
+99%      1839.25          26667       Kurtosis       279.7668
+
+. 
+. // Cálculo de deciles de ingreso (Tabla 2)
+. preserve
+
+.     sort ingpc
+
+.     gen double w_cum_dec = sum(fexp)
+
+.     gen double p_cum_dec = w_cum_dec / w_cum_dec[_N]
+
+.     gen int decil = min(10, 1 + int(p_cum_dec * 10))
+
+.     collapse (mean) ing_prom=ingpc (sum) ing_tot=ingpc [pw=fexp], by(decil)
+
+.     egen double ing_total_sum = sum(ing_tot)
+
+.     gen double part_pct = (ing_tot / ing_total_sum) * 100
+
+.     gen double part_cum = sum(part_pct)
+
+.     
+.     display _newline "Tabla 2: Distribución decílica del ingreso per cápita (Pichincha, 2025)"
+
+Tabla 2: Distribución decílica del ingreso per cápita (Pichincha, 2025)
+
+.     list decil ing_prom part_pct part_cum, clean
+
+       decil    ing_prom    part_pct    part_cum  
+  1.       1   57.546969   1.7019755   1.7019755  
+  2.       2   105.69951   3.1174578   4.8194334  
+  3.       3   137.90104   4.0794455   8.8988789  
+  4.       4   172.98966   5.1302544   14.029133  
+  5.       5   210.77841   6.2350051   20.264138  
+  6.       6   257.90137   7.6216477   27.885786  
+  7.       7   315.92448   9.3503307   37.236117  
+  8.       8   400.84458   11.858379   49.094496  
+  9.       9   549.51344   16.250998   65.345494  
+ 10.      10   1171.4321   34.654506         100  
+
+.     export excel using "../data/deciles_stata.xlsx", firstrow(variables) replace
+file ../data/deciles_stata.xlsx saved
+
+. restore
+
+. 
+. * 5. Ordenar por ingresos para Gini y Lorenz
+. sort ingpc
+
+. 
+. * Acumulados ponderados
+. gen double w_cum   = sum(fexp)
+
+. gen double wy_cum  = sum(ingpc * fexp)
+
+. 
+. * Totales poblacionales
+. scalar W_total  = w_cum[_N]
+
+. scalar WY_total = wy_cum[_N]
+
+. 
+. * Proporciones acumuladas (Lorenz)
+. gen double p = w_cum  / W_total     // fracción acumulada de población
+
+. gen double L = wy_cum / WY_total    // fracción acumulada de ingreso (Lorenz)
+
+. 
+. * Valores lagged para el trapecio (Brown)
+. gen double p_prev = p[_n-1]
+(1 missing value generated)
+
+. gen double L_prev = L[_n-1]
+(1 missing value generated)
+
+. replace p_prev = 0 in 1
+(1 real change made)
+
+. replace L_prev = 0 in 1
+(1 real change made)
+
+. 
+. * Área bajo la Curva de Lorenz (regla del trapecio)
+. gen double trapecio = (p - p_prev) * (L + L_prev) / 2
+
+. egen double area_lorenz = sum(trapecio)
+
+. 
+. * Coeficiente de Gini
+. scalar gini_coef = 1 - 2 * area_lorenz[1]
+
+. 
+. * Índice de Theil L (Desviación Logarítmica Media)
+. gen double y_rel = (WY_total / W_total) / ingpc
+
+. gen double theil_contrib = fexp * ln(y_rel)
+
+. egen double sum_theil = sum(theil_contrib)
+
+. scalar theil_coef = sum_theil[1] / W_total
+
+. 
+. // Estimaciones de desigualdad obtenidas
+. 
+. // Guardar base final procesada limpia (.dta)
+. compress
+  variable ciudad was double now long
+  variable periodo was double now long
+  (371,704 bytes saved)
+
+. save "../data/desigualdad_pichincha_2025_stata.dta", replace
+file ../data/desigualdad_pichincha_2025_stata.dta saved
+
+. 
+. // Exportar copia espejo en Excel (.xlsx)
+. export excel using "../data/desigualdad_pichincha_2025_stata.xlsx", firstrow(variables) replace
+file ../data/desigualdad_pichincha_2025_stata.xlsx saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  Z:\home\erick-fcs\Documentos\universidad\07_Ciclo\septimo_ciclo\economic_development\docs\vaults\u3-ape-01-proyecto_final\scripts\../logs/objeti
+> vo_1.log
+  log type:  text
+ closed on:   6 Jul 2026, 23:23:06
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

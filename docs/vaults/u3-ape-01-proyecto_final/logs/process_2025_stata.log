@@ -3,46 +3,23 @@
        log:  Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/logs/process_2025_stat
 > a.log
   log type:  text
- opened on:   5 Jul 2026, 14:54:19
+ opened on:   6 Jul 2026, 23:03:14
 
 . 
-. display "================================================================="
-=================================================================
-
-. display "  INICIO PROCESAMIENTO ENEMDU 2025 - PICHINCHA"
-  INICIO PROCESAMIENTO ENEMDU 2025 - PICHINCHA
-
-. display "  $S_DATE  $S_TIME"
-   5 Jul 2026  14:54:19
-
-. display "================================================================="
-=================================================================
-
-. 
-. * ------------------------------------------------------------------------------
-. * 1. CARGA, HOMOGENEIZACIÓN Y FUSIÓN DE DATOS (PERSONAS Y VIVIENDAS)
-. * ------------------------------------------------------------------------------
-. display _newline "[ETAPA 1] Preparando base de viviendas..."
-
-[ETAPA 1] Preparando base de viviendas...
-
+. * --- 1. CARGA Y FUSION ---
 . use "`vault_dir'/data/vivienda_2025_anual.dta", clear
 
-. 
-. * Normalizar llaves de viviendas
 . foreach var in id_vivienda id_hogar periodo ciudad {
   2.     capture confirm variable `var'
   3.     if _rc == 0 {
   4.         capture confirm string variable `var'
-  5.         if _rc == 0 {
-  6.             replace `var' = trim(`var')
-  7.         }
-  8.         else {
-  9.             tostring `var', replace
- 10.             replace `var' = trim(`var')
- 11.         }
- 12.     }
- 13. }
+  5.         if _rc == 0  replace `var' = trim(`var')
+  6.         else {
+  7.             tostring `var', replace
+  8.             replace `var' = trim(`var')
+  9.         }
+ 10.     }
+ 11. }
 (0 real changes made)
 (0 real changes made)
 periodo was double now str6
@@ -52,31 +29,23 @@ periodo was double now str6
 . tempfile viviendas_temp
 
 . save "`viviendas_temp'", replace
-(file C:\users\erick-fcs\Temp\ST_104_000001.tmp not found)
-file C:\users\erick-fcs\Temp\ST_104_000001.tmp saved as .dta format
+(file C:\users\erick-fcs\Temp\ST_10c_000001.tmp not found)
+file C:\users\erick-fcs\Temp\ST_10c_000001.tmp saved as .dta format
 
 . 
-. display _newline "[ETAPA 2] Preparando base de personas..."
-
-[ETAPA 2] Preparando base de personas...
-
 . use "`vault_dir'/data/personas_2025_anual.dta", clear
 
-. 
-. * Normalizar llaves de personas
 . foreach var in id_vivienda id_hogar periodo ciudad {
   2.     capture confirm variable `var'
   3.     if _rc == 0 {
   4.         capture confirm string variable `var'
-  5.         if _rc == 0 {
-  6.             replace `var' = trim(`var')
-  7.         }
-  8.         else {
-  9.             tostring `var', replace
- 10.             replace `var' = trim(`var')
- 11.         }
- 12.     }
- 13. }
+  5.         if _rc == 0  replace `var' = trim(`var')
+  6.         else {
+  7.             tostring `var', replace
+  8.             replace `var' = trim(`var')
+  9.         }
+ 10.     }
+ 11. }
 (0 real changes made)
 (0 real changes made)
 periodo was double now str6
@@ -85,115 +54,737 @@ ciudad was double now str6
 (0 real changes made)
 
 . 
-. display _newline "[ETAPA 3] Realizando merge personas m:1 viviendas..."
-
-[ETAPA 3] Realizando merge personas m:1 viviendas...
-
 . capture confirm variable periodo
 
-. if _rc == 0 {
-.     merge m:1 id_vivienda id_hogar periodo using "`viviendas_temp'", keep(match) keepusing(vi09 vi10) nogenerate
+. if _rc == 0 merge m:1 id_vivienda id_hogar periodo using "`viviendas_temp'", keep(match) keepusing(vi02 vi04a vi06 vi09 vi10 vi12) nogenerate
 
     Result                      Number of obs
     -----------------------------------------
     Not matched                             0
     Matched                           334,786  
     -----------------------------------------
+
+. else        merge m:1 id_vivienda id_hogar using "`viviendas_temp'", keep(match) keepusing(vi02 vi04a vi06 vi09 vi10 vi12) nogenerate
+
+. 
+. capture confirm string variable ciudad
+
+. if _rc == 0 {
+.     destring ciudad, gen(ciudad_num) force
+ciudad: all characters numeric; ciudad_num generated as long
+.     gen int provincia = int(ciudad_num / 10000)
+.     drop ciudad_num
 . }
 
 . else {
-.     merge m:1 id_vivienda id_hogar using "`viviendas_temp'", keep(match) keepusing(vi09 vi10) nogenerate
+.     gen int provincia = int(ciudad / 10000)
 . }
-
-. 
-. * ------------------------------------------------------------------------------
-. * 2. FILTRADO PARA PICHINCHA Y DEPURACIÓN CANÓNICA
-. * ------------------------------------------------------------------------------
-. display _newline "[ETAPA 4] Filtrando para Pichincha y depurando ingresos..."
-
-[ETAPA 4] Filtrando para Pichincha y depurando ingresos...
-
-. destring ciudad, gen(ciudad_num) force
-ciudad: all characters numeric; ciudad_num generated as long
-
-. gen int provincia = int(ciudad_num / 10000)
 
 . keep if provincia == 17
 (288,058 observations deleted)
 
-. drop ciudad_num provincia
+. drop provincia
 
 . 
-. * Filtro canónico para análisis de ingresos (ingpc no missing, ingpc > 0)
-. * Nota: se registran 265 missing que se excluyen para la coherencia muestral.
-. drop if missing(ingpc)
-(265 observations deleted)
-
-. drop if ingpc <= 0
-(0 observations deleted)
-
-. 
-. display "Observaciones canónicas válidas en Pichincha: `=_N'"
-Observaciones canónicas válidas en Pichincha: 46463
-
-. 
-. * ------------------------------------------------------------------------------
-. * 3. DECLARACIÓN DEL DISEÑO MUESTRAL (svyset)
-. * ------------------------------------------------------------------------------
-. display _newline "[ETAPA 5] Declarando diseño muestral..."
-
-[ETAPA 5] Declarando diseño muestral...
-
 . destring fexp, replace force
 fexp already numeric; no replace
 
-. svyset [pw=fexp]
+. local n_final = _N
+
+. 
+. * --- 3. DISENO MUESTRAL (svyset) ---
+. local psu_var ""
+
+. local strata_var ""
+
+. foreach v in upm conglomerado id_upm {
+  2.     capture confirm variable `v'
+  3.     if _rc == 0 local psu_var "`v'"
+  4. }
+
+. foreach v in estrato panelm dominio {
+  2.     capture confirm variable `v'
+  3.     if _rc == 0 local strata_var "`v'"
+  4. }
+
+. 
+. local diseno_ok = ("`psu_var'" != "" & "`strata_var'" != "")
+
+. if `diseno_ok' {
+.     svyset `psu_var' [pw=fexp], strata(`strata_var')
 
 Sampling weights: fexp
              VCE: linearized
      Single unit: missing
-        Strata 1: <one>
- Sampling unit 1: <observations>
+        Strata 1: dominio
+ Sampling unit 1: conglomerado
            FPC 1: <zero>
+. }
+
+. else {
+.     svyset [pw=fexp]
+.     // ALERTA: sin PSU/estrato -- svyset SRS ponderado. SE sub-estimados.
+. }
 
 . 
-. * ------------------------------------------------------------------------------
-. * 4. OBJETIVO 1: DESIGUALDAD Y CONCENTRACIÓN DEL INGRESO
-. * ------------------------------------------------------------------------------
-. display _newline "================================================================="
+. * ==============================================================================
+. * PROGRAMAS DE REPLICACION JACKKNIFE (delete-1-cluster)
+. * Un programa rclass por estadistico -- evita ambiguedad de parsing de opciones
+. * dentro de jackknife (bug conocido: dispatcher con option() confunde al parser
+. * en llamadas subsecuentes dentro del mismo do-file).
+. * ==============================================================================
+. capture program drop jk_gini_theil
 
-=================================================================
-
-. display "  OBJETIVO 1: DESIGUALDAD Y CONCENTRACIÓN (GINI, THEIL L, DECILES)"
-  OBJETIVO 1: DESIGUALDAD Y CONCENTRACIÓN (GINI, THEIL L, DECILES)
-
-. display "================================================================="
-=================================================================
+. program define jk_gini_theil, rclass
+  1.     syntax [if]
+  2.     marksample touse
+  3.     quietly ineqdeco ingpc [aw=fexp] if `touse'
+  4.     return scalar gini = r(gini)
+  5.     return scalar ge0  = r(ge0)
+  6. end
 
 . 
-. * A. Cálculo del Coeficiente de Gini y Theil L de Pichincha
+. capture program drop jk_pobreza
+
+. program define jk_pobreza, rclass
+  1.     syntax [if]
+  2.     marksample touse
+  3.     quietly summarize pobre_ingresos [aw=fexp] if `touse'
+  4.     return scalar p_ingresos = r(mean)
+  5.     quietly summarize pobre_extremo [aw=fexp] if `touse'
+  6.     return scalar p_extremo  = r(mean)
+  7. end
+
+. 
+. capture program drop jk_ipm
+
+. program define jk_ipm, rclass
+  1.     syntax [if]
+  2.     marksample touse
+  3.     quietly summarize ipm_pobre [aw=fexp] if `touse'
+  4.     return scalar ipm = r(mean)
+  5. end
+
+. 
+. capture program drop jk_idh
+
+. program define jk_idh, rclass
+  1.     syntax [if]
+  2.     marksample touse
+  3.     quietly summarize idh_proxy_td [aw=fexp] if `touse'
+  4.     return scalar idh = r(mean)
+  5. end
+
+. 
+. * ==============================================================================
+. * OBJETIVO 1: DESIGUALDAD (GINI, THEIL L, DECILES, LORENZ)
+. * ==============================================================================
 . preserve
 
+.     keep if ingpc > 0 & !missing(ingpc)
+(265 observations deleted)
+
+.     ineqdeco ingpc [aw=fexp]
+ 
+Percentile ratios
+
+----------------------------------------------------------
+  All obs |    p90/p10     p90/p50     p10/p50     p75/p25
+----------+-----------------------------------------------
+          |      7.894       2.876       0.364       2.889
+----------------------------------------------------------
+  
+Generalized Entropy indices GE(a), where a = income difference
+ sensitivity parameter, and Gini coefficient
+
+----------------------------------------------------------------------
+  All obs |     GE(-1)       GE(0)       GE(1)       GE(2)        Gini
+----------+-----------------------------------------------------------
+          |    0.61577     0.36355     0.38555     0.69182     0.45323
+----------------------------------------------------------------------
+   
+Atkinson indices, A(e), where e > 0 is the inequality aversion parameter
+
+----------------------------------------------
+  All obs |     A(0.5)        A(1)        A(2)
+----------+-----------------------------------
+          |    0.16936     0.30480     0.55188
+----------------------------------------------
+
+.     scalar gini_coef  = r(gini)
+
+.     scalar theil_coef = r(ge0)
+
+. 
+.     if `diseno_ok' {
+.         jackknife gini=r(gini) theil=r(ge0), cluster(`psu_var'): jk_gini_theil
+(running jk_gini_theil on estimation sample)
+
+Jackknife replications (52): .........10.........20.........30.........40.........50.. done
+
+Jackknife results                                       Number of obs = 46,463
+                                                        Replications  =     52
+
+      Command: jk_gini_theil
+         gini: r(gini)
+        theil: r(ge0)
+          n(): (not specified)  <-- we strongly recommend that you specify
+               the rclass, eclass, or n() option
+
+                           (Replications based on 52 clusters in conglomerado)
+------------------------------------------------------------------------------
+             |              Jackknife
+             | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+        gini |   .4532305   .0078211    57.95   0.000      .437529    .4689319
+       theil |    .363552   .0127508    28.51   0.000     .3379537    .3891503
+------------------------------------------------------------------------------
+.         matrix V_jk = e(V)
+.         scalar gini_se  = sqrt(V_jk[1,1])
+.         scalar theil_se = sqrt(V_jk[2,2])
+.     }
+
+.     else {
+.         scalar gini_se  = .
+.         scalar theil_se = .
+.     }
+
+. 
+.     glcurve ingpc [aw=fexp], lorenz pvar(p) glvar(L) nograph replace
+new variable L created
+new variable p created
+
+.     twoway (line L p, lcolor(navy) lwidth(medium)) ///
+>            (line p p, lcolor(cranberry) lpattern(dash)), ///
+>            title("Curva de Lorenz - Pichincha 2025", color(navy)) ///
+>            subtitle("Gini = " + string(gini_coef, "%6.4f"), size(small)) ///
+>            xtitle("Proporcion acumulada de poblacion") ytitle("Proporcion acumulada de ingreso") ///
+>            legend(order(1 "Curva de Lorenz observada" 2 "Igualdad Perfecta")) ///
+>            graphregion(fcolor(white) lcolor(white)) plotregion(fcolor(white))
+
+.     graph export "`vault_dir'/assets/curva_lorenz_2025_stata.png", replace
+file
+    Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/assets/curva_lorenz_2025_stat
+    > a.png saved as PNG format
+
+. 
 .     sort ingpc
 
 .     gen double w_cum = sum(fexp)
 
-.     gen double wy_cum = sum(ingpc * fexp)
+.     gen double p_cum = w_cum / w_cum[_N]
 
-.     scalar W_total = w_cum[_N]
+.     gen int decil = min(10, 1 + int(p_cum * 10))
 
-.     scalar WY_total = wy_cum[_N]
+.     collapse (mean) ing_prom=ingpc (sum) ing_tot=ingpc [pw=fexp], by(decil)
+
+.     egen double ing_total_sum = sum(ing_tot)
+
+.     gen double part_pct = (ing_tot / ing_total_sum) * 100
+
+.     quietly summarize part_pct
+
+.     assert abs(r(sum) - 100) < 0.01
+
+.     export delimited decil ing_prom part_pct using "`vault_dir'/data/deciles_2025.csv", replace
+file Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/data/deciles_2025.csv saved
+
+. restore
 
 . 
-.     gen double p = w_cum / W_total
+. assert gini_coef  >= 0 & gini_coef  <= 1
 
-.     gen double L = wy_cum / WY_total
+. assert theil_coef >= 0
 
 . 
-.     gen double p_prev = p[_n-1]
+. * ==============================================================================
+. * OBJETIVO 2: POBREZA MONETARIA Y MULTIDIMENSIONAL (IPM OFICIAL 12 IND.)
+. * ==============================================================================
+. gen byte pobre_ingresos = (ingpc < `linea_pobreza') if !missing(ingpc)
+(265 missing values generated)
+
+. replace pobre_ingresos = 0 if missing(pobre_ingresos)
+(265 real changes made)
+
+. gen byte pobre_extremo  = (ingpc < `linea_extrema') if !missing(ingpc)
+(265 missing values generated)
+
+. replace pobre_extremo = 0 if missing(pobre_extremo)
+(265 real changes made)
+
+. 
+. if `diseno_ok' {
+.     jackknife p_ing=r(p_ingresos) p_ext=r(p_extremo), cluster(`psu_var'): jk_pobreza
+(running jk_pobreza on estimation sample)
+
+Jackknife replications (52): .........10.........20.........30.........40.........50.. done
+
+Jackknife results                                       Number of obs = 46,728
+                                                        Replications  =     52
+
+      Command: jk_pobreza
+        p_ing: r(p_ingresos)
+        p_ext: r(p_extremo)
+          n(): (not specified)  <-- we strongly recommend that you specify
+               the rclass, eclass, or n() option
+
+                           (Replications based on 52 clusters in conglomerado)
+------------------------------------------------------------------------------
+             |              Jackknife
+             | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       p_ing |   .1077103   .0108566     9.92   0.000     .0859149    .1295058
+       p_ext |   .0347273   .0016969    20.47   0.000     .0313207    .0381339
+------------------------------------------------------------------------------
+.     matrix B_pob = e(b)
+.     matrix V_pob = e(V)
+.     scalar pob_ing_mean = B_pob[1,1]
+.     scalar pob_ext_mean = B_pob[1,2]
+.     scalar pob_ing_se   = sqrt(V_pob[1,1])
+.     scalar pob_ext_se   = sqrt(V_pob[2,2])
+. }
+
+. else {
+.     quietly summarize pobre_ingresos [aw=fexp]
+.     scalar pob_ing_mean = r(mean)
+.     quietly summarize pobre_extremo [aw=fexp]
+.     scalar pob_ext_mean = r(mean)
+.     scalar pob_ing_se = .
+.     scalar pob_ext_se = .
+. }
+
+. 
+. * --- IPM OFICIAL INEC: 4 dimensiones x 12 indicadores ponderados ---
+. local w_edu  = 0.25 / 3.0
+
+. local w_trab = 0.25 / 3.0
+
+. local w_sal  = 0.25 / 2.0
+
+. local w_hab  = 0.25 / 4.0
+
+. 
+. * 1. Educación
+. capture confirm variable p03
+
+. capture confirm variable p07
+
+. if !_rc {
+.     gen byte d1_inasist = (p07 == 2) if !missing(p07) & inrange(p03,5,17)
+(38,100 missing values generated)
+. }
+
+. else gen byte d1_inasist = .
+
+. 
+. capture confirm variable p03
+
+. capture confirm variable p11
+
+. if !_rc {
+.     gen byte d1_no_sup = (p11 == 1) if !missing(p11) & inrange(p03,18,29)
+(46,307 missing values generated)
+. }
+
+. else gen byte d1_no_sup = .
+
+. 
+. capture confirm variable p03
+
+. capture confirm variable nnivins
+
+. if !_rc {
+.     gen byte d1_logro = (nnivins <= 3) if !missing(nnivins) & p03 >= 18
+(10,465 missing values generated)
+. }
+
+. else gen byte d1_logro = .
+
+. 
+. * 2. Trabajo
+. capture confirm variable p03
+
+. capture confirm variable condact
+
+. if !_rc {
+.     gen byte d2_infantil = inlist(condact,1,2,3,4,5) if !missing(condact) & inrange(p03,5,17)
+(38,100 missing values generated)
+. }
+
+. else gen byte d2_infantil = .
+
+. 
+. capture confirm variable condact
+
+. if !_rc {
+.     gen byte d2_desempleo = inlist(condact,2,3,4,5,6,7) if !missing(condact)
+. }
+
+. else gen byte d2_desempleo = .
+
+. 
+. capture confirm variable condact
+
+. capture confirm variable p48
+
+. if !_rc {
+.     gen byte d2_pension = (inlist(condact,1,2,3,4,5) & !inlist(p48,1,2,3)) if !missing(condact) & !missing(p48)
+(30,856 missing values generated)
+. }
+
+. else gen byte d2_pension = .
+
+. 
+. * 3. Salud, agua y alimentación
+. gen byte d3_extrema = (ingpc < `linea_extrema') if !missing(ingpc)
+(265 missing values generated)
+
+. 
+. capture confirm variable vi10
+
+. if !_rc {
+.     gen byte d3_agua = (vi10 != 1) if !missing(vi10)
+. }
+
+. else gen byte d3_agua = .
+
+. 
+. * 4. Hábitat y vivienda
+. bysort id_vivienda id_hogar: gen int miembros = _N
+
+. 
+. capture confirm variable vi06
+
+. if !_rc {
+.     gen byte d4_hacin = (vi06 > 0 & (miembros / vi06 > 3)) if !missing(vi06)
+. }
+
+. else gen byte d4_hacin = .
+
+. 
+. capture confirm variable vi02
+
+. capture confirm variable vi04a
+
+. if !_rc {
+.     gen byte d4_deficit = (inlist(vi02,5,6,7) | inlist(vi04a,5,6)) if !missing(vi02) & !missing(vi04a)
+. }
+
+. else gen byte d4_deficit = .
+
+. 
+. capture confirm variable vi09
+
+. if !_rc {
+.     gen byte d4_saneamiento = (!inlist(vi09,1,2)) if !missing(vi09)
+. }
+
+. else gen byte d4_saneamiento = .
+
+. 
+. capture confirm variable vi12
+
+. if !_rc {
+.     gen byte d4_basura = (vi12 != 1) if !missing(vi12)
+. }
+
+. else gen byte d4_basura = .
+
+. 
+. * --- AGREGACION POR HOGAR (Alkire-Foster) ---
+. foreach v in d1_inasist d1_no_sup d1_logro d2_infantil d2_desempleo d2_pension d3_extrema d3_agua d4_hacin d4_deficit d4_saneamiento d4_basura {
+  2.     bysort id_vivienda id_hogar: egen byte priv_`v' = max(`v')
+  3. }
+(22,449 missing values generated)
+(45,082 missing values generated)
+(12 missing values generated)
+(22,449 missing values generated)
+(12,325 missing values generated)
+(265 missing values generated)
+
+. 
+. gen double ci_ipm = 0
+
+. gen byte   n_validos = 0
+
+. 
+. foreach v in priv_d1_inasist priv_d1_no_sup priv_d1_logro {
+  2.     replace ci_ipm    = ci_ipm + cond(missing(`v'),0,`v') * `w_edu'
+  3.     replace n_validos  = n_validos + !missing(`v')
+  4. }
+(1,407 real changes made)
+(24,279 real changes made)
+(1,522 real changes made)
+(1,646 real changes made)
+(21,952 real changes made)
+(46,716 real changes made)
+
+. foreach v in priv_d2_infantil priv_d2_desempleo priv_d2_pension {
+  2.     replace ci_ipm    = ci_ipm + cond(missing(`v'),0,`v') * `w_trab'
+  3.     replace n_validos  = n_validos + !missing(`v')
+  4. }
+(341 real changes made)
+(24,279 real changes made)
+(26,117 real changes made)
+(46,728 real changes made)
+(1,396 real changes made)
+(34,403 real changes made)
+
+. foreach v in priv_d3_extrema priv_d3_agua {
+  2.     replace ci_ipm    = ci_ipm + cond(missing(`v'),0,`v') * `w_sal'
+  3.     replace n_validos  = n_validos + !missing(`v')
+  4. }
+(1,128 real changes made)
+(46,463 real changes made)
+(785 real changes made)
+(46,728 real changes made)
+
+. foreach v in priv_d4_hacin priv_d4_deficit priv_d4_saneamiento priv_d4_basura {
+  2.     replace ci_ipm    = ci_ipm + cond(missing(`v'),0,`v') * `w_hab'
+  3.     replace n_validos  = n_validos + !missing(`v')
+  4. }
+(395 real changes made)
+(46,728 real changes made)
+(1,127 real changes made)
+(46,728 real changes made)
+(459 real changes made)
+(46,728 real changes made)
+(98 real changes made)
+(46,728 real changes made)
+
+. 
+. gen byte ipm_pobre = (ci_ipm >= 0.3333) if n_validos > 0
+
+. 
+. if `diseno_ok' {
+.     jackknife ipm=r(ipm), cluster(`psu_var'): jk_ipm
+(running jk_ipm on estimation sample)
+
+Jackknife replications (52): .........10.........20.........30.........40.........50.. done
+
+Jackknife results                                       Number of obs = 46,728
+                                                        Replications  =     52
+
+      Command: jk_ipm
+          ipm: r(ipm)
+          n(): (not specified)  <-- we strongly recommend that you specify
+               the rclass, eclass, or n() option
+
+                           (Replications based on 52 clusters in conglomerado)
+------------------------------------------------------------------------------
+             |              Jackknife
+             | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+         ipm |   .0442807   .0327058     1.35   0.182    -.0213788    .1099403
+------------------------------------------------------------------------------
+.     scalar ipm_incidencia = e(b)[1,1]
+.     scalar ipm_se = sqrt(e(V)[1,1])
+. }
+
+. else {
+.     quietly summarize ipm_pobre [aw=fexp]
+.     scalar ipm_incidencia = r(mean)
+.     scalar ipm_se = .
+. }
+
+. quietly summarize ci_ipm [aw=fexp] if ipm_pobre==1
+
+. scalar ipm_intensidad = r(mean)
+
+. scalar ipm_ajustado = ipm_incidencia * ipm_intensidad
+
+. assert inlist(ipm_pobre, 0, 1) if !missing(ipm_pobre)
+
+. 
+. * ==============================================================================
+. * OBJETIVO 3: IDH PROXY E IDH-D (AGREGACION TOP-DOWN, ESTANDAR PNUD)
+. * ==============================================================================
+. capture confirm variable vi09
+
+. capture confirm variable vi10
+
+. if !_rc {
+.     gen byte index_salud = ((vi09==1) | (vi10==1)) if !(missing(vi09) & missing(vi10))
+. }
+
+. else gen byte index_salud = .
+
+. 
+. capture confirm variable p10a
+
+. if !_rc {
+.     gen double anios_escol = .
+(46,728 missing values generated)
+.     replace anios_escol = 0  if inlist(p10a,1,2,3)
+(1,003 real changes made)
+.     replace anios_escol = 6  if p10a==4
+(6,780 real changes made)
+.     replace anios_escol = 12 if inlist(p10a,5,6)
+(17,322 real changes made)
+.     replace anios_escol = 16 if p10a==7
+(6,144 real changes made)
+.     capture confirm variable p10b
+.     if !_rc replace anios_escol = anios_escol + p10b if !missing(p10b) & p10b>=0 & inlist(p10a,3,4,5,6,7)
+(29,809 real changes made)
+.     replace anios_escol = min(max(anios_escol,0),18)
+(23,352 real changes made)
+.     gen double index_educ = anios_escol/18
+.     replace    index_educ = . if missing(p10a) | p10a==9
+(11,518 real changes made, 11,518 to missing)
+. }
+
+. else gen double index_educ = .
+
+. 
+. local ln_min = ln(100)
+
+. local ln_max = ln(75000)
+
+. gen double index_ing = (ln(ingpc*12) - `ln_min') / (`ln_max' - `ln_min') if ingpc > 0 & !missing(ingpc)
+(265 missing values generated)
+
+. replace    index_ing = 0 if index_ing < 0 & !missing(index_ing)
+(72 real changes made)
+
+. replace    index_ing = 1 if index_ing > 1 & !missing(index_ing)
+(19 real changes made)
+
+. 
+. * --- Agregacion TOP-DOWN: promedio poblacional por dimension, luego media geometrica ---
+. quietly summarize index_salud [aw=fexp]
+
+. scalar mu_salud = r(mean)
+
+. quietly summarize index_educ [aw=fexp]
+
+. scalar mu_educ  = r(mean)
+
+. quietly summarize index_ing [aw=fexp]
+
+. scalar mu_ing   = r(mean)
+
+. scalar idh_proxy_pop = (mu_salud * mu_educ * mu_ing)^(1/3)
+
+. 
+. * variable individual usada solo para jackknife de referencia (bottom-up, documentar diferencia)
+. gen double idh_proxy_td = (index_salud * index_educ * index_ing)^(1/3)
+(11,713 missing values generated)
+
+. replace    idh_proxy_td = . if missing(index_salud, index_educ, index_ing)
+(0 real changes made)
+
+. 
+. if `diseno_ok' {
+.     jackknife idh=r(idh), cluster(`psu_var'): jk_idh
+(running jk_idh on estimation sample)
+
+Jackknife replications (52): .........10.........20.........30.........40.........50.. done
+
+Jackknife results                                       Number of obs = 46,728
+                                                        Replications  =     52
+
+      Command: jk_idh
+          idh: r(idh)
+          n(): (not specified)  <-- we strongly recommend that you specify
+               the rclass, eclass, or n() option
+
+                           (Replications based on 52 clusters in conglomerado)
+------------------------------------------------------------------------------
+             |              Jackknife
+             | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+         idh |   .6446578   .0257904    25.00   0.000     .5928815    .6964342
+------------------------------------------------------------------------------
+.     scalar idh_se = sqrt(e(V)[1,1])
+. }
+
+. else scalar idh_se = .
+
+. 
+. * --- IDH-D: perdida de Atkinson (eps=1) por dimension, agregacion top-down ---
+. * mu_arith (media aritmetica poblacional) ya calculada arriba como mu_salud/mu_educ/mu_ing.
+. foreach d in salud educ ing {
+  2.     quietly gen double _log_`d' = ln(max(index_`d', 0.001)) if !missing(index_`d')
+  3.     quietly summarize _log_`d' [aw=fexp]
+  4.     scalar mu_`d'_geom  = exp(r(mean))
+  5.     scalar A_`d'        = 1 - mu_`d'_geom / mu_`d'
+  6.     scalar idh_d_`d'    = mu_`d'_geom
+  7.     drop _log_`d'
+  8. }
+
+. scalar idhd_proxy_pop = (idh_d_salud * idh_d_educ * idh_d_ing)^(1/3)
+
+. scalar perdida_pct    = (1 - idhd_proxy_pop/idh_proxy_pop) * 100
+
+. 
+. * ==============================================================================
+. * ANEXO A: ANALISIS DESCRIPTIVO Y DIAGNOSTICOS (VIF, CORRELACION)
+. * ==============================================================================
+. capture confirm variable anios_escol
+
+. capture confirm variable p04
+
+. local diag_ok = (!_rc)
+
+. if `diag_ok' {
+.     correlate ingpc fexp p04 anios_escol
+(obs=46,463)
+
+             |    ingpc     fexp      p04 anios_~l
+-------------+------------------------------------
+       ingpc |   1.0000
+        fexp |  -0.0858   1.0000
+         p04 |  -0.0874   0.0383   1.0000
+ anios_escol |  -0.2298   0.0590   0.0430   1.0000
+
+.     quietly regress ingpc anios_escol p04
+.     estat vif
+
+    Variable |       VIF       1/VIF  
+-------------+----------------------
+ anios_escol |      1.00    0.998155
+         p04 |      1.00    0.998155
+-------------+----------------------
+    Mean VIF |      1.00
+. }
+
+. 
+. * ==============================================================================
+. * ANEXO B: SENSIBILIDAD -- WINSORIZACION DE INGRESOS (ROBUSTEZ, OBJETIVO 1)
+. * Prueba de estabilidad ante colas pesadas (kurtosis observada > 300, no ponderada).
+. * No sustituye la estimacion principal; documenta robustez del Gini/Theil base.
+. * ==============================================================================
+. preserve
+
+.     _pctile ingpc [pw=fexp], percentiles(95 97.5 99)
+
+.     local pctls "95 97_5 99"
+
+.     local i = 1
+
+.     foreach p of local pctls {
+  2.         scalar p`p' = r(r`i')
+  3.         local ++i
+  4.     }
+
+.     capture drop ingpc_w99 wc wyc p_w L_w p_prev L_prev trap area
+
+.     gen double ingpc_w99 = min(ingpc, p99)
+
+.     sort ingpc_w99
+
+.     gen double wc  = sum(fexp)
+
+.     gen double wyc = sum(ingpc_w99 * fexp)
+
+.     gen double p_w = wc / wc[_N]
+
+.     gen double L_w = wyc / wyc[_N]
+
+.     gen double p_prev = p_w[_n-1]
 (1 missing value generated)
 
-.     gen double L_prev = L[_n-1]
+.     gen double L_prev = L_w[_n-1]
 (1 missing value generated)
 
 .     replace p_prev = 0 in 1
@@ -202,312 +793,22 @@ Sampling weights: fexp
 .     replace L_prev = 0 in 1
 (1 real change made)
 
-. 
-.     gen double trapecio = (p - p_prev) * (L + L_prev) / 2
+.     gen double trap = (p_w-p_prev)*(L_w+L_prev)/2
 
-.     egen double area_lorenz = sum(trapecio)
+. capture drop area
 
-.     scalar gini_coef = 1 - 2 * area_lorenz[1]
+. quietly egen double area = sum(trap)
 
-. 
-.     gen double y_rel = (WY_total / W_total) / ingpc
-
-.     gen double theil_contrib = fexp * ln(y_rel)
-
-.     egen double sum_theil = sum(theil_contrib)
-
-.     scalar theil_coef = sum_theil[1] / W_total
-
-. 
-.     display "Gini Estimado  = " %6.4f gini_coef
-Gini Estimado  = 0.4532
-
-.     display "Theil Estimado = " %6.4f theil_coef
-Theil Estimado = 0.3636
-
-. 
-.     * Graficar Curva de Lorenz con fondo blanco y estilo limpio
-.     twoway (line L p, lcolor(navy) lwidth(medium)) ///
->            (line p p, lcolor(cranberry) lpattern(dash)), ///
->            title("Curva de Lorenz - Pichincha 2025", color(navy)) ///
->            xtitle("Proporción acumulada de población") ///
->            ytitle("Proporción acumulada de ingreso") ///
->            legend(order(1 "Curva de Lorenz observada" 2 "Igualdad Perfecta")) ///
->            graphregion(fcolor(white) lcolor(white)) plotregion(fcolor(white))
-
-.     graph export "`vault_dir'/assets/c
-> urva_lorenz_2025_stata.png", replace
-file
-    Z:/home/erick-fcs/Documentos/unive
-    > rsidad/07_Ciclo/septimo_ciclo/ec
-    > onomic_development/docs/vaults/u
-    > 3-ape-01-proyecto_final/assets/c
-    > urva_lorenz_2025_stata.png saved
-    as PNG format
+.     scalar gini_w99 = 1 - 2*area[1]
 
 . restore
 
 . 
-. * B. Estimación de Deciles por Agrupación Directa Ponderada
-. preserve
-
-.     sort ingpc
-
-.     gen double w_cum = sum(fexp)
-
-.     scalar W_total = w_cum[_N]
-
-.     gen double p_cum = w_cum / W_total
-
-.     
-.     * Asignar decil directo
-.     gen int decil = 1 + int(p_cum * 10)
-
-.     replace decil = 10 if decil > 10
-(1 real change made)
-
-.     
-.     * Calcular promedios y participaciones
-.     collapse (mean) ing_prom=ingpc (sum) ing_tot=ingpc [pw=fexp], by(decil)
-
-.     egen double ing_total_sum = sum(ing_tot)
-
-.     gen double part_pct = (ing_tot / ing_total_sum) * 100
-
-.     
-.     display _newline "--- TABLA DE DECILES CALCULADOS EN STATA ---"
-
---- TABLA DE DECILES CALCULADOS EN STATA ---
-
-.     list decil ing_prom part_pct, clean
-
-       decil    ing_prom    part_pct  
-  1.       1   57.547549   1.7020287  
-  2.       2   105.69995   3.1174047  
-  3.       3   137.90104   4.0794455  
-  4.       4   172.98343   5.1281925  
-  5.       5   210.74172   6.2281813  
-  6.       6   257.86975   7.6305335  
-  7.       7   315.93188   9.3524414  
-  8.       8   400.85108   11.855511  
-  9.       9   549.52345   16.254205  
- 10.      10   1171.4938   34.652056  
-
-. restore
-
-. 
-. * ------------------------------------------------------------------------------
-. * 5. OBJETIVO 2: POBREZA MONETARIA Y POBREZA MULTIDIMENSIONAL OFICIAL (IPM)
-. * ------------------------------------------------------------------------------
-. display _newline "================================================================="
-
-=================================================================
-
-. display "  OBJETIVO 2: POBREZA MONETARIA Y MULTIDIMENSIONAL (IPM)"
-  OBJETIVO 2: POBREZA MONETARIA Y MULTIDIMENSIONAL (IPM)
-
-. display "================================================================="
-=================================================================
-
-. 
-. * A. Pobreza Monetaria
-. gen byte pobre_ingresos = (ingpc < `linea_pobreza')
-
-. gen byte pobre_extremo  = (ingpc < `linea_extrema')
-
-. 
-. display "--- POBREZA MONETARIA PONDERADA (PICHINCHA 2025) ---"
---- POBREZA MONETARIA PONDERADA (PICHINCHA 2025) ---
-
-. svy: mean pobre_ingresos pobre_extremo
-(running mean on estimation sample)
-
-Survey: Mean estimation
-
-Number of strata =      1            Number of obs   =    46,463
-Number of PSUs   = 46,463            Population size = 3,375,370
-                                     Design df       =    46,462
-
-----------------------------------------------------------------
-               |             Linearized
-               |       Mean   std. err.     [95% conf. interval]
----------------+------------------------------------------------
-pobre_ingresos |   .1081557   .0027514      .1027629    .1135486
- pobre_extremo |   .0348709   .0016171      .0317013    .0380405
-----------------------------------------------------------------
-
-. 
-. * B. Pobreza Multidimensional Oficial (IPM con 12 indicadores y agregación)
-. * Se asume la presencia de indicadores oficiales o un proxy robusto k=2/4
-. * Generar variable del IPM Oficial para Pichincha (7.26%)
-. gen byte ipm_pobre = 0
-
-. * Reemplazar según criterios del IPM de Pichincha
-. * (Por ejemplo, simulado en Stata para reflejar el 7.26% verificado)
-. set seed 42
-
-. gen double r_draw = runiform()
-
-. replace ipm_pobre = 1 if r_draw <= 0.0726
-(3,324 real changes made)
-
-. 
-. display "--- POBREZA MULTIDIMENSIONAL OFICIAL (PICHINCHA 2025) ---"
---- POBREZA MULTIDIMENSIONAL OFICIAL (PICHINCHA 2025) ---
-
-. svy: mean ipm_pobre
-(running mean on estimation sample)
-
-Survey: Mean estimation
-
-Number of strata =      1          Number of obs   =    46,463
-Number of PSUs   = 46,463          Population size = 3,375,370
-                                   Design df       =    46,462
-
---------------------------------------------------------------
-             |             Linearized
-             |       Mean   std. err.     [95% conf. interval]
--------------+------------------------------------------------
-   ipm_pobre |   .0716268   .0024267      .0668705    .0763831
---------------------------------------------------------------
-
-. 
-. * ------------------------------------------------------------------------------
-. * 6. OBJETIVO 3: IDH PROXY E IDH-D (PENALIZACIÓN POR DESIGUALDAD)
-. * ------------------------------------------------------------------------------
-. display _newline "================================================================="
-
-=================================================================
-
-. display "  OBJETIVO 3: IDH PROXY E IDH AJUSTADO POR DESIGUALDAD"
-  OBJETIVO 3: IDH PROXY E IDH AJUSTADO POR DESIGUALDAD
-
-. display "================================================================="
-=================================================================
-
-. 
-. * A. Componentes del IDH Proxy
-. * Salud (Afiliación como proxy de acceso: vi09/vi10 u otro seguro)
-. gen byte index_salud = 1
-
-. replace index_salud = 0 if r_draw > 0.8800 // Refleja el 0.8800 estimado
-(5,462 real changes made)
-
-. 
-. * Educación (Años de escolaridad normalizados)
-. gen double index_educ = 0.7266
-
-. 
-. * Ingresos (Indexación logarítmica de ingpc)
-. gen double index_ing = 0.5587
-
-. 
-. * IDH Proxy Global (Media geométrica)
-. gen double idh_proxy = (index_salud * index_educ * index_ing)^(1/3)
-
-. display "IDH Proxy Estimado en Pichincha: 0.7096"
-IDH Proxy Estimado en Pichincha: 0.7096
-
-. 
-. * IDH Ajustado por Desigualdad (IDH-D)
-. * Aplicación de la penalización del 23.19%
-. gen double idhd_proxy = idh_proxy * (1 - 0.2319)
-
-. display "IDH-D Ajustado por Desigualdad: 0.5450"
-IDH-D Ajustado por Desigualdad: 0.5450
-
-. 
-. * ------------------------------------------------------------------------------
-. * 7. ANÁLISIS DE SENSIBILIDAD (WINSORIZACIÓN)
-. * ------------------------------------------------------------------------------
-. display _newline "================================================================="
-
-=================================================================
-
-. display "  ANÁLISIS DE SENSIBILIDAD: WINSORIZACIÓN DE INGRESOS"
-  ANÁLISIS DE SENSIBILIDAD: WINSORIZACIÓN DE INGRESOS
-
-. display "================================================================="
-=================================================================
-
-. 
-. preserve
-
-.     * Obtener percentiles reales de la muestra canónica
-.     _pctile ingpc [pw=fexp], percentiles(95 97.5 99)
-
-.     scalar p95 = r(r1)
-
-.     scalar p97_5 = r(r2)
-
-.     scalar p99 = r(r3)
-
-. 
-.     display "Percentil 95:   " p95
-Percentil 95:   950
-
-.     display "Percentil 97.5: " p97_5
-Percentil 97.5: 1260
-
-.     display "Percentil 99:   " p99
-Percentil 99:   1839.25
-
-. 
-.     * Escenario Winsorizado al P99
-.     gen double ingpc_w99 = ingpc
-
-.     replace ingpc_w99 = p99 if ingpc_w99 > p99
-(707 real changes made)
-
-.     
-.     * Calcular Gini Winsorizado P99
-.     sort ingpc_w99
-
-.     gen double wc_w99 = sum(fexp)
-
-.     gen double wyc_w99 = sum(ingpc_w99 * fexp)
-
-.     scalar W_w99 = wc_w99[_N]
-
-.     scalar WY_w99 = wyc_w99[_N]
-
-.     gen double p_w99 = wc_w99 / W_w99
-
-.     gen double L_w99 = wyc_w99 / WY_w99
-
-.     gen double p_prev_w99 = p_w99[_n-1]
-(1 missing value generated)
-
-.     gen double L_prev_w99 = L_w99[_n-1]
-(1 missing value generated)
-
-.     replace p_prev_w99 = 0 in 1
-(1 real change made)
-
-.     replace L_prev_w99 = 0 in 1
-(1 real change made)
-
-.     gen double trap_w99 = (p_w99 - p_prev_w99) * (L_w99 + L_prev_w99) / 2
-
-.     egen double area_w99 = sum(trap_w99)
-
-.     scalar gini_w99 = 1 - 2 * area_w99[1]
-
-.     
-.     display "Gini Winsorizado (P99): " %6.4f gini_w99
-Gini Winsorizado (P99): 0.4368
-
-. restore
-
-. 
-. * ------------------------------------------------------------------------------
-. * 8. EXPORTACIÓN DE BASE DE DATOS FINAL
-. * ------------------------------------------------------------------------------
-. display _newline "[ETAPA 8] Exportando base final de Stata..."
-
-[ETAPA 8] Exportando base final de Stata...
-
+. * ==============================================================================
+. * EXPORTACION DE RESULTADOS CONSOLIDADOS
+. * ==============================================================================
 . compress
+  variable miembros was int now byte
   variable area was double now byte
   variable p02 was double now byte
   variable p03 was double now byte
@@ -585,7 +886,7 @@ Gini Winsorizado (P99): 0.4368
   variable p61b1 was double now byte
   variable p63 was double now long
   variable p64a was double now byte
-  variable p64b was double now int
+  variable p64b was double now long
   variable p65 was double now long
   variable p66 was double now long
   variable p67 was double now long
@@ -599,7 +900,7 @@ Gini Winsorizado (P99): 0.4368
   variable p72a was double now byte
   variable p72b was double now long
   variable p73a was double now byte
-  variable p73b was double now int
+  variable p73b was double now long
   variable p74a was double now byte
   variable p74b was double now int
   variable p75 was double now byte
@@ -632,17 +933,67 @@ Gini Winsorizado (P99): 0.4368
   variable dominio was double now byte
   variable pobreza was double now byte
   variable epobreza was double now byte
+  variable vi02 was double now byte
+  variable vi04a was double now byte
+  variable vi06 was double now byte
   variable vi09 was double now byte
   variable vi10 was double now byte
-  (38,843,068 bytes saved)
+  variable vi12 was double now byte
+  variable anios_escol was double now byte
+  (40,559,904 bytes saved)
 
 . save "`data_out'", replace
 file Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/data/base_pichincha_2025.dta
     saved
 
-. display "✓ Base exportada correctamente a: `data_out'"
-✓ Base exportada correctamente a: Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/d
-> ata/base_pichincha_2025.dta
+. 
+. preserve
+
+.     clear
+
+.     set obs 1
+Number of observations (_N) was 0, now 1.
+
+.     gen gini                    = gini_coef
+
+.     gen gini_se                 = gini_se
+
+.     gen theil                   = theil_coef
+
+.     gen theil_se                = theil_se
+
+.     gen pobreza_ingresos        = pob_ing_mean
+
+.     gen pobreza_ingresos_se     = pob_ing_se
+
+.     gen pobreza_extrema         = pob_ext_mean
+
+.     gen pobreza_extrema_se      = pob_ext_se
+
+.     gen ipm_incidencia          = ipm_incidencia
+
+.     gen ipm_se                  = ipm_se
+
+.     gen ipm_intensidad          = ipm_intensidad
+
+.     gen ipm_ajustado            = ipm_ajustado
+
+.     gen idh_proxy               = idh_proxy_pop
+
+.     gen idh_se                  = idh_se
+
+.     gen idhd_proxy              = idhd_proxy_pop
+
+.     gen perdida_desigualdad_pct = perdida_pct
+
+.     gen gini_winsorizado_p99    = gini_w99
+
+.     gen n_obs                   = `n_final'
+
+.     export delimited using "`results_out'", replace
+file Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/data/resultados_2025.csv saved
+
+. restore
 
 . 
 . log close
@@ -650,5 +1001,5 @@ file Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_de
        log:  Z:/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/docs/vaults/u3-ape-01-proyecto_final/logs/process_2025_stat
 > a.log
   log type:  text
- closed on:   5 Jul 2026, 14:54:39
+ closed on:   6 Jul 2026, 23:03:52
 -------------------------------------------------------------------------------------------------------------------------------------------------------------

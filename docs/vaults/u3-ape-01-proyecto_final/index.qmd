@@ -9,6 +9,9 @@ format:
     toc-depth: 3
     code-fold: true
     theme: cosmo
+  docx:
+    reference-doc: template.docx
+bibliography: ../../../bibliography/references.bib
 ---
 
 {{< include chapters/01-introduccion.qmd >}}
@@ -23,6 +26,7 @@ format:
 
 {{< include chapters/06-recomendaciones.qmd >}}
 
+{{< include chapters/08-bibliografia.qmd >}}
+
 {{< include chapters/07-anexos.qmd >}}
 
-{{< include chapters/08-bibliografia.qmd >}}

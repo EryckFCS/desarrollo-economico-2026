@@ -3,42 +3,51 @@
 ### Elección de la Provincia
 El análisis empírico se enfoca en la provincia de **Pichincha (Código DPA 17)**. Pichincha cuenta con una representatividad estadística óptima dentro de la ENEMDU 2025, concentrando una muestra de **46,728 registros individuales válidos** tras el procesamiento y unificación de las bases de datos de personas y viviendas. De acuerdo con el diseño muestral oficial de la ENEMDU elaborado por el Instituto Nacional de Estadística y Censos (INEC, 2024), la encuesta utiliza un muestreo probabilístico, bietápico, estratificado y por conglomerados, donde las 24 provincias constituyen dominios de estudio o estimación independientes y explícitos. Esto garantiza que las estimaciones provinciales cuenten con la representatividad estadística necesaria para la inferencia de políticas públicas y permiten reportar estimaciones consistentes con errores estándar robustos.
 
-## 3.1. Metodología - Objetivo 1 
+## 3.1. Metodología - Objetivo 1
 
-### Curva de Lorenz
-La curva de Lorenz describe la relación entre los porcentajes acumulados de población y los porcentajes acumulados de ingreso, considerando a los individuos u hogares ordenados en forma ascendente según su nivel de renta y agrupados en intervalos de igual tamaño, usualmente deciles (Tezanos Vázquez et al., 2013). Para construirla se calculan las frecuencias relativas simples y acumuladas de la población y del ingreso en cada intervalo, y se grafican las proporciones acumuladas de ambas variables en un sistema cartesiano en el que la curva nace en el origen y se compara con la diagonal de equidad perfecta. Cuanto más se aleja de dicha diagonal, mayor es la desigualdad observada (Tezanos Vázquez et al., 2013). Cuando se dispone de datos ordenados por deciles, la forma discreta estándar de la curva se obtiene definiendo la proporción acumulada de población $X_k$ y la proporción acumulada de ingreso $Y_k$ para cada decil $k$ como:
+**3.1.1. Curva de Lorenz**
 
-$$X_k = \frac{k}{n} \tag{1}$$
+La curva de Lorenz representa la relación entre los porcentajes acumulados de población y los de ingreso de forma ascendente [@tezanos2013desarrollo]. En su forma discreta, se determina mediante la proporción acumulada de la población ($X_k$) y la proporción acumulada del ingreso ($Y_k$) en cada decil $k$:
 
-$$Y_k = \frac{\sum_{j=1}^{k} y_j}{\sum_{j=1}^{n} y_j} \tag{2}$$
+$$
+X_k = \frac{k}{n}
+$$ {#eq-lorenz_x}
 
-donde $n$ es el número total de deciles e $y_j$ representa el ingreso del decil $j$. Estas expresiones permiten trazar la curva de Lorenz empírica y constituyen la base para derivar indicadores sintéticos de concentración como el coeficiente de Gini en la práctica estadística aplicada del Instituto Nacional de Estadística y Censos (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013).
+$$
+Y_k = \frac{\sum_{j=1}^k y_j}{\sum_{j=1}^n y_j}
+$$ {#eq-lorenz_y}
 
-### Coeficiente de Gini
-El coeficiente de Gini es un índice sintético de desigualdad que resume la forma en que se distribuye una variable de bienestar, típicamente el ingreso o el gasto, entre los individuos o los hogares de una población en un periodo dado, sin utilizar como referencia directa el ingreso medio de la distribución sino la geometría de la curva de Lorenz (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013). Se interpreta en una escala continua entre cero y uno. El valor cero representa igualdad perfecta, con una curva de Lorenz que coincide con la diagonal de equidistribución y un área de concentración nula, mientras que el valor uno refleja desigualdad máxima, en la que todo el ingreso se concentra en un solo individuo y la curva de Lorenz se confunde con los ejes del diagrama (Instituto Nacional de Estadística y Censos, 2008).
+donde $n$ equivale al número total de deciles (10) e $y_j$ representa el ingreso del decil $j$. Estas funciones se computan sobre el ingreso per cápita de los hogares ($ingpc$) ponderado por el factor de expansión ($fexp$), lo que permite estructurar la línea de distribución observada respecto a la recta de equidad absoluta.
 
-La definición geométrica estándar establece que el coeficiente de Gini se calcula como el cociente entre el área comprendida entre la diagonal de equidistribución y la curva de Lorenz, y el área total bajo dicha diagonal. A mayor área relativa, mayor es la concentración del ingreso (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013). Cuando se dispone de datos tabulados en estratos de ingreso, como deciles, una forma discreta usual empleada en la práctica estadística ecuatoriana se expresa como:
+**3.1.2. Coeficiente de Gini**
 
-$$G = \frac{2}{N^2 \mu} \sum_{i=1}^{N} i Y_i - \frac{N + 1}{N} \tag{3}$$
+El coeficiente de Gini resume la concentración de la renta en una escala continua entre 0 (igualdad perfecta) y 1 (desigualdad máxima) a partir de la representación de la curva de Lorenz [@inec2008pobreza]. Su cálculo sobre microdatos individuales mitiga los sesgos de agregación. Este análisis considera las 46,463 observaciones con ingresos positivos registradas en Pichincha, ponderadas por su correspondiente factor de expansión. La formulación matemática basada en la diferencia absoluta media se define como:
 
-donde $i$ indexa las personas o grupos de personas, $N$ es el número de estratos de ingreso considerados, $\mu$ es el ingreso medio de la población y $Y_i$ representa el ingreso del estrato $i$, fijando $N = 10$ cuando el cálculo se realiza por deciles (Instituto Nacional de Estadística y Censos, 2008). Una formulación equivalente que trabaja directamente sobre la curva de Lorenz discreta, utilizada en la literatura técnica del INEC, se define como:
+$$
+G = \frac{\sum_{i=1}^N \sum_{j=1}^N f_i f_j |y_i - y_j|}{2 \left(\sum_{i=1}^N f_i\right)^2 \bar{y}}
+$$ {#eq-gini}
 
-$$G = \left| 1 - \sum_{k=1}^{n} (X_{k+1} - X_k)(Y_{k+1} + Y_k) \right| \tag{4}$$
+donde $f_i$ y $f_j$ corresponden a los factores de expansión de las observaciones $i$ y $j$, $y_i$ e $y_j$ indican los ingresos per cápita respectivos, y $\bar{y}$ expresa el ingreso medio ponderado. Este estadístico procesa la distribución empírica total sin simplificaciones paramétricas [@jenkins1999ineqdeco]. El cómputo se efectúa mediante el módulo `ineqdeco` en Stata.
 
-donde $X_k$ y $Y_k$ corresponden a las proporciones acumuladas de población e ingreso definidas a partir de la curva de Lorenz, y la suma recorre los intervalos de la partición de la distribución empírica. Esta expresión relaciona de manera directa la geometría de la curva con el valor del coeficiente de Gini y permite su cálculo consistente a partir de datos agrupados (Instituto Nacional de Estadística y Censos, 2008; Tezanos Vázquez et al., 2013).
+**3.1.3. Índice de Theil L**
 
-### Índice de Theil
-El índice de Theil L (Desviación Logarítmica Media) es una medida de desigualdad basada en la entropía que compara el ingreso relativo de todos los individuos ponderado por la población (Tezanos Vázquez et al., 2013). Esta formulación se expresa matemáticamente como:
+El índice de Theil L (Desviación Logarítmica Media) evalúa la desigualdad mediante la teoría de la información y la entropía distributiva [@tezanos2013desarrollo]. Para observaciones individuales ponderadas, se define a partir de la entropía generalizada $GE(0)$:
 
-$$T = \frac{1}{n} \sum_{i=1}^{n} \ln \left( \frac{\bar{y}}{y_i} \right) \tag{5}$$
+$$
+T = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i \ln \left( \frac{\bar{y}}{y_i} \right)
+$$ {#eq-theil}
 
-donde $n$ es el número total de observaciones, $y_i$ es el ingreso del individuo $i$ e $\bar{y}$ es el ingreso medio. Para microdatos ponderados con factores de expansión $f_i$, esta expresión se generaliza metodológicamente como la Desviación Logarítmica Media, también denominada indicador GE(0):
+donde $N$ es el tamaño de la muestra, $y_i$ denota el ingreso del individuo $i$, y $\bar{y}$ es la media ponderada del ingreso. El índice Theil L resulta de especial utilidad por su propiedad de descomposición aditiva exacta en desigualdades inter e intragrupales [@bourguignon1979decomposable]. Esta cualidad matemática desagrega la asimetría global según dimensiones estructurales como la educación o la localización geográfica. La estimación se realiza mediante el comando `ineqdeco` en Stata.
 
-$$T = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i \ln \left( \frac{\bar{y}}{y_i} \right)$$
+**3.1.4. Inferencia Estadística y Diseño Complejo**
 
-donde $\bar{y}$ es el ingreso medio ponderado (Tezanos Vázquez et al., 2013).
+La estimación de los errores estándar para el coeficiente de Gini y el índice de Theil L requiere incorporar la estructura del diseño muestral complejo de la ENEMDU. Ignorar este diseño (bajo el supuesto de muestreo aleatorio simple ponderado) subestima la verdadera varianza muestral [@wolter2007introduction]. El cálculo de la varianza se parametrizó en Stata mediante el comando `svyset`, declarando la variable `conglomerado` como unidad primaria de muestreo (UPM) y la variable `dominio` como estrato de diseño.
 
-## 3.2. Metodología - Objetivo 2 
+Los errores estándar se calcularon mediante el método jackknife de eliminación secuencial de conglomerados (delete-1-cluster jackknife). Este procedimiento recalcula iterativamente el estadístico omitiendo secuencialmente cada UPM en Pichincha (52 conglomerados), lo que genera 52 réplicas de estimación [@wolter2007introduction]. Esta técnica es adecuada ante la existencia de estratos con un único conglomerado remanente tras la delimitación geográfica de la muestra, escenario donde el bootstrap de clusters no puede computar la variabilidad al requerir al menos dos UPM por estrato.
+
+La modelación de la varianza incorpora los lineamientos de la *Guía de Usuario de la ENEMDU 2025*, donde la UPM corresponde a la variable `conglomerado` y el estrato al `dominio` de planificación. Si bien este esquema de varianza compleja aproxima la estructura de la encuesta, pueden existir diferencias menores con los reportes oficiales del INEC debido a calibraciones post-estratificación y ajustes de proyección demográfica reservados por la institución.
+
+## 3.2. Metodología - Objetivo 2
 
 ### Índice de Pobreza Multidimensional Oficial (IPM INEC)
 La pobreza multidimensional mide la privación en múltiples dimensiones del bienestar, no solo la falta de ingresos, y clasifica como pobres a quienes experimentan simultáneamente varias carencias significativas. Siguiendo la metodología oficial del INEC, se consideran cuatro dimensiones con un total de 12 indicadores ponderados, utilizando al hogar como unidad de identificación de privaciones (principio de solidaridad intrahogar).
@@ -64,12 +73,14 @@ La estructura metodológica oficial del IPM adoptada para esta investigación se
 | | 6.25% | Sin saneamiento de excretas | Sin conexión a alcantarillado ni a pozo séptico adecuado (`vi09 != 1, 2`). |
 | | 6.25% | Sin servicio de recolección de basura | Eliminación de desechos por quema, botadero o río (`vi12 != 1`). |
 
-*Nota.* Estructura adaptada del marco oficial de Alkire-Foster adoptado por el INEC (2016).
+*Nota.* Estructura adaptada del marco de @alkire2011counting adoptado por el @inec2016ipm.
 
 ### Principio de Solidaridad Intrahogar y Unidad de Análisis
 Para garantizar que las privaciones se evalúen bajo un esquema de vulnerabilidad compartida, se utiliza al hogar como la unidad de identificación. Si al menos un miembro del hogar sufre privación en un indicador determinado, se asume que todos los miembros del hogar comparten esa privación (solidaridad intrahogar). Una vez que se identifican las privaciones acumuladas del hogar, se calcula el puntaje ponderado de privación $c_i \in [0, 1]$ para cada hogar $i$:
 
-$$c_i = \sum_{j=1}^{12} w_j I_{ij}$$
+$$
+c_i = \sum_{j=1}^{12} w_j I_{ij}
+$$ {#eq-ipm_score}
 
 donde $I_{ij} \in \{0, 1\}$ es el indicador de privación del hogar en la variable $j$ y $w_j$ es su ponderación. De conformidad con las directrices de Alkire-Foster y del INEC, se establece un umbral de pobreza multidimensional de $k = 0.3333$ (un tercio del total ponderado). Todo individuo perteneciente a un hogar con $c_i \ge 0.3333$ es clasificado como pobre multidimensional.
 
@@ -81,26 +92,36 @@ donde $I_{ij} \in \{0, 1\}$ es el indicador de privación del hogar en la variab
 La pobreza por ingresos se determina comparando el ingreso per cápita mensual del hogar ($y_{pc}$) con una línea de pobreza ($z_{pobreza}$) establecida oficialmente por la autoridad estadística. El análisis de este indicador permite conocer la dimensión puramente monetaria del bienestar a partir del poder adquisitivo del hogar.
 
 ### Cálculo de pobreza por ingresos
-Se evalúa comparando el ingreso per cápita del hogar contra las líneas oficiales de pobreza ($z_{pobreza} = \$89.85$ USD/mes por persona) y pobreza extrema ($z_{extrema} = \$50.63$ USD/mes por persona), de acuerdo con los umbrales oficiales reportados en el *Boletín Técnico de Pobreza y Desigualdad de diciembre de 2025* publicado por el Instituto Nacional de Estadística y Censos (INEC, 2025):
+Se evalúa comparando el ingreso per cápita del hogar contra las líneas oficiales de pobreza ($z_{pobreza} = \$89.85$ USD/mes por persona) y pobreza extrema ($z_{extrema} = \$50.63$ USD/mes por persona), de acuerdo con los umbrales oficiales reportados por el @inec2025guia:
 
-$$\text{Pobreza Monetaria:} \quad P_i = \begin{cases} 1 & \text{si } y_{pc} < z_{pobreza} \\ 0 & \text{si } y_{pc} \ge z_{pobreza} \end{cases}$$
+$$
+P_i = \begin{cases} 1 & \text{si } y_{pc} < z_{pobreza} \\ 0 & \text{si } y_{pc} \ge z_{pobreza} \end{cases}
+$$ {#eq-pobreza_monetaria}
 
 La tasa agregada se calcula mediante la familia de índices Foster-Greer-Thorbecke (FGT) para $\alpha = 0$ (Incidencia):
 
-$$P_0 = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i P_i$$
+$$
+P_0 = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i P_i
+$$ {#eq-fgt_pobreza}
 
 ## 3.3. Metodología - Objetivo 3
 
 ### Índice de Desarrollo Humano (IDH)
 El Índice de Desarrollo Humano (IDH) es un indicador diseñado para evaluar el nivel de bienestar y progreso, expandiendo el análisis más allá de los indicadores macroeconómicos tradicionales como el Producto Interno Bruto (PIB). El IDH integra dimensiones fundamentales de la calidad de vida de las personas: educación, salud e ingresos.
 
-$$IDH = \sqrt[3]{I_{Salud} \times I_{Educación} \times I_{Ingresos}}$$
+$$
+IDH = \sqrt[3]{I_{Salud} \times I_{Educación} \times I_{Ingresos}}
+$$ {#eq-idh}
 
 * **Índice de Ingresos ($I_{Ingresos}$):** Construido a partir del ingreso per cápita del hogar promedio ($Ing_{medio}$), usando la transformación logarítmica:
-  $$I_{Ingresos} = \frac{\ln(Ing_{medio}) - \ln(y_{min})}{\ln(y_{max}) - \ln(y_{min})}$$
+  $$
+  I_{Ingresos} = \frac{\ln(Ing_{medio}) - \ln(y_{min})}{\ln(y_{max}) - \ln(y_{min})}
+  $$ {#eq-idh_ing}
   donde los límites establecidos corresponden a $y_{min} = 100$ USD e $y_{max} = 75000$ USD.
 * **Índice de Educación ($I_{Educación}$):** Basado en los años de instrucción promedio de la población de 24 años o más ($Años_{prom}$):
-  $$I_{Educación} = \frac{Años_{prom} - 0}{15}$$
+  $$
+  I_{Educación} = \frac{Años_{prom} - 0}{15}
+  $$ {#eq-idh_educ}
 * **Índice de Salud ($I_{Salud}$):** Ante la imposibilidad de calcular la esperanza de vida al nacer de manera directa con microdatos transversales de hogares, se emplea una aproximación a través de la cobertura de aseguramiento o afiliación formal al sistema de salud. 
 
   **Advertencia Crítica sobre el Componente de Salud (Proxy):** Esta aproximación cambia conceptualmente el alcance del componente. En lugar de reflejar los resultados de salud acumulados de la población (longevidad, condiciones crónicas, mortalidad), la cobertura y afiliación formal al sistema de salud en Ecuador está fuertemente determinada por la formalidad del mercado de trabajo. De esta forma, el índice captura el acceso formal institucional y las condiciones laborales, no el estado real de salud biológica de la población. Esto representa una limitación de comparabilidad, por lo que el IDH aquí calculado no es comparable con los valores oficiales del PNUD.
@@ -108,11 +129,15 @@ $$IDH = \sqrt[3]{I_{Salud} \times I_{Educación} \times I_{Ingresos}}$$
 ### IDH ajustado por Desigualdad
 Para capturar las asimetrías de la distribución en cada componente, se ajusta directamente cada dimensión por el factor de desigualdad correspondiente ($1 - G_d$), donde $G_d$ representa el coeficiente de Gini de la respectiva dimensión:
 
-$$I_d^* = I_d \times (1 - G_d)$$
+$$
+  I_d^* = I_d \times (1 - G_d)
+  $$ {#eq-idh_adj}
 
 El **IDH Ajustado por Desigualdad (IDH-D)** se obtiene mediante la media geométrica de las dimensiones corregidas:
 
-$$IDH\text{-}D = \sqrt[3]{I_{Salud}^* \times I_{Educación}^* \times I_{Ingresos}^*}$$
+$$
+  IDH\text{-}D = \sqrt[3]{I_{Salud}^* \times I_{Educación}^* \times I_{Ingresos}^*}
+  $$ {#eq-idh_d}
 
 ## 3.4. Datos Preliminares y Análisis Descriptivo
 
