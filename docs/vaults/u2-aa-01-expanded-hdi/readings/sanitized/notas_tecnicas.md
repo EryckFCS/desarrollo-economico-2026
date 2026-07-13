@@ -1,0 +1,1 @@
+/home/erick-fcs/.capital/lake/bibliography/sanitized/notas_tecnicas.md
