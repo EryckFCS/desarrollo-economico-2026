@@ -21,48 +21,47 @@ format:
 
 ## 1. Nombre del caso y país
 * **Caso:** Industrias Creativas Inclusivas: una herramienta innovadora para el alivio a la pobreza (Programa MDGF-2081).
-* **País:** Perú (Zonas de intervención priorizadas: Ayacucho, Cusco, Puno y Lambayeque) [@sdgfund2013sistematizacion].
+* **País:** Perú (Ayacucho, Cusco, Puno y Lambayeque) [@sdgfund2013sistematizacion].
 
 ## 2. Problema principal
-A pesar del crecimiento económico sostenido de la última década que elevó al Perú a la categoría de renta media, esta dinámica no generó empleo formal suficiente ni redujo la pobreza en áreas rurales e indígenas. Para el año 2008, aproximadamente uno de cada dos peruanos en edad activa subsistía en la informalidad (generando dos tercios del PIB nacional), perpetuando círculos de exclusión social y vulnerabilidad económica en las familias rurales de las regiones andinas y costeras.
+* **Pobreza y exclusión:** Crecimiento económico nacional no traducido en empleo formal ni en desarrollo para zonas rurales andinas y costeras.
+* **Vulnerabilidad laboral:** Cerca del 50% de la población activa dependiente del sector informal (el cual generaba dos tercios del PIB).
+* **Marginación rural:** Círculos persistentes de pobreza y exclusión en poblaciones rurales e indígenas de las regiones priorizadas.
 
 ## 3. Causas del problema
-Las principales causas del problema se agrupan en factores estructurales, económicos, culturales e institucionales:
-* **Estructurales y geográficas:** Aislamiento físico de las comunidades altoandinas y rurales costeras respecto a los mercados urbanos dinámicos.
-* **Económicas e informales:** Baja productividad del trabajo tradicional, total dependencia de intermediarios no equitativos y falta de valor agregado en su producción básica.
-* **Sociales y culturales:** Subvaloración de los conocimientos tradicionales (artesanía, variedades agrícolas nativas) en los mercados formales y exclusión histórica de los pueblos indígenas.
-* **Políticas e institucionales:** Debilidad de los gobiernos locales y regionales para implementar y sostener políticas públicas efectivas de fomento al desarrollo productivo local [@sdgfund2013sistematizacion].
+* **Estructurales:** Aislamiento geográfico y falta de infraestructura conectora con mercados dinámicos.
+* **Económicas:** Actividades tradicionales de baja productividad y fuerte dependencia de intermediarios no equitativos.
+* **Socio-culturales:** Exclusión histórica de comunidades indígenas y subvaloración del patrimonio y técnicas ancestrales.
+* **Institucionales:** Debilidad de los gobiernos descentralizados para promover el desarrollo económico local.
 
 ## 4. Actores involucrados
-El programa implementó un esquema de gobernanza multi-actor y multinivel:
-* **Nacionales (Gobernanza):** Liderado por el MINCETUR, con participación de los ministerios de la Producción, Agricultura, Ambiente, Cultura, y Trabajo y Promoción del Empleo.
-* **Internacionales (Apoyo Técnico):** El Sistema de las Naciones Unidas con la intervención de 6 agencias coordinadas: PNUD (agencia líder), FAO, OIT, UNESCO, ONUDI y OMT.
-* **Locales (Implementadores):** Gobiernos Regionales, 4 Municipalidades Provinciales, 12 Distritales, Cámaras de Comercio de Lambayeque y Ayacucho, y 2,612 productores organizados en asociaciones locales [@mdgfund2013narrative].
-* **Financiamiento:** Presupuesto total de USD \$6,500,000, estructurado por USD \$5,000,000 provistos por el Fondo F-ODM (contribución del Gobierno de España) y una contrapartida nacional del Gobierno peruano de USD \$1,500,000 [@mdgfund2013narrative].
+* **Gubernamental:** MINCETUR (líder) junto a los ministerios de Producción, Agricultura, Ambiente, Cultura, y Trabajo.
+* **Multilateral:** Sistema de las Naciones Unidas con la acción de 6 agencias: PNUD (líder), FAO, OIT, UNESCO, ONUDI y OMT.
+* **Local:** Gobiernos regionales, 4 municipalidades provinciales, 12 distritales y las Cámaras de Comercio de Lambayeque y Ayacucho.
+* **Productores:** 2,612 microproductores rurales organizados en asociaciones de base.
+* **Financiamiento:** Presupuesto total de USD \$6,500,000 (USD \$5,000,000 del F-ODM/España y USD \$1,500,000 de contraparte peruana) [@mdgfund2013narrative].
 
 ## 5. Estrategia aplicada
-La intervención se centró en mejorar el entorno de mercado mediante cuatro ejes estratégicos:
-* **Enfoque de Industrias Creativas Inclusivas (ICI):** Valorización y capitalización de la identidad cultural y biodiversidad local en artesanía, gastronomía, agricultura orgánica y turismo rural comunitario.
-* **Desarrollo de Capacidades:** Diplomados académicos en ICI y Negocios Inclusivos (impartidos por la USAT en Lambayeque y la UNSAAC en Cusco), y certificación de formadores locales por la Universidad de San Martín de Porres (USMP).
-* **Articulación de Cadenas de Valor y Formalización:** Creación de marcas colectivas y establecimiento de ventanillas únicas de formalización en las Cámaras de Comercio locales.
-* **Entorno Normativo Descentralizado:** Redacción y aprobación de ordenanzas regionales y municipales que reconocieron formalmente a las ICI para asegurar presupuestos públicos locales [@sdgfund2013sistematizacion].
+* **Enfoque de Industrias Creativas Inclusivas (ICI):** Valorización del patrimonio cultural en artesanía, gastronomía, agricultura orgánica y turismo rural comunitario.
+* **Desarrollo de capacidades:** Diplomados universitarios en Negocios Inclusivos (USAT y UNSAAC) y formación de facilitadores comunitarios (USMP).
+* **Articulación comercial:** Creación de marcas colectivas y ventanillas de formalización rápida en Cámaras de Comercio para vincular directamente a los productores con grandes mercados.
+* **Institucionalización legal:** Impulso y aprobación de ordenanzas locales para asegurar presupuestos públicos descentralizados.
 
 ## 6. Relación con el desarrollo sostenible
-La relación del programa con el desarrollo sostenible se manifiesta en la conectividad directa y sinérgica de sus cuatro dimensiones principales, evidenciando que el progreso no se da mediante canales independientes [@sdgfund2017peru_estudiocaso]. 
-
-En primer lugar, la **dimensión social** se estructuró sobre el empoderamiento de las asociaciones de tejedoras y comunidades indígenas, reforzando la identidad local y el autoempleo decente. Este capital social se vinculó directamente con la **dimensión económica** al revalorizar estos saberes tradicionales y convertirlos en activos comerciales competitivos que acceden directamente a ferias de alto nivel (como Mistura o Expoalimentaria), rompiendo con la intermediación abusiva y elevando los ingresos reales. 
-
-Al mismo tiempo, la viabilidad de los negocios se entrelazó con la **dimensión ambiental** mediante el fomento de la agricultura orgánica certificada de cultivos nativos (quinua, algodón nativo, miel) y el diseño de rutas de turismo rural de bajo impacto que respetan la biodiversidad local. Finalmente, estas tres dimensiones fueron articuladas e institucionalizadas en la **dimensión institucional** mediante un marco de gobernanza descentralizado y público-privado (agencias ONU, ministerios, municipalidades y cámaras de comercio), legitimado a través de ordenanzas locales estables que garantizan presupuestos públicos participativos y asistencia técnica continuada.
+La conectividad del programa integra de forma sinérgica sus cuatro dimensiones [@sdgfund2017peru_estudiocaso]:
+* **Dimensión Social:** Inclusión social y empoderamiento de mujeres e indígenas, rescatando su identidad y autoestima comunitaria.
+* **Dimensión Económica:** Diversificación de ingresos y fomento del autoempleo formal, eliminando la intermediación comercial no equitativa.
+* **Dimensión Ambiental:** Adopción de prácticas agrícolas orgánicas en cultivos nativos y diseño de turismo rural comunitario de bajo impacto ecológico.
+* **Dimensión Institucional:** Creación de una gobernanza multinivel (Estado-ONU-Sector Privado-Comunidades) y marcos normativos locales estables.
 
 ## 7. Resultados o aprendizajes
-Los resultados tangibles al cierre del programa conjunto muestran el éxito del modelo:
-* **Impacto Organizacional y Productivo:** Financiación a 55 iniciativas empresariales, 3 empresas ancla y 2 consorcios de productoras artesanales [@mdgfund2013narrative]. *Nota: Existe una discrepancia editorial con el posterior Estudio de Caso de divulgación del SDG Fund (2017), el cual reporta 94 iniciativas y 3 consorcios [@sdgfund2017peru_estudiocaso], pero se prioriza la cifra del Informe Narrativo Final por ser el reporte oficial auditado ante el Secretariado del Fondo.*
-* **Gobernanza y Presupuesto:** Aprobación de 11 ordenanzas municipales, 1 provincial y 3 regionales. Cusco incorporó la promoción de las ICI en su Plan Concertado de Competitividad con un presupuesto asignado de S/. 2,000,000.
-* **Capital Técnico:** 93 formadores locales certificados por la USMP y 60 egresados del diplomado de Industrias Creativas y Negocios Inclusivos (USAT y UNSAAC) [@sdgfund2013sistematizacion].
-* **Lección sobre Gestión:** La participación de 6 agencias de la ONU generó costos de transacción y trabas contables elevados; se recomienda no exceder las 3 o 4 agencias coordinadoras en futuros designs [@sdgfund2017peru_estudiocaso].
+* **Impacto empresarial:** Financiación a 55 iniciativas empresariales, 3 empresas ancla y 2 consorcios artesanales [@mdgfund2013narrative]. *(Nota: El Estudio de Caso del SDG Fund reporta una discrepancia de 94 iniciativas y 3 consorcios [@sdgfund2017peru_estudiocaso]).*
+* **Gobernanza local:** Aprobación de 11 ordenanzas municipales, 1 provincial y 3 regionales. Cusco asignó S/. 2,000,000 a las ICI en su Plan Concertado de Competitividad.
+* **Capital humano:** 93 formadores locales certificados por la USMP y 60 egresados del diplomado en ICI.
+* **Gestión interagencial:** Coordinar 6 agencias de la ONU generó altos costos y duplicación administrativa; se recomienda no exceder las 3 o 4 agencias coordinadas.
 
 ## 8. Conclusión
-Este caso demuestra con claridad que el desarrollo sostenible no puede lograrse mediante acciones sectoriales o aisladas. La pobreza rural e indígena es un problema complejo y multidimensional; pretender solucionarlo solo incrementando el capital financiero (economía) o regalando recursos asistenciales, sin capacitar en habilidades organizativas (social), sin respetar y valorar sus dinámicas identitarias (cultural), sin asegurar el manejo sostenible de la tierra (ambiental) y sin crear reglas institucionales estables en los gobiernos locales (institucional), está destinado al fracaso. La intervención demostró que conectar estas dimensiones es el único camino viable para construir capacidades locales duraderas y mercados verdaderamente inclusivos.
+Este caso demuestra que el desarrollo sostenible requiere acciones conectadas. La pobreza rural e indígena es un problema multidimensional que no responde a subsidios asistenciales o iniciativas aisladas. Vincular el fortalecimiento de capacidades (social), el acceso directo a mercados justos (económico), la protección de los recursos naturales (ambiental) y la consolidación de marcos normativos locales (institucional) es el único camino viable para construir capacidades de desarrollo autónomas y sostenibles en el tiempo.
 
 # Referencias
 
