@@ -16,17 +16,22 @@ bibliography: ../../../bibliography/references.bib
 
 {{< include chapters/01-introduccion.qmd >}}
 
-{{< include chapters/02-objetivos.qmd >}}
+{{< include chapters/02-metodologia.qmd >}}
 
-{{< include chapters/03-metodologia.qmd >}}
+{{< include chapters/03-tabla_resumen.qmd >}}
 
 {{< include chapters/04-resultados.qmd >}}
 
-{{< include chapters/05-conclusiones.qmd >}}
+{{< include chapters/05-discusion.qmd >}}
 
-{{< include chapters/06-recomendaciones.qmd >}}
+{{< include chapters/06-propuestas.qmd >}}
+
+{{< include chapters/07-conclusiones.qmd >}}
 
 {{< include chapters/08-bibliografia.qmd >}}
 
-{{< include chapters/07-anexos.qmd >}}
+{{< include chapters/09-anexos.qmd >}}
+
+{{< include chapters/10-infografia.qmd >}}
+
 

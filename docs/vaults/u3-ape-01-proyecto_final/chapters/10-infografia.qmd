@@ -1,0 +1,3 @@
+# 10. Infografía
+
+Incorporación de la infografía final de una página correspondiente al diagnóstico provincial.

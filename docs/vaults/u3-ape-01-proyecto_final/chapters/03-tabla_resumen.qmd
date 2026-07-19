@@ -1,0 +1,7 @@
+# 3. Tabla Resumen
+
+A continuación se presenta la tabla resumen con los principales indicadores calculados para la provincia de Pichincha y su comparación a nivel nacional.
+
+| Indicador | Valor Provincial | Referente Nacional | Año | Fuente | Interpretación Breve |
+| --- | --- | --- | --- | --- | --- |
+| | | | | | |
