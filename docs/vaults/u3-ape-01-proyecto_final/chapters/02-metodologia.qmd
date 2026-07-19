@@ -1,207 +1,49 @@
-# 3. Metodología
+# Metodología
 
-### Elección de la Provincia
-El análisis empírico se enfoca en la provincia de **Pichincha (Código DPA 17)**. Pichincha cuenta con una representatividad estadística óptima dentro de la ENEMDU 2025, concentrando una muestra de **46,728 registros individuales válidos** tras el procesamiento y unificación de las bases de datos de personas y viviendas. De acuerdo con el diseño muestral oficial de la ENEMDU elaborado por el Instituto Nacional de Estadística y Censos (INEC, 2024), la encuesta utiliza un muestreo probabilístico, bietápico, estratificado y por conglomerados, donde las 24 provincias constituyen dominios de estudio o estimación independientes y explícitos. Esto garantiza que las estimaciones provinciales cuenten con la representatividad estadística necesaria para la inferencia de políticas públicas y permiten reportar estimaciones consistentes con errores estándar robustos.
+Para el desarrollo de este estudio se utilizó la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) de diciembre de 2025, elaborada por el Instituto Nacional de Estadística y Censos (INEC). A partir de esta base de datos, se seleccionaron y depuraron las variables asociadas a la identificación territorial, ingresos, educación, empleo, seguro social y condiciones de pobreza. Con el fin de garantizar la representatividad de los resultados a nivel provincial, los cálculos incorporan el factor de expansión correspondiente a su diseño muestral. Finalmente, la estimación de las métricas de desarrollo humano y pobreza se alineó estrictamente con las directrices metodológicas establecidas por el Programa de las Naciones Unidas para el Desarrollo (PNUD)
 
-## 3.1. Metodología - Objetivo 1
-
-**3.1.1. Curva de Lorenz**
-
-La curva de Lorenz representa la relación entre los porcentajes acumulados de población y los de ingreso de forma ascendente [@tezanos2013desarrollo]. En su forma discreta, se determina mediante la proporción acumulada de la población ($X_k$) y la proporción acumulada del ingreso ($Y_k$) en cada decil $k$:
-
-$$
-X_k = \frac{k}{n}
-$$ {#eq-lorenz_x}
-
-$$
-Y_k = \frac{\sum_{j=1}^k y_j}{\sum_{j=1}^n y_j}
-$$ {#eq-lorenz_y}
-
-donde $n$ equivale al número total de deciles (10) e $y_j$ representa el ingreso del decil $j$. Estas funciones se computan sobre el ingreso per cápita de los hogares ($ingpc$) ponderado por el factor de expansión ($fexp$), lo que permite estructurar la línea de distribución observada respecto a la recta de equidad absoluta.
-
-**3.1.2. Coeficiente de Gini**
-
-El coeficiente de Gini resume la concentración de la renta en una escala continua entre 0 (igualdad perfecta) y 1 (desigualdad máxima) a partir de la representación de la curva de Lorenz [@inec2008pobreza]. Su cálculo sobre microdatos individuales mitiga los sesgos de agregación. Este análisis considera las 46,463 observaciones con ingresos positivos registradas en Pichincha, ponderadas por su correspondiente factor de expansión. La formulación matemática basada en la diferencia absoluta media se define como:
-
-$$
-G = \frac{\sum_{i=1}^N \sum_{j=1}^N f_i f_j |y_i - y_j|}{2 \left(\sum_{i=1}^N f_i\right)^2 \bar{y}}
-$$ {#eq-gini}
-
-donde $f_i$ y $f_j$ corresponden a los factores de expansión de las observaciones $i$ y $j$, $y_i$ e $y_j$ indican los ingresos per cápita respectivos, y $\bar{y}$ expresa el ingreso medio ponderado. Este estadístico procesa la distribución empírica total sin simplificaciones paramétricas [@jenkins1999ineqdeco]. El cómputo se efectúa mediante el módulo `ineqdeco` en Stata.
-
-**3.1.3. Índice de Theil L**
-
-El índice de Theil L (Desviación Logarítmica Media) evalúa la desigualdad mediante la teoría de la información y la entropía distributiva [@tezanos2013desarrollo]. Para observaciones individuales ponderadas, se define a partir de la entropía generalizada $GE(0)$:
-
-$$
-T = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i \ln \left( \frac{\bar{y}}{y_i} \right)
-$$ {#eq-theil}
-
-donde $N$ es el tamaño de la muestra, $y_i$ denota el ingreso del individuo $i$, y $\bar{y}$ es la media ponderada del ingreso. El índice Theil L resulta de especial utilidad por su propiedad de descomposición aditiva exacta en desigualdades inter e intragrupales [@bourguignon1979decomposable]. Esta cualidad matemática desagrega la asimetría global según dimensiones estructurales como la educación o la localización geográfica. La estimación se realiza mediante el comando `ineqdeco` en Stata.
-
-**3.1.4. Inferencia Estadística y Diseño Complejo**
-
-La estimación de los errores estándar para el coeficiente de Gini y el índice de Theil L requiere incorporar la estructura del diseño muestral complejo de la ENEMDU. Ignorar este diseño (bajo el supuesto de muestreo aleatorio simple ponderado) subestima la verdadera varianza muestral [@wolter2007introduction]. El cálculo de la varianza se parametrizó en Stata mediante el comando `svyset`, declarando la variable `conglomerado` como unidad primaria de muestreo (UPM) y la variable `dominio` como estrato de diseño.
-
-Los errores estándar se calcularon mediante el método jackknife de eliminación secuencial de conglomerados (delete-1-cluster jackknife). Este procedimiento recalcula iterativamente el estadístico omitiendo secuencialmente cada UPM en Pichincha (52 conglomerados), lo que genera 52 réplicas de estimación [@wolter2007introduction]. Esta técnica es adecuada ante la existencia de estratos con un único conglomerado remanente tras la delimitación geográfica de la muestra, escenario donde el bootstrap de clusters no puede computar la variabilidad al requerir al menos dos UPM por estrato.
-
-La modelación de la varianza incorpora los lineamientos de la *Guía de Usuario de la ENEMDU 2025*, donde la UPM corresponde a la variable `conglomerado` y el estrato al `dominio` de planificación. Si bien este esquema de varianza compleja aproxima la estructura de la encuesta, pueden existir diferencias menores con los reportes oficiales del INEC debido a calibraciones post-estratificación y ajustes de proyección demográfica reservados por la institución.
-
-## 3.2. Metodología - Objetivo 2
-
-### Índice de Pobreza Multidimensional Oficial (IPM INEC)
-La pobreza multidimensional mide la privación en múltiples dimensiones del bienestar, no solo la falta de ingresos, y clasifica como pobres a quienes experimentan simultáneamente varias carencias significativas. Siguiendo la metodología oficial del INEC, se consideran cuatro dimensiones con un total de 12 indicadores ponderados, utilizando al hogar como unidad de identificación de privaciones (principio de solidaridad intrahogar).
-
-### Estructura de Dimensiones e Indicadores Oficiales (IPM)
-La estructura metodológica oficial del IPM adoptada para esta investigación se organiza en cuatro dimensiones principales, cada una con un peso de 25%, desagregadas en un total de 12 indicadores con ponderaciones asimétricas (Tabla 1):
-
-**Tabla 1**
-*Estructura de dimensiones, pesos e indicadores del IPM oficial en Ecuador*
-
-| Dimensiones (Peso) | Pesos Ind. | Indicadores | Definición Operativa de Privación (ENEMDU) |
-| :--- | :---: | :--- | :--- |
-| **Educación** (25%) | 8.33% | Inasistencia a educación básica y bachillerato (5-17 años) | Menores que no asisten a clases (`p07 == 2`). |
-| | 8.33% | No acceso a educación superior por razones económicas (18-29 años) | Jóvenes que no asisten por falta de recursos (`p11 == 1`). |
-| | 8.33% | Logro educativo incompleto (18 años o más) | Adultos con educación básica incompleta o menos (`nnivins <= 3`). |
-| **Trabajo y seguridad social** (25%) | 8.33% | No contribución al sistema de pensiones (15 años o más) | Trabajadores ocupados que no cotizan a la seguridad social (`p48 != 1, 2, 3`). |
-| | 8.33% | Empleo infantil y adolescente (5-17 años) | Menores trabajando (`condact` en `[1, 2, 3, 4, 5]`). |
-| | 8.33% | Desempleo o empleo inadecuado (15 años o más) | PEA de 15 años o más sin empleo pleno/adecuado (`condact` en `[2, 3, 4, 5, 6, 7]`). |
-| **Salud, agua y alimentación** (25%) | 12.50% | Pobreza extrema por ingresos | Ingreso familiar per cápita inferior a la línea de extrema pobreza (`ingpc < $50.63`). |
-| | 12.50% | Sin servicio de agua por red pública | Viviendas no abastecidas por red pública de agua potable (`vi10 != 1`). |
-| **Hábitat, vivienda y ambiente sano** (25%) | 6.25% | Hacinamiento | Viviendas con una relación de más de 3 personas por dormitorio (`miembros / vi06 > 3`). |
-| | 6.25% | Déficit habitacional | Materiales inadecuados en piso (`vi04a` en `[5,6]`) o paredes (`vi02` en `[5,6,7]`). |
-| | 6.25% | Sin saneamiento de excretas | Sin conexión a alcantarillado ni a pozo séptico adecuado (`vi09 != 1, 2`). |
-| | 6.25% | Sin servicio de recolección de basura | Eliminación de desechos por quema, botadero o río (`vi12 != 1`). |
-
-*Nota.* Estructura adaptada del marco de @alkire2011counting adoptado por el @inec2016ipm.
-
-### Principio de Solidaridad Intrahogar y Unidad de Análisis
-Para garantizar que las privaciones se evalúen bajo un esquema de vulnerabilidad compartida, se utiliza al hogar como la unidad de identificación. Si al menos un miembro del hogar sufre privación en un indicador determinado, se asume que todos los miembros del hogar comparten esa privación (solidaridad intrahogar). Una vez que se identifican las privaciones acumuladas del hogar, se calcula el puntaje ponderado de privación $c_i \in [0, 1]$ para cada hogar $i$:
-
-$$
-c_i = \sum_{j=1}^{12} w_j I_{ij}
-$$ {#eq-ipm_score}
-
-donde $I_{ij} \in \{0, 1\}$ es el indicador de privación del hogar en la variable $j$ y $w_j$ es su ponderación. De conformidad con las directrices de Alkire-Foster y del INEC, se establece un umbral de pobreza multidimensional de $k = 0.3333$ (un tercio del total ponderado). Todo individuo perteneciente a un hogar con $c_i \ge 0.3333$ es clasificado como pobre multidimensional.
-
-* **Tasa de Incidencia ($H$):** $H = q / N$, donde $q$ es la suma expandida de personas en hogares pobres multidimensionales y $N$ es la población expandida total.
-* **Intensidad de la Pobreza ($A$):** $A = \frac{\sum_{i=1}^q c_i(k)}{q}$, que mide el promedio de privaciones de los clasificados como pobres.
-* **IPM Ajustado ($M_0$):** $M_0 = H \times A$, que resume ambas dimensiones del bienestar.
-
-### Pobreza por ingresos
-La pobreza por ingresos se determina comparando el ingreso per cápita mensual del hogar ($y_{pc}$) con una línea de pobreza ($z_{pobreza}$) establecida oficialmente por la autoridad estadística. El análisis de este indicador permite conocer la dimensión puramente monetaria del bienestar a partir del poder adquisitivo del hogar.
-
-### Cálculo de pobreza por ingresos
-Se evalúa comparando el ingreso per cápita del hogar contra las líneas oficiales de pobreza ($z_{pobreza} = \$89.85$ USD/mes por persona) y pobreza extrema ($z_{extrema} = \$50.63$ USD/mes por persona), de acuerdo con los umbrales oficiales reportados por el @inec2025guia:
-
-$$
-P_i = \begin{cases} 1 & \text{si } y_{pc} < z_{pobreza} \\ 0 & \text{si } y_{pc} \ge z_{pobreza} \end{cases}
-$$ {#eq-pobreza_monetaria}
-
-La tasa agregada se calcula mediante la familia de índices Foster-Greer-Thorbecke (FGT) para $\alpha = 0$ (Incidencia):
-
-$$
-P_0 = \frac{1}{\sum_{i=1}^N f_i} \sum_{i=1}^N f_i P_i
-$$ {#eq-fgt_pobreza}
-
-## 3.3. Metodología - Objetivo 3
+## Metodología para los Indicadores de Desarrollo Humano (IDH e IDH-M)
 
 ### Índice de Desarrollo Humano (IDH)
-El Índice de Desarrollo Humano (IDH) es un indicador diseñado para evaluar el nivel de bienestar y progreso, expandiendo el análisis más allá de los indicadores macroeconómicos tradicionales como el Producto Interno Bruto (PIB). El IDH integra dimensiones fundamentales de la calidad de vida de las personas: educación, salud e ingresos.
+El Índice de Desarrollo Humano se calculó integrando las dimensiones de salud, educación e ingreso mediante la media geométrica propuesta por el PNUD, asignando la misma importancia a cada una de ellas, el procedimiento matemático utilizado se presenta en el Anexo 1 (Ecuación 6). Como limitación, este indicador resume el desarrollo humano únicamente a partir de tres dimensiones, por lo que no incorpora otros factores que también pueden influir en el bienestar de la población.
 
-$$
-IDH = \sqrt[3]{I_{Salud} \times I_{Educación} \times I_{Ingresos}}
-$$ {#eq-idh}
+### Dimensión de educación
+La dimensión de educación se estimó mediante los indicadores de años promedio de escolaridad y años esperados de escolaridad, los años promedio de escolaridad se calcularon a partir de las variables p10a (nivel de instrucción) y p10b (último año aprobado), con las cuales se construyó una variable que representa los años efectivos de escolaridad de cada persona de acuerdo con la estructura del sistema educativo ecuatoriano. Posteriormente, se estimó el promedio ponderado para la población de 25 años o más utilizando el factor de expansión (fexp), los años esperados de escolaridad se obtuvieron a partir de la variable p07 (asistencia a un establecimiento educativo) para la población de 5 a 18 años, donde ambos indicadores fueron normalizados y promediados para obtener el índice de educación, de acuerdo con las ecuaciones presentadas en el Anexo 1 (Ecuaciones 1, 2 y 3). Como limitación, la información educativa proviene de las respuestas de los encuestados, por lo que pueden presentarse errores de declaración o diferencias asociadas a la clasificación del sistema educativo.
 
-* **Índice de Ingresos ($I_{Ingresos}$):** Construido a partir del ingreso per cápita del hogar promedio ($Ing_{medio}$), usando la transformación logarítmica:
-  $$
-  I_{Ingresos} = \frac{\ln(Ing_{medio}) - \ln(y_{min})}{\ln(y_{max}) - \ln(y_{min})}
-  $$ {#eq-idh_ing}
-  donde los límites establecidos corresponden a $y_{min} = 100$ USD e $y_{max} = 75000$ USD.
-* **Índice de Educación ($I_{Educación}$):** Basado en los años de instrucción promedio de la población de 24 años o más ($Años_{prom}$):
-  $$
-  I_{Educación} = \frac{Años_{prom} - 0}{15}
-  $$ {#eq-idh_educ}
-* **Índice de Salud ($I_{Salud}$):** Ante la imposibilidad de calcular la esperanza de vida al nacer de manera directa con microdatos transversales de hogares, se emplea una aproximación a través de la cobertura de aseguramiento o afiliación formal al sistema de salud. 
+### Dimensión de salud
+La dimensión de salud se estimó utilizando la esperanza de vida al nacer correspondiente a la provincia de Pichincha para el año 2025, este indicador fue normalizado mediante los límites mínimo y máximo establecidos por el PNUD (20 y 85 años) para obtener el índice de salud, siguiendo la ecuación presentada en el Anexo 1 (Ecuación 4). Al tratarse de un indicador oficial publicado por el INEC, no fue necesario aplicar ponderaciones adicionales, como limitación, la información proviene de una fuente distinta a la utilizada para las dimensiones de educación e ingreso, aunque corresponde al mismo período de análisis.
 
-  **Advertencia Crítica sobre el Componente de Salud (Proxy):** Esta aproximación cambia conceptualmente el alcance del componente. En lugar de reflejar los resultados de salud acumulados de la población (longevidad, condiciones crónicas, mortalidad), la cobertura y afiliación formal al sistema de salud en Ecuador está fuertemente determinada por la formalidad del mercado de trabajo. De esta forma, el índice captura el acceso formal institucional y las condiciones laborales, no el estado real de salud biológica de la población. Esto representa una limitación de comparabilidad, por lo que el IDH aquí calculado no es comparable con los valores oficiales del PNUD.
+### Dimensión de ingreso
+La dimensión de ingreso se estimó utilizando la variable ingpc (ingreso per cápita mensual) y el factor de expansión (fexp) de la ENEMDU, se calculó el ingreso promedio mensual para la provincia de Pichincha y posteriormente se anualizó multiplicándolo por doce meses, el ingreso anual se transformó mediante la función logarítmica propuesta por el PNUD para obtener el índice de ingreso, conforme a la ecuación presentada en el Anexo 1 (Ecuación 5). Como limitación, debe señalarse que la información sobre ingresos corresponde a datos declarados por los hogares, por lo que puede existir subdeclaración o errores de respuesta.
 
-### IDH ajustado por Desigualdad
-Para capturar las asimetrías de la distribución en cada componente, se ajusta directamente cada dimensión por el factor de desigualdad correspondiente ($1 - G_d$), donde $G_d$ representa el coeficiente de Gini de la respectiva dimensión:
+### Índice de Desarrollo Humano Modificado (IDH-M)
+Con el propósito de ampliar el análisis del desarrollo humano, se construyó un Índice de Desarrollo Humano Modificado (IDHM) incorporando una cuarta dimensión relacionada con la migración, para ello se utilizó la tasa neta de migración correspondiente a la provincia de Pichincha para el año 2025, la cual fue normalizada mediante el método de mínimos y máximos para construir el índice de migración, de acuerdo con la ecuación presentada en el Anexo 1 (Ecuación 7), posteriormente, este índice se integró con las dimensiones de salud, educación e ingreso mediante una media geométrica de cuatro componentes, siguiendo la Ecuación 8 del Anexo 2. Como limitación, el IDHM no constituye un indicador oficial del PNUD, sino una adaptación metodológica desarrollada en esta investigación para incorporar la dimensión migratoria; por ello, sus resultados deben interpretarse como una medida complementaria del desarrollo humano y no como un sustituto del IDH tradicional.
 
-$$
-  I_d^* = I_d \times (1 - G_d)
-  $$ {#eq-idh_adj}
+## Metodología para los Indicadores de Pobreza
 
-El **IDH Ajustado por Desigualdad (IDH-D)** se obtiene mediante la media geométrica de las dimensiones corregidas:
+### Medición de pobreza por ingresos
 
-$$
-  IDH\text{-}D = \sqrt[3]{I_{Salud}^* \times I_{Educación}^* \times I_{Ingresos}^*}
-  $$ {#eq-idh_d}
+### Construcción del Índice de Pobreza Multidimensional (IPM)
+El IPM se estimó siguiendo el enfoque de Alkire y Foster (2011), tomando como referencia la metodología del INEC, donde cada dimensión del IPM recibió una ponderación del 25 %, posteriormente, el peso de cada dimensión se distribuyó proporcionalmente entre los indicadores que la conforman (Castillo y Jácome, 2015). En consecuencia, los tres indicadores de educación (h_educ_inasistencia, h_d2_superior y h_educ_logro) y los tres indicadores de trabajo y seguridad social (h_pensiones, h_trabajo_infantil y h_empleo_inadecuado) recibieron una ponderación individual de 8,33 %. Los dos indicadores de la dimensión salud, agua y alimentación (agua y h_pobreza_extrema) recibieron una ponderación individual de 12,50 %, mientras que los cuatro indicadores de la dimensión hábitat, vivienda y ambiente sano (hacinamiento, deficit_habitacional, saneamiento y basura) recibieron una ponderación individual de 6,25 %.
 
-## 3.4. Datos Preliminares y Análisis Descriptivo
+Todas las privaciones fueron previamente agregadas al nivel del hogar mediante el identificador id_hogar y se pueden consultar en el Anexo X. Posteriormente, se identificó como pobre multidimensional a todo hogar cuyo puntaje de privación fuese igual o superior al umbral k=0,333, generándose la variable pobreza_multidimensional, la cual tomó el valor de 1 para los hogares pobres multidimensionales y 0 para los hogares no pobres. Finalmente, considerando el diseño muestral de la ENEMDU y aplicando el factor de expansión (fexp), se estimaron los tres indicadores oficiales del IPM.
 
-Antes de presentar las estimaciones agregadas de pobreza y desigualdad, esta sección introduce la caracterización de las variables fundamentales utilizadas en el estudio y analiza sus correlaciones mutuas a nivel micro.
+### Cálculo del IPM oficial: Incidencia (H), intensidad (A) y M0
 
-### Tabla de Variables y Estadísticos Descriptivos
-La base de datos analizada para la provincia de Pichincha en el año 2025 consta de **46,728 observaciones individuales** de la ENEMDU. Los estadísticos descriptivos ponderados de las variables analizadas se presentan en la Tabla 2:
+### Construcción del IPM ampliado
 
-**Tabla 2**
-*Estadísticos descriptivos ponderados de variables clave (Pichincha, 2025)*
+## Metodología para el cálculo de Índices de Desigualdad
 
-| Variable | Descripción | Media | Desv. Est. | Mínimo | Máximo | Obs. Muestrales |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| $ingpc$ | Ingreso per cápita del hogar (USD/mes) | \$336.70 | \$397.46 | \$0.00 | \$26,667.00 | 46,728 |
-| $edad$ ($p03$) | Edad del individuo (años) | 32.64 | 21.45 | 0.00 | 98.00 | 46,728 |
-| $educ$ ($nnivins$) | Nivel de instrucción más alto alcanzado (Categoría 1-5) (1) | 3.72 | 0.90 | 1.00 | 5.00 | 44,891 (2) |
-| $miembros$ | Tamaño del hogar (número de personas) | 4.40 | 2.24 | 1.00 | 16.00 | 46,728 |
-| $c_i$ | Índice individual de privaciones ponderado del IPM | 0.1506 | 0.0994 | 0.0000 | 0.6042 | 46,728 |
+### Índice de Theil
+El Índice de Theil se calculó utilizando el ingreso per cápita familiar (ingpc) y el factor de expansión (fexp). Primero, se eliminaron las observaciones sin datos válidos de ingreso, luego se obtuvo el ingreso ponderado y el ingreso promedio de la provincia. Con ese promedio se comparó el ingreso de cada persona para medir cuánto se aleja del nivel medio provincial. Después ese resultado individual se ponderó con el factor de expansión y se sumó para toda la población expandida de Pichincha. De esta forma el Índice de Theil permite identificar el grado de desigualdad del ingreso (mientras más cercano sea a cero, menor desigualdad existe y mientras más alto sea el valor, mayor es la concentración del ingreso).
 
-*Nota.* Estimaciones obtenidas con factores de expansión de la ENEMDU Anual 2025 del INEC.
-*(1) El nivel de instrucción se categoriza como: 1: Ninguno, 2: Alfabetización, 3: Primaria/EGB Elemental/Media, 4: Secundaria/EGB Superior/Bachillerato, 5: Educación Superior.*
-*(2) El número de observaciones para instrucción excluye a menores de 5 años.*
+### Curva de Lorenz
+La Curva de Lorenz se elaboró a partir del ingreso per cápita familiar (ingpc) y el factor de expansión (fexp). Primero, se ordenó a la población de Pichincha de menor a mayor ingreso para observar cómo se distribuye el ingreso desde los grupos más pobres hasta los de mayores ingresos, luego se calcularon los acumulados de población e ingreso, usando el factor de expansión para representar a la población provincial real. Cabe recalcar que estos acumulados se transformaron en porcentajes, lo que permitió identificar qué proporción del ingreso total recibe cada porcentaje acumulado de la población.
 
-Los datos descriptivos de la Tabla 2 reflejan las asimetrías características de una provincia con alta polarización de ingresos, donde la desviación estándar del ingreso per cápita supera al promedio, indicando una dispersión extrema de recursos. Asimismo, la población analizada promedia una edad relativamente joven y cuenta con una instrucción formal que se concentra en el nivel secundario y bachillerato, mientras que la estructura demográfica típica del hogar pichinchano promedia más de 4 integrantes.
+Además, se construyó una tabla por deciles, donde se muestra cuánto ingreso acumula el 10%, 20%, 30% y así sucesivamente hasta el 100% de la población. Finalmente estos valores se graficaron junto con la línea de igualdad perfecta, permitiendo visualizar el nivel de desigualdad: mientras más alejada esté la Curva de Lorenz de dicha línea, mayor será la concentración del ingreso en la provincia.
 
-### Análisis de Correlación Lineal (Matriz de Correlación)
-Para evaluar la asociación entre los componentes económicos, demográficos y las privaciones, se estimó la matriz de correlación lineal ponderada entre las variables principales (Tabla 3):
+### Coeficiente de Gini
+El coeficiente de Gini se calculó usando la información ya construida en la Curva de Lorenz, es decir, el porcentaje acumulado de población y el porcentaje acumulado de ingreso. Primero, estos porcentajes se transformaron en proporciones entre 0 y 1 para poder estimar el área bajo la curva, luego para cada tramo de la distribución, se comparó el punto actual con el punto anterior de población e ingreso acumulado, esto permitió dividir la Curva de Lorenz en pequeñas secciones y calcular el área de cada una mediante trapecios. La suma de esas áreas representa el ingreso acumulado real de la población ordenada desde los menores hasta los mayores ingresos. Finalmente, el Gini se obtuvo al comparar esa área con la línea de igualdad perfecta, que representa una distribución totalmente equitativa.
 
-**Tabla 3**
-*Matriz de correlación lineal ponderada entre variables socioeconómicas (Pichincha, 2025)*
-
-| Variable | $ingpc$ | $edad$ | $educ$ | $miembros$ | $c_i$ | $ipm\_pobre$ (1) | $pobre\_ingresos$ (2) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **$ingpc$** | 1.0000 | | | | | | |
-| **$edad$** | 0.1567 | 1.0000 | | | | | |
-| **$educ$** | 0.2985 | 0.0580 | 1.0000 | | | | |
-| **$miembros$** | -0.2403 | -0.3044 | -0.1506 | 1.0000 | | | |
-| **$c_i$** | -0.2772 | -0.0718 | -0.3219 | 0.3929 | 1.0000 | | |
-| **$ipm\_pobre$** | -0.1367 | -0.0820 | -0.1901 | 0.3496 | 0.6098 | 1.0000 | |
-| **$pobre\_ingresos$** | -0.2464 | -0.0578 | -0.1662 | 0.1077 | 0.2642 | 0.1467 | 1.0000 |
-
-*Nota.* Todas las correlaciones reportadas son significativas a nivel del 1% ($p < 0.01$).
-*(1) Variable binaria para pobreza multidimensional oficial ($c_i \ge 0.3333$).*
-*(2) Variable binaria para pobreza monetaria por ingresos ($ingpc < \$89.85$).*
-
-Al analizar la Tabla 3 se observan comportamientos esperados en la teoría económica del desarrollo y las características matemáticas del diseño del índice:
-1. El ingreso per cápita ($ingpc$) tiene una correlación positiva moderada con el nivel de instrucción ($educ$), lo que valida el enfoque de capital humano (Mincer, 1974) donde a mayor escolaridad se obtienen mejores retornos salariales en el mercado laboral de Pichincha.
-2. El tamaño del hogar ($miembros$) exhibe una correlación positiva moderada con el índice de privaciones ($c_i$) y con la clasificación de pobreza ($ipm\_pobre$). Debe advertirse que parte de esta correlación responde a un efecto mecánico de construcción, ya que variables como el hacinamiento se calculan directamente en función del número de miembros del hogar, por lo que no constituye un hallazgo empírico independiente o sustantivo de comportamiento.
-3. El índice de privación multidimensional ($c_i$) y el ingreso per cápita ($ingpc$) tienen una correlación negativa, mientras que la correlación entre pobreza monetaria y multidimensional ($ipm\_pobre$ y $pobre\_ingresos$) es baja. Esta baja asociación lineal ratifica que ambas medidas capturan facetas metodológicamente distintas del bienestar, justificando el uso complementario de ambos enfoques.
-4. Finalmente, la correlación de 0.6098 entre el índice de privaciones ($c_i$) y la condición de pobreza multidimensional ($ipm\_pobre$) es alta y esperable por construcción matemática. Al ser $ipm\_pobre$ una variable dicotómica definida directamente a partir del umbral $c_i \ge 0.3333$, esta relación es puramente mecánica y tautológica, por lo que no debe interpretarse como una correlación estadística entre fenómenos independientes.
-
-### Análisis de Multicolinealidad (VIF)
-Para garantizar la validez del análisis multivariado y verificar que no existan distorsiones por colinealidad entre las variables explicativas continuas antes de las estimaciones complejas, se calculó el Factor de Inflación de la Varianza (VIF) para cada una de ellas (Tabla 4):
-
-**Tabla 4**
-*Factores de Inflación de la Varianza (VIF) para las variables explicativas (Pichincha, 2025)*
-
-| Variable | R-cuadrado ($R^2_j$) | VIF ($VIF_j$) | Estado de Multicolinealidad |
-| :--- | :---: | :---: | :--- |
-| **Edad del individuo ($p03$)** | 0.0928 | 1.1023 | Sin colinealidad ($VIF < 5$) |
-| **Nivel de instrucción ($nnivins$)** | 0.0228 | 1.0234 | Sin colinealidad ($VIF < 5$) |
-| **Tamaño del hogar ($miembros$)** | 0.1104 | 1.1241 | Sin colinealidad ($VIF < 5$) |
-
-*Nota.* Estimaciones basadas en regresiones lineales ponderadas mutuas sobre la muestra de la ENEMDU Anual 2025.
-
-Al analizar la Tabla 4 se observa que todos los VIF estimados son inferiores a 1.13, situándose muy por debajo del límite conservador sugerido por la literatura econométrica ($VIF < 5$). Esto confirma la ausencia de colinealidad severa, asegurando que las varianzas de las estimaciones no se encuentran infladas y que es posible incluir estas variables conjuntamente en los modelos de bienestar.
-
+### Índice de Desarrollo Humano Ajustado por Desigualdad (IDH-D)
+Con el propósito de evaluar el efecto de la desigualdad sobre el desarrollo humano, se estimó el Índice de Desarrollo Humano Ajustado por Desigualdad (IDH-D), siguiendo la metodología propuesta por el Programa de las Naciones Unidas para el Desarrollo (PNUD). Para ello, se calcularon los índices de Atkinson para las dimensiones de salud, educación e ingreso, los cuales permiten medir la pérdida de desarrollo asociada a la distribución desigual de los logros alcanzados por la población. Posteriormente, cada una de las dimensiones del IDH fue ajustada en función de su respectivo índice de Atkinson y, finalmente, los índices ajustados se integraron mediante una media geométrica para obtener el IDH ajustado por desigualdad. Las ecuaciones utilizadas para el cálculo del índice de Atkinson, el ajuste de cada dimensión y la estimación del IDH ajustado se presentan en el Anexo 7 (Ecuaciones 17, 18 y 19). Como limitación, este indicador requiere información desagregada sobre la distribución de los logros en cada dimensión, por lo que su precisión depende de la calidad de los datos disponibles y de la correcta estimación de las desigualdades dentro de la población.

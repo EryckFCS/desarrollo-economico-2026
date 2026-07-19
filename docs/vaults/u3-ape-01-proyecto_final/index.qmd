@@ -4,14 +4,23 @@ subtitle: "Un Análisis Empírico para la Provincia de Pichincha en el Año 2025
 author: "Erick Fabricio Condoy Seraquive"
 date: "2026-06-30"
 format:
-  html:
+  pdf:
     toc: true
     toc-depth: 3
-    code-fold: true
-    theme: cosmo
-  docx:
-    reference-doc: template.docx
+    number-sections: true
+    colorlinks: true
+    papersize: letter
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=3cm
+    header-includes:
+      - \usepackage{pdflscape}
+
 bibliography: ../../../bibliography/references.bib
+nocite: |
+  @*
 ---
 
 {{< include chapters/01-introduccion.qmd >}}

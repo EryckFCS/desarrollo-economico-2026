@@ -1,55 +1,277 @@
-# Anexos
+# Anexos {.unnumbered}
 
-**Figura 5**
+## Anexo 1. Ecuaciones y cálculo del IDH {.unnumbered}
 
-*Diagrama de flujo del procesamiento metodológico y estimación de indicadores socioeconómicos*
+### Años promedio de escolaridad (MYS)
+Para transformar este indicador en un índice comparable internacionalmente se aplicó la normalización propuesta por el PNUD:
 
-```{mermaid}
-graph TB
-    subgraph F1["FASE I · Ingesta e Integración"]
-        A1["Microdatos de Personas<br/>ENEMDU 2025"]
-        A2["Microdatos de Vivienda<br/>ENEMDU 2025"]
-        B["Cruce y Consistencia de Hogares<br/>id_vivienda · id_hogar · periodo"]
-        A1 --> B
-        A2 --> B
-    end
+$$
+IMYS = \frac{MYS - 0}{15}
+$$ {#eq-anexo_mys}
 
-    subgraph F2["FASE II · Normalización y Filtro Territorial"]
-        C["Delimitación Geográfica<br/>Código DPA 17 · Pichincha"]
-        D["Filtro de Calidad<br/>ingpc ≥ 0 · fexp > 0"]
-        B --> C --> D
-    end
+donde:
+* $IMYS$ corresponde al índice de años promedio de escolaridad.
+* $MYS$ representa los años promedio de escolaridad obtenidos a partir de la variable esc, calculada con las variables p10a y p10b para la población de 25 años o más. En esta investigación el valor obtenido fue de 12,82 años.
+* 15 representa el máximo de años promedio de escolaridad establecido por el PNUD para la normalización.
 
-    subgraph F3["FASE III · Estimación de Indicadores"]
-        E["Pobreza Monetaria FGT-0<br/>Líneas oficiales 89.85 / 50.63 USD"]
-        F["Desigualdad Distributiva<br/>Gini · Theil L · Curva de Lorenz"]
-        G["IPM Alkire-Foster<br/>ci ponderado · umbral k ≥ 0.33"]
-        H["Desarrollo Humano<br/>IDH y IDH ajustado por desigualdad"]
-        D --> E
-        D --> F
-        D --> G
-        D --> H
-    end
+La aplicación de esta ecuación permitió obtener un índice de años promedio de escolaridad de 0,8544.
 
-    subgraph F4["FASE IV · Consolidación y Reporte"]
-        I["Integración de Indicadores<br/>JSON · CSV · Excel"]
-        J["Reporte Científico<br/>Quarto Engine"]
-        E --> I
-        F --> I
-        G --> I
-        H --> I
-        I --> J
-    end
+### Años esperados de escolaridad (EYS)
+El índice correspondiente se obtuvo mediante la siguiente expresión:
 
-    classDef fase1 fill:#E8F0FE,stroke:#1A56DB,stroke-width:2px,color:#1A237E
-    classDef fase2 fill:#E6F4EA,stroke:#1E8E3E,stroke-width:2px,color:#0D3B1F
-    classDef fase3 fill:#FEF3E0,stroke:#E37400,stroke-width:2px,color:#7A3E00
-    classDef fase4 fill:#FCE8E6,stroke:#C5221F,stroke-width:2px,color:#5C0F0D
+$$
+IEYS = \frac{EYS - 0}{18}
+$$ {#eq-anexo_eys}
 
-    class A1,A2,B fase1
-    class C,D fase2
-    class E,F,G,H fase3
-    class I,J fase4
-```
+donde:
+* $IEYS$ representa el índice de años esperados de escolaridad.
+* $EYS$ corresponde a los años esperados de escolaridad estimados a partir de la tasa de asistencia escolar de la población entre 5 y 18 años. En esta investigación el valor obtenido fue de 16,90 años.
+* 18 representa el máximo de años esperados de escolaridad definido por el PNUD.
 
-*Nota.* Diagrama metodológico detallado que describe secuencialmente las fases de ingesta, consistencia, estimación de modelos y consolidación de indicadores de pobreza, desigualdad y desarrollo humano.
+Como resultado se obtuvo un índice de años esperados de escolaridad de 0,9390.
+
+### Índice de educación
+Finalmente, el índice de educación se obtuvo como el promedio simple entre el índice de años promedio de escolaridad y el índice de años esperados de escolaridad.
+
+$$
+IE = \frac{IMYS + IEYS}{2}
+$$ {#eq-anexo_ie}
+
+donde:
+* $IE$ representa el índice de educación.
+* $IMYS$ corresponde al índice de años promedio de escolaridad obtenido mediante la Ecuación (1).
+* $IEYS$ corresponde al índice de años esperados de escolaridad obtenido mediante la Ecuación (2).
+
+El resultado obtenido fue un índice de educación de 0,8967.
+
+### Cálculo de la dimensión de salud
+La dimensión de salud se estimó mediante la esperanza de vida al nacer, utilizando el valor de 82,2 años reportado para la provincia de Pichincha por los Indicadores Demográficos 2025 del INEC. Para obtener un índice comparable con las demás dimensiones, este indicador fue normalizado mediante la metodología propuesta por el PNUD.
+
+$$
+IS = \frac{EV - 20}{85 - 20}
+$$ {#eq-anexo_is}
+
+donde:
+* $IS$ representa el índice de salud.
+* $EV$ corresponde a la esperanza de vida al nacer para la provincia de Pichincha, obtenida de los Indicadores Demográficos 2025 del INEC, cuyo valor fue de 82,2 años.
+* 20 representa el límite inferior establecido por el PNUD.
+* 85 representa el límite superior establecido por el PNUD.
+
+Como resultado se obtuvo un índice de salud de 0,9569.
+
+### Cálculo de la dimensión de ingreso
+
+$$
+II = \frac{\ln(ING) - \ln(100)}{\ln(75000) - \ln(100)}
+$$ {#eq-anexo_ii}
+
+donde:
+* $II$ representa el índice de ingreso.
+* $ING$ corresponde al ingreso anual per cápita obtenido a partir del ingreso mensual promedio de la ENEMDU, anualizado multiplicándolo por doce meses.
+* 100 dólares representa el ingreso mínimo establecido por el PNUD.
+* 75 000 dólares representa el ingreso máximo establecido por el PNUD.
+
+El índice de ingreso obtenido fue de 0,5594.
+
+### Cálculo del Índice de Desarrollo Humano
+
+$$
+IDH = \sqrt[3]{IS \times IE \times II}
+$$ {#eq-anexo_idh}
+
+donde:
+* $IS$ corresponde al índice de salud.
+* $IE$ corresponde al índice de educación.
+* $II$ corresponde al índice de ingreso.
+* El exponente 1/3 indica que la media geométrica se calcula considerando las tres dimensiones del desarrollo humano.
+
+El resultado obtenido fue un IDH de 0,78 clasificando a la provincia de Pichincha en un nivel de desarrollo humano alto, según los criterios del PNUD.
+
+### Cálculo del índice de migración
+
+$$
+IM = \frac{TMN - TMN_{mín}}{TMN_{máx} - TMN_{mín}}
+$$ {#eq-anexo_im}
+
+donde:
+* $IM$ representa el índice de migración.
+* $TMN$ corresponde a la tasa neta de migración obtenida de la fuente oficial utilizada para el estudio.
+* $TMN_{mín}$ y $TMN_{máx}$ representan los valores mínimo y máximo utilizados para la normalización del indicador.
+
+Como resultado se obtuvo un índice de migración de 0,92.
+
+---
+
+## Anexo 2. Ecuaciones y cálculo del IDH-M {.unnumbered}
+
+Finalmente, el Índice de Desarrollo Humano Modificado incorporó el índice de migración a las tres dimensiones tradicionales del IDH mediante una media geométrica de cuatro componentes.
+
+$$
+IDHM = \sqrt[4]{IS \times IE \times II \times IM}
+$$ {#eq-anexo_idhm}
+
+donde:
+* $IS$ corresponde al índice de salud.
+* $IE$ corresponde al índice de educación.
+* $II$ corresponde al índice de ingreso.
+* $IM$ representa el índice de migración.
+* El exponente 1/4 indica que la media geométrica incorpora cuatro dimensiones del desarrollo humano.
+
+El valor obtenido fue de 0,81 lo que evidencia que la incorporación de la dimensión migratoria mejora ligeramente la medición del desarrollo humano de la provincia al considerar un aspecto adicional relacionado con la dinámica poblacional.
+
+---
+
+## Anexo 3. Indicadores empleados para el IPM {.unnumbered}
+
+*Indicadores del Índice de Pobreza Multidimensional*
+
+| Dimensión | Indicador | Criterio de privación | Variable en la base |
+| ----- | ----- | ----- | :---: |
+| Educación | 1. Inasistencia a educación básica y bachillerato | Hogares con personas de 5 a 17 años que no asisten al sistema educativo | h_educ_inasistencia |
+| | 2. No acceso a educación superior por razones económicas | Hogares con jóvenes de 18 a 29 años que no acceden a educación superior por motivos económicos | h_d2_superior |
+| | 3. Logro educativo incompleto | Hogares con personas adultas que no alcanzan el nivel educativo esperado | h_educ_logro |
+| Trabajo y Seguridad social | 4. No contribución al sistema de pensiones | Personas sin acceso a pensiones o seguridad social | h_pensiones |
+| | 5. Empleo infantil o adolescente | Presencia de niños, niñas o adolescentes en condición de trabajo | h_trabajo_infantil |
+| | 6. Desempleo o empleo inadecuado | Personas ocupadas en condiciones laborales inadecuadas | h_empleo_inadecuado |
+| Salud, Agua y Alimentación | 7. Sin servicio de agua por red pública | Hogares sin acceso a agua proveniente de red pública | agua / h_agua |
+| | 8. Pobreza extrema por ingresos | Hogares con integrantes en condición de pobreza extrema según ingreso | h_pobreza_extrema |
+| Hábitat, Vivienda y Ambiente sano | 9. Hacinamiento | Hogares con integrantes en condición de pobreza extrema según ingreso | hacinamiento |
+| | 10. Déficit habitacional | Viviendas con condiciones deficitarias | deficit_habitacional |
+| | 11. Sin saneamiento de excretas | Hogares sin condiciones adecuadas de eliminación de excretas | saneamiento |
+| | 12. Sin servicio de recolección de basura | Hogares sin servicio adecuado de recolección de residuos | basura |
+
+*Nota.* Las variables que identifican las privaciones por dimensión corresponden a priv_educacion, priv_trabajo, priv_salud y priv_habitat, respectivamente.
+
+---
+
+## Anexo 4. Ecuaciones empleadas para el cálculo del IPM oficial: Incidencia (H), intensidad (A) y M0 {.unnumbered}
+
+### 1) Incidencia de pobreza multidimensional (H)
+La incidencia representa la proporción de hogares que presentan pobreza multidimensional respecto al total de hogares analizados.
+
+$$
+H = \frac{q}{n}
+$$ {#eq-anexo_ipm_h}
+
+donde:
+* $H$ = Incidencia de la pobreza (o tasa de recuento).
+* $q$ = Número de personas cuyos ingresos son menores a la línea de pobreza (o que sufren múltiples privaciones en el caso multidimensional).
+* $n$ = Población total del país o región estudiada.
+
+Debido al diseño muestral de la ENEMDU 2025, esta estimación fue realizada incorporando el factor de expansión (fexp).
+
+### 2) Intensidad de la pobreza multidimensional (brecha o profundidad), (A)
+Mientras la incidencia dice cuántas personas son pobres, la intensidad mide qué tan pobres son los pobres o qué tan alejados están de salir de la pobreza.
+
+$$
+A = \frac{\sum c_i}{q \times D}
+$$ {#eq-anexo_ipm_a}
+
+donde:
+* $A$ = Intensidad de la pobreza (representada como un porcentaje).
+* $q$ = Número total de personas pobres.
+* $c_i$ = Número de privaciones que sufre la persona pobre número i.
+* $D$ = Número máximo de dimensiones o privaciones posibles a evaluar.
+
+También se aplican los factores de expansión.
+
+### 3) Índice de pobreza multidimensional ajustado (M0)
+Finalmente, el IPM ajustado combina la extensión del fenómeno (incidencia) y su profundidad (intensidad).
+
+$$
+M_0 = H \times A
+$$ {#eq-anexo_ipm_m0}
+
+donde:
+* $IPM$ = Índice de Pobreza Multidimensional.
+* $H$ = Incidencia de pobreza (porcentaje de personas pobres).
+* $A$ = Intensidad de la pobreza (porcentaje promedio de carencias que sufren).
+
+El resultado de esta multiplicación es un valor entre 0 y 1 (o entre 0 % y 100 %). Entre más alto sea el número, mayor es la pobreza y la falta de derechos en la sociedad.
+
+---
+
+## Anexo 5. Ecuaciones y cálculo del Índice de Theil {.unnumbered}
+
+El Índice de Theil mide la desigualdad del ingreso comparando el ingreso de cada persona con el ingreso promedio de la provincia. Su cálculo se realizó conforme a la siguiente ecuación:
+
+$$
+T = \frac{1}{N} \sum_{i=1}^n fexp_i \left( \frac{y_i}{\bar{y}} \right) \ln \left( \frac{y_i}{\bar{y}} \right)
+$$ {#eq-anexo_theil_eq}
+
+donde:
+* $N$ = población total expandida.
+* $fexp_i$ = factor de expansión de cada persona.
+* $y_i$ = ingreso per cápita familiar de cada persona.
+* $\bar{y}$ = ingreso promedio de la provincia.
+* $\ln$ = logaritmo natural.
+
+La aplicación de esta ecuación permitió obtener un Índice de Theil de 0,3855.
+
+---
+
+## Anexo 6. Ecuaciones y cálculo de la Curva de Lorenz {.unnumbered}
+
+La Curva de Lorenz se construyó a partir de la población acumulada y el ingreso acumulado. Para ello se utilizaron las siguientes expresiones:
+
+$$
+X_i = \frac{\sum_{j=1}^i fexp_j}{\sum_{j=1}^n fexp_j} \times 100
+$$ {#eq-anexo_lorenz_x}
+
+$$
+Y_i = \frac{\sum_{j=1}^i (ingpc_j \times fexp_j)}{\sum_{j=1}^n (ingpc_j \times fexp_j)} \times 100
+$$ {#eq-anexo_lorenz_y}
+
+donde:
+* $X_i$ representa el porcentaje acumulado de población.
+* $Y_i$ representa el porcentaje acumulado de ingreso.
+* $ingpc_j$ corresponde al ingreso per cápita familiar.
+* $fexp_j$ corresponde al factor de expansión.
+* $i$ representa cada observación ordenada de menor a mayor ingreso.
+
+Con estos valores se construyó la tabla por deciles, donde cada decil representa el 10% acumulado de la población.
+
+---
+
+## Anexo 7. Ecuaciones y cálculo del IDH Ajustado por Desigualdad {.unnumbered}
+
+### Índice de Atkinson
+Para cada dimensión del desarrollo humano se estimó el índice de Atkinson, el cual mide la pérdida de desarrollo ocasionada por la desigualdad en la distribución de los logros de la población.
+
+$$
+A_d = 1 - \frac{\text{Media Geométrica}_d}{\text{Media Aritmética}_d}
+$$ {#eq-anexo_atkinson_d}
+
+donde:
+* $A_d$: índice de Atkinson para la dimensión analizada (salud, educación o ingreso).
+
+En esta investigación se obtuvieron los siguientes valores:
+* Salud: 0,0000
+* Educación: 0,3379
+* Ingreso: 0,3046
+
+### Ajuste de cada dimensión por desigualdad
+Una vez estimado el índice de Atkinson, cada dimensión del IDH se ajustó mediante la siguiente expresión:
+
+$$
+I_d^* = I_d \times (1 - A_d)
+$$ {#eq-anexo_atkinson_adj}
+
+donde:
+* $I_d^*$: índice ajustado por desigualdad.
+* $I_d$: índice original de la dimensión (salud, educación o ingreso).
+* $A_d$: índice de Atkinson de la dimensión correspondiente.
+
+Los valores ajustados obtenidos fueron:
+* Salud ajustada: 0,9569
+* Educación ajustada: 0,5937
+* Ingreso ajustado: 0,3890
+
+### Cálculo del Índice de Desarrollo Humano Ajustado por Desigualdad
+Finalmente, el Índice de Desarrollo Humano Ajustado por Desigualdad se obtuvo mediante la media geométrica de las tres dimensiones ajustadas:
+
+$$
+IDH\text{-}D = \sqrt[3]{I_{Salud}^* \times I_{Educación}^* \times I_{Ingresos}^*}
+$$ {#eq-anexo_idhd_calc}
+
+El resultado obtenido para la provincia de Pichincha fue un **IDH ajustado por desigualdad de 0,60**, lo que evidencia una pérdida del desarrollo humano potencial debido a las desigualdades existentes en la distribución de los logros, principalmente en las dimensiones de educación e ingreso.

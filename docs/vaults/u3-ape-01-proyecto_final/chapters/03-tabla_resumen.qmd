@@ -1,7 +1,23 @@
-# 3. Tabla Resumen
+# Tabla de Resumen
 
-A continuación se presenta la tabla resumen con los principales indicadores calculados para la provincia de Pichincha y su comparación a nivel nacional.
+```{=latex}
+\begin{landscape}
+```
 
 | Indicador | Valor Provincial | Referente Nacional | Año | Fuente | Interpretación Breve |
-| --- | --- | --- | --- | --- | --- |
-| | | | | | |
+| ----- | ----- | ----- | :---: | ----- | ----- |
+| Índice de Desarrollo Humano (IDH) | 0,78 | 0,77 | 2025 | **Val. Prov.:** Datos ENEMDU **Ref. Nal.:** PNUD | Podemos observar que Pichincha presenta un desarrollo humano alto, con un valor ligeramente superior al promedio nacional, donde sus mayores fortalezas corresponden a las dimensiones de salud y educación, mientras que el ingreso constituye la principal limitación para alcanzar un mayor nivel de desarrollo. |
+| IDH - Modificado | 0,81 | No existe | 2025 | **Val. Prov.:** ENEMDU 2025 e INEC. **Ref. Nal.:** No existe | Al incorporar la dimensión de migración, el índice aumenta respecto al IDH tradicional, lo que evidencia que la dinámica migratoria aporta favorablemente al desarrollo humano de la provincia. Al tratarse de un indicador construido para esta investigación, no existe un referente nacional oficial para su comparación. |
+| Índice de Pobreza Multidimensional (IPM) | | | 2025 | **Val. Prov.:** Datos ENEMDU **Ref. Nal.:** | |
+| IPM - Modificado | | | 2025 | **Val. Prov.:** **Ref. Nal.:** | |
+| Pobreza por ingresos | | | 2025 | **Val. Prov.:** **Ref. Nal.:** | |
+| Índice de Theil | 0,39 | 0,39 | 2025 | **Val. Prov.:** Datos ENEMDU **Ref. Nal.:** Laboratorio de Equidad del Banco Mundial | El valor tanto a nivel nacional como provincial es el mismo y este se encuentra en una escala de desigualdad alta moderada, lo que significa que no hay una distribución equitativa del ingreso en el territorio, es decir, que una parte de la población concentra ingresos superiores al promedio, mientras otros grupos se mantienen rezagados. |
+| Curva de Lorenz | Ver Figura 1. | Ver Figura 2. | 2025 | **Val. Prov.:** Datos ENEMDU **Ref. Nal.:** Narriaga, K. (oct. 2025) | A pesar de que ambas curvas se mantienen por debajo de la línea de pobreza, la curva a nivel provincial tiene porcentajes de acumulación de ingresos menores, y en ambos casos el 60% de la población acumula apenas el 30% de los ingresos, acentuando aún más la desigualdad económica que existe. |
+| Coeficiente de Gini | 0,45 | 0,44 | 2025 | **Val. Prov.:** Datos ENEMDU **Ref. Nal.:** INEC | Aunque se puede ver una pequeña diferencia porcentual entre el coeficiente provincial y nacional, indica que la desigualdad provincial es ligeramente mayor que la del país, evidenciando que Pichincha concentra desigualdades en la distribución del ingreso. |
+| IDH Ajustado por Desigualdad (IDH-D) | 0,60 | | 2025 | **Val. Prov.:** ENEMDU 2025, metodología PNUD. **Ref. Nal.:** | |
+
+: Tabla 1. Agrupación de todos los indicadores de desarrollo humano, pobreza y desigualdad. {#tbl-resumen tbl-colwidths="auto"}
+
+```{=latex}
+\end{landscape}
+```

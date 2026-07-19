@@ -1,20 +1,12 @@
-# 1. Introducción
+# Introducción
 
-### Antecedentes
-La evaluación del bienestar material y las brechas estructurales en el Ecuador durante el año 2025 exige un instrumental econométrico riguroso para desglosar la desigualdad distributiva y la privación de derechos. El mercado laboral ecuatoriano presenta rigideces de subempleo y brechas persistentes en la calidad del empleo que limitan el impacto del crecimiento económico sobre el bienestar familiar. Este estudio sistematiza la estimación de indicadores multidimensionales y de concentración de ingresos a partir de los microdatos de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) Acumulada Anual 2025, proporcionando evidencia empírica rigurosa para la formulación de políticas públicas territoriales de desarrollo social.
-
-### Exploración de la Literatura
-La teoría económica del desarrollo debate activamente la complementariedad entre las mediciones de bienestar basadas exclusivamente en ingresos y aquellas de naturaleza multidimensional. El enfoque de capacidades de @sen1999development demuestra que el desarrollo social no puede ser capturado de manera unidimensional por el flujo de ingresos de los hogares. Esto fundamenta el diseño del Índice de Pobreza Multidimensional (IPM) propuesto por @alkire2011counting, el cual penaliza las carencias conjuntas en educación, salud y vivienda para mapear la privación no monetaria.
-
-El ingreso corriente sigue siendo el indicador primordial de la capacidad de consumo de corto plazo. La distribución del ingreso, analizada mediante la curva de Lorenz y sintetizada en el coeficiente de Gini, expone el grado de equidad o concentración del ingreso disponible. Estas métricas interactúan directamente con la estimación del Índice de Desarrollo Humano (IDH) desarrollado por el Programa de las Naciones Unidas para el Desarrollo (PNUD). El ajuste de este índice por desigualdad (IDH-D) descuenta del IDH potencial el coeficiente de concentración de las dimensiones de salud, educación y renta, cuantificando la pérdida de bienestar social derivada de asimetrías distributivas.
 
 ## Objetivos
 
 ### Objetivo general
-Analizar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante el cálculo de indicadores socioeconómicos, con el fin de sugerir políticas públicas que contribuyan al bienestar de la población.
+Evaluar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante el cálculo de (........), con el fin de sugerir políticas públicas que contribuyan al bienestar de la población.
 
 ### Objetivos específicos
-* Evaluar la desigualdad económica en la provincia de Pichincha mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini y el índice de Theil, con el fin de identificar el nivel de concentración del ingreso en la distribución económica provincial.
-* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de reconocer las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
 * Determinar el grado de desarrollo humano en la provincia de Pichincha mediante el cálculo del Índice de Desarrollo Humano y el Índice de Desarrollo Humano modificado, con el fin de analizar las condiciones de bienestar de la población en términos de salud, educación e ingresos.
-
+* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de reconocer las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
+* Analizar la desigualdad económica y social en la provincia de Pichincha mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini, el índice de Theil y el IDH ajustado por desigualdad, con el fin de identificar el nivel de concentración del ingreso en la distribución económica provincial.
