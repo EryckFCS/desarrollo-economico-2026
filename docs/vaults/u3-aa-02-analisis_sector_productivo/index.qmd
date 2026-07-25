@@ -1,0 +1,114 @@
+---
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: true
+    colorlinks: true
+    mainfont: "Times New Roman"
+    fontsize: 10pt
+    output-file: "Tarea_2_Perfilado_Seccion.pdf"
+    fig-cap-location: top
+    tbl-cap-location: top
+    geometry:
+      - margin=2.54cm
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.0}
+      - \usepackage{indentfirst}
+      - \setlength{\parindent}{1.27cm}
+      - \setlength{\parskip}{0pt}
+      - \usepackage{booktabs}
+      - \usepackage{tabularx}
+      - \usepackage{float}
+      - \usepackage{array}
+      - \usepackage{caption}
+      - \captionsetup[table]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
+      - \captionsetup[figure]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
+      - \addtokomafont{disposition}{\rmfamily}
+      - \addtokomafont{section}{\large\bfseries}
+      - \addtokomafont{subsection}{\normalsize\bfseries}
+      - \addtokomafont{subsubsection}{\normalsize\bfseries\itshape}
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+crossref:
+  tbl-title: Tabla
+  fig-title: Figura
+---
+
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
+Carrera de Economía \\
+Desarrollo Económico \\
+Séptimo A \\
+Unidad 3 \\
+Septiembre 2025/Febrero 2026
+
+\vspace{1em}
+\textbf{\Large Tarea 2: Perfilado de Sección y Propuesta de Mejora Productiva} \\
+\vspace{0.5em}
+\textbf{Diagnóstico y Complejidad Tecnológica en el Sector del Litio en Chile}
+\end{center}
+
+\noindent \textbf{Nombres:} Erick Fabricio Condoy Seraquive \hfill \textbf{Fecha:} 25 de julio de 2026
+
+\vspace{1.5em}
+
+# Diagnóstico del Sector
+
+<!-- 
+INSTRUCCIONES PARA EL DIAGNÓSTICO:
+- Elaborar un diagnóstico breve del sector seleccionado (Litio en Chile).
+- Identificar una manifestación de:
+  * Heterogeneidad estructural.
+  * Competitividad espuria.
+  * Brecha tecnológica.
+- Explicar sus efectos sobre la productividad, el empleo o la vulnerabilidad externa.
+- Sustentar con al menos cinco (5) datos recientes de mínimo tres (3) fuentes oficiales (instituciones de estadística, bancos centrales, ministerios, CEPAL, Banco Mundial, FAO).
+- Indicar para cada dato: institución, año y enlace.
+-->
+
+# Propuesta de Mejora Productiva
+
+<!--
+INSTRUCCIONES PARA LA PROPUESTA:
+- Proponer una actividad, subsector o mejora productiva realista.
+- Debe permitir incorporar tecnología, conocimiento o mayor valor agregado.
+- Fundamentar con al menos dos (2) citas de fuentes oficiales.
+- Explicar qué problema resolvería y qué capacidades existentes en el país podrían aprovecharse.
+-->
+
+# Justificación mediante las Tres Eficiencias
+
+<!--
+INSTRUCCIONES:
+Justificar la propuesta aplicando:
+- Eficiencia Schumpeteriana: Innovación, tecnología o conocimiento incorporado.
+- Eficiencia Hirschmaniana: Proveedores, servicios, empleos o encadenamientos (hacia atrás/adelante).
+- Eficiencia Keynesiana: Demanda con posibilidades de crecimiento económico.
+-->
+
+## Eficiencia Schumpeteriana
+
+## Eficiencia Hirschmaniana
+
+## Eficiencia Keynesiana
+
+# Propuesta Final y Resultados Esperados
+
+<!--
+INSTRUCCIONES:
+Proponer de forma concreta:
+- Una inversión en capital humano.
+- Dos acciones concretas del Estado.
+- El principal resultado esperado en: productividad, empleo, equidad y reducción de la vulnerabilidad externa.
+-->
+
+## Inversión en Capital Humano
+
+## Acciones Concretas del Estado
+
+## Resultados Esperados
+
+# Referencias
