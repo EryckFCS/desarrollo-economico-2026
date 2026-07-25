@@ -1,0 +1,3548 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  Z:\home\erick-fcs\Documentos\universidad\07_Ciclo\septimo_ciclo\economic_development\docs\vaults\u3-ape-01-proyecto_final\logs/ejecucion_codigo_
+> grupal.log
+  log type:  text
+ opened on:  21 Jul 2026, 22:27:38
+
+. set graphics off
+
+. 
+. if $USAR_SPSS == 1 {
+.     import spss using "$ROOT/data/BDDenemdu_personas_2025_anual.sav"
+. }
+
+. else {
+.     use "$ROOT/data/personas_2025_anual.dta", clear
+. }
+
+. 
+. ///////////////////  LIMPIEZA DE LA BASE - PICHINCHA     ///////////////////////
+> 
+. * ==========================================================
+. * Se conservan los codigos de 6 cifras que empiecen con 17 
+. * (Provincia Pichincha 17 - Canton Dist. Metropolitano Quito 01 - Parroquia Quito 50) 170150
+. * ==========================================================
+. 
+. * Asegurar que ciudad sea numérica
+. capture destring ciudad, replace
+
+. 
+. * Quedarse solo con códigos de 6 cifras que empiezan con 17
+. keep if inrange(ciudad, 170000, 179999)
+(288,058 observations deleted)
+
+. tab ciudad
+
+     ciudad |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     170150 |     32,984       70.59       70.59
+     170151 |        570        1.22       71.81
+     170152 |        431        0.92       72.73
+     170153 |        218        0.47       73.20
+     170154 |         33        0.07       73.27
+     170155 |      1,791        3.83       77.10
+     170156 |        749        1.60       78.70
+     170157 |        300        0.64       79.34
+     170159 |        194        0.42       79.76
+     170160 |        106        0.23       79.99
+     170161 |         37        0.08       80.07
+     170162 |         50        0.11       80.17
+     170163 |        236        0.51       80.68
+     170164 |         86        0.18       80.86
+     170165 |        212        0.45       81.32
+     170168 |         77        0.16       81.48
+     170169 |         43        0.09       81.57
+     170170 |        192        0.41       81.98
+     170171 |         47        0.10       82.08
+     170172 |         62        0.13       82.22
+     170175 |        467        1.00       83.22
+     170176 |        185        0.40       83.61
+     170177 |        577        1.23       84.85
+     170178 |         81        0.17       85.02
+     170179 |        219        0.47       85.49
+     170180 |        403        0.86       86.35
+     170181 |         60        0.13       86.48
+     170183 |        121        0.26       86.74
+     170184 |      1,304        2.79       89.53
+     170185 |        256        0.55       90.08
+     170250 |        276        0.59       90.67
+     170251 |        129        0.28       90.94
+     170252 |        544        1.16       92.11
+     170253 |         27        0.06       92.17
+     170254 |         21        0.04       92.21
+     170255 |         77        0.16       92.38
+     170256 |         16        0.03       92.41
+     170350 |        172        0.37       92.78
+     170351 |         69        0.15       92.93
+     170352 |        233        0.50       93.42
+     170353 |        463        0.99       94.41
+     170355 |        115        0.25       94.66
+     170356 |         33        0.07       94.73
+     170450 |        291        0.62       95.35
+     170451 |        211        0.45       95.81
+     170452 |         40        0.09       95.89
+     170454 |        146        0.31       96.20
+     170550 |        759        1.62       97.83
+     170551 |         40        0.09       97.91
+     170750 |        294        0.63       98.54
+     170751 |         94        0.20       98.74
+     170850 |        297        0.64       99.38
+     170950 |        290        0.62      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * ==========================================================
+. * Para una mejor comprension de a que parroquia pertenece el código, se los nombran en base a la Clasificación Geográfica Estadística del Censo 2022
+. * ==========================================================
+. 
+. * Crear variables de nombres
+. capture drop parroquia_nombre
+
+. capture drop canton_nombre
+
+. 
+. gen str40 parroquia_nombre = ""
+(46,728 missing values generated)
+
+. gen str40 canton_nombre = ""
+(46,728 missing values generated)
+
+. 
+. *----------------------------------------------------------
+. * DISTRITO METROPOLITANO DE QUITO
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "QUITO" if ciudad == 170150
+(32,984 real changes made)
+
+. replace parroquia_nombre = "ALANGASI" if ciudad == 170151
+(570 real changes made)
+
+. replace parroquia_nombre = "AMAGUANA" if ciudad == 170152
+(431 real changes made)
+
+. replace parroquia_nombre = "ATAHUALPA" if ciudad == 170153
+(218 real changes made)
+
+. replace parroquia_nombre = "CALACALI" if ciudad == 170154
+(33 real changes made)
+
+. replace parroquia_nombre = "CALDERON" if ciudad == 170155
+(1,791 real changes made)
+
+. replace parroquia_nombre = "CONOCOTO" if ciudad == 170156
+(749 real changes made)
+
+. replace parroquia_nombre = "CUMBAYA" if ciudad == 170157
+(300 real changes made)
+
+. replace parroquia_nombre = "CHECA" if ciudad == 170159
+(194 real changes made)
+
+. replace parroquia_nombre = "EL QUINCHE" if ciudad == 170160
+(106 real changes made)
+
+. replace parroquia_nombre = "GUALEA" if ciudad == 170161
+(37 real changes made)
+
+. replace parroquia_nombre = "GUANGOPOLO" if ciudad == 170162
+(50 real changes made)
+
+. replace parroquia_nombre = "GUAYLLABAMBA" if ciudad == 170163
+(236 real changes made)
+
+. replace parroquia_nombre = "LA MERCED" if ciudad == 170164
+(86 real changes made)
+
+. replace parroquia_nombre = "LLANO CHICO" if ciudad == 170165
+(212 real changes made)
+
+. replace parroquia_nombre = "NANEGAL" if ciudad == 170168
+(77 real changes made)
+
+. replace parroquia_nombre = "NANEGALITO" if ciudad == 170169
+(43 real changes made)
+
+. replace parroquia_nombre = "NAYON" if ciudad == 170170
+(192 real changes made)
+
+. replace parroquia_nombre = "NONO" if ciudad == 170171
+(47 real changes made)
+
+. replace parroquia_nombre = "PACTO" if ciudad == 170172
+(62 real changes made)
+
+. replace parroquia_nombre = "PIFO" if ciudad == 170175
+(467 real changes made)
+
+. replace parroquia_nombre = "PINTAG" if ciudad == 170176
+(185 real changes made)
+
+. replace parroquia_nombre = "POMASQUI" if ciudad == 170177
+(577 real changes made)
+
+. replace parroquia_nombre = "PUELLARO" if ciudad == 170178
+(81 real changes made)
+
+. replace parroquia_nombre = "PUEMBO" if ciudad == 170179
+(219 real changes made)
+
+. replace parroquia_nombre = "SAN ANTONIO" if ciudad == 170180
+(403 real changes made)
+
+. replace parroquia_nombre = "SAN JOSE DE MINAS" if ciudad == 170181
+(60 real changes made)
+
+. replace parroquia_nombre = "TABABELA" if ciudad == 170183
+(121 real changes made)
+
+. replace parroquia_nombre = "TUMBACO" if ciudad == 170184
+(1,304 real changes made)
+
+. replace parroquia_nombre = "YARUQUI" if ciudad == 170185
+(256 real changes made)
+
+. 
+. replace canton_nombre = "DISTRITO METROPOLITANO DE QUITO" if parroquia_nombre != "" & inrange(ciudad, 170150, 170185)
+(42,091 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * CAYAMBE
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "CAYAMBE" if ciudad == 170250
+(276 real changes made)
+
+. replace parroquia_nombre = "ASCAZUBI" if ciudad == 170251
+(129 real changes made)
+
+. replace parroquia_nombre = "CANGAHUA" if ciudad == 170252
+(544 real changes made)
+
+. replace parroquia_nombre = "OLMEDO" if ciudad == 170253
+(27 real changes made)
+
+. replace parroquia_nombre = "OTON" if ciudad == 170254
+(21 real changes made)
+
+. replace parroquia_nombre = "SANTA ROSA DE CUZUBAMBA" if ciudad == 170255
+(77 real changes made)
+
+. replace parroquia_nombre = "SAN JOSE DE AYORA" if ciudad == 170256
+(16 real changes made)
+
+. 
+. replace canton_nombre = "CAYAMBE" if inrange(ciudad, 170250, 170256)
+(1,090 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * MEJIA
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "MACHACHI" if ciudad == 170350
+(172 real changes made)
+
+. replace parroquia_nombre = "ALOAG" if ciudad == 170351
+(69 real changes made)
+
+. replace parroquia_nombre = "ALOASI" if ciudad == 170352
+(233 real changes made)
+
+. replace parroquia_nombre = "CUTUGLAHUA" if ciudad == 170353
+(463 real changes made)
+
+. replace parroquia_nombre = "MANUEL CORNEJO ASTORGA" if ciudad == 170355
+(115 real changes made)
+
+. replace parroquia_nombre = "TAMBILLO" if ciudad == 170356
+(33 real changes made)
+
+. 
+. replace canton_nombre = "MEJIA" if inrange(ciudad, 170350, 170356)
+(1,085 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * PEDRO MONCAYO
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "TABACUNDO" if ciudad == 170450
+(291 real changes made)
+
+. replace parroquia_nombre = "LA ESPERANZA" if ciudad == 170451
+(211 real changes made)
+
+. replace parroquia_nombre = "MALCHINGUI" if ciudad == 170452
+(40 real changes made)
+
+. replace parroquia_nombre = "TUPIGACHI" if ciudad == 170454
+(146 real changes made)
+
+. 
+. replace canton_nombre = "PEDRO MONCAYO" if inrange(ciudad, 170450, 170454)
+(688 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * RUMIÑAHUI
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "SANGOLQUI" if ciudad == 170550
+(759 real changes made)
+
+. replace parroquia_nombre = "COTOGCHOA" if ciudad == 170551
+(40 real changes made)
+
+. 
+. replace canton_nombre = "RUMIÑAHUI" if inrange(ciudad, 170550, 170551)
+(799 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * SAN MIGUEL DE LOS BANCOS
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "SAN MIGUEL DE LOS BANCOS" if ciudad == 170750
+(294 real changes made)
+
+. replace parroquia_nombre = "MINDO" if ciudad == 170751
+(94 real changes made)
+
+. 
+. replace canton_nombre = "SAN MIGUEL DE LOS BANCOS" if inrange(ciudad, 170750, 170751)
+(388 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * PEDRO VICENTE MALDONADO
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "PEDRO VICENTE MALDONADO" if ciudad == 170850
+(297 real changes made)
+
+. replace canton_nombre = "PEDRO VICENTE MALDONADO" if ciudad == 170850
+(297 real changes made)
+
+. 
+. *----------------------------------------------------------
+. * PUERTO QUITO
+. *----------------------------------------------------------
+. 
+. replace parroquia_nombre = "PUERTO QUITO" if ciudad == 170950
+(290 real changes made)
+
+. replace canton_nombre = "PUERTO QUITO" if ciudad == 170950
+(290 real changes made)
+
+. 
+. * Verificación
+. tab canton_nombre
+
+                          canton_nombre |      Freq.     Percent        Cum.
+----------------------------------------+-----------------------------------
+                                CAYAMBE |      1,090        2.33        2.33
+        DISTRITO METROPOLITANO DE QUITO |     42,091       90.08       92.41
+                                  MEJIA |      1,085        2.32       94.73
+                          PEDRO MONCAYO |        688        1.47       96.20
+                PEDRO VICENTE MALDONADO |        297        0.64       96.84
+                           PUERTO QUITO |        290        0.62       97.46
+                              RUMIÑAHUI |        799        1.71       99.17
+               SAN MIGUEL DE LOS BANCOS |        388        0.83      100.00
+----------------------------------------+-----------------------------------
+                                  Total |     46,728      100.00
+
+. tab parroquia_nombre
+
+                       parroquia_nombre |      Freq.     Percent        Cum.
+----------------------------------------+-----------------------------------
+                               ALANGASI |        570        1.22        1.22
+                                  ALOAG |         69        0.15        1.37
+                                 ALOASI |        233        0.50        1.87
+                               AMAGUANA |        431        0.92        2.79
+                               ASCAZUBI |        129        0.28        3.06
+                              ATAHUALPA |        218        0.47        3.53
+                               CALACALI |         33        0.07        3.60
+                               CALDERON |      1,791        3.83        7.43
+                               CANGAHUA |        544        1.16        8.60
+                                CAYAMBE |        276        0.59        9.19
+                                  CHECA |        194        0.42        9.60
+                               CONOCOTO |        749        1.60       11.21
+                              COTOGCHOA |         40        0.09       11.29
+                                CUMBAYA |        300        0.64       11.94
+                             CUTUGLAHUA |        463        0.99       12.93
+                             EL QUINCHE |        106        0.23       13.15
+                                 GUALEA |         37        0.08       13.23
+                             GUANGOPOLO |         50        0.11       13.34
+                           GUAYLLABAMBA |        236        0.51       13.84
+                           LA ESPERANZA |        211        0.45       14.30
+                              LA MERCED |         86        0.18       14.48
+                            LLANO CHICO |        212        0.45       14.93
+                               MACHACHI |        172        0.37       15.30
+                             MALCHINGUI |         40        0.09       15.39
+                 MANUEL CORNEJO ASTORGA |        115        0.25       15.63
+                                  MINDO |         94        0.20       15.83
+                                NANEGAL |         77        0.16       16.00
+                             NANEGALITO |         43        0.09       16.09
+                                  NAYON |        192        0.41       16.50
+                                   NONO |         47        0.10       16.60
+                                 OLMEDO |         27        0.06       16.66
+                                   OTON |         21        0.04       16.71
+                                  PACTO |         62        0.13       16.84
+                PEDRO VICENTE MALDONADO |        297        0.64       17.47
+                                   PIFO |        467        1.00       18.47
+                                 PINTAG |        185        0.40       18.87
+                               POMASQUI |        577        1.23       20.10
+                               PUELLARO |         81        0.17       20.28
+                                 PUEMBO |        219        0.47       20.75
+                           PUERTO QUITO |        290        0.62       21.37
+                                  QUITO |     32,984       70.59       91.95
+                            SAN ANTONIO |        403        0.86       92.82
+                      SAN JOSE DE AYORA |         16        0.03       92.85
+                      SAN JOSE DE MINAS |         60        0.13       92.98
+               SAN MIGUEL DE LOS BANCOS |        294        0.63       93.61
+                              SANGOLQUI |        759        1.62       95.23
+                SANTA ROSA DE CUZUBAMBA |         77        0.16       95.40
+                               TABABELA |        121        0.26       95.66
+                              TABACUNDO |        291        0.62       96.28
+                               TAMBILLO |         33        0.07       96.35
+                                TUMBACO |      1,304        2.79       99.14
+                              TUPIGACHI |        146        0.31       99.45
+                                YARUQUI |        256        0.55      100.00
+----------------------------------------+-----------------------------------
+                                  Total |     46,728      100.00
+
+. 
+. ///////////////  1.2 CONSERVAR VARIABLES IMPORTANTES
+> 
+. * ==========================================================
+. 
+. * ==========================================================
+. 
+. keep ///
+> prov ciudad canton_nombre parroquia_nombre area dominio periodo mes /// *Identificacion territorial*
+> fexp upm estrato conglomerado /// *Disenio muestral*
+> id_vivienda id_hogar id_persona vivienda hogar p01 p04 /// *Identificacion personas*
+> p02 p03 /// *Sexo y edad*
+> ingpc ingrl pobreza epobreza /// *Ingreso y pobreza*
+> p07 p08 p09 p10a p10b p11 p12a p12b nnivins /// *Educacion*
+> p05a p05b p20 p21 p22 p24 p25 p27 p28 p32 p34 p35 p36 /// *Seguro social* 
+> p44f p51a p51b p51c p61b1 condact empleo desempleo /// *Trabajo*
+> p15aa p15ab p74a p74b /// *Migracion*
+> p15 ced01a /// *etnia - cedula*
+> 
+
+. keep ///
+> prov ciudad canton_nombre parroquia_nombre area dominio periodo mes ///
+> fexp upm estrato conglomerado /// 
+> id_vivienda id_hogar id_persona vivienda hogar p01 p04 ///
+> p02 p03 ///
+> ingpc ingrl pobreza epobreza ///
+> p07 p08 p09 p10a p10b p11 p12a p12b nnivins /// 
+> p05a p05b p20 p21 p22 p24 p25 p27 p28 p32 p34 p35 p36 /// 
+> p44f p51a p51b p51c p61b1 condact empleo desempleo ///
+> p15aa p15ab p74a p74b ///
+> p15 ced01a 
+
+. 
+. save "$ROOT/data/basepichincha.dta", replace
+file ./data/basepichincha.dta saved
+
+. use "$ROOT/data/basepichincha.dta", clear
+
+. 
+. ///////////////  Objetivo 1 relacionado con DESARROLLO HUMANO
+> *---------------------------------   IDH   --------------------------------------*
+. * 1. Indice de educacion
+. *** 1.1 Años promedio de escolaridad (MYS)
+. 
+. capture drop esc
+
+. 
+. gen esc = .
+(46,728 missing values generated)
+
+. 
+. replace esc = 0       if p10a==1
+(967 real changes made)
+
+. replace esc = p10b    if p10a==2
+(36 real changes made)
+
+. replace esc = p10b    if p10a==4
+(6,780 real changes made)
+
+. replace esc = 7+p10b  if p10a==5
+(7,597 real changes made)
+
+. replace esc = 10+p10b if p10a==6
+(9,725 real changes made)
+
+. replace esc = 13+p10b if p10a==7
+(6,144 real changes made)
+
+. replace esc = 13+p10b if p10a==8
+(2,400 real changes made)
+
+. replace esc = 13+p10b if p10a==9
+(9,681 real changes made)
+
+. replace esc = 18+p10b if p10a==10
+(1,561 real changes made)
+
+. 
+. mean esc [aw=fexp] if p03>=25
+
+Mean estimation                         Number of obs = 30,595
+
+--------------------------------------------------------------
+             |       Mean   Std. err.     [95% conf. interval]
+-------------+------------------------------------------------
+         esc |   12.81564    .031493      12.75391    12.87737
+--------------------------------------------------------------
+
+. 
+. scalar MYS = r(table)[1,1]
+
+. scalar IMYS = MYS/15
+
+. 
+. display "Años promedio de escolaridad = " MYS
+Años promedio de escolaridad = 12.815639
+
+. display "Índice MYS = " IMYS
+Índice MYS = .8543759
+
+. 
+. *** 1.2 Años esperados de escolaridad (EYS)
+. 
+. capture drop asiste
+
+. 
+. gen asiste = (p07==1)
+
+. 
+. mean asiste [aw=fexp] if inrange(p03,5,18)
+
+Mean estimation                          Number of obs = 9,457
+
+--------------------------------------------------------------
+             |       Mean   Std. err.     [95% conf. interval]
+-------------+------------------------------------------------
+      asiste |   .9389574    .002462      .9341314    .9437834
+--------------------------------------------------------------
+
+. 
+. scalar tasa = r(table)[1,1]
+
+. 
+. scalar EYS = tasa*18
+
+. scalar IEYS = EYS/18
+
+. 
+. display "Años esperados de escolaridad = " EYS
+Años esperados de escolaridad = 16.901234
+
+. display "Índice EYS = " IEYS
+Índice EYS = .93895742
+
+. 
+. *** 1.3 Calculo del indice de Educación
+. 
+. global G_IE = (IMYS+IEYS)/2
+
+. scalar IE = $G_IE
+
+. display "Índice de Educación = " IE
+Índice de Educación = .89666666
+
+. 
+. * 2. Indice de salud
+. 
+. scalar EV = 82.2
+
+. 
+. global G_IS = (EV-20)/(85-20)
+
+. scalar IS = $G_IS
+
+. 
+. display "Índice de Salud = " IS
+Índice de Salud = .95692308
+
+. 
+. * 3. Indice de ingreso
+. 
+. mean ingpc [aw=fexp]
+
+Mean estimation                         Number of obs = 46,463
+
+--------------------------------------------------------------
+             |       Mean   Std. err.     [95% conf. interval]
+-------------+------------------------------------------------
+       ingpc |   338.0915   1.844996      334.4753    341.7077
+--------------------------------------------------------------
+
+. 
+. scalar ING = r(table)[1,1] * 12
+
+. 
+. global G_II = (ln(ING)-ln(100))/(ln(75000)-ln(100))
+
+. scalar II = $G_II
+
+. 
+. display "Ingreso anual per cápita = " ING
+Ingreso anual per cápita = 4057.0979
+
+. display "Índice de Ingreso = " II
+Índice de Ingreso = .55936738
+
+. 
+. * 4. Calculo del IDH
+. 
+. scalar IDH = (IS*IE*II)^(1/3)
+
+. 
+. display " "
+ 
+
+. display "=========================================="
+==========================================
+
+. display "      IDH DE PICHINCHA - 2025"
+      IDH DE PICHINCHA - 2025
+
+. display "=========================================="
+==========================================
+
+. display "Índice de Salud      = " %6.4f IS
+Índice de Salud      = 0.9569
+
+. display "Índice de Educación  = " %6.4f IE
+Índice de Educación  = 0.8967
+
+. display "Índice de Ingreso    = " %6.4f II
+Índice de Ingreso    = 0.5594
+
+. display "------------------------------------------"
+------------------------------------------
+
+. display "IDH                  = " %6.4f IDH
+IDH                  = 0.7830
+
+. 
+. 
+. *-------------------------   IDH - Modificado   --------------------------------*
+. * ==========================================================
+. * Se considera como dimension adicional la migracion neta. 
+. * ==========================================================
+. 
+. * 1.Indice de migracion
+. 
+. * Tasa neta de migración de Pichincha (2025)
+. scalar TMN = 0.0647965
+
+. 
+. * Valores mínimo y máximo utilizados para normalizar 
+. scalar TMNmin = -17.7014674
+
+. scalar TMNmax = 1.7109644
+
+. 
+. scalar IM = (TMN-TMNmin)/(TMNmax-TMNmin)
+
+. 
+. display "Índice de Migración = " IM
+Índice de Migración = .91520033
+
+. 
+. * 2. Calculo del IDH modificado
+. 
+. scalar IDHA = (IS*IE*II*IM)^(1/4)
+
+. 
+. display " "
+ 
+
+. display "=========================================="
+==========================================
+
+. display "  IDH AUMENTADO - PICHINCHA 2025"
+  IDH AUMENTADO - PICHINCHA 2025
+
+. display "=========================================="
+==========================================
+
+. display "Índice de Salud      = " %6.4f IS
+Índice de Salud      = 0.9569
+
+. display "Índice de Educación  = " %6.4f IE
+Índice de Educación  = 0.8967
+
+. display "Índice de Ingreso    = " %6.4f II
+Índice de Ingreso    = 0.5594
+
+. display "Índice de Migración  = " %6.4f IM
+Índice de Migración  = 0.9152
+
+. display "------------------------------------------"
+------------------------------------------
+
+. display "IDH Aumentado        = " %6.4f IDHA
+IDH Aumentado        = 0.8141
+
+. 
+. * Guardar la base que ya contiene la variable esc para uso posterior
+. save "$ROOT/data/basepichincha.dta", replace
+file ./data/basepichincha.dta saved
+
+. 
+. 
+. //////////////////  Objetivo 2 relacionado con POBREZA   ///////////////////////
+> 
+. *-------------------------   Pobreza por Ingresos   ---------------------------*
+. * cd "$ROOT/data" // Cambiado para portabilidad
+. * Revisar la variable de pobreza por ingresos
+. describe pobreza
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+pobreza         double  %10.0g                
+
+. tab pobreza, missing
+
+    pobreza |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     42,682       91.34       91.34
+          1 |      3,781        8.09       99.43
+          . |        265        0.57      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * Verificar categorías
+. capture label list labels109
+
+. 
+. * Crear variable binaria de pobreza monetaria
+. * 1 = Pobre
+. * 0 = No pobre
+. 
+. gen pobreza_ingresos = .
+(46,728 missing values generated)
+
+. 
+. replace pobreza_ingresos = 1 if pobreza == 1
+(3,781 real changes made)
+
+. replace pobreza_ingresos = 0 if pobreza == 0
+(42,682 real changes made)
+
+. 
+. * Etiquetas
+. label define pobre_ing 0 "No pobre" 1 "Pobre", replace
+
+. label values pobreza_ingresos pobre_ing
+
+. 
+. * Verificar distribución
+. tab pobreza_ingresos, missing
+
+pobreza_ing |
+      resos |      Freq.     Percent        Cum.
+------------+-----------------------------------
+   No pobre |     42,682       91.34       91.34
+      Pobre |      3,781        8.09       99.43
+          . |        265        0.57      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * Calcular incidencia de pobreza monetaria
+. mean pobreza_ingresos
+
+Mean estimation                             Number of obs = 46,463
+
+------------------------------------------------------------------
+                 |       Mean   Std. err.     [95% conf. interval]
+-----------------+------------------------------------------------
+pobreza_ingresos |   .0813766   .0012684      .0788904    .0838627
+------------------------------------------------------------------
+
+. 
+. * Obtener porcentaje
+. display r(mean)*100
+.
+
+. 
+. * Declarar diseño muestral
+. svyset upm [pweight=fexp], strata(estrato)
+
+Sampling weights: fexp
+             VCE: linearized
+     Single unit: missing
+        Strata 1: estrato
+ Sampling unit 1: upm
+           FPC 1: <zero>
+
+. 
+. * Estimar pobreza monetaria
+. svy: mean pobreza_ingresos
+(running mean on estimation sample)
+
+Survey: Mean estimation
+
+Number of strata =     9               Number of obs   =    46,463
+Number of PSUs   = 1,138               Population size = 3,375,370
+                                       Design df       =     1,129
+
+------------------------------------------------------------------
+                 |             Linearized
+                 |       Mean   std. err.     [95% conf. interval]
+-----------------+------------------------------------------------
+pobreza_ingresos |   .1122153   .0104789      .0916549    .1327756
+------------------------------------------------------------------
+
+. 
+. *--------------------  Índice de Pobreza Multidimensional   -------------------*
+. 
+. * CONSTRUCCIÓN DE LAS DIMENSIONES PARA EL IPM OFICIAL
+. 
+. ********************************************************************************
+. * DIMENSIÓN 1: EDUCACIÓN
+. ********************************************************************************
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 1: Inasistencia a educación básica y bachillerato
+. * Población aplicable: 5 a 17 años
+. *-------------------------------------------------------------------------------
+. gen educ_inasistencia = .
+(46,728 missing values generated)
+
+. 
+. * No privado: asiste a clases
+. replace educ_inasistencia = 0 if ///
+>     inrange(p03,5,17) & ///
+>     p07==1
+(8,299 real changes made)
+
+.         
+. * Privado: no asiste a clases
+. replace educ_inasistencia = 1 if ///
+>     inrange(p03,5,17) & ///
+>     p07==2
+(329 real changes made)
+
+.         
+. tab educ_inasistencia if inrange(p03,5,17), missing
+
+educ_inasis |
+     tencia |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      8,299       96.19       96.19
+          1 |        329        3.81      100.00
+------------+-----------------------------------
+      Total |      8,628      100.00
+
+. 
+. * Etiqueta
+. label define privacion 0 "No privado" 1 "Privado"
+
+. label values educ_inasistencia privacion
+
+. 
+. tab educ_inasistencia, missing
+
+educ_inasis |
+     tencia |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |      8,299       17.76       17.76
+    Privado |        329        0.70       18.46
+          . |     38,100       81.54      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab p07 educ_inasistencia if inrange(p03,5,17), row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |   educ_inasistencia
+       p07 | No privad    Privado |     Total
+-----------+----------------------+----------
+         1 |     8,299          0 |     8,299 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         2 |         0        329 |       329 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+     Total |     8,299        329 |     8,628 
+           |     96.19       3.81 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 2: No acceso a educación superior por razones económicas
+. * Población aplicable: 18 a 29 años
+. *-------------------------------------------------------------------------------
+. gen d2_superior = .
+(46,728 missing values generated)
+
+. 
+. * Inicialmente toda la población aplicable no presenta privación
+. replace d2_superior = 0 if ///
+>     inrange(p03,18,29)
+(9,260 real changes made)
+
+.     
+. * Privación por razones económicas
+. replace d2_superior = 1 if ///
+>     inrange(p03,18,29) & ///
+>     p07==2 & ///
+>     p09==3
+(1,416 real changes made)
+
+.         
+. label values d2_superior privacion
+
+. 
+. tab d2_superior if inrange(p03,18,29), missing
+
+d2_superior |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |      7,844       84.71       84.71
+    Privado |      1,416       15.29      100.00
+------------+-----------------------------------
+      Total |      9,260      100.00
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 3: Logro educativo incompleto
+. * Población aplicable: 18 a 64 años
+. *-------------------------------------------------------------------------------
+. gen educ_logro = .
+(46,728 missing values generated)
+
+. 
+. * Población adulta (18 años o más)
+. replace educ_logro = 0 if inrange(p03,18,64)
+(29,904 real changes made)
+
+. 
+. * Privación educativa: Personas adultas sin educación o con educación incompleta
+. replace educ_logro = 1 if inrange(p03,18,64) & inlist(p10a,1,2)
+(349 real changes made)
+
+. 
+. * Primaria incompleta:
+. * Primaria completa = 6 años aprobados
+. replace educ_logro = 1 if inrange(p03,18,64) & p10a==4 & p10b<6
+(746 real changes made)
+
+. 
+. * Educación Básica incompleta:
+. * Educación básica = 10 años aprobados
+. replace educ_logro = 1 if inrange(p03,18,64) & p10a==5 & p10b<10
+(328 real changes made)
+
+. 
+. * Secundaria incompleta:
+. * Secundaria completa = 6 años dentro del nivel
+. replace educ_logro = 1 if inrange(p03,18,64) & p10a==6 & p10b<6
+(1,710 real changes made)
+
+. 
+. label values educ_logro privacion
+
+. 
+. tab educ_logro, missing             
+
+ educ_logro |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     26,771       57.29       57.29
+    Privado |      3,133        6.70       64.00
+          . |     16,824       36.00      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab p10a educ_logro if p03>=18, row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |      educ_logro
+      p10a | No privad    Privado |     Total
+-----------+----------------------+----------
+         1 |         0        334 |       334 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         2 |         0         15 |        15 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         4 |     3,419        746 |     4,165 
+           |     82.09      17.91 |    100.00 
+-----------+----------------------+----------
+         5 |       172        328 |       500 
+           |     34.40      65.60 |    100.00 
+-----------+----------------------+----------
+         6 |     6,136      1,710 |     7,846 
+           |     78.21      21.79 |    100.00 
+-----------+----------------------+----------
+         7 |     4,732          0 |     4,732 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         8 |     2,337          0 |     2,337 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         9 |     8,590          0 |     8,590 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+        10 |     1,385          0 |     1,385 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+     Total |    26,771      3,133 |    29,904 
+           |     89.52      10.48 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * En el algoritmo Alkire-Foster usado por INEC, los indicadores se construyen a nivel de persona,
+. * pero la pobreza multidimensional se determina a nivel de hogar.
+. * Entonces, siguiendo la lógica: Si al menos una persona del hogar presenta privación en un indicador,
+. * el hogar presenta privación en ese indicador.
+. 
+. * 1. Pasar indicadores individuales a hogar
+. * Existe al menos una persona privada en el hogar
+. bysort id_hogar: egen h_educ_inasistencia = max(educ_inasistencia)
+(22,449 missing values generated)
+
+. bysort id_hogar: egen h_d2_superior = max(d2_superior)
+(21,667 missing values generated)
+
+. bysort id_hogar: egen h_educ_logro = max(educ_logro)
+(2,889 missing values generated)
+
+. 
+. * 2. ¿En este hogar existe al menos una persona que puede ser evaluada en este indicador?
+. bysort id_hogar: egen aplica_educ1 = max(inrange(p03,5,17))
+
+. bysort id_hogar: egen aplica_educ2 = max(inrange(p03,18,29))
+
+. bysort id_hogar: egen aplica_educ3 = max(inrange(p03,18,64))
+
+. 
+. * Casos donde el indicador no aplica
+. replace h_educ_inasistencia = . if aplica_educ1==0
+(0 real changes made)
+
+. replace h_d2_superior = . if aplica_educ2==0
+(0 real changes made)
+
+. replace h_educ_logro = . if aplica_educ3==0
+(0 real changes made)
+
+. 
+. * 3. Construcción de la DIMENSIÓN EDUCACIÓN
+. * Para obtener la privación de la dimensión Educación, debemos aplicar el umbral correspondiente.
+. * En el IPM Ecuador: Educación pesa 25%.
+. * Sus tres indicadores tienen pesos iguales (8,3% cada uno).
+. * Dimensión Educación = I1+I2+I3/3
+. egen dim_educacion = rowmean( ///
+>     h_educ_inasistencia ///
+>     h_d2_superior ///
+>     h_educ_logro)
+(2,790 missing values generated)
+
+. 
+. * 4. Construccuón de la privación de la dimensión
+. * La dimensión queda privada cuando acumula al menos un tercio de las privaciones dentro de la dimensión.
+. gen priv_educacion = .
+(46,728 missing values generated)
+
+. 
+. replace priv_educacion = 0 if dim_educacion==0
+(30,193 real changes made)
+
+. 
+. replace priv_educacion = 1 if ///
+>     dim_educacion>=1/3 & ///
+>     dim_educacion<.
+(13,745 real changes made)
+
+. 
+. tab dim_educacion, missing
+
+dim_educaci |
+         on |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     30,193       64.61       64.61
+   .3333333 |      4,459        9.54       74.16
+         .5 |      5,337       11.42       85.58
+   .6666667 |      1,586        3.39       88.97
+          1 |      2,363        5.06       94.03
+          . |      2,790        5.97      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab priv_educacion dim_educacion, missing
+
+priv_educa |                           dim_educacion
+      cion |         0   .3333333         .5   .6666667          1          . |     Total
+-----------+------------------------------------------------------------------+----------
+         0 |    30,193          0          0          0          0          0 |    30,193 
+         1 |         0      4,459      5,337      1,586      2,363          0 |    13,745 
+         . |         0          0          0          0          0      2,790 |     2,790 
+-----------+------------------------------------------------------------------+----------
+     Total |    30,193      4,459      5,337      1,586      2,363      2,790 |    46,728 
+
+. 
+. save "$ROOT/data/base_IPM_educacion.dta", replace
+file ./data/base_IPM_educacion.dta saved
+
+. 
+. * Generar base a nivel de hogar para el merge posterior
+. preserve
+
+.     keep id_hogar priv_educacion
+
+.     duplicates drop id_hogar, force
+
+Duplicates in terms of id_hogar
+
+(31,424 observations deleted)
+
+.     save "$ROOT/data/base_IPM_educacion_hogar.dta", replace
+file ./data/base_IPM_educacion_hogar.dta saved
+
+. restore
+
+. 
+. ********************************************************************************
+. * DIMENSIÓN 2: TRABAJO Y SEGURIDAD SOCIAL
+. ********************************************************************************
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 4: No contribución al sistema de pensiones
+. * Población aplicable: personas ocupadas de 15 años o más
+. *-------------------------------------------------------------------------------
+. gen pensiones = .
+(46,728 missing values generated)
+
+. replace pensiones = 0 if p03>=15 & empleo==1 & inlist(p61b1,1,2,3,4)
+(10,744 real changes made)
+
+. 
+. * Privación: trabaja pero no aporta a ningún sistema
+. replace pensiones = 1 if p03>=15 & empleo==1 & p61b1==5
+(11,536 real changes made)
+
+. 
+. label values pensiones privacion
+
+. 
+. tab pensiones, missing
+
+  pensiones |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     10,744       22.99       22.99
+    Privado |     11,536       24.69       47.68
+          . |     24,448       52.32      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab p61b1 pensiones if p03>=15 & empleo==1, row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |       pensiones
+     p61b1 | No privad    Privado |     Total
+-----------+----------------------+----------
+         1 |     9,124          0 |     9,124 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         2 |     1,191          0 |     1,191 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         3 |       170          0 |       170 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         4 |       259          0 |       259 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         5 |         0     11,536 |    11,536 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+     Total |    10,744     11,536 |    22,280 
+           |     48.22      51.78 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 5: Empleo infantil y adolescente
+. * Población aplicable: personas de 15 años o más
+. *-------------------------------------------------------------------------------
+. gen trabajo_infantil = .
+(46,728 missing values generated)
+
+. 
+. * Población aplicable: niños y adolescentes de 5 a 17 años
+. replace trabajo_infantil = 0 if inrange(p03,5,17)
+(8,628 real changes made)
+
+. 
+. * Privación: realiza actividades laborales
+. replace trabajo_infantil = 1 if inrange(p03,5,17) ///
+>     & p20==1
+(84 real changes made)
+
+. 
+. label values trabajo_infantil privacion
+
+. 
+. tab trabajo_infantil, missing
+
+trabajo_inf |
+      antil |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |      8,544       18.28       18.28
+    Privado |         84        0.18       18.46
+          . |     38,100       81.54      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab p20 trabajo_infantil if inrange(p03,5,17), row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |   trabajo_infantil
+       p20 | No privad    Privado |     Total
+-----------+----------------------+----------
+         1 |         0         84 |        84 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         2 |     8,544          0 |     8,544 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+     Total |     8,544         84 |     8,628 
+           |     99.03       0.97 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 6: Desempleo o empleo inadecuado
+. * Población aplicable: personas de 15 años o más
+. *-------------------------------------------------------------------------------
+. gen trabajo_inadecuado = .
+(46,728 missing values generated)
+
+. 
+. * No privado: empleo adecuado/pleno
+. replace trabajo_inadecuado = 0 if condact==1
+(13,091 real changes made)
+
+. 
+. * Privación:
+. * subempleo, empleo no pleno, empleo no remunerado,
+. * empleo no clasificado y desempleo
+. replace trabajo_inadecuado = 1 if inlist(condact,2,3,4,5,6,7,8)
+(10,984 real changes made)
+
+. 
+. label values trabajo_inadecuado privacion
+
+. 
+. tab trabajo_inadecuado, missing
+
+trabajo_ina |
+    decuado |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     13,091       28.02       28.02
+    Privado |     10,984       23.51       51.52
+          . |     22,653       48.48      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab condact trabajo_inadecuado if p03>=15, row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |  trabajo_inadecuado
+   condact | No privad    Privado |     Total
+-----------+----------------------+----------
+         1 |    13,091          0 |    13,091 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         2 |         0      2,896 |     2,896 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         3 |         0        185 |       185 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         4 |         0      5,229 |     5,229 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         5 |         0        830 |       830 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         6 |         0         49 |        49 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         7 |         0      1,670 |     1,670 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         8 |         0        125 |       125 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+     Total |    13,091     10,984 |    24,075 
+           |     54.38      45.62 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * 1. Pasar indicadores individuales a hogar
+. bysort id_hogar: egen h_pensiones = max(pensiones)
+(4,427 missing values generated)
+
+. bysort id_hogar: egen h_trabajo_infantil = max(trabajo_infantil)
+(22,449 missing values generated)
+
+. bysort id_hogar: egen h_empleo_inadecuado = max(trabajo_inadecuado)
+(3,471 missing values generated)
+
+. 
+. * Indicador 4. Existe al menos una persona ocupada de 15 años o más
+. bysort id_hogar: egen aplica_pensiones = max(empleo==1)
+
+. * Indicador 5. Existe al menos un niño/adolescente de 5 a 17 años
+. bysort id_hogar: egen aplica_infantil = max(inrange(p03,5,17))
+
+. * Indicador 6. Existe al menos una persona de 15 años o más
+. bysort id_hogar: egen aplica_empleo = max(inrange(condact,1,8))
+
+. 
+. * 2. Si nadie puede ser evaluado, no aplica
+. replace h_pensiones=. if aplica_pensiones==0
+(0 real changes made)
+
+. replace h_empleo_inadecuado = . if aplica_empleo==0
+(0 real changes made)
+
+. 
+. tab h_pensiones, missing
+
+h_pensiones |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     15,400       32.96       32.96
+          1 |     26,901       57.57       90.53
+          . |      4,427        9.47      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab h_trabajo_infantil, missing
+
+h_trabajo_i |
+    nfantil |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     23,938       51.23       51.23
+          1 |        341        0.73       51.96
+          . |     22,449       48.04      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab h_empleo_inadecuado, missing
+
+h_empleo_in |
+   adecuado |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     16,921       36.21       36.21
+          1 |     26,336       56.36       92.57
+          . |      3,471        7.43      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * 3. Construcción de la DIMENSIÓN TRABAJO Y SEGURIDAD SOCIAL
+. * Dimensión Trabajo = I4+I5+I6/3
+. egen dim_trabajo = rowmean(h_pensiones h_trabajo_infantil h_empleo_inadecuado)
+(3,004 missing values generated)
+
+. 
+. * 4. Construcción de la privacipón de la dimensión
+. gen priv_trabajo = .
+(46,728 missing values generated)
+
+. replace priv_trabajo = 0 if dim_trabajo==0
+(11,697 real changes made)
+
+. replace priv_trabajo = 1 if dim_trabajo>=1/3 & dim_trabajo<.
+(32,027 real changes made)
+
+. 
+. tab dim_trabajo, missing
+
+dim_trabajo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     11,697       25.03       25.03
+   .3333333 |      5,240       11.21       36.25
+         .5 |      4,994       10.69       46.93
+   .6666667 |     11,762       25.17       72.10
+          1 |     10,031       21.47       93.57
+          . |      3,004        6.43      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. tab priv_trabajo, missing
+
+priv_trabaj |
+          o |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     11,697       25.03       25.03
+          1 |     32,027       68.54       93.57
+          . |      3,004        6.43      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. sum dim_trabajo
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+ dim_trabajo |     43,724    .5058092    .3674296          0          1
+
+. 
+. 
+. save "$ROOT/data/base_IPM_trabajo.dta", replace
+file ./data/base_IPM_trabajo.dta saved
+
+. 
+. * Generar base a nivel de hogar para el merge posterior
+. preserve
+
+.     keep id_hogar priv_trabajo
+
+.     duplicates drop id_hogar, force
+
+Duplicates in terms of id_hogar
+
+(31,424 observations deleted)
+
+.     save "$ROOT/data/base_IPM_trabajo_hogar.dta", replace
+file ./data/base_IPM_trabajo_hogar.dta saved
+
+. restore
+
+. 
+. 
+. 
+. clear
+
+. use "$ROOT/data/vivienda_2025_anual.dta", clear
+
+. 
+. ********************************************************************************
+. * DIMENSIÓN 3: SALUD, AGUA Y ALIMENTACIÓN
+. ********************************************************************************
+. 
+. *-------------------------------------------------------------
+. * Indicador 8: SIN SERVICIO DE AGUA POR RED PÚBLICA
+. *-------------------------------------------------------------
+. gen agua = 0
+
+. replace agua = 1 if vi10 != 1
+(12,668 real changes made)
+
+. 
+. label define privacion 0 "No privado" 1 "Privado", replace
+
+. label values agua privacion
+
+. label var agua "Sin servicio de agua por red pública"
+
+. 
+. tab agua, missing
+
+        Sin |
+servicio de |
+   agua por |
+        red |
+    pública |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     92,070       87.91       87.91
+    Privado |     12,668       12.09      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * Conservar únicamente las variables necesarias
+. keep id_hogar agua
+
+. 
+. * Una observación por hogar
+. duplicates drop id_hogar, force
+
+Duplicates in terms of id_hogar
+
+(0 observations are duplicates)
+
+. 
+. save "$ROOT/data/agua_hogar.dta", replace
+file ./data/agua_hogar.dta saved
+
+. 
+. clear
+
+. use "$ROOT/data/basepichincha.dta", clear
+
+. *-------------------------------------------------------------------------------
+. * Indicador 7: Pobreza extrema por ingresos
+. *-------------------------------------------------------------------------------
+. gen pobreza_extrema = epobreza
+(265 missing values generated)
+
+. 
+. label values pobreza_extrema privacion
+
+. label var pobreza_extrema "Pobreza extrema por ingresos"
+
+. 
+. tab pobreza_extrema, missing
+
+    Pobreza |
+extrema por |
+   ingresos |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     45,286       96.91       96.91
+          1 |      1,177        2.52       99.43
+          . |        265        0.57      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * Pasar el indicador al nivel del hogar
+. bysort id_hogar: egen h_pobreza_extrema = max(pobreza_extrema)
+(265 missing values generated)
+
+. 
+. * Incorporar el indicador de agua
+. merge m:1 id_hogar using "$ROOT/data/agua_hogar.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                        89,434
+        from master                         0  (_merge==1)
+        from using                     89,434  (_merge==2)
+
+    Matched                            46,728  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. *-------------------------------------------------------------------------------
+. 
+. * Construcción de la dimensión 3 -----------------------------------------------
+. gen punt_salud_agua = (h_pobreza_extrema + agua)/2
+(89,699 missing values generated)
+
+. 
+. tab punt_salud_agua, missing
+
+punt_salud_ |
+       agua |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     44,538       32.71       32.71
+         .5 |      1,890        1.39       34.10
+          1 |         35        0.03       34.12
+          . |     89,699       65.88      100.00
+------------+-----------------------------------
+      Total |    136,162      100.00
+
+. 
+. save "$ROOT/data/base_IPM_salud.dta", replace
+file ./data/base_IPM_salud.dta saved
+
+. 
+. * Privación de la dimensión
+. gen priv_salud_agua = 0
+
+. replace priv_salud_agua = 1 if punt_salud_agua > 0
+(91,624 real changes made)
+
+. 
+. label values priv_salud_agua privacion
+
+. label var priv_salud_agua ///
+> "Privación dimensión Salud, Agua y Alimentación"
+
+. 
+. tab priv_salud_agua, missing
+
+  Privación |
+  dimensión |
+Salud, Agua |
+          y |
+ Alimentaci |
+         ón |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     44,538       32.71       32.71
+    Privado |     91,624       67.29      100.00
+------------+-----------------------------------
+      Total |    136,162      100.00
+
+. 
+. * Dejar una observación por hogar
+. keep id_hogar h_pobreza_extrema agua punt_salud_agua priv_salud_agua
+
+. 
+. *Base a nivel de hogar
+. bysort id_hogar: keep if _n==1
+(31,424 observations deleted)
+
+. 
+. save "$ROOT/data/base_IPM_salud.dta", replace
+file ./data/base_IPM_salud.dta saved
+
+. 
+. ********************************************************************************
+. * DIMENSIÓN 4: HÁBITAT, VIVIENDA Y AMBIENTE SANO
+. ********************************************************************************
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 9: Hacinamiento
+. * Población aplicable: toda la población
+. *-------------------------------------------------------------------------------
+. * 1. Crear tamaño del hogar con base PERSONAS
+. * (Se asume que en memoria tenemos la base personas completa, pero se borró tras cargar la base de salud. 
+. * Espera, en la línea 595 se hizo use basepichincha, y luego en la 632 se hizo keep id_hogar etc, 
+. * por lo que en memoria quedan solo esas variables. 
+. * Para calcular tam_hogar de forma correcta sobre la base de personas, necesitamos volver a cargar basepichincha).
+. * Agreguemos: use "$ROOT/data/basepichincha.dta", clear
+. use "$ROOT/data/basepichincha.dta", clear
+
+. bysort id_hogar: gen tam_hogar = _N
+
+. tab tam_hogar
+
+  tam_hogar |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |      2,487        5.32        5.32
+          2 |      7,374       15.78       21.10
+          3 |     10,521       22.52       43.62
+          4 |     12,960       27.73       71.35
+          5 |      7,590       16.24       87.60
+          6 |      3,270        7.00       94.59
+          7 |      1,239        2.65       97.25
+          8 |        544        1.16       98.41
+          9 |        360        0.77       99.18
+         10 |        190        0.41       99.59
+         11 |         88        0.19       99.78
+         12 |         60        0.13       99.90
+         13 |         13        0.03       99.93
+         16 |         32        0.07      100.00
+------------+-----------------------------------
+      Total |     46,728      100.00
+
+. 
+. * 2. Pasar a una observación por hogar
+. bysort id_hogar: keep if _n==1
+(31,424 observations deleted)
+
+. keep id_hogar tam_hogar
+
+. count
+  15,304
+
+. 
+. * 3. Guardar la base de hogares con tamaño del hogar
+. save "$ROOT/data/tam_hogar.dta", replace
+file ./data/tam_hogar.dta saved
+
+. 
+. * 4. Unir tamaño del hogar con vivienda
+. use "$ROOT/data/vivienda_2025_anual.dta", clear
+
+. 
+. describe id_hogar vi07
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+id_hogar        str20   %20s                  
+vi07            double  %10.0g                
+
+. merge 1:1 id_hogar using "$ROOT/data/tam_hogar.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                        89,434
+        from master                    89,434  (_merge==1)
+        from using                          0  (_merge==2)
+
+    Matched                            15,304  (_merge==3)
+    -----------------------------------------
+
+. tab _merge
+
+   Matching result from |
+                  merge |      Freq.     Percent        Cum.
+------------------------+-----------------------------------
+        Master only (1) |     89,434       85.39       85.39
+            Matched (3) |     15,304       14.61      100.00
+------------------------+-----------------------------------
+                  Total |    104,738      100.00
+
+. * Personas por dormitorio
+. gen personas_dorm = tam_hogar/vi07 if vi07>0
+(89,590 missing values generated)
+
+. sum personas_dorm, detail
+
+                        personas_dorm
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .3333333       .1666667
+ 5%           .5             .2
+10%           .5             .2       Obs              15,148
+25%            1             .2       Sum of wgt.      15,148
+
+50%            1                      Mean           1.298085
+                        Largest       Std. dev.      .6941224
+75%          1.5              7
+90%            2              7       Variance       .4818059
+95%          2.5              7       Skewness       1.878076
+99%            4              9       Kurtosis       10.12926
+
+. 
+. * 5. Construcción del indicador
+. * Privado (1): más de 3 personas por dormitorio.
+. * No privado (0): 3 o menos personas por dormitorio.
+. gen hacinamiento = .
+(104,738 missing values generated)
+
+. replace hacinamiento = 0 if personas_dorm <= 3
+(14,908 real changes made)
+
+. replace hacinamiento = 1 if personas_dorm > 3
+(89,830 real changes made)
+
+. label values hacinamiento privacion
+
+. tab hacinamiento, missing
+
+hacinamient |
+          o |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     14,908       14.23       14.23
+          1 |     89,830       85.77      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 10: Déficit habitacional
+. * Población aplicable: toda la población
+. *-------------------------------------------------------------------------------
+. * 1. Techo ---------------------------------------------------------------------
+. gen techo=1 if vi03a==1 & inrange(vi03b,1,2)
+(69,131 missing values generated)
+
+. 
+. replace techo=2 if ///
+> (vi03a>=2 & vi03a<=4 & inrange(vi03b,1,2)) | ///
+> (vi03a==1 & vi03b==3)
+(57,313 real changes made)
+
+. 
+. replace techo=3 if ///
+> (vi03a==5) | ///
+> (vi03b==3 & vi03a>=2 & vi03a<=4)
+(9,964 real changes made)
+
+. 
+. tab techo, missing
+
+      techo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |     35,607       34.00       34.00
+          2 |     57,313       54.72       88.72
+          3 |      9,964        9.51       98.23
+          . |      1,854        1.77      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+.  
+. * 2. Paredes -------------------------------------------------------------------
+. gen pared=1 if ///
+> vi05a==1 & inrange(vi05b,1,2)
+(15,052 missing values generated)
+
+. 
+. replace pared=2 if ///
+> (vi05a==1 & vi05b==3) | ///
+> (inrange(vi05a,2,3) & inrange(vi05b,1,2))
+(7,131 real changes made)
+
+. 
+. replace pared=3 if ///
+> ((inrange(vi05a,2,6) & vi05b==3) | ///
+>  inrange(vi05a,4,6))
+(7,807 real changes made)
+
+. 
+. tab pared, missing
+
+      pared |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |     89,686       85.63       85.63
+          2 |      7,131        6.81       92.44
+          3 |      7,807        7.45       99.89
+          . |        114        0.11      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * 3. Piso ----------------------------------------------------------------------
+. gen piso=1 if ///
+> inrange(vi04a,1,3) & inrange(vi04b,1,2)
+(43,034 missing values generated)
+
+. 
+. replace piso=2 if ///
+> (inrange(vi04a,4,5) & inrange(vi04b,1,2)) | ///
+> (inrange(vi04a,1,3) & vi04b==3)
+(34,609 real changes made)
+
+. 
+. replace piso=3 if ///
+> (vi04a==6) | ///
+> (inrange(vi04a,4,5) & vi04b==3)
+(6,044 real changes made)
+
+. 
+. tab piso, missing
+
+       piso |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |     61,704       58.91       58.91
+          2 |     34,609       33.04       91.96
+          3 |      6,044        5.77       97.73
+          . |      2,381        2.27      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+.  
+. * 4. Tipología de vivienda -----------------------------------------------------
+. gen tipviv=1 if ///
+> ((techo==1 & pared==1 & inrange(piso,1,3)) | ///
+>  (techo==1 & pared==2 & piso==1))
+(69,377 missing values generated)
+
+. 
+. replace tipviv=2 if ///
+> ((techo==1 & pared==2 & inrange(piso,2,3)) | ///
+>  (techo==1 & pared==3 & inrange(piso,1,2)) | ///
+>  (techo==2 & pared==1 & inrange(piso,1,2)) | ///
+>  (techo==2 & pared==2 & inrange(piso,1,2)) | ///
+>  (techo==3 & pared==1 & inrange(piso,1,2)) | ///
+>  (techo==3 & pared==2 & piso==1))
+(53,958 real changes made)
+
+. 
+. replace tipviv=3 if ///
+> ((techo==1 & pared==3 & piso==3) | ///
+>  (techo==2 & pared==1 & piso==3) | ///
+>  (techo==2 & pared==2 & piso==3) | ///
+>  (techo==2 & pared==3 & inrange(piso,1,3)) | ///
+>  (techo==3 & pared==1 & piso==3) | ///
+>  (techo==3 & pared==2 & inrange(piso,1,3)) | ///
+>  (techo==3 & pared==3 & inrange(piso,1,3)))
+(11,360 real changes made)
+
+. 
+. label define tipologia 1 "Aceptables" 2 "Recuperables" 3 "Irrecuperables"
+
+. label values tipviv tipologia
+
+. 
+. tab tipviv, missing
+
+        tipviv |      Freq.     Percent        Cum.
+---------------+-----------------------------------
+    Aceptables |     35,361       33.76       33.76
+  Recuperables |     53,749       51.32       85.08
+Irrecuperables |     11,360       10.85       95.93
+             . |      4,268        4.07      100.00
+---------------+-----------------------------------
+         Total |    104,738      100.00
+
+. 
+. * Indicador de privación
+. gen deficit_habitacional=0
+
+. replace deficit_habitacional=1 if tipviv==2 | tipviv==3
+(65,109 real changes made)
+
+. 
+. label define deficit_lbl 0 "No privado" 1 "Privado"
+
+. label values deficit_habitacional deficit_lbl
+
+. label variable deficit_habitacional "Indicador 10. Déficit habitacional"
+
+. 
+. tab deficit_habitacional, missing
+
+  Indicador |
+        10. |
+    Déficit |
+habitaciona |
+          l |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     39,629       37.84       37.84
+    Privado |     65,109       62.16      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 11: Sin saneamiento de excretas
+. * Población aplicable: toda la población
+. *-------------------------------------------------------------------------------
+. gen saneamiento = .
+(104,738 missing values generated)
+
+. 
+. * Servicio adecuado 
+. replace saneamiento = 0 if inlist(vi09,1,2)
+(100,831 real changes made)
+
+. * Servicio inadecuado o inexistente dentro de la vivienda (0 = No privado).
+. replace saneamiento = 1 if inlist(vi09,3,4)
+(2,042 real changes made)
+
+. * No tiene servicio higiénico
+. replace saneamiento = 1 if vi09==5 & inlist(vi09a,1,2)
+(1,244 real changes made)
+
+. * Usa instalación sanitaria prestada
+. replace saneamiento = 0 if vi09==5 & vi09a==3 & inlist(vi09b,1,2)
+(586 real changes made)
+
+. replace saneamiento = 1 if vi09==5 & vi09a==3 & vi09b==3
+(28 real changes made)
+
+. 
+. label values saneamiento privacion
+
+. label variable saneamiento "Indicador 11. Sin saneamiento de excretas"
+
+. 
+. tab saneamiento, missing
+
+  Indicador |
+    11. Sin |
+saneamiento |
+de excretas |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |    101,417       96.83       96.83
+          1 |      3,314        3.16       99.99
+          . |          7        0.01      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. tab vi09 saneamiento, row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+           |   Indicador 11. Sin
+           |    saneamiento de
+           |       excretas
+      vi09 |         0          1 |     Total
+-----------+----------------------+----------
+         1 |    79,168          0 |    79,168 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         2 |    21,663          0 |    21,663 
+           |    100.00       0.00 |    100.00 
+-----------+----------------------+----------
+         3 |         0      1,663 |     1,663 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         4 |         0        379 |       379 
+           |      0.00     100.00 |    100.00 
+-----------+----------------------+----------
+         5 |       586      1,272 |     1,858 
+           |     31.54      68.46 |    100.00 
+-----------+----------------------+----------
+     Total |   101,417      3,314 |   104,731 
+           |     96.84       3.16 |    100.00 
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 12: Sin servicio de reccolección de basura
+. * Población aplicable: toda la población
+. *-------------------------------------------------------------------------------
+. gen basura = 0
+
+. 
+. replace basura = 1 if inlist(vi13,3,4,5)
+(7,684 real changes made)
+
+. 
+. label values basura privacion
+
+. 
+. tab basura, missing
+
+     basura |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     97,054       92.66       92.66
+          1 |      7,684        7.34      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. save "$ROOT/data/ENEMDU_Vivienda_Pichincha_indicadores.dta", replace
+file ./data/ENEMDU_Vivienda_Pichincha_indicadores.dta saved
+
+. 
+. *-------------------------------------------------------------------------------
+. use "$ROOT/data/ENEMDU_Vivienda_Pichincha_indicadores.dta", clear
+
+. keep id_hogar hacinamiento deficit_habitacional saneamiento basura
+
+. describe
+
+Contains data from ./data/ENEMDU_Vivienda_Pichincha_indicadores.dta
+ Observations:       104,738                  
+    Variables:             5                  21 Jul 2026 22:27
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+id_hogar        str20   %20s                  
+hacinamiento    float   %9.0g      privacion
+                                              
+deficit_habit~l float   %10.0g     deficit_lbl
+                                              Indicador 10. Déficit habitacional
+saneamiento     float   %9.0g      privacion
+                                              Indicador 11. Sin saneamiento de excretas
+basura          float   %9.0g      privacion
+                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by: id_hogar
+     Note: Dataset has changed since last saved.
+
+. save "$ROOT/data/indicadores_vivienda_pichincha.dta", replace
+file ./data/indicadores_vivienda_pichincha.dta saved
+
+. *-------------------------------------------------------------------------------
+. use "$ROOT/data/basepichincha.dta", clear
+
+. merge m:1 id_hogar using "$ROOT/data/indicadores_vivienda_pichincha.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                        89,434
+        from master                         0  (_merge==1)
+        from using                     89,434  (_merge==2)
+
+    Matched                            46,728  (_merge==3)
+    -----------------------------------------
+
+. *-------------------------------------------------------------------------------
+. * Construcción de la dimensión 4
+. gen punt_habitat = (hacinamiento + deficit_habitacional + saneamiento + basura)/4
+(7 missing values generated)
+
+. * Privación de la dimensión
+. gen priv_habitat = 0
+
+. replace priv_habitat = 1 if punt_habitat > 0
+(102,814 real changes made)
+
+. 
+. label define privacion 0 "No privado" 1 "Privado", replace
+
+. label values priv_habitat privacion
+
+. 
+. tab priv_habitat
+
+priv_habita |
+          t |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     33,348       24.49       24.49
+    Privado |    102,814       75.51      100.00
+------------+-----------------------------------
+      Total |    136,162      100.00
+
+. 
+. save "$ROOT/data/base_personas_pichincha_dimension4.dta", replace
+file ./data/base_personas_pichincha_dimension4.dta saved
+
+. 
+. 
+. *---------------------------------------------------------------
+. * Pasar la dimensión a nivel del hogar
+. *---------------------------------------------------------------
+. 
+. bysort id_hogar: egen h_punt_habitat = max(punt_habitat)
+(7 missing values generated)
+
+. bysort id_hogar: egen h_priv_habitat = max(priv_habitat)
+
+. 
+. keep id_hogar h_punt_habitat h_priv_habitat
+
+. 
+. duplicates drop id_hogar, force
+
+Duplicates in terms of id_hogar
+
+(31,424 observations deleted)
+
+. 
+. rename h_punt_habitat punt_habitat
+
+. rename h_priv_habitat priv_habitat
+
+. 
+. save "$ROOT/data/base_IPM_habitat.dta", replace
+file ./data/base_IPM_habitat.dta saved
+
+. 
+. clear
+
+. 
+. use "$ROOT/data/base_IPM_educacion_hogar.dta", clear
+
+. 
+. merge 1:1 id_hogar using "$ROOT/data/base_IPM_trabajo_hogar.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                            15,304  (_merge==3)
+    -----------------------------------------
+
+. tab _merge
+
+   Matching result from |
+                  merge |      Freq.     Percent        Cum.
+------------------------+-----------------------------------
+            Matched (3) |     15,304      100.00      100.00
+------------------------+-----------------------------------
+                  Total |     15,304      100.00
+
+. drop _merge
+
+. 
+. merge 1:1 id_hogar using "$ROOT/data/base_IPM_salud.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                        89,434
+        from master                         0  (_merge==1)
+        from using                     89,434  (_merge==2)
+
+    Matched                            15,304  (_merge==3)
+    -----------------------------------------
+
+. tab _merge
+
+   Matching result from |
+                  merge |      Freq.     Percent        Cum.
+------------------------+-----------------------------------
+         Using only (2) |     89,434       85.39       85.39
+            Matched (3) |     15,304       14.61      100.00
+------------------------+-----------------------------------
+                  Total |    104,738      100.00
+
+. drop _merge
+
+. 
+. merge 1:1 id_hogar using "$ROOT/data/base_IPM_habitat.dta"
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                           104,738  (_merge==3)
+    -----------------------------------------
+
+. tab _merge
+
+   Matching result from |
+                  merge |      Freq.     Percent        Cum.
+------------------------+-----------------------------------
+            Matched (3) |    104,738      100.00      100.00
+------------------------+-----------------------------------
+                  Total |    104,738      100.00
+
+. drop _merge
+
+. save "$ROOT/data/base_IPM_final.dta", replace
+file ./data/base_IPM_final.dta saved
+
+. 
+.  //CÁLCULO DEL IPM OFICIAL 
+. * cd "$ROOT/data"
+. * La base ya está cargada en memoria, no es necesario hacer clear y use de nuevo
+. * 1. Verificar variables de privación
+. describe priv_*
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+priv_educacion  float   %9.0g                 
+priv_trabajo    float   %9.0g                 
+priv_salud_agua float   %10.0g     privacion
+                                              Privación dimensión Salud, Agua y Alimentación
+priv_habitat    float   %9.0g                 
+
+. 
+. tab priv_educacion
+
+priv_educac |
+        ion |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      9,809       73.18       73.18
+          1 |      3,595       26.82      100.00
+------------+-----------------------------------
+      Total |     13,404      100.00
+
+. tab priv_trabajo
+
+priv_trabaj |
+          o |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      3,894       28.99       28.99
+          1 |      9,537       71.01      100.00
+------------+-----------------------------------
+      Total |     13,431      100.00
+
+. tab priv_salud_agua
+
+  Privación |
+  dimensión |
+Salud, Agua |
+          y |
+ Alimentaci |
+         ón |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     14,623       13.96       13.96
+    Privado |     90,115       86.04      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. tab priv_habitat
+
+priv_habita |
+          t |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     11,092       10.59       10.59
+          1 |     93,646       89.41      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * 2. Construcción del puntaje de privación IPM
+. * Las cuatro dimensiones tienen igual ponderación (25%)
+. gen punt_ipm_oficial = (priv_educacion + priv_trabajo + priv_salud_agua + priv_habitat) / 4
+(91,899 missing values generated)
+
+. 
+. * Revisar distribución del puntaj
+. tab punt_ipm_oficial
+
+punt_ipm_of |
+      icial |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      2,801       21.82       21.82
+        .25 |      5,222       40.67       62.49
+         .5 |      3,401       26.49       88.98
+        .75 |      1,234        9.61       98.59
+          1 |        181        1.41      100.00
+------------+-----------------------------------
+      Total |     12,839      100.00
+
+. 
+. * 3. Identificación de pobreza multidimensional
+. * Umbral k = 1/3 de privacionea
+. gen pobre_multi_oficial = 0
+
+. replace pobre_multi_oficial = 1 if punt_ipm_oficial >= 0.333333
+(96,715 real changes made)
+
+. 
+. * Verificar incidencia
+. tab pobre_multi_oficial
+
+pobre_multi |
+   _oficial |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      8,023        7.66        7.66
+          1 |     96,715       92.34      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * 4. Número de privaciones acumuladas
+. gen privaciones_oficial = priv_educacion + priv_trabajo + priv_salud_agua + priv_habitat
+(91,899 missing values generated)
+
+. tab privaciones_oficial
+
+privaciones |
+   _oficial |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      2,801       21.82       21.82
+          1 |      5,222       40.67       62.49
+          2 |      3,401       26.49       88.98
+          3 |      1,234        9.61       98.59
+          4 |        181        1.41      100.00
+------------+-----------------------------------
+      Total |     12,839      100.00
+
+. 
+. 
+. *------------------------------------------------------*
+. * 5. Incidencia (H)
+. *------------------------------------------------------*
+. summarize pobre_multi_oficial
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+pobre_mult~l |    104,738    .9233993     .265958          0          1
+
+. 
+. scalar H = r(mean)
+
+. 
+. display "Incidencia IPM (H) (%) = " %6.2f (H*100)
+Incidencia IPM (H) (%) =  92.34
+
+. 
+. *------------------------------------------------------*
+. * 6. Intensidad (A)
+. *------------------------------------------------------*
+. summarize punt_ipm_oficial if pobre_multi_oficial==1
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+punt_ipm_o~l |      4,816    .5828488    .1361984         .5          1
+
+. 
+. scalar A = r(mean)
+
+. 
+. display "Intensidad IPM (A) (%) = " %6.2f (A*100)
+Intensidad IPM (A) (%) =  58.28
+
+. 
+. *------------------------------------------------------*
+. * 7. Índice de Pobreza Multidimensional (M0)
+. *------------------------------------------------------*
+. scalar M0 = H*A
+
+. 
+. display "IPM (M0) = " %6.4f M0
+IPM (M0) = 0.5382
+
+. display "IPM (M0) (%) = " %6.2f (M0*100)
+IPM (M0) (%) =  53.82
+
+. 
+. 
+. 
+. *------------------------------------------------------*
+. * 5. Incidencia (H)
+. *------------------------------------------------------*
+. mean pobre_multi_oficial
+
+Mean estimation                               Number of obs = 104,738
+
+---------------------------------------------------------------------
+                    |       Mean   Std. err.     [95% conf. interval]
+--------------------+------------------------------------------------
+pobre_multi_oficial |   .9233993   .0008218      .9217886      .92501
+---------------------------------------------------------------------
+
+. display "Incidencia IPM (H) (%) = " r(mean)*100
+Incidencia IPM (H) (%) = .
+
+. 
+. *------------------------------------------------------*
+. * 6. Intensidad (A)
+. * Promedio de privaciones entre los pobres
+. *------------------------------------------------------*
+. mean punt_ipm_oficial if pobre_multi_oficial==1
+
+Mean estimation                              Number of obs = 4,816
+
+------------------------------------------------------------------
+                 |       Mean   Std. err.     [95% conf. interval]
+-----------------+------------------------------------------------
+punt_ipm_oficial |   .5828488   .0019626      .5790013    .5866964
+------------------------------------------------------------------
+
+. display "Intensidad IPM (A) (%) = " r(mean)*100
+Intensidad IPM (A) (%) = .
+
+. 
+. *------------------------------------------------------*
+. * 7. Índice de pobreza multidimensional ajustado (M0)
+. * M0 = H * A
+. *------------------------------------------------------*
+. scalar H = r(mean)
+
+. mean punt_ipm_oficial if pobre_multi_oficial==1
+
+Mean estimation                              Number of obs = 4,816
+
+------------------------------------------------------------------
+                 |       Mean   Std. err.     [95% conf. interval]
+-----------------+------------------------------------------------
+punt_ipm_oficial |   .5828488   .0019626      .5790013    .5866964
+------------------------------------------------------------------
+
+. scalar A = r(mean)
+
+. display "IPM ajustado (M0) (%) = " H*A*100
+IPM ajustado (M0) (%) = .
+
+. 
+. 
+. clear all
+
+. use "$ROOT/data/vivienda_2025_anual.dta", clear
+
+. *---------------------------------   IPM - Modificado  ------------------------*
+. 
+. * CONSTRUCCIÓN DE LA DIMENSIÓN 5 DESDE ENEMDU 
+. 
+. * Construcción de indicadores de privación
+. * (1 = Privado; 0 = No privado)
+. gen priv_vehiculo   = (vi1511==2)
+
+. gen priv_moto       = (vi1512==2)
+
+. gen priv_computador = (eqt19a011==2)
+
+. gen priv_tablet     = (eqt19a012==2)
+
+. gen priv_smartphone = (eqt19a015==2)
+
+. gen priv_smarttv    = (eqt19a016==2)
+
+. 
+. * Puntaje de privación de activos
+. gen punt_activos = (priv_vehiculo + priv_moto + priv_computador + priv_tablet + ///
+>  priv_smartphone + priv_smarttv)/6
+
+. 
+. * Dimensión 5
+. * Hogar privado cuando presenta al menos la mitad de las privaciones en activos (3 de 6)
+. gen priv_activos = 0
+
+. replace priv_activos = 1 if punt_activos >= 0.50
+(6,826 real changes made)
+
+. label define privacion 0 "No privado" 1 "Privado", replace
+
+. label values priv_activos privacion
+
+. label variable priv_activos "Dimensión 5. Acceso a activos del hogar"
+
+. 
+. tab priv_activos
+
+  Dimensión |
+5. Acceso a |
+activos del |
+      hogar |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     97,912       93.48       93.48
+    Privado |      6,826        6.52      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. summ punt_activos
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+punt_activos |    104,738     .298276    .1418373          0          1
+
+. 
+. keep id_hogar priv_activos
+
+. save "$ROOT/data/indicadores_activos_pichincha.dta", replace
+file ./data/indicadores_activos_pichincha.dta saved
+
+. 
+. ********************************************************************************
+. * DIMENSIÓN 5: ACCESO A ACTIVOS DEL HOGAR
+. ********************************************************************************
+. clear
+
+.  use "$ROOT/data/vivienda_2025_anual.dta", clear
+
+. 
+. *-------------------------------------------------------------------------------
+. * Indicador 13: Hogar sin vehículo
+. * Población aplicable: todos los hogares
+. *-------------------------------------------------------------------------------
+. gen sin_vehiculo = .
+(104,738 missing values generated)
+
+. 
+. replace sin_vehiculo = 0 if vi1511 == 1
+(27,575 real changes made)
+
+. replace sin_vehiculo = 1 if vi1511 == 2
+(77,163 real changes made)
+
+. 
+. label values sin_vehiculo privacion
+
+. label variable sin_vehiculo "Indicador 13. Hogar sin vehículo"
+
+. 
+. tab sin_vehiculo, missing
+
+  Indicador |
+  13. Hogar |
+        sin |
+   vehículo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     27,575       26.33       26.33
+          1 |     77,163       73.67      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. *-------------------------------------------------------------------------------
+. * Indicador 14: Hogar sin motocicleta
+. * Población aplicable: todos los hogares
+. *-------------------------------------------------------------------------------
+. gen sin_moto = .
+(104,738 missing values generated)
+
+. 
+. replace sin_moto = 0 if vi1512 == 1
+(12,401 real changes made)
+
+. replace sin_moto = 1 if vi1512 == 2
+(92,337 real changes made)
+
+. 
+. label values sin_moto privacion
+
+. label variable sin_moto "Indicador 14. Hogar sin motocicleta"
+
+. 
+. tab sin_moto, missing
+
+  Indicador |
+  14. Hogar |
+        sin |
+motocicleta |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     12,401       11.84       11.84
+          1 |     92,337       88.16      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. *------------------------------------------------------------------------------
+. * Construcción de la dimensión
+. * Privación: hogar sin vehículo y sin motocicleta
+. *-------------------------------------------------------------------------------
+. gen priv_activos = 0
+
+. 
+. replace priv_activos = 1 if vi1511 == 2 & vi1512 == 2
+(67,143 real changes made)
+
+. 
+. label define privacion 0 "No privado" 1 "Privado", replace
+
+. label values priv_activos privacion
+
+. 
+. label variable priv_activos "Dimensión 5. Acceso a activos del hogar"
+
+. 
+. tab priv_activos, missing
+
+  Dimensión |
+5. Acceso a |
+activos del |
+      hogar |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     37,595       35.89       35.89
+    Privado |     67,143       64.11      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * Guardar indicadores de hogar
+. keep id_hogar sin_vehiculo sin_moto priv_activos
+
+. 
+. save "$ROOT/data/indicadores_activos_pichincha.dta", replace
+file ./data/indicadores_activos_pichincha.dta saved
+
+. *------------------------------------------------------
+. use "$ROOT/data/base_IPM_final.dta", clear
+
+. 
+. merge m:1 id_hogar using "$ROOT/data/indicadores_activos_pichincha.dta"
+(label privacion already defined)
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                           104,738  (_merge==3)
+    -----------------------------------------
+
+. 
+. tab _merge
+
+   Matching result from |
+                  merge |      Freq.     Percent        Cum.
+------------------------+-----------------------------------
+            Matched (3) |    104,738      100.00      100.00
+------------------------+-----------------------------------
+                  Total |    104,738      100.00
+
+. 
+. drop _merge
+
+. 
+. tab priv_activos
+
+  Dimensión |
+5. Acceso a |
+activos del |
+      hogar |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     37,595       35.89       35.89
+    Privado |     67,143       64.11      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. save "$ROOT/data/base_personas_pichincha_dim4_dim5.dta", replace
+file ./data/base_personas_pichincha_dim4_dim5.dta saved
+
+. 
+. 
+. * CÁLCULO DEL ÍNDICE DE POBREZA MULTIDIMENSIONAL MODIFICADO
+. 
+. * cd "$ROOT/data"
+. * use "$ROOT/data/base_personas_pichincha_dim4_dim5.dta", clear (Redundante, ya en memoria)
+. 
+. describe priv_*
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+priv_educacion  float   %9.0g                 
+priv_trabajo    float   %9.0g                 
+priv_salud_agua float   %10.0g     privacion
+                                              Privación dimensión Salud, Agua y Alimentación
+priv_habitat    float   %9.0g                 
+priv_activos    float   %10.0g     privacion
+                                              Dimensión 5. Acceso a activos del hogar
+
+. 
+. tab priv_educacion
+
+priv_educac |
+        ion |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      9,809       73.18       73.18
+          1 |      3,595       26.82      100.00
+------------+-----------------------------------
+      Total |     13,404      100.00
+
+. tab priv_trabajo
+
+priv_trabaj |
+          o |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      3,894       28.99       28.99
+          1 |      9,537       71.01      100.00
+------------+-----------------------------------
+      Total |     13,431      100.00
+
+. tab priv_salud_agua
+
+  Privación |
+  dimensión |
+Salud, Agua |
+          y |
+ Alimentaci |
+         ón |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     14,623       13.96       13.96
+    Privado |     90,115       86.04      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. tab priv_habitat
+
+priv_habita |
+          t |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     11,092       10.59       10.59
+          1 |     93,646       89.41      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. tab priv_activos
+
+  Dimensión |
+5. Acceso a |
+activos del |
+      hogar |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ No privado |     37,595       35.89       35.89
+    Privado |     67,143       64.11      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * Puntaje de privaciones del IPM ampliado
+. * Cinco dimensiones con igual ponderación (20% c/u)
+. gen punt_ipm_ampliado = (priv_educacion + priv_trabajo + priv_salud_agua + ///
+>  priv_habitat + priv_activos) / 5
+(91,899 missing values generated)
+
+. 
+. tab punt_ipm_ampliado
+
+punt_ipm_am |
+     pliado |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      1,525       11.88       11.88
+         .2 |      3,578       27.87       39.75
+         .4 |      4,037       31.44       71.19
+         .6 |      2,594       20.20       91.39
+         .8 |        966        7.52       98.92
+          1 |        139        1.08      100.00
+------------+-----------------------------------
+      Total |     12,839      100.00
+
+. 
+. * Identificación de pobreza multidimensional
+. * Umbral k = 1/3
+. gen pobre_multi_ampliado = 0
+
+. replace pobre_multi_ampliado = 1 if punt_ipm_ampliado >= 0.333333
+(99,635 real changes made)
+
+. tab pobre_multi_ampliado
+
+pobre_multi |
+  _ampliado |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      5,103        4.87        4.87
+          1 |     99,635       95.13      100.00
+------------+-----------------------------------
+      Total |    104,738      100.00
+
+. 
+. * Número de privaciones
+. gen privaciones_ampliado = ///
+> priv_educacion + ///
+> priv_trabajo + ///
+> priv_salud_agua + ///
+> priv_habitat + ///
+> priv_activos
+(91,899 missing values generated)
+
+. 
+. tab privaciones_ampliado
+
+privaciones |
+  _ampliado |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      1,525       11.88       11.88
+          1 |      3,578       27.87       39.75
+          2 |      4,037       31.44       71.19
+          3 |      2,594       20.20       91.39
+          4 |        966        7.52       98.92
+          5 |        139        1.08      100.00
+------------+-----------------------------------
+      Total |     12,839      100.00
+
+. 
+. *------------------------------------------------------------------*
+. * Incidencia (modificado) (H)
+. *------------------------------------------------------------------*
+. mean pobre_multi_ampliado
+
+Mean estimation                                Number of obs = 104,738
+
+----------------------------------------------------------------------
+                     |       Mean   Std. err.     [95% conf. interval]
+---------------------+------------------------------------------------
+pobre_multi_ampliado |   .9512784   .0006652      .9499746    .9525822
+----------------------------------------------------------------------
+
+. display "Incidencia (H) = " r(mean)*100 "%"
+Incidencia (H) = .%
+
+. 
+. *------------------------------------------------------------------*
+. * Intensidad (modificado)(A)
+. *------------------------------------------------------------------*
+. mean punt_ipm_ampliado if pobre_multi_ampliado==1
+
+Mean estimation                               Number of obs = 7,736
+
+-------------------------------------------------------------------
+                  |       Mean   Std. err.     [95% conf. interval]
+------------------+------------------------------------------------
+punt_ipm_ampliado |   .5277922   .0017441      .5243732    .5312111
+-------------------------------------------------------------------
+
+. display "Intensidad (A) = " r(mean)*100 "%"
+Intensidad (A) = .%
+
+. 
+. *------------------------------------------------------------------*
+. * 7. Índice de Pobreza Multidimensional Ajustado (M0) (modificado)
+. *------------------------------------------------------------------*
+. scalar H = 0.3696071
+
+. scalar A = 0.4807944
+
+. 
+. display "IPM ajustado (M0) = " H*A*100 "%"
+IPM ajustado (M0) = 17.770502%
+
+. 
+. 
+. 
+. 
+. 
+. 
+. clear
+
+. use "$ROOT/data/basepichincha.dta", clear
+
+. 
+. ///////////////  4. DESIGUALDAD
+> 
+. * Mantener solo ingresos válidos
+. keep if !missing(ingpc, fexp)
+(265 observations deleted)
+
+. 
+. *---------------------------------   Indice de Theil   --------------------------------------*
+. 
+. * 1. Calcular ingreso promedio 
+. gen ingreso_pond = ingpc * fexp
+
+. 
+. egen poblacion_total = total(fexp)
+
+. egen ingreso_total = total(ingreso_pond)
+
+. 
+. gen ingreso_promedio = ingreso_total / poblacion_total
+
+. 
+. * 2. Dividimos ingpc al promedio
+. gen ratio = ingpc / ingreso_promedio
+
+. 
+. * 3. Aplicamos logaritmos
+. gen theil_comp = 0
+
+. replace theil_comp = ratio * ln(ratio) if ingpc > 0
+(46,463 real changes made)
+
+. 
+. *** 3.1. Aplicar factor de expansion
+. gen theil_pond = theil_comp * fexp
+
+. 
+. * 4. Obtener indice de Theil
+. summ theil_pond
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+  theil_pond |     46,463    28.00883    233.4724  -834.9458   17470.09
+
+. scalar suma_theil = r(sum)
+
+. 
+. scalar theil = suma_theil / poblacion_total
+
+. 
+. display "Indice de Theil de Pichincha = " theil
+Indice de Theil de Pichincha = .38555022
+
+. 
+. * 5. DESCOMPOSICION DE AREAS
+. 
+. * 1. Calcular población, ingreso e ingreso promedio por área
+. bysort area: egen pob_area = total(fexp)
+
+. bysort area: egen ing_area = total(ingreso_pond)
+
+. 
+. gen prom_area = ing_area / pob_area
+
+. 
+. * 2. Calcular Theil dentro de cada área
+. gen ratio_area = ingpc / prom_area
+
+. 
+. gen theil_comp_area = 0
+
+. replace theil_comp_area = ratio_area * ln(ratio_area) if ingpc > 0
+(46,463 real changes made)
+
+. 
+. gen theil_pond_area = theil_comp_area * fexp
+
+. 
+. bysort area: egen suma_theil_area = total(theil_pond_area)
+
+. 
+. gen theil_area = suma_theil_area / pob_area
+
+. 
+. * 3. Calcular aporte dentro y aporte entre áreas
+. gen peso_ingreso_area = ing_area / ingreso_total
+
+. 
+. gen theil_dentro_area = peso_ingreso_area * theil_area
+
+. 
+. gen theil_entre_area = peso_ingreso_area * ln(prom_area / ingreso_promedio)
+
+. 
+. * 4. Mostrar una sola fila por área
+. egen tag_area = tag(area)
+
+. 
+. list area prom_area theil_area theil_dentro_area theil_entre_area if tag_area, noobs
+
+  +---------------------------------------------------+
+  | area   prom_a~a   t~l_area   t~o_area   theil_e~a |
+  |---------------------------------------------------|
+  |    1   358.2534   .3774559   .3330108    .0511035 |
+  |    2   237.8125    .364029   .0428641   -.0414281 |
+  +---------------------------------------------------+
+
+. 
+. * 5. Obtener resultados finales
+. summ theil_dentro_area if tag_area
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+theil_dent~a |          2    .1879374    .2051647   .0428641   .3330108
+
+. scalar theil_dentro = r(sum)
+
+. 
+. summ theil_entre_area if tag_area
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+theil_entr~a |          2    .0048377    .0654297  -.0414281   .0511035
+
+. scalar theil_entre = r(sum)
+
+. 
+. scalar theil_descompuesto = theil_dentro + theil_entre
+
+. 
+. display "Theil dentro de áreas = " theil_dentro
+Theil dentro de áreas = .33301079
+
+. display "Theil entre áreas = " theil_entre
+Theil entre áreas = .05110348
+
+. display "Theil total descompuesto = " theil_descompuesto
+Theil total descompuesto = .38411428
+
+. 
+. * Crear nombre del área
+. capture drop area_nombre
+
+. gen str10 area_nombre = ""
+(46,463 missing values generated)
+
+. 
+. replace area_nombre = "Urbana" if area == 1
+(39,967 real changes made)
+
+. replace area_nombre = "Rural"  if area == 2
+(6,496 real changes made)
+
+. 
+. * Mostrar tabla final
+. format prom_area theil_area theil_dentro_area theil_entre_area %9.4f
+
+. 
+. list area_nombre  theil_area if tag_area, noobs
+
+  +---------------------+
+  | area_n~e   t~l_area |
+  |---------------------|
+  |   Urbana     0.3775 |
+  |    Rural     0.3640 |
+  +---------------------+
+
+. 
+. 
+. *---------------------------------   Curva de Lorenz  PICHINCHA  --------------------------------------*
+. * 1. Ordenar de menor a mayor ingreso
+. sort ingpc
+
+. 
+. * 2. Crear acumulados
+. capture drop pob_acumulado ing_acumulado x_poblacion y_ingreso
+
+. 
+. gen pob_acumulado = sum(fexp)
+
+. gen ing_acumulado = sum(ingreso_pond)
+
+. 
+. gen x_poblacion = (pob_acumulado / poblacion_total) * 100
+
+. gen y_ingreso   = (ing_acumulado / ingreso_total) * 100
+
+. 
+. * 3. Tabla de deciles
+. 
+. capture drop decil poblacion_decil ingreso_decil etiqueta
+
+. 
+. gen decil = .
+(46,463 missing values generated)
+
+. gen poblacion_decil = .
+(46,463 missing values generated)
+
+. gen ingreso_decil = .
+(46,463 missing values generated)
+
+. gen etiqueta = ""
+(46,463 missing values generated)
+
+. 
+. forvalues d = 0(10)100 {
+  2.     
+.     local fila = (`d'/10) + 1
+  3.     
+.     replace decil = `d'/10 in `fila'
+  4.     replace poblacion_decil = `d' in `fila'
+  5.     
+.     if `d' == 0 {
+  6.         replace ingreso_decil = 0 in `fila'
+  7.     }
+  8.     else {
+  9.         quietly summ y_ingreso if x_poblacion >= `d'
+ 10.         replace ingreso_decil = r(min) in `fila'
+ 11.     }
+ 12.     
+.     replace etiqueta = string(ingreso_decil, "%4.2f") + "%" in `fila'
+ 13. }
+(1 real change made)
+(1 real change made)
+(1 real change made)
+variable etiqueta was str1 now str5
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+variable etiqueta was str5 now str6
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+variable etiqueta was str6 now str7
+(1 real change made)
+
+. 
+. * Ver tabla
+. list decil poblacion_decil ingreso_decil in 1/11, noobs
+
+  +-----------------------------+
+  | decil   pobla~il   ingre~il |
+  |-----------------------------|
+  |     0          0          0 |
+  |     1         10   1.702361 |
+  |     2         20   4.843959 |
+  |     3         30   8.929451 |
+  |     4         40   14.02977 |
+  |-----------------------------|
+  |     5         50   20.26488 |
+  |     6         60   27.89361 |
+  |     7         70   37.23938 |
+  |     8         80   49.09526 |
+  |     9         90    65.3519 |
+  |-----------------------------|
+  |    10        100        100 |
+  +-----------------------------+
+
+. 
+. * 4. Graficar curva de Lorenz
+. 
+. twoway ///
+> (line y_ingreso x_poblacion, sort) ///
+> (scatter ingreso_decil poblacion_decil in 1/11, mlabel(etiqueta) mlabposition(3)) ///
+> (function y=x, range(0 100)), ///
+> title("Curva de Lorenz - Pichincha") ///
+> xtitle("% acumulado de población") ///
+> ytitle("% acumulado de ingreso") ///
+> legend(label(1 "Curva de Lorenz") label(2 "Deciles") label(3 "Línea de igualdad")) ///
+> xlabel(0(10)100) ///
+> ylabel(0(10)100)
+
+. 
+. graph export "$ROOT/assets/curva_lorenz_2025.png", replace
+file ./assets/curva_lorenz_2025.png saved as PNG format
+
+. 
+. *---------------------------------   Curva de Lorenz NACIONAL  --------------------------------------*
+. * ==========================================================
+. * No se hace el calculo a nivel nacional, se recogen los datos ya hechos (formato tabla) del estudio de (Narriaga, K. (oct 2025)) quien uso las misma base 
+> 2025 ENEMDU
+. * ==========================================================
+. 
+. preserve
+
+. clear
+
+. 
+. input decil_nac part_ing_nac x_nac y_nac
+
+     decil_nac  part_in~c      x_nac      y_nac
+  1. 0   0.00   0     0.00
+  2. 1   2.01   10    2.01
+  3. 2   3.43   20    5.44
+  4. 3   4.69   30    10.13
+  5. 4   5.96   40    16.09
+  6. 5   7.45   50    23.54
+  7. 6   9.36   60    32.90
+  8. 7   12.05  70    44.95
+  9. 8   16.01  80    60.96
+ 10. 9   23.30  90    84.26
+ 11. 10  35.74  100   100.00
+ 12. end
+
+. 
+. gen etiqueta_nac = string(y_nac, "%4.2f") + "%"
+
+. 
+. list decil_nac part_ing_nac x_nac y_nac, noobs
+
+  +-------------------------------------+
+  | decil_~c   part_i~c   x_nac   y_nac |
+  |-------------------------------------|
+  |        0          0       0       0 |
+  |        1       2.01      10    2.01 |
+  |        2       3.43      20    5.44 |
+  |        3       4.69      30   10.13 |
+  |        4       5.96      40   16.09 |
+  |-------------------------------------|
+  |        5       7.45      50   23.54 |
+  |        6       9.36      60    32.9 |
+  |        7      12.05      70   44.95 |
+  |        8      16.01      80   60.96 |
+  |        9       23.3      90   84.26 |
+  |-------------------------------------|
+  |       10      35.74     100     100 |
+  +-------------------------------------+
+
+. 
+. twoway ///
+> (line y_nac x_nac, sort) ///
+> (scatter y_nac x_nac, mlabel(etiqueta_nac) mlabposition(3)) ///
+> (function y=x, range(0 100)), ///
+> title("Curva de Lorenz - Nivel Nacional") ///
+> xtitle("% acumulado de población") ///
+> ytitle("% acumulado de ingreso") ///
+> legend(label(1 "Curva de Lorenz") label(2 "Deciles") label(3 "Línea de igualdad")) ///
+> xlabel(0(10)100) ///
+> ylabel(0(10)100)
+
+. 
+. graph export "$ROOT/assets/distribucion_ingreso_deciles.png", replace
+file ./assets/distribucion_ingreso_deciles.png saved as PNG format
+
+. 
+. restore
+
+. 
+. 
+. *---------------------------------   Coeficiente de Gini   --------------------------------------*
+. * 1. Ordenar la poblacion
+. sort x_poblacion
+
+. 
+. * 2. Calculas el porcentaje acumulado de población e ingreso
+. capture drop x_prop y_prop x_anterior y_anterior area_trapecio
+
+. 
+. gen x_prop = x_poblacion / 100
+
+. gen y_prop = y_ingreso / 100
+
+. 
+. * 3. Crear valores anteriores para calcular el área
+. gen x_anterior = x_prop[_n-1]
+(1 missing value generated)
+
+. gen y_anterior = y_prop[_n-1]
+(1 missing value generated)
+
+. 
+. replace x_anterior = 0 if _n == 1
+(1 real change made)
+
+. replace y_anterior = 0 if _n == 1
+(1 real change made)
+
+. 
+. *  4. Área bajo la Curva de Lorenz
+. gen area_trapecio = (x_prop - x_anterior) * (y_prop + y_anterior) / 2
+
+. 
+. summ area_trapecio
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+area_trape~o |     46,463    5.88e-06    .0000103   7.98e-14   .0003719
+
+. scalar area_lorenz = r(sum)
+
+. 
+. * 5. Calcular Gini
+. scalar gini = 1 - (2 * area_lorenz)
+
+. 
+. display "Coeficiente de Gini de Pichincha = " gini
+Coeficiente de Gini de Pichincha = .4532305
+
+. 
+. 
+. *---------------------------------   Gini por área urbana y rural   --------------------------------------*
+. 
+. * Verificar cómo está codificada el área
+. tab area, nolabel
+
+       area |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |     39,967       86.02       86.02
+          2 |      6,496       13.98      100.00
+------------+-----------------------------------
+      Total |     46,463      100.00
+
+. 
+. * Crear variables para el cálculo por área
+. capture drop ingreso_pond_area pob_total_area ing_total_area
+
+. capture drop pob_acum_area ing_acum_area x_area y_area
+
+. capture drop x_ant_area y_ant_area area_trap_area
+
+. capture drop area_lorenz_area gini_area tag_area area_nombre
+
+. 
+. * Ingreso ponderado
+. gen ingreso_pond_area = ingpc * fexp
+
+. 
+. * Ordenar por área y por ingreso
+. sort area ingpc
+
+. 
+. * Totales por área
+. bysort area: egen pob_total_area = total(fexp)
+
+. bysort area: egen ing_total_area = total(ingreso_pond_area)
+
+. 
+. * Acumulados por área
+. bysort area: gen pob_acum_area = sum(fexp)
+
+. bysort area: gen ing_acum_area = sum(ingreso_pond_area)
+
+. 
+. * Proporciones acumuladas por área
+. gen x_area = pob_acum_area / pob_total_area
+
+. gen y_area = ing_acum_area / ing_total_area
+
+. 
+. * Valores anteriores
+. bysort area: gen x_ant_area = x_area[_n-1]
+(2 missing values generated)
+
+. bysort area: gen y_ant_area = y_area[_n-1]
+(2 missing values generated)
+
+. 
+. replace x_ant_area = 0 if missing(x_ant_area)
+(2 real changes made)
+
+. replace y_ant_area = 0 if missing(y_ant_area)
+(2 real changes made)
+
+. 
+. * Área bajo la curva de Lorenz por área
+. gen area_trap_area = (x_area - x_ant_area) * (y_area + y_ant_area) / 2
+
+. 
+. bysort area: egen area_lorenz_area = total(area_trap_area)
+
+. 
+. * Gini por área
+. gen gini_area = 1 - (2 * area_lorenz_area)
+
+. 
+. * Nombre del área
+. gen str10 area_nombregini = ""
+(46,463 missing values generated)
+
+. replace area_nombregini = "Urbana" if area == 1
+(39,967 real changes made)
+
+. replace area_nombregini = "Rural"  if area == 2
+(6,496 real changes made)
+
+. 
+. * Mostrar una sola fila por área
+. egen tag_areagini = tag(area)
+
+. 
+. format gini_area %9.4f
+
+. 
+. list area_nombregini gini_area if tag_areagini, noobs
+
+  +---------------------+
+  | area_n~i   gini_a~a |
+  |---------------------|
+  |   Urbana     0.4531 |
+  |    Rural     0.4019 |
+  +---------------------+
+
+. 
+. clear
+
+. use "$ROOT/data/basepichincha.dta", clear
+
+. 
+. *---------------------------------   IDH ajustado por Desigualdad   --------------------------------------*
+. 
+. * Restaurar escalares del IDH desde variables globales
+. scalar IE = $G_IE
+
+. scalar IS = $G_IS
+
+. scalar II = $G_II
+
+. 
+. 
+. gen esc1 = esc + 0.000001
+(1,837 missing values generated)
+
+. 
+. gen ln_esc = ln(esc1)
+(1,837 missing values generated)
+
+. 
+. egen media_log_esc = mean(ln_esc)
+
+. 
+. gen geo_esc = exp(media_log_esc)
+
+. 
+. egen media_esc = mean(esc1)
+
+. 
+. gen Aedu = 1-(geo_esc/media_esc)
+
+. 
+. summ Aedu
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+        Aedu |     46,728    .3379045           0   .3379045   .3379045
+
+. 
+. scalar A_educ = r(mean)
+
+. 
+. scalar IE_adj = IE*(1-A_educ)
+
+. 
+. ****************************************************
+. * DESIGUALDAD EN INGRESO
+. ****************************************************
+. 
+. gen ing1 = ingpc + 0.000001
+(265 missing values generated)
+
+. 
+. gen ln_ing = ln(ing1)
+(265 missing values generated)
+
+. 
+. egen media_log_ing = mean(ln_ing)
+
+. 
+. gen geo_ing = exp(media_log_ing)
+
+. 
+. egen media_ing = mean(ing1)
+
+. 
+. gen Aing = 1-(geo_ing/media_ing)
+
+. 
+. summ Aing
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+        Aing |     46,728    .3045895           0   .3045895   .3045895
+
+. 
+. scalar A_ing = r(mean)
+
+. 
+. scalar II_adj = II*(1-A_ing)
+
+. 
+. ****************************************************
+. * SALUD
+. ****************************************************
+. 
+. scalar A_salud = 0
+
+. scalar IS_adj = IS
+
+. 
+. ****************************************************
+. * IDH AJUSTADO POR DESIGUALDAD
+. ****************************************************
+. 
+. scalar IDHD = (IS_adj*IE_adj*II_adj)^(1/3)
+
+. 
+. display " "
+ 
+
+. display "=========================================="
+==========================================
+
+. display " IDH AJUSTADO POR DESIGUALDAD"
+ IDH AJUSTADO POR DESIGUALDAD
+
+. display "=========================================="
+==========================================
+
+. display "Atkinson Salud      = " %6.4f A_salud
+Atkinson Salud      = 0.0000
+
+. display "Atkinson Educación  = " %6.4f A_educ
+Atkinson Educación  = 0.3379
+
+. display "Atkinson Ingreso    = " %6.4f A_ing
+Atkinson Ingreso    = 0.3046
+
+. display "------------------------------------------"
+------------------------------------------
+
+. display "Salud ajustada      = " %6.4f IS_adj
+Salud ajustada      = 0.9569
+
+. display "Educación ajustada  = " %6.4f IE_adj
+Educación ajustada  = 0.5937
+
+. display "Ingreso ajustado    = " %6.4f II_adj
+Ingreso ajustado    = 0.3890
+
+. display "------------------------------------------"
+------------------------------------------
+
+. display "IDH Ajustado        = " %6.4f IDHD
+IDH Ajustado        = 0.6046
+
+. 
+. * Cerrar registro de ejecución (Log)
+. log close
+      name:  <unnamed>
+       log:  Z:\home\erick-fcs\Documentos\universidad\07_Ciclo\septimo_ciclo\economic_development\docs\vaults\u3-ape-01-proyecto_final\logs/ejecucion_codigo_
+> grupal.log
+  log type:  text
+ closed on:  21 Jul 2026, 22:28:02
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

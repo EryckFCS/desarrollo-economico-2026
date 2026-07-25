@@ -5,22 +5,21 @@ author: "Erick Fabricio Condoy Seraquive"
 date: "2026-06-30"
 format:
   pdf:
-    toc: true
+    toc: false
     toc-depth: 3
+
     number-sections: true
     colorlinks: true
     papersize: letter
     geometry:
       - top=2.5cm
       - bottom=2.5cm
-      - left=3cm
-      - right=3cm
+      - left=2.5cm
+      - right=2.5cm
     header-includes:
       - \usepackage{pdflscape}
 
 bibliography: ../../../bibliography/references.bib
-nocite: |
-  @*
 ---
 
 {{< include chapters/01-introduccion.qmd >}}
@@ -38,9 +37,3 @@ nocite: |
 {{< include chapters/07-conclusiones.qmd >}}
 
 {{< include chapters/08-bibliografia.qmd >}}
-
-{{< include chapters/09-anexos.qmd >}}
-
-{{< include chapters/10-infografia.qmd >}}
-
-

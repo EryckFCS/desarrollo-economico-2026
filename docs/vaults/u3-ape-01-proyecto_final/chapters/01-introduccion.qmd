@@ -1,12 +1,18 @@
 # Introducción
 
+La provincia de Pichincha constituye uno de los principales centros económicos, productivos y administrativos del Ecuador, al concentrar una importante proporción de la población, del empleo y de la actividad económica del país [@inec2025guia]. No obstante, aunque presenta niveles de desarrollo humano superiores al promedio nacional, aún persisten desigualdades en la distribución del ingreso y diferencias en el acceso a oportunidades, lo que evidencia la necesidad de analizar estas brechas desde una perspectiva integral [@undp2025technical].
+
+En este contexto, Pichincha representa un caso de estudio relevante para evaluar conjuntamente el desarrollo humano, la pobreza y la desigualdad, permitiendo identificar si el crecimiento económico se refleja en mejores condiciones de bienestar para toda la población. Para ello, la presente investigación utiliza información de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) 2025, con el propósito de estimar indicadores que permitan diagnosticar la situación socioeconómica de la provincia y generar evidencia para la formulación de políticas públicas [@inec2025guia].
+
+**Pregunta de investigación:** ¿Cuál es la situación del desarrollo humano, la pobreza y la desigualdad en la provincia de Pichincha durante el año 2025, y qué políticas públicas podrían contribuir a mejorar las condiciones de bienestar de su población?
 
 ## Objetivos
 
 ### Objetivo general
-Evaluar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante el cálculo de (........), con el fin de sugerir políticas públicas que contribuyan al bienestar de la población.
+Evaluar las condiciones de desarrollo humano, pobreza y desigualdad en la provincia de Pichincha, Ecuador, mediante la estimación de indicadores socioeconómicos, con el fin de proponer políticas públicas que contribuyan al bienestar de la población.
 
 ### Objetivos específicos
 * Determinar el grado de desarrollo humano en la provincia de Pichincha mediante el cálculo del Índice de Desarrollo Humano y el Índice de Desarrollo Humano modificado, con el fin de analizar las condiciones de bienestar de la población en términos de salud, educación e ingresos.
-* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de reconocer las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
+* Estimar los niveles de pobreza en la provincia de Pichincha mediante el cálculo del Índice de Pobreza Multidimensional, el Índice de Pobreza Multidimensional modificado y la pobreza por ingresos, con el fin de identificar las principales privaciones que afectan a la población y orientar posibles acciones de política pública.
 * Analizar la desigualdad económica y social en la provincia de Pichincha mediante el cálculo de la Curva de Lorenz, el coeficiente de Gini, el índice de Theil y el IDH ajustado por desigualdad, con el fin de identificar el nivel de concentración del ingreso en la distribución económica provincial.
+

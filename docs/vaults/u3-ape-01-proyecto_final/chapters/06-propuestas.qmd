@@ -1,1 +1,31 @@
 # Propuestas de política
+
+Con el propósito de mitigar las privaciones estructurales identificadas y potenciar las libertades instrumentales de la población en la provincia, y bajo el enfoque de capacidades de @sen1999development, se formulan las siguientes propuestas de intervención subnacional:
+
+## Programa de Inserción Laboral y Formalización Juvenil y Femenina ("Empleo Digno Pichincha")
+
+
+
+*   **Problema:** Elevado empleo inadecuado (57,80%) y falta de aportación al seguro social (43,58%) que precarizan a jóvenes y mujeres post-pandemia [@esteves2020impacto; @ilo2022global].
+*   **Población objetivo:** Jóvenes de 27 a 29 años y mujeres subempleadas de 18 a 40 años de Quito, Rumiñahui y Mejía.
+*   **Acción:** Subsidio del GAD del 40% del aporte patronal al IESS durante el primer año de contratación formal (excluyendo a beneficiarios del programa nacional *Empleo Joven* para evitar duplicidad de nómina) coordinado con incentivos en la patente municipal de Quito.
+*   **Institución responsable:** Dirección de Apoyo a la Producción del GAD, MDT, IESS y Municipio de Quito.
+*   **Indicador que debería mejorar:** Empleo adecuado y reducción de la carencia laboral en el IPM.
+
+## Red de Fomento Productivo y Valor Agregado Rural ("Pichincha Productiva")
+
+*   **Problema:** Desigualdad territorial rural-urbano reflejada en el Theil general (0,39) superior a las dispersiones internas (Theil urbano: 0,38; rural: 0,36).
+*   **Población objetivo:** Pequeños productores de agricultura familiar campesina de Cayambe, Pedro Moncayo y Mejía.
+*   **Acción:** Construcción de tres Centros Logísticos de Acopio Rural y Frío (radio de cobertura ≤30 km en Cayambe, Pedro Moncayo y Mejía), transporte climatizado del GAD y plataforma B2B de comercio directo con Quito.
+*   **Institución responsable:** Dirección de Fomento Productivo del GAD, CONAGOPARE y MAG.
+*   **Indicador que debería mejorar:** Reducción del Theil inter-áreas e incremento del ingreso per cápita rural.
+
+## Estrategia de Acogida e Integración de la Población Migrante Interna
+
+*   **Problema:** Presión sobre la informalidad laboral urbana e informalidad de vivienda periférica por saldos de inmigración neta positiva (componente migración del IDHA de 0,92).
+*   **Población objetivo:** Grupos familiares migrantes internos asentados en periferias de Quito, Rumiñahui y Mejía.
+*   **Acción:** Oficinas de Integración y Acogida (OMISA) periurbanas en Calderón, Solanda y Rumiñahui para homologación escolar inmediata, bolsa de empleo con Conquito, regularización de suelo y dotación de saneamiento básico.
+*   **Institución responsable:** Prefectura, Municipios de Quito y Rumiñahui, Conquito y Ministerio de Educación.
+*   **Indicador que debería mejorar:** Asistencia escolar en el IPM y reducción de privación en vivienda y servicios básicos.
+
+

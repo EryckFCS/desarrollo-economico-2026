@@ -68,5 +68,105 @@
         "markdown_path": "docs/markdown/ESPERANZA-DE-VIDA-AL-NACER.md",
         "sanitized": true,
         "sanitized_path": "docs/sanitized/ESPERANZA-DE-VIDA-AL-NACER.md"
+    },
+    {
+        "file_name": "sen_1999_development_as_freedom.pdf",
+        "original_path": "docs/sen_1999_development_as_freedom.pdf",
+        "size_bytes": 574511,
+        "sha256": "6eafcdc23cb6bc69d5479940ad9861827801c4fa4cd5037c075011ab773c9406",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "undp_1990_hdr_concept_measurement.pdf",
+        "original_path": "docs/undp_1990_hdr_concept_measurement.pdf",
+        "size_bytes": 26041591,
+        "sha256": "ba9d383010e038e810339502574ce9593dd954440229159e8379cf09ad730ad8",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "undp_2015_hdr_work_human_development.pdf",
+        "original_path": "docs/undp_2015_hdr_work_human_development.pdf",
+        "size_bytes": 5363488,
+        "sha256": "aaf479374a3ae3018e1b538ffeeffd4ee1f4a68716636137553b4b0746d322fd",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "stiglitz_sen_fitoussi_2009_report_measurement.pdf",
+        "original_path": "docs/stiglitz_sen_fitoussi_2009_report_measurement.pdf",
+        "size_bytes": 3306174,
+        "sha256": "d420e93251e9e35ca3f0d2d9b15125621fc685dbe8989bcbee34764f77b3cb61",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "clark_2003_unemployment_social_norm.pdf",
+        "original_path": "docs/clark_2003_unemployment_social_norm.pdf",
+        "size_bytes": 260549,
+        "sha256": "2aa2d2ad66aa0097287618b34feb55848c9acf58ae71825d14148c2f4e76590b",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "ilo_2022_global_employment_trends_youth.pdf",
+        "original_path": "docs/ilo_2022_global_employment_trends_youth.pdf",
+        "size_bytes": 13841992,
+        "sha256": "ce45d5626f4425b6edf81e58ad86c980c8f3acd48e209d9184fcfa2aaa5ed851",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "worldbank_2020_ecuador_labor_market_impact.pdf",
+        "original_path": "docs/worldbank_2020_ecuador_labor_market_impact.pdf",
+        "size_bytes": 606411,
+        "sha256": "f39f2e3278e9cb3a280efc0a984d0f6fda613d9763a6f6f764b2990633998fd5",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "jahan_2016_measuring_human_development.pdf",
+        "original_path": "docs/jahan_2016_measuring_human_development.pdf",
+        "size_bytes": 3035994,
+        "sha256": "4930a15c7b5d5265af7a0c107315d25a08648a1ea3a89b02712afc825e786b79",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "undp_2024_hdr_breaking_gridlock.pdf",
+        "original_path": "docs/undp_2024_hdr_breaking_gridlock.pdf",
+        "size_bytes": 30331057,
+        "sha256": "1dc932fa5e506699d08acedd4f9fc82247ea030e8fb9d4cd4511864134aab4d9",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
+    },
+    {
+        "file_name": "kluve_2016_what_works_active_labor.pdf",
+        "original_path": "docs/kluve_2016_what_works_active_labor.pdf",
+        "size_bytes": 2182600,
+        "sha256": "114a1a75f84e4d272d9d0e57eb9dc5dc131147b34a63f04ba983dd6f11d7fad4",
+        "converted_to_markdown": false,
+        "markdown_path": null,
+        "sanitized": false,
+        "sanitized_path": null
     }
 ]
