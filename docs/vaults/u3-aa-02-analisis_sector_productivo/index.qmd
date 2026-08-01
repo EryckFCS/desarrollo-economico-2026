@@ -3,15 +3,21 @@ format:
   pdf:
     pdf-engine: xelatex
     toc: false
-    number-sections: true
+    number-sections: false
     colorlinks: true
-    mainfont: "Times New Roman"
-    fontsize: 10pt
+    mainfont: "Arial"
+    fontsize: 11pt
     output-file: "Tarea_2_Perfilado_Seccion.pdf"
     fig-cap-location: top
     tbl-cap-location: top
     geometry:
-      - margin=2.54cm
+      - top=2.54cm
+      - bottom=2.54cm
+      - left=2.54cm
+      - right=2.54cm
+      - headheight=1.27cm
+      - headsep=0.5cm
+      - footskip=1.27cm
     header-includes:
       - \usepackage{setspace}
       - \setstretch{1.0}
@@ -25,10 +31,20 @@ format:
       - \usepackage{caption}
       - \captionsetup[table]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
       - \captionsetup[figure]{format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
-      - \addtokomafont{disposition}{\rmfamily}
-      - \addtokomafont{section}{\large\bfseries}
-      - \addtokomafont{subsection}{\normalsize\bfseries}
-      - \addtokomafont{subsubsection}{\normalsize\bfseries\itshape}
+      - \addtokomafont{disposition}{\sffamily}
+      - \addtokomafont{section}{\normalsize\bfseries\sffamily}
+      - \addtokomafont{subsection}{\normalsize\bfseries\sffamily}
+      - \addtokomafont{subsubsection}{\normalsize\bfseries\itshape\sffamily}
+      - \usepackage{fancyhdr}
+      - \pagestyle{fancy}
+      - \fancyhf{}
+      - \renewcommand{\headrulewidth}{0pt}
+      - \fancyfoot[R]{\thepage}
+      - \fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[R]{\thepage}}
+      - \makeatletter
+      - \@ifundefined{cslhangindent}{\newlength{\cslhangindent}}{}
+      - \makeatother
+      - \setlength{\cslhangindent}{1.27cm}
 
 bibliography: references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
@@ -37,78 +53,62 @@ crossref:
   fig-title: Figura
 ---
 
+\vspace*{-2.0cm}
+
+\noindent
+\makebox[0pt][l]{\raisebox{-2.9cm}[0pt][0pt]{\includegraphics[width=3.2cm]{plantilla_temporal/Sello_UNL_oficial-removebg-preview.png}}}
 \begin{center}
-\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
-Carrera de Economía \\
-Desarrollo Económico \\
-Séptimo A \\
-Unidad 3 \\
-Septiembre 2025/Febrero 2026
-
-\vspace{1em}
-\textbf{\Large Tarea 2: Perfilado de Sección y Propuesta de Mejora Productiva} \\
-\vspace{0.5em}
-\textbf{Diagnóstico y Complejidad Tecnológica en el Sector del Litio en Chile}
+\textbf{\normalsize UNIVERSIDAD NACIONAL DE LOJA} \\
+\textbf{\normalsize Carrera de Economía} \\
+\textbf{\normalsize Economía Ambiental} \\
+\textbf{\normalsize UNIDAD 3} \\
+\textbf{\normalsize Abril 2026 - Agosto 2026} \\
+\textbf{\normalsize Séptimo ``A''}
 \end{center}
-
-\noindent \textbf{Nombres:} Erick Fabricio Condoy Seraquive \hfill \textbf{Fecha:} 25 de julio de 2026
 
 \vspace{1.5em}
 
-# Diagnóstico del Sector
+\noindent \textbf{Nombre:} Erick Fabricio Condoy Seraquive  
+\noindent \textbf{Fecha:} 25 de julio de 2026
 
-<!-- 
-INSTRUCCIONES PARA EL DIAGNÓSTICO:
-- Elaborar un diagnóstico breve del sector seleccionado (Litio en Chile).
-- Identificar una manifestación de:
-  * Heterogeneidad estructural.
-  * Competitividad espuria.
-  * Brecha tecnológica.
-- Explicar sus efectos sobre la productividad, el empleo o la vulnerabilidad externa.
-- Sustentar con al menos cinco (5) datos recientes de mínimo tres (3) fuentes oficiales (instituciones de estadística, bancos centrales, ministerios, CEPAL, Banco Mundial, FAO).
-- Indicar para cada dato: institución, año y enlace.
--->
+\vspace{1em}
+\begin{center}
+\textbf{\normalsize Tarea 2: Diagnóstico y propuestas de mejora para sectores estratégicos de la economía chilena, Sector de litio}
+\end{center}
+
+# Diagnóstico del Sector
+El litio chileno ilustra las tensiones del neoestructuralismo por la coexistencia de un enclave extractivo de alta rentabilidad y una persistente brecha de articulación productiva local [@barcena2015neoestructuralismo, p. 33]. Pese a concentrar el 25% de las reservas globales [@subrei2026informe, p. 8], la exportación de compuestos primarios básicos (carbonato e hidróxido) representa una competitividad espuria basada en recursos no renovables sin valor técnico local [@barcena2015neoestructuralismo, p. 112]. Esta especialización expone al país a la volatilidad macroeconómica. En 2025, el volumen exportado creció 2,6% (321.695 toneladas de LCE), pero el valor FOB cayó 7,3% a US$ 2.397 millones [@subrei2026informe, pp. 3, 11; @bcentral2026comercio, p. 6], transfiriendo los choques de precios internacionales al balance de pagos y la recaudación fiscal [@quintero2022estructuralismo, p. 185].
+
+La brecha tecnológica es manifiesta: Chile provee el 46% del carbonato global [@subrei2026informe, p. 3], pero su extracción cayó al 19,3% en 2025, superado por Australia (31,7%) y China (21,4%) [@subrei2026informe, p. 8] por carecer de refinación especializada y procesamiento avanzado [@cochilco2025perspectivas, pp. 38, 40]. Socialmente, las operadoras SQM y Albemarle emplean a 7.900 personas [@sqm2025memoria, p. 72; @albemarle2026sustainability, p. 5], cifra marginal frente a los 280.000 trabajadores de la minería nacional [@sernageomin2024dotacion, p. 150]. Esto perpetúa un enclave desconectado del empleo local [@barcena2015neoestructuralismo, p. 41].
 
 # Propuesta de Mejora Productiva
 
-<!--
-INSTRUCCIONES PARA LA PROPUESTA:
-- Proponer una actividad, subsector o mejora productiva realista.
-- Debe permitir incorporar tecnología, conocimiento o mayor valor agregado.
-- Fundamentar con al menos dos (2) citas de fuentes oficiales.
-- Explicar qué problema resolvería y qué capacidades existentes en el país podrían aprovecharse.
--->
+Para superar el extractivismo, se propone crear el Centro Tecnológico de Materiales Avanzados de Litio (CETEMAL), un consorcio mixto entre el Estado, la corporación minera estatal y universidades públicas. CETEMAL escalará industrialmente la síntesis de precursores y cátodos en el norte de Chile, aprovechando la infraestructura metalúrgica regional y la energía solar [@cochilco2025perspectivas, p. 12; @subrei2026informe, p. 3] para constituir un núcleo de progreso técnico y aprendizaje local [@barcena2015neoestructuralismo, p. 148; @odio2010enfoques, p. 60].
 
 # Justificación mediante las Tres Eficiencias
 
-<!--
-INSTRUCCIONES:
-Justificar la propuesta aplicando:
-- Eficiencia Schumpeteriana: Innovación, tecnología o conocimiento incorporado.
-- Eficiencia Hirschmaniana: Proveedores, servicios, empleos o encadenamientos (hacia atrás/adelante).
-- Eficiencia Keynesiana: Demanda con posibilidades de crecimiento económico.
--->
+El consorcio se fundamenta en las tres eficiencias del desarrollo neoestructuralista:
 
-## Eficiencia Schumpeteriana
-
-## Eficiencia Hirschmaniana
-
-## Eficiencia Keynesiana
+1. **Eficiencia schumpeteriana**: Internaliza la síntesis de cátodos complejos y celdas de almacenamiento, impulsando capacidades de diseño endógeno. Esto promueve la captación de rentas tecnológicas basadas en la diferenciación y el progreso técnico, sustituyendo la competitividad espuria por recursos naturales y desregulación ambiental [@barcena2015neoestructuralismo, p. 39; @odio2010enfoques, p. 61].
+2. **Eficiencia hirschmaniana**: Articula encadenamientos locales bidireccionales en el territorio; hacia atrás, demanda insumos de la minería no metálica y servicios de ingeniería especializada; hacia adelante, impulsa el ensamblaje de sistemas estacionarios de almacenamiento energético para la red eléctrica chilena y el transporte público regional [@barcena2015neoestructuralismo, p. 121].
+3. **Eficiencia keynesiana**: Canaliza la producción hacia mercados globales de rápida expansión debido a la descarbonización del transporte mundial. Al especializarse en bienes manufacturados de litio con una alta elasticidad-ingreso de la demanda, se reduce la vulnerabilidad frente al deterioro de los términos de intercambio primarios y mitiga la restricción externa al crecimiento [@barcena2015neoestructuralismo, p. 44; @quintero2022estructuralismo, p. 189].
 
 # Propuesta Final y Resultados Esperados
 
-<!--
-INSTRUCCIONES:
-Proponer de forma concreta:
-- Una inversión en capital humano.
-- Dos acciones concretas del Estado.
-- El principal resultado esperado en: productividad, empleo, equidad y reducción de la vulnerabilidad externa.
--->
+La implementación de CETEMAL requiere instrumentar las siguientes medidas estructurales:
+1. **Inversión en Capital Humano**: Crear el Programa Nacional de Becas de Postgrado en Electroquímica y Materiales de Almacenamiento, financiado con el 0,5% de las regalías anuales por Contratos Especiales de Operación de Litio (CEOL), con el objetivo de formar a 200 científicos y tecnólogos chilenos a nivel de maestría y doctorado en centros globales de vanguardia.
+2. **Acciones del Estado**: Primero, establecer por ley la reserva física del 15% de la extracción de litio metálico equivalente a precios preferenciales de costo para el suministro ininterrumpido del consorcio. Segundo, canalizar fondos de garantía de la Corporación de Fomento de la Producción (CORFO) para subsidiar el capital de riesgo y la adquisición de infraestructura industrial inicial en plantas piloto de síntesis catódica de litio-hierro-fosfato (LFP).
 
-## Inversión en Capital Humano
+Para 2030, se proyecta que los productos de litio con valor agregado avanzado (cátodos y precursores) representen al menos el 10% del valor total de las exportaciones mineras del país, generando una productividad media superior por trabajador y disminuyendo el coeficiente de dependencia de productos primarios básicos. Esto propiciará la creación de 1,200 empleos directos e indirectos altamente calificados y descentralizados en las regiones de Antofagasta y Atacama, fortaleciendo la equidad territorial y reduciendo de manera sustancial la vulnerabilidad externa de la economía chilena frente a los choques en el mercado internacional de commodities.
 
-## Acciones Concretas del Estado
-
-## Resultados Esperados
+\newpage
 
 # Referencias
+
+::: {#refs}
+:::
+
+# Anexos
+
+**Enlace:**  
+[Carpeta de Google Drive](https://drive.google.com/drive/folders/1fATe9rTnkahQqZXG69pwlLjj3NHN1wnp?usp=drive_link)

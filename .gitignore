@@ -54,3 +54,8 @@ docs/vaults/**/data/*.db
 docs/vaults/**/data/*.sqlite
 
 **/*.quarto_ipynb
+
+# Lecturas y PDFs pesados (Vaults Architecture)
+docs/vaults/**/readings/**/*.pdf
+docs/vaults/**/readings/raw/**/*.pdf
+docs/vaults/**/readings/highlighted/**/*.pdf

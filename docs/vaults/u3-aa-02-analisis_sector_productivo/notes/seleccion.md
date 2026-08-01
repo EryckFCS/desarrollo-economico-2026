@@ -21,4 +21,5 @@ La salmonicultura muestra cifras robustas de crecimiento, con una cosecha de 1.1
 
 Para tu perfil como economista cuantitativo interesado en modelos y vulnerabilidad externa, litio ofrece un caso más rico en términos de valor agregado no capturado y disputa entre eficiencia schumpeteriana y hirschmaniana, mientras salmonicultura es más una historia de gestión regulatoria sobre una industria ya consolidada.
 
-link:
+link:https://drive.google.com/drive/folders/1fATe9rTnkahQqZXG69pwlLjj3NHN1wnp?usp=drive_link
+

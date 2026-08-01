@@ -1,28 +1,33 @@
 {
     "stats": {
         "coverage": {
-            "total_raw": 33,
-            "total_md": 32,
-            "missing_conversions": 1,
+            "total_raw": 39,
+            "total_md": 37,
+            "missing_conversions": 2,
             "orphans_detected": 0
         },
         "integrity": {
-            "verified_sync": 32,
+            "verified_sync": 37,
             "mismatches": 0,
             "mismatch_list": []
         }
     },
     "pipeline_result": {
         "collection": "economic_development",
-        "files_processed": 32,
+        "files_processed": 37,
         "total_chunks": 12870,
         "errors": [
             "case_study_-_peru_industrias_creativas_-_es.md",
+            "preinformejunio2026.md",
             "amin_1976_unequal_development.md",
             "coronil_1997_estado_magico_es.md",
             "baptista_2006_bases_cuantitativas.md",
+            "reporte-chile-2025.md",
             "mommer_2002_global_oil_es.md",
             "peru-private-final-narrative-report.md",
+            "quintero_2022_estructuralismo.md",
+            "cuentas-nacionales-primer-trimestre-2026.md",
+            "memoria-sqm-sa-2025_-vf.md",
             "peru_-industrias-creativas-inclusivas.md"
         ]
     },
@@ -30,7 +35,7 @@
         "lake_integrity": true,
         "coverage_ok": false
     },
-    "timestamp": "2026-07-12T17:15:05.527623",
+    "timestamp": "2026-07-25T12:48:58.055450",
     "project_info": {
         "name": "intel-economic_development",
         "root": "/home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_development/bibliography"
