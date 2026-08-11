@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Unidad 2 Final: Revisión - Desarrollo Económico</title>
+    <link rel="stylesheet" href="../eva_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="eva-navbar">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="background-color: var(--eva-primary); color: white; padding: 10px 15px; font-weight: bold; border-radius: 4px; font-size: 1.2rem;">UNL</div>
+            <div class="eva-navbar-title">EVA - Entorno Virtual de Aprendizaje</div>
+        </div>
+        <div style="font-size: 0.9rem; color: #6c757d;"><i class="fa-regular fa-user"></i> Erick Guerrero</div>
+    </div>
+    
+    <div class="eva-layout">
+        <div class="quiz-main-container">
+            <div class="quiz-header">
+                <h2>7A - Desarrollo Económico (MAR.26-AGO.26 GRADO)</h2>
+                <div style="font-size: 0.95rem; color: #555; margin-top: 5px;"><strong>Evaluación:</strong> U2 Evaluación Final</div>
+            </div>
+            
+            <form id="quizForm">
+            <!-- P1 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>1. El area comprendida entre la diagonal de equidad y la curva de Lorenz es 0,15 y el area total bajo la diagonal es 0,5. Calcule el coeficiente de Gini (2 decimales). Use Gini = area de concentracion / 0,5. (1.00 pts)</p>
+                <input type="text" name="q1" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="0,3|0.3|0,30|0.30">
+                <div class="feedback"><strong>Procedimiento:</strong> Gini = 0,15 / 0,5 = 0,30.</div>
+            </div>
+
+            <!-- P2 -->
+            <div class="question" data-weight="1.00" data-type="match">
+                <p>2. Empareje cada tipo de linea de pobreza con su caracteristica: (1.00 pts)</p>
+                <div class="match-grid">
+                    <div>Relativa</div>
+                    <select data-correct="relativa" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="absoluta">Niveles minimos independientes del nivel de vida general de la sociedad</option>
+                        <option value="relativa">Se fija como porcentaje del ingreso representativo (medio o mediano)</option>
+                        <option value="subjetiva">Construida a partir de las opiniones de la propia poblacion</option>
+                        <option value="internacional">Permite comparaciones y agregacion entre paises (p. ej. 'un dolar al dia')</option>
+                    </select>
+
+                    <div>Absoluta</div>
+                    <select data-correct="absoluta" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="absoluta">Niveles minimos independientes del nivel de vida general de la sociedad</option>
+                        <option value="relativa">Se fija como porcentaje del ingreso representativo (medio o mediano)</option>
+                        <option value="subjetiva">Construida a partir de las opiniones de la propia poblacion</option>
+                        <option value="internacional">Permite comparaciones y agregacion entre paises (p. ej. 'un dolar al dia')</option>
+                    </select>
+
+                    <div>Internacional</div>
+                    <select data-correct="internacional" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="absoluta">Niveles minimos independientes del nivel de vida general de la sociedad</option>
+                        <option value="relativa">Se fija como porcentaje del ingreso representativo (medio o mediano)</option>
+                        <option value="subjetiva">Construida a partir de las opiniones de la propia poblacion</option>
+                        <option value="internacional">Permite comparaciones y agregacion entre paises (p. ej. 'un dolar al dia')</option>
+                    </select>
+
+                    <div>Subjetiva</div>
+                    <select data-correct="subjetiva" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="absoluta">Niveles minimos independientes del nivel de vida general de la sociedad</option>
+                        <option value="relativa">Se fija como porcentaje del ingreso representativo (medio o mediano)</option>
+                        <option value="subjetiva">Construida a partir de las opiniones de la propia poblacion</option>
+                        <option value="internacional">Permite comparaciones y agregacion entre paises (p. ej. 'un dolar al dia')</option>
+                    </select>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P3 -->
+            <div class="question" data-weight="1.00" data-type="match">
+                <p>3. Empareje cada concepto de distribucion o desigualdad con su definicion: (1.00 pts)</p>
+                <div class="match-grid">
+                    <div>Distribucion personal del ingreso</div>
+                    <select data-correct="personal" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="funcional">Distribucion entre los factores de produccion (tierra, trabajo, capital)</option>
+                        <option value="personal">Distribucion entre personas o familias</option>
+                        <option value="intra">Desigualdad entre los ciudadanos de un mismo pais</option>
+                        <option value="inter">Desigualdad entre paises</option>
+                    </select>
+
+                    <div>Desigualdad intra-Estados</div>
+                    <select data-correct="intra" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="funcional">Distribucion entre los factores de produccion (tierra, trabajo, capital)</option>
+                        <option value="personal">Distribucion entre personas o familias</option>
+                        <option value="intra">Desigualdad entre los ciudadanos de un mismo pais</option>
+                        <option value="inter">Desigualdad entre paises</option>
+                    </select>
+
+                    <div>Distribucion funcional del ingreso</div>
+                    <select data-correct="funcional" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="funcional">Distribucion entre los factores de produccion (tierra, trabajo, capital)</option>
+                        <option value="personal">Distribucion entre personas o familias</option>
+                        <option value="intra">Desigualdad entre los ciudadanos de un mismo pais</option>
+                        <option value="inter">Desigualdad entre paises</option>
+                    </select>
+
+                    <div>Desigualdad internacional</div>
+                    <select data-correct="inter" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="funcional">Distribucion entre los factores de produccion (tierra, trabajo, capital)</option>
+                        <option value="personal">Distribucion entre personas o familias</option>
+                        <option value="intra">Desigualdad entre los ciudadanos de un mismo pais</option>
+                        <option value="inter">Desigualdad entre paises</option>
+                    </select>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P4 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>4. En el IPM, un hogar es pobre multidimensional cuando su puntuacion de privacion c es igual o mayor al Respuesta Pregunta 4 por ciento. (1.00 pts)</p>
+                <input type="text" name="q4" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="33,3|33.3">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P5 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>5. Ademas de contar cuantos hogares son pobres, la Respuesta Pregunta 5 de pobreza mide cuan lejos se situan, en promedio, los pobres respecto de la linea. (1.00 pts)</p>
+                <input type="text" name="q5" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="brecha">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P6 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>6. Un pais tiene IDH = 0,80 e IDH-D = 0,60. Calcule la perdida porcentual debida a la desigualdad: (IDH - IDH-D)/IDH x 100. (1.00 pts)</p>
+                <input type="text" name="q6" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="25">
+                <div class="feedback"><strong>Procedimiento:</strong> Perdida = (0,80 - 0,60)/0,80 x 100 = 25%.</div>
+            </div>
+
+            <!-- P7 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>7. Cuanto mas se aleja la curva de Lorenz de la diagonal de equidad perfecta, Respuesta Pregunta 7 es el grado de desigualdad de la sociedad. (1.00 pts)</p>
+                <input type="text" name="q7" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="mayor">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P8 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>8. En el IPM, cada indicador de salud y de educacion pesa 16,7% y cada indicador de nivel de vida pesa 5,6%. Un hogar presenta privacion en un indicador de educacion, uno de salud y dos de nivel de vida. Determine su puntuacion de privacion c, expresada en porcentaje. (1.00 pts)</p>
+                <input type="text" name="q8" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="44,6|44.6">
+                <div class="feedback"><strong>Procedimiento:</strong> c = 16,7 + 16,7 + 5,6 + 5,6 = 44,6%. Como c es mayor o igual a 33,3%, el hogar es pobre multidimensional.</div>
+            </div>
+
+            <!-- P9 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>9. A diferencia de la tasa de incidencia, la brecha de pobreza mide: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="correct"> La profundidad de la pobreza: la distancia media entre la renta de los hogares pobres y la linea.</label>
+                    <label><input type="radio" name="q9" value="incorrect1"> La severidad de la pobreza en el decil más bajo.</label>
+                    <label><input type="radio" name="q9" value="incorrect2"> La cantidad de individuos bajo la línea absoluta.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P10 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>10. Calcule el IDH (3 decimales), media geometrica de tres dimensiones, con I_salud = 0,800; I_educacion = 0,600; I_ingresos = 0,500. Use IDH = (I1 x I2 x I3) elevado a 1/3. (1.00 pts)</p>
+                <input type="text" name="q10" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="0,621|0.621">
+                <div class="feedback"><strong>Procedimiento:</strong> IDH = (0,800 x 0,600 x 0,500)^(1/3) = (0,240)^(1/3) = 0,621.</div>
+            </div>
+
+            <!-- P11 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>11. El Indice de Pobreza Multidimensional (IPM), lanzado en 2010 por el PNUD y la OPHI, se calcula como el producto de: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="correct"> La incidencia (H) por la intensidad (A).</label>
+                    <label><input type="radio" name="q11" value="incorrect1"> Gini por Theil.</label>
+                    <label><input type="radio" name="q11" value="incorrect2"> Incidencia por Brecha.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P12 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>12. En una muestra de 250 personas, 60 viven por debajo de la linea de pobreza. Calcule la tasa de incidencia de la pobreza (%). (1.00 pts)</p>
+                <input type="text" name="q12" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="24">
+                <div class="feedback"><strong>Procedimiento:</strong> Incidencia = (60 / 250) x 100 = 24%.</div>
+            </div>
+
+            <!-- P13 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>13. En la curva de Lorenz, cuanto mas se aproxima la curva a la linea diagonal de equidad perfecta: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="correct"> Menor es la desigualdad (mayor igualdad) de la sociedad.</label>
+                    <label><input type="radio" name="q13" value="incorrect1"> Mayor es la desigualdad.</label>
+                    <label><input type="radio" name="q13" value="incorrect2"> El índice de Gini se acerca a 1.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P14 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>14. Se afirma que el consumo suele considerarse un indicador de bienestar superior al ingreso. La razon principal es que: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="correct"> Segun el marco utilitarista, la utilidad deriva del consumo y este aproxima mejor el ingreso permanente.</label>
+                    <label><input type="radio" name="q14" value="incorrect1"> Evita la inflación.</label>
+                    <label><input type="radio" name="q14" value="incorrect2"> Reduce los sesgos del encuestador.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P15 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>15. Un indicador promedia, con igual peso, la alfabetizacion, la mortalidad infantil y la esperanza de vida, pero deliberadamente no incorpora el ingreso. Estas caracteristicas identifican al: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="correct"> Indice de Calidad Fisica de Vida (PQLI) de Morris (1978).</label>
+                    <label><input type="radio" name="q15" value="incorrect1"> Índice de Desarrollo Humano (IDH).</label>
+                    <label><input type="radio" name="q15" value="incorrect2"> Coeficiente de Gini.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P16 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>16. Un pais duplica su PIB per capita en una decada, pero la esperanza de vida y los anos de escolarizacion permanecen estancados. Segun el enfoque del desarrollo humano, esta situacion indica que: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="correct"> Hubo crecimiento economico, pero no necesariamente desarrollo humano, porque el ingreso es un medio y no un fin.</label>
+                    <label><input type="radio" name="q16" value="incorrect1"> El país alcanzó el desarrollo económico puro.</label>
+                    <label><input type="radio" name="q16" value="incorrect2"> El IDH crecerá proporcionalmente al PIB.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P17 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>17. Entender el desarrollo como una 'senda de progreso' implica que la dicotomia rigida entre 'paises desarrollados' y 'paises en desarrollo': (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="correct"> Supone un contrasentido, pues todas las sociedades recorren sendas de progreso.</label>
+                    <label><input type="radio" name="q17" value="incorrect1"> Es esencial para el comercio.</label>
+                    <label><input type="radio" name="q17" value="incorrect2"> Confirma la teoría de Rostow.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P18 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>18. Si en un pais el coeficiente de Gini se reduce despues de impuestos y transferencias, ello indica: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="correct"> Una redistribucion fiscal progresiva que reduce la desigualdad.</label>
+                    <label><input type="radio" name="q18" value="incorrect1"> Un sistema tributario regresivo.</label>
+                    <label><input type="radio" name="q18" value="incorrect2"> Un aumento de la evasión fiscal.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P19 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>19. Las medidas economicas de pobreza que emplean el consumo en su calculo se denominan: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="correct"> Directas.</label>
+                    <label><input type="radio" name="q19" value="incorrect1"> Indirectas.</label>
+                    <label><input type="radio" name="q19" value="incorrect2"> Relativas.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P20 -->
+            <div class="question" data-weight="1.00" data-type="essay">
+                <p>20. Analice las ventajas y limitaciones del IDH como indicador sintetico del desarrollo humano. Mencione al menos una dimension ausente y justifique su relevancia. (1.00 pts)</p>
+                <textarea placeholder="Redacte su respuesta aquí..."></textarea>
+                <div class="feedback essay-fb">
+                    <h4>Párrafo de respuesta modelo sugerido para aprender:</h4>
+                    <p class="respuesta-modelo" style="background-color: #fff; padding: 10px; border: 1px solid #bdc3c7; border-radius: 4px; font-style: italic;">
+                        El IDH es un indicador sintético de gran valor porque resume de forma clara y comparable a nivel internacional las tres dimensiones básicas del desarrollo humano (salud, educación y nivel de vida), permitiendo identificar deficiencias críticas en cada dimensión de manera transparente. Sin embargo, su principal limitación es que simplifica en exceso la multidimensionalidad del bienestar al omitir variables fundamentales. Una dimensión ausente crucial es la gobernabilidad democrática y el respeto a los derechos humanos, cuya relevancia es indispensable ya que mide el nivel de gestión política, libertad civil y la capacidad de las personas para influir en las decisiones estatales dentro de su entorno social.
+                    </p>
+                    <h4>Puntos clave esperados:</h4>
+                    <ul>
+                        <li><strong>Ventajas:</strong> resume informacion multidimensional; interpretable (0-1); comparable en el tiempo y entre paises; transparente; identifica deficiencias por dimension.</li>
+                        <li><strong>Limitaciones:</strong> simplifica la multidimensionalidad; omite dimensiones.</li>
+                        <li><strong>Dimension ausente destacada:</strong> gobernabilidad (p. ej. respeto de los DDHH); tambien medioambiente.</li>
+                        <li><strong>Justificacion</strong> de la relevancia de la dimension elegida.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- P21 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>21. Tras sus actualizaciones, la linea de pobreza internacional del Banco Mundial conocida como 'un dolar al dia' fija hoy el umbral en: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q21" value="correct"> 1,25 dolares PPA por persona y dia.</label>
+                    <label><input type="radio" name="q21" value="incorrect1"> 2,00 dólares PPA por persona y día.</label>
+                    <label><input type="radio" name="q21" value="incorrect2"> 1,90 euros corrientes.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P22 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>22. Calcule el subindice de esperanza de vida del IDH (escala 0-1, redondee a 3 decimales) si la esperanza de vida real es 75 anos, el minimo 20 anos y el maximo 85 anos. Use Indice = (real - minimo) / (maximo - minimo). (1.00 pts)</p>
+                <input type="text" name="q22" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="0,846|0.846">
+                <div class="feedback"><strong>Procedimiento:</strong> Indice = (75 - 20) / (85 - 20) = 55 / 65 = 0,846.</div>
+            </div>
+
+            <!-- P23 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>23. Una politica eleva la renta de una persona de 0,50 a 0,75 dolares diarios (linea = 1,25 dolares). El efecto sobre la tasa de incidencia de la pobreza sera que: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q23" value="correct"> La incidencia no cambia, pues la persona sigue por debajo de la linea.</label>
+                    <label><input type="radio" name="q23" value="incorrect1"> La incidencia disminuye porque se redujo la brecha.</label>
+                    <label><input type="radio" name="q23" value="incorrect2"> La incidencia aumenta.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P24 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>24. Una critica frecuente a la clasificacion de paises por PNB per capita del Banco Mundial (metodo Atlas) es que: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q24" value="correct"> No pondera las distintas capacidades de compra de las monedas, lo que se corrige usando dolares en PPA.</label>
+                    <label><input type="radio" name="q24" value="incorrect1"> Promueve los monopolios.</label>
+                    <label><input type="radio" name="q24" value="incorrect2"> Está obsoleta frente al IDH.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P25 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>25. Las medidas economicas de pobreza que emplean el Respuesta Pregunta 25 en su calculo se denominan directas. (1.00 pts)</p>
+                <input type="text" name="q25" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="consumo">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P26 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>26. Cuando un pais presenta un IDH alto pero un IDH-D mucho mas bajo, la 'perdida' porcentual entre ambos refleja: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q26" value="correct"> El coste que la desigualdad impone sobre el desarrollo humano del pais.</label>
+                    <label><input type="radio" name="q26" value="incorrect1"> Que el ingreso per cápita ha caído.</label>
+                    <label><input type="radio" name="q26" value="incorrect2"> Un sesgo estadístico poblacional.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P27 -->
+            <div class="question" data-weight="1.00" data-type="match">
+                <p>27. Empareje cada tipo de desigualdad con su definicion: (1.00 pts)</p>
+                <div class="match-grid">
+                    <div>Desigualdad de trato</div>
+                    <select data-correct="trato" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="vertical">Desigualdad entre personas (individuos)</option>
+                        <option value="oportunidades">Posibilidades de los individuos para mejorar su desarrollo humano</option>
+                        <option value="horizontal">Desigualdad entre grupos sociales</option>
+                        <option value="estructural">Deriva de la gestion del poder y de tradiciones enraizadas</option>
+                        <option value="trato">Trato diferenciado que se traduce en discriminacion</option>
+                    </select>
+
+                    <div>Desigualdad estructural</div>
+                    <select data-correct="estructural" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="vertical">Desigualdad entre personas (individuos)</option>
+                        <option value="oportunidades">Posibilidades de los individuos para mejorar su desarrollo humano</option>
+                        <option value="horizontal">Desigualdad entre grupos sociales</option>
+                        <option value="estructural">Deriva de la gestion del poder y de tradiciones enraizadas</option>
+                        <option value="trato">Trato diferenciado que se traduce en discriminacion</option>
+                    </select>
+
+                    <div>Desigualdad vertical</div>
+                    <select data-correct="vertical" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="vertical">Desigualdad entre personas (individuos)</option>
+                        <option value="oportunidades">Posibilidades de los individuos para mejorar su desarrollo humano</option>
+                        <option value="horizontal">Desigualdad entre grupos sociales</option>
+                        <option value="estructural">Deriva de la gestion del poder y de tradiciones enraizadas</option>
+                        <option value="trato">Trato diferenciado que se traduce en discriminacion</option>
+                    </select>
+
+                    <div>Desigualdad horizontal</div>
+                    <select data-correct="horizontal" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="vertical">Desigualdad entre personas (individuos)</option>
+                        <option value="oportunidades">Posibilidades de los individuos para mejorar su desarrollo humano</option>
+                        <option value="horizontal">Desigualdad entre grupos sociales</option>
+                        <option value="estructural">Deriva de la gestion del poder y de tradiciones enraizadas</option>
+                        <option value="trato">Trato diferenciado que se traduce en discriminacion</option>
+                    </select>
+
+                    <div>Desigualdad de oportunidades</div>
+                    <select data-correct="oportunidades" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="vertical">Desigualdad entre personas (individuos)</option>
+                        <option value="oportunidades">Posibilidades de los individuos para mejorar su desarrollo humano</option>
+                        <option value="horizontal">Desigualdad entre grupos sociales</option>
+                        <option value="estructural">Deriva de la gestion del poder y de tradiciones enraizadas</option>
+                        <option value="trato">Trato diferenciado que se traduce en discriminacion</option>
+                    </select>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P28 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>28. El indice de Theil se fundamenta en el concepto de Respuesta Pregunta 28, heredado de la fisica, que mide el desorden de un sistema. (1.00 pts)</p>
+                <input type="text" name="q28" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="entropia|entropía">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P29 -->
+            <div class="question" data-weight="1.00" data-type="match">
+                <p>29. Empareje cada concepto de desigualdad mundial de Milanovic con su definicion: (1.00 pts)</p>
+                <div class="match-grid">
+                    <div>Tipo 3</div>
+                    <select data-correct="tipo3" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="tipo1">Desigualdad internacional no ponderada</option>
+                        <option value="tipo2">Desigualdad internacional ponderada por poblacion</option>
+                        <option value="tipo3">Desigualdad global entre todos los individuos del mundo</option>
+                    </select>
+
+                    <div>Tipo 1</div>
+                    <select data-correct="tipo1" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="tipo1">Desigualdad internacional no ponderada</option>
+                        <option value="tipo2">Desigualdad internacional ponderada por poblacion</option>
+                        <option value="tipo3">Desigualdad global entre todos los individuos del mundo</option>
+                    </select>
+
+                    <div>Tipo 2</div>
+                    <select data-correct="tipo2" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="tipo1">Desigualdad internacional no ponderada</option>
+                        <option value="tipo2">Desigualdad internacional ponderada por poblacion</option>
+                        <option value="tipo3">Desigualdad global entre todos los individuos del mundo</option>
+                    </select>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P30 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>30. El 'efecto potencialmente perverso' de la tasa de incidencia de la pobreza consiste en que la forma mas efectiva de reducirla es: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q30" value="correct"> Concentrar los esfuerzos en la poblacion pobre mas cercana a la linea de pobreza.</label>
+                    <label><input type="radio" name="q30" value="incorrect1"> Subsidiar a los deciles más altos.</label>
+                    <label><input type="radio" name="q30" value="incorrect2"> Aumentar el gasto en infraestructura de lujo.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P31 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>31. El indice de Theil se fundamenta en el concepto de: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q31" value="correct"> Entropia (medida de desorden), heredado de la fisica.</label>
+                    <label><input type="radio" name="q31" value="incorrect1"> Equidad de Pareto.</label>
+                    <label><input type="radio" name="q31" value="incorrect2"> Límite de Gini.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P32 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>32. En el IDH, cada dimension se normaliza con un valor minimo y uno maximo de referencia ('valores de subsistencia' y 'metas'). La funcion metodologica de fijar esos limites es: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q32" value="correct"> Reescalar indicadores de unidades distintas a un rango comun 0-1 para poder agregarlos.</label>
+                    <label><input type="radio" name="q32" value="incorrect1"> Penalizar a los países de ingresos bajos.</label>
+                    <label><input type="radio" name="q32" value="incorrect2"> Medir únicamente la varianza estadística.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P33 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>33. A diferencia del Gini, el indice de Theil no tiene limite Respuesta Pregunta 33 y es descomponible. (1.00 pts)</p>
+                <input type="text" name="q33" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="superior">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P34 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>34. El IDH se computa como la media Respuesta Pregunta 34 de los indices de sus tres dimensiones. (1.00 pts)</p>
+                <input type="text" name="q34" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="geometrica|geométrica">
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P35 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>35. Un organismo necesita resumir el logro promedio de varios paises en salud, educacion e ingresos en un unico valor sintetico. El indicador apropiado es: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q35" value="correct"> El Indice de Desarrollo Humano (IDH).</label>
+                    <label><input type="radio" name="q35" value="incorrect1"> IPM.</label>
+                    <label><input type="radio" name="q35" value="incorrect2"> PQLI.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P36 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>36. La desigualdad que atane a la inequidad entre grupos sociales (por etnia, religion o region) se denomina: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q36" value="correct"> Desigualdad horizontal.</label>
+                    <label><input type="radio" name="q36" value="incorrect1"> Desigualdad vertical.</label>
+                    <label><input type="radio" name="q36" value="incorrect2"> Desigualdad de oportunidades.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P37 -->
+            <div class="question" data-weight="1.00" data-type="text">
+                <p>37. Calcule la linea de pobreza relativa (en dolares) bajo el criterio europeo del 60% del ingreso mediano, si el ingreso mediano mensual es 1.200 dolares. (1.00 pts)</p>
+                <input type="text" name="q37" placeholder="Escriba la respuesta">
+                <input type="hidden" class="correct-answer" value="720">
+                <div class="feedback"><strong>Procedimiento:</strong> Linea = 0,60 x 1.200 = 720 dolares mensuales.</div>
+            </div>
+
+            <!-- P38 -->
+            <div class="question" data-weight="1.00" data-type="match">
+                <p>38. Empareje cada indicador con el organismo o autor que lo propuso o publica: (1.00 pts)</p>
+                <div class="match-grid">
+                    <div>Indice de Pobreza Multidimensional (IPM)</div>
+                    <select data-correct="ipm" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="idh">PNUD (desde 1990)</option>
+                        <option value="pqli">Morris D. Morris (1978)</option>
+                        <option value="ipm">PNUD y OPHI (2010)</option>
+                        <option value="bm">Banco Mundial</option>
+                        <option value="gini">Corrado Gini (1912)</option>
+                    </select>
+
+                    <div>Coeficiente de Gini</div>
+                    <select data-correct="gini" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="idh">PNUD (desde 1990)</option>
+                        <option value="pqli">Morris D. Morris (1978)</option>
+                        <option value="ipm">PNUD y OPHI (2010)</option>
+                        <option value="bm">Banco Mundial</option>
+                        <option value="gini">Corrado Gini (1912)</option>
+                    </select>
+
+                    <div>Indice de Calidad Fisica de Vida (PQLI)</div>
+                    <select data-correct="pqli" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="idh">PNUD (desde 1990)</option>
+                        <option value="pqli">Morris D. Morris (1978)</option>
+                        <option value="ipm">PNUD y OPHI (2010)</option>
+                        <option value="bm">Banco Mundial</option>
+                        <option value="gini">Corrado Gini (1912)</option>
+                    </select>
+
+                    <div>Indice de Desarrollo Humano (IDH)</div>
+                    <select data-correct="idh" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="idh">PNUD (desde 1990)</option>
+                        <option value="pqli">Morris D. Morris (1978)</option>
+                        <option value="ipm">PNUD y OPHI (2010)</option>
+                        <option value="bm">Banco Mundial</option>
+                        <option value="gini">Corrado Gini (1912)</option>
+                    </select>
+
+                    <div>Clasificacion de paises por niveles de renta</div>
+                    <select data-correct="bm" class="match-item">
+                        <option value="">Seleccione...</option>
+                        <option value="idh">PNUD (desde 1990)</option>
+                        <option value="pqli">Morris D. Morris (1978)</option>
+                        <option value="ipm">PNUD y OPHI (2010)</option>
+                        <option value="bm">Banco Mundial</option>
+                        <option value="gini">Corrado Gini (1912)</option>
+                    </select>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- P39 -->
+            <div class="question" data-weight="1.00" data-type="mcq">
+                <p>39. Un organismo emplea estos cortes de PNB per capita: ingreso bajo (menos de 1.025), medio-bajo (1.026 a 4.035), medio-alto (4.036 a 12.475) y alto (mas de 12.476). Un pais pasa de 3.000 a 4.200 dolares en un ano. Analizando el caso, se concluye que: (1.00 pts)</p>
+                <div class="options">
+                    <label><input type="radio" name="q39" value="correct"> Asciende de ingreso medio-bajo a medio-alto, aunque ello no garantiza una mejora equivalente en su desarrollo humano.</label>
+                    <label><input type="radio" name="q39" value="incorrect1"> Es automáticamente un país desarrollado.</label>
+                    <label><input type="radio" name="q39" value="incorrect2"> Su IDH caerá debido a la inflación.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <button type="button" onclick="calcularNota()">Evaluar y Ver Resultados</button>
+        
+            <div class="eva-nav-buttons" id="navFooter">
+                <button type="button" class="btn-eva" id="btnPrev" onclick="showQuestion(currentQuestionIndex - 1)" disabled><i class="fa-solid fa-chevron-left"></i> Anterior</button>
+                <button type="button" class="btn-eva" id="btnNext" onclick="nextQuestion()">Siguiente <i class="fa-solid fa-chevron-right"></i></button>
+                <button type="button" class="btn-eva" id="btnSubmit" onclick="calcularNota()" style="display: none; background-color: #27ae60;">Terminar intento...</button>
+            </div>
+            </form>
+        </div>
+
+        
+    
+        
+        </div>
+        <div class="eva-sidebar">
+            <div id="results" style="display: none; margin-bottom: 20px; padding: 15px; background-color: #f8f9fa; border: 1px solid var(--eva-card-border); border-left: 5px solid var(--eva-primary); border-radius: 4px;">
+                <h4 style="border: none; padding: 0; margin-bottom: 5px;">Resultados</h4>
+                <div id="scoreText" style="font-size: 1rem; font-weight: bold;">Calificación: 0.00 de 2.00 (0.00%)</div>
+            </div>
+            <h4>Navegación por el cuestionario</h4>
+            <div class="navigation-grid">
+                <div class="nav-box" id="nav-box-0">1</div><div class="nav-box" id="nav-box-1">2</div><div class="nav-box" id="nav-box-2">3</div><div class="nav-box" id="nav-box-3">4</div><div class="nav-box" id="nav-box-4">5</div><div class="nav-box" id="nav-box-5">6</div><div class="nav-box" id="nav-box-6">7</div><div class="nav-box" id="nav-box-7">8</div><div class="nav-box" id="nav-box-8">9</div><div class="nav-box" id="nav-box-9">10</div><div class="nav-box" id="nav-box-10">11</div><div class="nav-box" id="nav-box-11">12</div><div class="nav-box" id="nav-box-12">13</div><div class="nav-box" id="nav-box-13">14</div><div class="nav-box" id="nav-box-14">15</div><div class="nav-box" id="nav-box-15">16</div><div class="nav-box" id="nav-box-16">17</div><div class="nav-box" id="nav-box-17">18</div><div class="nav-box" id="nav-box-18">19</div><div class="nav-box" id="nav-box-19">20</div><div class="nav-box" id="nav-box-20">21</div><div class="nav-box" id="nav-box-21">22</div><div class="nav-box" id="nav-box-22">23</div><div class="nav-box" id="nav-box-23">24</div><div class="nav-box" id="nav-box-24">25</div><div class="nav-box" id="nav-box-25">26</div><div class="nav-box" id="nav-box-26">27</div><div class="nav-box" id="nav-box-27">28</div><div class="nav-box" id="nav-box-28">29</div><div class="nav-box" id="nav-box-29">30</div><div class="nav-box" id="nav-box-30">31</div><div class="nav-box" id="nav-box-31">32</div><div class="nav-box" id="nav-box-32">33</div><div class="nav-box" id="nav-box-33">34</div><div class="nav-box" id="nav-box-34">35</div><div class="nav-box" id="nav-box-35">36</div><div class="nav-box" id="nav-box-36">37</div><div class="nav-box" id="nav-box-37">38</div><div class="nav-box" id="nav-box-38">39</div>
+            </div>
+            <button type="button" class="btn-eva" style="width: 100%; text-align: center; background-color: #34495e;" onclick="if(confirm('¿Seguro de finalizar el examen?')) calcularNota()">Terminar intento...</button>
+        </div>
+    </div>
+
+    
+    <script>
+        let currentQuestionIndex = 0;
+        let isSubmitted = false;
+        let scoreSaved = false;
+        const questions = document.querySelectorAll('.question');
+        const navBoxes = document.querySelectorAll('.nav-box');
+
+        function initQuiz() {
+            questions.forEach((q, idx) => {
+                const type = q.getAttribute('data-type') || 'essay';
+                const weight = q.getAttribute('data-weight') || '0.40';
+                
+                q.style.display = 'none';
+                q.classList.add('eva-question-wrapper');
+                
+                if (!q.querySelector('.eva-question-meta')) {
+                    const metaDiv = document.createElement('div');
+                    metaDiv.className = 'eva-question-meta';
+                    metaDiv.innerHTML = `<h3>Pregunta ${idx + 1}</h3><div>Sin responder aún</div><div>Puntúa sobre ${parseFloat(weight).toFixed(2)}</div>`;
+                    q.insertBefore(metaDiv, q.firstChild);
+                }
+            });
+            
+            showQuestion(0);
+            actualizarSidebar();
+        }
+
+        function showQuestion(index) {
+            questions.forEach((q, idx) => {
+                q.style.display = (idx === index || isSubmitted) ? 'block' : 'none';
+            });
+            
+            const btnPrev = document.getElementById('btnPrev');
+            const btnNext = document.getElementById('btnNext');
+            const btnSubmit = document.getElementById('btnSubmit');
+            const navFooter = document.getElementById('navFooter');
+            
+            if (isSubmitted) {
+                if (navFooter) navFooter.style.display = 'none';
+                return;
+            }
+            
+            currentQuestionIndex = index;
+            
+            // Prohibido retroceder según requerimiento: btnPrev deshabilitado
+            if (btnPrev) btnPrev.disabled = true;
+            
+            if (index === questions.length - 1) {
+                if (btnNext) btnNext.style.display = 'none';
+                if (btnSubmit) btnSubmit.style.display = 'inline-block';
+            } else {
+                if (btnNext) btnNext.style.display = 'inline-block';
+                if (btnSubmit) btnSubmit.style.display = 'none';
+            }
+            
+            navBoxes.forEach((box, idx) => {
+                box.classList.remove('current');
+                if (idx === index) {
+                    box.classList.add('current');
+                }
+            });
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < questions.length - 1) {
+                marcarRespondida(currentQuestionIndex);
+                showQuestion(currentQuestionIndex + 1);
+            }
+        }
+
+        function marcarRespondida(index) {
+            const q = questions[index];
+            const type = q.getAttribute('data-type') || 'essay';
+            let answered = false;
+            
+            if (type === 'mcq') {
+                answered = q.querySelector('input[type="radio"]:checked') !== null;
+            } else if (type === 'text') {
+                const txt = q.querySelector('input[type="text"]');
+                answered = txt && txt.value.trim() !== '';
+            } else if (type === 'match') {
+                answered = Array.from(q.querySelectorAll('.match-item')).every(s => s.value !== '');
+            } else {
+                const ta = q.querySelector('textarea');
+                answered = ta && ta.value.trim() !== '';
+            }
+            
+            const metaDiv = q.querySelector('.eva-question-meta div');
+            if (metaDiv) {
+                metaDiv.innerHTML = answered ? 'Respuesta guardada' : 'Sin responder aún';
+            }
+            
+            const box = document.getElementById(`nav-box-${index}`);
+            if (box) {
+                if (answered) box.classList.add('answered');
+                else box.classList.remove('answered');
+            }
+        }
+
+        function actualizarSidebar() {
+            questions.forEach((q, idx) => {
+                marcarRespondida(idx);
+            });
+        }
+
+        function normalizeText(text) {
+            return text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").trim();
+        }
+
+        function checkTextAnswer(inputVal, correctStr) {
+            const normalizedInput = normalizeText(inputVal);
+            const validAnswers = correctStr.split('|').map(s => normalizeText(s));
+            return validAnswers.includes(normalizedInput);
+        }
+
+        function calcularNota() {
+            marcarRespondida(currentQuestionIndex);
+            
+            let totalScore = 0;
+            let maxScore = 0;
+            
+            questions.forEach((q, index) => {
+                const type = q.getAttribute('data-type') || 'essay';
+                const weight = parseFloat(q.getAttribute('data-weight')) || 0.40;
+                maxScore += weight;
+                const feedbackDiv = q.querySelector('.feedback');
+                let scoreForQ = 0;
+
+                if (type === 'mcq') {
+                    const selected = q.querySelector('input[type="radio"]:checked');
+                    if (selected && selected.value === 'correct') {
+                        scoreForQ = weight;
+                    }
+                } else if (type === 'text') {
+                    const input = q.querySelector('input[type="text"]');
+                    const correctAnsEl = q.querySelector('.correct-answer');
+                    const correctAnsStr = correctAnsEl ? correctAnsEl.value : '';
+                    if (input && checkTextAnswer(input.value, correctAnsStr)) {
+                        scoreForQ = weight;
+                    }
+                } else if (type === 'match') {
+                    const selects = q.querySelectorAll('.match-item');
+                    const pointsPerItem = weight / selects.length;
+                    selects.forEach(select => {
+                        if (select.value === select.getAttribute('data-correct')) {
+                            scoreForQ += pointsPerItem;
+                        }
+                    });
+                    scoreForQ = Math.round(scoreForQ * 100) / 100;
+                } else {
+                    const ta = q.querySelector('textarea');
+                    const textVal = ta ? ta.value : '';
+                    const wordCount = textVal.trim().split(/\s+/).filter(Boolean).length;
+                    const modelEl = q.querySelector('.respuesta-modelo');
+                    const modelText = modelEl ? modelEl.textContent : '';
+                    
+                    if (wordCount >= 10) {
+                        const normalizedText = normalizeText(textVal);
+                        const normalizedModel = normalizeText(modelText);
+                        
+                        if (normalizedText.length > 50 && (normalizedModel.includes(normalizedText) || normalizedText.includes(normalizedModel) || normalizedText === normalizedModel)) {
+                            scoreForQ = weight;
+                        } else {
+                            let keywords = [];
+                            const keywordsInput = q.querySelector('.keywords');
+                            if (keywordsInput) {
+                                keywords = keywordsInput.value.split('|');
+                            } else {
+                                keywords = ['desconexion', 'neomarxista', 'excedente', 'tecnologia', 'lumpenburguesia', 'subdesarrollo', 'monoeconomia', 'estructural', 'sostenib', 'ambiente', 'estado'];
+                            }
+                            let matches = keywords.filter(kw => normalizeText(textVal).includes(normalizeText(kw))).length;
+                            scoreForQ = Math.min(weight, (weight * 0.25) + (matches * (weight * 0.20)));
+                        }
+                    }
+                    scoreForQ = Math.round(scoreForQ * 100) / 100;
+                }
+
+                totalScore += scoreForQ;
+
+                if (feedbackDiv) {
+                    feedbackDiv.style.display = 'block';
+                    const box = document.getElementById(`nav-box-${index}`);
+                    
+                    if (Math.abs(scoreForQ - weight) < 0.01) {
+                        feedbackDiv.className = 'feedback correct-fb';
+                        if (type === 'mcq' || type === 'text') {
+                            feedbackDiv.innerHTML = `✓ Correcta (${scoreForQ.toFixed(2)} / ${weight.toFixed(2)})`;
+                        }
+                        if (box) {
+                            box.classList.remove('answered', 'current');
+                            box.classList.add('correct');
+                        }
+                    } else if (scoreForQ > 0) {
+                        feedbackDiv.className = 'feedback partial-fb';
+                        if (box) {
+                            box.classList.remove('answered', 'current');
+                            box.classList.add('incorrect');
+                        }
+                    } else {
+                        feedbackDiv.className = 'feedback incorrect-fb';
+                        if (box) {
+                            box.classList.remove('answered', 'current');
+                            box.classList.add('incorrect');
+                        }
+                    }
+                }
+            });
+
+            isSubmitted = true;
+            
+            questions.forEach(q => q.style.display = 'block');
+            
+            const resultsDiv = document.getElementById('results');
+            const scoreText = document.getElementById('scoreText');
+            if (resultsDiv && scoreText) {
+                resultsDiv.style.display = 'block';
+                const percentage = (totalScore / maxScore) * 100;
+                scoreText.innerHTML = `<h3>Calificación Final: ${totalScore.toFixed(2)} de ${maxScore.toFixed(2)} (${percentage.toFixed(2)}%)</h3>`;
+            }
+
+            // Guardar en localStorage
+            const weightedScore = (totalScore / 39.0) * 30.0;
+            localStorage.setItem('score_u2', weightedScore.toFixed(2));
+            
+            const navFooter = document.getElementById('navFooter');
+            if (navFooter) {
+                navFooter.innerHTML = `
+                <a href="../unidad_1/caso_practico.html" class="btn-eva" style="background-color: #7f8c8d; margin-right: 10px;"><i class="fa-solid fa-arrow-left"></i> Evaluación Anterior</a>
+                <a href="../unidad_3/cuestionario_U3.html" class="btn-eva" style="background-color: #27ae60; margin-right: 10px;"><i class="fa-solid fa-arrow-right"></i> Siguiente Evaluación</a>
+                <a href="../../index.html" class="btn-eva" style="background-color: var(--eva-primary);"><i class="fa-solid fa-house"></i> Volver al Portal</a>`;
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('load', initQuiz);
+    </script>
+    </body>
+</html>

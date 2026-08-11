@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Evaluaciones y Simulación de Calificación Final</title>
+    <style>
+        :root {
+            --bg-color: #f5f6fa;
+            --container-bg: #ffffff;
+            --text-color: #2f3640;
+            --accent-color: #2c3e50;
+            --primary-color: #3498db;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+            --border-color: #dcdde1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .welcome-card {
+            background-color: #e8f4f8;
+            border-left: 5px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        .grid-evaluaciones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-evaluaciones {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .eval-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #fff;
+        }
+
+        .eval-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+            border-color: var(--primary-color);
+        }
+
+        .eval-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .eval-meta {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .btn-launch {
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            margin-bottom: 10px;
+        }
+
+        .btn-launch:hover {
+            background-color: #1a252f;
+        }
+
+        .score-input-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: auto;
+        }
+
+        .score-input-group label {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .score-input-group input {
+            width: 80px;
+            padding: 6px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .results-panel {
+            background-color: #eaeded;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .results-panel h2 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .weight-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .weight-list li {
+            margin-bottom: 8px;
+        }
+
+        .final-score-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            margin-top: 20px;
+        }
+
+        .score-big {
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin: 10px 0;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .status-pass {
+            background-color: var(--success-color);
+        }
+
+        .status-fail {
+            background-color: var(--danger-color);
+        }
+
+        button.btn-calculate {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        button.btn-calculate:hover {
+            background-color: #2980b9;
+        }
+
+        button.btn-reset {
+            transition: background-color 0.2s;
+        }
+
+        button.btn-reset:hover {
+            background-color: #c0392b !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portal de Evaluaciones - Desarrollo Económico</h1>
+            <p class="subtitle">Estudio de Recuperación Académica - Séptimo Ciclo (Economía - UNL)</p>
+        </header>
+
+        <div class="welcome-card">
+            <strong>Instrucciones:</strong><br>
+            Use los enlaces a continuación para abrir y realizar cada uno de los cuestionarios interactivos correspondientes. Una vez que finalice cada cuestionario y obtenga su nota, escríbala en el campo de texto correspondiente en este portal para calcular de forma ponderada su calificación definitiva sobre un total de <strong>100 puntos</strong>.
+        </div>
+
+        <div class="grid-evaluaciones">
+            <!-- U1 Cuestionario -->
+            <div class="eval-card">
+                <div>
+                    <h3>Unidad 1: Evaluación Teórica</h3>
+                    <p class="eval-meta">Contenido de la Unidad 1 en base al cuestionario MD del EVA.</p>
+                </div>
+                <a href="evaluaciones/unidad_1/cuestionario_U1.html" target="_blank" class="btn-launch">Abrir Cuestionario U1</a>
+                <div class="score-input-group">
+                    <label>Nota Obtenida (máx. 25.00 ptos):</label>
+                    <input type="number" id="score_u1_theory" min="0" max="25" step="0.01" placeholder="0.00">
+                </div>
+            </div>
+
+            <!-- U1 Caso Práctico -->
+            <div class="eval-card">
+                <div>
+                    <h3>Unidad 1: Caso Práctico</h3>
+                    <p class="eval-meta">Contesta sobre desconexión, lumpenburguesía, mono-economía y pérdida del excedente.</p>
+                </div>
+                <a href="evaluaciones/unidad_1/caso_practico.html" target="_blank" class="btn-launch">Abrir Caso Práctico U1</a>
+                <div class="score-input-group">
+                    <label>Nota Obtenida (máx. 15.00 ptos):</label>
+                    <input type="number" id="score_u1_practical" min="0" max="15" step="0.01" placeholder="0.00">
+                </div>
+            </div>
+
+            <!-- U2 Cuestionario -->
+            <div class="eval-card">
+                <div>
+                    <h3>Unidad 2: Evaluación Final</h3>
+                    <p class="eval-meta">39 preguntas teóricas y prácticas, incluyendo el ensayo sobre el IDH.</p>
+                </div>
+                <a href="evaluaciones/unidad_2/cuestionario_U2.html" target="_blank" class="btn-launch">Abrir Evaluación U2</a>
+                <div class="score-input-group">
+                    <label>Nota Obtenida (máx. 30.00 ptos):</label>
+                    <input type="number" id="score_u2" min="0" max="30" step="0.01" placeholder="0.00">
+                </div>
+            </div>
+
+            <!-- U3 Cuestionario -->
+            <div class="eval-card">
+                <div>
+                    <h3>Unidad 3: Evaluación Final</h3>
+                    <p class="eval-meta">25 preguntas incluyendo casos de estudio y ensayos autocalificados sobre el desarrollo sostenible.</p>
+                </div>
+                <a href="evaluaciones/unidad_3/cuestionario_U3.html" target="_blank" class="btn-launch">Abrir Cuestionario U3</a>
+                <div class="score-input-group">
+                    <label>Nota Obtenida (máx. 30.00 ptos):</label>
+                    <input type="number" id="score_u3" min="0" max="30" step="0.01" placeholder="0.00">
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn-calculate" onclick="calcularPonderado()">Calcular Nota Definitiva</button>
+
+        <div class="results-panel" id="resultsPanel" style="display: none;">
+            <h2>Calificación Final Ponderada</h2>
+            <p>El sistema pondera las notas obtenidas en cada evaluación según el peso establecido para cada sección:</p>
+            <ul class="weight-list">
+                <li><strong>Unidad 1 (Teórica):</strong> Pondera un 25% de la nota final (Máx. 25 pts)</li>
+                <li><strong>Unidad 1 (Caso Práctico):</strong> Pondera un 15% de la nota final (Máx. 15 pts)</li>
+                <li><strong>Unidad 2:</strong> Pondera un 30% de la nota final (Máx. 30 pts)</li>
+                <li><strong>Unidad 3:</strong> Pondera un 30% de la nota final (Máx. 30 pts)</li>
+            </ul>
+
+            <div class="final-score-box">
+                <div>SU NOTA FINAL PONDERADA ES:</div>
+                <div class="score-big" id="finalScoreText">0.00 / 100.00</div>
+                <div id="statusBadge" class="status-badge">APROBADO</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px; display: flex; gap: 15px;">
+            <button type="button" class="btn-calculate" onclick="calcularPonderado()">Calcular Nota Definitiva</button>
+            <button type="button" class="btn-reset" onclick="resetearNotas()" style="background-color: var(--danger-color); color: white; border: none; padding: 15px 20px; font-weight: bold; border-radius: 4px; cursor: pointer; transition: background-color 0.2s;">Reiniciar Notas</button>
+        </div>
+    </div>
+
+    <script>
+        function calcularPonderado() {
+            // Obtener valores
+            const u1t = parseFloat(document.getElementById('score_u1_theory').value) || 0;
+            const u1p = parseFloat(document.getElementById('score_u1_practical').value) || 0;
+            const u2 = parseFloat(document.getElementById('score_u2').value) || 0;
+            const u3 = parseFloat(document.getElementById('score_u3').value) || 0;
+
+            // Nota final ponderada (suma directa simple ya que las notas vienen pre-ponderadas desde las evaluaciones)
+            const finalScore = u1t + u1p + u2 + u3;
+
+            // Mostrar Panel
+            const panel = document.getElementById('resultsPanel');
+            panel.style.display = 'block';
+
+            // Actualizar nota
+            const scoreText = document.getElementById('finalScoreText');
+            scoreText.innerHTML = `${finalScore.toFixed(2)} / 100.00`;
+
+            // Actualizar estado (Aprueba con >= 70)
+            const badge = document.getElementById('statusBadge');
+            if (finalScore >= 70) {
+                badge.innerHTML = "APROBADO";
+                badge.className = "status-badge status-pass";
+            } else {
+                badge.innerHTML = "REPROBADO";
+                badge.className = "status-badge status-fail";
+            }
+
+            // Guardar notas locales
+            localStorage.setItem('score_u1_theory', u1t);
+            localStorage.setItem('score_u1_practical', u1p);
+            localStorage.setItem('score_u2', u2);
+            localStorage.setItem('score_u3', u3);
+
+            // Scroll al panel de resultados
+            panel.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openLink(relativePath) {
+            const currentUrl = window.location.href;
+            if (currentUrl.startsWith('file://')) {
+                const basePath = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
+                window.open(basePath + relativePath, '_blank');
+            } else {
+                window.open(relativePath, '_blank');
+            }
+        }
+
+        function resetearNotas() {
+            if (confirm('¿Está seguro de que desea reiniciar todas las notas guardadas? Esto vaciará las notas de esta sesión.')) {
+                localStorage.removeItem('score_u1_theory');
+                localStorage.removeItem('score_u1_practical');
+                localStorage.removeItem('score_u2');
+                localStorage.removeItem('score_u3');
+                
+                document.getElementById('score_u1_theory').value = '';
+                document.getElementById('score_u1_practical').value = '';
+                document.getElementById('score_u2').value = '';
+                document.getElementById('score_u3').value = '';
+                
+                document.getElementById('resultsPanel').style.display = 'none';
+                document.getElementById('finalScoreText').innerHTML = '0.00 / 100.00';
+            }
+        }
+
+        // Cargar notas al iniciar y escuchar actualizaciones de otras pestañas
+        function cargarNotas() {
+            const u1t = localStorage.getItem('score_u1_theory');
+            const u1p = localStorage.getItem('score_u1_practical');
+            const u2 = localStorage.getItem('score_u2');
+            const u3 = localStorage.getItem('score_u3');
+
+            document.getElementById('score_u1_theory').value = u1t !== null ? u1t : '';
+            document.getElementById('score_u1_practical').value = u1p !== null ? u1p : '';
+            document.getElementById('score_u2').value = u2 !== null ? u2 : '';
+            document.getElementById('score_u3').value = u3 !== null ? u3 : '';
+
+            if (u1t !== null || u1p !== null || u2 !== null || u3 !== null) {
+                calcularPonderado();
+            }
+        }
+
+        window.addEventListener('load', cargarNotas);
+        window.addEventListener('storage', (e) => {
+            if (['score_u1_theory', 'score_u1_practical', 'score_u2', 'score_u3'].includes(e.key)) {
+                cargarNotas();
+            }
+        });
+    </script>
+</body>
+</html>
