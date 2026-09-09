@@ -863,12 +863,44 @@ body {
                 if (feedbackDiv) {
                     feedbackDiv.style.display = 'block';
                     const box = document.getElementById(`nav-box-${index}`);
-                    
+                    let feedbackHTML = '';
+
+                    if (type === 'mcq') {
+                        const correctOption = q.querySelector('input[value="correct"]');
+                        const correctText = correctOption ? correctOption.parentNode.textContent.trim() : '';
+                        if (Math.abs(scoreForQ - weight) < 0.01) {
+                            feedbackHTML = `✓ Correcta (${scoreForQ.toFixed(2)} / ${weight.toFixed(2)})`;
+                        } else {
+                            feedbackHTML = `✗ Incorrecta (0.00 / ${weight.toFixed(2)}). La respuesta correcta es: <strong>${correctText}</strong>`;
+                        }
+                    } else if (type === 'text') {
+                        const correctAnsEl = q.querySelector('.correct-answer');
+                        const correctAnsStr = correctAnsEl ? correctAnsEl.value : '';
+                        if (Math.abs(scoreForQ - weight) < 0.01) {
+                            feedbackHTML = `✓ Correcta (${scoreForQ.toFixed(2)} / ${weight.toFixed(2)})`;
+                        } else {
+                            feedbackHTML = `✗ Incorrecta (0.00 / ${weight.toFixed(2)}). La respuesta correcta es: <strong>${correctAnsStr}</strong>`;
+                        }
+                    } else if (type === 'match') {
+                        const selects = q.querySelectorAll('.match-item');
+                        let correctList = [];
+                        selects.forEach(select => {
+                            const correctVal = select.getAttribute('data-correct');
+                            const selectedOpt = Array.from(select.options).find(opt => opt.value === correctVal);
+                            const correctText = selectedOpt ? selectedOpt.textContent : '';
+                            const leftText = select.previousElementSibling ? select.previousElementSibling.textContent.trim() : 'Opción';
+                            correctList.push(`<li><strong>${leftText}</strong> -> <em>${correctText}</em></li>`);
+                        });
+                        feedbackHTML = `Puntaje: ${scoreForQ.toFixed(2)} / ${weight.toFixed(2)}.<br><strong>Respuestas correctas:</strong><br><ul style="margin: 5px 0 0 20px; padding: 0;">${correctList.join('')}</ul>`;
+                    } else {
+                        // essay
+                        const modelEl = q.querySelector('.respuesta-modelo');
+                        const modelText = modelEl ? modelEl.textContent : '';
+                        feedbackHTML = `Puntaje: ${scoreForQ.toFixed(2)} / ${weight.toFixed(2)}.<br><strong>Respuesta modelo sugerida:</strong><br><em>${modelText}</em>`;
+                    }
+
                     if (Math.abs(scoreForQ - weight) < 0.01) {
                         feedbackDiv.className = 'feedback correct-fb';
-                        if (type === 'mcq' || type === 'text') {
-                            feedbackDiv.innerHTML = `✓ Correcta (${scoreForQ.toFixed(2)} / ${weight.toFixed(2)})`;
-                        }
                         if (box) {
                             box.classList.remove('answered', 'current');
                             box.classList.add('correct');
@@ -886,6 +918,7 @@ body {
                             box.classList.add('incorrect');
                         }
                     }
+                    feedbackDiv.innerHTML = feedbackHTML;
                 }
             });
 
